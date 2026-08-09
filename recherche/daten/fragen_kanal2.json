@@ -1,0 +1,296 @@
+[
+ {
+  "id": "F01",
+  "anlass": "A1",
+  "titel": "What Did People Do When the Sun Went Out?",
+  "cr": "solar eclipse ancient response ritual historical record",
+  "wiki": "Eclipse_of_Thales"
+ },
+ {
+  "id": "F02",
+  "anlass": "A1",
+  "titel": "Who First Predicted an Eclipse?",
+  "cr": "Babylonian saros eclipse prediction astronomy",
+  "wiki": "Saros_(astronomy)"
+ },
+ {
+  "id": "F03",
+  "anlass": "A1",
+  "titel": "How Did Ancient Astronomers Map the Sky Without Telescopes?",
+  "cr": "naked eye astronomy ancient star catalogue",
+  "wiki": "History_of_astronomy"
+ },
+ {
+  "id": "F04",
+  "anlass": "A2",
+  "titel": "How Do We Know How Far Away the Stars Are?",
+  "cr": "stellar parallax distance measurement history astronomy",
+  "wiki": "Cosmic_distance_ladder"
+ },
+ {
+  "id": "F05",
+  "anlass": "A3",
+  "titel": "How Do You Test a Planet for Life?",
+  "cr": "Viking lander biology experiment life detection Mars",
+  "wiki": "Viking_lander_biological_experiments"
+ },
+ {
+  "id": "F06",
+  "anlass": "A3",
+  "titel": "What Did People Believe About Mars Before We Went There?",
+  "cr": "Martian canals Schiaparelli Lowell perception Mars",
+  "wiki": "Martian_canal"
+ },
+ {
+  "id": "F07",
+  "anlass": "A4",
+  "titel": "How Were Epics Remembered Before Writing?",
+  "cr": "oral-formulaic composition Parry Lord Homeric epic singer",
+  "wiki": "Oral_tradition"
+ },
+ {
+  "id": "F08",
+  "anlass": "A4",
+  "titel": "How Did People Live in the Cities of Ancient India?",
+  "cr": "urban archaeology early historic India settlement material culture",
+  "wiki": "History_of_India"
+ },
+ {
+  "id": "F09",
+  "anlass": "A4",
+  "titel": "Who Actually Wrote the Ramayana?",
+  "cr": "Valmiki Ramayana critical edition textual criticism recension",
+  "wiki": "Ramayana"
+ },
+ {
+  "id": "F10",
+  "anlass": "A5",
+  "titel": "How Did People Travel Long Distances Before Roads?",
+  "cr": "Sweet Track Neolithic wooden trackway prehistoric route",
+  "wiki": "Ancient_road"
+ },
+ {
+  "id": "F11",
+  "anlass": "A5",
+  "titel": "Who Built the First Roads and Why?",
+  "cr": "Roman road construction engineering history",
+  "wiki": "Roman_roads"
+ },
+ {
+  "id": "F12",
+  "anlass": "A6",
+  "titel": "How Did Ancient People Track the Planets?",
+  "cr": "Babylonian planetary observation ephemeris cuneiform",
+  "wiki": "Babylonian_astronomy"
+ },
+ {
+  "id": "F13",
+  "anlass": "A6",
+  "titel": "Why Did Every Ancient Culture Watch the Sky?",
+  "cr": "archaeoastronomy solstice alignment prehistoric monument orientation",
+  "wiki": "Archaeoastronomy"
+ },
+ {
+  "id": "F14",
+  "anlass": "A7",
+  "titel": "Has a Rock From Space Ever Destroyed a City?",
+  "cr": "Tunguska event airburst impact damage",
+  "wiki": "Tunguska_event"
+ },
+ {
+  "id": "F15",
+  "anlass": "A7",
+  "titel": "How Do We Know What Killed the Dinosaurs?",
+  "cr": "Chicxulub impact iridium anomaly extinction",
+  "wiki": "Cretaceous-Paleogene_extinction_event"
+ },
+ {
+  "id": "F16",
+  "anlass": "A8",
+  "titel": "Why Does Mars Have Two Tiny Moons?",
+  "cr": "Phobos Deimos origin capture giant impact",
+  "wiki": "Moons_of_Mars"
+ },
+ {
+  "id": "F17",
+  "anlass": "A9",
+  "titel": "How Do People Actually Survive in a Desert?",
+  "cr": "desert adaptation human physiology nomadic pastoralism",
+  "wiki": "Nomadic_pastoralism"
+ },
+ {
+  "id": "F18",
+  "anlass": "A9",
+  "titel": "How Did Desert Peoples Find Water?",
+  "cr": "qanat groundwater desert irrigation ancient",
+  "wiki": "Qanat"
+ },
+ {
+  "id": "F19",
+  "anlass": "A9",
+  "titel": "Why Was Spice Worth More Than Gold?",
+  "cr": "spice trade medieval price pepper economy",
+  "wiki": "Spice_trade"
+ },
+ {
+  "id": "F20",
+  "anlass": "A10",
+  "titel": "Where Do Our Ideas About Witches Come From?",
+  "cr": "witchcraft trials early modern Europe belief",
+  "wiki": "Witch_trials_in_the_early_modern_period"
+ },
+ {
+  "id": "F21",
+  "anlass": "A10",
+  "titel": "Why Do So Many Old Stories Have Talking Animals?",
+  "cr": "animal fable Aesop tradition folklore",
+  "wiki": "Fable"
+ },
+ {
+  "id": "F22",
+  "anlass": "A11",
+  "titel": "Who Was Homer, Really?",
+  "cr": "Homeric question authorship oral composition",
+  "wiki": "Homeric_Question"
+ },
+ {
+  "id": "F23",
+  "anlass": "A11",
+  "titel": "Did the Trojan War Actually Happen?",
+  "cr": "Troy Hisarlik Late Bronze Age destruction layer archaeology",
+  "wiki": "Historicity_of_the_Iliad"
+ },
+ {
+  "id": "F24",
+  "anlass": "A11",
+  "titel": "How Did Sailors Cross the Sea Without Maps?",
+  "cr": "ancient navigation seafaring wayfinding star compass",
+  "wiki": "History_of_navigation"
+ },
+ {
+  "id": "F25",
+  "anlass": "A11",
+  "titel": "What Did the Greeks Think Happened After Death?",
+  "cr": "Greek afterlife Hades funerary belief",
+  "wiki": "Greek_underworld"
+ },
+ {
+  "id": "F26",
+  "anlass": "A13",
+  "titel": "Why Can't We Measure Everything Exactly?",
+  "cr": "uncertainty principle measurement quantum limit",
+  "wiki": "Uncertainty_principle"
+ },
+ {
+  "id": "F27",
+  "anlass": "A14",
+  "titel": "Who First Figured Out the Universe Had a Beginning?",
+  "cr": "Lemaitre primeval atom expanding universe history cosmology",
+  "wiki": "Georges_Lemaitre"
+ },
+ {
+  "id": "F28",
+  "anlass": "A15",
+  "titel": "How Do You Write Music You Can't Hear?",
+  "cr": "Beethoven deafness composition hearing loss",
+  "wiki": "Beethoven's_musical_style"
+ },
+ {
+  "id": "F29",
+  "anlass": "A15",
+  "titel": "What Did Music Sound Like Before Recordings?",
+  "cr": "historically informed performance tuning pitch reconstruction",
+  "wiki": "Historically_informed_performance"
+ },
+ {
+  "id": "F30",
+  "anlass": "A16",
+  "titel": "How Did Anyone Figure Out What Gravity Is?",
+  "cr": "Newton universal gravitation Principia history",
+  "wiki": "Newton's_law_of_universal_gravitation"
+ },
+ {
+  "id": "F31",
+  "anlass": "A16",
+  "titel": "What Did People Think Held the Moon Up?",
+  "cr": "celestial spheres cosmology Aristotle medieval",
+  "wiki": "Celestial_spheres"
+ },
+ {
+  "id": "F32",
+  "anlass": "A17",
+  "titel": "How Did Pilots Find Their Way Before GPS?",
+  "cr": "dead reckoning aerial navigation radio beacon history",
+  "wiki": "Air_navigation"
+ },
+ {
+  "id": "F33",
+  "anlass": "A17",
+  "titel": "What Does Flying Do to the Human Body?",
+  "cr": "hypoxia altitude physiology aviation medicine",
+  "wiki": "Aviation_medicine"
+ },
+ {
+  "id": "F34",
+  "anlass": "A18",
+  "titel": "Who Invented Ball Games?",
+  "cr": "Mesoamerican ballgame rubber ball court archaeology origins",
+  "wiki": "Mesoamerican_ballgame"
+ },
+ {
+  "id": "F35",
+  "anlass": "A18",
+  "titel": "Why Did the Greeks Compete Naked?",
+  "cr": "ancient Greek athletic nudity gymnasion Olympic athletics",
+  "wiki": "Ancient_Olympic_Games"
+ },
+ {
+  "id": "F36",
+  "anlass": "A19",
+  "titel": "What Did the Egyptians Think the Sun Was?",
+  "cr": "ancient Egyptian solar theology Amun-Re hymn sun god",
+  "wiki": "Ra"
+ },
+ {
+  "id": "F37",
+  "anlass": "A19",
+  "titel": "How Do You Cut Granite With Copper?",
+  "cr": "copper chisel dolerite pounder granite quarrying ancient Egypt",
+  "wiki": "Egyptian_pyramid_construction_techniques"
+ },
+ {
+  "id": "F38",
+  "anlass": "A19",
+  "titel": "How Did Ancient Egyptians Tell the Time?",
+  "cr": "water clock shadow clock Egyptian timekeeping",
+  "wiki": "Water_clock"
+ },
+ {
+  "id": "F39",
+  "anlass": "A20",
+  "titel": "How Do You Send a Message That Lasts a Million Years?",
+  "cr": "nuclear waste warning message long term communication",
+  "wiki": "Long-term_nuclear_waste_warning_messages"
+ },
+ {
+  "id": "F40",
+  "anlass": "A20",
+  "titel": "What Would Someone Learn About Us From a Single Record?",
+  "cr": "Voyager Golden Record interstellar message content",
+  "wiki": "Voyager_Golden_Record"
+ },
+ {
+  "id": "F41",
+  "anlass": "A21",
+  "titel": "What Did the First Recorded Human Voice Sound Like?",
+  "cr": "phonautogram Scott de Martinville earliest sound recording",
+  "wiki": "Phonautograph"
+ },
+ {
+  "id": "F42",
+  "anlass": "A21",
+  "titel": "How Did People Remember Songs Before Writing Them Down?",
+  "cr": "musical notation origin neumes oral transmission",
+  "wiki": "Musical_notation"
+ }
+]
