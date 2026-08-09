@@ -82,7 +82,7 @@ Alles unter `produktion/` stammt aus
 
 | Übernommen | Was es ist |
 |---|---|
-| `produktion/pipeline/*.py` (15 Skripte) | Siebenschritt-Pipeline: Text → TTS → Klangbett → Bild → Video → SRT → Upload-Paket, dazu QA-Werkzeuge (`rhotik.py`, `qa_namen.py`, `satzlaengen.py`, `thumbnail.py`) |
+| `produktion/pipeline/*.py` (17 Skripte) | Siebenschritt-Pipeline: Text → TTS → Klangbett → Bild → Video → SRT → Upload-Paket, dazu QA-Werkzeuge (`rhotik.py`, `qa_namen.py`, `satzlaengen.py`, `thumbnail.py`) |
 | `produktion/pipeline/README.md` | Beschreibung des Schrittmodells |
 | `produktion/motive/README.md` | Bildworkflow |
 | `produktion/config.md` | **neu geschrieben** — jeder übernommene Schwellenwert einzeln markiert |
