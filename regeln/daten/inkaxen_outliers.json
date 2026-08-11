@@ -1,0 +1,44 @@
+{
+ "Ink": {
+  "avgViews": 360667,
+  "abos": 47900,
+  "gesamtviews": 4688675,
+  "outliers": [
+   {
+    "videoId": "SD7XyG2wd1k",
+    "score": 3.3
+   },
+   {
+    "videoId": "OCr6NteWSQ8",
+    "score": 2.5
+   },
+   {
+    "videoId": "9AFO6MHy8y4",
+    "score": 2.2
+   },
+   {
+    "videoId": "QP1maS6hYn4",
+    "score": 1.9
+   }
+  ]
+ },
+ "Axen": {
+  "avgViews": 424193,
+  "abos": 53900,
+  "gesamtviews": 5514514,
+  "outliers": [
+   {
+    "videoId": "TQd2k1pEXp4",
+    "score": 7.3
+   },
+   {
+    "videoId": "2RJggsjlj4A",
+    "score": 2.6
+   },
+   {
+    "videoId": "wt_7Hp7d7I8",
+    "score": 1.7
+   }
+  ]
+ }
+}
