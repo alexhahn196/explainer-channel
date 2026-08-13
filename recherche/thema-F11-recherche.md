@@ -29,6 +29,7 @@ verwendbar ist:
 | **Kandidat 1**, Campemoor | „4614–4540 v. Chr., ältester Moorweg der Welt", [gesichert] | **[umstritten]**. Fünf Publikationsstellen nennen vier verschiedene Dendro-Spannen, die C14-Werte liegen 200 Jahre davor. Die begutachtete Fassung sagt „**one of** the oldest bog tracks known worldwide". Verwendbar: „Mitte 47. bis 46. Jh. v. Chr." |
 | **Kandidat 2**, Widan el-Faras | „11,5 km, älteste gepflasterte Straße der Welt", [gesichert] | **[umstritten]**. Drei Artikel nennen 11 / 11,5 / 12 km. Der Superlativ hält nur als „älteste erhaltene gepflasterte **Überlandstraße**" — dieselbe Enzyklopädie datiert gepflasterte **Stadt**straßen in Ur und im Industal auf etwa 4000 v. Chr. |
 | **Sweet Track** | „3807 v. Chr., jahrgenau" | „**3807 oder 3806** v. Chr."; die Quelle führt ihn nur als **zweitälteste** Bohlenbahn der Britischen Inseln, seit 2009 übertroffen von einem Weg in Plumstead (4100 v. Chr.) |
+| **Klima als Bauherr** (Nachtrag) | „per Bayes-Modell auf 2450–2440 v. Chr. datiert", [gesichert] | **[umstritten]**. 2450–2440 ist das **Fälldatum** bei 68,3 %; der modellierte **Bau** liegt bei 2449–2347 v. Chr. (95,4 %). Die Autoren formulieren durchgehend hypothetisch und nennen einen zweiten, gleichrangigen Faktor. Handel kommt in der Arbeit **gar nicht vor** — der Gegensatz „Klima statt Handel" wäre hineingelegt |
 | **Wittemoor** | „an der Bachquerung **standen** zwei Figuren" | Gefunden wurden **sechs** Figuren, alle **flach niedergelegt**; die aufrechte Aufstellung ist erschlossen, nicht beobachtet. Die Deutung als Kultort ist Interpretation |
 
 **Die eine Regel, die daraus folgt:** In diesem Bericht steht **kein einziger
@@ -318,17 +319,35 @@ er dieselbe Region behandelt.
 | Beleg | Was drinsteht | DOI |
 |---|---|---|
 | Godwin 1960, *PPS* 26: 1–36 | Schon der **Titel** verknüpft die Moorwege ursächlich mit dem Klima: „their construction, age and **relation to climatic change**". C14-Probe Q 134: marine Transgression um 4300 v. Chr. weitgehend abgeschlossen; Q 120: endgültiger Übergang zu Süßwasser um 3500 v. Chr. Ab etwa 2000 v. Chr. wächst in den Erlenbruchwäldern Hochmoor aus Sphagnum, Wollgras und Heidekraut auf. | [10.1017/s0079497x00016212](https://doi.org/10.1017/s0079497x00016212) |
-| Klein u. a. 2026, *Journal of Neolithic Archaeology* | Bohlenweg Pr VII bei Diepholz, per Bayes-Modell auf **2450–2440 v. Chr.** datiert. Wörtlich im Abstract: „The necessity to construct a trackway seems to coincide with a **shift to wetter conditions**". Der Vergleich mit dem Campemoor zeigt, dass lokale Ökosysteme auf denselben Klimawandel **zeitversetzt** reagierten. Auf Makroebene identifizieren die Autoren **Bauspitzen** („construction peaks") in der norddeutschen Tiefebene. | [10.12766/jna.2026.1](https://doi.org/10.12766/jna.2026.1) |
+| Klein u. a. 2026, *Journal of Neolithic Archaeology* | Bohlenweg Pr VII bei Diepholz. **Achtung bei der Zahl:** Die Titelspanne „ca. 2450–2440 v. Chr." ist das **Fälldatum** eines wiggle-gematchten Stamms bei nur 68,3 % Wahrscheinlichkeit (bei 95,4 %: 2455–2436). Der modellierte **Bauzeitpunkt des Weges** liegt bei **2449–2347 v. Chr.** (95,4 %) bzw. 2446–2411 (68,3 %). „Securely" bezieht sich im Abstract auf „the **second half of the 25th century BCE**" — nicht auf ein Jahrzehnt. Zum Bauanlass wörtlich: „seems to coincide with a **shift to wetter conditions** … **and towards more diverse settlement pattern**" — zwei gleichrangige Faktoren, nicht einer. Der Vergleich mit dem Campemoor zeigt lokale Ökosysteme, die auf denselben Klimawandel mit einem Versatz von **bis zu 200 Jahren** reagierten. Auf Makroebene: **Bauspitzen** („construction peaks") in der norddeutschen Tiefebene. | [10.12766/jna.2026.1](https://doi.org/10.12766/jna.2026.1) |
 | Klein u. a. 2026, Einleitung | Wörtlich: „Of the **more than 550 wooden paths**, crossing bogs, wetlands and other waterlogged soils, known today in **Lower Saxony**, dating from the Neolithic to modern times, some of the oldest are located in the lowland area of Lake Dümmer". | ebenda |
 | Colson u. a. 2023, *ISPRS Annals* X-M-1: 41–46 | Grabung 2019–2021 am Bohlenweg PR6 im Aschener Moor, untersuchter Abschnitt rund **550 m**. [aus der Agentenrecherche, DOI von mir geprüft] | [10.5194/isprs-annals-x-m-1-2023-41-2023](https://doi.org/10.5194/isprs-annals-x-m-1-2023-41-2023) |
 
 **Warum das den Kern der Frage verschiebt:** Kandidat 1 steht im Bericht als
-Datierungsrekord — ältester Weg der Welt. Die Literatur liest denselben Befund
-anders: nicht als Pioniertat, sondern als **Reaktion auf ein Umweltproblem**.
-Das Land wurde nass, das Hochmoor wuchs, der Boden trug keinen Menschen mehr —
-und zwar in Wellen, messbar als Bauspitzen, über rund 500 Wege allein in
-Niedersachsen. Damit gibt es einen vierten Antwortkandidaten auf die Titelfrage
-„and why", der weder Handel noch Kult noch Militär ist.
+Datierungsrekord. Die Literatur liest denselben Befund anders — nicht als
+Pioniertat, sondern als **Reaktion auf ein Umweltproblem**: Das Land wurde
+nass, das Hochmoor wuchs, der Boden trug keinen Menschen mehr, und zwar in
+Wellen, messbar als Bauspitzen, über mehr als 550 Wege allein in Niedersachsen.
+Damit gibt es einen vierten Antwortkandidaten auf die Titelfrage „and why", der
+weder Handel noch Kult noch Militär ist.
+
+**Wie fest der Befund ist — nach Gegenprüfung ehrlich gesagt: [umstritten].**
+Die Autoren formulieren durchgehend vorsichtig: „**seems to** coincide",
+„raising the **possibility** that trackway construction (**sometimes**)
+occurred in response to climatic deterioration", „wooden tracks were **likely**
+necessary", „such a scenario is **postulated**". Dazu drei Einschränkungen, die
+man mitnennen muss: Der lokale Feuchteumschwung setzt laut Pollenprofil schon
+**um 2600 v. Chr.** ein, rund 150 Jahre vor dem Wegebau. Die Autoren nennen
+einen **zweiten, gleichrangigen** Faktor (diversifizierte Siedlungsmuster). Und
+die Arbeit ist von Februar 2026 mit bislang **null Zitationen** — ein
+Einzelbefund, dessen eigene Deutung als offene Hypothese markiert ist.
+
+**Und was der Befund ausdrücklich nicht sagt:** Die Studie erwähnt Handel an
+**keiner** Stelle — die Volltextsuche findet weder *trade* noch *exchange* noch
+*commerce*. Sie stellt Handel also nicht als konkurrierende Erklärung auf und
+verwirft ihn auch nicht. Wer „Klima **statt** Handel" daraus macht, legt den
+Gegensatz hinein. Belastbar ist nur: Hier steht ein Zweck, den die drei
+Ausgangsannahmen nicht abdecken.
 
 **Der Satz, der Kandidat 1 direkt trifft** — wörtlich aus Klein u. a. 2026,
 über den Pfahlweg Pr 31 selbst: „It was created in the Neolithic **during a
@@ -344,11 +363,16 @@ wenn es trocken ist, und wird verbaut, wenn es wieder nass wird.
 **Ein Fund am selben Moorkomplex, der A3 auf den Punkt bringt:** Am Bohlenweg
 Pr VII wurden **zwei zerbrochene Wagenachsen** gefunden, „which are now
 considered **among the oldest evidence of the use of wheels and wagons in
-Northern Germany**". Pr VII datiert auf 2450–2440 v. Chr. Der Weg Pr 31 im
-selben Moorgebiet ist rund **2.100 Jahre älter**. Am selben Fundplatzkomplex
-liegen also Straße und ältester Radnachweis zwei Jahrtausende auseinander — die
-Straße zuerst. Zusatzdetail: Die erste Achse lag zerbrochen und wieder
-zusammengesetzt **neben** dem Weg im Moor.
+Northern Germany**". Pr VII ist in die zweite Hälfte des 25. Jahrhunderts
+v. Chr. datiert. Der Weg Pr 31 im selben Moorgebiet ist rund **2.100 Jahre
+älter**. Am selben Fundplatzkomplex liegen also Straße und ältester Radnachweis
+zwei Jahrtausende auseinander — die Straße zuerst. Zusatzdetail: Die erste
+Achse lag zerbrochen und wieder zusammengesetzt **neben** dem Weg im Moor.
+
+*Genauigkeitsvorbehalt:* Die neu datierten Achsen sind laut derselben Arbeit
+„over 200 years" **älter** als die Weghölzer von Pr VII, wobei zwischen
+Altholzeffekt und echtem Altersunterschied nicht entschieden ist. Der Abstand
+zu Pr 31 wird dadurch kleiner, bleibt aber im Bereich von zwei Jahrtausenden.
 
 **Bildbare Szenen:** eine Sphagnum-Kuppel, die sich mehrere Meter über das
 Umland wölbt und ihr Wasser nur aus Regen bezieht · derselbe Torfbagger, der
