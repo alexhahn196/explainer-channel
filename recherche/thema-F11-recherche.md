@@ -55,9 +55,11 @@ Geordnet danach, wie stark sie der Alltagsannahme widersprechen.
 ### Kandidat 1 — Die älteste bekannte gebaute Straße hat einen dreischichtigen Unterbau — und ist 4.200 Jahre älter als die Via Appia
 
 **Behauptung:** Der Pfahlweg 31 Pr im Campemoor (Niedersachsen) wurde
-dendrochronologisch auf **4614–4540 v. Chr.** datiert, gilt als ältester
-bislang entdeckter Moorweg der Welt — und besaß bereits einen **dreischichtigen
-Aufbau** aus Unterlage, Unterbau und Lauffläche.
+dendrochronologisch in die **Mitte des 47. bis 46. Jahrhunderts v. Chr.**
+datiert, zählt zu den ältesten bekannten Moorwegen der Welt — und besaß bereits
+einen **dreischichtigen Aufbau** aus Unterlage, Unterbau und Lauffläche.
+*(Ursprünglich stand hier „4614–4540 v. Chr., ältester der Welt"; beides ist
+nach der Gegenprüfung unten abgeschwächt.)*
 
 **Quellen:**
 - [Pfahlwege im Campemoor (Wikipedia)](https://de.wikipedia.org/wiki/Pfahlwege_im_Campemoor)
@@ -80,10 +82,33 @@ bereits im Neolithikum. Drittens die **Präzision**: Das Baujahr ist auf wenige
 Jahrzehnte genau bekannt, weil das Holz dendrochronologisch datierbar war —
 bei einem 6.500 Jahre alten Bauwerk.
 
-**Forschungsstand:** [gesichert] für Datierung und Bauweise (Dendrochronologie,
-mehrfach publiziert). Die Formulierung „ältester der Welt" ist eine
-Zuschreibung, die von der Erhaltungslage abhängt: Moore konservieren Holz,
-trockene Regionen nicht.
+**Forschungsstand — bei der Gegenprüfung deutlich abgeschwächt:**
+**[umstritten]** statt [gesichert]. Die Bauweise ist belegt, die **Zahlen sind
+es nicht**. Die aktuelle begutachtete Arbeit (Klein u. a. 2026, JNA — von mir
+im Volltext gelesen) enthält für denselben Weg **drei verschiedene Endjahre**:
+
+| Fundstelle in der Literatur | Datierung Pr 31 |
+|---|---|
+| Klein u. a. 2026, Fließtext | 4629–**4538** v. Chr. |
+| dieselbe Arbeit, Supplement 2 (Tabelle) | 4629–**4545** v. Chr. |
+| dieselbe Arbeit, Abb. 17 (Grafik) | 4629–**4528** v. Chr. |
+| de.wikipedia „Pfahlwege im Campemoor" (nach Bauerochse/Heumüller 2018) | 4614–4540 v. Chr. |
+| de.wikipedia „Vorgeschichtlicher Moorweg", Dendro | „auf **4550 v. Chr.** dendrodatiert" |
+| dieselbe Stelle, **C14** (nach Burmeister 2004/Metzler 2004) | **4835–4715 v. Chr.** |
+| Rohdaten im Supplement: KI-4667 5910±40 BP | kal. 4832–4724 (68,2 %) |
+
+Die C14-Werte liegen rund **200 Jahre vor** den Dendro-Werten und überlappen
+mit keiner der Dendro-Spannen. Und der Superlativ hält nicht: Die begutachtete
+Fassung formuliert ausdrücklich **„is one of the oldest bog tracks known
+worldwide"** — *einer* der ältesten, nicht *der* älteste. Die
+Wikipedia-Formulierung „ältester der Welt" stützt sich an dieser Stelle auf
+einen toten Beleglink.
+
+**Konsequenz für ein Skript:** Die Zeittiefe trägt, der Rekord nicht. Statt
+einer Jahreszahl ist die belastbare Aussage: **Mitte des 47. bis 46.
+Jahrhunderts v. Chr.**, rund 4.200 bis 4.300 Jahre vor dem Baubeginn der Via
+Appia — wobei auch dieser Vergleich aus keiner der Quellen stammt, sondern
+selbst gerechnet ist.
 
 **Widerspricht:** A1 (Römer zuerst) vollständig, A3 (Rad nötig) ebenfalls —
 der Weg entstand rund tausend Jahre vor der Verbreitung des Rades in Europa.
@@ -254,7 +279,8 @@ er dieselbe Region behandelt.
 |---|---|---|
 | Godwin 1960, *PPS* 26: 1–36 | Schon der **Titel** verknüpft die Moorwege ursächlich mit dem Klima: „their construction, age and **relation to climatic change**". C14-Probe Q 134: marine Transgression um 4300 v. Chr. weitgehend abgeschlossen; Q 120: endgültiger Übergang zu Süßwasser um 3500 v. Chr. Ab etwa 2000 v. Chr. wächst in den Erlenbruchwäldern Hochmoor aus Sphagnum, Wollgras und Heidekraut auf. | [10.1017/s0079497x00016212](https://doi.org/10.1017/s0079497x00016212) |
 | Klein u. a. 2026, *Journal of Neolithic Archaeology* | Bohlenweg Pr VII bei Diepholz, per Bayes-Modell auf **2450–2440 v. Chr.** datiert. Wörtlich im Abstract: „The necessity to construct a trackway seems to coincide with a **shift to wetter conditions**". Der Vergleich mit dem Campemoor zeigt, dass lokale Ökosysteme auf denselben Klimawandel **zeitversetzt** reagierten. Auf Makroebene identifizieren die Autoren **Bauspitzen** („construction peaks") in der norddeutschen Tiefebene. | [10.12766/jna.2026.1](https://doi.org/10.12766/jna.2026.1) |
-| Colson u. a. 2023, *ISPRS Annals* X-M-1: 41–46 | Grabung 2019–2021 am Bohlenweg PR6 im Aschener Moor, untersuchter Abschnitt rund **550 m**; die Arbeit nennt rund **500 in Niedersachsen erfasste Holzwege**. [aus der Agentenrecherche, DOI von mir geprüft] | [10.5194/isprs-annals-x-m-1-2023-41-2023](https://doi.org/10.5194/isprs-annals-x-m-1-2023-41-2023) |
+| Klein u. a. 2026, Einleitung | Wörtlich: „Of the **more than 550 wooden paths**, crossing bogs, wetlands and other waterlogged soils, known today in **Lower Saxony**, dating from the Neolithic to modern times, some of the oldest are located in the lowland area of Lake Dümmer". | ebenda |
+| Colson u. a. 2023, *ISPRS Annals* X-M-1: 41–46 | Grabung 2019–2021 am Bohlenweg PR6 im Aschener Moor, untersuchter Abschnitt rund **550 m**. [aus der Agentenrecherche, DOI von mir geprüft] | [10.5194/isprs-annals-x-m-1-2023-41-2023](https://doi.org/10.5194/isprs-annals-x-m-1-2023-41-2023) |
 
 **Warum das den Kern der Frage verschiebt:** Kandidat 1 steht im Bericht als
 Datierungsrekord — ältester Weg der Welt. Die Literatur liest denselben Befund
@@ -264,9 +290,31 @@ und zwar in Wellen, messbar als Bauspitzen, über rund 500 Wege allein in
 Niedersachsen. Damit gibt es einen vierten Antwortkandidaten auf die Titelfrage
 „and why", der weder Handel noch Kult noch Militär ist.
 
+**Der Satz, der Kandidat 1 direkt trifft** — wörtlich aus Klein u. a. 2026,
+über den Pfahlweg Pr 31 selbst: „It was created in the Neolithic **during a
+phase of increasing waterlogging: rainfall and a rise in the lake level caused
+the fens around the Dümmer to spread**." Der älteste Weg des Berichts ist damit
+nicht nur *zufällig* in einem Moor erhalten — er wurde **wegen** der Vernässung
+gebaut. Dieselbe Arbeit datiert die weiteren Wege im Campemoor auf 3798 v. Chr.
+(Pr 35), 3701 v. Chr. (Pr 34) und 2909–2882 v. Chr. (Pr 32) — und hält fest,
+dass Pr 32 aus Kiefern gebaut wurde, die in einer **Trockenphase** an genau
+derselben Stelle aufgewachsen waren. Nass, trocken, nass: Der Wald wächst,
+wenn es trocken ist, und wird verbaut, wenn es wieder nass wird.
+
+**Ein Fund am selben Moorkomplex, der A3 auf den Punkt bringt:** Am Bohlenweg
+Pr VII wurden **zwei zerbrochene Wagenachsen** gefunden, „which are now
+considered **among the oldest evidence of the use of wheels and wagons in
+Northern Germany**". Pr VII datiert auf 2450–2440 v. Chr. Der Weg Pr 31 im
+selben Moorgebiet ist rund **2.100 Jahre älter**. Am selben Fundplatzkomplex
+liegen also Straße und ältester Radnachweis zwei Jahrtausende auseinander — die
+Straße zuerst. Zusatzdetail: Die erste Achse lag zerbrochen und wieder
+zusammengesetzt **neben** dem Weg im Moor.
+
 **Bildbare Szenen:** eine Sphagnum-Kuppel, die sich mehrere Meter über das
 Umland wölbt und ihr Wasser nur aus Regen bezieht · derselbe Torfbagger, der
-die Wege heute zerstört, nachdem er sie 4.500 Jahre konserviert hat.
+die Wege heute zerstört, nachdem er sie 4.500 Jahre konserviert hat · eine
+zerbrochene Wagenachse, die neben der Straße im Moor liegt — zweitausend Jahre
+jünger als die Straße.
 
 ### Straßenstaat vor Rom — vier außereuropäische Befunde
 
@@ -344,7 +392,7 @@ Nur Sichtbares: Orte, Maße, Materialien, Zahlen, Fundstücke.
 
 | Detail | Wert | Quelle |
 |---|---|---|
-| Datierung | **4614–4540 v. Chr.**, dendrochronologisch | [Pfahlwege im Campemoor](https://de.wikipedia.org/wiki/Pfahlwege_im_Campemoor) |
+| Datierung | **Mitte 47. bis 46. Jh. v. Chr.** — de.wikipedia nennt 4614–4540 v. Chr., die Fachliteratur 4629–4538/4545/4528, C14 sogar 4835–4715. **Siehe die Datierungstabelle bei Kandidat 1**; als Einzelzahl nicht verwendbar | [Pfahlwege im Campemoor](https://de.wikipedia.org/wiki/Pfahlwege_im_Campemoor); [10.12766/jna.2026.1](https://doi.org/10.12766/jna.2026.1) |
 | Ort | Campemoor bei Neuenkirchen-Vörden, Landkreis Vechta, südwestlich des Dümmers | ebenda |
 | Breite | **2,5 bis 4,5 m**, je nach Untergrund | ebenda |
 | Schicht 1 (unten) | dünne **Birkenstämme** direkt auf dem moorigen Grund | ebenda |
@@ -477,9 +525,11 @@ roadway in the world, **until the discovery in 2009** of a 6,000-year-old
 trackway built in **4100 BC, in Plumstead**, near Belmarsh prison." Für den
 Bericht heißt das zweierlei: Der Sweet Track darf nicht als ältester Weg
 verkauft werden — und der Plumstead-Fund von 4100 v. Chr. ist ein weiterer
-Kandidat, den diese Recherche nicht erfasst hat. Kandidat 1 (Campemoor,
-4614–4540 v. Chr.) bleibt davon unberührt, ist aber jetzt der einzige Fund im
-Bericht, der diesen Rang noch beansprucht.
+Kandidat, den diese Recherche nicht erfasst hat. Kandidat 1 (Campemoor, Mitte
+47. bis 46. Jh. v. Chr.) bleibt älter als beide, beansprucht den Rang „ältester
+der Welt" nach der Gegenprüfung aber selbst nicht mehr — die begutachtete
+Fassung sagt „**one of** the oldest bog tracks known worldwide". Nach dieser
+Recherche hat **kein** Fund im Bericht einen belastbaren Weltrekord.
 
 ---
 
@@ -570,10 +620,16 @@ Kein Skriptvorschlag, nur die Größen, die sich aus den Messwerten ergeben
   Kandidaten begutachtete Literatur gibt, aber die **Volltexte wurden nicht
   gelesen** — sie liegen hinter Bezahlschranken. Geprüft ist jeweils, dass die
   Publikation existiert und Titel und Jahr zur Behauptung passen.
-- **Superlative sind heikel.** „Älteste gepflasterte Straße der Welt" und
-  „ältester Holzweg" hängen an der Erhaltungslage: Was nicht überdauert hat,
-  taucht in keiner Liste auf. Für ein Skript sind diese Formulierungen
-  abzuschwächen oder mit „bekannt" zu qualifizieren.
+- **Superlative sind heikel — und zwei sind bei der Gegenprüfung gefallen.**
+  Bei **Kandidat 1** formuliert die begutachtete Fassung „one of the oldest bog
+  tracks known worldwide", nicht „der älteste"; die Datierung schwankt über
+  fünf Publikationsstellen um bis zu 300 Jahre, C14 und Dendro überlappen
+  nicht. Bei **Kandidat 2** verwendet kein Crossref-Treffer die Formel „älteste
+  gepflasterte Straße der Welt" als Fachbegriff. Beim **Sweet Track** nennt die
+  Quelle ihn selbst nur die zweitälteste Bohlenbahn der Britischen Inseln.
+  Superlative hängen an der Erhaltungslage: Was nicht überdauert hat, taucht in
+  keiner Liste auf. Für ein Skript sind sie durchweg abzuschwächen oder mit
+  „bekannt" zu qualifizieren.
 - **Die Datierung des Diolkos ist offen** — die antike Literatur nennt kein
   Baujahr.
 - **Chaco ist bewusst als offener Fall aufgenommen**, nicht als gesicherter
