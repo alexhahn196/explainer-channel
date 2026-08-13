@@ -23,13 +23,13 @@
 
 ## Sprechtext
 
-Look down the next time you step out your door. There's a road under you. You use roads so often that you never ask where they come from — you save that for old things, and roads don't feel old to you. They feel like they belong to cars, trucks, freight. So who built the first roads, and why? You'll probably reach for one of three. The Romans. Or traders, moving goods. Or no one, until someone had a wheel. All three feel right. All three, as far as we can tell, are wrong. The first road builders you can point to weren't fighting distance. They were fighting water. Their land was going soft under their feet, so they built it a floor.
+Look down the next time you step out your door. There's a road under you. You use roads so often that you never ask where they come from — you save that for old things, and roads don't feel old to you. They feel like they belong to cars, trucks, freight. So who built the first roads, and why? You'll probably reach for one of three. The Romans. Or traders, moving goods. Or no one, until someone had a wheel. All three feel right. All three, as far as we can tell, are wrong. The earliest road builders we can name weren't fighting distance. They were fighting water. Their land was going soft under their feet, so they built it a floor.
 
 To see what that means, you need to stand in a bog. A bog is land that never dries. Rain sits on dead moss, new moss grows over it, and the ground turns into a wet sponge — it will take your boot, and it can take you. You can't farm it. You can't cross it. Almost six thousand years ago, in what's now Somerset in the south of England, people faced the same ground you'd sink in — and they built.
 
 We call what they built the Sweet Track. Tree rings pin its date — each year a tree adds one ring, wide in a good year, thin in a bad one, and you can match that pattern against a known series [W1]. The result: 3807 BC — or 3806, because the trees were felled in winter, one winter spans two calendar years, and even the wood can't tell you which [W1].
 
-And what stood there was no trail. It was a structure. About 1,800 metres of walkway across a reed marsh, from an island at Westhay to a ridge at Shapwick [W1]. Oak planks up to 40 centimetres wide, three metres long, less than five thick — split, not sawn, out of oaks up to 400 years old and a metre through [W1]. The tool kit: stone axes, wooden wedges, wooden mallets. That's all [W1]. They drove crossed pegs of ash, oak and lime into the peat — the bog's packed dead plants — laid long rails of hazel and alder, cut notches into the planks, and slotted the parts together. No nails. A push fit [W1]. And the pegs are so straight and clean that the wood must have come from a managed stand — trees cut low and regrown on cycles for at least 120 years before this was built [W1].
+And what stood there was no trail. It was a structure. About 1,800 metres of walkway across a reed marsh, from an island at Westhay to a ridge at Shapwick [W1]. Oak planks up to 40 centimetres wide, three metres long, less than five centimetres thick — split, not sawn, out of oaks up to 400 years old and a metre through [W1]. The tool kit: stone axes, wooden wedges, wooden mallets. That's all [W1]. They drove crossed pegs of ash, oak and lime into the peat — the bog's packed dead plants — laid long rails of hazel and alder, cut notches into the planks, and slotted the parts together. No nails. A push fit [W1]. And the pegs are so straight and clean that the wood points to a managed stand — trees cut low and regrown on cycles for at least 120 years before this was built [W1].
 
 Now hold on to the strangest part. All that effort bought a walkway of single oak planks, laid end to end [W1]. Not a cart track — a plank line through a marsh. It served for about ten years. Then the water rose again and took it [W1]. And under it runs an older line still, the Post Track, from around 3838 BC — same route, thirty years earlier [W1]. They had done this before.
 
@@ -37,17 +37,17 @@ One site might be a fluke. So go north-east, to the flat wet country of Lower Sa
 
 Why there, why then? The team behind the newest study says it with care — it's one paper, and they call their reading a hypothesis — but it goes like this: the rain grew, the lake rose, the wet spread, and the paths follow that curve [L18]. Pr 31, they write, was created in a phase of increasing waterlogging [L18]. They point to a second driver too — people were settling in new patterns — so even here, water isn't the whole story [L18]. But zoom out, and the paths seem to come in waves: building booms that track the ground getting worse [L18]. One more trace, and it's an odd one: pollen from the bog shows the pine stands shrinking after that second path was built — the likely cause is the wood the builders took [W2]. A forest, shrinking, because a road was being built.
 
-Now, the thing that had no business being there. By one of these paths — Pr VII, laid in the 25th century BC — diggers found it: two broken wagon axles [L18]. They count among the oldest evidence of wheels and wagons in all of northern Germany [L18]. So run the numbers with me. Oldest known road in that region: about six and a half thousand years old. Oldest known wheels: about four and a half thousand. The road wins by roughly two thousand years [L18]. People there built roads for some twenty centuries before anything rolled on one. One axle lay broken next to the path, right there in the bog [L18]. The wheel is not the parent of the road. The wheel is a guest on it.
+Now, the thing that had no business being there. By one of these paths — Pr 7, laid in the 25th century BC — diggers found it: two broken wagon axles [L18]. They count among the oldest evidence of wheels and wagons in all of northern Germany [L18]. So run the numbers with me. Oldest known road in that region: about six and a half thousand years old. Oldest known wheels: about four and a half thousand. The road wins by roughly two thousand years [L18]. People there built roads for some twenty centuries before anything rolled on one. One axle lay broken next to the path, right there in the bog [L18]. The wheel is not the parent of the road. The wheel is a guest on it.
 
-So if the first roads weren't for wheels, and weren't for goods — what were roads for? Chase that question around the world, and you get a new answer at every stop. Almost none of them is trade.
+So if the first roads weren't for wheels, and weren't for goods — what were roads for? Chase that question around the world, and you get a new answer at every stop — and the answers are stranger than you'd think.
 
-Start in Egypt, about 4,500 years ago [W3]. In the desert south-west of what's now Cairo, a paved road runs some eleven kilometres — the reports differ a little on the length — from a quarry, a pit where you cut stone, down to the shore of a lake that has since dried away [W3]. The quarry is called Widan el-Faras, and the paving is whatever lay close: basalt, a hard dark lava stone; limestone; sandstone; and slabs of petrified wood — dead trees turned to stone, laid as pavement [W3]. The road's job? No market anywhere. Crews hauled basalt blocks down it to the water and shipped them off to become temple floors for the pyramids — one of those floors sits just east of the Great Pyramid at Giza [W3]. Even here, the road was only the hard leg of the trip. The blocks moved mostly by boat, in seasons when the lake stood high [L7]. This road was a supply drive for a royal building site.
+Start in Egypt, about 4,500 years ago [W3]. In the desert south-west of what's now Cairo, a paved road runs some eleven kilometres — the reports differ a little on the length — from a quarry, a pit where you cut stone, down to what was then the shore of a lake [W3]. The quarry is called Widan el-Faras, and the paving is whatever lay close: basalt, a hard dark lava stone; limestone; sandstone; and slabs of petrified wood — dead trees turned to stone, laid as pavement [W3]. The road's job? No market anywhere. Crews hauled basalt blocks down it to the water and shipped them off to become temple floors for the pyramids — one of those floors sits just east of the Great Pyramid at Giza [W3]. Even here, the road was only the hard leg of the trip. The blocks moved mostly by boat, in seasons when the lake stood high [L7]. This road was a supply drive for a royal building site.
 
-Walls of glazed brick, and on them lions, bulls and dragons — about 120 animals glowing on yellow and black, lining a street in Babylon [W4]. This is in what's now Iraq, around 569 BC, under King Nebuchadnezzar the Second [W4]. The street itself is stone slabs set in a bed of bitumen — natural tar — up to twenty metres wide at some points [W4]. Picture yourself walking it: from the river through the temple district, past the palaces, to the Ishtar Gate — the city's great blue gate [W4]. People used it all year; it was the main axis of the city [W4]. But the day it was dressed for came once a year: at the spring new year, statues of the gods were carried through the gate and down this street in a grand procession [W4]. All of it — the tar, the lions, the glaze — was, at heart, a stage.
+Walls of glazed brick, and on them lions, bulls and dragons — about 120 figures glowing on yellow and black, lining a street in Babylon [W4]. This is in what's now Iraq, around 569 BC, under King Nebuchadnezzar the Second [W4]. The street itself is stone slabs set in a bed of bitumen — natural tar — up to twenty metres wide at some points [W4]. Picture yourself walking it: from the river through the temple district, past the palaces, to the Ishtar Gate — the city's great blue gate [W4]. People used it all year; it was the main axis of the city [W4]. But the day it was dressed for came once a year: at the spring new year, statues of the gods were carried through the gate and down this street in a grand procession [W4]. All of it — the tar, the lions, the glaze — was, at heart, a stage.
 
 Persia — roughly, modern Iran — gets one breath: a road of about 2,700 kilometres, Susa to Sardis, ridden in nine days with fresh horses waiting along the way, walked in ninety [W8]. A post road, the record says. It moved messages [W8]. It ran an empire.
 
-And then there's the road nobody can explain. Chaco Canyon, New Mexico, in the dry south-west of the United States — roughly a thousand years back, though the dating is argued over [W5]. The people there had no wheel, no horse, no ox [W5]. Yet they scraped road beds into the desert floor up to nine metres wide, dead straight — the best-studied one runs 50.5 kilometres [L14]. Where a cliff stood in the way, they cut stone stairs into the rock face and went straight over [W5]. Nothing ever rolled here. So why the width, why the line? The honest answer: nobody knows. Scholars have argued for decades — work, war, worship, politics [W5]. A recent laser survey found roads lined up on the midwinter sunrise over a mountain sacred to the Native Pueblo peoples today — a hint toward ritual, and still one reading among several [L17]. We can measure these roads down to centimetres. We can't tell you what they were for.
+And then there's the road nobody can explain. Chaco Canyon, New Mexico, in the dry south-west of the United States — roughly a thousand years back, though the dating is argued over [W5]. The people there had no wheel, no horse, no ox [W5]. Yet they scraped road beds into the desert floor up to nine metres wide, dead straight — one of them runs 50.5 kilometres [L14]. Where a cliff stood in the way, they cut stone stairs into the rock face and went straight over [W5]. Nothing ever rolled here. So why the width, why the line? The honest answer: nobody knows. Scholars have argued for decades — work, war, worship, politics [W5]. A recent laser survey found roads lined up on the midwinter sunrise over a mountain sacred to the Native Pueblo peoples today — a hint toward ritual, and still one reading among several [L17]. We can map these roads from the air. We can't tell you what they were for.
 
 Last stop: the Andes, the long mountain spine of South America. The Inca empire ran a road net whose true size nobody can state — estimates go from 23,000 to 60,000 kilometres [W6]. Parts are older than the empire, laid by earlier peoples, the Wari and the Tiwanaku [W6]. It was paved only where paving earned its keep; elsewhere it was packed earth and sand [W6]. Its builders had no wheel and no animal to pull a cart, so where the land climbed, the road did what no cart road can do: it became a staircase [W6]. Stairs stop a wheel cold. For you, on foot, they are simply the shortest way up. On this net, an empire moved on foot — and today, only about a quarter of it is still visible at all [W6].
 
@@ -55,7 +55,7 @@ Which brings us, at the very end, to trade — and to Rome. You were promised th
 
 Trade is the answer you'd expect — and the one that keeps not showing up. That doesn't mean traders never walked these paths. It means trade moved in later, like the wheel did, into a thing that was already old.
 
-So here's the thought to keep. A road was never really about speed. A road is a promise: the ground will hold, and the way will still be there tomorrow — in the wet season, in the dark. People in a Somerset marsh made that promise with stone axes, almost six thousand years back, and kept it through ten years of rising water. And in that German bog country, the oldest road and the oldest wheel we've found lie about two thousand years apart — road first [L18]. So the next time the ground under you goes soft, you know what humans do. They did it before the wheel. They did it before Rome. They look at land that says no — and they build a yes.
+So here's the thought to keep. A road was never only about speed. A road is a promise: the ground will hold, and the way will still be there tomorrow — in the wet season, in the dark. People in a Somerset marsh made that promise with stone axes, almost six thousand years back, and kept it through ten years of rising water. And in that German bog country, the oldest road and the oldest wheel we've found lie about two thousand years apart — road first [L18]. So the next time the ground under you goes soft, you know what humans do. They did it before the wheel. They did it before Rome. They look at land that says no — and they build a yes.
 
 ---
 
@@ -89,14 +89,14 @@ Zielwerte aus dem Auftrag, hergeleitet aus dem Ink-Axen-Vergleich.
 
 | Größe | Ziel | Gemessen | Status |
 |---|---|---|---|
-| Wortzahl | 1.850–2.050 | **1.878** | ✓ (nach den zwei Ergänzungen wieder im Ziel) |
-| Laufzeit bei 219 WPM | 8:30–9:30 | **8:35** | ✓ |
+| Wortzahl | 1.850–2.050 | **1.875** | ✓ |
+| Laufzeit bei 219 WPM | 8:30–9:30 | **8:34** | ✓ |
 | Wörter unter 7 Zeichen | ≥ 82 % | **90,9 %** | ✓ |
-| Anrede-Marker je 1.000 Wörter, erstes Fünftel (375 Wörter) | ≥ 40 | **45,3** (17 Marker) | ✓ |
-| Anrede-Marker je 1.000 Wörter, gesamt | — (Ink: 42,5 im ersten Fünftel) | 13,8 | zur Info |
-| Position der Antwort („They were fighting water") | erste 30 s | **Wort 107 = 29,3 s = 5,7 %** der Laufzeit | ✓ (Ink-Zielwert: 5,4 %) |
-| Offene Schleife — Anriss („no business being there") | erstes Drittel | **Wort 537 = 28,6 %** | ✓ |
-| Offene Schleife — Auflösung | an der bisherigen Achsen-Stelle | Wort 830 = 44,2 %; Schluss-Echo im letzten Absatz | ✓ |
+| Anrede-Marker je 1.000 Wörter, erstes Fünftel (375 Wörter) | ≥ 40 | **42,7** (16 Marker) | ✓ — knapper als vorher (45,3), weil B4 ein „you" aus der Eröffnung nahm; liegt exakt auf Inks Wert 42,5 |
+| Anrede-Marker je 1.000 Wörter, gesamt | — (Ink: 42,5 im ersten Fünftel) | 13,9 | zur Info |
+| Position der Antwort („They were fighting water") | erste 30 s | **Wort 106 = 29,0 s = 5,7 %** der Laufzeit | ✓ (Ink-Zielwert: 5,4 %) |
+| Offene Schleife — Anriss („no business being there") | erstes Drittel | **Wort 535 = 28,5 %** | ✓ |
+| Offene Schleife — Auflösung | an der bisherigen Achsen-Stelle | Wort 828 = 44,2 %; Schluss-Echo im letzten Absatz | ✓ |
 | Absatz 3 (Baumring) | unter 20 s | **67 Wörter = 18 s** | ✓ |
 | Absatz 13 (Chaco) | unter 45 s | **158 Wörter = 43 s** | ✓ |
 | Absatz 16 (Handel) | höchstens 40 Wörter | **39 Wörter** | ✓ |
@@ -264,3 +264,74 @@ Wortzahl damit zurück im Ziel: **1.878 Wörter, 8:35 min.** Alle
 übrigen Messwerte unverändert im Ziel (Tabelle oben); die Auflösung
 der offenen Schleife rückt durch die Ergänzungen von 42,2 % auf
 44,2 % der Laufzeit.
+
+## Änderungen (vierte Überarbeitung, fünfte Fassung)
+
+Umsetzung der freigegebenen Befunde aus Prüfrunde 1
+(`pruefprotokoll-runde-1.md`, vier isolierte Agenten). Zehn Eingriffe;
+keine neuen Fakten, keine neuen Quellen, alle Quellen-IDs erhalten.
+
+**Gruppe A — Faktenregel-Fixe, alle sieben umgesetzt:**
+
+1. „a lake that has since **dried away**" → „to **what was then** the
+   shore of a lake". Der Bericht deckt nur den alten Uferverlauf; der
+   See existiert verkleinert weiter.
+2. „**the best-studied one** runs 50.5 kilometres" → „**one of them**
+   runs 50.5 kilometres". Unqualifizierter Superlativ ohne Deckung
+   (die 50,5 km selbst sind gedeckt).
+3. „about 120 **animals**" → „about 120 **figures**". Die Quelle zählt
+   „lions, bulls, dragons, **and flowers**" in die 120 — an der
+   gecachten Quelle selbst nachgeprüft.
+4. „the wood **must have come** from a managed stand" → „the wood
+   **points to** a managed stand". Der Bericht sagt „sprechen für" —
+   Indiz, nicht Gewissheit.
+5. „We can **measure** these roads **down to centimetres**" → „We can
+   **map** these roads **from the air**". Zentimeter-Präzision war
+   ungedeckt, Lidar ist es.
+6. „less than five thick" → „less than five **centimetres** thick".
+   Fehlende Einheit, hörbar als *fünf Meter* missverstehbar.
+7. „**Pr VII**" → „**Pr 7**". Formatbruch römisch/arabisch neben
+   „Pr 31".
+
+**Gruppe B — zwei von vier umgesetzt:**
+
+- **B3:** „A road was never **really** about speed" → „never **only**
+   about speed". Der Skeptiker-Agent hatte recht: Ein Postrelais ist
+   genau „about speed" — der Schluss widersprach der Persien-Station.
+   Ein Wort löst es, der geschützte Schlussabsatz bleibt sonst
+   unangetastet.
+- **B4:** „The **first** road builders **you can point to**" → „The
+   **earliest** road builders **we can name**". Die Eröffnung
+   behauptete einen Erstrang, den der eigene Text später relativiert
+   (Pr 31 ist älter als der Somerset-Einstieg). „They were fighting
+   water." bleibt wortgleich.
+- **Nicht umgesetzt (Entscheidung):** B1 (Unsicherheitsmarker in
+   Eröffnung und Schluss) — die Antwort soll früh und klar fallen, die
+   Unsicherheit ist im Textkörper mehrfach markiert. B2 („trade moved
+   in later") — bleibt, dokumentiert als Unsicherheit Nr. 8.
+
+**Gruppe C — einer von vier umgesetzt:**
+
+- **C2:** „…a new answer at every stop. **Almost none of them is
+   trade.**" → „…a new answer at every stop — **and the answers are
+   stranger than you'd think**." Der zweite Satz nahm die Pointe der
+   Welttour vorweg; jetzt sind die fünf Stationen Entdeckung statt
+   Bestätigung. Der Handels-Befund fällt erst im vorletzten Absatz.
+- **Nicht umgesetzt (Entscheidung):** C1 (Absatz 6/7 entlasten) —
+   wurde in der vierten Fassung gerade erst ergänzt. C3 und C4
+   (Strukturdoppelungen Ägypten/Babylon, Chaco/Inka) — nach der
+   Rhythmus-Runde akzeptabel.
+
+**Messwerte:** 1.875 Wörter, 8:34 min, alle Zielwerte gehalten.
+Einziger nennenswerter Ausschlag: Die Anrede-Marker im ersten Fünftel
+sinken durch B4 von 45,3 auf **42,7** je 1.000 — weiterhin über der
+Schwelle 40 und praktisch deckungsgleich mit Inks 42,5. Geschützte
+Stellen per Skript verifiziert unangetastet: „They were fighting
+water", „The wheel is not the parent of the road…", Chacos
+Schlusszeile, der Schlussabsatz, die zweifache Wortlaut-Wiederaufnahme
+der offenen Schleife.
+
+**Neu angelegt:** `produktion/video-01/aussprache.md` — Ausspracheliste
+für die TTS-QA mit IPA und Respelling zu allen dreizehn Eigennamen aus
+A3s Stolperliste, dazu neun Sprech-Vorgaben für Labels, Jahreszahlen
+und zwei Betonungsfallen.
