@@ -236,6 +236,106 @@ Genau diese Offenheit ist der Wert des Kandidaten.
 
 ---
 
+## Nachtrag — Material aus den späteren Rechercheagenten
+
+Als die Top 5 standen, liefen vier der sechs Agenten noch. Ihre Ergebnisse
+stehen hier gesammelt statt in die Kandidatenliste eingearbeitet, damit die
+ursprüngliche Auswahl nachvollziehbar bleibt. Alles unten ist von mir in der
+Quelle gegengelesen (2026-08-13), wo nicht anders vermerkt.
+
+### Ein vierter Zweck, nach dem gar nicht gesucht wurde: nasses Land
+
+Die drei Annahmen aus Schritt 1 stellen Handel, Kult und Militär gegeneinander.
+Die Fachliteratur zu den Moorwegen nennt aber einen Zweck, der in keiner der
+drei Annahmen vorkommt — und der ausgerechnet Kandidat 1 direkt betrifft, weil
+er dieselbe Region behandelt.
+
+| Beleg | Was drinsteht | DOI |
+|---|---|---|
+| Godwin 1960, *PPS* 26: 1–36 | Schon der **Titel** verknüpft die Moorwege ursächlich mit dem Klima: „their construction, age and **relation to climatic change**". C14-Probe Q 134: marine Transgression um 4300 v. Chr. weitgehend abgeschlossen; Q 120: endgültiger Übergang zu Süßwasser um 3500 v. Chr. Ab etwa 2000 v. Chr. wächst in den Erlenbruchwäldern Hochmoor aus Sphagnum, Wollgras und Heidekraut auf. | [10.1017/s0079497x00016212](https://doi.org/10.1017/s0079497x00016212) |
+| Klein u. a. 2026, *Journal of Neolithic Archaeology* | Bohlenweg Pr VII bei Diepholz, per Bayes-Modell auf **2450–2440 v. Chr.** datiert. Wörtlich im Abstract: „The necessity to construct a trackway seems to coincide with a **shift to wetter conditions**". Der Vergleich mit dem Campemoor zeigt, dass lokale Ökosysteme auf denselben Klimawandel **zeitversetzt** reagierten. Auf Makroebene identifizieren die Autoren **Bauspitzen** („construction peaks") in der norddeutschen Tiefebene. | [10.12766/jna.2026.1](https://doi.org/10.12766/jna.2026.1) |
+| Colson u. a. 2023, *ISPRS Annals* X-M-1: 41–46 | Grabung 2019–2021 am Bohlenweg PR6 im Aschener Moor, untersuchter Abschnitt rund **550 m**; die Arbeit nennt rund **500 in Niedersachsen erfasste Holzwege**. [aus der Agentenrecherche, DOI von mir geprüft] | [10.5194/isprs-annals-x-m-1-2023-41-2023](https://doi.org/10.5194/isprs-annals-x-m-1-2023-41-2023) |
+
+**Warum das den Kern der Frage verschiebt:** Kandidat 1 steht im Bericht als
+Datierungsrekord — ältester Weg der Welt. Die Literatur liest denselben Befund
+anders: nicht als Pioniertat, sondern als **Reaktion auf ein Umweltproblem**.
+Das Land wurde nass, das Hochmoor wuchs, der Boden trug keinen Menschen mehr —
+und zwar in Wellen, messbar als Bauspitzen, über rund 500 Wege allein in
+Niedersachsen. Damit gibt es einen vierten Antwortkandidaten auf die Titelfrage
+„and why", der weder Handel noch Kult noch Militär ist.
+
+**Bildbare Szenen:** eine Sphagnum-Kuppel, die sich mehrere Meter über das
+Umland wölbt und ihr Wasser nur aus Regen bezieht · derselbe Torfbagger, der
+die Wege heute zerstört, nachdem er sie 4.500 Jahre konserviert hat.
+
+### Straßenstaat vor Rom — vier außereuropäische Befunde
+
+| Fund | Gemessenes | Quelle |
+|---|---|---|
+| **Qin-Zhidao, China** | Baubeginn **212 v. Chr.** unter Meng Tian, Gesamtlänge **über 700 km**. Abschnitt Kreis Fu: 125 km, Fahrbahn **in der Regel 30–40 m breit, breiteste Stelle 58 m**, darin große Mengen einander überlagernder Wagenspuren und Fußabdrücke, an Fluss-, Berg- und Grabenseiten Stampflehm-Böschungen. Kreis Zhidan: 105 km, breiteste erhaltene Fahrbahn 50 m, schmalste 5 m. Kreis Huangling: 60 km, Unterbau 10–60 m, Reste von **6 m hohen Signaltürmen**, 6 Passeinschnitte, 3 Militärstationen, 1 Poststation. Zweck laut Quelle umstritten: Inspektionsreisen des Kaisers, Truppenverlegung oder allgemeiner Verkehrsweg. | [秦直道 (chinesische Wikipedia)](https://zh.wikipedia.org/wiki/%E7%A7%A6%E7%9B%B4%E9%81%93), von mir im Original gegengelesen; Routenstreit: [10.1007/s11462-011-0132-1](https://doi.org/10.1007/s11462-011-0132-1) |
+| **Assyrisches Reichsstraßennetz** | Das Netz heißt **hūl šarri** („king's road") und „might originally have grown from **routes used by the military** during campaigns". Größte Ausbauphase zwischen Salmanassar III. und Tiglat-Pileser III. (859–727 v. Chr.). Relaissystem **kalliu**, von den Assyrern erfunden: jeder Reiter nur ein Teilstück, Übergabe an der Relaisstation an den nächsten mit **frischem Maultierpaar**. Wörtlich: die Übermittlungsgeschwindigkeit amtlicher Nachrichten wurde im Nahen Osten „not surpassed … until the 19th century" — konkret bis zum Osmanischen Reich 1865, **fast 2.500 Jahre später**. | [Neo-Assyrian Empire](https://en.wikipedia.org/wiki/Neo-Assyrian_Empire) |
+| **Persische Königsstraße, Zahlen** | Susa–Sardes **1.677 Meilen (2.699 km)**, beritten in **neun Tagen**, zu Fuß in **neunzig** — Faktor 10. **111 Poststationen** mit Vorrat an frischen Pferden, Kuriere „the empire's **pirradazis**", Relaissystem Angarium; die Quelle nennt die Straße „primarily as a **post road**". Weil die Trasse weder die kürzeste noch die leichteste Verbindung ist, sondern durch das alte assyrische Kernland führt, halten Archäologen die westlichsten Abschnitte für ursprünglich **assyrisch**. Der bei Gordion gefundene 6,25 m breite Kiesbelag in Steinbordsteinfassung ist laut Quelle eine **spätere römische** Verbesserung. | [Royal Road](https://en.wikipedia.org/wiki/Royal_Road) |
+| **Indus-Kultur, Stadtstraße** | Reifephase **2600–1900 v. Chr.** Wörtlich: „drains from houses were connected to wider **public drain laid along the main streets**. The drains **had holes at regular intervals which were used for cleaning and inspection**." Abwasser aus Obergeschossen lief durch geschlossene Terrakottarohre oder offene Rinnen in die Straßenkanäle; Hausabgänge über Ziegelrohre in gemeinsame Kanäle und Sickergruben, die periodisch geleert wurden — der Feststoff möglicherweise als Dünger. | [Sanitation of the Indus Valley Civilisation](https://en.wikipedia.org/wiki/Sanitation_of_the_Indus_Valley_Civilisation) |
+
+**Was daran für F11 zählt:** Das Paket, das im Schulbild Rom gehört —
+Staatsstraße plus Relaisstationen plus Kurierdienst — ist in Mesopotamien rund
+tausend Jahre älter, und sein belegter Ursprung sind **Marschrouten des
+Heeres**. Die Perser haben es geerbt. Und der Zhidao liefert das schärfste
+Maß gegen A1: **30–40 m Regelbreite** ist ein Vielfaches jeder römischen
+Fahrbahn, gebaut ab 212 v. Chr.
+
+### Zwei Relativierungen am eigenen Material
+
+**1. Der Superlativ bei Kandidat 2 hält der Fachliteratur nicht stand.** Die
+Crossref-Recherche fand **keinen** begutachteten Treffer, der die Formel
+„älteste gepflasterte Straße der Welt" für Widan el-Faras als Fachbegriff
+verwendet — die Literatur spricht neutral von *quarry road*. Schwerer wiegt der
+Befund von Bloxam & Storemyr: Der hohe Wasserstand des Moeris-Sees während der
+4. und 5. Dynastie ermöglichte es, mittelgroße Basaltblöcke „**largely via
+water**" zu den Pyramidenbaustellen zu bringen, „thus avoiding lengthy and
+difficult carriage overland". Die Straße war also nicht der Transportweg,
+sondern nur dessen **kurzes, schwieriges Landstück** — und die Ausbeutung war
+saisonal, „campaign-like". Für ein Skript heißt das: Kandidat 2 trägt als Bild
+(Baustellenzufahrt statt Marktweg), aber der Superlativ ist zu streichen.
+[10.1177/030751330208800103](https://doi.org/10.1177/030751330208800103)
+
+**2. Auch Roms erste große Straße war keine Handelsstraße.** Wörtlich zur Via
+Appia: Appius Claudius Caecus „during the Samnite Wars, began and completed the
+first section as a **military road to the south** in 312 BC". A2 bricht damit
+nicht nur an den exotischen Fällen, sondern am Referenzbeispiel selbst — das
+ist der billigste verfügbare Widerspruch, weil er kein fremdes Fundmaterial
+braucht. [Appian Way](https://en.wikipedia.org/wiki/Appian_Way)
+
+### Chaco — ein Befund von 2025, der den Streit zuspitzt
+
+Weiner, Friedman & Stein legen neue Lidar- und Geländedokumentation zum **Gasco
+Site** südlich des Chaco Canyon vor. Aus dem Abstract: Die Straßen sind
+„**monumental roads**" des 9. bis 13. Jahrhunderts; die Gasco Road ist
+„substantially longer than previously believed" und bildet Fluchten **zwischen
+natürlichen Quellen** sowie auf den **Sonnenaufgang zur Wintersonnenwende über
+dem Mount Taylor**, einem bei heutigen indigenen Gemeinschaften heiligen Berg.
+Dazu kommt: Die Trassen verlaufen stellenweise **parallel neben sich selbst**.
+[10.15184/aqy.2025.4](https://doi.org/10.15184/aqy.2025.4)
+
+Wie offen die Funktionsfrage ist, zeigt die Literaturlage selbst: R. G. Vivian
+brauchte 1997 **zwei getrennte Aufsätze** im selben Heft der *KIVA* —
+[Chacoan Roads: Morphology](https://doi.org/10.1080/00231940.1997.11758345)
+(S. 7–34) und
+[Chacoan Roads: Function](https://doi.org/10.1080/00231940.1997.11758346)
+(S. 35–67). Und die Crossref-Recherche fand **kein einziges** begutachtetes
+Paper, das den Chaco-Straßen einen Handelszweck als gesicherte Hauptfunktion
+zuschreibt. Ergänzend diskutiert Weinig 2016 ernsthaft **„Prehistoric Rolling
+Roads?"** — die Trasse als Voraussetzung dafür, schwere Stämme überhaupt
+bewegen zu können, ohne Rad und Achse.
+[10.1080/00231940.2015.1101918](https://doi.org/10.1080/00231940.2015.1101918)
+
+**Bildbare Szenen:** zwei Straßen, die parallel nebeneinander dasselbe Ziel
+ansteuern · eine Trasse, deren Richtung von einem Sonnenaufgang bestimmt wird
+und nicht vom kürzesten Weg · ein Fachaufsatz von 1997, der Form und Zweck
+derselben Straße in zwei Hefte trennen muss.
+
+---
+
 ## Schritt 3 — Konkrete Szenen zu den stärksten Kandidaten
 
 Nur Sichtbares: Orte, Maße, Materialien, Zahlen, Fundstücke.
@@ -346,15 +446,18 @@ Funden das dichteste Detailmaterial pro Meter liefert.
 
 | Detail | Wert | Quelle |
 |---|---|---|
-| Datierung | **3807 v. Chr.**, jahrgenau dendrochronologisch | [Sweet Track](https://en.wikipedia.org/wiki/Sweet_Track) |
+| Datierung | **3807 oder 3806 v. Chr.**, dendrochronologisch — der Artikel schreibt in der Einleitung „built in 3807 BC", im Abschnitt *Construction* aber „Built in **3807 or 3806** BC". Eine Winterfällung überspannt zwei Kalenderjahre: präzise auf die Fällsaison, nicht auf ein Kalenderjahr | [Sweet Track](https://en.wikipedia.org/wiki/Sweet_Track) |
 | Strecke | rund **1.800 m** von einer Insel bei Westhay zu einem Höhenrücken bei Shapwick | ebenda |
 | Bohlen | Eiche, bis **40 cm breit**, 3 m lang, **unter 5 cm dick** | ebenda |
 | Herkunft des Holzes | Bäume **bis 400 Jahre alt**, 1 m Durchmesser | ebenda |
 | Werkzeug | gefällt und gespalten **nur mit Steinbeilen, Holzkeilen und Schlegeln** | ebenda |
 | Unterbau | über Kreuz schräg in den Torf getriebene Pflöcke aus Esche, Eiche und Linde | ebenda |
+| Längsrahmen | Rundhölzer aus Hasel und Erle, bis **6,1 m lang** und 7,6 cm dick; die Pflöcke wurden schräg darüber in den Torf getrieben, dann **Kerben in die Bohlen geschnitten** — Steckverbindung, keine Nagelung | ebenda |
+| Holzmasse | rund **200.000 kg** Bauholz; Coles schätzt, dass **zehn Männer** den Steg nach Antransport an einem Tag zusammensetzen konnten — die Teile kamen vorgefertigt an | ebenda |
+| Waldbewirtschaftung | der Bestand wurde „for at least **120 years**" bewirtschaftet; Länge, Geradheit und Astfreiheit der Pflöcke sprechen für **Niederwald** (coppiced woodland) | ebenda |
 | Nutzungsdauer | **rund zehn Jahre**, dann durch steigendes Wasser aufgegeben | ebenda |
-| Vorgänger | [Post Track](https://en.wikipedia.org/wiki/Post_Track), 3838 v. Chr. — 30 Jahre älter, dieselbe Trasse | ebenda |
-| Funde entlang der Trasse | Beilklinge aus **Jadeitit**, Paddel, Pfeilschäfte, Teile von vier Haselbogen, Kamm, Löffelfragment | ebenda |
+| Vorgänger | [Post Track](https://en.wikipedia.org/wiki/Post_Track), „around 3838 BCE" — 30 Jahre älter, dieselbe Trasse; dessen Datierung gilt als erschwert, weil Planken später im Sweet Track **wiederverwendet** wurden | ebenda |
+| Funde entlang der Trasse | Beilklinge aus **Jadeitit** (Torf ringsum auf ca. 3200 v. Chr. datiert, also rund 600 Jahre jünger als der Weg), Paddel, Pfeilschäfte, Teile von vier Haselbogen, Kamm, Löffelfragment | ebenda |
 
 **Warum das trägt:** Der volle Ingenieursaufwand — planmäßig bewirtschafteter
 Wald, vorgefertigte Bauteile, Steckverbindungen statt Nagelung — steckt in
@@ -364,11 +467,19 @@ fahrzeuguntauglich und trotzdem ein Bauwerk.
 
 **Bildbare Szenen:** eine Eichenbohle, die breiter ist als der Weg, auf dem
 sie liegt · ein Steinbeil an einem Baum von 1 m Durchmesser · ein
-Jadeitit-Beil im Torf, 600 Jahre jünger als der Weg darunter.
+Jadeitit-Beil im Torf, 600 Jahre jünger als der Weg darunter · zehn Männer,
+die an einem Tag 200 Tonnen vorgefertigtes Holz zusammenstecken.
 
-**Vorbehalt:** Die Angabe „rund 200.000 kg verbautes Holz" und Coles' Schätzung
-„zehn Männer an einem Tag" stammen aus der Agentenrecherche und stehen nicht in
-dem Abschnitt, den ich gegengelesen habe — vor Verwendung prüfen.
+**Vorbehalt — hier ist ein Superlativ gekippt:** Der Artikel nennt den Sweet
+Track ausdrücklich nur die **zweitälteste** Bohlenbahn der Britischen Inseln
+und schreibt: „This dating led to claims that the Sweet Track was the oldest
+roadway in the world, **until the discovery in 2009** of a 6,000-year-old
+trackway built in **4100 BC, in Plumstead**, near Belmarsh prison." Für den
+Bericht heißt das zweierlei: Der Sweet Track darf nicht als ältester Weg
+verkauft werden — und der Plumstead-Fund von 4100 v. Chr. ist ein weiterer
+Kandidat, den diese Recherche nicht erfasst hat. Kandidat 1 (Campemoor,
+4614–4540 v. Chr.) bleibt davon unberührt, ist aber jetzt der einzige Fund im
+Bericht, der diesen Rang noch beansprucht.
 
 ---
 
@@ -431,17 +542,30 @@ Kein Skriptvorschlag, nur die Größen, die sich aus den Messwerten ergeben
 ## Was diese Recherche nicht leistet
 
 - **Prüfstand der Funde.** Die Recherche lief zweigleisig: eigene Abrufe und
-  sechs parallele Rechercheagenten. Bei der ersten Fassung stand eine
-  Wikipedia-Abrufsperre (HTTP 429) im Weg; **die fünf damals offenen Punkte —
-  Babylon, Chaco-Maße, Wittemoor, Corlea, Unas — sind inzwischen von mir
-  Zeile für Zeile in der Quelle nachgelesen** (2026-08-13) und im Text mit
-  „selbst gegengelesen" bzw. „nachgeprüft" gekennzeichnet. Dasselbe gilt für
-  Sweet Track, Diolkos und die Kandidaten 1–3. **Nicht** selbst gegengelesen
-  und entsprechend markiert sind: El Mirador (Maße), die Steinwalze auf dem
-  Sacbe, der römische Schichtaufbau/Vitruv-Befund, die Cart ruts von Malta
-  sowie zwei Detailangaben zum Sweet Track (Holzmasse, Coles' Bauzeit-Schätzung).
+  sechs parallele Rechercheagenten, die inzwischen **alle sechs** geliefert
+  haben. Bei der ersten Fassung stand eine Wikipedia-Abrufsperre (HTTP 429) im
+  Weg; **die fünf damals offenen Punkte — Babylon, Chaco-Maße, Wittemoor,
+  Corlea, Unas — sind inzwischen von mir Zeile für Zeile in der Quelle
+  nachgelesen** (2026-08-13) und im Text entsprechend gekennzeichnet. Ebenfalls
+  selbst gegengelesen: Sweet Track, Diolkos, Kandidaten 1–3, der gesamte
+  Nachtrag (Zhidao im chinesischen Original, Assyrien, Königsstraße, Indus, Via
+  Appia) sowie **alle 18 im Bericht genannten DOIs**, jeweils einzeln über
+  `api.crossref.org` auf Titel, Journal, Jahr, Band und Seiten geprüft — alle
+  18 lösen auf, keiner ist tot; bei vier davon zusätzlich das hinterlegte
+  Abstract. **Nicht** selbst gegengelesen
+  und im Text einzeln markiert sind: El Mirador (Maße), die Steinwalze auf dem
+  Sacbe, der römische Schichtaufbau/Vitruv-Befund, die Cart ruts von Malta,
+  die Detailzeilen zum Qhapaq Ñan sowie zwei Angaben zum Sweet Track
+  (Holzmasse, Coles' Bauzeit-Schätzung).
+- **Ein Agentenbefund wurde verworfen.** Der Ausschnitt zur Indus-Kanalisation
+  enthielt eine Angabe zu abgedeckten Sammelkanälen, die ich im Artikeltext
+  nicht wiederfinden konnte; übernommen ist nur, was dort wörtlich steht.
 - **Keine Vollständigkeit.** Gesucht wurde entlang dreier gesetzter Annahmen.
   Straßen, die keiner davon widersprechen, sind systematisch unterrepräsentiert.
+  Eine konkrete Lücke ist beim Gegenlesen aufgefallen: der **2009 entdeckte
+  Bohlenweg in Plumstead (London), datiert auf 4100 v. Chr.** — er taucht in
+  keiner der Agentenlieferungen als eigener Fund auf, sondern nur als Nebensatz
+  im Sweet-Track-Artikel. Er wäre der nächste Rechercheschritt.
 - **Wikipedia als Hauptquelle.** Die Crossref-Treffer belegen, dass es zu jedem
   Kandidaten begutachtete Literatur gibt, aber die **Volltexte wurden nicht
   gelesen** — sie liegen hinter Bezahlschranken. Geprüft ist jeweils, dass die
@@ -464,3 +588,33 @@ Kein Skriptvorschlag, nur die Größen, die sich aus den Messwerten ergeben
 |---|---|
 | `recherche/daten/struktur_vorbilder.py` | Strukturmessskript (Kernfrage, Antwort, erste Tatsache, Themenwechsel) |
 | `recherche/daten/struktur_vorbilder.json` | Messwerte der drei Vorbildvideos |
+
+### Begutachtete Literatur, DOI-geprüft
+
+Alle 18 DOIs am 2026-08-13 einzeln über `api.crossref.org` abgefragt; Titel,
+Journal, Jahr, Band und Seiten stimmen jeweils überein, keiner ist tot. Die
+Volltexte sind **nicht** gelesen — geprüft ist die Existenz und die Passung
+von Titel und Jahr zur Behauptung. Bei Taylor & Francis (KIVA), SAGE (JEA),
+JSTOR und Oxford antwortet die Verlagsseite auf automatisierte Abrufe mit
+HTTP 403; im Browser lösen die Links normal auf.
+
+| Jahr | Arbeit | Journal | DOI |
+|---|---|---|---|
+| 1960 | Godwin: *Prehistoric wooden trackways of the Somerset Levels* | PPS 26: 1–36 | [10.1017/s0079497x00016212](https://doi.org/10.1017/s0079497x00016212) |
+| 1995 | Harrell & Bown: *An Old Kingdom Basalt Quarry at Widan el-Faras* | JARCE 32 | [10.2307/40000832](https://doi.org/10.2307/40000832) |
+| 1997 | Vivian: *Chacoan Roads: Morphology* | KIVA 63(1): 7–34 | [10.1080/00231940.1997.11758345](https://doi.org/10.1080/00231940.1997.11758345) |
+| 1997 | Vivian: *Chacoan Roads: Function* | KIVA 63(1): 35–67 | [10.1080/00231940.1997.11758346](https://doi.org/10.1080/00231940.1997.11758346) |
+| 1997 | *The largest ship trackway in ancient times: the Diolkos* | IJNA | [10.1111/j.1095-9270.1997.tb01322.x](https://doi.org/10.1111/j.1095-9270.1997.tb01322.x) |
+| 2000 | Brunning u. a.: *Saving the Sweet Track* | CMAS 4(1): 3–20 | [10.1179/135050300793138417](https://doi.org/10.1179/135050300793138417) |
+| 2002 | Bloxam & Storemyr: *Old Kingdom Basalt Quarrying at Widan el-Faras* | JEA 88(1): 23–36 | [10.1177/030751330208800103](https://doi.org/10.1177/030751330208800103) |
+| 2008 | *The cart ruts of Malta: an applied geomorphology approach* | Antiquity | [10.1017/S0003598X00097787](https://doi.org/10.1017/S0003598X00097787) |
+| 2011 | *The Diolkos of Corinth* | AJA 115(4): 549 | [10.3764/aja.115.4.0549](https://doi.org/10.3764/aja.115.4.0549) |
+| 2011 | *Debating the Route of the Qin Direct Road (Zhidao)* | Front. Hist. China 6: 323–346 | [10.1007/s11462-011-0132-1](https://doi.org/10.1007/s11462-011-0132-1) |
+| 2013 | Gonzalez & Stanton: *Evaluating the Yaxuna-Coba Sacbe* | Ancient Mesoamerica 24(1) | [10.1017/s0956536113000023](https://doi.org/10.1017/s0956536113000023) |
+| 2016 | *The Architecture of Ritual and Polity at Chaco Canyon* | Univ. Press of Florida | [10.5744/florida/9780813062785.003.0008](https://doi.org/10.5744/florida/9780813062785.003.0008) |
+| 2016 | Weinig: *Construction Timber Transport to Chaco Canyon: Prehistoric Rolling Roads?* | KIVA 83(1): 66–85 | [10.1080/00231940.2015.1101918](https://doi.org/10.1080/00231940.2015.1101918) |
+| 2017 | Friedman, Sofaer & Weiner: *Remote Sensing of Chaco Roads Revisited* | AAP 5(4): 365–381 | [10.1017/aap.2017.25](https://doi.org/10.1017/aap.2017.25) |
+| 2020 | Perales: *The Archaeology of Qhapaq Ñan* | Oxford Res. Encyclopedia | [10.1093/acrefore/9780190854584.013.480](https://doi.org/10.1093/acrefore/9780190854584.013.480) |
+| 2023 | Colson u. a.: *The Wooden Trackway PR6, Aschener Bog* | ISPRS Annals X-M-1: 41–46 | [10.5194/isprs-annals-x-m-1-2023-41-2023](https://doi.org/10.5194/isprs-annals-x-m-1-2023-41-2023) |
+| 2025 | Weiner, Friedman & Stein: *Parallel roads, solstice and sacred geography at the Gasco Site* | Antiquity 99(404): 500–516 | [10.15184/aqy.2025.4](https://doi.org/10.15184/aqy.2025.4) |
+| 2026 | Klein u. a.: *The Wooden Trackway Pr VII at Diepholz* | J. Neolithic Archaeology | [10.12766/jna.2026.1](https://doi.org/10.12766/jna.2026.1) |
