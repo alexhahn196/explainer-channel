@@ -30,6 +30,12 @@ verwendbar ist:
 | **Kandidat 2**, Widan el-Faras | „11,5 km, älteste gepflasterte Straße der Welt", [gesichert] | **[umstritten]**. Drei Artikel nennen 11 / 11,5 / 12 km. Der Superlativ hält nur als „älteste erhaltene gepflasterte **Überlandstraße**" — dieselbe Enzyklopädie datiert gepflasterte **Stadt**straßen in Ur und im Industal auf etwa 4000 v. Chr. |
 | **Sweet Track** | „3807 v. Chr., jahrgenau" | „**3807 oder 3806** v. Chr."; die Quelle führt ihn nur als **zweitälteste** Bohlenbahn der Britischen Inseln, seit 2009 übertroffen von einem Weg in Plumstead (4100 v. Chr.) |
 | **Klima als Bauherr** (Nachtrag) | „per Bayes-Modell auf 2450–2440 v. Chr. datiert", [gesichert] | **[umstritten]**. 2450–2440 ist das **Fälldatum** bei 68,3 %; der modellierte **Bau** liegt bei 2449–2347 v. Chr. (95,4 %). Die Autoren formulieren durchgehend hypothetisch und nennen einen zweiten, gleichrangigen Faktor. Handel kommt in der Arbeit **gar nicht vor** — der Gegensatz „Klima statt Handel" wäre hineingelegt |
+| **Kandidat 3**, Qhapaq Ñan | „rund 40.000 km, war gepflastert", [gesichert] | **[umstritten]** für die Zahlen. Die Quelle sagt „The exact extent … is **not known**", Spanne **23.000–60.000 km** (Faktor 2,6). „**Not all** the roads were paved"; Regelbreite **1–4 m**, die 35 m sind ein Einzelmaximum; Teile stammen von **Wari und Tiwanaku**; nur ~25 % noch sichtbar. Die Radlosigkeit bleibt [gesichert] |
+| **Kandidat 4**, Babylon | Überschrift: „wurde **einmal im Jahr benutzt**" | Falsch zugespitzt. Jährlich war der **Umzug** („Once per year … used for a New Year's procession"), nicht die Nutzung — die Straße war Hauptachse „from the Euphrates through the temple district and palaces". Die Maße halten unverändert |
+| **Kandidat 5**, Chaco | „bis 97 km lang" | Steht so nur bei Wikipedia. Die Fachquelle nennt Great North Road **50,5 km**, South Road 55 km. Auch „1000–1100 n. Chr." steht nicht im zitierten Artikel |
+| **Malta, Cart ruts** | „erodiert, nicht gebaut — Straßenbau ohne Bauherrn" | **Mein Fehler.** Ursache ist **menschlicher Fahrverkehr**: Holzräder zweirädriger Karren (1,40 m Spurweite) schneiden sich in den nassen Kalkstein. Die Quelle nennt sie „tracks **carved in the rock**" |
+| **Römischer Schichtaufbau** | „aus Vitruvs Fußbodenanleitung rekonstruiert, nicht aus einer Grabung" | **Mein Fehler.** Die Quelle nennt **drei** Belegquellen, die **erste** sind die Grabungsbefunde. Und die Karthager-Zuschreibung stammt von **Isidor von Sevilla** (um 600 n. Chr.), nicht „von den Römern selbst" |
+| **Weitere Detailkorrekturen** | — | Unas: 2,65 m ist der **Innenkorridor**, das Bauwerk misst rund 6,7 m · Sacbe-Steinwalze: „**wurde gefunden**", Verbleib undokumentiert · El Mirador: Dammstraßen sind **gar nicht numerisch datiert** · Diolkos: absichtliche Spurrillen nur im **Ostabschnitt** Konsens, transportiert wurden überwiegend **kleinere Boote** · Sweet Track: „nur ein Mensch hintereinander" ist erschlossen, nicht belegt |
 | **Wittemoor** | „an der Bachquerung **standen** zwei Figuren" | Gefunden wurden **sechs** Figuren, alle **flach niedergelegt**; die aufrechte Aufstellung ist erschlossen, nicht beobachtet. Die Deutung als Kultort ist Interpretation |
 
 **Die eine Regel, die daraus folgt:** In diesem Bericht steht **kein einziger
@@ -196,9 +202,10 @@ belegt, Länge und Superlativ nicht.
 
 ### Kandidat 3 — Das größte Straßennetz der Antike wurde von einer Kultur ohne Rad gebaut
 
-**Behauptung:** Das Inka-Straßennetz (Qhapaq Ñan) umfasste rund 40.000 km,
-war gepflastert, hatte Treppen, Brücken und Entwässerung — und wurde von einer
-Kultur ohne Rad und ohne Zugtiere gebaut und benutzt.
+**Behauptung:** Das Inka-Straßennetz (Qhapaq Ñan) umfasste **geschätzt** rund
+40.000 km, war **wo nötig** gepflastert, hatte Treppen, Brücken und
+Entwässerung — und wurde von einer Kultur ohne Rad und ohne Zugtiere gebaut und
+benutzt.
 
 **Quellen:**
 - [Inca road system (Wikipedia)](https://en.wikipedia.org/wiki/Inca_road_system)
@@ -215,14 +222,31 @@ vollständig. Ein Netz von 40.000 km — mehr als der Erdumfang — für Mensche
 Fuß und Lamas als Lastträger. **Treppen** in einer Straße sind der sichtbarste
 Beweis: Eine Treppe ist für ein Rad ein Hindernis, für einen Läufer nicht.
 
-**Forschungsstand:** [gesichert] für Existenz, Bauweise und Ausdehnung; die
-Gesamtlänge variiert je nach Zählweise zwischen etwa 30.000 und 60.000 km.
+**Forschungsstand — nach Gegenprüfung [umstritten] für die Zahlen,
+[gesichert] für die Radlosigkeit:**
+
+- **Die Länge ist ausdrücklich unbekannt.** Wörtlich: „The exact extent of the
+  road network is **not known**: travelers and scholars proposed various
+  lengths, spanning from **23.000** … to **40.000** … to **60.000** km."
+  Zwischen Minimum und Maximum liegt der Faktor **2,6**. 40.000 km ist ein
+  Wert unter dreien, kein Messergebnis.
+- **„Gepflastert" gilt nicht flächendeckend.** „Nevertheless, **not all** the
+  roads were paved; in the Andean puna and in the coastal deserts the road was
+  usually made using packed earth, sand, or simply covering grassland with
+  soil or sand."
+- **Die 35 m sind ein Einzelmaximum**, kein Regelmaß — die übliche
+  Fahrbahnbreite liegt bei **1 bis 4 m**. Wer 35 m zeigt, muss dazusagen, dass
+  dort nahe Verwaltungszentren zwei oder drei Straßen parallel liefen.
+- **Nicht alles ist inkaisch.** „Part of the road network was built by cultures
+  that **precede** the Inca Empire, notably the **Wari** culture … and the
+  **Tiwanaku** culture in Bolivia."
+- **Nur etwa 25 %** des Netzes sind heute noch sichtbar.
 
 **Widerspricht:** A3 vollständig, A1 teilweise (Größenordnung).
 
 ---
 
-### Kandidat 4 — Eine der aufwendigsten Straßen der Antike wurde einmal im Jahr benutzt
+### Kandidat 4 — Die aufwendigste Ausstattung galt einem Umzug, der einmal im Jahr stattfand
 
 **Behauptung:** Babylons Prozessionsstraße war stellenweise rund 20 m breit,
 mit Steinplatten in einem Bett aus Bitumen gepflastert und von etwa 120
@@ -237,11 +261,21 @@ Neujahrsumzug, bei dem die Götterstatuen durch das Ischtar-Tor getragen wurden.
   were paraded through the gate and down the Processional Way"; Bau „c. 569 BC
   by order of King Nebuchadnezzar II"
 
-**Warum das überrascht:** Der Aufwand steht in keinem Verhältnis zur Nutzung.
-Eine zwanzig Meter breite, mit Naturasphalt verlegte Steinstraße, gesäumt von
-120 Reliefs aus glasierten Ziegeln — für eine Prozession im Jahr. Das ist das
-klarste Gegenbeispiel zur Handelserklärung: Hier ist die Straße selbst das
-Bauwerk, nicht der Weg zu einem Ziel.
+**Warum das überrascht:** Der **Ausstattungs**aufwand steht in keinem
+Verhältnis zum Anlass. Eine zwanzig Meter breite, mit Naturasphalt verlegte
+Steinstraße, gesäumt von 120 Reliefs aus glasierten Ziegeln — und der Anlass,
+für den die Quelle sie ausdrücklich nennt, findet **einmal im Jahr** statt:
+„**Once per year**, the Ishtar Gate and connecting Processional Way were used
+for a New Year's procession."
+
+**Aber nicht überziehen — Ergebnis der Gegenprüfung:** Die Straße war nicht
+*nur* an diesem Tag in Gebrauch. Dieselbe Quelle beschreibt sie als Hauptachse
+der Stadt: „This street **ran from the Euphrates through the temple district
+and palaces and onto the Ishtar Gate**." Belegt ist also: Der **Umzug** war
+jährlich, nicht die **Nutzung**. Ebenfalls sauber trennen: „the rituals
+surrounding this holiday lasted **twelve days**" — zwölf Tage dauerten die
+Festrituale, nicht der Umzug; der eigentliche Umzug fällt laut dem
+Akitu-Artikel auf **einen** Tag (den neunten).
 
 **Forschungsstand:** [gesichert]. Breite und Bitumenbettung sind
 nachgeprüft (2026-08-13): „The Processional Way was paved with large stone
@@ -257,9 +291,13 @@ equinox" — heute etwa der 20./21. März.
 ### Kandidat 5 — Ein neun Meter breites Straßennetz, gebaut von Menschen ohne Rad — und niemand weiß, wozu
 
 **Behauptung:** Die Straßen des Chaco Canyon (etwa 900–1100 n. Chr.) sind bis
-zu 9,1 m breit und bis zu 97 km lang, verlaufen überwiegend schnurgerade und
-überwinden Felsstufen mit Treppen statt mit Umwegen — gebaut von einer
-Gesellschaft ohne Rad und ohne Zugtiere, deren Zweck bis heute umstritten ist.
+zu **9,1 m breit** und in Einzelfällen über **50 km** lang, verlaufen
+überwiegend schnurgerade und überwinden Felsstufen mit Treppen statt mit
+Umwegen — gebaut von einer Gesellschaft ohne Rad und ohne Zugtiere, deren Zweck
+bis heute umstritten ist. *(Die verbreitete Angabe „bis zu 97 km" steht nur bei
+Wikipedia; die begutachtete Fachquelle nennt Great North Road 50,5 km und South
+Road 55 km. Auch die Datierung 900–1100 stammt aus einem anderen Artikel als
+dem hier zitierten.)*
 
 **Quellen:**
 - [Roads of Chaco (Wikipedia)](https://en.wikipedia.org/wiki/Roads_of_Chaco) —
@@ -293,17 +331,17 @@ Genau diese Offenheit ist der Wert des Kandidaten.
 
 | Fund | Kern | Quelle | Warum nicht Top 5 |
 |---|---|---|---|
-| **Diolkos, Korinth** | gepflasterte Schleppbahn mit Spurrillen im Abstand von 1,60 m, Fahrbahn 3,4–6 m breit, 6–8,5 km lang, 1.100 m archäologisch nachgewiesen — **Schiffe fuhren über Land** | [Diolkos](https://en.wikipedia.org/wiki/Diolkos); Crossref [10.1111/j.1095-9270.1997.tb01322.x](https://doi.org/10.1111/j.1095-9270.1997.tb01322.x), [10.3764/aja.115.4.0549](https://doi.org/10.3764/aja.115.4.0549) | starkes Bild, aber Bauzeit **[umstritten]** — die antike Literatur nennt kein Baujahr; der Artikel datiert den Betrieb „from c. 600 BC until the middle of the first century AD" |
+| **Diolkos, Korinth** | gepflasterte Schleppbahn mit Rillen im Abstand von **1,60 m**, Fahrbahn 3,4–6 m breit, 6–8,5 km lang, 1.100 m archäologisch nachgewiesen — **Fahrzeuge wurden über Land gezogen**. **Zwei Einschränkungen:** Dass die Rillen absichtlich eingearbeitete Spurrillen sind, ist nur für den **östlichen** Abschnitt Konsens; die des archäologisch erfassten **westlichen** Abschnitts deuten Raepsaet/Tolley 1993 und Werner 1997 teils als Abnutzung oder finden sie gar nicht. Und „ganze Schiffe" ist überzogen: Angenommen wird überwiegend der Transport **kleinerer Boote**, ggf. Schiff und Ladung getrennt | [Diolkos](https://en.wikipedia.org/wiki/Diolkos); Crossref [10.1111/j.1095-9270.1997.tb01322.x](https://doi.org/10.1111/j.1095-9270.1997.tb01322.x), [10.3764/aja.115.4.0549](https://doi.org/10.3764/aja.115.4.0549) | starkes Bild, aber Bauzeit **[umstritten]** — die antike Literatur nennt kein Baujahr; der Artikel datiert den Betrieb „from c. 600 BC until the middle of the first century AD" |
 | **Wittemoor, Bohlenweg XLII** | 135 v. Chr. dendrodatiert; an der Bachquerung **zwei geschnitzte Eichenfiguren** (männlich 105 cm, weiblich 95 cm, aus 3–7 cm dicken Eichenbrettern in Silhouette ausgesägt, gesichtslos), dazu ein **Torbogen aus Stangen** und je eine Feuerstelle an beiden Enden der Querung. **Wichtig für die Bebilderung:** Gefunden wurden insgesamt **sechs** Figuren, und alle lagen **flach niedergelegt** — die aufrechte Aufstellung ist aus Befestigungsspuren erschlossen (Mann in eine Bohle eingezapft, Frau auf einem kleinen Hügel), nicht beobachtet. Die vier übrigen Figuren lagen an schadhaften Stellen des Weges; die Quelle lässt offen, ob Warnmarkierung oder Kultobjekt | [Wittemoor timber trackway](https://en.wikipedia.org/wiki/Wittemoor_timber_trackway), selbst gegengelesen | **[Einzelbefund]** — ein Fundplatz, ein Ausgräber; die **Deutung** als Kultort ist Interpretation, nicht Befund (Steuer 2006 hält auch eine dekorative Funktion für möglich, [10.1515/9783110202809.69](https://doi.org/10.1515/9783110202809.69)) |
 | **Corlea Trackway, Irland** | Eichenbohlen 3–3,5 m lang und 15 cm dick auf Längsschwellen im Abstand von 1,2 m; Fällung Ende 148/Anfang 147 v. Chr., Bau in **einer einzigen Saison**; Raftery schätzt allein für die Bohlen **300 große Eichen bzw. tausend Wagenladungen**; im selben Moor 108 Moorwege auf 125 ha, nur **vier** davon für Radverkehr tauglich; binnen eines Jahrzehnts unter dem eigenen Gewicht versunken | [Corlea Trackway](https://en.wikipedia.org/wiki/Corlea_Trackway), selbst gegengelesen | Zweck **[umstritten]** — der Aufwand entspricht dem eines Kultmonuments („comparable to that used in the construction of ritual monuments such as barrows"). **Aber nicht überziehen:** Die zugespitzte Formel „nicht durch das Moor, sondern ins Moor" stammt von O'Sullivan und gilt im Original den **kleineren** Toghers; für Corlea selbst formuliert die Quelle additiv („may **also** have served … rather than **merely** to cross it"). Corlea 1 endete auf einer Insel, von der ein zweiter, ebenfalls rund 1 km langer Weg ans andere Moorufer führte; das Office of Public Works deutet die Anlage als Teil einer bedeutenden Wegeverbindung, möglicherweise zwischen dem Hill of Uisneach und Rathcroghan |
 | **Persische Königsstraße** | Susa–Sardis, „built to facilitate rapid communication" — Verwaltung und Nachrichtenwesen vor Handel | [Royal Road](https://en.wikipedia.org/wiki/Royal_Road) | widerspricht A2 sauber, aber weniger bildstark |
 | **Maya-Sacbeob** | über 100 km von Coba nach Yaxuna, erhöhte, weiß verputzte Wege ohne Rad | [Coba](https://en.wikipedia.org/wiki/Coba), [Sacbe](https://en.wikipedia.org/wiki/Sacbe); Crossref [10.1017/s0956536113000023](https://doi.org/10.1017/s0956536113000023) | inhaltlich nah an Kandidat 3 |
-| **Unas-Aufweg, Sakkara** | 720–750 m lang, aber nur 2,65 m breit; überdacht, mit einem **Lichtschlitz in der Decke**, der die Wandbilder beleuchtete — eine Straße für einen einzigen Toten, „among the longest constructed for any pyramid" und der besterhaltene Aufweg überhaupt | [Pyramid of Unas](https://en.wikipedia.org/wiki/Pyramid_of_Unas), selbst gegengelesen | eng verwandt mit Kandidat 2 (Bauwerk statt Verkehrsweg) |
+| **Unas-Aufweg, Sakkara** | 720–750 m lang, „among the longest constructed for any pyramid" und der besterhaltene Aufweg überhaupt. Der **Innenkorridor** ist nur **2,65 m** breit; die Wände sind 2,04 m dick, das Bauwerk also rund 6,7 m breit — nicht die 2,65 m als Straßenbreite ausgeben. Überdacht mit 0,45 m dicken Platten, die von beiden Wänden zur Mitte auskragten, aber **nicht geschlossen**: In einem Abschnitt blieb ein **Lichtschlitz** frei, durch den Tageslicht auf die bunt bemalten Wandreliefs fiel | [Pyramid of Unas](https://en.wikipedia.org/wiki/Pyramid_of_Unas), selbst gegengelesen | eng verwandt mit Kandidat 2 (Bauwerk statt Verkehrsweg) |
 | **Sweet Track, Somerset** | 3807 v. Chr. jahrgenau dendrodatiert, 1.800 m lang — und nur ein **Gehsteg für einen Menschen hintereinander** (Details unten) | [Sweet Track](https://en.wikipedia.org/wiki/Sweet_Track), selbst gegengelesen | inhaltlich nah an Kandidat 1, aber das jüngere Bauwerk |
-| **Römischer Schichtaufbau** | Der Vierschichtquerschnitt (statumen · rudus · nucleus · summa crusta) ist aus **Vitruvs Anleitung zum Fußbodenbau** rekonstruiert, nicht aus einer Grabung; gemessene römische Fahrbahnbreiten reichen von 1,1 m bis über 7,0 m; Ulpian unterscheidet drei Sorten, von denen nur eine gepflastert ist — der Vollausbau war die Ausnahme; Isidor von Sevilla schreibt die Technik den **Karthagern** zu | [Roman roads](https://en.wikipedia.org/wiki/Roman_roads) | starkes Gegenmaterial zu A1, aber ein Quellenkritik-Argument — schwerer zu bebildern als ein Fundort |
-| **Cart ruts, Malta** | bis 60 cm tief in den Fels geschnittene Doppelrillen im Abstand von 110–140 cm bei Misraħ Għar il-Kbir („Clapham Junction"); bei St. George's Bay laufen sie **ins Meer und unter Wasser weiter**; Mottershead 2008: nasser maltesischer Kalkstein verliert rund 80 % seiner Festigkeit — die Rillen sind **erodiert, nicht gebaut** | [Misraħ Għar il-Kbir](https://en.wikipedia.org/wiki/Misra%C4%A7_G%C4%A7ar_il-Kbir); Antiquity 2008, [10.1017/S0003598X00097787](https://doi.org/10.1017/S0003598X00097787) | Datierung völlig offen (Neolithikum bis Mittelalter) — als Aufhänger zu unsicher, als Bild stark |
-| **El Mirador, Guatemala** | Dammstraßen **20–50 m breit** und 2–6 m über dem Gelände, 300 v. Chr. bis 150 n. Chr.; 13 Dammstraßen, u. a. 12 km nach Nakbe und 20 km nach El Tintal | [El Mirador](https://en.wikipedia.org/wiki/El_Mirador) | von mir nicht gegengelesen — Maße aus der Agentenrecherche |
-| **Steinwalze auf dem Sacbe** | Auf dem Damm Coba–Yaxuna liegt eine **fünf Tonnen schwere Steinwalze** zum Verdichten der Oberfläche — in einer Kultur, die das Rad nur an Spielzeug kannte | [Sacbe](https://en.wikipedia.org/wiki/Sacbe) | von mir nicht gegengelesen — Angabe aus der Agentenrecherche |
+| **Römischer Schichtaufbau** | Ulpian unterscheidet drei Sorten Straße — *via terrena* (gestampfte Erde), *via glareata* (Kiesdecke), *via munita* (Steinpflaster); der Vollausbau war die Ausnahme, nicht die Regel. Gemessene römische Fahrbahnbreiten reichen von 1,1 m bis über 7,0 m — von einer Norm keine Spur. Und die Technik gilt als **entlehnt**: „According to **Isidore of Sevilla**, the Romans borrowed the knowledge of construction of viae munitae from the **Carthaginians**, though certainly inheriting some construction techniques from the **Etruscans**." | [Roman roads](https://en.wikipedia.org/wiki/Roman_roads), selbst gegengelesen | **Korrigiert:** Hier stand zunächst, der Vierschichtquerschnitt sei „aus Vitruvs Fußbodenanleitung rekonstruiert, nicht aus einer Grabung". Das ist falsch — die Quelle nennt **drei** Informationsquellen, und die **erste** sind die Grabungsbefunde („The many existing remains of viae publicae … sufficiently well preserved to show that the rules of construction were … minutely adhered to in practice"), Vitruv erst die zweite. Auch „die Römer selbst" ist falsch: Isidor von Sevilla schrieb rund 600 n. Chr. |
+| **Cart ruts, Malta** | bis **60 cm tiefe** Doppelrillen im mittleren Abstand von **110–140 cm** bei Misraħ Għar il-Kbir („Clapham Junction"); bei St. George's Bay laufen sie **ins Meer und unter Wasser weiter**. Mottershead u. a. 2008 erklären sie als **Verschleißspuren zweirädriger Karren mit 1,40 m Spurweite**: Bei Nässe verliert der Kalkstein „about **80 percent** of its strength", die Holzräder schneiden sich ein, und ab da zwingt die Rille jedes weitere Fahrzeug in dieselbe Bahn | [Misraħ Għar il-Kbir](https://en.wikipedia.org/wiki/Misra%C4%A7_G%C4%A7ar_il-Kbir); Antiquity 2008, [10.1017/S0003598X00097787](https://doi.org/10.1017/S0003598X00097787) | **Korrigiert:** Hier stand zunächst „erodiert, nicht gebaut — Straßenbau ohne Bauherrn". Falsch: Ursache ist **menschlicher Fahrverkehr**, nicht Natur, und die Quelle selbst nennt sie „tracks **carved in the rock**". Datierung völlig offen (Neolithikum bis Mittelalter) — als Aufhänger zu unsicher, als Bild stark |
+| **El Mirador, Guatemala** | Dammstraßen **20–50 m breit** und **2–6 m** über dem Gelände (so der Fließtext; die Einleitung desselben Artikels sagt abweichend 40 m breit und 2–5 m hoch); 13 Dammstraßen, u. a. 12 km nach Nakbe und 20 km nach El Tintal | [El Mirador](https://en.wikipedia.org/wiki/El_Mirador), selbst gegengelesen | **Datierung nicht verwendbar:** Die Quelle datiert die Dammstraßen **gar nicht numerisch**, nur qualitativ auf die spätere Mittel- und Spätpräklassik. „300 v. Chr. bis 150 n. Chr." wäre eine Verschmelzung — 300 v. Chr. bis zur Zeitenwende ist die **Blütezeit**, 150 n. Chr. das **Aufgabedatum** |
+| **Steinwalze auf dem Sacbe** | Auf dem Damm Coba–Yaxuna **wurde** eine **fünf Tonnen schwere Steinwalze** gefunden, die auf der Fahrbahnoberfläche lag; sie diente vermutlich dem Verdichten zu einer glatten Gehfläche — in einer Kultur, die das Rad nur an Spielzeug kannte | [Sacbe](https://en.wikipedia.org/wiki/Sacbe), selbst gegengelesen | **Nicht „liegt bis heute" schreiben:** Die Quelle steht im Fundbericht, der heutige Verbleib ist nirgends dokumentiert. Einzelfund |
 
 ---
 
@@ -503,7 +541,8 @@ Tempelboden in Gizeh als Zielpunkt einer 11,5-km-Zufahrt.
 | Länge einzelner Straßen | bis **97 km** (60 Meilen) | ebenda |
 | Bauweise | abgesenkte, abgeschabte Caliche-Betten, Ränder durch Erdwälle, Steine oder niedrige Mauern markiert | ebenda |
 | Verlauf | überwiegend schnurgerade; an Felsstufen **Steintreppen und Rampen statt Umwege** | ebenda |
-| Große Nordstraße | reicht 56 km über Pueblo Alto hinaus, teils **vier parallele Trassen nebeneinander** | ebenda |
+| Große Nordstraße | **Längenangaben gehen auseinander:** Wikipedia sagt „another 35 mi (**56 km**) past Pueblo Alto", die begutachtete Fachquelle dreimal **50,5 km** („from Chaco Culture National Historical Park to where it enters Kutz Canyon"). Für ein Skript die 50,5 km nehmen. Teils **vier parallele Trassen nebeneinander** | [Chaco Culture NHP](https://en.wikipedia.org/wiki/Chaco_Culture_National_Historical_Park); Friedman u. a. 2017, [10.1017/aap.2017.25](https://doi.org/10.1017/aap.2017.25) |
+| Längenangaben allgemein | Die „bis zu 97 km" stehen so nur bei Wikipedia. Die Fachquelle nennt konkret: Great North Road 50,5 km, **South Road 55 km**, Ah-shi-sle-pah Road 10 km, und für gerade Fluchten „in some instances up to 55 km" | Friedman u. a. 2017 |
 | Netz | sechs Straßensysteme verbinden **30 Außenposten** über 170.000 km² (65.000 Quadratmeilen) | ebenda |
 | Große Nordstraße, Deutung | „a pilgrimage route that modern-day Pueblo Indians believe to be an allusion to myths surrounding their arrival from the distant north" | ebenda |
 | Heutige Sichtbarkeit | Trassen, die in den 1980ern im Gelände erkennbar waren, sind heute praktisch unsichtbar; Lidar findet zusätzlich unbekannte Abschnitte | Friedman/Sofaer/Weiner 2017, [10.1017/aap.2017.25](https://doi.org/10.1017/aap.2017.25) |
@@ -578,9 +617,15 @@ Funden das dichteste Detailmaterial pro Meter liefert.
 
 **Warum das trägt:** Der volle Ingenieursaufwand — planmäßig bewirtschafteter
 Wald, vorgefertigte Bauteile, Steckverbindungen statt Nagelung — steckt in
-einer Konstruktion, auf der nur **ein Mensch hintereinander** gehen kann. Das
-ist der schärfste Einzelbeleg gegen A3: Hier ist die Straße per Bauart
-fahrzeuguntauglich und trotzdem ein Bauwerk.
+einer Konstruktion aus **einzeln aneinandergelegten Bohlen von bis zu 40 cm
+Breite**. Das ist der schärfste Einzelbeleg gegen A3: ein Bauwerk mit
+Ingenieurscharakter, dessen Lauffläche kaum breiter ist als eine Planke.
+
+*Formulierungsfalle:* Die Quelle nennt **keine Wegbreite** und sagt nirgends
+„nur für Fußgänger" — sie schreibt „**mainly** of planks of oak, laid
+end-to-end" und „**up to** 40 centimetres". „Nur ein Mensch hintereinander"
+wäre also erschlossen, nicht belegt. Belastbar sind die Bohlenmaße, nicht der
+Schluss daraus.
 
 **Bildbare Szenen:** eine Eichenbohle, die breiter ist als der Weg, auf dem
 sie liegt · ein Steinbeil an einem Baum von 1 m Durchmesser · ein
