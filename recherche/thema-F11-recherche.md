@@ -18,6 +18,24 @@
 
 ---
 
+## Was die Gegenprüfung geändert hat — bitte zuerst lesen
+
+Nach der ersten Fassung lief eine Prüfrunde, die jeden Hauptbefund gegen die
+Primärquelle gestellt hat. Vier Ergebnisse ändern, was von diesem Bericht
+verwendbar ist:
+
+| Betroffen | Vorher | Nach der Prüfung |
+|---|---|---|
+| **Kandidat 1**, Campemoor | „4614–4540 v. Chr., ältester Moorweg der Welt", [gesichert] | **[umstritten]**. Fünf Publikationsstellen nennen vier verschiedene Dendro-Spannen, die C14-Werte liegen 200 Jahre davor. Die begutachtete Fassung sagt „**one of** the oldest bog tracks known worldwide". Verwendbar: „Mitte 47. bis 46. Jh. v. Chr." |
+| **Kandidat 2**, Widan el-Faras | „11,5 km, älteste gepflasterte Straße der Welt", [gesichert] | **[umstritten]**. Drei Artikel nennen 11 / 11,5 / 12 km. Der Superlativ hält nur als „älteste erhaltene gepflasterte **Überlandstraße**" — dieselbe Enzyklopädie datiert gepflasterte **Stadt**straßen in Ur und im Industal auf etwa 4000 v. Chr. |
+| **Sweet Track** | „3807 v. Chr., jahrgenau" | „**3807 oder 3806** v. Chr."; die Quelle führt ihn nur als **zweitälteste** Bohlenbahn der Britischen Inseln, seit 2009 übertroffen von einem Weg in Plumstead (4100 v. Chr.) |
+| **Wittemoor** | „an der Bachquerung **standen** zwei Figuren" | Gefunden wurden **sechs** Figuren, alle **flach niedergelegt**; die aufrechte Aufstellung ist erschlossen, nicht beobachtet. Die Deutung als Kultort ist Interpretation |
+
+**Die eine Regel, die daraus folgt:** In diesem Bericht steht **kein einziger
+belastbarer Weltrekord**. Jede „älteste"-Formulierung ist eine
+Definitionsfrage oder hängt an der Erhaltungslage. Was trägt, sind die
+**Zeittiefen, die Maße und die Zwecke** — nicht die Ranglisten.
+
 ## Schritt 1 — Was der Zuschauer vermutlich glaubt
 
 Drei Annahmen, gegen die gezielt gesucht wurde. Sie sind gesetzt, nicht
@@ -140,9 +158,31 @@ Steinbruch, und ihre Fracht ist der Fußboden eines Totentempels. Dazu das
 Material: Sie ist unter anderem aus **versteinertem Holz** gebaut — die Straße
 selbst besteht aus Fossilien.
 
-**Forschungsstand:** [gesichert] für Existenz, Länge und Zweck; die
-Superlativ-Formulierung „älteste der Welt" ist eine Zuschreibung, die von der
-Erhaltungslage abhängt und deshalb vorsichtig zu behandeln ist.
+**Forschungsstand — nach Gegenprüfung [umstritten]:** Existenz und Zweck sind
+belegt, Länge und Superlativ nicht.
+
+- **Drei Wikipedia-Artikel, drei Längen:** „Widan el Faras Basalt" schreibt
+  „an **eleven kilometres** long paved roadway", „Stone quarries of ancient
+  Egypt" **11,5 km**, „Historic roads and trails" **12 km**. Im Bericht steht
+  oben 11,5 km, weil das die zitierte Quelle sagt — als belastbare Angabe
+  taugt nur **„rund 11 km"**.
+- **Die Datierungsspanne 2600–2200 v. Chr. steht nicht im Hauptartikel.** Dort
+  heißt es nur „some **4.500 years ago**", gebunden an die 4. und 5. Dynastie
+  (ca. 2613–2345 v. Chr.). Die Spanne bis 2200 v. Chr. stammt aus anderen
+  Artikeln und ist durch keinen Beleg gedeckt — auch Bloxam & Storemyr binden
+  den Betrieb ausdrücklich an den hohen Wasserstand des Moeris-Sees „during the
+  **Fourth and Fifth Dynasties**".
+- **Der Superlativ überlebt nur unter enger Definition.** Dieselbe Enzyklopädie
+  schreibt an anderer Stelle: „the first paved streets appear to have been
+  built in **Ur in 4000 BC**" und nennt gepflasterte Straßen in **Harappa und
+  Mohenjo-Daro** ab etwa 4000 v. Chr. Übrig bleibt: **älteste erhaltene
+  gepflasterte Überlandstraße** — im Unterschied zu gepflasterten Stadtstraßen
+  und zu hölzernen Bohlenwegen. Das ist eine Definitionsfrage, kein
+  gesichertes Wissen.
+- **Auch das Baumaterial variiert je Artikel:** „basalt stone and petrified
+  wood" · „slabs of sandstone and limestone, with some sections utilizing
+  petrified wood" · „basalt fragments … along with … limestone, sandstone, and
+  petrified wood". Versteinertes Holz nennen alle drei — das Bild trägt.
 
 **Widerspricht:** A1 und A2 gleichzeitig.
 
@@ -248,8 +288,8 @@ Genau diese Offenheit ist der Wert des Kandidaten.
 | Fund | Kern | Quelle | Warum nicht Top 5 |
 |---|---|---|---|
 | **Diolkos, Korinth** | gepflasterte Schleppbahn mit Spurrillen im Abstand von 1,60 m, Fahrbahn 3,4–6 m breit, 6–8,5 km lang, 1.100 m archäologisch nachgewiesen — **Schiffe fuhren über Land** | [Diolkos](https://en.wikipedia.org/wiki/Diolkos); Crossref [10.1111/j.1095-9270.1997.tb01322.x](https://doi.org/10.1111/j.1095-9270.1997.tb01322.x), [10.3764/aja.115.4.0549](https://doi.org/10.3764/aja.115.4.0549) | starkes Bild, aber Bauzeit **[umstritten]** — die antike Literatur nennt kein Baujahr; der Artikel datiert den Betrieb „from c. 600 BC until the middle of the first century AD" |
-| **Wittemoor, Bohlenweg XLII** | 135 v. Chr. dendrodatiert; an der Bachquerung standen **zwei geschnitzte Eichenfiguren** (männlich 105 cm, weiblich 95 cm, aus 3–7 cm dicken Eichenbohlen ausgesägt), dazu ein **Torbogen aus Stangen** und je eine Feuerstelle an beiden Enden der Querung; alle sechs Figuren lagen flach — vermutlich zum Schutz vor Schändung | [Wittemoor timber trackway](https://en.wikipedia.org/wiki/Wittemoor_timber_trackway), selbst gegengelesen | **[Einzelbefund]** — ein Fundplatz, ein Ausgräber |
-| **Corlea Trackway, Irland** | Eichenbohlen 3–3,5 m lang und 15 cm dick auf Längsschwellen im Abstand von 1,2 m; Fällung Ende 148/Anfang 147 v. Chr., Bau in **einer einzigen Saison**; Raftery schätzt allein für die Bohlen **300 große Eichen bzw. tausend Wagenladungen**; im selben Moor 108 Moorwege auf 125 ha, nur **vier** davon für Radverkehr tauglich; binnen eines Jahrzehnts unter dem eigenen Gewicht versunken | [Corlea Trackway](https://en.wikipedia.org/wiki/Corlea_Trackway), selbst gegengelesen | Zweck **[umstritten]** — der Aufwand entspricht dem eines Kultmonuments („comparable to that used in the construction of ritual monuments such as barrows") |
+| **Wittemoor, Bohlenweg XLII** | 135 v. Chr. dendrodatiert; an der Bachquerung **zwei geschnitzte Eichenfiguren** (männlich 105 cm, weiblich 95 cm, aus 3–7 cm dicken Eichenbrettern in Silhouette ausgesägt, gesichtslos), dazu ein **Torbogen aus Stangen** und je eine Feuerstelle an beiden Enden der Querung. **Wichtig für die Bebilderung:** Gefunden wurden insgesamt **sechs** Figuren, und alle lagen **flach niedergelegt** — die aufrechte Aufstellung ist aus Befestigungsspuren erschlossen (Mann in eine Bohle eingezapft, Frau auf einem kleinen Hügel), nicht beobachtet. Die vier übrigen Figuren lagen an schadhaften Stellen des Weges; die Quelle lässt offen, ob Warnmarkierung oder Kultobjekt | [Wittemoor timber trackway](https://en.wikipedia.org/wiki/Wittemoor_timber_trackway), selbst gegengelesen | **[Einzelbefund]** — ein Fundplatz, ein Ausgräber; die **Deutung** als Kultort ist Interpretation, nicht Befund (Steuer 2006 hält auch eine dekorative Funktion für möglich, [10.1515/9783110202809.69](https://doi.org/10.1515/9783110202809.69)) |
+| **Corlea Trackway, Irland** | Eichenbohlen 3–3,5 m lang und 15 cm dick auf Längsschwellen im Abstand von 1,2 m; Fällung Ende 148/Anfang 147 v. Chr., Bau in **einer einzigen Saison**; Raftery schätzt allein für die Bohlen **300 große Eichen bzw. tausend Wagenladungen**; im selben Moor 108 Moorwege auf 125 ha, nur **vier** davon für Radverkehr tauglich; binnen eines Jahrzehnts unter dem eigenen Gewicht versunken | [Corlea Trackway](https://en.wikipedia.org/wiki/Corlea_Trackway), selbst gegengelesen | Zweck **[umstritten]** — der Aufwand entspricht dem eines Kultmonuments („comparable to that used in the construction of ritual monuments such as barrows"). **Aber nicht überziehen:** Die zugespitzte Formel „nicht durch das Moor, sondern ins Moor" stammt von O'Sullivan und gilt im Original den **kleineren** Toghers; für Corlea selbst formuliert die Quelle additiv („may **also** have served … rather than **merely** to cross it"). Corlea 1 endete auf einer Insel, von der ein zweiter, ebenfalls rund 1 km langer Weg ans andere Moorufer führte; das Office of Public Works deutet die Anlage als Teil einer bedeutenden Wegeverbindung, möglicherweise zwischen dem Hill of Uisneach und Rathcroghan |
 | **Persische Königsstraße** | Susa–Sardis, „built to facilitate rapid communication" — Verwaltung und Nachrichtenwesen vor Handel | [Royal Road](https://en.wikipedia.org/wiki/Royal_Road) | widerspricht A2 sauber, aber weniger bildstark |
 | **Maya-Sacbeob** | über 100 km von Coba nach Yaxuna, erhöhte, weiß verputzte Wege ohne Rad | [Coba](https://en.wikipedia.org/wiki/Coba), [Sacbe](https://en.wikipedia.org/wiki/Sacbe); Crossref [10.1017/s0956536113000023](https://doi.org/10.1017/s0956536113000023) | inhaltlich nah an Kandidat 3 |
 | **Unas-Aufweg, Sakkara** | 720–750 m lang, aber nur 2,65 m breit; überdacht, mit einem **Lichtschlitz in der Decke**, der die Wandbilder beleuchtete — eine Straße für einen einzigen Toten, „among the longest constructed for any pyramid" und der besterhaltene Aufweg überhaupt | [Pyramid of Unas](https://en.wikipedia.org/wiki/Pyramid_of_Unas), selbst gegengelesen | eng verwandt mit Kandidat 2 (Bauwerk statt Verkehrsweg) |
@@ -414,7 +454,7 @@ liegen · ein Wald, der schrumpft, weil eine Straße gebaut wurde.
 
 | Detail | Wert | Quelle |
 |---|---|---|
-| Länge | **11,5 km** | [Stone quarries of ancient Egypt](https://en.wikipedia.org/wiki/Stone_quarries_of_ancient_Egypt) |
+| Länge | **rund 11 km** — die Angaben schwanken je Artikel zwischen 11, 11,5 und 12 km, siehe Forschungsstand bei Kandidat 2 | [Stone quarries of ancient Egypt](https://en.wikipedia.org/wiki/Stone_quarries_of_ancient_Egypt), [Widan el Faras Basalt](https://en.wikipedia.org/wiki/Widan_el_Faras_Basalt) |
 | Verbindet | Basaltsteinbruch Widan el-Faras ↔ Qasr el-Sagha (am See) | ebenda |
 | Belagsmaterial | Basaltbruchstücke, **Kalkstein, Sandstein und versteinertes Holz** | ebenda |
 | Fracht | Basaltblöcke für Boden und Wände von Totentempeln der 4. und 5. Dynastie | ebenda |
