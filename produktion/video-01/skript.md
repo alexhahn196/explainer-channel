@@ -33,9 +33,9 @@ And what stood there was no trail. It was a structure. About 1,800 metres of wal
 
 Now hold on to the strangest part. All that effort bought a walkway of single oak planks, laid end to end [W1]. Not a cart track — a plank line through a marsh. It served for about ten years. Then the water rose again and took it [W1]. And under it runs an older line still, the Post Track, from around 3838 BC — same route, thirty years earlier [W1]. They had done this before.
 
-One site might be a fluke. So go north-east, to the flat wet country of Lower Saxony in northern Germany. More than 550 wooden paths are known there, laid across bogs and soaked ground, from the Stone Age into modern times [L18]. And beside one of those paths, diggers found a thing that had no business being there [L18]. Hold on to that — we'll come back for it. Some of the oldest paths sit near a lake called the Dümmer [L18]. One of them, a path labeled Pr 31, crossed a bog called the Campemoor [W2]. It's around six and a half thousand years old — the studies differ on the exact years, so hold that number loosely [W2]. It ran up to four and a half metres wide [W2]. And it had layers: thin birch trunks at the bottom, three rows of pine logs as a base, a surface of pine logs up to 20 centimetres thick, pinned along the edges with birch pegs [W2]. Base, bed, surface. That is road engineering — done with stone axes. The chop marks are still on the ends of the logs [W2].
+One site might be a fluke. So go north-east, to the flat wet country of Lower Saxony in northern Germany. More than 550 wooden paths are known there, laid across bogs and soaked ground, from the Stone Age into modern times [L18]. And beside one of those paths, diggers found a thing that had no business being there [L18]. Hold on to that — we'll come back for it. Some of the oldest paths sit near a lake called the Dümmer [L18]. One of them, a path labeled Pr 31, crossed a bog called the Campemoor [W2]. It's around six and a half thousand years old — the studies differ on the exact years, so hold that number loosely [W2]. It ran up to four and a half metres wide [W2]. And it had layers: thin birch trunks at the bottom, three rows of pine logs as a base, a surface of pine logs up to 20 centimetres thick, pinned along the edges with birch pegs [W2]. Base, bed, surface. That is road engineering — done with stone axes. The chop marks are still on the ends of the logs [W2]. And thirty metres to one side, there runs a second path, laid roughly seventeen hundred years later [W2]. Same bog, same problem, same answer.
 
-Why there, why then? The team behind the newest study says it with care — it's one paper, and they call their reading a hypothesis — but it goes like this: the rain grew, the lake rose, the wet spread, and the paths follow that curve [L18]. Pr 31, they write, was created in a phase of increasing waterlogging [L18]. They point to a second driver too — people were settling in new patterns — so even here, water isn't the whole story [L18]. But zoom out, and the paths seem to come in waves: building booms that track the ground getting worse [L18].
+Why there, why then? The team behind the newest study says it with care — it's one paper, and they call their reading a hypothesis — but it goes like this: the rain grew, the lake rose, the wet spread, and the paths follow that curve [L18]. Pr 31, they write, was created in a phase of increasing waterlogging [L18]. They point to a second driver too — people were settling in new patterns — so even here, water isn't the whole story [L18]. But zoom out, and the paths seem to come in waves: building booms that track the ground getting worse [L18]. One more trace, and it's an odd one: pollen from the bog shows the pine stands shrinking after that second path was built — the likely cause is the wood the builders took [W2]. A forest, shrinking, because a road was being built.
 
 Now, the thing that had no business being there. By one of these paths — Pr VII, laid in the 25th century BC — diggers found it: two broken wagon axles [L18]. They count among the oldest evidence of wheels and wagons in all of northern Germany [L18]. So run the numbers with me. Oldest known road in that region: about six and a half thousand years old. Oldest known wheels: about four and a half thousand. The road wins by roughly two thousand years [L18]. People there built roads for some twenty centuries before anything rolled on one. One axle lay broken next to the path, right there in the bog [L18]. The wheel is not the parent of the road. The wheel is a guest on it.
 
@@ -89,14 +89,14 @@ Zielwerte aus dem Auftrag, hergeleitet aus dem Ink-Axen-Vergleich.
 
 | Größe | Ziel | Gemessen | Status |
 |---|---|---|---|
-| Wortzahl | 1.850–2.050 | **1.814** | **⚠ 36 unter Ziel** — auftragsgemäß nicht aufgefüllt, siehe Änderungsprotokoll |
-| Laufzeit bei 219 WPM | 8:30–9:30 | **8:17** | ⚠ folgt der Wortzahl |
-| Wörter unter 7 Zeichen | ≥ 82 % | **91,1 %** | ✓ |
-| Anrede-Marker je 1.000 Wörter, erstes Fünftel (362 Wörter) | ≥ 40 | **47,0** (17 Marker) | ✓ |
-| Anrede-Marker je 1.000 Wörter, gesamt | — (Ink: 42,5 im ersten Fünftel) | 14,3 | zur Info |
-| Position der Antwort („They were fighting water") | erste 30 s | **Wort 107 = 29,3 s = 5,9 %** der Laufzeit | ✓ (Ink-Zielwert: 5,4 %) |
-| Offene Schleife — Anriss („no business being there") | erstes Drittel | **Wort 537 = 29,6 %** | ✓ |
-| Offene Schleife — Auflösung | an der bisherigen Achsen-Stelle | Wort 766 = 42,2 %; Schluss-Echo im letzten Absatz | ✓ |
+| Wortzahl | 1.850–2.050 | **1.878** | ✓ (nach den zwei Ergänzungen wieder im Ziel) |
+| Laufzeit bei 219 WPM | 8:30–9:30 | **8:35** | ✓ |
+| Wörter unter 7 Zeichen | ≥ 82 % | **90,9 %** | ✓ |
+| Anrede-Marker je 1.000 Wörter, erstes Fünftel (375 Wörter) | ≥ 40 | **45,3** (17 Marker) | ✓ |
+| Anrede-Marker je 1.000 Wörter, gesamt | — (Ink: 42,5 im ersten Fünftel) | 13,8 | zur Info |
+| Position der Antwort („They were fighting water") | erste 30 s | **Wort 107 = 29,3 s = 5,7 %** der Laufzeit | ✓ (Ink-Zielwert: 5,4 %) |
+| Offene Schleife — Anriss („no business being there") | erstes Drittel | **Wort 537 = 28,6 %** | ✓ |
+| Offene Schleife — Auflösung | an der bisherigen Achsen-Stelle | Wort 830 = 44,2 %; Schluss-Echo im letzten Absatz | ✓ |
 | Absatz 3 (Baumring) | unter 20 s | **67 Wörter = 18 s** | ✓ |
 | Absatz 13 (Chaco) | unter 45 s | **158 Wörter = 43 s** | ✓ |
 | Absatz 16 (Handel) | höchstens 40 Wörter | **39 Wörter** | ✓ |
@@ -240,3 +240,27 @@ Alle übrigen Messwerte im Ziel (Tabelle oben). Geschützte Stellen
 unangetastet: Absatz 1–2, die offene Schleife samt
 Wortlaut-Wiederaufnahme, „The wheel is not the parent of the road",
 Chacos Schlusszeile, der Schlussabsatz.
+
+## Änderungen (dritte Überarbeitung, vierte Fassung)
+
+Zwei freigegebene Ergänzungen aus dem Bestand des Rechercheberichts
+(Kandidaten 1 und 3 aus dem Protokoll der dritten Fassung; Kandidaten
+2 und 4 auftragsgemäß nicht eingebaut):
+
+1. **Absatz 6, Ende (+23 Wörter):** der Nachbarweg 32 Pr — „And thirty
+   metres to one side, there runs a second path, laid roughly
+   seventeen hundred years later [W2]. Same bog, same problem, same
+   answer." Deckung: Schritt-3-Tabelle zu Kandidat 1 (30 m parallel,
+   1.700 Jahre Abstand).
+2. **Absatz 7, Ende (+41 Wörter):** der Pollen-Befund — „pollen from
+   the bog shows the pine stands shrinking after that second path was
+   built — the likely cause is the wood the builders took [W2]. A
+   forest, shrinking, because a road was being built." Deckung:
+   Schritt-3-Tabelle (Kiefernrückgang nach dem Bau von 32 Pr,
+   pollenanalytisch, Ursache Holzverbrauch); der Schlusssatz ist die
+   Szenen-Zeile des Berichts.
+
+Wortzahl damit zurück im Ziel: **1.878 Wörter, 8:35 min.** Alle
+übrigen Messwerte unverändert im Ziel (Tabelle oben); die Auflösung
+der offenen Schleife rückt durch die Ergänzungen von 42,2 % auf
+44,2 % der Laufzeit.
