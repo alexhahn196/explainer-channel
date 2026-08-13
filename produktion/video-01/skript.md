@@ -27,7 +27,7 @@ Look down the next time you step out your door. There's a road under you. You us
 
 To see what that means, you need to stand in a bog. A bog is land that never dries. Rain sits on dead moss, new moss grows over it, and the ground turns into a wet sponge — it will take your boot, and it can take you. You can't farm it. You can't cross it. Almost six thousand years ago, in what's now Somerset in the south of England, people faced the same ground you'd sink in — and they built.
 
-We call what they built the Sweet Track. Tree rings date it to 3807 BC — or 3806 [W1]. The trees were felled in winter, and one winter spans two calendar years, so even the wood can't tell you which [W1]. Sit with that for a second. This build is about 5,800 years old, and you can pin its date to within a year or two [W1]. Tree dating works like this: each year, a tree adds one ring — wide in a good year, thin in a bad one. The pattern is a bar code. Match it against a known series, and you can read the year the axe fell.
+We call what they built the Sweet Track. Tree rings pin its date — each year a tree adds one ring, wide in a good year, thin in a bad one, and you can match that pattern against a known series [W1]. The result: 3807 BC — or 3806, because the trees were felled in winter, one winter spans two calendar years, and even the wood can't tell you which [W1].
 
 And what stood there was no trail. It was a structure. About 1,800 metres of walkway across a reed marsh, from an island at Westhay to a ridge at Shapwick [W1]. Oak planks up to 40 centimetres wide, three metres long, less than five thick — split, not sawn, out of oaks up to 400 years old and a metre through [W1]. The tool kit: stone axes, wooden wedges, wooden mallets. That's all [W1]. They drove crossed pegs of ash, oak and lime into the peat — the bog's packed dead plants — laid long rails of hazel and alder, cut notches into the planks, and slotted the parts together. No nails. A push fit [W1]. And the pegs are so straight and clean that the wood must have come from a managed stand — trees cut low and regrown on cycles for at least 120 years before this was built [W1].
 
@@ -43,17 +43,17 @@ So if the first roads weren't for wheels, and weren't for goods — what were ro
 
 Start in Egypt, about 4,500 years ago [W3]. In the desert south-west of what's now Cairo, a paved road runs some eleven kilometres — the reports differ a little on the length — from a quarry, a pit where you cut stone, down to the shore of a lake that has since dried away [W3]. The quarry is called Widan el-Faras, and the paving is whatever lay close: basalt, a hard dark lava stone; limestone; sandstone; and slabs of petrified wood — dead trees turned to stone, laid as pavement [W3]. The road's job? No market anywhere. Crews hauled basalt blocks down it to the water and shipped them off to become temple floors for the pyramids — one of those floors sits just east of the Great Pyramid at Giza [W3]. Even here, the road was only the hard leg of the trip. The blocks moved mostly by boat, in seasons when the lake stood high [L7]. This road was a supply drive for a royal building site.
 
-Babylon opens with colour, not distance. Walls of glazed brick line a street, and on them glow lions, bulls and dragons — about 120 animals on yellow and black [W4]. This is in what's now Iraq, around 569 BC, under King Nebuchadnezzar the Second [W4]. The street itself is stone slabs set in a bed of bitumen — natural tar — up to twenty metres wide at some points [W4]. Picture yourself walking it: from the river through the temple district, past the palaces, to the Ishtar Gate — the city's great blue gate [W4]. People used it all year; it was the main axis of the city [W4]. But the day it was dressed for came once a year: at the spring new year, statues of the gods were carried through the gate and down this street in a grand procession [W4]. All of it — the tar, the lions, the glaze — was, at heart, a stage.
+Walls of glazed brick, and on them lions, bulls and dragons — about 120 animals glowing on yellow and black, lining a street in Babylon [W4]. This is in what's now Iraq, around 569 BC, under King Nebuchadnezzar the Second [W4]. The street itself is stone slabs set in a bed of bitumen — natural tar — up to twenty metres wide at some points [W4]. Picture yourself walking it: from the river through the temple district, past the palaces, to the Ishtar Gate — the city's great blue gate [W4]. People used it all year; it was the main axis of the city [W4]. But the day it was dressed for came once a year: at the spring new year, statues of the gods were carried through the gate and down this street in a grand procession [W4]. All of it — the tar, the lions, the glaze — was, at heart, a stage.
 
 Persia — roughly, modern Iran — gets one breath: a road of about 2,700 kilometres, Susa to Sardis, ridden in nine days with fresh horses waiting along the way, walked in ninety [W8]. A post road, the record says. It moved messages [W8]. It ran an empire.
 
-And then there's the road nobody can explain. Chaco Canyon, in New Mexico, in the dry south-west of the United States — roughly a thousand years back, though the dating is argued over [W5]. The people there had no wheel, no horse, no ox [W5]. Yet they scraped road beds into the desert floor up to nine metres wide, dead straight, running for tens of kilometres — the best-studied one goes 50.5 kilometres [L14]. Where a cliff stood in the way, the road did not bend. They cut stone stairs into the rock face and went straight over [W5]. Nothing ever rolled here. Timber for their great buildings — the wood of some 200,000 trees — came in on foot, from mountains up to 110 kilometres out [W5]. So why the width, why the line? The honest answer: nobody knows. Scholars have argued for decades — work, war, worship, politics [W5]. One recent laser survey found roads lined up on the midwinter sunrise over a mountain that is sacred to the Native Pueblo peoples of the region today — a hint toward ritual, and still one reading among several [L17]. We can measure these roads down to centimetres. We can't tell you what they were for.
+And then there's the road nobody can explain. Chaco Canyon, New Mexico, in the dry south-west of the United States — roughly a thousand years back, though the dating is argued over [W5]. The people there had no wheel, no horse, no ox [W5]. Yet they scraped road beds into the desert floor up to nine metres wide, dead straight — the best-studied one runs 50.5 kilometres [L14]. Where a cliff stood in the way, they cut stone stairs into the rock face and went straight over [W5]. Nothing ever rolled here. So why the width, why the line? The honest answer: nobody knows. Scholars have argued for decades — work, war, worship, politics [W5]. A recent laser survey found roads lined up on the midwinter sunrise over a mountain sacred to the Native Pueblo peoples today — a hint toward ritual, and still one reading among several [L17]. We can measure these roads down to centimetres. We can't tell you what they were for.
 
 Last stop: the Andes, the long mountain spine of South America. The Inca empire ran a road net whose true size nobody can state — estimates go from 23,000 to 60,000 kilometres [W6]. Parts are older than the empire, laid by earlier peoples, the Wari and the Tiwanaku [W6]. It was paved only where paving earned its keep; elsewhere it was packed earth and sand [W6]. Its builders had no wheel and no animal to pull a cart, so where the land climbed, the road did what no cart road can do: it became a staircase [W6]. Stairs stop a wheel cold. For you, on foot, they are simply the shortest way up. On this net, an empire moved on foot — and today, only about a quarter of it is still visible at all [W6].
 
 Which brings us, at the very end, to trade — and to Rome. You were promised the Romans; here they are, in last place. Rome's first great road, the Appian Way, was begun in 312 BC as a military road, in the middle of a war, to move troops south [W7]. Not a trade route. And the picture-book Roman road, that deep stack of stone layers? Even in Rome it was the top class, not the rule: Roman law sorted roads into three kinds, and two of them were plain earth and gravel [W9].
 
-So run the list back with me. The bog paths: against water. Egypt: for a building site. Babylon: for the gods and for show. Persia: for messages. Chaco: no one knows. Rome's first great road: for war. Trade is the answer you'd assume — and it's the one that keeps not showing up. Wherever we can pin down why an early road was built, the reason is almost never a market. That doesn't mean traders never walked these paths. It means trade moved in later — like the wheel did — into a thing that was already old.
+Trade is the answer you'd expect — and the one that keeps not showing up. That doesn't mean traders never walked these paths. It means trade moved in later, like the wheel did, into a thing that was already old.
 
 So here's the thought to keep. A road was never really about speed. A road is a promise: the ground will hold, and the way will still be there tomorrow — in the wet season, in the dark. People in a Somerset marsh made that promise with stone axes, almost six thousand years back, and kept it through ten years of rising water. And in that German bog country, the oldest road and the oldest wheel we've found lie about two thousand years apart — road first [L18]. So the next time the ground under you goes soft, you know what humans do. They did it before the wheel. They did it before Rome. They look at land that says no — and they build a yes.
 
@@ -89,17 +89,20 @@ Zielwerte aus dem Auftrag, hergeleitet aus dem Ink-Axen-Vergleich.
 
 | Größe | Ziel | Gemessen | Status |
 |---|---|---|---|
-| Wortzahl | 1.850–2.050 | **1.953** | ✓ |
-| Laufzeit bei 219 WPM | 8:30–9:30 | **8:55** | ✓ |
-| Wörter unter 7 Zeichen | ≥ 82 % | **91,2 %** | ✓ |
-| Anrede-Marker je 1.000 Wörter, erstes Fünftel (390 Wörter) | ≥ 40 | **46,2** (18 Marker) | ✓ |
-| Anrede-Marker je 1.000 Wörter, gesamt | — (Ink: 42,5 im ersten Fünftel) | 13,8 | zur Info |
-| Position der Antwort („They were fighting water") | erste 30 s | **Wort 107 = 29,3 s = 5,5 %** der Laufzeit | ✓ (Ink-Zielwert: 5,4 %) |
-| Offene Schleife — Anriss („no business being there") | erstes Drittel | **Wort 577 = 29,5 %** | ✓ |
-| Offene Schleife — Auflösung | an der bisherigen Achsen-Stelle | Wort 806 = 41,3 %; Schluss-Echo im letzten Absatz | ✓ |
-| Sätze mit harten Zahlen/Daten — mit Quellen-ID | alle | **19 von 19** | ✓ |
+| Wortzahl | 1.850–2.050 | **1.814** | **⚠ 36 unter Ziel** — auftragsgemäß nicht aufgefüllt, siehe Änderungsprotokoll |
+| Laufzeit bei 219 WPM | 8:30–9:30 | **8:17** | ⚠ folgt der Wortzahl |
+| Wörter unter 7 Zeichen | ≥ 82 % | **91,1 %** | ✓ |
+| Anrede-Marker je 1.000 Wörter, erstes Fünftel (362 Wörter) | ≥ 40 | **47,0** (17 Marker) | ✓ |
+| Anrede-Marker je 1.000 Wörter, gesamt | — (Ink: 42,5 im ersten Fünftel) | 14,3 | zur Info |
+| Position der Antwort („They were fighting water") | erste 30 s | **Wort 107 = 29,3 s = 5,9 %** der Laufzeit | ✓ (Ink-Zielwert: 5,4 %) |
+| Offene Schleife — Anriss („no business being there") | erstes Drittel | **Wort 537 = 29,6 %** | ✓ |
+| Offene Schleife — Auflösung | an der bisherigen Achsen-Stelle | Wort 766 = 42,2 %; Schluss-Echo im letzten Absatz | ✓ |
+| Absatz 3 (Baumring) | unter 20 s | **67 Wörter = 18 s** | ✓ |
+| Absatz 13 (Chaco) | unter 45 s | **158 Wörter = 43 s** | ✓ |
+| Absatz 16 (Handel) | höchstens 40 Wörter | **39 Wörter** | ✓ |
+| Sätze mit harten Zahlen/Daten — mit Quellen-ID | alle | **17 von 17** | ✓ |
 | Sätze mit harten Zahlen/Daten — ohne Quellen-ID | 0 | **0** | ✓ |
-| Quellen-Tags gesamt | — | 55 | — |
+| Quellen-Tags gesamt | — | 53 | — |
 | Rhetorische Fragen | kein Dutzend | 6 | ✓ |
 
 Messmethode: Wörter = `[A-Za-z0-9']+` nach Entfernen der Tags;
@@ -116,9 +119,10 @@ yourself; Laufzeit = Wortzahl ÷ 219 × 60.
    des zweiten Faktors (Siedlungsmuster) und „seem to come in waves".
    Handel wird nirgends als von der Studie verworfen dargestellt —
    nur als das, was in den belegten Fällen nicht auftaucht.
-2. **„This build is about 5,800 years old"** — selbst gerechnet aus
-   3807 v. Chr. + heute; steht so in keiner Quelle. Ebenso „almost six
-   thousand years back" am Schluss.
+2. **„Almost six thousand years ago/back"** (Absatz 2 und Schluss) —
+   selbst gerechnet aus 3807 v. Chr. + heute; steht so in keiner Quelle.
+   (Die frühere Formulierung „about 5,800 years old" ist mit der Kürzung
+   von Absatz 3 entfallen.)
 3. **„The road wins by roughly two thousand years"** — regionale
    Aussage über Norddeutschland; laut Studie könnten die Achsen ~200
    Jahre älter sein als die Weghölzer von Pr VII. Der Bericht deckt
@@ -180,3 +184,59 @@ Alle Messwerte nach der Überarbeitung neu gerechnet (Tabelle oben):
 1.953 Wörter, 8:55 min, 91,2 % Kurzwörter, 46,2 Anrede-Marker/1.000 im
 ersten Fünftel, Antwort unverändert bei Wort 107 = 29,3 s, alle 19
 Zahlensätze mit Quellen-ID.
+
+## Änderungen (zweite Überarbeitung, dritte Fassung)
+
+Vier beauftragte Eingriffe, keine neuen Fakten, keine neuen Quellen,
+Quellen-IDs vollständig erhalten:
+
+1. **Absatz 3 gekürzt** — der Baumring-Exkurs direkt nach der Antwort.
+   Von 105 Wörtern (29 s) auf **67 Wörter (18 s)**. Die Erklärung ist
+   jetzt ein einziger Satz (ein Ring pro Jahr, dick im guten, dünn im
+   schlechten, Abgleich gegen eine bekannte Reihe); die Winter-Pointe
+   („even the wood can't tell you which") steht unverändert. Entfallen
+   sind der „bar code"-Vergleich, „the year the axe fell" und der
+   Staun-Beat „about 5,800 years old … within a year or two" — die
+   Präzision steckt jetzt implizit in „3807 — or 3806".
+2. **Absatz 13 (Chaco) entlastet** — von 204 Wörtern (56 s) auf
+   **158 Wörter (43 s)**. Gestrichen: die 200.000 Bäume und die
+   110 Kilometer (sagten nichts über den Zweck), dazu Redundanzen
+   („running for tens of kilometres" neben 50,5 km; „the road did not
+   bend" neben „went straight over"). Die Deutungsdebatte am Schluss
+   und die Schlusszeile über das Nichtwissen sind unangetastet.
+3. **Absatz 16 radikal gekürzt** — von 103 auf **39 Wörter**. Die
+   komplette Rückwärts-Aufzählung („The bog paths: against water …
+   for war") ist raus. Geblieben ist nur der neue Gedanke: Handel als
+   die erwartete Antwort, die nicht auftaucht, und die später einzog
+   wie das Rad — samt der Ehrlichkeits-Absicherung („That doesn't mean
+   traders never walked these paths").
+4. **Babylon-Einstieg ersetzt** — die Regieanweisung „Babylon opens
+   with colour, not distance" ist gestrichen; der Absatz beginnt jetzt
+   direkt im Bild („Walls of glazed brick, and on them lions …").
+
+**Gemeldete Abweichung: Die Wortzahl liegt mit 1.814 um 36 Wörter
+unter dem Ziel (1.850–2.050), die Laufzeit mit 8:17 unter 8:30.**
+Auftragsgemäß nicht mit Füllmaterial aufgefüllt. Vorschläge für
+konkrete Ergänzungen aus dem Bestand des Rechercheberichts, bevorzugt
+in Absatz 6 und 8:
+
+- **Absatz 6 (+~30 Wörter):** der Nachbarweg 32 Pr — dreißig Meter
+  neben Pr 31 verläuft ein zweiter Weg, gebaut rund 1.700 Jahre
+  später, etwa 2,5 m breit [W2]. Zwei Straßengenerationen im selben
+  Moor, im Abstand von Sichtweite.
+- **Absatz 6 (+~20 Wörter):** der Erhaltungsgrund — 2,4 m Torf, das
+  Holz etwa einen Meter tief unter Luftabschluss [W2]. Erklärt dem
+  Zuschauer nebenbei, warum man 6.500 Jahre altes Holz überhaupt
+  ausgraben kann.
+- **Absatz 7, alternativ (+~25 Wörter):** die ökologische Folge — nach
+  dem Bau des zweiten Wegs ging der Kiefernbestand zurück,
+  pollenanalytisch nachweisbar; als Ursache gilt der Holzverbrauch
+  [W2]. „Ein Wald, der schrumpft, weil eine Straße gebaut wurde."
+- **Absatz 8 (+~8 Wörter):** die Achse lag nicht nur zerbrochen da,
+  sondern **zerbrochen und wieder zusammengesetzt** [L18] — macht das
+  Schlussbild noch etwas seltsamer.
+
+Alle übrigen Messwerte im Ziel (Tabelle oben). Geschützte Stellen
+unangetastet: Absatz 1–2, die offene Schleife samt
+Wortlaut-Wiederaufnahme, „The wheel is not the parent of the road",
+Chacos Schlusszeile, der Schlussabsatz.
