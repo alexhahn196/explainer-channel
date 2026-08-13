@@ -170,16 +170,21 @@ belegt, Länge und Superlativ nicht.
 - **Die Datierungsspanne 2600–2200 v. Chr. steht nicht im Hauptartikel.** Dort
   heißt es nur „some **4.500 years ago**", gebunden an die 4. und 5. Dynastie
   (ca. 2613–2345 v. Chr.). Die Spanne bis 2200 v. Chr. stammt aus anderen
-  Artikeln und ist durch keinen Beleg gedeckt — auch Bloxam & Storemyr binden
-  den Betrieb ausdrücklich an den hohen Wasserstand des Moeris-Sees „during the
-  **Fourth and Fifth Dynasties**".
+  Artikeln, und die stützen sie auf einen **Zeitungsartikel**: John Noble
+  Wilford, „World's Oldest Paved Road Found in Egypt", *New York Times*,
+  8. Mai 1994. Auch Bloxam & Storemyr binden den Betrieb ausdrücklich an den
+  hohen Wasserstand des Moeris-Sees „during the **Fourth and Fifth
+  Dynasties**".
 - **Der Superlativ überlebt nur unter enger Definition.** Dieselbe Enzyklopädie
   schreibt an anderer Stelle: „the first paved streets appear to have been
-  built in **Ur in 4000 BC**" und nennt gepflasterte Straßen in **Harappa und
-  Mohenjo-Daro** ab etwa 4000 v. Chr. Übrig bleibt: **älteste erhaltene
-  gepflasterte Überlandstraße** — im Unterschied zu gepflasterten Stadtstraßen
-  und zu hölzernen Bohlenwegen. Das ist eine Definitionsfrage, kein
-  gesichertes Wissen.
+  built in **Ur in 4000 BC**", nennt gepflasterte Straßen in **Harappa und
+  Mohenjo-Daro** ab etwa 4000 v. Chr. — und widerspricht im Artikel
+  *Technology* sogar direkt: „The **oldest known constructed roadways** are the
+  stone-paved streets of the city-state of **Ur**, dating to c. 4,000 BCE."
+  Übrig bleibt: **älteste erhaltene gepflasterte Überlandstraße** — im
+  Unterschied zu gepflasterten Stadtstraßen und zu hölzernen Bohlenwegen. Das
+  deutsche Wort „Straße" verwischt genau den Unterschied, auf dem der
+  Superlativ ruht.
 - **Auch das Baumaterial variiert je Artikel:** „basalt stone and petrified
   wood" · „slabs of sandstone and limestone, with some sections utilizing
   petrified wood" · „basalt fragments … along with … limestone, sandstone, and
