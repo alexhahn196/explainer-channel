@@ -172,10 +172,12 @@ Eine zwanzig Meter breite, mit Naturasphalt verlegte Steinstraße, gesäumt von
 klarste Gegenbeispiel zur Handelserklärung: Hier ist die Straße selbst das
 Bauwerk, nicht der Weg zu einem Ziel.
 
-**Forschungsstand:** [gesichert] für Ausstattung, Reliefzahl und
-Neujahrsnutzung. Breite und Bitumenbettung stammen aus derselben Quelle,
-konnten von mir aber wegen einer Abrufsperre nicht zeilengenau gegengelesen
-werden — vor Verwendung nachprüfen.
+**Forschungsstand:** [gesichert]. Breite und Bitumenbettung sind
+nachgeprüft (2026-08-13): „The Processional Way was paved with large stone
+pieces set in a bed of bitumen and was up to 66 feet (20 meters) wide at some
+points"; Länge „traced to a length of over 800 meters"; das Fest fiel auf den
+1. Nisan, „immediately after the barley harvest, at the time of the vernal
+equinox" — heute etwa der 20./21. März.
 
 **Widerspricht:** A2 vollständig.
 
@@ -220,16 +222,21 @@ Genau diese Offenheit ist der Wert des Kandidaten.
 
 | Fund | Kern | Quelle | Warum nicht Top 5 |
 |---|---|---|---|
-| **Diolkos, Korinth** | gepflasterte Schleppbahn mit Spurrillen im Abstand von 1,60 m, Fahrbahn 3,4–6 m breit, 6–8,5 km lang, 1.100 m archäologisch nachgewiesen — **Schiffe fuhren über Land** | [Diolkos](https://en.wikipedia.org/wiki/Diolkos); Crossref [10.1111/j.1095-9270.1997.tb01322.x](https://doi.org/10.1111/j.1095-9270.1997.tb01322.x), [10.3764/aja.115.4.0549](https://doi.org/10.3764/aja.115.4.0549) | starkes Bild, aber Bauzeit **[umstritten]** — die antike Literatur nennt kein Baujahr |
-| **Wittemoor, Bohlenweg XLII** | 135 v. Chr. dendrodatiert; an der Bachquerung standen **zwei geschnitzte Eichenfiguren** (etwa 105 und 95 cm hoch), dazu ein Torbogen und zwei Feuerstellen — Weg und Kultort zugleich | [Wittemoor timber trackway](https://en.wikipedia.org/wiki/Wittemoor_timber_trackway) | **[Einzelbefund]**, von mir nicht gegengeprüft (Abrufsperre) |
-| **Corlea Trackway, Irland** | Eichenbohlen, Fällung Ende 148/Anfang 147 v. Chr.; rund 300 große Eichen verbaut; von 108 Moorwegen im selben Moor sind nur **vier** für Radverkehr geeignet | [Corlea Trackway](https://en.wikipedia.org/wiki/Corlea_Trackway) | Zweck **[umstritten]** — möglicherweise rituell, nicht als Verbindung gebaut |
+| **Diolkos, Korinth** | gepflasterte Schleppbahn mit Spurrillen im Abstand von 1,60 m, Fahrbahn 3,4–6 m breit, 6–8,5 km lang, 1.100 m archäologisch nachgewiesen — **Schiffe fuhren über Land** | [Diolkos](https://en.wikipedia.org/wiki/Diolkos); Crossref [10.1111/j.1095-9270.1997.tb01322.x](https://doi.org/10.1111/j.1095-9270.1997.tb01322.x), [10.3764/aja.115.4.0549](https://doi.org/10.3764/aja.115.4.0549) | starkes Bild, aber Bauzeit **[umstritten]** — die antike Literatur nennt kein Baujahr; der Artikel datiert den Betrieb „from c. 600 BC until the middle of the first century AD" |
+| **Wittemoor, Bohlenweg XLII** | 135 v. Chr. dendrodatiert; an der Bachquerung standen **zwei geschnitzte Eichenfiguren** (männlich 105 cm, weiblich 95 cm, aus 3–7 cm dicken Eichenbohlen ausgesägt), dazu ein **Torbogen aus Stangen** und je eine Feuerstelle an beiden Enden der Querung; alle sechs Figuren lagen flach — vermutlich zum Schutz vor Schändung | [Wittemoor timber trackway](https://en.wikipedia.org/wiki/Wittemoor_timber_trackway), selbst gegengelesen | **[Einzelbefund]** — ein Fundplatz, ein Ausgräber |
+| **Corlea Trackway, Irland** | Eichenbohlen 3–3,5 m lang und 15 cm dick auf Längsschwellen im Abstand von 1,2 m; Fällung Ende 148/Anfang 147 v. Chr., Bau in **einer einzigen Saison**; Raftery schätzt allein für die Bohlen **300 große Eichen bzw. tausend Wagenladungen**; im selben Moor 108 Moorwege auf 125 ha, nur **vier** davon für Radverkehr tauglich; binnen eines Jahrzehnts unter dem eigenen Gewicht versunken | [Corlea Trackway](https://en.wikipedia.org/wiki/Corlea_Trackway), selbst gegengelesen | Zweck **[umstritten]** — der Aufwand entspricht dem eines Kultmonuments („comparable to that used in the construction of ritual monuments such as barrows") |
 | **Persische Königsstraße** | Susa–Sardis, „built to facilitate rapid communication" — Verwaltung und Nachrichtenwesen vor Handel | [Royal Road](https://en.wikipedia.org/wiki/Royal_Road) | widerspricht A2 sauber, aber weniger bildstark |
 | **Maya-Sacbeob** | über 100 km von Coba nach Yaxuna, erhöhte, weiß verputzte Wege ohne Rad | [Coba](https://en.wikipedia.org/wiki/Coba), [Sacbe](https://en.wikipedia.org/wiki/Sacbe); Crossref [10.1017/s0956536113000023](https://doi.org/10.1017/s0956536113000023) | inhaltlich nah an Kandidat 3 |
-| **Unas-Aufweg, Sakkara** | 720–750 m lang, aber nur 2,65 m breit, überdacht — eine Straße für einen einzigen Toten | Agentenrecherche, nicht gegengeprüft | **ungeprüft** |
+| **Unas-Aufweg, Sakkara** | 720–750 m lang, aber nur 2,65 m breit; überdacht, mit einem **Lichtschlitz in der Decke**, der die Wandbilder beleuchtete — eine Straße für einen einzigen Toten, „among the longest constructed for any pyramid" und der besterhaltene Aufweg überhaupt | [Pyramid of Unas](https://en.wikipedia.org/wiki/Pyramid_of_Unas), selbst gegengelesen | eng verwandt mit Kandidat 2 (Bauwerk statt Verkehrsweg) |
+| **Sweet Track, Somerset** | 3807 v. Chr. jahrgenau dendrodatiert, 1.800 m lang — und nur ein **Gehsteg für einen Menschen hintereinander** (Details unten) | [Sweet Track](https://en.wikipedia.org/wiki/Sweet_Track), selbst gegengelesen | inhaltlich nah an Kandidat 1, aber das jüngere Bauwerk |
+| **Römischer Schichtaufbau** | Der Vierschichtquerschnitt (statumen · rudus · nucleus · summa crusta) ist aus **Vitruvs Anleitung zum Fußbodenbau** rekonstruiert, nicht aus einer Grabung; gemessene römische Fahrbahnbreiten reichen von 1,1 m bis über 7,0 m; Ulpian unterscheidet drei Sorten, von denen nur eine gepflastert ist — der Vollausbau war die Ausnahme; Isidor von Sevilla schreibt die Technik den **Karthagern** zu | [Roman roads](https://en.wikipedia.org/wiki/Roman_roads) | starkes Gegenmaterial zu A1, aber ein Quellenkritik-Argument — schwerer zu bebildern als ein Fundort |
+| **Cart ruts, Malta** | bis 60 cm tief in den Fels geschnittene Doppelrillen im Abstand von 110–140 cm bei Misraħ Għar il-Kbir („Clapham Junction"); bei St. George's Bay laufen sie **ins Meer und unter Wasser weiter**; Mottershead 2008: nasser maltesischer Kalkstein verliert rund 80 % seiner Festigkeit — die Rillen sind **erodiert, nicht gebaut** | [Misraħ Għar il-Kbir](https://en.wikipedia.org/wiki/Misra%C4%A7_G%C4%A7ar_il-Kbir); Antiquity 2008, [10.1017/S0003598X00097787](https://doi.org/10.1017/S0003598X00097787) | Datierung völlig offen (Neolithikum bis Mittelalter) — als Aufhänger zu unsicher, als Bild stark |
+| **El Mirador, Guatemala** | Dammstraßen **20–50 m breit** und 2–6 m über dem Gelände, 300 v. Chr. bis 150 n. Chr.; 13 Dammstraßen, u. a. 12 km nach Nakbe und 20 km nach El Tintal | [El Mirador](https://en.wikipedia.org/wiki/El_Mirador) | von mir nicht gegengelesen — Maße aus der Agentenrecherche |
+| **Steinwalze auf dem Sacbe** | Auf dem Damm Coba–Yaxuna liegt eine **fünf Tonnen schwere Steinwalze** zum Verdichten der Oberfläche — in einer Kultur, die das Rad nur an Spielzeug kannte | [Sacbe](https://en.wikipedia.org/wiki/Sacbe) | von mir nicht gegengelesen — Angabe aus der Agentenrecherche |
 
 ---
 
-## Schritt 3 — Konkrete Szenen zu den drei stärksten Kandidaten
+## Schritt 3 — Konkrete Szenen zu den stärksten Kandidaten
 
 Nur Sichtbares: Orte, Maße, Materialien, Zahlen, Fundstücke.
 
@@ -275,12 +282,14 @@ Tempelboden in Gizeh als Zielpunkt einer 11,5-km-Zufahrt.
 
 | Detail | Wert | Quelle |
 |---|---|---|
-| Breite | bis **9,1 m** (30 Fuß) | Agentenrecherche aus [Chaco Culture NHP](https://en.wikipedia.org/wiki/Chaco_Culture_National_Historical_Park) |
+| Breite | bis **9,1 m** (30 Fuß) | [Chaco Culture NHP](https://en.wikipedia.org/wiki/Chaco_Culture_National_Historical_Park), selbst gegengelesen |
 | Länge einzelner Straßen | bis **97 km** (60 Meilen) | ebenda |
 | Bauweise | abgesenkte, abgeschabte Caliche-Betten, Ränder durch Erdwälle, Steine oder niedrige Mauern markiert | ebenda |
 | Verlauf | überwiegend schnurgerade; an Felsstufen **Steintreppen und Rampen statt Umwege** | ebenda |
 | Große Nordstraße | reicht 56 km über Pueblo Alto hinaus, teils **vier parallele Trassen nebeneinander** | ebenda |
-| Netz | sechs Straßensysteme verbinden rund 30 Außenposten über etwa 170.000 km² | ebenda |
+| Netz | sechs Straßensysteme verbinden **30 Außenposten** über 170.000 km² (65.000 Quadratmeilen) | ebenda |
+| Große Nordstraße, Deutung | „a pilgrimage route that modern-day Pueblo Indians believe to be an allusion to myths surrounding their arrival from the distant north" | ebenda |
+| Heutige Sichtbarkeit | Trassen, die in den 1980ern im Gelände erkennbar waren, sind heute praktisch unsichtbar; Lidar findet zusätzlich unbekannte Abschnitte | Friedman/Sofaer/Weiner 2017, [10.1017/aap.2017.25](https://doi.org/10.1017/aap.2017.25) |
 | Bauholz | rund **200.000 Nadelbäume** für die Chaco-Bauten, zu Fuß aus bis zu 110 km entfernten Gebirgen herangetragen | ebenda |
 | Datierung | South Road um 900 n. Chr., North und Ahshislepah um 1000 n. Chr. (mittlere Keramikdatierung) | [Roads of Chaco](https://en.wikipedia.org/wiki/Roads_of_Chaco) |
 
@@ -288,9 +297,17 @@ Tempelboden in Gizeh als Zielpunkt einer 11,5-km-Zufahrt.
 Treppe, die in eine Felswand geschlagen ist, statt eines Umwegs · ein
 Baumstamm, den Menschen 110 km weit tragen, weil es kein Zugtier gibt.
 
-**Vorbehalt:** Die Maße stammen aus der Agentenrecherche und konnten wegen
-einer Abrufsperre nicht von mir zeilengenau gegengelesen werden. Vor
-Verwendung prüfen.
+**Nachgeprüft (2026-08-13):** Der Kernsatz steht wörtlich im Artikel: „Thirty
+such outliers spread across 65,000 sq mi (170,000 km2) are connected to the
+central canyon and to one another by an enigmatic web of six Chacoan road
+systems. Extending up to 60 mi (97 km) in generally straight routes, they
+appear to have been extensively surveyed and engineered. Their depressed and
+scraped caliche beds reach 30 ft (9.1 m) wide; earthen berms or rocks, at
+times composing low walls, delimit their edges. When necessary, the roads
+deploy steep stone stairways and rock ramps to surmount cliffs and other
+obstacles." Ebenso belegt: „the wood of 200,000 coniferous trees, mostly
+hauled—on foot—from mountain ranges up to 70 miles (110 km) away" und die
+Zweckoffenheit: „Although their purpose may never be certain".
 
 ### Zu Kandidat 3 — Qhapaq Ñan
 
@@ -305,6 +322,38 @@ Verwendung prüfen.
 **Bildbare Szenen:** eine Steintreppe als Teil einer Fernstraße · ein Läufer
 statt eines Wagens · eine Straße, die über einen Pass führt, wo ein Rad
 nutzlos wäre.
+
+### Nachgereicht — Sweet Track, Somerset
+
+Kam über die Agentenrecherche dazu, nachdem die Top 5 standen, und ist von mir
+Zeile für Zeile gegengelesen (2026-08-13). Aufgenommen, weil er von allen
+Funden das dichteste Detailmaterial pro Meter liefert.
+
+| Detail | Wert | Quelle |
+|---|---|---|
+| Datierung | **3807 v. Chr.**, jahrgenau dendrochronologisch | [Sweet Track](https://en.wikipedia.org/wiki/Sweet_Track) |
+| Strecke | rund **1.800 m** von einer Insel bei Westhay zu einem Höhenrücken bei Shapwick | ebenda |
+| Bohlen | Eiche, bis **40 cm breit**, 3 m lang, **unter 5 cm dick** | ebenda |
+| Herkunft des Holzes | Bäume **bis 400 Jahre alt**, 1 m Durchmesser | ebenda |
+| Werkzeug | gefällt und gespalten **nur mit Steinbeilen, Holzkeilen und Schlegeln** | ebenda |
+| Unterbau | über Kreuz schräg in den Torf getriebene Pflöcke aus Esche, Eiche und Linde | ebenda |
+| Nutzungsdauer | **rund zehn Jahre**, dann durch steigendes Wasser aufgegeben | ebenda |
+| Vorgänger | [Post Track](https://en.wikipedia.org/wiki/Post_Track), 3838 v. Chr. — 30 Jahre älter, dieselbe Trasse | ebenda |
+| Funde entlang der Trasse | Beilklinge aus **Jadeitit**, Paddel, Pfeilschäfte, Teile von vier Haselbogen, Kamm, Löffelfragment | ebenda |
+
+**Warum das trägt:** Der volle Ingenieursaufwand — planmäßig bewirtschafteter
+Wald, vorgefertigte Bauteile, Steckverbindungen statt Nagelung — steckt in
+einer Konstruktion, auf der nur **ein Mensch hintereinander** gehen kann. Das
+ist der schärfste Einzelbeleg gegen A3: Hier ist die Straße per Bauart
+fahrzeuguntauglich und trotzdem ein Bauwerk.
+
+**Bildbare Szenen:** eine Eichenbohle, die breiter ist als der Weg, auf dem
+sie liegt · ein Steinbeil an einem Baum von 1 m Durchmesser · ein
+Jadeitit-Beil im Torf, 600 Jahre jünger als der Weg darunter.
+
+**Vorbehalt:** Die Angabe „rund 200.000 kg verbautes Holz" und Coles' Schätzung
+„zehn Männer an einem Tag" stammen aus der Agentenrecherche und stehen nicht in
+dem Abschnitt, den ich gegengelesen habe — vor Verwendung prüfen.
 
 ---
 
@@ -366,13 +415,16 @@ Kein Skriptvorschlag, nur die Größen, die sich aus den Messwerten ergeben
 
 ## Was diese Recherche nicht leistet
 
-- **Ein Teil der Funde ist nicht gegengeprüft.** Die Recherche lief zweigleisig:
-  eigene Abrufe und sechs parallele Rechercheagenten. Zwei Agenten haben
-  geliefert, vier liefen bei Abschluss noch. Bei den Funden zu **Babylon,
-  Chaco (Maße), Wittemoor, Corlea und Unas** trat während der Gegenprüfung
-  eine Wikipedia-Abrufsperre (HTTP 429) auf; sie sind an der jeweiligen Stelle
-  als ungeprüft markiert. Die Kandidaten 1, 2 und 3 sowie Diolkos, Coba und
-  Royal Road habe ich selbst Zeile für Zeile in der Quelle gelesen.
+- **Prüfstand der Funde.** Die Recherche lief zweigleisig: eigene Abrufe und
+  sechs parallele Rechercheagenten. Bei der ersten Fassung stand eine
+  Wikipedia-Abrufsperre (HTTP 429) im Weg; **die fünf damals offenen Punkte —
+  Babylon, Chaco-Maße, Wittemoor, Corlea, Unas — sind inzwischen von mir
+  Zeile für Zeile in der Quelle nachgelesen** (2026-08-13) und im Text mit
+  „selbst gegengelesen" bzw. „nachgeprüft" gekennzeichnet. Dasselbe gilt für
+  Sweet Track, Diolkos und die Kandidaten 1–3. **Nicht** selbst gegengelesen
+  und entsprechend markiert sind: El Mirador (Maße), die Steinwalze auf dem
+  Sacbe, der römische Schichtaufbau/Vitruv-Befund, die Cart ruts von Malta
+  sowie zwei Detailangaben zum Sweet Track (Holzmasse, Coles' Bauzeit-Schätzung).
 - **Keine Vollständigkeit.** Gesucht wurde entlang dreier gesetzter Annahmen.
   Straßen, die keiner davon widersprechen, sind systematisch unterrepräsentiert.
 - **Wikipedia als Hauptquelle.** Die Crossref-Treffer belegen, dass es zu jedem
