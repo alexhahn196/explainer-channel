@@ -317,11 +317,26 @@ Zweckoffenheit: „Although their purpose may never be certain".
 | Grundstruktur | zwei Nord-Süd-Achsen — eine an der Küste, eine im Hochgebirge — mit vielen Abzweigen | ebenda |
 | Bauelemente | Pflasterung wo nötig, **Treppen** zur Höhengewinnung, Brücken, Stützmauern, Entwässerung | ebenda |
 | Fortbewegung | ohne Rad, ohne Zugtiere | ebenda |
+| Regelbreite | 1–4 m; Strecke Cusco–Quito durchgehend über 4 m, Teilstücke 16 m | ebenda [nicht selbst gegengelesen] |
+| Maximalbreite | **35 m** an der Nordküste; Zufahrt zum Verwaltungszentrum Huanuco Pampa 25 m | ebenda [nicht selbst gegengelesen] |
+| Belagswechsel | Hochland gepflastert, Puna und Küstenwüste gestampfte Erde — bei Pampa Afuera (Casma) Belag aus **Pflanzenfasern** | ebenda [nicht selbst gegengelesen] |
+| Brücke über den Apurímac | **45 m Spannweite** aus Ichu-Grasseilen, alle zwei Jahre komplett neu geknüpft; Seilkörbe (oroyas) überbrückten über 50 m | ebenda [nicht selbst gegengelesen] |
+| Tunnel | für die Zufahrt zur Apurímac-Brücke in den Fels geschlagen, mit seitlichen Lichtöffnungen | ebenda [nicht selbst gegengelesen] |
+| Lastträger | Lama: rund 30 kg über 20 km am Tag | ebenda [nicht selbst gegengelesen] |
+| Höchster Punkt | Ritualstraße auf den Berg Chani bis zum Gipfel auf **5.949 m** | ebenda [nicht selbst gegengelesen] |
+| Nach der Eroberung | Netz aufgegeben, weil Pferde und Ochsenkarren darauf nicht brauchbar waren; heute noch etwa 25 % sichtbar | ebenda [nicht selbst gegengelesen] |
 | Nachwirkung | Studie von 2021: in Gemeinden im Umkreis von 20 km bis heute höhere Löhne, bessere Ernährung und Schulbildung | ebenda |
 
 **Bildbare Szenen:** eine Steintreppe als Teil einer Fernstraße · ein Läufer
 statt eines Wagens · eine Straße, die über einen Pass führt, wo ein Rad
-nutzlos wäre.
+nutzlos wäre · eine 35 m breite Fahrbahn ohne ein einziges Fahrzeug darauf ·
+eine Hängebrücke aus Gras, die alle zwei Jahre neu geknüpft wird · Spanier mit
+Pferd und Karren, die auf der besten Straße des Kontinents nicht vorankommen.
+
+**Vorbehalt:** Nur Gesamtlänge, Bauelemente, Radlosigkeit und die Studie von
+2021 habe ich selbst in der Quelle gelesen. Die Breitenangaben, die
+Apurímac-Brücke, der Tunnel, die Lama-Traglast und der Berg Chani stammen aus
+der Agentenrecherche und sind in der Tabelle einzeln markiert.
 
 ### Nachgereicht — Sweet Track, Somerset
 
