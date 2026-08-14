@@ -1,9 +1,10 @@
 # Sechs Kulturfiguren — Machart statt Gesicht, Testlauf 2026-08-14
 
-> **Fortsetzung:** `lauf2-erwachsen/` — derselbe Auftrag mit erwachsen lesender
-> Machart (Kopf ⅕ statt ⅓, kleinere Augen, Nase erlaubt, kein Glanzpunkt) plus
-> einer Schlachtszene als Prüfung der Darstellungsfähigkeit. Der hier
-> beschriebene Machart-Block ist damit **überholt**.
+> **Überholt.** Der verbindliche Stil für Kanal 2 steht in
+> `lauf2-erwachsen/README.md` — erwachsen lesende Machart (Kopf ⅕ statt ⅓,
+> kleinere Augen, Nase erlaubt, kein Glanzpunkt, Brauen Pflicht), geprüft an
+> einer Schlachtszene und um vier Prompt-Härtungen ergänzt. Der hier
+> beschriebene Block ist nur noch Dokumentation des ersten Versuchs.
 
 Kurskorrektur gegenüber dem Gesichtstest (N1–N6): Der Kanal hat **kein festes
 Gesicht**. Das Video zeigt Menschen aus neun Kulturen, die sollen sich

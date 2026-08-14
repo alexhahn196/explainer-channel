@@ -1,6 +1,11 @@
-# Lauf 2: dieselbe Machart, erwachsen gelesen — 2026-08-14
+# Machart Kanal 2 — FINAL, Stand 2026-08-14
 
-Fortschreibung von `../README.md`. Zwei Aufträge in einem Lauf:
+> **Der Machart-Block in diesem Dokument ist verbindlich.** Er gilt ab sofort
+> für alle Figurenbilder von Kanal 2. Vorgänger: `../README.md` (Lauf 1,
+> kindliche Proportion, **überholt**).
+
+Fortschreibung von `../README.md`. Drei Aufträge, in dieser Reihenfolge
+abgearbeitet:
 
 1. **Die Machart darf nicht kindlich lesen.** Begründung ist geschäftlich, nicht
    ästhetisch: Chibi-Optik (großer Kopf, große runde Augen, keine Nase) erhöht
@@ -9,6 +14,8 @@ Fortschreibung von `../README.md`. Zwei Aufträge in einem Lauf:
 2. **Darstellungsfähigkeit prüfen.** Historische Themen verlangen Kampf,
    Verletzung, Tod. Trägt die Machart das, oder wird es unfreiwillig komisch?
    Dafür ein siebtes Bild: antike Schlachtszene, ernst und dokumentarisch.
+3. **Vier Prompt-Härtungen** gegen die im Lauf beobachteten Ausfälle, geprüft an
+   einem Nachlauf der zwei fehlerhaften Bilder.
 
 Orientierung: *Unknown Frequencies* — flach und stilisiert, liest trotzdem
 erwachsen.
@@ -18,161 +25,21 @@ erwachsen.
 | Posten | Wert |
 |---|---|
 | Preflight `get_cost`, `nano_banana_2`, 16:9, **2k** | **2 Credits** |
-| Erzeugt | 7 Bilder à 2k, 2752 × 1536 |
-| **Verbraucht** | **14 Credits** |
-| Kontostand vor dem Lauf | 2975,9 Credits |
-| Fehlschläge, Nachläufe | keine |
+| Hauptlauf | 7 Bilder = **14 Credits** |
+| Nachlauf E3 + E6 mit Härtungen | 2 Bilder = **4 Credits** |
+| **Summe dieses Dokuments** | **18 Credits** |
+| Kontostand vor dem Hauptlauf | 2975,9 Credits |
+| Fehlschläge | keine |
 
-Modellsubstitution zum dritten Mal: angefordert `nano_banana_2`, gelaufen unter
-`nano_banana_flash`. Abrechnung wie im Preflight.
-
-## Was am Machart-Block geändert wurde
-
-Sechs Änderungen auf einmal — gegen die sonstige Ein-Variable-Regel des Repos,
-aber „liest erwachsen" ist ein Bündel und kein Einzelmerkmal.
-
-| Bauteil | Lauf 1 | Lauf 2 |
-|---|---|---|
-| Kopf : Körperhöhe | ⅓ | **⅕, ausdrücklich nie größer als ¼** |
-| Augengröße | bis ⅕ der Kopfbreite | **~⅒, bei F3 und F6 ¹⁄₁₂** |
-| Glanzpunkt im Auge | Pflichtbauteil | **entfällt ganz** |
-| Nase | verboten | **kurzer Strich oder flacher Schattenfleck** |
-| Formensprache | rund, weich | **kantig, gerade Kanten, harte Ecken** |
-| Körperbau | Kugelkopf, Stäbchenglieder, Fäustlinge | **Schultern breiter als der Kopf, sichtbarer Hals, kantiger Kiefer, flache Hände mit angedeuteter Fingertrennung** |
-| Verbote neu | — | **keine Wangenröte, keine Wimpern, keine halbgeschlossenen Lider, kein Babygesicht, „never cute"** |
-
-Dazu die Reparatur des Proportionsbruchs aus Lauf 1: der Block sagt jetzt
-ausdrücklich, dass jede Kopfform-Angabe **nur den Schädelumriss** meint und die
-Kopf-zu-Körper-Proportion nicht verändert; F2 und F3 wiederholen die Proportion
-zusätzlich im Figurenblock.
-
-Der vollständige Block steht unten im Wortlaut.
-
-## Befund 1: Liest es erwachsen?
-
-**Ja, bei sechs von sieben.** Der Proportionsbruch aus Lauf 1 ist weg: alle
-Figuren stehen jetzt im selben Maßsystem, Kopf grob ein Sechstel der
-Körperhöhe, Schultern breiter als der Kopf, Hals sichtbar. Die Nase ist in
-sieben von sieben da. Kein Bild zeigt Wangenröte, keine Wimpern, keine
-Glanzpunkte.
-
-Der stärkste Einzeleffekt kommt nicht von der Proportion, sondern von der
-**Augengröße plus Nase**. Dieselbe Figur, dieselbe Kleidung, dieselbe Szene wie
-in Lauf 1 — F1 Moorbauer und F6 Legionär lesen jetzt als erwachsene Männer statt
-als Maskottchen, und geändert wurden im Gesicht nur diese beiden Größen.
-
-**Die Ausnahme ist E5, die Inka-Läuferin.** Sie ist die einzige Figur, die noch
-jugendlich wirkt: Ihre Augen sind sichtbar größer geraten als die der anderen
-sechs, das Gesicht ist rund und glatt geblieben. Der Grund ist erkennbar das
-Bauteil „keine Brauen" — ohne Brauen fehlt der obere kantige Abschluss des
-Gesichts, und das Modell füllt die Lücke mit größeren Augen. **Brauenlos und
-erwachsen schließen sich in dieser Machart offenbar aus.** Das Bauteil
-„Brauen ja/nein" sollte deshalb aus dem Variationskatalog gestrichen und auf
-„Brauen immer, Form variabel" gesetzt werden.
-
-Ein zweiter, schwächerer Rest: **E2 hat wieder keine Brauen bekommen**, obwohl
-dünne gerade Brauen bestellt waren — derselbe Ausfall wie in Lauf 1, wieder bei
-der weiblichen Figur mit Kopftuch. Das ist jetzt zweimal dasselbe Muster und
-sollte als Modellverhalten behandelt werden, nicht als Zufall.
-
-**Wichtige Einschränkung zum Geschäftsrisiko:** Die Einstufung „Made for Kids"
-hängt nicht am Zeichenstil allein, sondern an Thema, Titel, Thumbnail, Sprache
-und Kanaleinstellung zusammen. Dieser Lauf senkt ein Signal, er räumt das Risiko
-nicht ab.
-
-## Befund 2: Trägt die Machart Kampf, Verletzung, Tod?
-
-**Ja.** `e7-schlacht.png` wirkt an keiner Stelle unfreiwillig komisch.
-
-Was den Ernst trägt:
-
-- **Die Gesichter.** Kleine Augen, gerade Brauen, gerader Mundstrich — die
-  Legionäre und die keltischen Krieger schauen grimmig und angespannt. Bei
-  Lauf-1-Augen (⅕ Kopfbreite, Glanzpunkt) wäre genau das gekippt: große
-  glänzende Augen über einer Schildlinie lesen als Spielzeugsoldaten.
-- **Der Gefallene** liegt still auf dem Rücken, Kopf zur Seite, Augen als zwei
-  geschlossene Striche, Arm ausgestreckt, Schild flach daneben. Er wird nicht
-  ausgestellt, er liegt einfach da. Das ist die Bildsprache einer
-  Museumstafel, nicht die eines Comics.
-- **Der Verwundete** sitzt am Boden, Kopf gesenkt, Hand auf der Seite, ein
-  dunkelroter Fleck auf der Tunika und einer am Oberarm. Kein Spritzer, keine
-  Wunde im Detail, kein Schrei. Das reicht, um zu erzählen, dass er getroffen
-  ist, und bleibt unterhalb dessen, was eine Altersfreigabe auslöst.
-- **Kein Effektvokabular:** keine Bewegungslinien, kein Feuer, keine Heldenpose,
-  keine Zuspitzung.
-
-Was auffällt, aber den Ernst nicht bricht: Die Speere der zweiten Reihe liegen
-kompositorisch quer über den Schilden und wirken teils angesetzt statt gehalten.
-Das ist ein Kompositionsfehler, kein Stilproblem.
-
-**Damit ist die eigentliche Frage beantwortet:** Die Machart trägt schwierige
-Inhalte, seit die Augen klein und die Nase da ist. Sie trug sie in Lauf 1 nicht.
-
-## Das Offensichtliche, geprüft
-
-| Prüfpunkt | Befund |
-|---|---|
-| **Falsche Figurenzahl** | **E3 Priester zeigt ZWEI Figuren**, obwohl `exactly one character` im Prompt steht. Beide sind zusätzlich **am unteren Bildrand abgeschnitten** (Beine ab Knie fehlen), obwohl der Block „head to toe, not cropped" verlangt. Das Bild ist als Figurenblatt unbrauchbar |
-| **Fehlende Gliedmaßen** | **E6 Legionär: der rechte Arm fehlt.** Der Schild steht frei neben ihm, ohne Hand, ohne Arm — nur die Schulterplatte, dann Schild. Im Kleinen unauffällig, in der Vergrößerung (`_detail-e6-schildarm.png`) eindeutig |
-| **Verformte Hände** | keine. Die Hände tragen jetzt angedeutete Finger, sauber gebaut — auch im Schlachtbild (Speerhände, die Hand des Verwundeten, die offene Hand des Gefallenen) |
-| **Text im Bild** | keiner. Die Schildmotive (gelbe Flügel- und Sichelformen, Buckel) und die Rosetten an der babylonischen Wand sind Ornament |
-| **Sonstiges** | Weiche Verläufe treten weiter auf (Himmel in E1, E4, Boden in E2), trotz `no gradients`. Dritter Lauf mit demselben Befund |
-
-Zwei Bilder haben also einen harten Fehler: **E3** (Doppelfigur, angeschnitten)
-und **E6** (fehlender Arm). Beide sind Modellrauschen, kein Fehler der
-Machart-Beschreibung — ein Nachlauf derselben zwei Prompts kostet 4 Credits und
-ist **nicht** ausgeführt, weil dafür kein Auftrag vorlag.
-
-## Empfehlung für den Machart-Block
-
-1. **„Brauen ja/nein" streichen.** Brauen werden Pflichtbauteil, variabel ist
-   nur die Form. Begründung: E5.
-2. **Brauenausfall bei verhüllten Frauenköpfen absichern** — Brauen im
-   Figurenblock nochmals nennen und vor die Frisur ziehen. Begründung: E2 in
-   beiden Läufen.
-3. **`exactly one character` verstärken** — der Zusatz wurde in E3 ignoriert;
-   „a single person, alone in the frame, no second figure, no mirrored copy"
-   ist der nächste Versuch.
-4. **Gliedmaßen-Ansage ergänzen** — „both arms visible and attached, the hand
-   that carries an object is drawn". Begründung: E6.
-5. Kopfproportion, Augengröße, Nase und Kantigkeit **unverändert übernehmen** —
-   sie tun genau das, wofür sie eingesetzt wurden.
-
-## Dateien
-
-| Datei | Inhalt |
-|---|---|
-| `e1-moorbauer.png` … `e6-legionaer.png` | dieselben sechs Figuren wie in Lauf 1, erwachsene Machart |
-| `e7-schlacht.png` | Testszene: antike Schlacht, dokumentarisch |
-| `_kontaktbogen.png` | alle sieben nebeneinander |
-| `_kontaktbogen-gesichter.png` | sieben Köpfe auf gleiche Größe gebracht (bei E7 der Verwundete) |
-| `_detail-e6-schildarm.png` | Beleg für den fehlenden Arm |
-| `_detail-e7-gefallener.png`, `_detail-e7-verwundeter.png` | Belege zur Darstellungsfähigkeit |
-
-Alle Einzelbilder 2752 × 1536 px (16:9).
-
-## Vorbehalte
-
-- **Ein Bild je Figur, ein einziges Schlachtbild.** Ob die Machart Kampf
-  *zuverlässig* trägt, ist mit einem Bild nicht entschieden — nur, dass sie es
-  kann.
-- **Sechs Änderungen gleichzeitig.** Welcher Anteil des Erwachsen-Effekts von
-  der Proportion, welcher von den Augen und welcher von der Nase kommt, ist
-  nicht getrennt gemessen. Die Zuschreibung im Text („Augen plus Nase tragen
-  am meisten") ist eine Sichtbeurteilung, keine Messung.
-- **Keine Miniaturprüfung**, keine Palette, keine Signalfarbe — alles offen.
-- **Kein Abgleich mit Unknown Frequencies am Bild.** Der Vergleich lief gegen
-  die Beschreibung, nicht gegen nebeneinandergelegte Standbilder.
-- Die Aussage zum „Made for Kids"-Risiko ist eine Einschätzung zur Bildwirkung,
-  keine Auskunft über die tatsächliche Einstufungspraxis von YouTube.
+Modellsubstitution zum dritten und vierten Mal: angefordert `nano_banana_2`,
+gelaufen unter `nano_banana_flash`. Abrechnung jeweils wie im Preflight.
 
 ---
 
-## Prompts im Wortlaut
+## Der verbindliche Machart-Block
 
-Jeder der sieben Prompts beginnt mit diesem Block, wortgleich (bei E7 fehlen die
-Wörter `generous empty space` und `head to toe`, weil die Szene mehrere Figuren
-zeigt):
+Steht am Anfang **jedes** Prompts, wortgleich. Danach folgen `THIS CHARACTER: …`
+und `SCENE: …`, am Ende die Negativliste.
 
 ```
 Flat 2D vector illustration in the style of a serious documentary explainer
@@ -186,24 +53,225 @@ rule: the head is about one fifth of the total body height and never larger than
 one quarter; these are grown adults, not children, not chibi mascots, not cute
 cartoon toys; shoulders clearly wider than the head, a visible neck, a defined
 angular jaw, long straight limbs, simple flat hands with a thumb and a hint of
-finger separation. Any description of head shape refers to the outline of the
-skull only and never changes this head-to-body proportion. FACE BUILD, identical
-construction for every character in this series: small eyes, each about one
-tenth of the head width, a rounded white eye shape with one solid dark pupil,
-fully open, no catchlight highlight, no eyelashes, no half-closed lids, no wide
-staring doll eyes; a minimal nose indicated by one short straight line or a
-small flat shadow shape; below it one short thin straight mouth line; no cheek
-blush, no baby face. Eyebrows, where the character has them, are drawn and carry
-the expression. Minimal symbolic background built from a few large flat shapes,
-generous empty space, muted era-appropriate colours. Figures are shown in full,
-head to toe, not cropped at the edge of the frame. Sober, restrained,
-documentary - never cute.
+finger separation. Both arms are visible and attached to the body, and the hand
+that holds or carries an object is drawn. Any description of head shape refers
+to the outline of the skull only and never changes this head-to-body proportion.
+FACE BUILD, identical construction for every character in this series: small
+eyes, each about one tenth of the head width, a rounded white eye shape with one
+solid dark pupil, fully open, no catchlight highlight, no eyelashes, no
+half-closed lids, no wide staring doll eyes; EYEBROWS ARE MANDATORY on every
+character, male and female alike - two clearly drawn brows sit above the eyes,
+never omitted, never replaced by eyelashes; only their shape and weight vary,
+and they carry the expression; a minimal nose indicated by one short straight
+line or a small flat shadow shape; below it one short thin straight mouth line;
+no cheek blush, no baby face. Minimal symbolic background built from a few large
+flat shapes, generous empty space, muted era-appropriate colours. FRAMING: a
+single person, alone in the frame, full body visible, not cropped - head, both
+hands and both feet inside the picture, no second figure, no mirrored duplicate.
+Sober, restrained, documentary - never cute.
 ```
 
-Die sechs Figurenblöcke entsprechen denen aus `../README.md`, ergänzt um
-„of adult build" und die wiederholte Proportionsangabe; E5 zusätzlich um „the
-lean athletic build of a long-distance runner" und „her face set and
-concentrated".
+Negativliste am Prompt-Ende:
+
+```
+no text, no letters, no numbers, no watermark, no logo, exactly one person in the picture.
+```
+
+### Die einzige Stelle, die ausgetauscht werden darf
+
+Der `FRAMING:`-Satz gilt für **Einzelfigurenbilder**. Bei Szenen mit mehreren
+Figuren (Schlacht, Markt, Werkstatt) wird genau dieser Satz ersetzt durch:
+
+```
+FRAMING: figures are shown in full, not cropped at the edge of the frame.
+```
+
+Alles andere bleibt unverändert — auch bei Mehrfigurenszenen.
+
+### Die vier Härtungen, die drinstehen
+
+| # | Härtung | Wortlaut im Block | Grund |
+|---|---|---|---|
+| 1 | **Brauen sind Pflicht**, auch bei weiblichen Figuren; variabel ist nur die Form | `EYEBROWS ARE MANDATORY on every character, male and female alike … never replaced by eyelashes; only their shape and weight vary` | E5 wirkte ohne Brauen als einzige noch jugendlich; E2 hat die Brauen in zwei Läufen gegen Wimpern getauscht |
+| 2 | **Brauen vor der Frisur** im Figurenblock nennen | im Figurenblock: erst Augen, dann `above them two … eyebrows`, **dann** Haar/Bart | zweimal derselbe Ausfall bei der weiblichen Figur mit Kopftuch |
+| 3 | **Einzelfigur und Vollbild** | `FRAMING: a single person, alone in the frame, full body visible, not cropped - head, both hands and both feet inside the picture, no second figure, no mirrored duplicate` | E3 zeigte zwei Priester, beide unten angeschnitten |
+| 4 | **Beide Arme sichtbar und angesetzt** | `Both arms are visible and attached to the body, and the hand that holds or carries an object is drawn` | E6 fehlte der Schildarm |
+
+**Damit ist das Bauteil „Brauen ja/nein" aus dem Variationskatalog gestrichen.**
+Es bleiben: Augengröße und -abstand, Brauenform, Kopfform (nur Schädelumriss),
+Hautton, Haar, Bart, Alter, Geschlecht, Kleidung.
+
+---
+
+## Befund 1: Liest es erwachsen?
+
+**Ja, bei sechs von sieben.** Der Proportionsbruch aus Lauf 1 ist weg: alle
+Figuren stehen im selben Maßsystem, Kopf grob ein Sechstel der Körperhöhe,
+Schultern breiter als der Kopf, Hals sichtbar. Nase in sieben von sieben. Keine
+Wangenröte, keine Wimpern, keine Glanzpunkte.
+
+Der stärkste Einzeleffekt kommt nicht von der Proportion, sondern von
+**Augengröße plus Nase**: E1 Moorbauer und E6 Legionär sind dieselbe Figur in
+derselben Szene wie in Lauf 1, geändert wurden im Gesicht nur diese beiden
+Größen — und sie lesen jetzt als erwachsene Männer statt als Maskottchen.
+
+**Die Ausnahme ist E5, die Inka-Läuferin.** Sie wirkt als einzige noch
+jugendlich: größere Augen, rundes glattes Gesicht. Der Grund ist das Bauteil
+„keine Brauen" — ohne Brauen fehlt der kantige obere Gesichtsabschluss, und das
+Modell füllt die Lücke mit größeren Augen. Brauenlos und erwachsen schließen
+sich in dieser Machart aus. Genau daraus folgt Härtung 1.
+
+> **Achtung, offener Punkt:** `e5-laeuferin.png` stammt aus dem Hauptlauf und ist
+> **nicht** nach dem finalen Block gebaut — die Figur hat keine Brauen, was der
+> Block jetzt verbietet. Das Bild bleibt als Beleg für den Befund liegen, ist
+> aber **kein gültiges Stilmuster**. Ein Nachlauf mit dem finalen Block kostet
+> 2 Credits und ist nicht ausgeführt.
+
+**Wichtige Einschränkung zum Geschäftsrisiko:** „Made for Kids" hängt nicht am
+Zeichenstil allein, sondern an Thema, Titel, Thumbnail, Sprache und
+Kanaleinstellung zusammen. Dieser Lauf senkt ein Signal, er räumt das Risiko
+nicht ab.
+
+## Befund 2: Trägt die Machart Kampf, Verletzung, Tod?
+
+**Ja.** `e7-schlacht.png` wirkt an keiner Stelle unfreiwillig komisch.
+
+Was den Ernst trägt:
+
+- **Die Gesichter.** Kleine Augen, gerade Brauen, gerader Mundstrich — die
+  Legionäre und die keltischen Krieger schauen grimmig und angespannt. Mit den
+  Lauf-1-Augen (⅕ Kopfbreite, Glanzpunkt) wäre genau das gekippt: große
+  glänzende Augen über einer Schildlinie lesen als Spielzeugsoldaten.
+- **Der Gefallene** liegt still auf dem Rücken, Kopf zur Seite, Augen als zwei
+  geschlossene Striche, Arm ausgestreckt, Schild flach daneben. Er wird nicht
+  ausgestellt, er liegt einfach da — Bildsprache einer Museumstafel, nicht die
+  eines Comics.
+- **Der Verwundete** sitzt am Boden, Kopf gesenkt, Hand auf der Seite, ein
+  dunkelroter Fleck auf der Tunika und einer am Oberarm. Kein Spritzer, keine
+  Wunde im Detail, kein Schrei. Das reicht zum Erzählen und bleibt unterhalb
+  dessen, was eine Altersfreigabe auslöst.
+- **Kein Effektvokabular:** keine Bewegungslinien, kein Feuer, keine Heldenpose.
+
+Was auffällt, aber den Ernst nicht bricht: Die Speere der zweiten Reihe liegen
+kompositorisch quer über den Schilden und wirken teils angesetzt statt gehalten.
+Kompositionsfehler, kein Stilproblem.
+
+**Die eigentliche Frage ist damit beantwortet:** Die Machart trägt schwierige
+Inhalte, seit die Augen klein und die Nase da ist. In Lauf 1 trug sie sie nicht.
+
+## Befund 3: Haben die Härtungen gewirkt?
+
+Nachlauf mit denselben zwei Figurenblöcken, nur der gehärtete Block davor.
+**Beide Fehler sind weg:**
+
+| Bild | vorher | nach der Härtung |
+|---|---|---|
+| **E3 Priester** | zwei Figuren, beide unten angeschnitten | **eine** Figur, ganzer Körper im Bild, beide Füße und beide Hände sichtbar, Brauen vorhanden |
+| **E6 Legionär** | rechter Arm fehlte, Schild schwebte frei | **beide Arme angesetzt und gezeichnet**, linke Hand am Schildrand, rechte Hand am Speerschaft |
+
+Die verworfenen Fassungen liegen als `_verworfen-*.png` im Ordner, damit der
+Vergleich nachvollziehbar bleibt.
+
+**Zwei Reste, die die Härtungen nicht erfassen** — beide im Rahmen, aber
+benannt:
+
+- **E3s Mund** ist wieder eine rechteckige Form im Bart statt eines dünnen
+  Strichs. Der Bart scheint den Mundstrich zu verdrängen; das passiert jetzt
+  zweimal bei derselben Figur.
+- **Untere Lidstriche** treten bei E3 und E6 auf. Der Block verbietet
+  *halbgeschlossene* Lider, nicht Lidlinien — die Augen sind offen, die Figuren
+  wirken älter, nicht müde. Das ist hinnehmbar; wer es weghaben will, muss
+  `no lower eyelid lines` ergänzen.
+- **E6s linke Hand** liegt auf dem Schildrand statt an einem Griff. Arm und Hand
+  sind da, die Härtung hat also geliefert, was sie sollte.
+
+## Das Offensichtliche, geprüft (finaler Satz)
+
+| Prüfpunkt | Befund |
+|---|---|
+| Falsche Figurenzahl | keine. Sieben von sieben zeigen die bestellte Figurenzahl |
+| Fehlende Gliedmaßen | keine |
+| Verformte Hände | keine. Die Hände tragen angedeutete Finger, auch im Schlachtbild |
+| Anschnitt | keiner. Alle Einzelfiguren stehen vollständig im Bild |
+| Text im Bild | keiner. Schildmotive und Wandrosetten sind Ornament |
+| Sonstiges | weiche Verläufe trotz `no gradients` — vierter Lauf mit demselben Befund. Wer flache Flächen zwingend braucht, muss nachbearbeiten |
+
+## Dateien
+
+| Datei | Inhalt |
+|---|---|
+| `e1-moorbauer.png` … `e6-legionaer.png` | die sechs Figuren; **E3 und E6 aus dem gehärteten Nachlauf** |
+| `e7-schlacht.png` | Testszene: antike Schlacht, dokumentarisch |
+| `_kontaktbogen.png` | alle sieben nebeneinander (mit den neuen E3, E6) |
+| `_kontaktbogen-gesichter.png` | sieben Köpfe auf gleiche Größe (bei E7 der Verwundete) |
+| `_detail-e7-gefallener.png`, `_detail-e7-verwundeter.png` | Belege zur Darstellungsfähigkeit |
+| `_verworfen-e3-doppelfigur.png` | E3 vor der Härtung: zwei Figuren, angeschnitten |
+| `_verworfen-e6-ohne-arm.png` | E6 vor der Härtung: fehlender Schildarm |
+| `_verworfen-e6-detail-schildarm.png` | Vergrößerung des fehlenden Arms |
+
+Alle Einzelbilder 2752 × 1536 px (16:9).
+
+## Vorbehalte
+
+- **Ein Bild je Figur, ein einziges Schlachtbild, ein einziger Nachlauf.** Dass
+  die Härtungen zweimal gegriffen haben, ist ein Beleg, keine Statistik.
+- **Sechs Änderungen gleichzeitig** im Hauptlauf. Welcher Anteil des
+  Erwachsen-Effekts von der Proportion, welcher von den Augen und welcher von
+  der Nase kommt, ist nicht getrennt gemessen. Die Zuschreibung im Text ist eine
+  Sichtbeurteilung.
+- **E5 entspricht dem finalen Block nicht** (siehe oben).
+- **Keine Miniaturprüfung**, keine Palette, keine Signalfarbe — alles offen. Ein
+  Teil des Zusammenhalts kann daran noch kippen.
+- **Kein Abgleich mit Unknown Frequencies am Bild** — der Vergleich lief gegen
+  die Beschreibung, nicht gegen nebeneinandergelegte Standbilder.
+- Die Aussage zum „Made for Kids"-Risiko ist eine Einschätzung zur Bildwirkung,
+  keine Auskunft über die Einstufungspraxis von YouTube.
+
+---
+
+## Figurenblöcke im Wortlaut
+
+Reihenfolge im Figurenblock ist verbindlich: **Alter und Körperbau →
+Kopfproportion → Schädelumriss → Hautton → Augen → Brauen → Haar/Bart →
+Kleidung → Haltung.** Die Brauen stehen vor der Frisur (Härtung 2).
+
+### E3 Priester (gehärtete Fassung)
+```
+THIS CHARACTER: an older man, tall and upright, head one fifth of his body
+height, long narrow skull outline, light olive skin tone; small eyes about one
+twelfth of the head width, set close together, fully open and level; above them
+two heavy straight dark eyebrows; below the eyes a long square dark grey beard
+with rows of tight curls, and no visible hair on the head. He wears a long
+fringed woollen robe in deep madder red draped over one shoulder; both arms hang
+at his sides with both hands drawn, and both bare feet are inside the picture.
+SCENE: a temple terrace in Babylon in the 6th century BC - a stepped ziggurat
+silhouette behind him, a flat wall band of glazed deep blue brick with simple
+rosette shapes, a dark night sky with a few plain star dots and a crescent moon.
+```
+
+### E6 Legionär (gehärtete Fassung)
+```
+THIS CHARACTER: a middle-aged man, solid and square-shouldered, head one fifth
+of his body height, square angular skull outline with a heavy jaw, pale medium
+skin tone; small eyes about one twelfth of the head width, set close together;
+above them two low straight thick dark eyebrows; below them cropped dark hair
+just visible under the helmet, clean-shaven. He wears Roman segmented plate
+armour in flat grey over a red tunic, a plain crested helmet and hobnailed
+sandals. Both arms are attached at the shoulders and fully drawn: his left arm
+is bent and his left hand grips the handle of a rectangular red shield that
+rests upright on the ground beside him, his right arm hangs straight and his
+right hand holds a javelin planted on the ground. SCENE: a Roman frontier fort -
+a straight flat paved road band, a simple wooden palisade wall and one square
+gate tower behind him, flat green field bands, plain daylight sky.
+```
+
+### E1, E2, E4, E5 (aus dem Hauptlauf)
+
+Entsprechen den Figurenblöcken aus `../README.md`, ergänzt um „of adult build"
+und die wiederholte Proportionsangabe; E5 zusätzlich um „the lean athletic build
+of a long-distance runner" und „her face set and concentrated". **Für die
+Wiederverwendung müssen sie auf die Reihenfolge oben umgestellt werden** —
+Brauen vor die Frisur, und bei E5 Brauen ergänzen.
 
 ### E7 Schlachtszene — Szenenteil im Wortlaut
 
