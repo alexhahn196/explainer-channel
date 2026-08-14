@@ -1,3 +1,32 @@
+# RESERVE — nicht für Kanal 2. Vorgemerkt für einen späteren Kanal. Stand 14.08.2026.
+
+Der Stil ist gut und wird aufbewahrt, aber er kommt für Kanal 2 (Erklärkanal)
+nicht zum Einsatz. Was ihn ausmacht: Die Farbe steckt im Putz statt auf ihm —
+matte kreidige Flächen, weiche Pinselkanten, kein Tuschestrich, Craquelé über
+dem ganzen Bild, ausgearbeitete Gesichter und Faltenwurf, Figuren im Raum. Der
+Träger der Signalfarbe ist **das teure Pigment**: Genau ein Gegenstand je Bild
+ist türkis gemalt, und zwar der, um den es geht — eine Regel, die materialecht
+ist (Ägyptisch Blau war das teuerste Pigment einer Werkstatt) und die auch dort
+trägt, wo keine Szene ist: im Schema färbt sie eine Schicht, im Detail eine
+Schnur. Der **Ernsttest ist bestanden** (Bild 10, Schlachtszene: der Gefallene
+liegt still, der Verwundete hat einen dunklen Fleck, niemand posiert), und
+**Detail und Schema tragen ebenfalls** (Bild 8, zwei Hände an der Eichenbohle;
+Bild 9, Straßenquerschnitt ohne jede Beschriftung). Zwei Dinge sind vor einem
+späteren Einsatz zu klären: **Die offene Schwäche ist die Feed-Größe** — bei
+160 × 90 verschwindet das Craquelé restlos, und damit genau der
+Materialcharakter, der die Richtung ausmacht; was überlebt, ist allein die
+Signalfarbe (in 9 von 10 Bildern noch als Fleck erkennbar), wer den Stil
+einsetzt, braucht also eine eigene Thumbnail-Lösung. Und **drei Bilder hatten
+angeschnittene Figuren trotz Vorgabe** (Bild 5, 6 und die Randfiguren in Bild
+10) — die Rahmen-Härtung aus dem Figurenlauf
+(`../stil-figuren/lauf2-erwachsen/README.md`, Härtung 3) ist in diesen Block
+noch nicht eingearbeitet.
+
+Der verbindliche Stil für Kanal 2 steht in
+`../stil-figuren/lauf2-erwachsen/README.md`.
+
+---
+
 # Fresko ohne Fehlstellen — Breitentest, 2026-08-14
 
 S3 aus `../stil-runde-5/` ist gewählt. Die abgeplatzten Stellen entfallen
