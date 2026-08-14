@@ -1,5 +1,10 @@
 # Sechs Kulturfiguren — Machart statt Gesicht, Testlauf 2026-08-14
 
+> **Fortsetzung:** `lauf2-erwachsen/` — derselbe Auftrag mit erwachsen lesender
+> Machart (Kopf ⅕ statt ⅓, kleinere Augen, Nase erlaubt, kein Glanzpunkt) plus
+> einer Schlachtszene als Prüfung der Darstellungsfähigkeit. Der hier
+> beschriebene Machart-Block ist damit **überholt**.
+
 Kurskorrektur gegenüber dem Gesichtstest (N1–N6): Der Kanal hat **kein festes
 Gesicht**. Das Video zeigt Menschen aus neun Kulturen, die sollen sich
 unterscheiden. Zusammenhalten muss die **Machart** — Konturstärke,
