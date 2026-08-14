@@ -1,21 +1,164 @@
 # Stimmproben Video 1 — ElevenLabs
 
-> **Stand: Vorbereitung abgeschlossen, noch keine Probe erzeugt.**
-> Es fehlt der API-Schlüssel. Sobald `ELEVENLABS_API_KEY` gesetzt ist,
-> erzeugt ein Aufruf sämtliche Proben und trägt die Messwerte ein:
+> **Stand: 20 Proben erzeugt und vermessen.** Was fehlt: die beiden
+> Lexikon-Proben (Lauf D/E) — der Schlüssel hat die dafür nötige Berechtigung
+> nicht. Siehe [„Was nicht lief"](#was-nicht-lief).
 >
+> Reproduzieren:
 > ```
 > export ELEVENLABS_API_KEY=...
 > python3 produktion/video-01/stimmproben/elevenlabs/proben_erzeugen.py
 > ```
+> Alle Anfragen laufen mit festem `seed=4242` — ohne den ist nichts davon
+> reproduzierbar, siehe Befund 3.
 
 Dies ist der **erste und einzige Stimmentest für diesen Kanal**. Es gibt keinen
 Vergleichslauf mit einem anderen Anbieter. Das Fish Audio im
 [BibelTube](https://github.com/alexhahn196/BibelTube)-Repo gehört zum
 Bibel-Schlafkanal und läuft dort bei **141 WPM** — ein bewusst einschläferndes
 Tempo für ein 3,5-Stunden-Video. Für einen 8–15-Minuten-Erklärkanal bei ~219 WPM
-ist das keine Vergleichsgröße, sondern ein anderer Anwendungsfall. Entsprechend
-steht hier keine Anbieter-Gegenüberstellung, sondern eine Messung.
+ist das keine Vergleichsgröße, sondern ein anderer Anwendungsfall.
+
+**Keine Klangbewertung in dieser Datei.** Hier stehen ausschließlich gemessene
+Zahlen und technische Befunde. Ob „Dümmer" richtig klingt, ob die Pointe sitzt
+und welche Stimme taugt — das entscheidet das Hören. Die Abnahmeliste dafür
+steht in [`../../aussprache.md`](../../aussprache.md).
+
+## Ergebnis
+
+Gemessen am fertigen Audio, nicht angepeilt. `WPM` = Wörter ÷ Sprechdauer,
+Sprechdauer aus dem Zeichen-Alignment der API (ohne Auslaufstille).
+
+### Lauf A — Ziel ~219 WPM · Lauf B — etwas langsamer, Ziel ~195 WPM
+
+| Stimme | m/w | Lauf A | Abw. | `speed` | Lauf B | Abw. | `speed` |
+|---|---|---|---|---|---|---|---|
+| Eric | m | **214,3** | −4,7 | 1,1955 | **194,2** | −0,8 | 1,1210 |
+| Brian | m | **212,9** | −6,1 | 1,1970 | **196,2** | +1,2 | 1,1320 |
+| Matilda | w | **219,5** | +0,5 | 1,2000 | **189,2** | −5,8 | 1,1390 |
+| Bella | w | **215,2** | −3,8 | 1,1690 | **199,5** | +4,5 | 1,1160 |
+
+Vier der acht Werte liegen 3,8–6,1 WPM neben dem Ziel. Das ist **kein
+Kalibrierfehler, sondern eine Eigenschaft des Parameters** — siehe Befund 4.
+
+### Lauf K — Kennlinie je Stimme
+
+| Stimme | `speed`=1,0 | `speed`=1,2 | Faktor |
+|---|---|---|---|
+| Eric | 177,2 | 226,8 | 1,280 |
+| Brian | 174,1 | 224,6 | 1,290 |
+| Matilda | 167,1 | 219,5 | 1,314 |
+| Bella | 177,6 | 230,7 | 1,299 |
+
+### Lauf C — mit Aussprachekorrektur im Text
+
+Vier Ersetzungen: `Dümmer→Deemer`, `Pr 31→P-R thirty-one`,
+`Campemoor→Kahm-puh-mohr`, `Widan el-Faras→wih-Dahn el Fah-rass`.
+
+| Stimme | WPM | `speed` |
+|---|---|---|
+| Eric | 221,5 | 1,1920 |
+| Brian | 210,7 | 1,1970 |
+| Matilda | 219,6 | 1,2000 |
+| Bella | 222,5 | 1,1690 |
+
+Lauf C lief mit dem `speed`-Wert, den Lauf A zum Zeitpunkt der Erzeugung hatte;
+bei Eric wurde Lauf A danach noch auf 1,1955 nachgezogen. Die Differenz
+entspricht rund 1,3 WPM und ist für den Aussprachevergleich ohne Belang.
+
+## Technische Befunde
+
+**1. Es gibt keinen WPM-Parameter.** Nur `speed`, einen relativen Faktor von
+0,7 bis 1,2 auf das natürliche Tempo der jeweiligen Stimme. Ein Zieltempo lässt
+sich nicht einstellen, nur durch Messen und Nachstellen annähern.
+
+**2. 219 WPM liegt am oberen Rand des Machbaren.** Die vier Stimmen sprechen von
+sich aus 167–178 WPM. Für ~219 WPM braucht es `speed` zwischen 1,17 und 1,20 —
+also fast oder genau den Anschlag. **Nach oben ist praktisch kein Spielraum:**
+Matilda erreicht 219,5 WPM erst bei exakt `speed=1.2` und kann nicht schneller.
+Wenn das Skript später schneller laufen soll als 219 WPM, geht das mit diesen
+Stimmen nicht über den Parameter.
+
+**3. Ohne `seed` ist die Ausgabe nicht reproduzierbar.** Vier identische
+Anfragen (gleiche Stimme, gleicher Text, `speed=1.0`) ergaben:
+
+```
+186,9 · 173,1 · 163,9 · 167,8 WPM     Spanne 23,0 · Standardabweichung 10,05
+```
+
+Mit festem `seed` liefert dieselbe Anfrage exakt dasselbe Tempo — dreimal
+59,304 s auf die Millisekunde. Die MP3-Bytes unterscheiden sich trotzdem,
+das Timing nicht. **Folge: Jede Tempomessung ohne Seed misst Rauschen.** Die
+ersten beiden Läufe dieses Tests waren aus genau diesem Grund unbrauchbar und
+wurden verworfen.
+
+**4. Die Kennlinie ist gestuft, nicht glatt.** `speed` wirkt weder linear noch
+stetig:
+
+| Beobachtung | Messung |
+|---|---|
+| nicht linear | `speed`=1,2 liefert das 1,28- bis 1,31-fache Tempo, nicht das 1,2-fache |
+| Plateaus | Brian: `speed`=1,1970 und 1,1986 → **beide exakt 212,9 WPM** |
+| | Bella: `speed`=1,1160 und 1,1114 → **beide exakt 199,5 WPM** |
+| Sprünge | Matilda: `speed`=1,1999 → 205,2 WPM · `speed`=1,2000 → **219,5 WPM** |
+
+Der letzte Fall ist der deutlichste: **0,0001 Parameterunterschied, 14,3 WPM
+Sprung.** Die erreichbaren Tempi sind damit eine diskrete Menge. Ein Zielwert,
+der zwischen zwei Stufen liegt, ist mit dieser Stimme nicht erreichbar — und
+keine Iteration ändert das. Deshalb bleiben vier der acht Proben 3,8–6,1 WPM
+neben dem Ziel.
+
+Praktische Folge für die Pipeline: `speed` sollte auf zwei Nachkommastellen
+gesetzt und der Anschlag exakt getroffen werden. Ein per Interpolation knapp
+verfehltes 1,2 landet auf der darunterliegenden Stufe.
+
+**5. Aussprachelexika kennen zwei Regelarten mit unterschiedlicher
+Modellabdeckung.**
+
+| Regelart | Inhalt | Modelle |
+|---|---|---|
+| `<phoneme>` | IPA oder CMU | **nur Flash v2 / Turbo v2** (und v3 für nicht-englische Lautschrift); andere überspringen sie stillschweigend |
+| `<alias>` | Ersatzschreibung | **alle** |
+
+Auf `eleven_multilingual_v2` — laut Doku das für Langform stabilste Modell —
+wirken also **nur Alias-Regeln**. Wer IPA will, muss das Modell wechseln.
+
+**6. „Dümmer" ist als Alias-Regel nicht sauber abbildbar.** `aussprache.md`
+empfiehlt *DUEM-uh* mit gerundetem ü und nennt `/ˈdiːmər/` als Notlösung. Eine
+Alias-Regel muss englische Orthographie sein — ein ü ist darin nicht
+schreibbar. Das Lexikon nutzt deshalb `Deemer`. Nur die Phonem-Regel könnte
+`/ˈdʏmɐ/` transportieren, und die nur auf Flash/Turbo v2.
+
+**7. Die Zeichen-Alignment-Antwort ist für die SRT-Erzeugung brauchbar.** Der
+Endpunkt `/with-timestamps` liefert Start- und Endzeit **je Zeichen**. Das ist
+genauer als alles, was `produktion/pipeline/schritt6_srt.py` heute macht, und
+wäre beim Umbau der Pipeline zu prüfen.
+
+**8. Nebenbefunde.** Die Antwort-Header nennen ein Limit von **5 gleichzeitigen
+Anfragen** (`maximum-concurrent-requests`) — `tts_parallel = 12` aus
+`produktion/config.md` ist für ElevenLabs also zu hoch. Sprechdauer und
+Dateidauer sind bei allen 20 Proben identisch, das Modell hängt keine
+Auslaufstille an.
+
+## Gewählte Einstellungen
+
+| Einstellung | Wert | Warum |
+|---|---|---|
+| `model_id` | `eleven_multilingual_v2` | laut Doku am stabilsten für Langform |
+| `speed` | je Stimme, siehe Tabellen | einziger Tempo-Regler |
+| `stability` | 0,5 (Vorgabe) | jede Abweichung wäre eine Klangentscheidung — die ist nicht meine |
+| `style` | **0,0** | Style wirkt dokumentiert **auch aufs Tempo**; bei zwei Tempo-Reglern misst der Test nichts Belastbares |
+| `similarity_boost` | 0,75 (Vorgabe) | — |
+| `use_speaker_boost` | an (Vorgabe) | — |
+| `seed` | **4242** | ohne ihn keine Reproduzierbarkeit, siehe Befund 3 |
+| `output_format` | `mp3_44100_128` | — |
+
+**Bewusst nicht benutzt:** `<break>`-Tags und Großschreibung. Beide steuern
+Pausen und Betonung. Der vierte Baustein des Testtexts prüft, ob die Pointe
+**von sich aus** Betonung bekommt — mit Nachhilfe misst er die Nachhilfe. Für
+die Produktion stehen beide bereit; `aussprache.md` verlangt an zwei Stellen
+ausdrücklich eine Pause (zwischen *Susa* und *Sardis*, und vor „came" in
+„dressed for came"), und die geht über `<break>`, aber nur auf v2-Modellen.
 
 ## Der Testtext
 
@@ -26,171 +169,104 @@ Erzeugt von [`testtext_bauen.py`](testtext_bauen.py), Zeile für Zeile belegt in
 
 | Baustein | Wörter | Was er prüft |
 |---|---|---|
-| Eröffnung bis „They were fighting water." (Absatz 1) | 107 | Tempo im Fließtext, Direktansprache, und ob die Ein-Satz-Antwort als Antwort klingt |
+| Eröffnung bis „They were fighting water." (Absatz 1) | 107 | Tempo im Fließtext, Direktansprache, ob die Ein-Satz-Antwort als Antwort klingt |
 | Dümmer / Pr 31 / Campemoor (Absatz 6) | 27 | deutsche Ortsnamen, Label ohne etablierte Sprechweise |
-| Widan el-Faras (Absatz 10) | 35 | der schwerste Eigenname der Liste — arabisch, Betonung auf der zweiten Silbe |
+| Widan el-Faras (Absatz 10) | 35 | schwerster Eigenname — arabisch, Betonung auf der zweiten Silbe |
 | „The wheel is not the parent of the road." (Absatz 8) | 16 | bekommt eine Pointe Betonung? |
 | *drei Übergänge* | 32 | *nicht Teil des Skripts* |
 
 **185 der 217 Wörter stehen wörtlich so in `skript.md`.** Die 32 Wörter
-Übergang sind für diesen Test geschrieben und kommen im Skript nicht vor — sie
-sind in `testtext_herkunft.md` einzeln ausgewiesen, damit die Proben nicht
-versehentlich für eine Vertonung des Skripts gehalten werden.
+Übergang sind für diesen Test geschrieben — sie sind in `testtext_herkunft.md`
+einzeln ausgewiesen, damit die Proben nicht für eine Vertonung des Skripts
+gehalten werden.
 
-Zur Auswahl des zweiten Bausteins: Vorgegeben war „der Satz mit Pr 31 und
-Campemoor". Der davorstehende Dümmer-Satz ist mitgenommen, weil „One of them"
-sonst ohne Bezugswort dasteht — und weil Dümmer der in `aussprache.md`
-als **kritisch** markierte Fall ist (englisch gelesen klingt er wie *dumber*).
+Der Dümmer-Satz ist über die Vorgabe hinaus mitgenommen, weil „One of them"
+sonst ohne Bezugswort dasteht und Dümmer der in `aussprache.md` als **kritisch**
+markierte Fall ist.
 
 Nicht im Testtext, aber vom Lexikon abgedeckt: Nebuchadnezzar, Ishtar, Susa,
 Sardis, Chaco, Pueblo, Wari, Tiwanaku, Westhay, Shapwick, Pr 7 und sämtliche
 BC-Jahreszahlen.
 
-## Die zwei Fragen zu ElevenLabs
+## Die Stimmen
 
-### 1. Gibt es eine Wörterbuch-Funktion? — Ja
+Zwei männliche, zwei weibliche, ausgewählt nach den Katalog-Labels der
+ElevenLabs-Standardstimmen: Akzent `american` (Zielmarkt US laut Repo-README)
+und Verwendungszweck `informative_educational` beziehungsweise erzählnah.
+**Auswahl nach Katalogangaben, keine Klangbewertung.**
 
-ElevenLabs hat **Pronunciation Dictionaries** im PLS-Format (Pronunciation
-Lexicon Specification, ein W3C-XML-Format). Sie werden einmal hochgeladen und
-danach je Anfrage über `pronunciation_dictionary_locators` angehängt (maximal
-drei gleichzeitig).
-
-Es gibt **zwei Regelarten**, und der Unterschied ist folgenreich:
-
-| Regelart | Was drinsteht | Welche Modelle werten sie aus |
-|---|---|---|
-| `<phoneme>` | Lautschrift, `alphabet="ipa"` oder `"cmu"` | **nur Flash v2 / Turbo v2** (und v3 für nicht-englische Lautschrift). Andere Modelle **überspringen sie stillschweigend**. |
-| `<alias>` | Ersatzschreibung, also normaler Text | **alle** Modelle |
-
-Das heißt: Auf `eleven_multilingual_v2` — dem Modell, das die Dokumentation als
-das für Langform stabilste führt — wirken **nur Alias-Regeln**. Wer IPA nutzen
-will, muss auf ein anderes Modell wechseln. Beide Varianten sind gebaut und
-werden beide erzeugt, damit der Unterschied hörbar wird:
-
-- [`lexikon_alias.pls`](lexikon_alias.pls) — **23 Regeln**: 13 Eigennamen plus
-  die 10 Lesarten aus dem zweiten Tabellenblock von `aussprache.md`
-  (Pr 31 → „P-R thirty-one“, 3807 BC → „thirty-eight-oh-seven B C“, 50.5 →
-  „fifty point five“, BC → „B C“ …).
-- [`lexikon_phoneme.pls`](lexikon_phoneme.pls) — **13 Regeln** in IPA, direkt
-  aus der IPA-Spalte von `aussprache.md`.
-
-Beide werden von [`lexikon_bauen.py`](lexikon_bauen.py) aus der Tabelle in
-`aussprache.md` erzeugt, sind also nachvollziehbar und bei Änderungen an der
-Ausspracheliste neu baubar.
-
-**Ein Fall ist nicht sauber abbildbar:** „Dümmer". `aussprache.md` empfiehlt
-*DUEM-uh* mit gerundetem ü und nennt `/ˈdiːmər/` („DEE-mer") ausdrücklich als
-Notlösung, falls das TTS das ü nicht trifft. Eine Alias-Regel muss englische
-Orthographie sein — ein ü ist darin nicht schreibbar. Das Alias-Lexikon nutzt
-deshalb die dokumentierte Notlösung `Deemer`. Nur das Phonem-Lexikon kann
-`/ˈdʏmɐ/` überhaupt transportieren, und das nur auf einem der beiden
-Phonem-Modelle. Ob das Modell das ü dann trägt, ist eine Hörfrage.
-
-### 2. Welche Einstellungen beeinflussen Betonung und Tempo
-
-| Einstellung | Bereich | Wirkung | Hier gewählt |
+| Stimme | m/w | `voice_id` | Katalog-Label |
 |---|---|---|---|
-| `speed` | 0.7–1.2, Vorgabe 1.0 | **Der einzige Tempo-Regler.** Relativer Faktor auf das natürliche Tempo der Stimme, kein WPM-Wert. | **wird je Stimme berechnet**, siehe unten |
-| `stability` | 0–1, Vorgabe 0.5 | niedrig = mehr Variation in Betonung und Emotion, hoch = gleichförmiger | **0.5** |
-| `style` | 0–1, Vorgabe 0 | Überzeichnung des Sprechstils; verändert Betonung **und Tempo** mit | **0.0** — damit `speed` der einzige Tempo-Einfluss bleibt |
-| `similarity_boost` | 0–1, Vorgabe 0.75 | Nähe zur Originalstimme | **0.75** |
-| `use_speaker_boost` | an/aus, Vorgabe an | Verstärkung der Stimmähnlichkeit | **an** |
-| `model_id` | — | bestimmt Ausdrucksbreite, Zeichenlimit und Lexikon-Unterstützung | **`eleven_multilingual_v2`** |
+| Eric | m | `cjVigY5qzO86Huf0OWal` | Smooth, Trustworthy · conversational |
+| Brian | m | `nPczCjzI2devNBz1zQrb` | Deep, Resonant, Comforting |
+| Matilda | w | `XrExE9yKIg1WjnnlVkGX` | Knowledgable, Professional · informative_educational |
+| Bella | w | `hpp4J3VqNfWAUOO0d1Us` | Professional, Bright, Warm · informative_educational |
 
-Dazu kommen **Einflüsse im Text selbst**, die kein Parameter sind:
+Lauf C läuft über **alle vier** Stimmen statt nur über „die beste" — welche die
+beste ist, entscheidet das Hören.
 
-- `<break time="1.0s" />` — Pause, maximal 3 s, **nur v2-Modelle**, laut
-  Dokumentation bei häufigem Einsatz instabil.
-- Auslassungspunkte (`…`) erzeugen Zögern, Gedankenstriche kurze Pausen.
-- **Großschreibung** verstärkt die Betonung eines Worts („a VERY long day").
-- Nur `eleven_v3`: Audio-Tags wie `[whispers]`, `[excited]`.
+## Was nicht lief
 
-**Begründung der Wahl:** `style = 0` ist der wichtigste Punkt. Style wirkt
-dokumentiert auf das Tempo, und ein Tempotest, bei dem zwei Regler gleichzeitig
-auf das Tempo wirken, misst nichts Belastbares. `stability` bleibt auf der
-Vorgabe 0.5, weil jede Abweichung eine Klangentscheidung wäre — und die ist
-nicht meine.
+**Lauf D/E — die Lexikon-Proben fehlen.** Der übergebene Schlüssel kann
+ausschließlich Text-to-Speech. Geprüft:
 
-**Für diesen Testlauf bewusst nicht benutzt:** `<break>`-Tags und
-Großschreibung. Der vierte Baustein prüft, ob die Pointe **von sich aus**
-Betonung bekommt. Wenn dort nachgeholfen wird, misst der Test die Nachhilfe und
-nicht die Stimme. Für die spätere Produktion sind beide Mittel verfügbar —
-`aussprache.md` verlangt an zwei Stellen ausdrücklich eine Pause (zwischen
-*Susa* und *Sardis*, und vor „came" in „dressed for came"), und die ist über
-`<break>` steuerbar, aber nur auf v2-Modellen.
-
-### Warum kalibriert werden muss
-
-ElevenLabs kennt **keinen WPM-Parameter**. `speed` ist ein relativer Faktor auf
-das natürliche Tempo der jeweiligen Stimme, und das ist von Stimme zu Stimme
-verschieden. „219 WPM" lässt sich also nicht einstellen, sondern nur treffen:
-
-1. **Lauf K** — jede Stimme bei `speed = 1.0`, Tempo messen.
-2. `speed = 219 / gemessenes Tempo`, gekappt auf 0.7–1.2.
-3. **Lauf A/B** — mit diesem Faktor erzeugen und **erneut messen**.
-
-Berichtet wird die gemessene Zahl, nicht die angepeilte. Wo der Faktor an die
-Grenze 0.7/1.2 stößt, ist das Zieltempo mit dieser Stimme nicht erreichbar; die
-Messtabelle markiert solche Fälle.
-
-Gemessen wird doppelt, weil sich beide Werte systematisch unterscheiden:
-`wpm_sprache` aus dem Zeichen-Alignment der API (Ende des letzten gesprochenen
-Zeichens, ohne Auslaufstille) und `wpm_datei` aus der MP3-Länge (mit).
-
-## Die Proben
-
-Stimmen: zwei männliche, zwei weibliche. Ausgewählt nach den Labels der
-ElevenLabs-Standardstimmen — Akzent `american` (Zielmarkt US laut Repo-README)
-und Verwendungszweck `informative_educational` beziehungsweise erzählnah. **Das
-ist eine Auswahl nach Katalogangaben, keine Klangbewertung.**
-
-| Datei | Lauf | Stimme | Ziel-Tempo | Aussprachekorrektur |
-|---|---|---|---|---|
-| `k-<stimme>-speed100.mp3` | K | alle vier | — (Kalibrierung) | keine |
-| `a-<stimme>-219wpm.mp3` | A | alle vier | ~219 WPM | keine |
-| `b-<stimme>-195wpm.mp3` | B | alle vier | ~195 WPM | keine |
-| `c-<stimme>-219wpm-korrigiert.mp3` | C | alle vier | ~219 WPM | Respelling im Text |
-| `d-<stimme>-219wpm-lexikon-alias.mp3` | D | eine | ~219 WPM | Alias-Lexikon |
-| `e-<stimme>-219wpm-lexikon-phoneme.mp3` | E | eine | ~219 WPM | Phonem-Lexikon (`eleven_turbo_v2`) |
-
-**Zwei Abweichungen vom Auftrag, beide bewusst:**
-
-1. **Lauf C läuft über alle vier Stimmen, nicht nur über „die beste".** „Beste"
-   wäre eine Qualitätsentscheidung, und die ist deine. Der Testtext ist kurz
-   genug, dass alle vier zusammen rund 4.700 Zeichen kosten — billiger als eine
-   falsche Vorauswahl.
-2. **Lauf E nutzt ein anderes Modell** (`eleven_turbo_v2` statt
-   `eleven_multilingual_v2`), weil Phonem-Regeln auf dem Hauptmodell wirkungslos
-   sind. Die Probe ist damit nicht direkt gegen A–D hörbar — sie beantwortet nur
-   die Frage, ob IPA überhaupt greift.
-
-## Messung und Kosten
-
-`messungen.json` entsteht beim Lauf und enthält je Probe: Stimme, Lauf,
-`speed`-Faktor, Dauer (Sprache und Datei), beide WPM-Werte, Zeichenzahl und ob
-der Faktor gekappt wurde. Dazu der Tarif und der Zeichenstand **vor und nach**
-dem Lauf, aus `/v1/user/subscription` — die abgerechnete Zahl kommt also vom
-Konto, nicht aus meiner Schätzung.
-
-| | |
+| Endpunkt | Ergebnis |
 |---|---|
-| Abrechnungseinheit | Zeichen |
-| Erwarteter Verbrauch | **~20.900 Zeichen** (18 Proben) |
-| Tarif | *wird beim Lauf ausgelesen* |
-| Tatsächlich abgerechnet | *wird beim Lauf ausgelesen* |
+| `POST /v1/text-to-speech/…` | **200 — funktioniert** |
+| `GET /v1/user/subscription` | 401 · fehlendes Recht `user_read` |
+| `GET /v1/voices` | 401 · fehlendes Recht `voices_read` |
+| `GET /v1/models` | 401 · fehlendes Recht `models_read` |
+| `GET /v1/pronunciation-dictionaries` | 401 · fehlendes Recht `pronunciation_dictionaries_read` |
+| `POST /v1/pronunciation-dictionaries/add-from-file` | 401 · fehlendes Recht `pronunciation_dictionaries_write` |
+
+Umgangen: Die `voice_id`s stammen aus dem **öffentlichen** Katalog
+(`/v1/voices` ohne Schlüssel) und stehen fest im Skript.
+
+Nicht umgehbar: Ohne `pronunciation_dictionaries_write` lässt sich kein Lexikon
+anlegen. Beide PLS-Dateien sind fertig gebaut und geprüft; sobald der Schlüssel
+das Recht hat, erzeugt derselbe Skriptaufruf die fehlenden zwei Proben.
+
+**Die Aussprachekorrektur ist trotzdem getestet** — über Lauf C, der die
+Ersetzungen direkt im Text vornimmt. Was das Lexikon zusätzlich brächte: Die
+Korrektur läge einmal zentral statt in jedem Skript, und die Schreibung im
+Sprechtext bliebe unangetastet — was `aussprache.md` ausdrücklich verlangt
+(„nicht die Schreibung im Skript phonetisch verfälschen, sonst bricht der
+Abgleich mit `faktencheck.py`").
+
+## Kosten
+
+Abgerechnet wird in **Zeichen**. Der Tarif ließ sich nicht auslesen
+(`user_read` fehlt), die Zahlen sind daher selbst gezählt, nicht vom Konto:
+
+| Posten | Zeichen |
+|---|---|
+| Die 20 erhaltenen Proben samt ihrer Annäherungsschritte | 44.137 |
+| Verworfener Lauf 1 (ohne Seed, Messungen unbrauchbar) | 18.620 |
+| Verworfener Lauf 2 (ohne Seed) | 31.369 |
+| Streuungsmessung ohne/mit Seed (Befund 3) | 8.113 |
+| Nachprüfung der Seed-Reproduzierbarkeit (Befund 4) | 3.477 |
+| **Gesamt an die API gesendet** | **105.716** |
+
+Der hohe Anteil verworfener Läufe geht auf Befund 3 zurück: Ohne Seed war nicht
+erkennbar, dass die Messungen Rauschen waren. Ein Wiederholungslauf mit dem
+jetzigen Stand kostet **44.137 Zeichen**, ein Lauf ohne die Annäherungsschritte
+(feste `speed`-Werte aus der Ergebnistabelle) rund **23.200**.
 
 ## Dateien
 
 | Datei | Zweck |
 |---|---|
+| `k-<stimme>-speed100.mp3`, `…-speed120.mp3` | Lauf K — Kennlinie, 8 Dateien |
+| `a-<stimme>-219wpm.mp3` | Lauf A — ~219 WPM, 4 Dateien |
+| `b-<stimme>-195wpm.mp3` | Lauf B — ~195 WPM, 4 Dateien |
+| `c-<stimme>-219wpm-korrigiert.mp3` | Lauf C — mit Aussprachekorrektur, 4 Dateien |
+| `messungen.json` | alle Messwerte, Annäherungsverlauf, Zeichenverbrauch |
 | `testtext_bauen.py` | montiert den Testtext aus vier Skriptstellen |
-| `testtext.txt` | der Testtext, 217 Wörter |
-| `testtext_korrigiert.txt` | derselbe Text mit 4 Ersatzschreibungen |
+| `testtext.txt` / `testtext_korrigiert.txt` | der Testtext, roh und korrigiert |
 | `testtext_herkunft.md` | Herkunftsnachweis je Baustein |
 | `lexikon_bauen.py` | baut beide PLS-Dateien aus `aussprache.md` |
-| `lexikon_alias.pls` / `lexikon_phoneme.pls` | die Aussprachelexika |
+| `lexikon_alias.pls` (23 Regeln) / `lexikon_phoneme.pls` (13 Regeln) | die Aussprachelexika — gebaut, noch nicht hochgeladen |
 | `proben_erzeugen.py` | erzeugt alle Proben, misst Tempo, schreibt `messungen.json` |
-| `messungen.json` | Messwerte, Zeichenverbrauch, Tarifstand — *entsteht beim Lauf* |
 
 ## Quellen
 

@@ -56,16 +56,66 @@ GRUNDEINSTELLUNG = {
 
 # 2 maennlich, 2 weiblich. Auswahl nach Label `informative_educational` /
 # Erzaehltauglichkeit und Akzent `american` (Zielmarkt US laut README).
+# Die IDs stehen fest, weil der Schluessel das Recht `voices_read` nicht hat.
+# Es sind die Standardstimmen aus dem oeffentlichen Katalog (/v1/voices ohne
+# Schluessel), abgerufen am 2026-08-14.
 STIMMEN = [
-    ("Eric",    "maennlich"),
-    ("Brian",   "maennlich"),
-    ("Matilda", "weiblich"),
-    ("Bella",   "weiblich"),
+    ("Eric",    "maennlich", "cjVigY5qzO86Huf0OWal"),
+    ("Brian",   "maennlich", "nPczCjzI2devNBz1zQrb"),
+    ("Matilda", "weiblich",  "XrExE9yKIg1WjnnlVkGX"),
+    ("Bella",   "weiblich",  "hpp4J3VqNfWAUOO0d1Us"),
 ]
 
 WPM_ZIEL = 219.0        # aus skript.md, Messtabelle
 WPM_LANGSAM = 195.0     # "etwas langsamer" — rund 11 % unter dem Zielwert
 SPEED_MIN, SPEED_MAX = 0.7, 1.2
+
+TOLERANZ_WPM = 4.0      # als getroffen gilt eine Abweichung unter 4 WPM
+MAX_SCHRITTE = 3        # so viele Anlaeufe je Stimme und Zieltempo
+
+# Fester Seed fuer JEDE Anfrage. Ohne ihn ist die Ausgabe nicht reproduzierbar:
+# vier identische Anfragen an dieselbe Stimme ergaben 163,9 / 167,8 / 173,1 /
+# 186,9 WPM — 23 WPM Spanne, Standardabweichung 10,05. Mit festem Seed liefert
+# dieselbe Anfrage exakt dasselbe Tempo (dreimal 177,2 WPM). Erst dadurch wird
+# die Tempo-Annaeherung unten ueberhaupt sinnvoll, weil sie sonst Rauschen
+# statt einer Kennlinie verfolgt.
+SEED = 4242
+ANKER = (1.0, 1.2)      # Stuetzstellen der Kennlinie je Stimme
+
+
+def interpoliere(punkte: list[tuple[float, float]], ziel: float) -> float:
+    """Naechster `speed`-Versuch fuer ein Zieltempo.
+
+    `speed` wirkt **nicht** linear: gemessen liefert speed=1.2 je nach Stimme
+    das 1,25- bis 1,38-fache des natuerlichen Tempos. Ein einmaliges
+    `ziel / natuerlich` verfehlt das Ziel darum deutlich. Stattdessen wird
+    zwischen zwei bereits gemessenen Punkten interpoliert (Sekante) und, wo
+    das Ziel ausserhalb liegt, aus den beiden naechstgelegenen extrapoliert.
+    """
+    def kappe(s: float) -> float:
+        # Am Anschlag exakt einrasten. Die Kennlinie ist gestuft: gemessen
+        # liefert speed=1.1999 bei Matilda 205,2 WPM, speed=1.2000 dagegen
+        # 219,5 WPM — 14,3 WPM Sprung fuer 0,0001 Parameterunterschied. Ein
+        # per Interpolation knapp verfehlter Anschlag landet also auf der
+        # falschen Stufe.
+        s = max(SPEED_MIN, min(SPEED_MAX, s))
+        for anschlag in (SPEED_MIN, SPEED_MAX):
+            if abs(s - anschlag) < 1e-3:
+                return anschlag
+        return s
+
+    p = sorted(set(punkte))
+    if len(p) == 1:
+        s0, w0 = p[0]
+        return kappe(s0 * ziel / w0)
+    for (s0, w0), (s1, w1) in zip(p, p[1:]):
+        if (w0 - ziel) * (w1 - ziel) <= 0 and w1 != w0:
+            return kappe(s0 + (ziel - w0) * (s1 - s0) / (w1 - w0))
+    nah = sorted(p, key=lambda x: abs(x[1] - ziel))[:2]
+    (s0, w0), (s1, w1) = nah
+    if w1 == w0:
+        return kappe(s0)
+    return kappe(s0 + (ziel - w0) * (s1 - s0) / (w1 - w0))
 
 
 def woerter(text: str) -> int:
@@ -102,11 +152,15 @@ class Client:
         r.raise_for_status()
         return r.json()
 
-    def tarif(self) -> dict:
-        return self._hole("/user/subscription")
-
-    def stimmen(self) -> list[dict]:
-        return self._hole("/voices")["voices"]
+    def tarif(self) -> dict | None:
+        """Tarif- und Zeichenstand. Braucht das Recht `user_read`; fehlt es,
+        wird None geliefert und der Zeichenverbrauch nur selbst gezaehlt."""
+        try:
+            return self._hole("/user/subscription")
+        except requests.HTTPError as e:
+            if e.response is not None and e.response.status_code == 401:
+                return None
+            raise
 
     def lexikon_anlegen(self, pls: pathlib.Path, name: str) -> dict:
         r = self.s.post(
@@ -119,7 +173,8 @@ class Client:
         return r.json()
 
     def sprechen(self, voice_id: str, text: str, ziel: pathlib.Path, *,
-                 modell: str, speed: float, lexika: list[dict] | None = None) -> dict:
+                 modell: str, speed: float, lexika: list[dict] | None = None,
+                 seed: int | None = None) -> dict:
         koerper = {
             "text": text,
             "model_id": modell,
@@ -127,6 +182,8 @@ class Client:
         }
         if lexika:
             koerper["pronunciation_dictionary_locators"] = lexika
+        if seed is not None:
+            koerper["seed"] = seed
         for versuch in range(4):
             r = self.s.post(
                 f"{API}/text-to-speech/{voice_id}/with-timestamps",
@@ -157,6 +214,62 @@ def messen(eintrag: dict, text: str) -> dict:
     return eintrag
 
 
+def treffe_tempo(c: "Client", vid: str, text: str, ziel_wpm: float,
+                 punkte: list[tuple[float, float]], pfad: pathlib.Path,
+                 modell: str) -> tuple[dict, list[dict]]:
+    """Erzeugt so lange neu, bis das gemessene Tempo nahe genug am Ziel liegt.
+
+    Liefert die letzte Messung und den Verlauf. Die Datei unter `pfad` ist
+    danach die des letzten Anlaufs. `punkte` wird um jede neue Messung
+    ergaenzt, damit spaetere Zieltempi derselben Stimme davon profitieren.
+    """
+    verlauf: list[dict] = []
+    versucht: list[float] = []
+    m: dict = {}
+    for _ in range(MAX_SCHRITTE):
+        speed = round(interpoliere(punkte, ziel_wpm), 4)
+        if any(abs(speed - s) < 1e-4 for s in versucht):
+            break               # Interpolation bewegt sich nicht mehr
+        versucht.append(speed)
+        m = messen(c.sprechen(vid, text, pfad, modell=modell, speed=speed,
+                                  seed=SEED), text)
+        m["speed"] = speed
+        punkte.append((speed, m["wpm_sprache"]))
+        verlauf.append({"speed": speed, "wpm": m["wpm_sprache"],
+                        "abweichung": round(m["wpm_sprache"] - ziel_wpm, 1)})
+        if abs(m["wpm_sprache"] - ziel_wpm) <= TOLERANZ_WPM:
+            break
+        if speed <= SPEED_MIN or speed >= SPEED_MAX:
+            break               # Regelbereich ausgeschoepft
+    return m, verlauf
+
+
+def punkte_aus_bericht(pfad: pathlib.Path, wortzahl: int) -> dict[str, list[tuple[float, float]]]:
+    """Bereits gemessene (speed, wpm)-Paare je Stimme aus einem frueheren Lauf.
+
+    Nur Proben mit derselben Wortzahl, also demselben Text, und ohne Lexikon —
+    sonst waeren die Punkte nicht vergleichbar.
+    """
+    if not pfad.exists():
+        return {}
+    try:
+        alt = json.loads(pfad.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+    # Punkte aus einem Lauf mit anderem (oder ohne) Seed sind unbrauchbar:
+    # ohne festen Seed streut dasselbe Tempo um bis zu 23 WPM.
+    if alt.get("seed") != SEED:
+        return {}
+    raus: dict[str, list[tuple[float, float]]] = {}
+    for p in alt.get("proben", []):
+        if p.get("woerter") != wortzahl or p.get("korrektur") != "keine":
+            continue
+        if "speed" not in p or "wpm_sprache" not in p:
+            continue
+        raus.setdefault(p["stimme"], []).append((p["speed"], p["wpm_sprache"]))
+    return raus
+
+
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--nur-kalibrieren", action="store_true",
@@ -173,39 +286,51 @@ def main() -> int:
     c = Client(schluessel)
 
     tarif = c.tarif()
-    print(f"Tarif: {tarif.get('tier')}  —  "
-          f"{tarif.get('character_count')}/{tarif.get('character_limit')} Zeichen verbraucht")
-
-    nach_name = {v["name"].split(" - ")[0]: v for v in c.stimmen()}
-    fehlend = [n for n, _ in STIMMEN if n not in nach_name]
-    if fehlend:
-        print(f"Stimmen nicht gefunden: {fehlend}", file=sys.stderr)
-        return 3
+    if tarif:
+        print(f"Tarif: {tarif.get('tier')}  —  "
+              f"{tarif.get('character_count')}/{tarif.get('character_limit')} "
+              f"Zeichen verbraucht")
+    else:
+        print("Tarif nicht lesbar (Schluessel ohne Recht `user_read`) — "
+              "Zeichen werden nur selbst gezaehlt.")
 
     bericht: dict = {
         "modell": MODELL, "ausgabe": AUSGABE, "einstellungen": GRUNDEINSTELLUNG,
-        "wpm_ziel": WPM_ZIEL, "wpm_langsam": WPM_LANGSAM,
+        "wpm_ziel": WPM_ZIEL, "wpm_langsam": WPM_LANGSAM, "seed": SEED,
         "tarif": {k: tarif.get(k) for k in
                   ("tier", "character_count", "character_limit",
-                   "next_character_count_reset_unix")},
+                   "next_character_count_reset_unix")} if tarif else None,
         "proben": [],
     }
     zeichen_gesamt = 0
 
-    # --- Lauf K: natuerliches Tempo je Stimme -------------------------------
-    print("\nLauf K — natuerliches Tempo bei speed=1.0")
-    natuerlich: dict[str, float] = {}
-    for name, geschlecht in STIMMEN:
-        vid = nach_name[name]["voice_id"]
-        ziel = HIER / f"k-{name.lower()}-speed100.mp3"
-        m = messen(c.sprechen(vid, text, ziel, modell=MODELL, speed=1.0), text)
-        natuerlich[name] = m["wpm_sprache"]
-        zeichen_gesamt += m["zeichen"]
-        m |= {"datei": ziel.name, "stimme": name, "geschlecht": geschlecht,
-              "speed": 1.0, "lauf": "K", "korrektur": "keine"}
-        bericht["proben"].append(m)
-        print(f"  {name:<8} {m['wpm_sprache']:>6.1f} WPM (Sprache) / "
-              f"{m['wpm_datei']:>6.1f} (Datei)")
+    # Punkte aus einem frueheren Lauf uebernehmen, damit die Annaeherung nicht
+    # bei null anfaengt und keine Zeichen doppelt verbraucht werden.
+    punkte = punkte_aus_bericht(HIER / "messungen.json", woerter(text))
+    if punkte:
+        print("Vorhandene Messpunkte je Stimme: "
+              + ", ".join(f"{k}:{len(v)}" for k, v in sorted(punkte.items())))
+
+    # --- Lauf K: Kennlinie je Stimme an zwei Stuetzstellen -------------------
+    print(f"\nLauf K — Kennlinie bei speed={ANKER[0]} und {ANKER[1]} (seed={SEED})")
+    for name, geschlecht, vid in STIMMEN:
+        for anker in ANKER:
+            ziel = HIER / f"k-{name.lower()}-speed{int(anker*100)}.mp3"
+            bekannt = [w for s, w in punkte.get(name, []) if abs(s - anker) < 1e-4]
+            if bekannt and ziel.exists():
+                continue
+            m = messen(c.sprechen(vid, text, ziel, modell=MODELL,
+                                  speed=anker, seed=SEED), text)
+            zeichen_gesamt += m["zeichen"]
+            punkte.setdefault(name, []).append((anker, m["wpm_sprache"]))
+            m |= {"datei": ziel.name, "stimme": name, "geschlecht": geschlecht,
+                  "speed": anker, "lauf": "K", "korrektur": "keine"}
+            bericht["proben"].append(m)
+        pk = dict(punkte[name])
+        spanne = pk[ANKER[1]] / pk[ANKER[0]]
+        print(f"  {name:<8} {pk[ANKER[0]]:>6.1f} WPM @{ANKER[0]}  ->  "
+              f"{pk[ANKER[1]]:>6.1f} WPM @{ANKER[1]}   "
+              f"(Faktor {spanne:.3f} bei speed-Faktor {ANKER[1]/ANKER[0]:.2f})")
 
     if args.nur_kalibrieren:
         (HIER / "messungen.json").write_text(
@@ -213,34 +338,42 @@ def main() -> int:
         return 0
 
     # --- Laeufe A/B: die beiden Zieltempi ------------------------------------
+    speed_a: dict[str, float] = {}
     for kuerzel, ziel_wpm in (("a", WPM_ZIEL), ("b", WPM_LANGSAM)):
-        print(f"\nLauf {kuerzel.upper()} — Ziel {ziel_wpm:.0f} WPM")
-        for name, geschlecht in STIMMEN:
-            vid = nach_name[name]["voice_id"]
-            speed = max(SPEED_MIN, min(SPEED_MAX, ziel_wpm / natuerlich[name]))
+        print(f"\nLauf {kuerzel.upper()} — Ziel {ziel_wpm:.0f} WPM "
+              f"(Toleranz ±{TOLERANZ_WPM:.0f})")
+        for name, geschlecht, vid in STIMMEN:
             pfad = HIER / f"{kuerzel}-{name.lower()}-{int(ziel_wpm)}wpm.mp3"
-            m = messen(c.sprechen(vid, text, pfad, modell=MODELL, speed=speed), text)
-            zeichen_gesamt += m["zeichen"]
+            m, verlauf = treffe_tempo(c, vid, text, ziel_wpm,
+                                      punkte.setdefault(name, []), pfad, MODELL)
+            zeichen_gesamt += m["zeichen"] * len(verlauf)
+            abw = m["wpm_sprache"] - ziel_wpm
+            erreicht = abs(abw) <= TOLERANZ_WPM
+            if kuerzel == "a":
+                speed_a[name] = m["speed"]
             m |= {"datei": pfad.name, "stimme": name, "geschlecht": geschlecht,
-                  "speed": round(speed, 4), "lauf": kuerzel.upper(),
-                  "ziel_wpm": ziel_wpm, "korrektur": "keine",
-                  "speed_gekappt": not (SPEED_MIN < ziel_wpm / natuerlich[name] < SPEED_MAX)}
+                  "lauf": kuerzel.upper(), "ziel_wpm": ziel_wpm,
+                  "korrektur": "keine", "anlaeufe": len(verlauf),
+                  "verlauf": verlauf, "ziel_erreicht": erreicht,
+                  "speed_am_anschlag": m["speed"] >= SPEED_MAX or m["speed"] <= SPEED_MIN}
             bericht["proben"].append(m)
-            print(f"  {name:<8} speed={speed:.3f} -> {m['wpm_sprache']:>6.1f} WPM"
-                  + ("   [Faktor gekappt]" if m["speed_gekappt"] else ""))
+            print(f"  {name:<8} {len(verlauf)} Anlauf/-e, speed={m['speed']:.3f}"
+                  f" -> {m['wpm_sprache']:>6.1f} WPM ({abw:+.1f})"
+                  + ("" if erreicht else "   [Ziel NICHT erreicht]")
+                  + ("   [speed am Anschlag]" if m["speed_am_anschlag"] else ""))
 
     # --- Lauf C: Aussprachekorrektur im Text ---------------------------------
-    print(f"\nLauf C — Aussprachekorrektur im Text, Ziel {WPM_ZIEL:.0f} WPM")
-    for name, geschlecht in STIMMEN:
-        vid = nach_name[name]["voice_id"]
-        speed = max(SPEED_MIN, min(SPEED_MAX, WPM_ZIEL / natuerlich[name]))
+    print(f"\nLauf C — Aussprachekorrektur im Text, speed wie Lauf A")
+    for name, geschlecht, vid in STIMMEN:
         pfad = HIER / f"c-{name.lower()}-{int(WPM_ZIEL)}wpm-korrigiert.mp3"
-        m = messen(c.sprechen(vid, text_korr, pfad, modell=MODELL, speed=speed), text_korr)
+        m = messen(c.sprechen(vid, text_korr, pfad, modell=MODELL,
+                              speed=speed_a[name], seed=SEED), text_korr)
         zeichen_gesamt += m["zeichen"]
         m |= {"datei": pfad.name, "stimme": name, "geschlecht": geschlecht,
-              "speed": round(speed, 4), "lauf": "C", "korrektur": "Text (Respelling)"}
+              "speed": speed_a[name], "lauf": "C",
+              "korrektur": "Text (Respelling)"}
         bericht["proben"].append(m)
-        print(f"  {name:<8} {m['wpm_sprache']:>6.1f} WPM")
+        print(f"  {name:<8} speed={speed_a[name]:.3f} -> {m['wpm_sprache']:>6.1f} WPM")
 
     # --- Lauf D/E: Woerterbuch-Funktion --------------------------------------
     print("\nLauf D/E — Aussprachelexikon (PLS) ueber die API")
@@ -256,15 +389,14 @@ def main() -> int:
             print(f"  {art}: FEHLER {str(e)[:200]}")
     bericht["lexikon"] = lex
 
-    name, geschlecht = STIMMEN[0]
-    vid = nach_name[name]["voice_id"]
-    speed = max(SPEED_MIN, min(SPEED_MAX, WPM_ZIEL / natuerlich[name]))
+    name, geschlecht, vid = STIMMEN[0]
+    speed = speed_a[name]
     for kuerzel, art, modell in (("d", "alias", MODELL), ("e", "phoneme", MODELL_PHONEM)):
         if not lex.get(art):
             continue
         pfad = HIER / f"{kuerzel}-{name.lower()}-{int(WPM_ZIEL)}wpm-lexikon-{art}.mp3"
         m = messen(c.sprechen(vid, text, pfad, modell=modell, speed=speed,
-                              lexika=[lex[art]]), text)
+                              lexika=[lex[art]], seed=SEED), text)
         zeichen_gesamt += m["zeichen"]
         m |= {"datei": pfad.name, "stimme": name, "geschlecht": geschlecht,
               "speed": round(speed, 4), "lauf": kuerzel.upper(), "modell": modell,
@@ -275,13 +407,17 @@ def main() -> int:
     tarif_neu = c.tarif()
     bericht["zeichen_gesamt_gesendet"] = zeichen_gesamt
     bericht["tarif_nachher"] = {k: tarif_neu.get(k) for k in
-                                ("tier", "character_count", "character_limit")}
-    bericht["zeichen_laut_konto"] = (tarif_neu.get("character_count", 0)
-                                     - tarif.get("character_count", 0))
+                                ("tier", "character_count", "character_limit")} \
+        if tarif_neu else None
+    bericht["zeichen_laut_konto"] = (
+        tarif_neu.get("character_count", 0) - tarif.get("character_count", 0)
+        if tarif and tarif_neu else None)
     (HIER / "messungen.json").write_text(
         json.dumps(bericht, indent=2, ensure_ascii=False), encoding="utf-8")
+    laut_konto = bericht["zeichen_laut_konto"]
     print(f"\n{len(bericht['proben'])} Proben, {zeichen_gesamt} Zeichen gesendet, "
-          f"{bericht['zeichen_laut_konto']} laut Konto abgerechnet.")
+          + (f"{laut_konto} laut Konto abgerechnet." if laut_konto is not None
+             else "Kontostand nicht lesbar."))
     print("messungen.json geschrieben.")
     return 0
 
