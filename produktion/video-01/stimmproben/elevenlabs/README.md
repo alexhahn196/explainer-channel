@@ -9,20 +9,42 @@
 > python3 produktion/video-01/stimmproben/elevenlabs/proben_erzeugen.py
 > ```
 
-## Was hier getestet wird
+Dies ist der **erste und einzige Stimmentest für diesen Kanal**. Es gibt keinen
+Vergleichslauf mit einem anderen Anbieter. Das Fish Audio im
+[BibelTube](https://github.com/alexhahn196/BibelTube)-Repo gehört zum
+Bibel-Schlafkanal und läuft dort bei **141 WPM** — ein bewusst einschläferndes
+Tempo für ein 3,5-Stunden-Video. Für einen 8–15-Minuten-Erklärkanal bei ~219 WPM
+ist das keine Vergleichsgröße, sondern ein anderer Anwendungsfall. Entsprechend
+steht hier keine Anbieter-Gegenüberstellung, sondern eine Messung.
 
-Testtext ist **Absatz 6** des Sprechtexts aus [`../../skript.md`](../../skript.md)
-— 205 Wörter, 1.076 Zeichen. Der Absatz wurde gewählt, weil er die dichteste
-Häufung von Stolperstellen aus [`../../aussprache.md`](../../aussprache.md)
-enthält: **Dümmer** (der als kritisch markierte Fall — englisch gelesen klingt
-er wie *dumber*), **Campemoor** und das Label **Pr 31**.
+## Der Testtext
 
-**Was dieser Ausschnitt nicht abdeckt:** die übrigen zehn Eigennamen der
-Ausspracheliste (Widan el-Faras, Nebuchadnezzar, Ishtar, Susa, Sardis, Chaco,
-Pueblo, Wari, Tiwanaku, Westhay, Shapwick), das zweite Label Pr 7 und sämtliche
-BC-Jahreszahlen — die stehen in anderen Absätzen. Das Aussprachelexikon deckt
-sie trotzdem vollständig ab (23 Regeln), geprüft werden können sie an diesem
-Ausschnitt aber nicht.
+217 Wörter, 1.159 Zeichen — montiert aus **vier Stellen** des Sprechtexts in
+[`../../skript.md`](../../skript.md), verbunden durch drei kurze Übergänge.
+Erzeugt von [`testtext_bauen.py`](testtext_bauen.py), Zeile für Zeile belegt in
+[`testtext_herkunft.md`](testtext_herkunft.md).
+
+| Baustein | Wörter | Was er prüft |
+|---|---|---|
+| Eröffnung bis „They were fighting water." (Absatz 1) | 107 | Tempo im Fließtext, Direktansprache, und ob die Ein-Satz-Antwort als Antwort klingt |
+| Dümmer / Pr 31 / Campemoor (Absatz 6) | 27 | deutsche Ortsnamen, Label ohne etablierte Sprechweise |
+| Widan el-Faras (Absatz 10) | 35 | der schwerste Eigenname der Liste — arabisch, Betonung auf der zweiten Silbe |
+| „The wheel is not the parent of the road." (Absatz 8) | 16 | bekommt eine Pointe Betonung? |
+| *drei Übergänge* | 32 | *nicht Teil des Skripts* |
+
+**185 der 217 Wörter stehen wörtlich so in `skript.md`.** Die 32 Wörter
+Übergang sind für diesen Test geschrieben und kommen im Skript nicht vor — sie
+sind in `testtext_herkunft.md` einzeln ausgewiesen, damit die Proben nicht
+versehentlich für eine Vertonung des Skripts gehalten werden.
+
+Zur Auswahl des zweiten Bausteins: Vorgegeben war „der Satz mit Pr 31 und
+Campemoor". Der davorstehende Dümmer-Satz ist mitgenommen, weil „One of them"
+sonst ohne Bezugswort dasteht — und weil Dümmer der in `aussprache.md`
+als **kritisch** markierte Fall ist (englisch gelesen klingt er wie *dumber*).
+
+Nicht im Testtext, aber vom Lexikon abgedeckt: Nebuchadnezzar, Ishtar, Susa,
+Sardis, Chaco, Pueblo, Wari, Tiwanaku, Westhay, Shapwick, Pr 7 und sämtliche
+BC-Jahreszahlen.
 
 ## Die zwei Fragen zu ElevenLabs
 
@@ -42,13 +64,13 @@ Es gibt **zwei Regelarten**, und der Unterschied ist folgenreich:
 
 Das heißt: Auf `eleven_multilingual_v2` — dem Modell, das die Dokumentation als
 das für Langform stabilste führt — wirken **nur Alias-Regeln**. Wer IPA nutzen
-will, muss auf ein anderes Modell wechseln. Beide Varianten sind hier gebaut und
+will, muss auf ein anderes Modell wechseln. Beide Varianten sind gebaut und
 werden beide erzeugt, damit der Unterschied hörbar wird:
 
 - [`lexikon_alias.pls`](lexikon_alias.pls) — **23 Regeln**: 13 Eigennamen plus
   die 10 Lesarten aus dem zweiten Tabellenblock von `aussprache.md`
-  (Pr 31 → „P-R thirty-one", 3807 BC → „thirty-eight-oh-seven B C", 50.5 →
-  „fifty point five", BC → „B C" …).
+  (Pr 31 → „P-R thirty-one“, 3807 BC → „thirty-eight-oh-seven B C“, 50.5 →
+  „fifty point five“, BC → „B C“ …).
 - [`lexikon_phoneme.pls`](lexikon_phoneme.pls) — **13 Regeln** in IPA, direkt
   aus der IPA-Spalte von `aussprache.md`.
 
@@ -83,16 +105,19 @@ Dazu kommen **Einflüsse im Text selbst**, die kein Parameter sind:
 - **Großschreibung** verstärkt die Betonung eines Worts („a VERY long day").
 - Nur `eleven_v3`: Audio-Tags wie `[whispers]`, `[excited]`.
 
-Das ist unmittelbar relevant für zwei Vorgaben aus `aussprache.md`: die Pause
-zwischen *Susa* und *Sardis* und die Betonung auf „for" mit anschließender Pause
-in „dressed for came". Beides ist über `<break>` und Großschreibung steuerbar —
-aber nur auf v2-Modellen.
-
 **Begründung der Wahl:** `style = 0` ist der wichtigste Punkt. Style wirkt
 dokumentiert auf das Tempo, und ein Tempotest, bei dem zwei Regler gleichzeitig
 auf das Tempo wirken, misst nichts Belastbares. `stability` bleibt auf der
 Vorgabe 0.5, weil jede Abweichung eine Klangentscheidung wäre — und die ist
 nicht meine.
+
+**Für diesen Testlauf bewusst nicht benutzt:** `<break>`-Tags und
+Großschreibung. Der vierte Baustein prüft, ob die Pointe **von sich aus**
+Betonung bekommt. Wenn dort nachgeholfen wird, misst der Test die Nachhilfe und
+nicht die Stimme. Für die spätere Produktion sind beide Mittel verfügbar —
+`aussprache.md` verlangt an zwei Stellen ausdrücklich eine Pause (zwischen
+*Susa* und *Sardis*, und vor „came" in „dressed for came"), und die ist über
+`<break>` steuerbar, aber nur auf v2-Modellen.
 
 ### Warum kalibriert werden muss
 
@@ -131,47 +156,41 @@ ist eine Auswahl nach Katalogangaben, keine Klangbewertung.**
 **Zwei Abweichungen vom Auftrag, beide bewusst:**
 
 1. **Lauf C läuft über alle vier Stimmen, nicht nur über „die beste".** „Beste"
-   wäre eine Qualitätsentscheidung, und die ist ausdrücklich deine. Der Absatz
-   ist kurz genug, dass alle vier zusammen rund 4.400 Zeichen kosten — billiger
-   als eine falsche Vorauswahl.
+   wäre eine Qualitätsentscheidung, und die ist deine. Der Testtext ist kurz
+   genug, dass alle vier zusammen rund 4.700 Zeichen kosten — billiger als eine
+   falsche Vorauswahl.
 2. **Lauf E nutzt ein anderes Modell** (`eleven_turbo_v2` statt
    `eleven_multilingual_v2`), weil Phonem-Regeln auf dem Hauptmodell wirkungslos
    sind. Die Probe ist damit nicht direkt gegen A–D hörbar — sie beantwortet nur
    die Frage, ob IPA überhaupt greift.
 
-**Die Dateibenennung ist vorläufig.** Sie folgt dem Schema *Lauf – Stimme –
-Tempo – Korrektur*; sobald die Benennung aus Test 1 vorliegt, wird sie darauf
-umgestellt.
+## Messung und Kosten
 
-## Gegenüberstellung der Anbieter
+`messungen.json` entsteht beim Lauf und enthält je Probe: Stimme, Lauf,
+`speed`-Faktor, Dauer (Sprache und Datei), beide WPM-Werte, Zeichenzahl und ob
+der Faktor gekappt wurde. Dazu der Tarif und der Zeichenstand **vor und nach**
+dem Lauf, aus `/v1/user/subscription` — die abgerechnete Zahl kommt also vom
+Konto, nicht aus meiner Schätzung.
 
-| | Anbieter 1 | ElevenLabs |
-|---|---|---|
-| Anbieter / Modell | *nachzutragen* | `eleven_multilingual_v2` (Lauf E: `eleven_turbo_v2`) |
-| Stimmen (m) | *nachzutragen* | Eric, Brian |
-| Stimmen (w) | *nachzutragen* | Matilda, Bella |
-| Tempo-Regler | *nachzutragen* | `speed` 0.7–1.2, relativ — kein WPM-Wert |
-| Gemessenes Tempo, Lauf A | *nachzutragen* | *offen bis zum Lauf* |
-| Gemessenes Tempo, Lauf B | *nachzutragen* | *offen bis zum Lauf* |
-| Aussprachelexikon | *nachzutragen* | ja, PLS; Phonem nur auf Flash/Turbo v2 |
-| Abrechnungseinheit | *nachzutragen* | Zeichen |
-| Kosten dieses Tests | *nachzutragen* | *offen bis zum Lauf* |
-| Tarif | *nachzutragen* | *wird aus `/v1/user/subscription` gelesen* |
-
-Die Werte für Anbieter 1 liegen in diesem Repository nicht vor — es gibt weder
-Proben noch eine README aus Test 1 in irgendeinem Zweig. Sie werden nachgereicht
-und dann hier eingetragen.
+| | |
+|---|---|
+| Abrechnungseinheit | Zeichen |
+| Erwarteter Verbrauch | **~20.900 Zeichen** (18 Proben) |
+| Tarif | *wird beim Lauf ausgelesen* |
+| Tatsächlich abgerechnet | *wird beim Lauf ausgelesen* |
 
 ## Dateien
 
 | Datei | Zweck |
 |---|---|
-| `testtext.txt` | Absatz 6, unverändert aus `skript.md`, ohne Quellen-IDs |
-| `testtext_korrigiert.txt` | derselbe Absatz mit 3 Ersatzschreibungen (Dümmer, Campemoor, Pr 31) |
+| `testtext_bauen.py` | montiert den Testtext aus vier Skriptstellen |
+| `testtext.txt` | der Testtext, 217 Wörter |
+| `testtext_korrigiert.txt` | derselbe Text mit 4 Ersatzschreibungen |
+| `testtext_herkunft.md` | Herkunftsnachweis je Baustein |
 | `lexikon_bauen.py` | baut beide PLS-Dateien aus `aussprache.md` |
 | `lexikon_alias.pls` / `lexikon_phoneme.pls` | die Aussprachelexika |
 | `proben_erzeugen.py` | erzeugt alle Proben, misst Tempo, schreibt `messungen.json` |
-| `messungen.json` | Messwerte je Probe, Zeichenverbrauch, Tarifstand — *entsteht beim Lauf* |
+| `messungen.json` | Messwerte, Zeichenverbrauch, Tarifstand — *entsteht beim Lauf* |
 
 ## Quellen
 
