@@ -1,0 +1,33 @@
+========================================================================================
+GESICHTSGEOMETRIE — haelt der Balkenkopf?
+========================================================================================
+Szene      Balken px  Balken/Kopf  Dicke/Kopf  Lage im Kopf  Kopf px  Kopf/Bildh.
+szeneA           343        0.843       0.126         0.363      407        0.420
+szeneB           482        1.153       0.139         0.493      418        0.276
+szeneC           532        1.147       0.136         0.491      464        0.301
+szeneD           494        1.146       0.135         0.492      431        0.281
+
+Figur mit Balkenkopf gefunden in 4 von 4 Szenen: szeneA, szeneB, szeneC, szeneD
+  Balkenbreite / Kopfbreite    Mittel 1.072  SD 0.132  Spanne 0.843-1.153  Streuung 12.4 %
+  Balkendicke / Kopfhoehe      Mittel 0.134  SD 0.005  Spanne 0.126-0.139  Streuung 3.8 %
+  Lage des Balkens im Kopf     Mittel 0.460  SD 0.056  Spanne 0.363-0.493  Streuung 12.2 %
+
+========================================================================================
+PALETTE UND DICHTE
+========================================================================================
+Szene        Kanten  Objekte  Farbflaeche  Saettigung
+szeneA       0.0260       18        0.437       0.136
+szeneB       0.0409       31        0.662       0.149
+szeneC       0.0290       16        0.630       0.162
+szeneD       0.0479       26        0.528       0.287
+
+Palettenabstand zwischen den Szenen: Mittel 3.90  Spanne 2.92-5.48
+  Kanten       SD 0.0089
+  Objekte      SD 6.0570
+  Farbflaeche  SD 0.0886
+  Saettigung   SD 0.0603
+
+Dichte Personenszenen (A, C) gegen Sachszenen (B, D):
+  Kanten  0.0275 -> 0.0444 = 1.61x
+  Objekte 17 -> 28 = 1.68x
+  Vergleich letzter Lauf ohne Dichtebremse: V1 1,45x · V2 1,66x · V3 1,50x (Kanten)
