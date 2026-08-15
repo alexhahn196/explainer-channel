@@ -195,3 +195,82 @@ Farbfläche gelesen, nicht als Markierung.
 
 **Die zehn sitzen noch nicht.** Der Lauf ist gestoppt, die restlichen 74 sind
 nicht gelaufen.
+
+---
+
+# Zweiter Nachlauf — 15.08.2026
+
+**10 Credits.** Kontostand 2.849,9 → **2.839,9**. Gesamt für Video 1: **40 Credits**.
+v2-Fassungen in [`_v2/`](_v2), Gegenüberstellung [`_v2-vs-v3.png`](_v2-vs-v3.png).
+
+## Rad-Prüfung über alle 84 Motive
+
+`szenen.md` **benennt** ein Rad, einen Wagen oder ein Zugtier in 11 Motiven —
+dort ist es Absicht: M03 (moderne Fahrzeuge), M04/M05 (das Speichenrad als eine
+der drei falschen Antworten), M38/M39/M82 (die gefundenen Wagenachsen),
+M40/M41/M42 (Rad auf dem Zeitstrahl), M58 (persischer Reiter, Pferde sind dort
+korrekt), M61 (durchgestrichenes Rad), M71 („kein Rad und kein Zugtier").
+
+Das eigentliche Risiko ist umgekehrt: **37 weitere Motive liegen in Kulturen,
+die laut `skript.md` kein Rad hatten oder es hier nicht benutzten.** Dort kann
+das Modell eines hinzuerfinden, wie es bei M49 geschehen ist.
+
+| Kultur | Beleg im Skript | betroffene Motive |
+|---|---|---|
+| Chaco | „The people there had no wheel, no horse, no ox" | M60, M62, M63, M64, M65, M66 |
+| Anden | „had no wheel and no animal to pull a cart" | M67, M69, M70, M72 |
+| Nordwesteuropäisches Moor | „built roads for some twenty centuries before anything rolled on one" | M06–M24, M27–M34, M37, M81 |
+| Ägypten | „Crews hauled basalt blocks down it", Transport per Boot | M45–M51 |
+
+Alle 44 (37 + die 7 neu zugeordneten Detail-Motive) tragen jetzt: *„This culture
+has no wheeled transport at all: no wheels, no carts, no wagons, no barrows, no
+chariots and no draught animals anywhere in the picture."* Bei den 12 Motiven,
+in denen das Rad die Aussage trägt, steht der Satz **nicht** — geprüft, keine
+Kollision.
+
+## Ergebnis des zweiten Nachlaufs
+
+| Motiv | vorher offen | jetzt |
+|---|---|---|
+| **M84** | Bauarbeiter, kein Schlagschatten | **bestanden** — gewöhnlicher Passant mit Schiebermütze wie in M01, Blick in die Kamera, harter Schlagschatten |
+| **M72** | kein Schlagschatten | **bestanden** — Schatten fällt klar auf die Felswand, Türkis nur am Stirnband |
+| **M06** | Größe, Türkis zweifach | Türkis **auf genau einem Objekt** (Anhänger), Schatten korrekt · **Größe weiterhin nicht befolgt** |
+| **M62** | Größe, Türkis als Randstreifen | Türkis **auf genau einem Objekt** (Anhänger am Gürtel), Schatten korrekt, Vollbild · **Größe weiterhin nicht befolgt** |
+| **M49** | Räder, Türkis auf Basalt | **Räder weg** — Schlitten auf losen Rundhölzern · **Türkis in mehreren Pflanzen** · **vier Figuren statt drei** |
+
+### Die Größenregel greift auch in der dritten Fassung nicht
+
+| Lauf | Formulierung | Ergebnis |
+|---|---|---|
+| 1 | nur der Szenentext („die Figur klein am Rand") | Figur groß und mittig |
+| 2 | `no more than one sixth of the picture height` | unverändert groß |
+| 3 | `a small distant element, the landscape dominates, roughly the lower quarter` | unverändert groß |
+
+Drei Formulierungen, dreimal dasselbe Ergebnis. **Nach der Vorabentscheidung
+gilt damit: die vier betroffenen Motive (M06, M08, M29, M62) laufen mit
+normaler Figurengröße.** Die Geisterkopf-Härtung wirkt in allen drei Läufen
+weiter — keine schwebenden Köpfe, keine gespiegelte Komposition.
+
+### Die Türkis-Verschärfung wirkt — außer bei M49
+
+In M06, M62 und M72 sitzt das Türkis nach der Verschärfung auf **genau einem**
+Gegenstand. In M49 nicht: dort steht es in mehreren Pflanzen am Bildrand,
+obwohl die Regel Vegetation ausdrücklich ausschließt. Der Unterschied ist
+vermutlich, dass M49 als einziges dieser Bilder überhaupt Pflanzen im
+Vordergrund hat.
+
+### M49 — der kritische Fehler ist behoben, zwei neue sind da
+
+**Die Räder sind weg.** Der Block liegt auf einem flachen Holzschlitten, der
+über lose Rundhölzer gleitet — genau das, was das Skript beschreibt. Der
+Widerspruch zur Kernaussage ist damit aufgelöst.
+
+Offen bleiben zwei Punkte:
+- **Türkis in der Vegetation**, mehrfach.
+- **Vier Figuren statt drei.** Der Prompt sagt „three haulers in a line";
+  im Bild stehen vier Personen, davon eine Frau in weißem Kleid, die nicht
+  zieht und im Szenentext nicht vorkommt.
+
+## Stand
+
+**Neun von zehn sitzen.** Offen ist allein **M49**.

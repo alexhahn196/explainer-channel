@@ -79,7 +79,9 @@ SCHATTEN = (
     "shape in one single darker tone of the surface it falls on, with straight or "
     "simply curved edges, no gradient, no blur, no soft falloff, no ambient shading. "
     "All shadows run in the same direction, away from the light. The lit sides stay "
-    "completely flat and unshaded."
+    "completely flat and unshaded. The cast shadow is drawn even where it falls "
+    "across stairs, steps, rubble or patterned and textured ground - it steps over "
+    "those surfaces and stays clearly visible on them; no surface is exempt."
 )
 Z3_SICHTBAR = (
     " ADDITION - ONE LIGHT SOURCE: exactly one light source is visible in the picture, "
@@ -107,8 +109,12 @@ PALETTEN = {
              "#3F4A38, oak wood #6B4F35, muted madder red #7A3B2E, tin grey #9AA0A2, "
              "tallow #DED3B8 as the lightest surface"),
 }
-SIGNAL = (" Signal turquoise #1BBFB0 is the only turquoise anywhere in the image and "
-          "marks the one element the shot is about; if nothing needs marking, it is absent.")
+# Korrektur, dritte Fassung: Das Tuerkis wurde flaechig gelesen - zwei Stellen in
+# M06, Randstreifen in M62, der ganze Basaltblock in M49.
+SIGNAL = (" SIGNAL COLOUR: exactly ONE object in the image carries the turquoise "
+          "#1BBFB0 - no second occurrence, no turquoise in water, sky, ground, "
+          "vegetation, edges or borders. If no single object needs marking, the "
+          "turquoise is absent from the picture entirely.")
 
 # --------------------------------------------------- Figur des Erzaehlstrangs -
 # Korrektur 4: Die Hand war in M72 als gespreizte Klaue geraten. Der
@@ -128,8 +134,12 @@ KEIN_ANSCHNITT = (" Every figure stands complete inside the picture; no part of 
                   "figure touches or crosses the edge of the frame.")
 
 # Korrektur 2: Figurengroesse, wo szenen.md ausdruecklich "klein" verlangt.
-KLEIN = (" The figure is small in the frame, no more than one sixth of the picture "
-         "height, and clearly subordinate to the landscape around it.")
+# Korrektur 2, zweite Fassung. Die Bruchzahl ("no more than one sixth") wurde in
+# beiden Laeufen ignoriert - M06 und M62 zeigten die Figur auf halber Bildhoehe.
+# Ersetzt durch eine Beschreibung ohne Zahl.
+KLEIN = (" The figure is a small distant element, the landscape dominates, the "
+         "figure occupies roughly the lower quarter of the frame and is clearly "
+         "subordinate to the surroundings.")
 
 NEGATIV = (" no text, no letters, no numbers, no watermark, no logo.")
 
@@ -189,6 +199,43 @@ EPOCHE_EN = {
     "Rom, 312 v. Chr.": "the Roman Republic, 312 BC",
     "Rom, Via Appia": "the Roman Republic, 312 BC, the Appian Way",
 }
+
+# Motive, deren Epochenspalte in szenen.md unbrauchbar ist ("Schema", "Detail",
+# "zeitlos"), hier einzeln zugeordnet. Entschieden am 15.08.2026:
+#   M41, M78, M42, M77 bleiben bewusst zeitlos - ohne Epochenzeile.
+#   M48 ist Aegypten (Auftrag).
+#   Die uebrigen aus dem Zusammenhang der Szenenliste, Herleitung in
+#   bilder/README.md.
+EPOCHE_JE_MOTIV = {
+    "M12": "the Somerset Levels in southern England, 3807 BC",
+    "M17": "the Somerset Levels in southern England, 3807 BC",
+    "M18": "the Somerset Levels in southern England, 3807 BC",
+    "M20": "the Somerset Levels in southern England, 3807 BC",
+    "M31": "the Campemoor bog in Lower Saxony, northern Germany, around 4500 BC",
+    "M39": "Lower Saxony, northern Germany, the 25th century BC",
+    "M47": "Old Kingdom Egypt, around 2500 BC",
+    "M48": "Old Kingdom Egypt, around 2500 BC",
+    "M79": "no particular period - an old road anywhere, with no modern vehicles, "
+           "no modern signage and no electric lighting",
+    "M80": "no particular period - an old road anywhere, with no modern vehicles, "
+           "no modern signage and no electric lighting",
+}
+# Bewusst ohne Epochenzeile: M41 und M42 stellen zwei Zeiten absichtlich
+# nebeneinander, M77 und M78 sind laut Skript zeitlos gemeint.
+ZEITLOS = {"M41", "M42", "M77", "M78"}
+
+# Kulturen, die laut skript.md kein Rad hatten oder es hier nicht benutzten:
+# Chaco ("no wheel, no horse, no ox"), Anden ("no wheel and no animal to pull a
+# cart"), das nordwesteuropaeische Moor ("twenty centuries before anything
+# rolled on one") und Aegypten, wo die Bloecke auf Schlitten und per Boot
+# bewegt wurden. In M49 hatte das Modell dem Schlitten Raeder gegeben - das
+# widerspricht der Kernaussage des Videos.
+KEIN_RAD = set("""M06 M07 M08 M09 M10 M11 M12 M14 M15 M16 M17 M18 M19 M20 M21 M22
+    M23 M24 M27 M28 M29 M30 M31 M32 M34 M37 M45 M46 M47 M48 M49 M50 M51 M60 M62
+    M63 M64 M65 M66 M67 M69 M70 M72 M81""".split())
+RADVERBOT = (" This culture has no wheeled transport at all: no wheels, no carts, "
+             "no wagons, no barrows, no chariots and no draught animals anywhere "
+             "in the picture.")
 
 # Epochenangabe fehlt in szenen.md ganz. Bei Motiven OHNE Figur ist das
 # unkritisch - ein Diagramm oder ein freigestelltes Fundstueck braucht keine
@@ -329,7 +376,7 @@ SZENE_EN = {
  "M46": "the quarry in section: dark basalt benches with tool marks, the road beginning in front of them",
  "M47": "close to the ground: paving of basalt lumps, limestone and sandstone, and between them slabs of petrified wood with visible grain",
  "M48": "a hand runs across a slab of petrified wood, the grain lying exposed",
- "M49": "the character hauls, in a line with others, a basalt block on a wooden sledge down the road",
+ "M49": "three haulers in a line drag a heavy dark basalt block down the road on a flat wooden sledge with no wheels of any kind, the sledge sliding forward over loose wooden rollers laid across its path, all three haulers complete and well inside the frame",
  "M50": "a loaded barge with dark blocks on wide water, a pyramid construction site with ramps on the horizon",
  "M51": "the finished dark temple floor of basalt slabs, strictly gridded",
  "M52": "a relief wall seen frontally: lions, bulls and dragons as flat figures in rows",
@@ -364,7 +411,7 @@ SZENE_EN = {
  "M81": "back to Somerset: the character lays the last plank in the rain, water already standing at the pegs",
  "M82": "a wide shot in fog: the broken axle beside the ancient plank line",
  "M83": "modern shoes at a softened path edge, water collecting in the prints",
- "M84": "the character straightens up over the freshly laid plank and looks into the camera",
+ "M84": "the same ordinary present-day passer-by as in the opening shot, in the same plain everyday jacket and trousers and flat cap - no high-visibility vest, no hard hat, no building site and no machinery - has just laid a fresh wooden plank on soft wet ground and now stands upright over it, head raised, looking straight out of the picture directly at the viewer",
 }
 
 # Haertung aus dem Stichprobenlauf: Motive, in denen die Figur unter etwa 15 %
@@ -419,7 +466,8 @@ def prompt(mid: str, m: dict) -> str:
     else:
         p += Z3_SICHTBAR.format(quelle=LICHT[mid])
     p += f" PALETTE: the picture uses only these colours - {PALETTEN[PALETTE[mid]]}." + SIGNAL
-    epoche = EPOCHE_EN.get(m["epoche"].strip())
+    epoche = None if mid in ZEITLOS else (
+        EPOCHE_JE_MOTIV.get(mid) or EPOCHE_EN.get(m["epoche"].strip()))
     if epoche:
         p += f" PERIOD AND PLACE: {epoche}. Clothing, tools, architecture and " \
              "vegetation all belong to that period and place and to no other."
@@ -428,6 +476,8 @@ def prompt(mid: str, m: dict) -> str:
     p += " SCENE: " + SZENE_EN[mid].rstrip(".") + "."
     if mid in KLEINE_FIGUR:
         p += KLEIN + GEISTERKOPF
+    if mid in KEIN_RAD:
+        p += RADVERBOT
     return p + NEGATIV
 
 
