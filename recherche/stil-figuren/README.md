@@ -60,10 +60,15 @@ frame, standing on the ground line, not cropped.
 Jeder Prompt endet mit `no text, no letters, no numbers, no watermark, no logo,
 exactly one character.` (bei F4: `exactly one character and one horse.`)
 
-**Nicht im Prompt:** Palette und Signalfarbe. Beides ist offen und wurde
-bewusst nicht gesetzt — die Bilder tragen jeweils eine epochennahe gedeckte
-Eigenfarbigkeit. Was hier an Farbzusammenhalt zu sehen ist, ist **nicht
-gesteuert**.
+**Nicht im Prompt:** Palette und Signalfarbe. Beides war zum Zeitpunkt dieses
+Laufs offen und wurde bewusst nicht gesetzt — die Bilder tragen jeweils eine
+epochennahe gedeckte Eigenfarbigkeit. Was hier an Farbzusammenhalt zu sehen
+ist, ist **nicht gesteuert**.
+
+> **Nachtrag 15.08.2026:** Beides ist inzwischen entschieden, und zwar gegen
+> beides: Signalfarbe und Themenpaletten sind **verworfen**, gefärbt wird in
+> natürlichen Farben. Siehe `stil-archiv.md` und die Farbregel in
+> `lauf2-erwachsen/README.md`.
 
 ## Was variiert wurde
 
@@ -179,8 +184,10 @@ Alle Einzelbilder 2752 × 1536 px (16:9).
 - **Keine Miniaturprüfung.** Ob die Machart bei 160 × 90 zusammenhält, ist hier
   nicht getestet — in den früheren Läufen war genau das der Punkt, an dem
   Varianten durchgefallen sind.
-- **Keine Palette, keine Signalfarbe.** Beide Entscheidungen stehen aus; ein
-  Teil des hier sichtbaren Zusammenhalts kann daran noch kippen.
+- **Keine Palette, keine Signalfarbe.** Standen zum Zeitpunkt dieses Laufs aus.
+  Am 15.08.2026 gegen beides entschieden — natürliche Farben, siehe
+  `stil-archiv.md`. Der Zusammenhalt hält ohne sie (Beleg:
+  `farbtest-natuerlich/`).
 - Neun Kulturen sind angekündigt, getestet sind sechs.
 
 ---

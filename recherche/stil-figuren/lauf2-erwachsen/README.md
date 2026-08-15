@@ -65,7 +65,7 @@ never omitted, never replaced by eyelashes; only their shape and weight vary,
 and they carry the expression; a minimal nose indicated by one short straight
 line or a small flat shadow shape; below it one short thin straight mouth line;
 no cheek blush, no baby face. Minimal symbolic background built from a few large
-flat shapes, generous empty space, muted era-appropriate colours. FRAMING: a
+flat shapes and generous empty space. FRAMING: a
 single person, alone in the frame, full body visible, not cropped - head, both
 hands and both feet inside the picture, no second figure, no mirrored duplicate.
 Sober, restrained, documentary - never cute.
@@ -220,8 +220,10 @@ Alle Einzelbilder 2752 × 1536 px (16:9).
   der Nase kommt, ist nicht getrennt gemessen. Die Zuschreibung im Text ist eine
   Sichtbeurteilung.
 - **E5 entspricht dem finalen Block nicht** (siehe oben).
-- **Keine Miniaturprüfung**, keine Palette, keine Signalfarbe — alles offen. Ein
-  Teil des Zusammenhalts kann daran noch kippen.
+- **Keine Miniaturprüfung.** Palette und Signalfarbe waren hier offen und sind
+  es seit dem 15.08.2026 nicht mehr: beide **entfallen ersatzlos**, gefärbt wird
+  in natürlichen Farben (siehe unten). Der Zusammenhalt hängt damit allein an
+  Machart, Lichtführung und Figurenbau.
 - **Kein Abgleich mit Unknown Frequencies am Bild** — der Vergleich lief gegen
   die Beschreibung, nicht gegen nebeneinandergelegte Standbilder.
 - Die Aussage zum „Made for Kids"-Risiko ist eine Einschätzung zur Bildwirkung,
@@ -291,3 +293,35 @@ no screaming faces, no heroic posing, no motion lines, no fire, no exaggeration.
 It should read like a museum reconstruction plate, quiet and serious. no text,
 no letters, no numbers, no watermark, no logo.
 ```
+
+
+---
+
+## Farbregel — entschieden am 15.08.2026
+
+Der Block oben legt **Machart** fest, nicht Farbe. Für die Farbe gilt ab
+Video 2:
+
+**Alles wird so gefärbt, wie es in Wirklichkeit aussieht.** Himmel blau,
+Vegetation grün, Gestein in seiner echten Farbe, Kleidung in den echten
+Farbstoffen der jeweiligen Zeit. Keine Dämpfung, keine Palettenbeschränkung,
+keine Signalfarbe.
+
+Zwei Fassungen, weil Schemabilder keinen Himmel haben:
+
+| | Raumbilder (62) | Schemabilder (22) |
+|---|---|---|
+| Wortlaut | `FARBEN` in `produktion/video-01/bildplan.py` | `FARBEN_SCHEMA` ebenda |
+| Himmel, Vegetation | echte Farbe | **ausdrücklich keine** — Diagramm auf ebenem Grund |
+| Materialien | echte Farbe | echte Farbe |
+
+**Warum getrennt:** Im Testlauf bekam der Straßenquerschnitt M76 vom
+gemeinsamen Farbsatz prompt blauen Himmel und Grasbüschel und war damit keine
+Zeichnung mehr, sondern eine Ortsansicht.
+
+**Was die Farbe nicht anfasst:** flächige Füllung, gleichmäßige Konturstärke,
+harte flächige Schatten. Natürliche Farbe heißt naturalistischer Farbton, nicht
+naturalistische Malweise — der letzte Satz beider Blöcke sagt das ausdrücklich.
+
+**Beleg:** `recherche/farbtest-natuerlich/` — sechs Motive aus Video 1 in beiden
+Fassungen nebeneinander, 14 Credits.

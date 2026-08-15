@@ -7,7 +7,7 @@ Der Prompt setzt sich in dieser Reihenfolge zusammen:
   2. Z3-Lichtquelle — woertlich aus `recherche/stil-touch/README.md`, nur bei
                       Raumbildern; Schemabilder bekommen stattdessen die
                       Diagrammzeile
-  3. Palette        — Themenpalette nach Epoche plus Signaltuerkis #1BBFB0
+  3. Farbe          — natuerliche Farben, keine Palettenbindung, keine Signalfarbe
   4. THIS CHARACTER — nur bei Motiven mit Figur
   5. SCENE          — die Bildbeschreibung aus `szenen.md`
   6. Negativliste
@@ -49,7 +49,7 @@ MACHART = (
     "and they carry the expression; a minimal nose indicated by one short straight "
     "line or a small flat shadow shape; below it one short thin straight mouth line; "
     "no cheek blush, no baby face. Minimal symbolic background built from a few large "
-    "flat shapes, generous empty space, muted era-appropriate colours. "
+    "flat shapes and generous empty space. "
 )
 FRAMING_EINZEL = (
     "FRAMING: a single person, alone in the frame, full body visible, not cropped - "
@@ -110,59 +110,44 @@ DIAGRAMM = (
     "shadows, no depth, no perspective - flat shapes on an even ground."
 )
 
-# -------------------------------------------------------------- Paletten -----
-PALETTEN = {
-    "moor": ("bog near-black #241C16 as the darkest tone and the outlines, peat brown "
-             "#4A3B2A, moss green #6E7A4F, bog water grey #8A8F7D, pale linen #E6DFCF "
-             "as the lightest surface"),
-    "antike": ("deep shadow #3A3026 as the darkest tone and the outlines, terracotta "
-               "#A85E3C, burnt ochre #8A6A2F, sand #D9C49A, limestone #C9BFA8, bleached "
-               "linen #EDE4D2 as the lightest surface"),
-    "nord": ("night blue #26313A as the darkest tone and the outlines, forest green "
-             "#3F4A38, oak wood #6B4F35, muted madder red #7A3B2E, tin grey #9AA0A2, "
-             "tallow #DED3B8 as the lightest surface"),
-}
-# Korrektur, dritte Fassung: Das Tuerkis wurde flaechig gelesen - zwei Stellen in
-# M06, Randstreifen in M62, der ganze Basaltblock in M49.
-# Türkis ist erlaubt, aber nie Pflicht. Entschieden am 15.08.2026: wo sich ein
-# Gegenstand natürlich anbietet, darf er die Signalfarbe tragen — höchstens
-# einer. Wo sich keiner anbietet, bleibt die Farbe weg. Die Regel ist eine
-# OBERGRENZE, kein Soll; erzwungenes Türkis sieht willkürlich aus.
-SIGNAL = (" SIGNAL COLOUR: the turquoise #1BBFB0 is permitted but never "
-          "required. AT MOST ONE object in the picture may carry it - never a "
-          "second one, and never in water, sky, ground, vegetation, edges or "
-          "borders. If no object in this scene naturally suits it, leave the "
-          "turquoise out altogether; an empty picture is correct, a picture "
-          "with two turquoise things is not.")
+# ---------------------------------------------------------------- Farben -----
+# NATUERLICHE FARBEN — entschieden am 15.08.2026, gilt ab Video 2.
+#
+# Vorher banden drei gedaempfte Themenpaletten (Moor, Antike, Nord) jedes Motiv
+# an je fuenf bis sechs feste Hexwerte. Das entfaellt ersatzlos: gefaerbt wird,
+# wie die Sache in Wirklichkeit aussieht. Die Bindung ueber die Serie leisten
+# jetzt Machart, Lichtfuehrung und Figurenbau allein.
+#
+# Was die Farbe NICHT aufweicht: flaechige Fuellung, klare Konturen, harte
+# Schatten. Natuerliche Farbe heisst naturalistischer Farbton, nicht
+# naturalistische Malweise — darum steht der letzte Satz ausdruecklich da.
+FARBEN = (
+    " COLOUR: everything is coloured the way it really looks in the world. "
+    "The sky is blue, foliage and grass are green, water takes its own real "
+    "colour, stone and earth keep the colour that stone and earth actually "
+    "have, and clothing is dyed with the dyes the named period and place "
+    "really had. Do NOT mute, grey down, dull, wash out, sepia-tint or "
+    "harmonise these colours towards one another, and do not limit the picture "
+    "to a small set of tones - use as many distinct colours as the subject "
+    "truly has. This concerns the hue only: the fills stay perfectly flat, the "
+    "outlines stay clean and uniform, and the shadows stay hard and areal."
+)
 
-# Motive ohne Signalfarbtraeger: hier ist Tuerkis ganz abwesend. Die Regel
-# erlaubt das ausdruecklich ("if no single object needs marking"), aber das
-# Modell sucht sich sonst einen Traeger - in M49 mehrere Pflanzen am Bildrand.
-OHNE_SIGNAL = {"M02", "M10", "M16", "M22", "M49"}
-KEIN_SIGNAL = (" SIGNAL COLOUR: this picture contains no turquoise at all - "
-               "nothing in it carries the signal colour.")
-
-# Wo das Modell die Signalfarbe von sich aus auf mehrere Dinge verteilt hat,
-# wird der Traeger benannt. Gemessen an M64: Rasselstab, Wasserflaeche und
-# Grasbueschel waren gleichzeitig tuerkis — drei Objekte statt einem.
-SIGNAL_TRAEGER = {
-    # M79 hatte zwei: die Tuer eines Hauses und ein tuerkis gerahmtes
-    # Haengeschild. Das Schild verstiess ausserdem gegen die eigene
-    # Epochenzeile ("no modern signage").
-    "M79": "the door of the small building at the roadside, and nothing else - "
-           "there is no hanging sign, no signboard, no painted panel and no "
-           "second turquoise thing anywhere in the picture",
-    # M38 hatte drei tuerkise Gegenstaende: Kellenheft, Anhaenger am Bandmass
-    # und dessen Band. Der Traeger wird darum benannt.
-    "M38": "the handle of the single trowel, and nothing else - every other "
-           "tool, tag, tape and marker in the pit stays in plain metal, wood "
-           "and undyed colours",
-    "M64": "the circle of assembly in the fourth panel, and nothing else - "
-           "the basket, the spear, the rattle staff, the water, the ground and "
-           "every plant stay in the palette colours and carry no turquoise",
-}
-SIGNAL_EINS = (" SIGNAL COLOUR: at most ONE object in the image carries the "
-               "turquoise #1BBFB0, and if anything does, it is {traeger}.")
+# Schemabilder brauchen eine eigene Fassung. Der Satz oben verspricht Himmel
+# und Vegetation — im Testlauf holte sich das Querschnittschema M76 prompt
+# blauen Himmel und Grasbueschel und war damit kein Diagramm mehr, sondern
+# eine Ortsansicht. Die Materialien behalten ihre echte Farbe, der Rahmen
+# drumherum bleibt Diagramm.
+FARBEN_SCHEMA = (
+    " COLOUR: each material and each thing shown carries the colour it really "
+    "has - stone the colour of that stone, earth the colour of that earth, "
+    "timber the colour of that wood, metal the colour of that metal. Do not "
+    "mute, grey down, sepia-tint or harmonise them, and do not limit the "
+    "picture to a small set of tones. But this remains a diagram on an even "
+    "ground: there is NO sky, no horizon, no landscape, no grass and no "
+    "vegetation around it unless the diagram itself is about them. The "
+    "background stays one plain even field."
+)
 
 # ------------------------------------------------------------------- Nacht
 # Drei Motive spielen nachts. Alle drei kamen zunächst taghell zurück, und bei
@@ -181,8 +166,8 @@ NACHT = (" NIGHT, NOT DUSK: this is deep night and must read as night at a "
          "frame is very dark - darker than any daytime picture in this series. "
          "Only the small area actually reached by the one light source is "
          "bright; everything outside that reach falls to deep shadow, though "
-         "the shapes of the place stay readable in it. The palette's lightest "
-         "tone appears only inside the lit area, nowhere else.")
+         "the shapes of the place stay readable in it. The brightest tones of "
+         "the picture appear only inside the lit area, nowhere else.")
 
 # ---------------------------------------------------------------- Pflanzen
 # Der Prompt nannte bisher Ort und Zeit, aber nie die Vegetation. Was er nicht
@@ -299,22 +284,9 @@ MODELL = "nano_banana_2"
 SEITE = "16:9"
 
 # ----------------------------------------------------------- Zuordnungen -----
-# Palette je Motiv. Regel: Nordwesteuropaeisches Moor -> moor · Aegypten,
-# Babylon, Persien, Chaco, Rom -> antike · Anden und die Gegenwartsklammer
-# -> nord (kuehle Toene: Zinngrau, Nachtblau). Schemabilder erben die Palette
-# ihres Zusammenhangs, tragen aber kein Licht.
-PALETTE = {
-    **{m: "moor" for m in """M06 M07 M08 M09 M10 M11 M12 M13 M14 M15 M16 M17 M18 M19
-        M20 M21 M22 M23 M24 M25 M26 M27 M28 M29 M30 M31 M32 M34 M35 M36 M37 M38 M39
-        M40 M41 M42 M77 M78 M79 M80 M81 M82""".split()},
-    **{m: "antike" for m in """M43 M45 M46 M47 M48 M49 M50 M51 M52 M53 M54 M55 M56 M57
-        M58 M59 M60 M61 M62 M63 M64 M65 M66 M74 M75 M76""".split()},
-    **{m: "nord" for m in "M01 M02 M03 M04 M05 M33 M44 M67 M68 M69 M70 M71 M72 M73 M83 M84".split()},
-}
-
 # Korrektur 1: Zeit und Ort in den Prompt. Die Spalte `Epoche/Ort` in
 # szenen.md nennt bei 41 Motiven nur den Ort und bei 6 nur die Zeit; nur 8
-# tragen eine Jahreszahl. Ohne diese Zeile raet das Modell nach der Palette -
+# tragen eine Jahreszahl. Ohne diese Zeile raet das Modell nach dem Umfeld -
 # daher der aegyptische Nemes in Chaco Canyon und die Schiebermuetze auf der
 # Inka-Treppe im ersten Stapel.
 #
@@ -627,13 +599,7 @@ def prompt(mid: str, m: dict) -> str:
         p += Z3_AUSSERHALB.format(quelle=LICHT[mid])
     else:
         p += Z3_SICHTBAR.format(quelle=LICHT[mid])
-    p += f" PALETTE: the picture uses only these colours - {PALETTEN[PALETTE[mid]]}."
-    if mid in OHNE_SIGNAL:
-        p += KEIN_SIGNAL
-    elif mid in SIGNAL_TRAEGER:
-        p += SIGNAL_EINS.format(traeger=SIGNAL_TRAEGER[mid])
-    else:
-        p += SIGNAL
+    p += FARBEN_SCHEMA if ist_schema else FARBEN
     epoche = None if mid in ZEITLOS else (
         EPOCHE_JE_MOTIV.get(mid) or EPOCHE_EN.get(m["epoche"].strip()))
     if epoche:
@@ -671,7 +637,6 @@ def prompt(mid: str, m: dict) -> str:
 if __name__ == "__main__":
     mot = motive()
     for mid, m in mot.items():
-        m["palette"] = PALETTE[mid]
         m["licht"] = "Schema - keine Lichtquelle" if mid in SCHEMA else LICHT[mid]
         m["schema"] = mid in SCHEMA
         m["prompt"] = prompt(mid, m)
@@ -681,6 +646,4 @@ if __name__ == "__main__":
     print(f"{len(mot)} Motive · Schema {sum(1 for k in mot if k in SCHEMA)} · "
           f"Raumbild {sum(1 for k in mot if k not in SCHEMA)}")
     print(f"ohne Lichtquelle (muss 0 sein): {fehlt}")
-    from collections import Counter
-    print("Paletten:", dict(Counter(PALETTE[k] for k in mot)))
     print("Figurenmotive:", sum(1 for m in mot.values() if m["fig"]))

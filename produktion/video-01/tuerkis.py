@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Zaehlt zusammenhaengende Tuerkisflaechen je Bild.
 
+NUR FUER VIDEO 1. Die Signalfarbe wurde am 15.08.2026 ersatzlos verworfen —
+ab Video 2 gibt es kein Tuerkis mehr, und dieses Skript hat dort nichts zu
+pruefen. Es bleibt liegen, weil es den Stand von Video 1 belegt.
+
 Die Signalfarbe ist #1BBFB0. Gepruefte Regel: genau EIN tuerkises Objekt je
 Bild, ausser das Motiv steht in OHNE_SIGNAL. Gemessen wird, nicht geschaetzt:
 Farbabstand im Lab-nahen Raum, dann Zusammenhangskomponenten mit einer
