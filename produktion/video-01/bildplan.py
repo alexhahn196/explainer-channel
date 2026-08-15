@@ -64,6 +64,19 @@ FRAMING_OHNE = (
     "FRAMING: no people in this picture at all. "
     "Sober, restrained, documentary - never cute."
 )
+# Dritter Fall: Koerperteil-Aufnahmen. FRAMING_EINZEL verlangt "full body
+# visible ... both feet inside the picture" - bei einer Szene, die nur einen
+# Stiefel oder eine Hand zeigt, widerspricht das der Bildbeschreibung, und das
+# Modell folgt der staerkeren Vorgabe. In M09 kam so eine ganze stehende Figur
+# heraus statt des versinkenden Stiefels.
+FRAMING_TEIL = (
+    "FRAMING: this is a close view of one part of a body only - a hand, a foot "
+    "or a boot at work, filling much of the frame. Do not draw the whole person, "
+    "do not draw a head or a face, do not place a standing figure anywhere in the "
+    "picture. Sober, restrained, documentary - never cute."
+)
+# Motive, deren Szene nur ein Koerperteil zeigt.
+KOERPERTEIL = {"M09", "M19", "M33", "M48", "M83"}
 
 # ------------------------------------------------------------------- Z3 ------
 # Z3 in zwei Fassungen. Der Zusatz aus `stil-touch/` verlangt woertlich eine
@@ -119,9 +132,20 @@ SIGNAL = (" SIGNAL COLOUR: exactly ONE object in the image carries the turquoise
 # Motive ohne Signalfarbtraeger: hier ist Tuerkis ganz abwesend. Die Regel
 # erlaubt das ausdruecklich ("if no single object needs marking"), aber das
 # Modell sucht sich sonst einen Traeger - in M49 mehrere Pflanzen am Bildrand.
-OHNE_SIGNAL = {"M49"}
+OHNE_SIGNAL = {"M02", "M49"}
 KEIN_SIGNAL = (" SIGNAL COLOUR: this picture contains no turquoise at all - "
                "nothing in it carries the signal colour.")
+
+# Figurenblock fuer Koerperteil-Aufnahmen. Der volle FIGUR-Block beschreibt
+# Augen, Brauen, Nase und Frisur - alles Dinge, die in einer Handaufnahme nicht
+# vorkommen und die sonst eine ganze Figur herbeireden.
+FIGUR_TEIL = (
+    "THE VISIBLE PART: only the hand, foot or boot named in the scene is shown, "
+    "with the sleeve or legwear of the period and place named above; no head, no "
+    "face, no torso. HANDS: simple mitten-like shapes with a thumb, the other "
+    "fingers only hinted by one or two short notches, never spread apart, never "
+    "drawn as separate claws or splayed digits. "
+)
 
 # --------------------------------------------------- Figur des Erzaehlstrangs -
 # Korrektur 4: Die Hand war in M72 als gespreizte Klaue geraten. Der
@@ -344,7 +368,7 @@ SZENE_EN = {
  "M07": "close view: the character kneels and lays a pale wooden plank onto the soft ground, the water stopping at its edge",
  "M08": "a wide bog surface with cushions of peat moss and open black eyes of water, the character standing small in the middle, a broad band of sky filling the upper third",
  "M09": "close view of bog ground: a boot sinks to the shaft in black water between moss cushions",
- "M10": "a wide marsh landscape in morning mist: bands of reeds, open sheets of water, a wooded island on the horizon",
+ "M10": "a wide marsh landscape in morning mist: bands of reeds, open sheets of water, a wooded island on the horizon - untouched wetland before anything was ever built here, with no walkway, no boardwalk, no plank track, no path, no bridge, no hut, no house and no building of any kind anywhere in the picture",
  "M11": "the same marsh landscape, now with the character at the shore and a first plank lying in the reeds",
  "M12": "a frame-filling cross-section slice of an oak trunk, concentric annual rings as flat rings",
  "M13": "the same sequence of rings unrolled into a straight band, wide and narrow rings alternating",
@@ -458,13 +482,15 @@ def prompt(mid: str, m: dict) -> str:
     ist_schema = mid in SCHEMA
     if not m["fig"]:
         framing = FRAMING_OHNE
+    elif mid in KOERPERTEIL:
+        framing = FRAMING_TEIL
     elif mid in MEHRFIGUR:
         framing = FRAMING_MEHR
     else:
         framing = FRAMING_EINZEL
 
     p = MACHART + framing
-    if m["fig"]:
+    if m["fig"] and mid not in KOERPERTEIL:
         p += KEIN_ANSCHNITT
     if ist_schema:
         p += DIAGRAMM
@@ -480,7 +506,7 @@ def prompt(mid: str, m: dict) -> str:
         p += f" PERIOD AND PLACE: {epoche}. Clothing, tools, architecture and " \
              "vegetation all belong to that period and place and to no other."
     if m["fig"]:
-        p += " " + FIGUR
+        p += " " + (FIGUR_TEIL if mid in KOERPERTEIL else FIGUR)
     p += " SCENE: " + SZENE_EN[mid].rstrip(".") + "."
     if mid in KLEINE_FIGUR:
         p += KLEIN + GEISTERKOPF
