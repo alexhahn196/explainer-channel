@@ -367,3 +367,34 @@ Das ist das erste Mal in vier Läufen, dass die Regel sichtbar wirkt.
 Der Unterschied zu M06 und M62: M08 hat keinen dominanten Vordergrund und keine
 Fluchtlinie, an der sich das Modell orientiert. Bei M29 wird sich zeigen, welche
 der beiden Lagen die Regel bestimmt.
+
+---
+
+# Hauptlauf Stapel 2 (M02, M09, M10, M15–M22)
+
+**22 Credits.** Kontostand 2.815,9 → **2.793,9**. Gesamt: **86 Credits**.
+
+## Bestehensquote: 8 von 11 — unter der Abbruchschwelle
+
+| bestanden | durchgefallen |
+|---|---|
+| M02 · M09 · M15 · M17 · M18 · M19 · M20 · M21 | **M10 · M16 · M22** |
+
+**Der FRAMING-Fix wirkt.** M09 zeigt nur Stiefel und Unterschenkel, M19 nur
+Hände und Unterarme — beide ohne Kopf, ohne Gesicht, ohne stehende Figur. Genau
+das war die gemeinsame Ursache aus Stapel 1.
+
+**Die Epochenzeile wirkt sichtbar bei M18:** Steinbeil mit Holzschaft,
+Holzkeil, Holzschlegel — kein Metall, kein modernes Gerät. Das war der Fall,
+an dem sich die Zuordnung entscheiden sollte.
+
+Die drei Fehlschläge haben **keine gemeinsame Ursache**, es sind Einzelfälle:
+
+- **M10** — die Landschaft ist jetzt frei von Steg und Hütten, wie verlangt,
+  aber es liegt ein **türkises Boot** im Wasser. Ein Boot ist ein gebautes
+  Ding und widerspricht „untouched wetland before anything was ever built".
+- **M16** — das türkise Element auf der Karte liest sich als **Buchstabe „P"**,
+  was gegen `no letters` verstößt; außerdem trägt die Karte die Lage
+  Insel-links/Höhenrücken-rechts nur schwach.
+- **M22** — **zwei türkise Objekte** statt einem: ein Pfosten am Weg und ein
+  kleiner Gegenstand rechts unten.
