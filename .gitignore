@@ -6,3 +6,6 @@ __pycache__/
 # aber niemals der API-Schluessel:
 .env
 *.key
+
+# Zwischendaten der Stimmproben-Analyse (mehrere MB, aus akustik.py regenerierbar)
+produktion/video-01/stimmproben/akustik_verlauf.json
