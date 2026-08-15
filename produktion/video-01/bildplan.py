@@ -66,13 +66,29 @@ FRAMING_OHNE = (
 )
 
 # ------------------------------------------------------------------- Z3 ------
-Z3 = (
-    " ADDITION - ONE LIGHT SOURCE: exactly one light source is visible in the picture, "
-    "{quelle}. Everything it strikes casts a hard flat shadow: each shadow is a solid "
+# Z3 in zwei Fassungen. Der Zusatz aus `stil-touch/` verlangt woertlich eine
+# *sichtbare* Quelle. Gemessen an den 62 Raumbildern ist das bei 27 (44 %)
+# physisch unmoeglich - Nahaufnahmen, Aufsichten, Luftbilder, und M02, wo
+# `szenen.md` ausdruecklich "kein Horizont" vorschreibt. Die Regel wuerde dort
+# 27-mal reissen. Praezisiert auf: sichtbare Quelle, wo sie ins Bild passt,
+# sonst eindeutig gerichteter harter Schatten aus derselben einen Richtung.
+# Der harte, flaechige, verlauffreie Schatten - der eigentliche Bildeffekt von
+# Z3 - ist in beiden Fassungen identisch gefordert.
+SCHATTEN = (
+    "Everything the light strikes casts a hard flat shadow: each shadow is a solid "
     "shape in one single darker tone of the surface it falls on, with straight or "
     "simply curved edges, no gradient, no blur, no soft falloff, no ambient shading. "
     "All shadows run in the same direction, away from the light. The lit sides stay "
     "completely flat and unshaded."
+)
+Z3_SICHTBAR = (
+    " ADDITION - ONE LIGHT SOURCE: exactly one light source is visible in the picture, "
+    "{quelle}. " + SCHATTEN
+)
+Z3_AUSSERHALB = (
+    " ADDITION - ONE LIGHT SOURCE: the picture is lit by exactly one light source, "
+    "{quelle}. The source itself lies outside the frame and is not drawn - this shot "
+    "is too close in for it to fit. " + SCHATTEN
 )
 DIAGRAMM = (
     " This is a flat diagram, not a photograph of a place: no light source, no cast "
@@ -95,12 +111,25 @@ SIGNAL = (" Signal turquoise #1BBFB0 is the only turquoise anywhere in the image
           "marks the one element the shot is about; if nothing needs marking, it is absent.")
 
 # --------------------------------------------------- Figur des Erzaehlstrangs -
+# Korrektur 4: Die Hand war in M72 als gespreizte Klaue geraten. Der
+# Machart-Block sagt "a hint of finger separation"; das reicht offenbar nicht.
 FIGUR = (
-    "THIS CHARACTER: one adult human being, plainly built, of the era described in the "
-    "scene; small eyes with one dark pupil each, above them two clearly drawn eyebrows, "
-    "then a minimal nose and one short straight mouth line, then hair and headwear "
-    "appropriate to the era. "
+    "THIS CHARACTER: one adult human being, plainly built, dressed and equipped for "
+    "the period and place named above; small eyes with one dark pupil each, above them "
+    "two clearly drawn eyebrows, then a minimal nose and one short straight mouth line, "
+    "then hair and headwear of that period. HANDS: simple mitten-like shapes with a "
+    "thumb, the other fingers only hinted by one or two short notches, never spread "
+    "apart, never drawn as separate claws or splayed digits. "
 )
+
+# Korrektur 3: Anschnittverbot. M62 (Fuesse) und M49 (Figur am linken Rand)
+# hielten den FRAMING-Satz nicht ein.
+KEIN_ANSCHNITT = (" Every figure stands complete inside the picture; no part of any "
+                  "figure touches or crosses the edge of the frame.")
+
+# Korrektur 2: Figurengroesse, wo szenen.md ausdruecklich "klein" verlangt.
+KLEIN = (" The figure is small in the frame, no more than one sixth of the picture "
+         "height, and clearly subordinate to the landscape around it.")
 
 NEGATIV = (" no text, no letters, no numbers, no watermark, no logo.")
 
@@ -120,6 +149,56 @@ PALETTE = {
         M58 M59 M60 M61 M62 M63 M64 M65 M66 M74 M75 M76""".split()},
     **{m: "nord" for m in "M01 M02 M03 M04 M05 M33 M44 M67 M68 M69 M70 M71 M72 M73 M83 M84".split()},
 }
+
+# Korrektur 1: Zeit und Ort in den Prompt. Die Spalte `Epoche/Ort` in
+# szenen.md nennt bei 41 Motiven nur den Ort und bei 6 nur die Zeit; nur 8
+# tragen eine Jahreszahl. Ohne diese Zeile raet das Modell nach der Palette -
+# daher der aegyptische Nemes in Chaco Canyon und die Schiebermuetze auf der
+# Inka-Treppe im ersten Stapel.
+#
+# Die Jahreszahlen sind NICHT erfunden, sondern aus `skript.md` uebernommen:
+# Sweet Track 3807 v. Chr., Campemoor "rund sechseinhalbtausend Jahre",
+# Aegypten "vor etwa 4.500 Jahren", Babylon 569 v. Chr., Persien "um 500 v.
+# Chr.", Chaco "etwa tausend Jahre zurueck", Inka "um 1450", Via Appia 312 v.
+# Chr.
+EPOCHE_EN = {
+    "heute": "the present day",
+    "heute / Studie": "the present day",
+    "heute / urzeitlich": "the present day",
+    "urzeitlich": "Neolithic north-west Europe, around 3800 BC",
+    "Moor": "Neolithic north-west Europe, around 3800 BC",
+    "Somerset": "the Somerset Levels in southern England, 3807 BC",
+    "Somerset ~3800 v. Chr.": "the Somerset Levels in southern England, 3807 BC",
+    "Somerset 3807/3806 v. Chr.": "the Somerset Levels in southern England, 3807 BC",
+    "Somerset / Wald": "the Somerset Levels in southern England, 3807 BC",
+    "Campemoor": "the Campemoor bog in Lower Saxony, northern Germany, around 4500 BC",
+    "Dümmer": "the Dümmer lake region in Lower Saxony, northern Germany, around 4500 BC",
+    "Niedersachsen": "Lower Saxony, northern Germany, prehistoric bog country",
+    "Niedersachsen, heute": "a present-day archaeological excavation in Lower Saxony, northern Germany",
+    "Ägypten": "Old Kingdom Egypt, around 2500 BC",
+    "Ägypten ~2500 v. Chr.": "Old Kingdom Egypt, around 2500 BC",
+    "Ägypten, Altes Reich": "Old Kingdom Egypt, around 2500 BC",
+    "Babylon": "Babylon in Mesopotamia, 569 BC, under Nebuchadnezzar II",
+    "Babylon, 569 v. Chr.": "Babylon in Mesopotamia, 569 BC, under Nebuchadnezzar II",
+    "Babylon, Neujahr": "Babylon in Mesopotamia, 569 BC, the spring new year festival",
+    "Persien ~500 v. Chr.": "the Achaemenid Persian empire, around 500 BC",
+    "Chaco": "Chaco Canyon in New Mexico, ancestral Pueblo culture, around 1000 AD",
+    "Chaco ~1000 n. Chr.": "Chaco Canyon in New Mexico, ancestral Pueblo culture, around 1000 AD",
+    "Anden": "the Inca empire in the Andes, around 1450 AD",
+    "Anden ~1450 n. Chr.": "the Inca empire in the Andes, around 1450 AD",
+    "Rom, 312 v. Chr.": "the Roman Republic, 312 BC",
+    "Rom, Via Appia": "the Roman Republic, 312 BC, the Appian Way",
+}
+
+# Epochenangabe fehlt in szenen.md ganz. Bei Motiven OHNE Figur ist das
+# unkritisch - ein Diagramm oder ein freigestelltes Fundstueck braucht keine
+# Tracht. Bei Motiven MIT Figur ist es das nicht: diese drei sind gemeldet und
+# laufen erst, wenn die Epoche entschieden ist.
+OHNE_EPOCHE_MIT_FIGUR = {"M41", "M48", "M78"}
+
+# Raumbilder, in denen die Lichtquelle physisch nicht ins Bild passt.
+QUELLE_AUSSERHALB = set("""M01 M02 M03 M07 M09 M12 M15 M17 M18 M19 M20 M27 M28 M31
+    M32 M38 M39 M45 M47 M48 M51 M52 M60 M66 M70 M83 M84""".split())
 
 # Schemabilder: flaches Diagramm, kein Licht, keine Tiefe.
 SCHEMA = set("""M04 M05 M13 M16 M25 M26 M30 M34 M35 M36 M40 M41 M43 M44 M54 M59 M61
@@ -331,13 +410,24 @@ def prompt(mid: str, m: dict) -> str:
         framing = FRAMING_EINZEL
 
     p = MACHART + framing
-    p += DIAGRAMM if ist_schema else Z3.format(quelle=LICHT[mid])
+    if m["fig"]:
+        p += KEIN_ANSCHNITT
+    if ist_schema:
+        p += DIAGRAMM
+    elif mid in QUELLE_AUSSERHALB:
+        p += Z3_AUSSERHALB.format(quelle=LICHT[mid])
+    else:
+        p += Z3_SICHTBAR.format(quelle=LICHT[mid])
     p += f" PALETTE: the picture uses only these colours - {PALETTEN[PALETTE[mid]]}." + SIGNAL
+    epoche = EPOCHE_EN.get(m["epoche"].strip())
+    if epoche:
+        p += f" PERIOD AND PLACE: {epoche}. Clothing, tools, architecture and " \
+             "vegetation all belong to that period and place and to no other."
     if m["fig"]:
         p += " " + FIGUR
     p += " SCENE: " + SZENE_EN[mid].rstrip(".") + "."
     if mid in KLEINE_FIGUR:
-        p += GEISTERKOPF
+        p += KLEIN + GEISTERKOPF
     return p + NEGATIV
 
 

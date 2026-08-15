@@ -90,3 +90,108 @@ fehlt: dieselben Prompts erzeugen dieselben Fehler. Vorgeschlagene Korrektur an
 Kosten des Nachlaufs: 5 Bilder = 10 Credits. Gesamtlauf danach 74 × 2 = 148
 Credits. Zusammen mit den bereits verbrauchten 20 bleibt das mit **178
 Credits** deutlich unter der Grenze von 500.
+
+---
+
+# Nachlauf der fünf Fehlschläge — 15.08.2026
+
+**10 Credits** (5 Bilder à 2,0). Kontostand 2.859,9 → **2.849,9**. Gesamt für
+Video 1 bisher **30 Credits**. Die v1-Fassungen liegen zum Vergleich in
+[`_v1/`](_v1), Gegenüberstellung: [`_vorher-nachher.png`](_vorher-nachher.png).
+
+## Was vorher geprüft wurde
+
+Die vier Korrekturen sind vor dem Nachlauf an **allen 84** Prompts geprüft, nicht
+nur an den fünf:
+
+| Korrektur | Abdeckung |
+|---|---|
+| 1 · `PERIOD AND PLACE` | 49/84 Prompts · fehlt bei 32 ohne Figur (unkritisch) und **3 mit Figur** (gemeldet, siehe unten) |
+| 2 · Figurengröße | bei allen 4 Motiven vorhanden, die „klein" verlangen · nirgends fälschlich gesetzt |
+| 3 · Anschnittverbot | bei allen 26 Figurenmotiven |
+| 4 · Handregel | bei allen 26 Figurenmotiven |
+| 5 · Lichtregel | 35 sichtbar + 27 außerhalb + 22 Diagramm = 84/84, keins doppelt · harte Schattenregel in allen 62 Raumbildern |
+
+Die Jahreszahlen der Epochenzeile sind **aus `skript.md` übernommen**, nicht
+erfunden: Sweet Track 3807 v. Chr., Campemoor „rund sechseinhalbtausend Jahre",
+Ägypten „vor etwa 4.500 Jahren", Babylon 569 v. Chr., Persien um 500 v. Chr.,
+Chaco „etwa tausend Jahre zurück", Inka um 1450, Via Appia 312 v. Chr.
+
+## Die Lichtregel — warum sie präzisiert wurde
+
+Von den 62 Raumbildern kann die Quelle bei **27 (44 %) physisch nicht im Bild
+sein**: Nahaufnahmen, Aufsichten, Luftbilder — und M02, wo `szenen.md`
+ausdrücklich „kein Horizont" vorschreibt. Die Z3-Regel hätte dort 27-mal
+reißen müssen. Präzisiert auf: **sichtbare Quelle, wo sie ins Bild passt, sonst
+eindeutig gerichteter harter Schatten aus derselben einen Richtung.** Der harte,
+flächige, verlauffreie Schatten — der eigentliche Bildeffekt von Z3 — ist in
+beiden Fassungen unverändert gefordert.
+
+## Motive ohne Epochenangabe in `szenen.md` — zu entscheiden
+
+**A · Mit Figur, müssen entschieden werden (3):**
+
+| Motiv | Spalte | Szene |
+|---|---|---|
+| **M41** | `Schema` | Die Figur schreitet den Zeitstrahl ab — abstrakt, Epoche offen |
+| **M48** | `Detail` | Eine Hand auf versteinertem Holz — Zusammenhang ist Ägypten, steht aber nicht da |
+| **M78** | `zeitlos` | Händler auf der alten Bohlenstraße — laut Skript bewusst zeitlos |
+
+**B · Ohne Figur, aber epochengebundener Gegenstand (11):** M12, M17, M18, M20,
+M31, M39, M42, M47, M77, M79, M80. Hier entscheidet die Epoche über Werkzeugform
+und Bauart — etwa ob M18 Steinbeil und Holzkeil zeigt oder modernes Gerät, und
+ob M47 ägyptisches Basaltpflaster wird.
+
+**C · Abstrakte Schemata und Karten (21):** brauchen keine Epoche.
+
+## Prüfergebnis des Nachlaufs
+
+| Motiv | Fehler in v1 | jetzt |
+|---|---|---|
+| **M06** | modernes Hemd in urzeitlicher Szene | **Epoche geheilt** — Tunika, Ledergurt, Steinbeil · Schlagschatten korrekt |
+| **M62** | ägyptischer Nemes in Chaco · Füße angeschnitten | **beides geheilt** — Pueblo-Tracht, Vollbild · Schlagschatten korrekt |
+| **M84** | keine Lichtquelle · sieht nicht in die Kamera | **Kamerablick geheilt** · Lichtregel greift |
+| **M49** | Figur am linken Rand angeschnitten | **geheilt** — drei vollständige Figuren · Schatten korrekt |
+| **M72** | moderne Mütze auf Inka-Treppe · Klauenhände | **beides geheilt** — Andentracht, saubere Hände |
+
+**Alle fünf ursprünglichen Fehler sind behoben.** Vier Punkte sind neu oder
+geblieben:
+
+### 1. Die Figurengrößen-Regel wirkt nicht (M06, M62)
+
+`no more than one sixth of the picture height` steht im Prompt, die Figur nimmt
+trotzdem rund die halbe Bildhöhe ein. Beide Motive verlangen laut `szenen.md`
+„die Figur klein". Die Geisterkopf-Härtung wirkt weiterhin — keine schwebenden
+Köpfe, keine Spiegelung — aber die Größenangabe wird ignoriert.
+
+### 2. Der Schlagschatten fehlt bei M72 und M84
+
+Beide zeigen keinen gerichteten Schatten der Figur. Bei M06, M62 und M49 sitzt
+er korrekt. Der Unterschied: dort steht die Figur auf einer offenen Fläche, hier
+auf einer Treppe (M72) beziehungsweise auf gemustertem Baugrund (M84).
+
+### 3. Das Signaltürkis wird flächig statt punktuell gesetzt
+
+| Motiv | Türkis sitzt auf |
+|---|---|
+| M06 | Beilklinge **und** Wasserflächen — zwei Stellen statt einer |
+| M62 | zwei lange Streifen entlang beider Wegränder |
+| M49 | dem **Basaltblock** — Basalt ist dunkel, nicht türkis |
+
+Die Regel sagt „marks the one element the shot is about". Sie wird als
+Farbfläche gelesen, nicht als Markierung.
+
+### 4. Zwei Sachfehler, die den Inhalt betreffen
+
+- **M49: der Schlitten hat Räder.** `szenen.md` verlangt einen Holzschlitten,
+  und das Skript baut seine Kernaussage genau darauf auf — „The wheel is not the
+  parent of the road". Ein Räderwagen in der Ägypten-Szene widerspricht dem
+  Video an seiner wichtigsten Stelle.
+- **M84: die Figur ist zum Bauarbeiter geworden** — Warnweste, Schutzhelm,
+  Baustelle mit schwerem Gerät. M01 und M83 zeigen einen gewöhnlichen Passanten.
+  Die Schlusseinstellung ist die Klammer zur Eröffnung; sie bricht.
+
+## Stand
+
+**Die zehn sitzen noch nicht.** Der Lauf ist gestoppt, die restlichen 74 sind
+nicht gelaufen.
