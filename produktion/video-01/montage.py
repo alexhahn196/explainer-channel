@@ -40,6 +40,13 @@ BREITE, HOEHE, FPS = 1920, 1080, 30
 HUB = 0.12          # wie weit Zoom und Schwenk hoechstens gehen
 RAND = 0.02         # Sicherheitsrand, damit der Zuschnitt nie ans Bild stoesst
 
+# Nachhall am Schluss. Gemessen endet der letzte hoerbare Laut bei 538,093 s,
+# das Bild bei 538,100 s — sieben Millisekunden spaeter. Verloren geht dadurch
+# nichts, aber das Video bricht auf der letzten Silbe ab. Die letzte
+# Einstellung steht darum laenger, und der Ton bekommt ebenso viel Stille
+# angehaengt, damit -shortest den Nachhall nicht gleich wieder wegschneidet.
+ABSPANN_S = 1.4
+
 
 def fahrt_kette(fahrt: str, bilder: int) -> str:
     """Baut die zoompan-Kette fuer eine Kamerafahrt.
@@ -108,6 +115,8 @@ def main() -> None:
                     if not (BILDER / f"{s['motiv']}.png").exists()})
     if fehlt:
         print(f"Ohne Bild, werden uebersprungen: {fehlt}")
+    if plan and not nur:
+        plan[-1] = dict(plan[-1], dauer_s=plan[-1]["dauer_s"] + ABSPANN_S)
 
     with ThreadPoolExecutor(max_workers=4) as pool:
         teile = list(pool.map(rendere, plan))
@@ -122,9 +131,11 @@ def main() -> None:
                      encoding="utf-8")
     ziel = HIER / ("video-01-probe.mp4" if nur else "video-01.mp4")
     laenge = sum(s["dauer_s"] for s, _ in fertig)
+    # Ton mit Stille verlaengern, damit der Nachhall stehen bleibt.
     cmd = [FFMPEG, "-v", "error", "-y", "-f", "concat", "-safe", "0",
            "-i", str(liste), "-i", str(TON),
-           "-map", "0:v:0", "-map", "1:a:0",
+           "-filter_complex", f"[1:a]apad=pad_dur={ABSPANN_S + 0.5}[a]",
+           "-map", "0:v:0", "-map", "[a]",
            "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
            "-shortest", "-movflags", "+faststart", str(ziel)]
     subprocess.run(cmd, check=True, cwd=BAU)
