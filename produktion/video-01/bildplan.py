@@ -124,10 +124,16 @@ PALETTEN = {
 }
 # Korrektur, dritte Fassung: Das Tuerkis wurde flaechig gelesen - zwei Stellen in
 # M06, Randstreifen in M62, der ganze Basaltblock in M49.
-SIGNAL = (" SIGNAL COLOUR: exactly ONE object in the image carries the turquoise "
-          "#1BBFB0 - no second occurrence, no turquoise in water, sky, ground, "
-          "vegetation, edges or borders. If no single object needs marking, the "
-          "turquoise is absent from the picture entirely.")
+# Türkis ist erlaubt, aber nie Pflicht. Entschieden am 15.08.2026: wo sich ein
+# Gegenstand natürlich anbietet, darf er die Signalfarbe tragen — höchstens
+# einer. Wo sich keiner anbietet, bleibt die Farbe weg. Die Regel ist eine
+# OBERGRENZE, kein Soll; erzwungenes Türkis sieht willkürlich aus.
+SIGNAL = (" SIGNAL COLOUR: the turquoise #1BBFB0 is permitted but never "
+          "required. AT MOST ONE object in the picture may carry it - never a "
+          "second one, and never in water, sky, ground, vegetation, edges or "
+          "borders. If no object in this scene naturally suits it, leave the "
+          "turquoise out altogether; an empty picture is correct, a picture "
+          "with two turquoise things is not.")
 
 # Motive ohne Signalfarbtraeger: hier ist Tuerkis ganz abwesend. Die Regel
 # erlaubt das ausdruecklich ("if no single object needs marking"), aber das
@@ -144,8 +150,67 @@ SIGNAL_TRAEGER = {
            "the basket, the spear, the rattle staff, the water, the ground and "
            "every plant stay in the palette colours and carry no turquoise",
 }
-SIGNAL_EINS = (" SIGNAL COLOUR: exactly ONE object in the image carries the "
-               "turquoise #1BBFB0, and that object is {traeger}.")
+SIGNAL_EINS = (" SIGNAL COLOUR: at most ONE object in the image carries the "
+               "turquoise #1BBFB0, and if anything does, it is {traeger}.")
+
+# ---------------------------------------------------------------- Pflanzen
+# Der Prompt nannte bisher Ort und Zeit, aber nie die Vegetation. Was er nicht
+# benennt, füllt das Modell aus der nächstliegenden Bildkonvention — und
+# "Anden, trocken" wurde dreimal zu nordamerikanischer Wüste (M67, M70:
+# Saguaro und Opuntien). Derselbe Mechanismus wie beim Epochenfehler.
+# Der Schlüssel ist ein Textstück aus der Epochenzeile, damit Motive ohne
+# eigenen Eintrag automatisch mitlaufen.
+FLORA = {
+    "Andes": "VEGETATION: high Andean puna - tussock grass in clumps, low "
+             "Polylepis trees with shaggy reddish bark, agaves and small "
+             "hard cushion plants. There are NO columnar cacti, no saguaro, "
+             "no prickly pear and no desert succulents of any kind here.",
+    "Chaco Canyon": "VEGETATION: Colorado Plateau high desert - sagebrush, "
+                    "four-wing saltbush, low juniper and pinyon pine, yucca "
+                    "with stiff blade leaves. There is NO saguaro and no tall "
+                    "columnar cactus anywhere in this landscape.",
+    "Egypt": "VEGETATION: Egyptian desert and lake shore - date palms, "
+             "papyrus reeds by the water, thorny acacia. No cacti of any kind.",
+    "Babylon": "VEGETATION: Mesopotamian - date palms and river reeds only. "
+               "No cacti, no conifers.",
+    "Persian": "VEGETATION: dry Iranian plateau - low thorny scrub, poplars "
+               "by water. No cacti.",
+    "Somerset": "VEGETATION: waterlogged temperate marsh - reeds, sedge "
+                "tussocks, sphagnum moss, alder, hazel and oak. No conifers, "
+                "no palms, no cacti.",
+    "Lower Saxony": "VEGETATION: northern European raised bog - heather, "
+                    "cotton grass, sphagnum moss, birch and Scots pine. "
+                    "No palms, no cacti.",
+    # Die allgemeine Urzeit-Epoche traegt weder "Somerset" noch "Lower Saxony"
+    # im Text und fiel deshalb durch jeden Schluessel — betraf M06 bis M09,
+    # also ausgerechnet die Moorbilder.
+    "Neolithic north-west Europe":
+        "VEGETATION: waterlogged temperate marsh and bog - reeds, sedge "
+        "tussocks, sphagnum moss, heather, alder, hazel and oak. No conifers "
+        "except Scots pine, no palms, no cacti.",
+    "Roman": "VEGETATION: Italian countryside - umbrella pines, cypresses, "
+             "olive trees, dry grass. No cacti, no palms.",
+}
+
+# Der echte Bogen ist in den Anden falsch: Inka mauern auskragend, mit
+# schräg zulaufenden Steinlagen. M67 hatte eine römische Bogenbrücke.
+BAUWEISE = {
+    "Andes": " BUILDING METHOD: Inca stonework only - tightly fitted polygonal "
+             "blocks with slightly inward-leaning walls, trapezoidal doorways "
+             "and niches. There is NO true arch, no keystone, no vault and no "
+             "arched bridge anywhere in the picture.",
+}
+
+# Flächenfüllung. Der Machart-Block verlangt sie schon, aber bei komplexem
+# Gelände gibt sie nach (M69: weiche Verläufe auf Fels und Stufen). Für
+# Raumbilder wird sie darum ein zweites Mal und ausdrücklich gesetzt.
+FLAECHE_HART = (
+    " FLAT FILL, NO EXCEPTIONS: every surface in this picture - rock, stone "
+    "blocks, earth, water, sky and vegetation alike - is filled with ONE solid "
+    "colour and nothing else. No gradient, no soft shading, no airbrush, no "
+    "texture, no highlight and no darkening towards an edge. Where a surface "
+    "changes tone it does so as a separate hard-edged shape with a clean "
+    "border, never as a fade. The outlines keep one constant weight throughout.")
 
 # Figurenblock fuer Koerperteil-Aufnahmen. Der volle FIGUR-Block beschreibt
 # Augen, Brauen, Nase und Frisur - alles Dinge, die in einer Handaufnahme nicht
@@ -538,6 +603,18 @@ def prompt(mid: str, m: dict) -> str:
     if epoche:
         p += f" PERIOD AND PLACE: {epoche}. Clothing, tools, architecture and " \
              "vegetation all belong to that period and place and to no other."
+        # Pflanzen und Bauweise ausdrücklich benennen, sobald die Epochenzeile
+        # den Kulturraum nennt — sonst rät das Modell (siehe FLORA).
+        for marke, satz in FLORA.items():
+            if marke in epoche:
+                p += " " + satz
+                break
+        for marke, satz in BAUWEISE.items():
+            if marke in epoche:
+                p += satz
+                break
+    if not ist_schema:
+        p += FLAECHE_HART
     if m["fig"]:
         if mid in KOERPERTEIL:
             p += " " + FIGUR_TEIL
