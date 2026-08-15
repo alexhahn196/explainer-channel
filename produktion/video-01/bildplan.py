@@ -146,12 +146,43 @@ KEIN_SIGNAL = (" SIGNAL COLOUR: this picture contains no turquoise at all - "
 # wird der Traeger benannt. Gemessen an M64: Rasselstab, Wasserflaeche und
 # Grasbueschel waren gleichzeitig tuerkis — drei Objekte statt einem.
 SIGNAL_TRAEGER = {
+    # M79 hatte zwei: die Tuer eines Hauses und ein tuerkis gerahmtes
+    # Haengeschild. Das Schild verstiess ausserdem gegen die eigene
+    # Epochenzeile ("no modern signage").
+    "M79": "the door of the small building at the roadside, and nothing else - "
+           "there is no hanging sign, no signboard, no painted panel and no "
+           "second turquoise thing anywhere in the picture",
+    # M38 hatte drei tuerkise Gegenstaende: Kellenheft, Anhaenger am Bandmass
+    # und dessen Band. Der Traeger wird darum benannt.
+    "M38": "the handle of the single trowel, and nothing else - every other "
+           "tool, tag, tape and marker in the pit stays in plain metal, wood "
+           "and undyed colours",
     "M64": "the circle of assembly in the fourth panel, and nothing else - "
            "the basket, the spear, the rattle staff, the water, the ground and "
            "every plant stay in the palette colours and carry no turquoise",
 }
 SIGNAL_EINS = (" SIGNAL COLOUR: at most ONE object in the image carries the "
                "turquoise #1BBFB0, and if anything does, it is {traeger}.")
+
+# ------------------------------------------------------------------- Nacht
+# Drei Motive spielen nachts. Alle drei kamen zunächst taghell zurück, und bei
+# M80 hätte ich es fast durchgehen lassen — Mond und brennende Laterne im Bild
+# täuschen das Auge. Erst gemessen fiel es auf: M80 lag mit mittlerer
+# Helligkeit 138 ÜBER der Tagszene M56 mit 134.
+#
+# Die Formulierung nennt darum ausdrücklich, wie viel Fläche dunkel zu sein
+# hat, statt nur "at night" zu sagen. Eine frühere, schärfere Fassung
+# ("every surface is dark except the patch the torch reaches") ging nach
+# hinten los: M57 wurde dunkel, verlor aber die kennzeichnende Architektur.
+# Deshalb hier Dunkelheit fordern, ohne den Bildinhalt wegzudrücken.
+NACHT_MOTIVE = {"M57", "M79", "M80"}
+NACHT = (" NIGHT, NOT DUSK: this is deep night and must read as night at a "
+         "glance. The sky is near-black, and the greater part of the whole "
+         "frame is very dark - darker than any daytime picture in this series. "
+         "Only the small area actually reached by the one light source is "
+         "bright; everything outside that reach falls to deep shadow, though "
+         "the shapes of the place stay readable in it. The palette's lightest "
+         "tone appears only inside the lit area, nowhere else.")
 
 # ---------------------------------------------------------------- Pflanzen
 # Der Prompt nannte bisher Ort und Zeit, aber nie die Vegetation. Was er nicht
@@ -161,34 +192,34 @@ SIGNAL_EINS = (" SIGNAL COLOUR: at most ONE object in the image carries the "
 # Der Schlüssel ist ein Textstück aus der Epochenzeile, damit Motive ohne
 # eigenen Eintrag automatisch mitlaufen.
 FLORA = {
-    "Andes": "VEGETATION: high Andean puna - tussock grass in clumps, low "
+    "Andes": "VEGETATION - this is a limit on what may grow here, not an instruction to add plants; if the scene needs no vegetation, it has none: high Andean puna - tussock grass in clumps, low "
              "Polylepis trees with shaggy reddish bark, agaves and small "
              "hard cushion plants. There are NO columnar cacti, no saguaro, "
              "no prickly pear and no desert succulents of any kind here.",
-    "Chaco Canyon": "VEGETATION: Colorado Plateau high desert - sagebrush, "
+    "Chaco Canyon": "VEGETATION - this is a limit on what may grow here, not an instruction to add plants; if the scene needs no vegetation, it has none: Colorado Plateau high desert - sagebrush, "
                     "four-wing saltbush, low juniper and pinyon pine, yucca "
                     "with stiff blade leaves. There is NO saguaro and no tall "
                     "columnar cactus anywhere in this landscape.",
-    "Egypt": "VEGETATION: Egyptian desert and lake shore - date palms, "
+    "Egypt": "VEGETATION - this is a limit on what may grow here, not an instruction to add plants; if the scene needs no vegetation, it has none: Egyptian desert and lake shore - date palms, "
              "papyrus reeds by the water, thorny acacia. No cacti of any kind.",
-    "Babylon": "VEGETATION: Mesopotamian - date palms and river reeds only. "
+    "Babylon": "VEGETATION - this is a limit on what may grow here, not an instruction to add plants; if the scene needs no vegetation, it has none: Mesopotamian - date palms and river reeds only. "
                "No cacti, no conifers.",
-    "Persian": "VEGETATION: dry Iranian plateau - low thorny scrub, poplars "
+    "Persian": "VEGETATION - this is a limit on what may grow here, not an instruction to add plants; if the scene needs no vegetation, it has none: dry Iranian plateau - low thorny scrub, poplars "
                "by water. No cacti.",
-    "Somerset": "VEGETATION: waterlogged temperate marsh - reeds, sedge "
+    "Somerset": "VEGETATION - this is a limit on what may grow here, not an instruction to add plants; if the scene needs no vegetation, it has none: waterlogged temperate marsh - reeds, sedge "
                 "tussocks, sphagnum moss, alder, hazel and oak. No conifers, "
                 "no palms, no cacti.",
-    "Lower Saxony": "VEGETATION: northern European raised bog - heather, "
+    "Lower Saxony": "VEGETATION - this is a limit on what may grow here, not an instruction to add plants; if the scene needs no vegetation, it has none: northern European raised bog - heather, "
                     "cotton grass, sphagnum moss, birch and Scots pine. "
                     "No palms, no cacti.",
     # Die allgemeine Urzeit-Epoche traegt weder "Somerset" noch "Lower Saxony"
     # im Text und fiel deshalb durch jeden Schluessel — betraf M06 bis M09,
     # also ausgerechnet die Moorbilder.
     "Neolithic north-west Europe":
-        "VEGETATION: waterlogged temperate marsh and bog - reeds, sedge "
+        "VEGETATION - this is a limit on what may grow here, not an instruction to add plants; if the scene needs no vegetation, it has none: waterlogged temperate marsh and bog - reeds, sedge "
         "tussocks, sphagnum moss, heather, alder, hazel and oak. No conifers "
         "except Scots pine, no palms, no cacti.",
-    "Roman": "VEGETATION: Italian countryside - umbrella pines, cypresses, "
+    "Roman": "VEGETATION - this is a limit on what may grow here, not an instruction to add plants; if the scene needs no vegetation, it has none: Italian countryside - umbrella pines, cypresses, "
              "olive trees, dry grass. No cacti, no palms.",
 }
 
@@ -486,7 +517,7 @@ SZENE_EN = {
  "M35": "a split picture: rising water at the left, migrating settlement points on a stylised map at the right",
  "M36": "a diagram: along a horizontal time axis, plank trackways stack into three waves, the gaps between them staying empty",
  "M37": "a pine stand at the bog edge, visibly thinned: stumps in the foreground, few crowns behind",
- "M38": "the same excavation as before, the tarpaulin folded back: two broken wooden cart axles lying in the wet peat",
+ "M38": "the same excavation as before, the tarpaulin folded back: two broken wooden cart axles lying in the wet peat. The excavation tools lying about - trowel, tape measure, brushes, tags - are all in plain metal, wood and undyed colours",
  "M39": "the two axles isolated on empty ground, like a museum find",
  "M40": "a timeline drawn as a plank trackway: the track runs from left to right, its beginning far to the left, and only just before the right edge lies a small wheel",
  "M41": "the character walks along that same timeline, the wheel still far ahead",
@@ -505,10 +536,12 @@ SZENE_EN = {
  "M54": "a road cross-section: stone slabs bedded in a dark layer of bitumen, the width indicated by a measuring band",
  "M55": "the character stands at the left edge of the frame in profile, looking down the broad street towards the gate rising in the distance, relief walls on both sides",
  "M56": "a procession in spring light: statues of gods on litters move through the gate, a dense crowd, the character carrying with them",
- "M57": "the same street at night, completely empty of people. It is deep "
-        "night: the sky is black, the paving and the far end of the street lie "
-        "in darkness, and every surface is dark except the small patch of wall "
-        "the torch actually reaches. Do not light this scene like daytime",
+ "M57": "the very same Babylonian processional street as before and no other "
+        "place: the same tall walls of deep blue glazed brick with rows of "
+        "lions and bulls in relief, the same wide stone paving, the same great "
+        "blue gate at the end. Now it is empty of people and lit only by one "
+        "torch on the wall, whose light falls across the glazed reliefs and "
+        "picks them out of the dark",
  "M58": "a rider changes horse at a relay station without stopping, behind him the road runs to the horizon",
  "M59": "a map band from Susa to Sardis: one line with chain links as stations",
  "M60": "a canyon aerial view: red rock walls, a hair-fine straight line in the desert floor",
@@ -530,8 +563,11 @@ SZENE_EN = {
  "M76": "two equally sized cross-sections side by side: at the left the four-layer stone stack, at the right an earth track with a thin gravel top",
  "M77": "a visibly centuries-old plank road, worn smooth, empty",
  "M78": "the same road, now traders with bundles moving across it",
- "M79": "a rainy night: a simple old road holds under a film of water, lights reflecting in it",
- "M80": "the same road in darkness, only the edge of the way still visible",
+ "M79": "a simple old road holding under a film of rainwater, with the lit "
+        "flame of the street lamp mirrored in the wet surface, rain still "
+        "falling. There is no signboard and no hanging sign anywhere",
+ "M80": "the same road, now almost swallowed by the dark - only the edge of "
+        "the way still catches enough moonlight to be made out at all",
  "M81": "back to Somerset: the character lays the last plank in the rain, water already standing at the pegs",
  "M82": "a wide shot in fog: the broken axle beside the ancient plank line",
  "M83": "modern shoes at a softened path edge, water collecting in the prints",
@@ -615,6 +651,8 @@ def prompt(mid: str, m: dict) -> str:
                 break
     if not ist_schema:
         p += FLAECHE_HART
+    if mid in NACHT_MOTIVE:
+        p += NACHT
     if m["fig"]:
         if mid in KOERPERTEIL:
             p += " " + FIGUR_TEIL

@@ -48,9 +48,22 @@ def pruefe(name, tol=52.0, mindest_promille=0.12):
     maske = d < tol
     # Schwarze Konturlinien zerschneiden ein einzelnes Objekt in Teilstuecke —
     # das Reliefpanel in M57 zerfaellt sonst am Loewenumriss in zehn Stuecke.
-    # Zwei Runden Dilatation schliessen Linien bis 4 px Breite wieder zusammen.
+    # Vier Runden Dilatation schliessen sie wieder. An einer von Hand
+    # geprueften Wahrheit (18 Bilder) getestet: bei zwei Runden meldete der
+    # Zaehler 12 Fehlalarme, bei vier noch drei, mehr Runden aendern nichts.
+    #
+    # GRENZE DES VERFAHRENS, ausdruecklich: gezaehlt werden zusammenhaengende
+    # Farbflaechen, nicht Gegenstaende. Wo ein Objekt echt unterbrochen ist —
+    # der Jahresring in M12 laeuft hinter anderen Ringen durch, der Stielgriff
+    # in M18 wird von der Manschette geteilt, die Schaerpe in M78 vom Arm —
+    # zaehlt es doppelt, ohne dass etwas falsch waere.
+    #
+    # Der Zaehler ist damit ein VORFILTER: was er meldet, muss angesehen
+    # werden. Von 13 Meldungen ueber die 84 Bilder war genau eine echt (M38,
+    # drei tuerkise Gegenstaende). Er findet zuverlaessig die Kandidaten und
+    # entscheidet nichts.
     voll = maske.copy()
-    for _ in range(2):
+    for _ in range(4):
         n = voll.copy()
         n[1:, :] |= voll[:-1, :]
         n[:-1, :] |= voll[1:, :]
