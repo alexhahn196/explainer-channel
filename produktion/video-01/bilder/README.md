@@ -274,3 +274,37 @@ Offen bleiben zwei Punkte:
 ## Stand
 
 **Neun von zehn sitzen.** Offen ist allein **M49**.
+
+---
+
+# M49, dritter Nachlauf — bestanden
+
+**2 Credits.** Kontostand 2.839,9 → **2.837,9**. Gesamt Video 1: **42 Credits**.
+
+Zwei Änderungen: die Figurenzahl hart gesetzt („exactly three men and no one
+else … there is no fourth person anywhere in the picture") und der
+Szenentext um „bare open desert road, no plants, no shrubs, no palms and no
+grass" ergänzt. Dazu trägt M49 als einziges Motiv jetzt `KEIN_SIGNAL` —
+die Türkisregel erlaubt Abwesenheit ausdrücklich, aber ohne den Satz sucht
+sich das Modell einen Träger, und in diesem Bild waren das die Pflanzen.
+
+| Prüfpunkt | Ergebnis |
+|---|---|
+| Figurenzahl | **genau drei**, alle am selben Seil, keine vierte Person |
+| Räder | **keine** — flacher Holzschlitten auf losen Rundhölzern |
+| Türkis | **abwesend**, wie vorgegeben |
+| Anschnitt | alle drei vollständig im Bild |
+| Brauen · Hände · Text | ✓ · ✓ · kein Text |
+| Schlagschatten | hart, einheitlich nach links, auch unter dem Block |
+| Epoche | Altes Reich — Schendyt, rasierte Köpfe, Pyramiden im Hintergrund |
+
+## Stand: alle zehn sitzen
+
+| Motiv | Fassung | Anmerkung |
+|---|---|---|
+| M01 · M55 · M12 · M25 · M53 | v1 | seit dem ersten Lauf unverändert bestanden |
+| M06 · M62 | v3 | Figurengröße nach Vorabentscheidung als normal hingenommen |
+| M72 · M84 | v3 | vollständig bestanden |
+| M49 | v4 | vollständig bestanden |
+
+Die früheren Fassungen liegen in `_v1/`, `_v2/` und `_v3/`.

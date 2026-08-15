@@ -116,6 +116,13 @@ SIGNAL = (" SIGNAL COLOUR: exactly ONE object in the image carries the turquoise
           "vegetation, edges or borders. If no single object needs marking, the "
           "turquoise is absent from the picture entirely.")
 
+# Motive ohne Signalfarbtraeger: hier ist Tuerkis ganz abwesend. Die Regel
+# erlaubt das ausdruecklich ("if no single object needs marking"), aber das
+# Modell sucht sich sonst einen Traeger - in M49 mehrere Pflanzen am Bildrand.
+OHNE_SIGNAL = {"M49"}
+KEIN_SIGNAL = (" SIGNAL COLOUR: this picture contains no turquoise at all - "
+               "nothing in it carries the signal colour.")
+
 # --------------------------------------------------- Figur des Erzaehlstrangs -
 # Korrektur 4: Die Hand war in M72 als gespreizte Klaue geraten. Der
 # Machart-Block sagt "a hint of finger separation"; das reicht offenbar nicht.
@@ -376,7 +383,7 @@ SZENE_EN = {
  "M46": "the quarry in section: dark basalt benches with tool marks, the road beginning in front of them",
  "M47": "close to the ground: paving of basalt lumps, limestone and sandstone, and between them slabs of petrified wood with visible grain",
  "M48": "a hand runs across a slab of petrified wood, the grain lying exposed",
- "M49": "three haulers in a line drag a heavy dark basalt block down the road on a flat wooden sledge with no wheels of any kind, the sledge sliding forward over loose wooden rollers laid across its path, all three haulers complete and well inside the frame",
+ "M49": "exactly three men and no one else drag a heavy dark basalt block down the road on a flat wooden sledge with no wheels of any kind, the sledge sliding forward over loose wooden rollers laid across its path; all three pull on the same rope, all three are complete and well inside the frame, and there is no fourth person anywhere in the picture; bare open desert road, no plants, no shrubs, no palms and no grass",
  "M50": "a loaded barge with dark blocks on wide water, a pyramid construction site with ramps on the horizon",
  "M51": "the finished dark temple floor of basalt slabs, strictly gridded",
  "M52": "a relief wall seen frontally: lions, bulls and dragons as flat figures in rows",
@@ -465,7 +472,8 @@ def prompt(mid: str, m: dict) -> str:
         p += Z3_AUSSERHALB.format(quelle=LICHT[mid])
     else:
         p += Z3_SICHTBAR.format(quelle=LICHT[mid])
-    p += f" PALETTE: the picture uses only these colours - {PALETTEN[PALETTE[mid]]}." + SIGNAL
+    p += f" PALETTE: the picture uses only these colours - {PALETTEN[PALETTE[mid]]}."
+    p += KEIN_SIGNAL if mid in OHNE_SIGNAL else SIGNAL
     epoche = None if mid in ZEITLOS else (
         EPOCHE_JE_MOTIV.get(mid) or EPOCHE_EN.get(m["epoche"].strip()))
     if epoche:
