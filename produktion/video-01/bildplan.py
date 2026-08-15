@@ -132,7 +132,7 @@ SIGNAL = (" SIGNAL COLOUR: exactly ONE object in the image carries the turquoise
 # Motive ohne Signalfarbtraeger: hier ist Tuerkis ganz abwesend. Die Regel
 # erlaubt das ausdruecklich ("if no single object needs marking"), aber das
 # Modell sucht sich sonst einen Traeger - in M49 mehrere Pflanzen am Bildrand.
-OHNE_SIGNAL = {"M02", "M49"}
+OHNE_SIGNAL = {"M02", "M10", "M16", "M22", "M49"}
 KEIN_SIGNAL = (" SIGNAL COLOUR: this picture contains no turquoise at all - "
                "nothing in it carries the signal colour.")
 
@@ -368,7 +368,7 @@ SZENE_EN = {
  "M07": "close view: the character kneels and lays a pale wooden plank onto the soft ground, the water stopping at its edge",
  "M08": "a wide bog surface with cushions of peat moss and open black eyes of water, the character standing small in the middle, a broad band of sky filling the upper third",
  "M09": "close view of bog ground: a boot sinks to the shaft in black water between moss cushions",
- "M10": "a wide marsh landscape in morning mist: bands of reeds, open sheets of water, a wooded island on the horizon - untouched wetland before anything was ever built here, with no walkway, no boardwalk, no plank track, no path, no bridge, no hut, no house and no building of any kind anywhere in the picture",
+ "M10": "a wide marsh landscape in morning mist: bands of reeds, open sheets of water, a wooded island on the horizon - untouched wetland before anything was ever built here, with no walkway, no boardwalk, no plank track, no path, no bridge, no hut, no house, no boat, no canoe, no raft and no building or craft of any kind anywhere in the picture",
  "M11": "the same marsh landscape, now with the character at the shore and a first plank lying in the reeds",
  "M12": "a frame-filling cross-section slice of an oak trunk, concentric annual rings as flat rings",
  "M13": "the same sequence of rings unrolled into a straight band, wide and narrow rings alternating",
