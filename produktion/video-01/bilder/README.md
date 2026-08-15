@@ -308,3 +308,62 @@ sich das Modell einen Träger, und in diesem Bild waren das die Pflanzen.
 | M49 | v4 | vollständig bestanden |
 
 Die früheren Fassungen liegen in `_v1/`, `_v2/` und `_v3/`.
+
+---
+
+# Hauptlauf Stapel 1 (M02–M14) — gestoppt
+
+**22 Credits** (11 Bilder). Kontostand 2.837,9 → **2.815,9**. Gesamt Video 1: **64 Credits**.
+
+## Bestehensquote: 8 von 11
+
+| bestanden | durchgefallen |
+|---|---|
+| M03 · M04 · M05 · M07 · M08 · M11 · M13 · M14 | **M02 · M09 · M10** |
+
+- **M02** — Türkis auf **zwei** Stellen der Asphaltfläche statt auf einer.
+- **M09** — zeigt eine **ganze stehende Figur** statt der verlangten Nahaufnahme
+  eines im Moorwasser versinkenden Stiefels.
+- **M10** — die Marschlandschaft **vor** dem Bau zeigt bereits einen fertigen
+  Bohlensteg und Hütten. Beides steht nicht im Szenentext und widerspricht der
+  Stelle im Skript.
+
+## Die gemeinsame Ursache: FRAMING gegen Nahaufnahme
+
+`FRAMING_EINZEL` verlangt bei **jedem** Figurenmotiv wörtlich *„full body
+visible, not cropped — head, both hands and both feet inside the picture"*.
+Bei M09 lautet die Szene aber *„close view of bog ground: a boot sinks to the
+shaft"* — ein Stiefel, kein Mensch. Die beiden Vorgaben widersprechen sich, und
+das Modell folgt der stärkeren: es baut eine ganze Figur.
+
+**Fünf Motive sind betroffen**, vier davon noch nicht gelaufen:
+
+| Motiv | Szene zeigt | Status |
+|---|---|---|
+| **M09** | einen Stiefel | durchgefallen |
+| **M19** | die Hände der Figur beim Pflocksetzen | noch nicht gelaufen |
+| **M33** | eine Hand, die eine Kurve zeichnet | noch nicht gelaufen |
+| **M48** | eine Hand auf versteinertem Holz | noch nicht gelaufen |
+| **M83** | moderne Schuhe am Wegrand | noch nicht gelaufen |
+
+Ohne Korrektur fallen die vier übrigen mit derselben Begründung durch. Nötig
+ist ein dritter FRAMING-Fall für Körperteil-Aufnahmen: *„this is a close view of
+a part of the body only — a hand, a foot, a boot; do not draw the whole person,
+do not add a face"*.
+
+## Die Größenregel — erster echter Befund
+
+**Bei M08 greift sie.** Die Figur steht klein in der Moorfläche, etwa ein
+Viertel der Bildhöhe, dem Bildraum klar untergeordnet — genau wie beschrieben.
+Das ist das erste Mal in vier Läufen, dass die Regel sichtbar wirkt.
+
+| Motiv | Größenregel greift |
+|---|---|
+| M06 | nein (drei Läufe) |
+| M62 | nein (drei Läufe) |
+| **M08** | **ja** |
+| M29 | noch nicht gelaufen |
+
+Der Unterschied zu M06 und M62: M08 hat keinen dominanten Vordergrund und keine
+Fluchtlinie, an der sich das Modell orientiert. Bei M29 wird sich zeigen, welche
+der beiden Lagen die Regel bestimmt.
