@@ -136,6 +136,17 @@ OHNE_SIGNAL = {"M02", "M10", "M16", "M22", "M49"}
 KEIN_SIGNAL = (" SIGNAL COLOUR: this picture contains no turquoise at all - "
                "nothing in it carries the signal colour.")
 
+# Wo das Modell die Signalfarbe von sich aus auf mehrere Dinge verteilt hat,
+# wird der Traeger benannt. Gemessen an M64: Rasselstab, Wasserflaeche und
+# Grasbueschel waren gleichzeitig tuerkis — drei Objekte statt einem.
+SIGNAL_TRAEGER = {
+    "M64": "the circle of assembly in the fourth panel, and nothing else - "
+           "the basket, the spear, the rattle staff, the water, the ground and "
+           "every plant stay in the palette colours and carry no turquoise",
+}
+SIGNAL_EINS = (" SIGNAL COLOUR: exactly ONE object in the image carries the "
+               "turquoise #1BBFB0, and that object is {traeger}.")
+
 # Figurenblock fuer Koerperteil-Aufnahmen. Der volle FIGUR-Block beschreibt
 # Augen, Brauen, Nase und Frisur - alles Dinge, die in einer Handaufnahme nicht
 # vorkommen und die sonst eine ganze Figur herbeireden.
@@ -157,6 +168,20 @@ FIGUR = (
     "then hair and headwear of that period. HANDS: simple mitten-like shapes with a "
     "thumb, the other fingers only hinted by one or two short notches, never spread "
     "apart, never drawn as separate claws or splayed digits. "
+)
+
+# Zeitlose Motive tragen keine Epochenzeile. Der Satz "for the period and place
+# named above" verwiese dort ins Leere — das Modell muesste die Kleidung raten.
+# Betrifft M41 und M78, die einzigen zeitlosen Motive mit Figur.
+FIGUR_ZEITLOS = (
+    "THIS CHARACTER: one adult human being, plainly built, in plain undyed woven "
+    "cloth, leather and fur that belong to no identifiable century - no metal "
+    "armour, no buttons, no zips, no printed fabric, nothing modern; small eyes "
+    "with one dark pupil each, above them two clearly drawn eyebrows, then a "
+    "minimal nose and one short straight mouth line, then simple uncut hair. "
+    "HANDS: simple mitten-like shapes with a thumb, the other fingers only hinted "
+    "by one or two short notches, never spread apart, never drawn as separate "
+    "claws or splayed digits. "
 )
 
 # Korrektur 3: Anschnittverbot. M62 (Fuesse) und M49 (Figur am linken Rand)
@@ -415,7 +440,10 @@ SZENE_EN = {
  "M54": "a road cross-section: stone slabs bedded in a dark layer of bitumen, the width indicated by a measuring band",
  "M55": "the character stands at the left edge of the frame in profile, looking down the broad street towards the gate rising in the distance, relief walls on both sides",
  "M56": "a procession in spring light: statues of gods on litters move through the gate, a dense crowd, the character carrying with them",
- "M57": "the same street empty at night, only torchlight on the relief walls",
+ "M57": "the same street at night, completely empty of people. It is deep "
+        "night: the sky is black, the paving and the far end of the street lie "
+        "in darkness, and every surface is dark except the small patch of wall "
+        "the torch actually reaches. Do not light this scene like daytime",
  "M58": "a rider changes horse at a relay station without stopping, behind him the road runs to the horizon",
  "M59": "a map band from Susa to Sardis: one line with chain links as stations",
  "M60": "a canyon aerial view: red rock walls, a hair-fine straight line in the desert floor",
@@ -499,14 +527,24 @@ def prompt(mid: str, m: dict) -> str:
     else:
         p += Z3_SICHTBAR.format(quelle=LICHT[mid])
     p += f" PALETTE: the picture uses only these colours - {PALETTEN[PALETTE[mid]]}."
-    p += KEIN_SIGNAL if mid in OHNE_SIGNAL else SIGNAL
+    if mid in OHNE_SIGNAL:
+        p += KEIN_SIGNAL
+    elif mid in SIGNAL_TRAEGER:
+        p += SIGNAL_EINS.format(traeger=SIGNAL_TRAEGER[mid])
+    else:
+        p += SIGNAL
     epoche = None if mid in ZEITLOS else (
         EPOCHE_JE_MOTIV.get(mid) or EPOCHE_EN.get(m["epoche"].strip()))
     if epoche:
         p += f" PERIOD AND PLACE: {epoche}. Clothing, tools, architecture and " \
              "vegetation all belong to that period and place and to no other."
     if m["fig"]:
-        p += " " + (FIGUR_TEIL if mid in KOERPERTEIL else FIGUR)
+        if mid in KOERPERTEIL:
+            p += " " + FIGUR_TEIL
+        elif epoche is None:
+            p += " " + FIGUR_ZEITLOS
+        else:
+            p += " " + FIGUR
     p += " SCENE: " + SZENE_EN[mid].rstrip(".") + "."
     if mid in KLEINE_FIGUR:
         p += KLEIN + GEISTERKOPF
