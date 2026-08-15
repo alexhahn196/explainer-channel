@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Rohtranskripte gehoeren nicht ins Repository — die Berichte enthalten
+# ausschliesslich Kennzahlen, kein Transkripttext.
+uf_transkripte.json
+recherche/daten/captions/
