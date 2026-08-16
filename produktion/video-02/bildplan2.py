@@ -151,9 +151,21 @@ SZENE = {
  "M14": "a close view of a round objective lens sawn exactly through the "
         "middle; one half is slid sideways against the other, and a fine "
         "brass screw sits against it",
+ # Erste Fassung nannte die Handlung als Attribut ("sits at the eyepiece,
+ # turning a screw"). Das Modell setzte den Mann hin und gab ihm ein
+ # kleines Handfernrohr in die Luft, waehrend der grosse Refraktor daneben
+ # stand. Derselbe Fehler wie bei M44 in Stichprobe 2: Attribute fallen
+ # weg, Bauanweisungen bleiben. Jetzt steht jede Hand, jedes Auge und
+ # jeder Beruehrungspunkt einzeln da.
  "M15": "one man in the high-collared coat of the early nineteenth century "
-        "sits at the eyepiece of a large refracting telescope, turning a fine "
-        "brass micrometer screw with his right hand",
+        "sits on a low stool, his upper body leaning forward and his head "
+        "bent down so that his right eye rests against the small eyepiece "
+        "at the near, lower end of one single long telescope tube; the tube "
+        "runs away from him and rises towards the upper right corner of the "
+        "picture. His right hand is closed around a small ribbed brass drum "
+        "set on the side of that tube just below the eyepiece, thumb and "
+        "fingers on the drum. His left hand lies flat on his knee. Both "
+        "hands are drawn and both are on the things named here",
  "M16": "looking through an eyepiece: two separate images of one and the "
         "same star side by side in the round field of view",
  "M17": "the same round field of view - the two images now lie exactly on "
@@ -418,9 +430,13 @@ FLORA = {
  "kahle Linden und Ahorne, Schneedecke":
    "bare limes and maples under snow cover.",
  "dieselben Bäume in vollem Laub": "the same trees in full leaf.",
+ # "without leaves" nennt Laub, um es zu verneinen — und M13 kam mit
+ # belaubten Kronen und einer leuchtend gruenen Wiese zurueck. Jetzt steht
+ # da, was gezeichnet werden soll: nacktes Astwerk.
  "norddeutsche Stadtbäume ohne Laub — Linden, Kastanien; keine Palmen, keine Nadelbäume":
-   "north German street trees without leaves - limes and chestnuts; no palms "
-   "and no conifers.",
+   "north German street trees in winter - limes and chestnuts, each drawn as "
+   "a bare branching silhouette of trunk and open twigs against the sky; no "
+   "palms and no conifers.",
  "Innenraum einer Kuppel, Holzdielen, keine Vegetation":
    "This is the interior of a dome: board floors, no vegetation.",
  "Innenraum, keine Vegetation": "This is an interior: no vegetation.",
@@ -486,6 +502,41 @@ DREITEILIG = (
 
 NACHT_MOTIVE = {"M01", "M02", "M13", "M28", "M35", "M39", "M61"}
 
+# Sechzehn Motive zeigen nichts als den Weltraum — kein Ort, kein Boden,
+# kein Horizont. Bis zum 16.08.2026 hatten sie ueberhaupt keinen Block, der
+# das sagt: der Nachtblock galt nur fuer irdische Nachtbilder, und FARBEN
+# versprach ihnen blauen Himmel und gruenes Gras. M24 verlangte die extreme
+# Nahaufnahme eines Sterns und kam als Tageslandschaft mit Teich, Rasen und
+# einem Backsteingebaeude zurueck: 60 % des Bildes blauer Himmel.
+WELTRAUM_MOTIVE = {"M10", "M11", "M24", "M25", "M29", "M36", "M40", "M41",
+                   "M46", "M47", "M50", "M56", "M58", "M65", "M67", "M69"}
+
+# Beschrieben, nicht verboten: was da IST, ist eine schwarze Flaeche und
+# darin die Lichtquellen. Eine Liste dessen, was fehlen soll — Horizont,
+# Wolke, Boden, Pflanze — wuerde nach der Regel dieses Projekts genau das
+# herbeirufen.
+WELTRAUM = (
+    " DEEP SPACE: this picture shows airless space. Its ground is one flat "
+    "near-black tone across almost the whole frame, and the only bright "
+    "shapes anywhere in it are the light sources named above; every other "
+    "part of the frame stays that same near-black. The picture reads as "
+    "space at a glance, and the brightest tones appear only inside those "
+    "sources.")
+
+
+def hat_pflanzen(flora: str) -> bool:
+    """Ob im Bild ueberhaupt gruene Vegetation vorkommt.
+
+    Nur dann darf der Weltfarbsatz Laub und Gras benennen. "ohne Laub"
+    zaehlt nicht: M13 verlangte kahle Baeume und bekam belaubte Kronen,
+    weil derselbe Prompt zwei Zeilen weiter "foliage and grass are green"
+    versprach.
+    """
+    return (flora != "—" and "keine Vegetation" not in flora
+            and "ohne Laub" not in flora)
+
+
+
 
 # Der Anweisungsteil liegt seit dem 16.08.2026 in zwei Fassungen in
 # bildplan.py: mit Figur der Wortlaut aus Video 1, ohne Figur der um die
@@ -529,11 +580,16 @@ def prompt(mid: str) -> str:
             p += bp.Z3_AUSSERHALB.format(quelle=LICHT[mid])
         else:
             p += bp.Z3_SICHTBAR.format(quelle=LICHT[mid])
-        p += bp.farben(mit_figur)
+        pflanzen = hat_pflanzen(d["flora"])
+        p += bp.farben(mit_figur, pflanzen)
         ort = ORT[d["ort"]]
         if ort:
-            epoche = (bp.EPOCHE_MIT_FIGUR if mit_figur
-                      else bp.EPOCHE_OHNE_FIGUR)
+            if mit_figur:
+                epoche = bp.EPOCHE_MIT_FIGUR
+            elif pflanzen:
+                epoche = bp.EPOCHE_OHNE_FIGUR
+            else:
+                epoche = bp.EPOCHE_NEUTRAL
             p += f" PERIOD AND PLACE: {ort}. {epoche}"
             if d["flora"] != "—":
                 p += " " + FLORA[d["flora"]]
@@ -542,6 +598,8 @@ def prompt(mid: str) -> str:
             p += DREITEILIG
         if mid in NACHT_MOTIVE:
             p += bp.NACHT
+        if mid in WELTRAUM_MOTIVE:
+            p += WELTRAUM
         if fr == "ganz":
             p += " " + bp.FIGUR
         elif fr == "teil":
@@ -556,6 +614,36 @@ def prompt(mid: str) -> str:
 PERSONENWORT = re.compile(
     r"\b(figure|figures|clothing|clothes|clothed|prop|props|tool|tools|"
     r"person|adult|adults|dressed|garment|garments|wearing|worn)\b", re.I)
+
+
+# Dieselbe Regel eine Ebene weiter, Lehre aus Stapel 2: der Anweisungsteil
+# darf auch keine Pflanze und keinen Baustoff benennen, wenn im Bild keine
+# vorkommt. M24 verlangte die Nahaufnahme eines Sterns und bekam eine
+# Tageslandschaft, weil FARBEN gruenes Gras und blauen Himmel zusagte.
+PFLANZENWORT = re.compile(
+    r"\b(foliage|grass|greenery|leaves|shrub|shrubs|hedge|lawn|brick|"
+    r"masonry|render)\b", re.I)
+
+
+def pruefe_pflanzenworte(prompts: dict[str, str]) -> None:
+    for mid, p in prompts.items():
+        d = sp.M[mid]
+        if d.get("schema") or hat_pflanzen(d["flora"]):
+            continue
+        # Der Flora- und Ortssatz des Motivs ist ausgenommen: was dort
+        # steht, ist ausdruecklich gewollt (M20 hat wirklich Backsteinnischen).
+        # Geprueft werden die geteilten Bloecke, die allen Motiven gleich
+        # mitlaufen — dort sitzt der Fehler aus Stapel 2.
+        kopf = p.split(" SCENE:")[0]
+        if d["flora"] != "—":
+            kopf = kopf.replace(FLORA[d["flora"]], "")
+        treffer = sorted(set(m.group(0).lower()
+                             for m in PFLANZENWORT.finditer(kopf)))
+        if treffer:
+            raise SystemExit(
+                f"{mid}: Pflanzen- oder Baustoffwort im Anweisungsteil eines "
+                f"Bildes ohne Vegetation: {treffer}. Das ist die Ursache aus "
+                "Stapel 2.")
 
 
 def pruefe_personenworte(prompts: dict[str, str]) -> None:
@@ -590,6 +678,7 @@ def main() -> None:
 
     aus = {mid: prompt(mid) for mid in sp.M}
     pruefe_personenworte(aus)
+    pruefe_pflanzenworte(aus)
     (HIER / "bildplan2-prompts.json").write_text(
         json.dumps(aus, indent=1, ensure_ascii=False), encoding="utf-8")
     laengen = [len(p) for p in aus.values()]
@@ -598,6 +687,9 @@ def main() -> None:
     ohne = sum(1 for mid, d in sp.M.items()
                if d.get("schema") or d["framing"] not in ("ganz", "teil"))
     print(f"Personenwortprüfung bestanden ({ohne} figurenlose Prompts)")
+    kahl = sum(1 for mid, d in sp.M.items()
+               if not d.get("schema") and not hat_pflanzen(d["flora"]))
+    print(f"Pflanzenwortprüfung bestanden ({kahl} Motive ohne Vegetation)")
 
 
 if __name__ == "__main__":

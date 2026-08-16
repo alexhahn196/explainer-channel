@@ -211,7 +211,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 ## Motivkatalog
 
 **M01** · 2 Einstellungen · getrennte Ebenen
-- Bild: Aufsicht von unten in einen Nachthimmel voller Sterne, einer davon etwas heller; unten die dunkle Dachkante einer Wohnstraße
+- Bild: Aufsicht von unten in einen Nachthimmel voller Sterne, einer davon doppelt so breit gezeichnet wie die übrigen; unten die dunkle Dachkante einer Wohnstraße
 - Licht: sichtbar: die Sterne selbst
 - Ort: Gegenwart, eine Wohnstraße bei Nacht
 - Flora: mitteleuropäische Stadtbäume als dunkle Silhouetten — Linden, Ahorn; keine Palmen, keine Nadelwaldkulisse
@@ -270,13 +270,13 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: teil
 
 **M10** · 6 Einstellungen · Zustandspaar mit M11
-- Bild: Ein rechteckiger Ausschnitt des Sternhimmels: ein hellerer Stern links von zwei schwächeren Hintergrundsternen
+- Bild: Der Nachthimmel über das ganze Bild: ein Stern links, dreimal so breit gezeichnet wie die kleinen, rechts davon zwei mittelgroße
 - Licht: sichtbar: die Sterne
 - Ort: zeitlos, Blick ins All
 - Framing: ohne
 
 **M11** · 2 Einstellungen · Zustandspaar mit M10
-- Bild: Derselbe Ausschnitt, derselbe Himmel — der helle Stern sitzt jetzt rechts von den beiden Hintergrundsternen
+- Bild: Derselbe Himmel, dieselben Sterne an denselben Stellen — nur der große steht jetzt rechts von den beiden mittelgroßen
 - Licht: sichtbar: die Sterne
 - Ort: zeitlos, Blick ins All
 - Framing: ohne
@@ -302,7 +302,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ohne
 
 **M15** · 3 Einstellungen · Epochenfigur · sitzend · **geschützter Moment**
-- Bild: Ein Mann in hochgeschlossenem Rock des frühen 19. Jahrhunderts sitzt am Okular eines großen Refraktors und dreht mit der rechten Hand eine Mikrometerschraube
+- Bild: Ein Mann in hochgeschlossenem Rock des frühen 19. Jahrhunderts sitzt auf einem niedrigen Hocker, den Oberkörper vorgebeugt, den Kopf gesenkt, das rechte Auge am Okular am unteren Ende eines einzigen langen Fernrohrs, das von ihm weg nach rechts oben steigt; die rechte Hand umfasst eine kleine geriffelte Messingtrommel seitlich am Rohr dicht unter dem Okular, die linke Hand liegt flach auf dem Knie
 - Licht: sichtbar: eine abgeschirmte Öllampe neben dem Instrument
 - Ort: Königsberg in Ostpreußen, 1838
 - Flora: Innenraum einer Kuppel, Holzdielen, keine Vegetation
@@ -511,13 +511,13 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: teil
 
 **M46** · 3 Einstellungen · Zustandspaar mit M47
-- Bild: Ein einzelner Stern in einem Sternfeld, groß und hell
+- Bild: Ein Sternfeld, in dem einer dreimal so breit gezeichnet ist wie alle anderen
 - Licht: sichtbar: der Stern selbst
 - Ort: zeitlos, Blick ins All
 - Framing: ohne
 
 **M47** · 2 Einstellungen · Zustandspaar mit M46
-- Bild: Dasselbe Sternfeld, derselbe Ausschnitt — der eine Stern ist auf einen kleinen matten Punkt zusammengesunken
+- Bild: Dasselbe Sternfeld, derselbe Ausschnitt — der große Stern ist jetzt so klein gezeichnet wie die übrigen
 - Licht: sichtbar: der Stern selbst
 - Ort: zeitlos, Blick ins All
 - Framing: ohne
@@ -535,7 +535,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: teil
 
 **M50** · 1 Einstellung
-- Bild: Ein Sternfeld, in dem dreizehn Sterne merklich heller herausstechen, weit über die Fläche verstreut
+- Bild: Ein Feld kleiner Sterne, in dem dreizehn doppelt so breit gezeichnet sind wie der Rest, weit über die Fläche verstreut
 - Licht: sichtbar: die Sterne
 - Ort: zeitlos, Blick ins All
 - Framing: ohne
@@ -586,7 +586,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ohne
 
 **M61** · 3 Einstellungen · getrennte Ebenen
-- Bild: Ein kleiner dichter Sternhaufen aus wenigen hellen Sternen, von zartem Nebel umgeben, über Baumsilhouetten am Nachthimmel
+- Bild: Ein kleiner dichter Sternhaufen aus wenigen großen weißen Sternen, von einem dünnen blassen Nebelschleier umgeben, über Baumsilhouetten am Nachthimmel
 - Licht: sichtbar: die Sterne des Haufens
 - Ort: Gegenwart, Blick vom Boden
 - Flora: mitteleuropäische Laubbäume als Silhouette
@@ -624,7 +624,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ohne
 
 **M69** · 2 Einstellungen
-- Bild: Ein Galaxienfeld, in dem ein einzelner Lichtpunkt am Rand einer Galaxie grell aufleuchtet, heller als ihr Kern
+- Bild: Ein Galaxienfeld; am Rand einer der Galaxien sitzt ein einzelner weißer Punkt, größer und weißer gezeichnet als ihr Zentrum
 - Licht: sichtbar: der aufleuchtende Stern selbst
 - Ort: zeitlos, Blick ins All
 - Framing: ohne
@@ -641,12 +641,12 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 |---|---|---|
 | M04 / M05 | Nahaufnahme: ein ausgestreckter Arm, der Daumen hochgereckt, dahinter eine … | Exakt dieselbe Aufnahme, aber der Daumen sitzt rechts vom Bildhaken — Ausschnitt … |
 | M07 / M08 | Dieselbe Wohnstraße im Winter: Schnee auf den Dächern, kahle Bäume, eine markante … | Exakt derselbe Ausschnitt im Sommer: belaubte Bäume, dieselbe Steinplatte im Gehweg … |
-| M10 / M11 | Ein rechteckiger Ausschnitt des Sternhimmels: ein hellerer Stern links von zwei … | Derselbe Ausschnitt, derselbe Himmel — der helle Stern sitzt jetzt rechts von den … |
+| M10 / M11 | Der Nachthimmel über das ganze Bild: ein Stern links, dreimal so breit gezeichnet … | Derselbe Himmel, dieselben Sterne an denselben Stellen — nur der große steht jetzt … |
 | M16 / M17 | Blick durch ein Okular: zwei getrennte Abbilder desselben Sterns nebeneinander im … | Dasselbe runde Gesichtsfeld — die beiden Abbilder liegen jetzt exakt übereinander, … |
 | M24 / M25 | Extreme Nahaufnahme eines einzelnen Sterns, wie ihn ein bloßes Auge sieht: eine … | Dieselbe Nahaufnahme desselben Sterns — die Scheibe ist verschwunden, ein winziger … |
 | M33 / M34 | Nahaufnahme: eine Hand legt ein beschriebenes Blatt in eine offene … | Dieselbe Schublade, derselbe Ausschnitt — geschlossen, die Hand ruht flach auf dem … |
 | M42 / M54 | Die Leiter als flaches Sinnbild auf hellem Papiergrund, in Seitenansicht: die Holme … | Dieselbe Leiter, derselbe Ausschnitt — zwei Sprossen sind durchgebrochen und hängen … |
-| M46 / M47 | Ein einzelner Stern in einem Sternfeld, groß und hell | Dasselbe Sternfeld, derselbe Ausschnitt — der eine Stern ist auf einen kleinen … |
+| M46 / M47 | Ein Sternfeld, in dem einer dreimal so breit gezeichnet ist wie alle anderen | Dasselbe Sternfeld, derselbe Ausschnitt — der große Stern ist jetzt so klein … |
 | M48 / M49 | Nahaufnahme: auf dem Leuchttisch liegt ein handgezeichnetes Diagrammblatt — Punkte, … | Derselbe Ausschnitt, dieselbe Hand mit dem Bleistift — auf dem Blatt ist die … |
 
 ## Getrennte Ebenen

@@ -1434,7 +1434,7 @@
  ],
  "motive": {
   "M01": {
-   "szene": "Aufsicht von unten in einen Nachthimmel voller Sterne, einer davon etwas heller; unten die dunkle Dachkante einer Wohnstraße",
+   "szene": "Aufsicht von unten in einen Nachthimmel voller Sterne, einer davon doppelt so breit gezeichnet wie die übrigen; unten die dunkle Dachkante einer Wohnstraße",
    "licht": "sichtbar: die Sterne selbst",
    "ort": "Gegenwart, eine Wohnstraße bei Nacht",
    "framing": "ohne",
@@ -1505,7 +1505,7 @@
    "flora": "—"
   },
   "M10": {
-   "szene": "Ein rechteckiger Ausschnitt des Sternhimmels: ein hellerer Stern links von zwei schwächeren Hintergrundsternen",
+   "szene": "Der Nachthimmel über das ganze Bild: ein Stern links, dreimal so breit gezeichnet wie die kleinen, rechts davon zwei mittelgroße",
    "licht": "sichtbar: die Sterne",
    "ort": "zeitlos, Blick ins All",
    "framing": "ohne",
@@ -1513,7 +1513,7 @@
    "paar": "M11"
   },
   "M11": {
-   "szene": "Derselbe Ausschnitt, derselbe Himmel — der helle Stern sitzt jetzt rechts von den beiden Hintergrundsternen",
+   "szene": "Derselbe Himmel, dieselben Sterne an denselben Stellen — nur der große steht jetzt rechts von den beiden mittelgroßen",
    "licht": "sichtbar: die Sterne",
    "ort": "zeitlos, Blick ins All",
    "framing": "ohne",
@@ -1546,7 +1546,7 @@
    "flora": "—"
   },
   "M15": {
-   "szene": "Ein Mann in hochgeschlossenem Rock des frühen 19. Jahrhunderts sitzt am Okular eines großen Refraktors und dreht mit der rechten Hand eine Mikrometerschraube",
+   "szene": "Ein Mann in hochgeschlossenem Rock des frühen 19. Jahrhunderts sitzt auf einem niedrigen Hocker, den Oberkörper vorgebeugt, den Kopf gesenkt, das rechte Auge am Okular am unteren Ende eines einzigen langen Fernrohrs, das von ihm weg nach rechts oben steigt; die rechte Hand umfasst eine kleine geriffelte Messingtrommel seitlich am Rohr dicht unter dem Okular, die linke Hand liegt flach auf dem Knie",
    "licht": "sichtbar: eine abgeschirmte Öllampe neben dem Instrument",
    "ort": "Königsberg in Ostpreußen, 1838",
    "framing": "ganz",
@@ -1803,7 +1803,7 @@
    "flora": "—"
   },
   "M46": {
-   "szene": "Ein einzelner Stern in einem Sternfeld, groß und hell",
+   "szene": "Ein Sternfeld, in dem einer dreimal so breit gezeichnet ist wie alle anderen",
    "licht": "sichtbar: der Stern selbst",
    "ort": "zeitlos, Blick ins All",
    "framing": "ohne",
@@ -1811,7 +1811,7 @@
    "paar": "M47"
   },
   "M47": {
-   "szene": "Dasselbe Sternfeld, derselbe Ausschnitt — der eine Stern ist auf einen kleinen matten Punkt zusammengesunken",
+   "szene": "Dasselbe Sternfeld, derselbe Ausschnitt — der große Stern ist jetzt so klein gezeichnet wie die übrigen",
    "licht": "sichtbar: der Stern selbst",
    "ort": "zeitlos, Blick ins All",
    "framing": "ohne",
@@ -1836,7 +1836,7 @@
    "paar": "M48"
   },
   "M50": {
-   "szene": "Ein Sternfeld, in dem dreizehn Sterne merklich heller herausstechen, weit über die Fläche verstreut",
+   "szene": "Ein Feld kleiner Sterne, in dem dreizehn doppelt so breit gezeichnet sind wie der Rest, weit über die Fläche verstreut",
    "licht": "sichtbar: die Sterne",
    "ort": "zeitlos, Blick ins All",
    "framing": "ohne",
@@ -1898,7 +1898,7 @@
    "flora": "—"
   },
   "M61": {
-   "szene": "Ein kleiner dichter Sternhaufen aus wenigen hellen Sternen, von zartem Nebel umgeben, über Baumsilhouetten am Nachthimmel",
+   "szene": "Ein kleiner dichter Sternhaufen aus wenigen großen weißen Sternen, von einem dünnen blassen Nebelschleier umgeben, über Baumsilhouetten am Nachthimmel",
    "licht": "sichtbar: die Sterne des Haufens",
    "ort": "Gegenwart, Blick vom Boden",
    "framing": "ohne",
@@ -1943,7 +1943,7 @@
    "flora": "—"
   },
   "M69": {
-   "szene": "Ein Galaxienfeld, in dem ein einzelner Lichtpunkt am Rand einer Galaxie grell aufleuchtet, heller als ihr Kern",
+   "szene": "Ein Galaxienfeld; am Rand einer der Galaxien sitzt ein einzelner weißer Punkt, größer und weißer gezeichnet als ihr Zentrum",
    "licht": "sichtbar: der aufleuchtende Stern selbst",
    "ort": "zeitlos, Blick ins All",
    "framing": "ohne",

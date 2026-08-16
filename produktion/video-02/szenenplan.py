@@ -84,8 +84,9 @@ FLORA_STRASSE = ("mitteleuropäische Stadtbäume als dunkle Silhouetten — "
                  "Linden, Ahorn; keine Palmen, keine Nadelwaldkulisse")
 
 # --- Die Strasse des Zuschauers (Klammer) ------------------------------------
-m("M01", "Aufsicht von unten in einen Nachthimmel voller Sterne, einer davon "
-         "etwas heller; unten die dunkle Dachkante einer Wohnstraße",
+m("M01", "Aufsicht von unten in einen Nachthimmel voller Sterne, einer "
+         "davon doppelt so breit gezeichnet wie die übrigen; unten die "
+         "dunkle Dachkante einer Wohnstraße",
   "sichtbar: die Sterne selbst", "Gegenwart, eine Wohnstraße bei Nacht",
   "ohne", flora=FLORA_STRASSE, ebenen=True)
 m("M02", "Eine Person von hinten, klein im Bild, den Kopf in den Nacken "
@@ -126,11 +127,11 @@ m("M09", "Blick senkrecht nach unten auf zwei Schuhe auf einer Steinplatte "
   "Gegenwart, dieselbe Straße", "teil")
 
 # --- Der Sprung am Himmel ----------------------------------------------------
-m("M10", "Ein rechteckiger Ausschnitt des Sternhimmels: ein hellerer Stern "
-         "links von zwei schwächeren Hintergrundsternen",
+m("M10", "Der Nachthimmel über das ganze Bild: ein Stern links, dreimal so "
+         "breit gezeichnet wie die kleinen, rechts davon zwei mittelgroße",
   "sichtbar: die Sterne", "zeitlos, Blick ins All", "ohne", paar="M11")
-m("M11", "Derselbe Ausschnitt, derselbe Himmel — der helle Stern sitzt "
-         "jetzt rechts von den beiden Hintergrundsternen",
+m("M11", "Derselbe Himmel, dieselben Sterne an denselben Stellen — nur der "
+         "große steht jetzt rechts von den beiden mittelgroßen",
   "sichtbar: die Sterne", "zeitlos, Blick ins All", "ohne", paar="M10")
 
 # --- Das eine Diagramm -------------------------------------------------------
@@ -157,8 +158,12 @@ m("M14", "Nahaufnahme einer runden Objektivlinse, exakt durch die Mitte "
          "eine feine Messingschraube", "Schatten: hart von rechts",
   "Königsberg in Ostpreußen, 1838", "ohne")
 m("M15", "Ein Mann in hochgeschlossenem Rock des frühen 19. Jahrhunderts "
-         "sitzt am Okular eines großen Refraktors und dreht mit der "
-         "rechten Hand eine Mikrometerschraube",
+         "sitzt auf einem niedrigen Hocker, den Oberkörper vorgebeugt, den "
+         "Kopf gesenkt, das rechte Auge am Okular am unteren Ende eines "
+         "einzigen langen Fernrohrs, das von ihm weg nach rechts oben "
+         "steigt; die rechte Hand umfasst eine kleine geriffelte "
+         "Messingtrommel seitlich am Rohr dicht unter dem Okular, die "
+         "linke Hand liegt flach auf dem Knie",
   "sichtbar: eine abgeschirmte Öllampe neben dem Instrument",
   "Königsberg in Ostpreußen, 1838", "ganz", sitzend=True, person=True,
   flora="Innenraum einer Kuppel, Holzdielen, keine Vegetation",
@@ -343,11 +348,12 @@ m("M45", "Nahaufnahme: eine Hand hält eine Lupe über eine Glasplatte auf "
          "mit dichtem Kern und ausgefransten Rändern",
   "Durchlicht: die Platte wird von unten durchleuchtet",
   "Harvard College Observatory, Massachusetts, um 1910", "teil")
-m("M46", "Ein einzelner Stern in einem Sternfeld, groß und hell",
+m("M46", "Ein Sternfeld, in dem einer dreimal so breit gezeichnet ist wie "
+         "alle anderen",
   "sichtbar: der Stern selbst", "zeitlos, Blick ins All", "ohne",
   paar="M47")
-m("M47", "Dasselbe Sternfeld, derselbe Ausschnitt — der eine Stern ist auf "
-         "einen kleinen matten Punkt zusammengesunken",
+m("M47", "Dasselbe Sternfeld, derselbe Ausschnitt — der große Stern ist "
+         "jetzt so klein gezeichnet wie die übrigen",
   "sichtbar: der Stern selbst", "zeitlos, Blick ins All", "ohne",
   paar="M46")
 m("M48", "Nahaufnahme: auf dem Leuchttisch liegt ein handgezeichnetes "
@@ -363,8 +369,8 @@ m("M49", "Derselbe Ausschnitt, dieselbe Hand mit dem Bleistift — auf dem "
   "Durchlicht: der Leuchttisch von unten",
   "Harvard College Observatory, Massachusetts, um 1910", "teil",
   paar="M48")
-m("M50", "Ein Sternfeld, in dem dreizehn Sterne merklich heller "
-         "herausstechen, weit über die Fläche verstreut",
+m("M50", "Ein Feld kleiner Sterne, in dem dreizehn doppelt so breit "
+         "gezeichnet sind wie der Rest, weit über die Fläche verstreut",
   "sichtbar: die Sterne", "zeitlos, Blick ins All", "ohne")
 m("M51", "Nahaufnahme eines Schriftstücks: unten rechts eine große "
          "geschwungene Unterschrift als eine einzige durchgehende "
@@ -404,8 +410,9 @@ m("M60", "Nahaufnahme einer Fotoplatte: ein scharfer heller Punkt, direkt "
          "daneben ein weicher leuchtender Fleck etwa gleicher Helligkeit",
   "Durchlicht: die Platte wird von hinten durchleuchtet",
   "Kalifornien, 1958", "ohne")
-m("M61", "Ein kleiner dichter Sternhaufen aus wenigen hellen Sternen, von "
-         "zartem Nebel umgeben, über Baumsilhouetten am Nachthimmel",
+m("M61", "Ein kleiner dichter Sternhaufen aus wenigen großen weißen "
+         "Sternen, von einem dünnen blassen Nebelschleier umgeben, über "
+         "Baumsilhouetten am Nachthimmel",
   "sichtbar: die Sterne des Haufens", "Gegenwart, Blick vom Boden",
   "ohne", flora="mitteleuropäische Laubbäume als Silhouette", ebenen=True)
 m("M62", "Mehrere große Parabolantennen auf freiem Feld, alle in dieselbe "
@@ -429,8 +436,8 @@ m("M66", "Nahaufnahme: zwei Hände am Fuß einer soliden Holzleiter, die "
 m("M67", "Ein Sternfeld, in dem mehrere deutlich rötliche, aufgeblähte "
          "Sterne zwischen weißen Punkten stehen",
   "sichtbar: die Sterne selbst", "zeitlos, Blick ins All", "ohne")
-m("M69", "Ein Galaxienfeld, in dem ein einzelner Lichtpunkt am Rand einer "
-         "Galaxie grell aufleuchtet, heller als ihr Kern",
+m("M69", "Ein Galaxienfeld; am Rand einer der Galaxien sitzt ein einzelner "
+         "weißer Punkt, größer und weißer gezeichnet als ihr Zentrum",
   "sichtbar: der aufleuchtende Stern selbst", "zeitlos, Blick ins All",
   "ohne")
 

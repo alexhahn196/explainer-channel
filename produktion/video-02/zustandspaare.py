@@ -119,8 +119,30 @@ def verschieben(quelle: pathlib.Path, ziel: pathlib.Path,
                        int(ys.min()), int(ys.max()))}
 
 
-# Die neun Zustandspaare der Szenenliste. Der zweite Zustand entsteht jeweils
-# aus dem ersten; die Saat zeigt auf den Gegenstand, der springt.
+# Die neun Zustandspaare der Szenenliste, nach dem sortiert, was sich
+# zwischen den Zustaenden aendert:
+#
+#   VERSCHIEBUNG — derselbe Gegenstand an anderer Stelle. Hier montiert.
+#     M04/M05  Daumen vor der Wand
+#     M10/M11  naher Stern vor dem Sternfeld
+#     M16/M17  die zwei Sternbilder im Okular fallen zusammen
+#     M46/M47  der grosse Stern wird zu einem kleinen — als Verschiebung
+#              loesbar, weil das Bild schon kleine Sterne enthaelt: einer
+#              davon wird kopiert, statt den grossen zu skalieren. Skalieren
+#              wuerde die Strichstaerke duenner machen und die Machart
+#              brechen.
+#
+#   AENDERUNG DES GEGENSTANDS SELBST — hier hilft die Montage nicht, und
+#   sie muss auch nicht: dass der Gegenstand neu gezeichnet wird, ist bei
+#   diesen vier gerade der Inhalt. Bild zu Bild haelt dabei den
+#   Hintergrund, und das genuegt.
+#     M24/M25  die Scheibe wird zum Punkt
+#     M33/M34  die Schublade schliesst sich
+#     M42/M54  zwei Sprossen der Leiter brechen
+#     M48/M49  die Punktreihe wird ein durchgehender Strich
+#
+#   AUS TEXT GELUNGEN, nichts zu tun:
+#     M07/M08  dieselbe Strasse im Winter und im Sommer
 PAARE = [
     # erst, zweit, Saat im Gegenstand, neuer linker Rand, Schutzflaechen
     ("M04", "M05", (750, 900), 1500, ((100, 2600),)),

@@ -371,32 +371,71 @@ def machart(mit_figur: bool) -> str:
     j = t.index("Minimal symbolic background")
     t = t[:i] + t[j:]
     t = _ersetze(t, "explainer video made for adults.", "explainer video.")
+    # Gegenstandsfrei, nicht mit einer anderen Gegenstandsliste. Der erste
+    # Umbau schrieb hier "objects, architecture, vegetation" — und traf damit
+    # denselben Mechanismus noch einmal: von den 43 figurenlosen Motiven
+    # zeigen die meisten weder Architektur noch Pflanzen, sondern ein
+    # Sternfeld, ein Blatt Papier, ein Instrument. Die Strichstaerkenregel
+    # braucht ueberhaupt kein Beispiel.
     t = _ersetze(
         t,
         "the same line weight on figures, clothing, props and background alike",
-        "the same line weight on objects, architecture, vegetation and "
-        "background alike")
+        "every outline in the picture has exactly the same weight, foreground "
+        "and background alike")
     return t
 
 
-def farben(mit_figur: bool) -> str:
-    """FARBEN in der Fassung mit oder ohne Figur.
+_FARBEN_KOPF = " COLOUR: everything is coloured the way it really looks in the world. "
+_FARBEN_WELT = ("The sky is blue, foliage and grass are green, water takes its "
+                "own real colour, stone and earth keep the colour that stone "
+                "and earth actually have")
+_FARBEN_OHNE = ("Every material in the picture keeps the colour that material "
+                "really has")
+_FARBEN_KLEID = (", and clothing is dyed with the dyes the named period and "
+                 "place really had.")
+_FARBEN_BAU = (", and painted surfaces, brick, glass and metal keep the "
+               "colours those materials really have in the place shown.")
+_FARBEN_SCHWANZ = (
+    " Do NOT mute, grey down, dull, wash out, sepia-tint or harmonise these "
+    "colours towards one another, and do not limit the picture to a small set "
+    "of tones - use as many distinct colours as the subject truly has. This "
+    "concerns the hue only: the fills stay perfectly flat, the outlines stay "
+    "clean and uniform, and the shadows stay hard and areal.")
 
-    Ohne Figur faellt der Farbanker an der Kleidung weg. Er hatte doppelt
-    geschadet: er setzt einen Traeger voraus, und er haengt die Epoche an
-    Faerbemittel — worauf das Modell eine historische Epoche waehlte. Der
-    Ersatz bindet die Farbe an Oberflaechen, die auch im leeren Bild da sind,
-    und verweist nicht mehr auf eine "genannte" Epoche, die erst zwei
-    Bloecke spaeter kommt.
+
+def farben(mit_figur: bool, mit_pflanzen: bool = True) -> str:
+    """FARBEN, zugeschnitten auf das, was im Bild wirklich vorkommt.
+
+    Zwei Befunde stecken darin, beide gemessen.
+
+    Ohne Figur faellt der Farbanker an der Kleidung weg (Stapel 1, M01):
+    er setzt einen Traeger voraus und haengt die Epoche an Faerbemittel,
+    worauf das Modell eine historische Epoche waehlte.
+
+    Ohne Pflanzen faellt die ganze Gegenstandsliste weg (Stapel 2). Der Satz
+    "The sky is blue, foliage and grass are green" lief bis dahin in allen
+    62 Nicht-Schema-Motiven mit, obwohl 49 davon ueberhaupt keine
+    Vegetation zeigen. M24 verlangte die extreme Nahaufnahme eines Sterns
+    und kam als Tageslandschaft zurueck: 60 % blauer Himmel, 22 % Gruen.
+    M13 verlangte kahle Baeume bei Nacht und bekam belaubte Kronen und eine
+    leuchtend gruene Wiese. Der Nachtblock allein haelt das nicht auf — er
+    steht hinter FARBEN und redet nur ueber Helligkeit, nicht ueber Laub.
+
+    farben(True, True) ist wortgleich mit FARBEN, damit Video 1
+    nachvollziehbar bleibt.
     """
-    if mit_figur:
-        return FARBEN
-    return _ersetze(
-        FARBEN,
-        ", and clothing is dyed with the dyes the named period and place "
-        "really had.",
-        ", and painted surfaces, brick, glass and metal keep the colours "
-        "those materials really have in the place shown.")
+    if mit_pflanzen:
+        # Ein Ort mit Pflanzen ist ein Ort: dort tragen die konkreten Anker.
+        kern = _FARBEN_WELT + (_FARBEN_KLEID if mit_figur else _FARBEN_BAU)
+    elif mit_figur:
+        # Innenraum mit Figur: Kleidung ist da, alles andere nicht benennen.
+        kern = _FARBEN_OHNE + _FARBEN_KLEID
+    else:
+        # Nahaufnahme, Weltraum, leerer Innenraum: kein Gegenstand wird
+        # benannt. "brick" in einem Sternbild ist derselbe Fehler wie
+        # "foliage" in einer Nahaufnahme.
+        kern = _FARBEN_OHNE + "."
+    return _FARBEN_KOPF + kern + _FARBEN_SCHWANZ
 
 
 # Epochensatz. Mit Figur wie in Video 1; ohne Figur ohne Kleidung und ohne
@@ -406,6 +445,12 @@ EPOCHE_MIT_FIGUR = ("Clothing, tools, architecture and vegetation all belong "
                     "to that period and place and to no other.")
 EPOCHE_OHNE_FIGUR = ("Architecture and vegetation belong to that period and "
                      "place and to no other.")
+# Und wo weder Figur noch Pflanze im Bild ist — eine Nahaufnahme einer
+# Linse, ein Innenraum, ein Sternfeld —, nennt der Satz gar nichts mehr.
+# "Architecture and vegetation" in der Nahaufnahme einer Objektivlinse ist
+# derselbe Fehler wie "Clothing" im menschenleeren Bild.
+EPOCHE_NEUTRAL = ("Everything shown in this picture belongs to that period "
+                  "and place and to no other.")
 
 # FRAMING ohne Figur, positiv vorangestellt. Das blosse Verbot stand allein
 # und wurde in M01 uebergangen; Verbote sind in diesem Projekt mehrfach
