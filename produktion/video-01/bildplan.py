@@ -324,6 +324,110 @@ KLEIN = (" The figure is a small distant element, the landscape dominates, the "
 NEGATIV = (" no text, no letters, no numbers, no watermark, no logo.")
 
 
+# --- Fassung 2: Anweisungsteil fuer Bilder ohne Figur ------------------------
+#
+# Eingefuehrt am 16.08.2026 nach Stapel 1 von Video 2. Befund: der
+# Anweisungsteil unterliegt derselben Regel wie die Szenenbeschreibung —
+# jedes Wort, das etwas benennt, was nicht im Bild sein soll, kann es
+# herbeirufen. In Video 1 trug fast jedes Bild eine Figur, deshalb fiel es
+# nicht auf. In Video 2 sind 43 von 66 Bildern figurenlos, und der aus
+# Video 1 uebernommene Anweisungsteil nannte dort dreimal Kleidung, dazu
+# Figuren, Requisiten und Werkzeug. M01 verlangte ausdruecklich "no people
+# in this picture at all" und kam mit zwei Personen in Kleidung um 1900
+# zurueck.
+#
+# Die Konstanten oben bleiben unveraendert — sie sind der Wortlaut, mit dem
+# Video 1 hergestellt wurde. Fuer Bilder ohne Figur gelten die Fassungen
+# hier; kuenftige Videos benutzen sie.
+
+
+def _ersetze(text: str, alt: str, neu: str) -> str:
+    """Ersetzt genau einen vollstaendigen Wortlaut. Bricht sonst ab.
+
+    Zweimal ist in diesem Projekt ein Anker danebengegangen, weil ein
+    einzelnes Wort an mehreren Stellen passte. Darum immer der ganze Satz,
+    und ein Fehlschlag ist ein Abbruch, keine stille Auslassung.
+    """
+    if text.count(alt) != 1:
+        raise SystemExit(
+            f"Anker nicht genau einmal gefunden ({text.count(alt)}x): {alt!r}")
+    return text.replace(alt, neu)
+
+
+def machart(mit_figur: bool) -> str:
+    """MACHART in der Fassung mit oder ohne Figur.
+
+    Ohne Figur entfallen ADULT PROPORTIONS und FACE BUILD (ueber 1.100
+    Zeichen ueber Koerperbau und Gesicht), die Aufzaehlung zur Strichstaerke
+    verliert Figuren, Kleidung und Requisiten, und die Zielgruppenangabe
+    "made for adults" faellt weg — sie ist das letzte Personenwort im Block,
+    und den Ernst der Machart tragen "serious documentary" und "sober,
+    restrained, documentary - never cute" ohnehin.
+    """
+    if mit_figur:
+        return MACHART
+    t = MACHART
+    i = t.index("ADULT PROPORTIONS")
+    j = t.index("Minimal symbolic background")
+    t = t[:i] + t[j:]
+    t = _ersetze(t, "explainer video made for adults.", "explainer video.")
+    t = _ersetze(
+        t,
+        "the same line weight on figures, clothing, props and background alike",
+        "the same line weight on objects, architecture, vegetation and "
+        "background alike")
+    return t
+
+
+def farben(mit_figur: bool) -> str:
+    """FARBEN in der Fassung mit oder ohne Figur.
+
+    Ohne Figur faellt der Farbanker an der Kleidung weg. Er hatte doppelt
+    geschadet: er setzt einen Traeger voraus, und er haengt die Epoche an
+    Faerbemittel — worauf das Modell eine historische Epoche waehlte. Der
+    Ersatz bindet die Farbe an Oberflaechen, die auch im leeren Bild da sind,
+    und verweist nicht mehr auf eine "genannte" Epoche, die erst zwei
+    Bloecke spaeter kommt.
+    """
+    if mit_figur:
+        return FARBEN
+    return _ersetze(
+        FARBEN,
+        ", and clothing is dyed with the dyes the named period and place "
+        "really had.",
+        ", and painted surfaces, brick, glass and metal keep the colours "
+        "those materials really have in the place shown.")
+
+
+# Epochensatz. Mit Figur wie in Video 1; ohne Figur ohne Kleidung und ohne
+# Werkzeug — beides Woerter fuer Dinge, die eine Person voraussetzen. In M01
+# stand die Schubkarre neben den beiden herbeigerufenen Personen.
+EPOCHE_MIT_FIGUR = ("Clothing, tools, architecture and vegetation all belong "
+                    "to that period and place and to no other.")
+EPOCHE_OHNE_FIGUR = ("Architecture and vegetation belong to that period and "
+                     "place and to no other.")
+
+# FRAMING ohne Figur, positiv vorangestellt. Das blosse Verbot stand allein
+# und wurde in M01 uebergangen; Verbote sind in diesem Projekt mehrfach
+# ignoriert worden, Beschreibungen nicht.
+FRAMING_LEER = (
+    "FRAMING: this is a picture of a place and of the things in it, seen "
+    "empty and still - no people in this picture at all. "
+    "Sober, restrained, documentary - never cute."
+)
+
+# Flaechenfuellung ohne Materialliste. "rock, stone blocks, earth, water"
+# war als Beispielreihe gemeint, benennt aber vier Dinge, die in einer
+# heutigen Wohnstrasse oder einem Arbeitszimmer nichts zu suchen haben.
+FLAECHE_HART_OHNE_LISTE = (
+    " FLAT FILL, NO EXCEPTIONS: every surface in this picture, whatever it "
+    "shows, is filled with ONE solid colour and nothing else. No gradient, "
+    "no soft shading, no airbrush, no texture, no highlight and no darkening "
+    "towards an edge. Where a surface changes tone it does so as a separate "
+    "hard-edged shape with a clean border, never as a fade. The outlines keep "
+    "one constant weight throughout.")
+
+
 # --- Versalien in der Bildbeschreibung ---------------------------------------
 #
 # Eingefuehrt am 16.08.2026 nach einem Fehlschlag im Stichprobenlauf zu

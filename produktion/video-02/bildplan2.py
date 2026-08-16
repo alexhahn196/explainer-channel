@@ -104,9 +104,9 @@ STRICHE = ("dense horizontal rows of short slanted marks of one constant "
            "curved, and no cluster repeats another")
 
 SZENE = {
- "M01": "seen from below, a night sky full of stars, one of them a little "
-        "brighter than the rest; along the bottom edge the dark roofline of "
-        "a residential street",
+ "M01": "seen from below, a night sky full of stars, one of them drawn about "
+        "twice as wide as the rest; along the bottom edge the dark "
+        "roofline of a residential street",
  "M02": "one person seen from behind, small in the frame, head tipped back, "
         "standing under the star-filled sky; empty street space all around",
  "M03": "a town square in the evening with several passers-by; most of them "
@@ -123,10 +123,18 @@ SZENE = {
  "M08": "exactly the same crop in summer: the trees in full leaf, the same "
         "paving slab in the pavement - camera position unchanged",
  "M09": "looking straight down at two shoes standing on a paving slab",
- "M10": "a rectangular patch of the night sky: one brighter star to the left "
-        "of two fainter background stars",
- "M11": "the same patch, the same sky - the bright star now sits to the "
-        "right of the two background stars",
+ # "a rectangular patch of the night sky" wurde in M11 als rechteckiger
+ # Gegenstand gezeichnet, ein gerahmter Bildschirm mit Fuss. Und "fainter"
+ # las das Modell als "dunkler" und fuellte die beiden Hintergrundsterne
+ # dunkel aus. Beides steht jetzt als Bauform da: der Himmel fuellt das
+ # ganze Bild, und der Unterschied zwischen den Sternen ist eine Groesse,
+ # keine Bewertung.
+ "M10": "the night sky over the whole frame, white star shapes scattered on "
+        "deep blue; one star near the left is about three times as wide as "
+        "the small ones, and two stars of middling size stand to the right "
+        "of it",
+ "M11": "the same sky with the same stars in the same places; only the one "
+        "large star now stands to the right of the two middle-sized ones",
  "M12": "the parallax triangle in ink on pale paper. The Sun is a plain "
         "circle; around it the Earth's orbit is one flat ellipse. The Earth "
         "appears twice, at two opposite points of that ellipse. From each "
@@ -240,9 +248,10 @@ SZENE = {
  "M45": "a close view of one hand holding a magnifying lens over a glass "
         "plate on a light table; under the glass lies an irregular cloud of "
         "stars with a dense core and frayed edges",
- "M46": "one single star in a field of stars, large and bright",
- "M47": "the same field of stars, the same crop - the one star has shrunk to "
-        "a small dull point",
+ "M46": "a field of stars in which one is drawn three times the width of all "
+        "the others",
+ "M47": "the same field of stars, the same crop - the one large star is now "
+        "drawn the same small width as the others",
  "M48": "a close view of a sheet of paper lying on a light table. Scattered "
         "across it are small dots which line up along two parallel rising "
         "straight lines. The rest of the sheet is bare pale paper, empty "
@@ -251,8 +260,8 @@ SZENE = {
  "M49": "the same crop, the same hand with the pencil - on the sheet the "
         "upright edge line is now one clean bare stroke, smooth along its "
         "whole length",
- "M50": "a field of stars in which thirteen stand out noticeably brighter, "
-        "scattered widely across the frame",
+ "M50": "a field of small stars in which thirteen are drawn twice as wide as "
+        "the rest, scattered widely across the frame",
  "M51": "a close view of a sheet of paper lying on a desk. At the lower "
         "right sweeps one large flourish of ink, drawn as a single unbroken "
         "line from start to finish, with a strong upstroke and a long "
@@ -271,8 +280,8 @@ SZENE = {
         "front of a bright projection surface, the listeners leaning forward",
  "M60": "a close view of a photographic plate: one sharp bright point, and "
         "directly beside it a soft glowing patch of about the same brightness",
- "M61": "a small dense cluster of a few bright stars wrapped in faint nebula, "
-        "above tree silhouettes in the night sky",
+ "M61": "a small dense cluster of a few large white stars wrapped in a thin "
+        "pale veil of nebula, above tree silhouettes in the night sky",
  "M62": "several large parabolic dish antennas on open ground, all tilted the "
         "same way, long shadows across the ground",
  "M63": "a fine-grained speckle pattern across the whole frame, and small in "
@@ -283,8 +292,8 @@ SZENE = {
         "holding a single nail, the other reaching for it",
  "M67": "a field of stars in which several distinctly reddish, swollen stars "
         "stand among white points",
- "M69": "a field of galaxies in which one single point of light flares "
-        "brilliantly at the edge of one galaxy, brighter than its core",
+ "M69": "a field of galaxies; at the edge of one of them sits a single white "
+        "point drawn larger and whiter than that galaxy's own centre",
  "M68": "a close view of one hand writing with a pencil on a sheet, adding a "
         "second, shorter column beside an existing column. Both columns are "
         "built from short even pencil strokes set one under the other, "
@@ -478,18 +487,10 @@ DREITEILIG = (
 NACHT_MOTIVE = {"M01", "M02", "M13", "M28", "M35", "M39", "M61"}
 
 
-# Der MACHART-Block aus Video 1 fuehrt ADULT PROPORTIONS und FACE BUILD mit,
-# beides ueber 1.100 Zeichen. In 43 der 66 Motive kommt keine Figur vor —
-# dort ist das nicht nur Ballast, sondern verlockt das Modell, doch eine
-# hineinzusetzen. Im zweiten Stichprobenlauf liefen M51 und M28 bereits mit
-# der gekuerzten Fassung und kamen stilgleich zurueck.
-def _machart(mit_figur: bool) -> str:
-    if mit_figur:
-        return bp.MACHART
-    t = bp.MACHART
-    i = t.index("ADULT PROPORTIONS")
-    j = t.index("Minimal symbolic background")
-    return t[:i] + t[j:]
+# Der Anweisungsteil liegt seit dem 16.08.2026 in zwei Fassungen in
+# bildplan.py: mit Figur der Wortlaut aus Video 1, ohne Figur der um die
+# Personenwoerter erleichterte. Der Umbau steht dort begruendet.
+_machart = bp.machart
 
 
 def prompt(mid: str) -> str:
@@ -505,19 +506,20 @@ def prompt(mid: str) -> str:
     ist_schema = d.get("schema", False)
     fr = d["framing"]
     if ist_schema:
-        rahmen = bp.FRAMING_OHNE
+        rahmen = bp.FRAMING_LEER
     elif fr == "ganz":
         rahmen = bp.FRAMING_SITZEND if d.get("sitzend") else bp.FRAMING_EINZEL
     elif fr == "teil":
         rahmen = bp.FRAMING_TEIL
     else:
-        rahmen = bp.FRAMING_OHNE
+        rahmen = bp.FRAMING_LEER
 
     def ohne_treppen(x: str) -> str:
         i = x.find(" The cast shadow is drawn even where it falls across")
         return x if i < 0 else x[:i] + x[x.index("no surface is exempt.") + 21:]
 
-    p = _machart(not ist_schema and fr in ('ganz', 'teil')) + rahmen
+    mit_figur = not ist_schema and fr in ('ganz', 'teil')
+    p = _machart(mit_figur) + rahmen
     if ist_schema:
         p += bp.DIAGRAMM + SCHEMA_HART + bp.FARBEN_SCHEMA + SCHEMA_TEXTFREI
     else:
@@ -527,15 +529,15 @@ def prompt(mid: str) -> str:
             p += bp.Z3_AUSSERHALB.format(quelle=LICHT[mid])
         else:
             p += bp.Z3_SICHTBAR.format(quelle=LICHT[mid])
-        p += bp.FARBEN
+        p += bp.farben(mit_figur)
         ort = ORT[d["ort"]]
         if ort:
-            p += (f" PERIOD AND PLACE: {ort}. Clothing, tools, architecture "
-                  "and vegetation all belong to that period and place and to "
-                  "no other.")
+            epoche = (bp.EPOCHE_MIT_FIGUR if mit_figur
+                      else bp.EPOCHE_OHNE_FIGUR)
+            p += f" PERIOD AND PLACE: {ort}. {epoche}"
             if d["flora"] != "—":
                 p += " " + FLORA[d["flora"]]
-        p += bp.FLAECHE_HART
+        p += bp.FLAECHE_HART_OHNE_LISTE
         if mid == "M28":
             p += DREITEILIG
         if mid in NACHT_MOTIVE:
@@ -545,6 +547,29 @@ def prompt(mid: str) -> str:
         elif fr == "teil":
             p += " " + bp.FIGUR_TEIL
     return ohne_treppen(p) + " SCENE: " + szene.rstrip(".") + "." + bp.NEGATIV
+
+
+# Ein Prompt fuer ein Bild ohne Figur darf keine Person benennen. Einzige
+# Ausnahme ist der Framing-Satz selbst, der die Leere ausspricht — ohne das
+# Wort "people" laesst sie sich nicht sagen. Alles andere ist der Fehler aus
+# Stapel 1 und bricht den Lauf ab, bevor Credits fliessen.
+PERSONENWORT = re.compile(
+    r"\b(figure|figures|clothing|clothes|clothed|prop|props|tool|tools|"
+    r"person|adult|adults|dressed|garment|garments|wearing|worn)\b", re.I)
+
+
+def pruefe_personenworte(prompts: dict[str, str]) -> None:
+    for mid, p in prompts.items():
+        d = sp.M[mid]
+        if not d.get("schema") and d["framing"] in ("ganz", "teil"):
+            continue
+        rest = p.replace(bp.FRAMING_LEER, "")
+        treffer = sorted(set(m.group(0).lower()
+                             for m in PERSONENWORT.finditer(rest)))
+        if treffer:
+            raise SystemExit(
+                f"{mid}: Personenwort im Prompt eines figurenlosen Bildes: "
+                f"{treffer}. Das ist die Ursache aus Stapel 1.")
 
 
 def main() -> None:
@@ -564,11 +589,15 @@ def main() -> None:
                 raise SystemExit(f"{mid}: Lichtquelle nicht übersetzt")
 
     aus = {mid: prompt(mid) for mid in sp.M}
+    pruefe_personenworte(aus)
     (HIER / "bildplan2-prompts.json").write_text(
         json.dumps(aus, indent=1, ensure_ascii=False), encoding="utf-8")
     laengen = [len(p) for p in aus.values()]
     print(f"{len(aus)} Prompts · {min(laengen)}–{max(laengen)} Zeichen")
     print("Versalien- und Vokabelprüfung bestanden")
+    ohne = sum(1 for mid, d in sp.M.items()
+               if d.get("schema") or d["framing"] not in ("ganz", "teil"))
+    print(f"Personenwortprüfung bestanden ({ohne} figurenlose Prompts)")
 
 
 if __name__ == "__main__":
