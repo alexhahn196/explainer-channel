@@ -18,7 +18,7 @@
 
 ## Stilbindung
 
-V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Schemata auf hellem neutralem Grund (Sterne dort als dunkle Punkte); kein Text im Bild — auch keine lesbare Handschrift in den Dokument-Nahaufnahmen (M33, M51, M68: Schrift ausdrücklich unleserlich); Versalien-Prüfung über `pruefe_szene()`. Historische Personen als Epochenfiguren ohne Portraitähnlichkeit; kein Personenname im Bildtext (geprüft).
+V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Schemata auf hellem neutralem Grund (Sterne dort als dunkle Punkte); kein Text im Bild. Handschrift in den Dokument-Nahaufnahmen (M19, M23, M32, M33, M51, M68) ist als **Tintenspur und Zeilenrhythmus beschrieben**, nicht als Verbot — bei Video 1 wurde aus „keine lesbare Schrift“ zweimal lesbare Handschrift, die Promptwörter abschrieb. Versalien-Prüfung über `pruefe_szene()`. Historische Personen als Epochenfiguren ohne Portraitähnlichkeit; kein Personenname im Bildtext (geprüft).
 
 ## Szenentabelle
 
@@ -327,7 +327,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ohne
 
 **M19** · 1 Einstellung
-- Bild: Ein aufgeschlagenes gedrucktes Buch des 16. Jahrhunderts auf einem Lesepult, daneben eine Kerze; die Seiten zeigen nur eine kreisförmige Bahnfigur, keine lesbare Schrift
+- Bild: Ein aufgeschlagenes gedrucktes Buch des 16. Jahrhunderts auf einem Lesepult, daneben eine Kerze; die eine Seite trägt eine kreisförmige Bahnfigur mit konzentrischen Kreisen, die andere einen gleichmäßigen grauen Satzspiegel aus feinen waagerechten Strichen — Zeilen aus der Distanz, in denen keine Type ausgeformt ist
 - Licht: sichtbar: die Kerze
 - Ort: Frauenburg im Ermland, 1543
 - Flora: Innenraum, keine Vegetation
@@ -347,7 +347,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ohne
 
 **M23** · 2 Einstellungen · Epochenfigur · sitzend
-- Bild: Derselbe Mann sitzt an einem Schreibpult, umgeben von Messinstrumenten; vor ihm Papier, die Feder ruht — keine lesbare Schrift im Bild
+- Bild: Derselbe Mann sitzt an einem Schreibpult, umgeben von Messinstrumenten; vor ihm ein beschriebenes Blatt, auf dem die Feder ruht, auf dem Blatt stehen dichte waagerechte Reihen kurzer, gleichmäßig geneigter Striche von immer derselben Höhe, in kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken dazwischen; alle Striche sind gleich lang, keiner ist geschwungen, keiner trägt Ober- oder Unterlänge, und keine Gruppe wiederholt eine andere
 - Licht: sichtbar: eine Kerze auf dem Pult
 - Ort: Uraniborg auf der Insel Ven, um 1580
 - Flora: Innenraum, keine Vegetation
@@ -407,14 +407,14 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ohne
 
 **M32** · 2 Einstellungen · Epochenfigur · sitzend
-- Bild: Ein Mann in dunklem Rock der 1830er sitzt an einem Pult, ein beschriebenes Blatt in der Hand, den Blick darauf gesenkt; die Schrift ist nicht lesbar
+- Bild: Ein Mann in dunklem Rock der 1830er sitzt an einem Pult, ein beschriebenes Blatt in der Hand, den Blick darauf gesenkt; auf dem Blatt stehen dichte waagerechte Reihen kurzer, gleichmäßig geneigter Striche von immer derselben Höhe, in kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken dazwischen; alle Striche sind gleich lang, keiner ist geschwungen, keiner trägt Ober- oder Unterlänge, und keine Gruppe wiederholt eine andere
 - Licht: sichtbar: eine Öllampe auf dem Pult
 - Ort: Kapstadt, 1833
 - Flora: Innenraum, keine Vegetation
 - Framing: ganz
 
 **M33** · 1 Einstellung · Zustandspaar mit M34
-- Bild: Nahaufnahme: eine Hand legt ein beschriebenes Blatt in eine offene Schreibtischschublade; die Schrift ist nicht lesbar
+- Bild: Nahaufnahme: eine Hand legt ein beschriebenes Blatt in eine offene Schreibtischschublade; das Blatt füllt einen guten Teil des Bildes, auf dem Blatt stehen dichte waagerechte Reihen kurzer, gleichmäßig geneigter Striche von immer derselben Höhe, in kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken dazwischen; alle Striche sind gleich lang, keiner ist geschwungen, keiner trägt Ober- oder Unterlänge, und keine Gruppe wiederholt eine andere
 - Licht: Schatten: hart von links
 - Ort: Kapstadt, 1833
 - Framing: teil
@@ -498,7 +498,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ganz
 
 **M44** · 4 Einstellungen · Epochenfigur · sitzend · **geschützter Moment**
-- Bild: Eine Frau in dunkler Bluse sitzt allein am Leuchttisch, den Blick auf die Platte gesenkt, eine Lupe in der Hand; ihr Gesicht ist von unten beleuchtet, Stapel weiterer Platten um sie herum
+- Bild: Eine Frau mit im Nacken hochgestecktem Haarknoten, in dunkler hochgeschlossener Bluse, sitzt allein am Leuchttisch. Ihr Kopf ist nach vorn und unten geneigt, die Augen blicken senkrecht auf die Platte hinab — das Gesicht ist von schräg oben zu sehen, nicht dem Betrachter zugewandt. Die rechte Hand hält eine runde Lupe am Griff dicht über der Platte, die linke liegt am Plattenrand; Stapel weiterer Platten um sie herum
 - Licht: sichtbar: der Leuchttisch von unten — das Licht liegt auf Kinn und Wangen, nicht auf der Stirn
 - Ort: Harvard College Observatory, Massachusetts, um 1910
 - Flora: Innenraum, Holzvertäfelung, keine Vegetation
@@ -529,7 +529,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: teil
 
 **M49** · 1 Einstellung · Zustandspaar mit M48
-- Bild: Dasselbe Blatt, näher: die senkrechte Achse ist ein blanker Strich ohne einen einzigen Teilstrich
+- Bild: Derselbe Ausschnitt, dieselbe Hand mit dem Bleistift — auf dem Blatt ist die senkrechte Achse jetzt ein blanker Strich ohne einen einzigen Teilstrich
 - Licht: Durchlicht: der Leuchttisch von unten
 - Ort: Harvard College Observatory, Massachusetts, um 1910
 - Framing: teil
@@ -541,10 +541,10 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ohne
 
 **M51** · 1 Einstellung
-- Bild: Nahaufnahme eines Schriftstücks: unten rechts eine große geschwungene, nicht lesbare Unterschrift; die erste Zeile des Blatts ist angeschnitten und ebenfalls nicht lesbar
+- Bild: Nahaufnahme eines Schriftstücks: unten rechts eine große geschwungene Unterschrift als eine einzige durchgehende Tintenschleife mit kräftigem Aufstrich und langem Auslauf, ohne abgesetzte Zeichen; darüber die angeschnittene erste Zeile des Blatts als eine Reihe kurzer gleichmäßiger Striche in kleinen Gruppen, alle von derselben Höhe
 - Licht: Schatten: hart von links oben
 - Ort: Harvard College Observatory, 1912
-- Framing: teil
+- Framing: ohne
 
 **M52** · 2 Einstellungen · getrennte Ebenen
 - Bild: Ein leerer Schreibtisch am Fenster, darauf ein ungeöffneter Briefumschlag; der Stuhl leicht zurückgeschoben
@@ -630,7 +630,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ohne
 
 **M68** · 3 Einstellungen
-- Bild: Nahaufnahme: eine Hand notiert mit Bleistift auf einem Blatt neben einer Messreihe eine zweite, kürzere Spalte; die Zeichen sind nicht lesbar
+- Bild: Nahaufnahme: eine Hand notiert mit Bleistift auf einem Blatt neben einer Messreihe eine zweite, kürzere Spalte; beide Spalten bestehen aus kurzen gleichmäßigen Bleistiftstrichen untereinander, in sauberen Zeilen ausgerichtet, jede Eintragung eine kleine Gruppe von Strichen ohne ausgeformte Ziffer
 - Licht: Durchlicht: der Leuchttisch von unten
 - Ort: Harvard College Observatory, um 1910
 - Framing: teil
@@ -647,7 +647,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 | M33 / M34 | Nahaufnahme: eine Hand legt ein beschriebenes Blatt in eine offene … | Dieselbe Schublade, derselbe Ausschnitt — geschlossen, die Hand ruht flach auf dem … |
 | M42 / M54 | Die Leiter als flaches Sinnbild auf hellem Papiergrund, in Seitenansicht: die Holme … | Dieselbe Leiter, derselbe Ausschnitt — zwei Sprossen sind durchgebrochen und hängen … |
 | M46 / M47 | Ein einzelner Stern in einem Sternfeld, groß und hell | Dasselbe Sternfeld, derselbe Ausschnitt — der eine Stern ist auf einen kleinen … |
-| M48 / M49 | Nahaufnahme: auf dem Leuchttisch liegt ein handgezeichnetes Diagrammblatt — Punkte, … | Dasselbe Blatt, näher: die senkrechte Achse ist ein blanker Strich ohne einen … |
+| M48 / M49 | Nahaufnahme: auf dem Leuchttisch liegt ein handgezeichnetes Diagrammblatt — Punkte, … | Derselbe Ausschnitt, dieselbe Hand mit dem Bleistift — auf dem Blatt ist die … |
 
 ## Getrennte Ebenen
 
@@ -678,11 +678,11 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 | Einstellungen je Motiv | 2,41 im Mittel |
 | Mehrfach genutzte Motive | 46 → **93 Bilder gespart** |
 | **Schema-Anteil** | 4 Motive · 17 Einstellungen · **9,7 % der Laufzeit** (Vorgabe ≤ 10 %; Erklärform: 58 %, Video 1: 26 %) |
-| Weltbilder | 62 — Framing ganz 12 · ohne 38 · teil 12 |
+| Weltbilder | 62 — Framing ganz 12 · ohne 39 · teil 11 |
 | Zustandspaare | 9 |
 | Motive mit getrennten Ebenen | 16 |
 | Epochenfiguren | 8 · davon sitzend 5 |
-| Einstellungen mit Figur oder Körperteil | 59 (37 %) |
+| Einstellungen mit Figur oder Körperteil | 58 (36 %) |
 
 ## Kosten
 
@@ -699,7 +699,7 @@ Ultra: 3.000 Credits/Monat für 99 €/Monat bei Jahreszahlung = 0,033 €/Credi
 
 ## Was diese Fassung nicht leistet
 
-- **Die Dokument-Nahaufnahmen sind das neue Risiko.** M33, M51 und M68 zeigen beschriebenes Papier; die Prompts verlangen unleserliche Schrift, aber ob das Modell Schriftzüge wirklich unleserlich hält, ist ungeprüft — der Stichprobenlauf hatte keinen solchen Fall.
+- **Die Dokument-Nahaufnahmen sind das neue Risiko.** Sechs Motive zeigen beschriebenes Papier. Die Schrift ist als Tintenspur beschrieben statt verboten — die Lehre aus Video 1, wo ein Verbot ignoriert wurde und die Handschrift Promptwörter abschrieb. Ob die Beschreibung trägt, ist der Kern des nächsten Stichprobenlaufs.
 - **M28 (Triptychon) ist kompositorisch unerprobt** — drei Vignetten in einem Bild gab es in Video 1 nicht.
 - **M44 verlangt Licht von unten am Gesicht.** Der erste Stichprobenlauf hat genau das ignoriert; die Formulierung nennt jetzt Kinn und Wangen, aber verifiziert ist sie nicht.
 - Die Dauern rechnen mit 219 WPM; beim Schnitt ersetzen die echten ElevenLabs-Zeichenzeiten sie.

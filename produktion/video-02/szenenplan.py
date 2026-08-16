@@ -56,6 +56,30 @@ def m(mid, szene, licht, ort, framing, flora="—", **kw):
                   flora=flora, **kw)
 
 
+# Handschrift in Nahaufnahmen. Als Beschreibung formuliert, nicht als
+# Verbot: bei Video 1 wurde "keine lesbare Schrift" zweimal zu lesbarer
+# Handschrift, die Promptwoerter abschrieb, Tippfehler eingeschlossen.
+# Beschrieben wird darum, was auf dem Papier LIEGT — Tintenspur und
+# Zeilenrhythmus —, nicht, was fehlen soll.
+# NACHGEZOGEN 16.08.2026 nach dem zweiten Stichprobenlauf. Die erste
+# Fassung beschrieb "Bögen und Schleifen", "flüssig", "gruppiert zu
+# Wortlängen" — Vokabular der Schreibschrift. Das Modell schrieb daraufhin
+# echte englische Wörter, darunter genau die Wörter des Prompts: loops,
+# word, ink, trace. Dieselbe Falle wie bei Video 1, nur eine Ebene tiefer:
+# nicht das Verbot war das Problem, sondern die BESCHREIBUNG, die nach
+# Schrift klang.
+#
+# M68 hat im selben Lauf sauber bestanden. Seine Formulierung nannte keine
+# Bögen, keine Schleifen, keine Wortlängen, sondern kurze gleichmäßige
+# Striche in Gruppen. Diese Formulierung ist jetzt die Vorlage: die
+# Handschrift wird als MARKIERUNG beschrieben, nicht als Schrift.
+SCHRIFT = ("auf dem Blatt stehen dichte waagerechte Reihen kurzer, "
+           "gleichmäßig geneigter Striche von immer derselben Höhe, in "
+           "kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken "
+           "dazwischen; alle Striche sind gleich lang, keiner ist "
+           "geschwungen, keiner trägt Ober- oder Unterlänge, und keine "
+           "Gruppe wiederholt eine andere")
+
 FLORA_STRASSE = ("mitteleuropäische Stadtbäume als dunkle Silhouetten — "
                  "Linden, Ahorn; keine Palmen, keine Nadelwaldkulisse")
 
@@ -153,8 +177,11 @@ m("M18", "Nahaufnahme der Skala der Mikrometerschraube mit feiner Teilung "
 
 # --- Tycho -------------------------------------------------------------------
 m("M19", "Ein aufgeschlagenes gedrucktes Buch des 16. Jahrhunderts auf "
-         "einem Lesepult, daneben eine Kerze; die Seiten zeigen nur eine "
-         "kreisförmige Bahnfigur, keine lesbare Schrift",
+         "einem Lesepult, daneben eine Kerze; die eine Seite trägt eine "
+         "kreisförmige Bahnfigur mit konzentrischen Kreisen, die andere "
+         "einen gleichmäßigen grauen Satzspiegel aus feinen waagerechten "
+         "Strichen — Zeilen aus der Distanz, in denen keine Type "
+         "ausgeformt ist",
   "sichtbar: die Kerze", "Frauenburg im Ermland, 1543", "ohne",
   flora="Innenraum, keine Vegetation")
 m("M20", "Ein bärtiger Mann in Wams und Halskrause steht an einem großen "
@@ -168,8 +195,8 @@ m("M22", "Die Visiereinrichtung des Quadranten in Nahaufnahme, daneben die "
   "Schatten: hart von oben rechts", "Uraniborg auf der Insel Ven, um 1580",
   "ohne")
 m("M23", "Derselbe Mann sitzt an einem Schreibpult, umgeben von "
-         "Messinstrumenten; vor ihm Papier, die Feder ruht — keine lesbare "
-         "Schrift im Bild", "sichtbar: eine Kerze auf dem Pult",
+         "Messinstrumenten; vor ihm ein beschriebenes Blatt, auf dem die "
+         "Feder ruht, " + SCHRIFT, "sichtbar: eine Kerze auf dem Pult",
   "Uraniborg auf der Insel Ven, um 1580", "ganz", sitzend=True,
   person=True, flora="Innenraum, keine Vegetation")
 m("M24", "Extreme Nahaufnahme eines einzelnen Sterns, wie ihn ein bloßes "
@@ -219,13 +246,14 @@ m("M31", "Ein weißes Sternwartengebäude mit flachem Dach auf einem "
         "Hartlaubsträucher; ausdrücklich keine Palmen, keine Akazien",
   ebenen=True)
 m("M32", "Ein Mann in dunklem Rock der 1830er sitzt an einem Pult, ein "
-         "beschriebenes Blatt in der Hand, den Blick darauf gesenkt; die "
-         "Schrift ist nicht lesbar",
+         "beschriebenes Blatt in der Hand, den Blick darauf gesenkt; "
+         + SCHRIFT,
   "sichtbar: eine Öllampe auf dem Pult",
   "Kapstadt, 1833", "ganz", sitzend=True, person=True,
   flora="Innenraum, keine Vegetation")
 m("M33", "Nahaufnahme: eine Hand legt ein beschriebenes Blatt in eine "
-         "offene Schreibtischschublade; die Schrift ist nicht lesbar",
+         "offene Schreibtischschublade; das Blatt füllt einen guten Teil "
+         "des Bildes, " + SCHRIFT,
   "Schatten: hart von links", "Kapstadt, 1833", "teil", paar="M34")
 m("M34", "Dieselbe Schublade, derselbe Ausschnitt — geschlossen, die Hand "
          "ruht flach auf dem Holz",
@@ -297,9 +325,13 @@ m("M43", "Ein langer heller Arbeitsraum; an mehreren Tischen sitzen Frauen "
   "Harvard College Observatory, Massachusetts, 1908 bis 1912", "ganz",
   flora="Innenraum, Holzvertäfelung und Sprossenfenster, keine Vegetation",
   ebenen=True)
-m("M44", "Eine Frau in dunkler Bluse sitzt allein am Leuchttisch, den "
-         "Blick auf die Platte gesenkt, eine Lupe in der Hand; ihr Gesicht "
-         "ist von unten beleuchtet, Stapel weiterer Platten um sie herum",
+m("M44", "Eine Frau mit im Nacken hochgestecktem Haarknoten, in dunkler "
+         "hochgeschlossener Bluse, sitzt allein am Leuchttisch. Ihr Kopf "
+         "ist nach vorn und unten geneigt, die Augen blicken senkrecht auf "
+         "die Platte hinab — das Gesicht ist von schräg oben zu sehen, "
+         "nicht dem Betrachter zugewandt. Die rechte Hand hält eine runde "
+         "Lupe am Griff dicht über der Platte, die linke liegt am "
+         "Plattenrand; Stapel weiterer Platten um sie herum",
   "sichtbar: der Leuchttisch von unten — das Licht liegt auf Kinn und "
   "Wangen, nicht auf der Stirn",
   "Harvard College Observatory, Massachusetts, um 1910", "ganz",
@@ -325,8 +357,9 @@ m("M48", "Nahaufnahme: auf dem Leuchttisch liegt ein handgezeichnetes "
   "Durchlicht: der Leuchttisch von unten",
   "Harvard College Observatory, Massachusetts, um 1910", "teil",
   paar="M49", schutz="Die Karte — zwei Geraden auf Glas")
-m("M49", "Dasselbe Blatt, näher: die senkrechte Achse ist ein blanker "
-         "Strich ohne einen einzigen Teilstrich",
+m("M49", "Derselbe Ausschnitt, dieselbe Hand mit dem Bleistift — auf dem "
+         "Blatt ist die senkrechte Achse jetzt ein blanker Strich ohne "
+         "einen einzigen Teilstrich",
   "Durchlicht: der Leuchttisch von unten",
   "Harvard College Observatory, Massachusetts, um 1910", "teil",
   paar="M48")
@@ -334,10 +367,13 @@ m("M50", "Ein Sternfeld, in dem dreizehn Sterne merklich heller "
          "herausstechen, weit über die Fläche verstreut",
   "sichtbar: die Sterne", "zeitlos, Blick ins All", "ohne")
 m("M51", "Nahaufnahme eines Schriftstücks: unten rechts eine große "
-         "geschwungene, nicht lesbare Unterschrift; die erste Zeile des "
-         "Blatts ist angeschnitten und ebenfalls nicht lesbar",
+         "geschwungene Unterschrift als eine einzige durchgehende "
+         "Tintenschleife mit kräftigem Aufstrich und langem Auslauf, ohne "
+         "abgesetzte Zeichen; darüber die angeschnittene erste Zeile des "
+         "Blatts als eine Reihe kurzer gleichmäßiger Striche in kleinen "
+         "Gruppen, alle von derselben Höhe",
   "Schatten: hart von links oben",
-  "Harvard College Observatory, 1912", "teil")
+  "Harvard College Observatory, 1912", "ohne")
 m("M52", "Ein leerer Schreibtisch am Fenster, darauf ein ungeöffneter "
          "Briefumschlag; der Stuhl leicht zurückgeschoben",
   "sichtbar: das Fenster mit fahlem Tageslicht",
@@ -400,8 +436,11 @@ m("M69", "Ein Galaxienfeld, in dem ein einzelner Lichtpunkt am Rand einer "
 
 # --- Der Schluss -------------------------------------------------------------
 m("M68", "Nahaufnahme: eine Hand notiert mit Bleistift auf einem Blatt "
-         "neben einer Messreihe eine zweite, kürzere Spalte; die Zeichen "
-         "sind nicht lesbar", "Durchlicht: der Leuchttisch von unten",
+         "neben einer Messreihe eine zweite, kürzere Spalte; beide Spalten "
+         "bestehen aus kurzen gleichmäßigen Bleistiftstrichen "
+         "untereinander, in sauberen Zeilen ausgerichtet, jede Eintragung "
+         "eine kleine Gruppe von Strichen ohne ausgeformte Ziffer",
+  "Durchlicht: der Leuchttisch von unten",
   "Harvard College Observatory, um 1910", "teil")
 
 # ------------------------------------------------------------ Einstellungen --
@@ -678,9 +717,12 @@ def schreibe_md(zeilen: list[dict], rein: str, kum: float) -> None:
     w("## Stilbindung\n")
     w("V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche "
       "Farben; Schemata auf hellem neutralem Grund (Sterne dort als dunkle "
-      "Punkte); kein Text im Bild — auch keine lesbare Handschrift in den "
-      "Dokument-Nahaufnahmen (M33, M51, M68: Schrift ausdrücklich "
-      "unleserlich); Versalien-Prüfung über `pruefe_szene()`. Historische "
+      "Punkte); kein Text im Bild. Handschrift in den Dokument-Nahaufnahmen "
+      "(M19, M23, M32, M33, M51, M68) ist als **Tintenspur und "
+      "Zeilenrhythmus beschrieben**, nicht als Verbot — bei Video 1 wurde "
+      "aus „keine lesbare Schrift“ zweimal lesbare Handschrift, die "
+      "Promptwörter abschrieb. Versalien-Prüfung über `pruefe_szene()`. "
+      "Historische "
       "Personen als Epochenfiguren ohne Portraitähnlichkeit; kein "
       "Personenname im Bildtext (geprüft).\n")
 
@@ -789,10 +831,11 @@ def schreibe_md(zeilen: list[dict], rein: str, kum: float) -> None:
       "der Abbruchschwelle von 500 Credits.**\n")
 
     w("## Was diese Fassung nicht leistet\n")
-    w("- **Die Dokument-Nahaufnahmen sind das neue Risiko.** M33, M51 und "
-      "M68 zeigen beschriebenes Papier; die Prompts verlangen unleserliche "
-      "Schrift, aber ob das Modell Schriftzüge wirklich unleserlich hält, "
-      "ist ungeprüft — der Stichprobenlauf hatte keinen solchen Fall.\n"
+    w("- **Die Dokument-Nahaufnahmen sind das neue Risiko.** Sechs Motive "
+      "zeigen beschriebenes Papier. Die Schrift ist als Tintenspur "
+      "beschrieben statt verboten — die Lehre aus Video 1, wo ein Verbot "
+      "ignoriert wurde und die Handschrift Promptwörter abschrieb. Ob die "
+      "Beschreibung trägt, ist der Kern des nächsten Stichprobenlaufs.\n"
       "- **M28 (Triptychon) ist kompositorisch unerprobt** — drei Vignetten "
       "in einem Bild gab es in Video 1 nicht.\n"
       "- **M44 verlangt Licht von unten am Gesicht.** Der erste "

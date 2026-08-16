@@ -1579,7 +1579,7 @@
    "flora": "—"
   },
   "M19": {
-   "szene": "Ein aufgeschlagenes gedrucktes Buch des 16. Jahrhunderts auf einem Lesepult, daneben eine Kerze; die Seiten zeigen nur eine kreisförmige Bahnfigur, keine lesbare Schrift",
+   "szene": "Ein aufgeschlagenes gedrucktes Buch des 16. Jahrhunderts auf einem Lesepult, daneben eine Kerze; die eine Seite trägt eine kreisförmige Bahnfigur mit konzentrischen Kreisen, die andere einen gleichmäßigen grauen Satzspiegel aus feinen waagerechten Strichen — Zeilen aus der Distanz, in denen keine Type ausgeformt ist",
    "licht": "sichtbar: die Kerze",
    "ort": "Frauenburg im Ermland, 1543",
    "framing": "ohne",
@@ -1601,7 +1601,7 @@
    "flora": "—"
   },
   "M23": {
-   "szene": "Derselbe Mann sitzt an einem Schreibpult, umgeben von Messinstrumenten; vor ihm Papier, die Feder ruht — keine lesbare Schrift im Bild",
+   "szene": "Derselbe Mann sitzt an einem Schreibpult, umgeben von Messinstrumenten; vor ihm ein beschriebenes Blatt, auf dem die Feder ruht, auf dem Blatt stehen dichte waagerechte Reihen kurzer, gleichmäßig geneigter Striche von immer derselben Höhe, in kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken dazwischen; alle Striche sind gleich lang, keiner ist geschwungen, keiner trägt Ober- oder Unterlänge, und keine Gruppe wiederholt eine andere",
    "licht": "sichtbar: eine Kerze auf dem Pult",
    "ort": "Uraniborg auf der Insel Ven, um 1580",
    "framing": "ganz",
@@ -1670,7 +1670,7 @@
    "ebenen": true
   },
   "M32": {
-   "szene": "Ein Mann in dunklem Rock der 1830er sitzt an einem Pult, ein beschriebenes Blatt in der Hand, den Blick darauf gesenkt; die Schrift ist nicht lesbar",
+   "szene": "Ein Mann in dunklem Rock der 1830er sitzt an einem Pult, ein beschriebenes Blatt in der Hand, den Blick darauf gesenkt; auf dem Blatt stehen dichte waagerechte Reihen kurzer, gleichmäßig geneigter Striche von immer derselben Höhe, in kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken dazwischen; alle Striche sind gleich lang, keiner ist geschwungen, keiner trägt Ober- oder Unterlänge, und keine Gruppe wiederholt eine andere",
    "licht": "sichtbar: eine Öllampe auf dem Pult",
    "ort": "Kapstadt, 1833",
    "framing": "ganz",
@@ -1679,7 +1679,7 @@
    "person": true
   },
   "M33": {
-   "szene": "Nahaufnahme: eine Hand legt ein beschriebenes Blatt in eine offene Schreibtischschublade; die Schrift ist nicht lesbar",
+   "szene": "Nahaufnahme: eine Hand legt ein beschriebenes Blatt in eine offene Schreibtischschublade; das Blatt füllt einen guten Teil des Bildes, auf dem Blatt stehen dichte waagerechte Reihen kurzer, gleichmäßig geneigter Striche von immer derselben Höhe, in kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken dazwischen; alle Striche sind gleich lang, keiner ist geschwungen, keiner trägt Ober- oder Unterlänge, und keine Gruppe wiederholt eine andere",
    "licht": "Schatten: hart von links",
    "ort": "Kapstadt, 1833",
    "framing": "teil",
@@ -1786,7 +1786,7 @@
    "ebenen": true
   },
   "M44": {
-   "szene": "Eine Frau in dunkler Bluse sitzt allein am Leuchttisch, den Blick auf die Platte gesenkt, eine Lupe in der Hand; ihr Gesicht ist von unten beleuchtet, Stapel weiterer Platten um sie herum",
+   "szene": "Eine Frau mit im Nacken hochgestecktem Haarknoten, in dunkler hochgeschlossener Bluse, sitzt allein am Leuchttisch. Ihr Kopf ist nach vorn und unten geneigt, die Augen blicken senkrecht auf die Platte hinab — das Gesicht ist von schräg oben zu sehen, nicht dem Betrachter zugewandt. Die rechte Hand hält eine runde Lupe am Griff dicht über der Platte, die linke liegt am Plattenrand; Stapel weiterer Platten um sie herum",
    "licht": "sichtbar: der Leuchttisch von unten — das Licht liegt auf Kinn und Wangen, nicht auf der Stirn",
    "ort": "Harvard College Observatory, Massachusetts, um 1910",
    "framing": "ganz",
@@ -1828,7 +1828,7 @@
    "schutz": "Die Karte — zwei Geraden auf Glas"
   },
   "M49": {
-   "szene": "Dasselbe Blatt, näher: die senkrechte Achse ist ein blanker Strich ohne einen einzigen Teilstrich",
+   "szene": "Derselbe Ausschnitt, dieselbe Hand mit dem Bleistift — auf dem Blatt ist die senkrechte Achse jetzt ein blanker Strich ohne einen einzigen Teilstrich",
    "licht": "Durchlicht: der Leuchttisch von unten",
    "ort": "Harvard College Observatory, Massachusetts, um 1910",
    "framing": "teil",
@@ -1843,10 +1843,10 @@
    "flora": "—"
   },
   "M51": {
-   "szene": "Nahaufnahme eines Schriftstücks: unten rechts eine große geschwungene, nicht lesbare Unterschrift; die erste Zeile des Blatts ist angeschnitten und ebenfalls nicht lesbar",
+   "szene": "Nahaufnahme eines Schriftstücks: unten rechts eine große geschwungene Unterschrift als eine einzige durchgehende Tintenschleife mit kräftigem Aufstrich und langem Auslauf, ohne abgesetzte Zeichen; darüber die angeschnittene erste Zeile des Blatts als eine Reihe kurzer gleichmäßiger Striche in kleinen Gruppen, alle von derselben Höhe",
    "licht": "Schatten: hart von links oben",
    "ort": "Harvard College Observatory, 1912",
-   "framing": "teil",
+   "framing": "ohne",
    "flora": "—"
   },
   "M52": {
@@ -1950,7 +1950,7 @@
    "flora": "—"
   },
   "M68": {
-   "szene": "Nahaufnahme: eine Hand notiert mit Bleistift auf einem Blatt neben einer Messreihe eine zweite, kürzere Spalte; die Zeichen sind nicht lesbar",
+   "szene": "Nahaufnahme: eine Hand notiert mit Bleistift auf einem Blatt neben einer Messreihe eine zweite, kürzere Spalte; beide Spalten bestehen aus kurzen gleichmäßigen Bleistiftstrichen untereinander, in sauberen Zeilen ausgerichtet, jede Eintragung eine kleine Gruppe von Strichen ohne ausgeformte Ziffer",
    "licht": "Durchlicht: der Leuchttisch von unten",
    "ort": "Harvard College Observatory, um 1910",
    "framing": "teil",

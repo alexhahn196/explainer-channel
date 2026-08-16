@@ -50,6 +50,50 @@ absichtlich **nicht** mitkopiert worden.
 | `versalien_normalisieren` | `ja` | **ÜBERNOMMEN — UNGEPRÜFT** — die Ursache (TTS buchstabiert Versalien) ist stimmenabhängig, nicht inhaltsabhängig. Mit der neuen Stimme nachprüfen. |
 | Faktenprüfung vor der TTS | — | **OFFEN** — für diesen Kanal **zusätzlich nötig**, siehe die Skizze in `recherche/nischen-kanal-2.md`. Rund 25 prüfpflichtige Aussagen je 1.500-Wort-Skript, ~1–1,75 h je Video. Für BibelTube gab es diesen Schritt nicht. |
 
+## Skriptvorgaben
+
+Kanalweit, aus der Arbeit an Video 1 und 2 abgeleitet. Anders als die
+Tabellen oben stammen diese Werte nicht aus BibelTube, sondern aus
+eigenen Messungen an den Vorbildkanälen.
+
+| Feld | Wert | Status |
+|---|---|---|
+| Wortzahl | 1.850–2.050 | **GEMESSEN** — ergibt 8:30–9:30 bei 219 WPM |
+| Wörter unter 7 Zeichen | ≥ 82 % | **GEMESSEN** an Ink Explainer |
+| Antwort auf die Titelfrage | in den ersten 30 s | **GEMESSEN** |
+| Belegpflicht | jede neue Behauptung mit Zahl oder Datum trägt eine Quellen-ID | **GESETZT** — daran hängt `faktencheck.py` |
+| **Schema-Anteil der Laufzeit** | **≤ 10 %** | **GESETZT 16.08.2026** — Video 1 lag bei 26 % und war schon zu viel, der erste Sterne-Entwurf bei 58 %. Gemessen wie in `produktion/video-02/tonprobe-bilder.py`. Wo ein Vorgang erklärt werden müsste, wird stattdessen gezeigt, was ein Mensch dabei tat. |
+
+### Anrede-Marker: der Zielwert gilt je Passage, nicht als Gesamtmittel
+
+**Befund vom 16.08.2026, bindend für alle künftigen Videos.**
+
+Der gemessene Zielwert (74,7 Anrede-Marker je 1.000 Wörter, aus der
+Schreibart von Unknown Frequencies) gilt für **anredegetragene
+Passagen** — Eröffnung, direkte Anleitung, Schluss. Er gilt **nicht** als
+Mittelwert über ein ganzes Skript, das Vignetten enthält.
+
+Der Grund ist strukturell, nicht nachlässig. Eine Vignette erzählt von
+*jemandem*, nicht von *dir*: der Mann an der Mikrometerschraube, die Frau
+am Leuchttisch. Genau diese Vignetten sind der Grund, warum die
+Erzählform trägt und warum der Schema-Anteil auf 10 % fällt — ein
+Vorgang, den ein Mensch ausführt, braucht kein Diagramm. Die Marker-Dichte
+über das ganze Skript auf 74,7 zu zwingen hieße, die Vignetten in die
+zweite Person umzuschreiben („du bist der Mann in Königsberg"). Das ist
+eine andere Form, und eine schlechtere.
+
+Gemessen an Video 2, Erzählfassung:
+
+| Passage | Anrede je 1.000 |
+|---|---:|
+| erstes Fünftel (Eröffnung, Daumen, Erdbahn) | **68,6** |
+| Königsberg-Vignette (der freigegebene Maßstab) | ~50 |
+| gesamtes Skript | **34,2** |
+
+**Prüfregel:** Das erste Fünftel muss ≥ 40 erreichen (harte Vorgabe, wie
+bisher). Kein Absatz darf anredefrei sein. Der Gesamtwert wird gemessen
+und berichtet, aber nicht gegen 74,7 geprüft.
+
 ## Chunking
 
 | Feld | Wert | Status |
