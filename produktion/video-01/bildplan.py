@@ -75,6 +75,21 @@ FRAMING_TEIL = (
     "do not draw a head or a face, do not place a standing figure anywhere in the "
     "picture. Sober, restrained, documentary - never cute."
 )
+
+# Sitzende Einzelfigur — ergaenzt am 16.08.2026.
+#
+# Video 1 kannte nur stehende Einzelfiguren, darum verlangt FRAMING_EINZEL
+# beide Fuesse im Bild. Video 2 hat drei sitzende Figuren (zwei am Okular,
+# eine am Leuchttisch); dort kaempft die Fussforderung gegen den Tisch, an dem
+# die Figur sitzt. Eigener Fall statt Kompromiss.
+FRAMING_SITZEND = (
+    "FRAMING: a single person, alone in the frame, seated at their work and "
+    "shown from the waist or the knees up; no second figure, no mirrored "
+    "duplicate. The feet need not be visible - the figure is seated and the "
+    "table or instrument covers the lower body. Head, both shoulders, both "
+    "arms and both hands are inside the picture and are drawn. Sober, "
+    "restrained, documentary - never cute."
+)
 # Motive, deren Szene nur ein Koerperteil zeigt.
 KOERPERTEIL = {"M09", "M19", "M33", "M48", "M83"}
 
@@ -138,6 +153,24 @@ FARBEN = (
 # blauen Himmel und Grasbueschel und war damit kein Diagramm mehr, sondern
 # eine Ortsansicht. Die Materialien behalten ihre echte Farbe, der Rahmen
 # drumherum bleibt Diagramm.
+#
+# HELLER GRUND — ergaenzt am 16.08.2026, gilt fuer alle kuenftigen Videos.
+#
+# Der Stichprobenlauf zu Video 2 hat drei Diagramme auf drei verschiedenen
+# Gruenden geliefert: dunkelblau, fast weiss, fast schwarz. Gemessen streute
+# die Helligkeit von 32 bis 239, waehrend die abgenommenen Bilder von Video 1
+# in einem Band von 90 bis 172 liegen. Nebeneinander sah das nach drei
+# Sendungen aus statt nach einer.
+#
+# Ursache ist die Bildkonvention des Themas, nicht ein Fehler im Prompt:
+# Astronomie zieht jedes Diagramm auf schwarzen Weltraumgrund. Video 1 hatte
+# das Problem nicht, weil ein Strassenquerschnitt keinen Nachthimmel nahelegt
+# — bei einem Thema mit hohem Schema-Anteil faellt die Serie daran auseinander.
+#
+# Die Regel: Dunkelheit gehoert zum ORT bei Nacht, nicht zum Diagramm.
+# Nachtbilder der Welt duerfen dunkel sein; Schemata nie. Sterne werden im
+# Diagramm als dunkle Punkte auf hellem Grund gezeichnet — die Konvention
+# gedruckter Sternkarten, seit Jahrhunderten lesbar.
 FARBEN_SCHEMA = (
     " COLOUR: each material and each thing shown carries the colour it really "
     "has - stone the colour of that stone, earth the colour of that earth, "
@@ -145,8 +178,18 @@ FARBEN_SCHEMA = (
     "mute, grey down, sepia-tint or harmonise them, and do not limit the "
     "picture to a small set of tones. But this remains a diagram on an even "
     "ground: there is NO sky, no horizon, no landscape, no grass and no "
-    "vegetation around it unless the diagram itself is about them. The "
-    "background stays one plain even field."
+    "vegetation around it unless the diagram itself is about them. "
+    "BACKGROUND, WITHOUT EXCEPTION: the ground behind the diagram is ONE "
+    "single pale neutral field - a very light warm off-white, near the "
+    "brightness of paper. It is never black, never dark blue, never a night "
+    "sky, never outer space, and never a dark field of any kind, even when "
+    "the subject of the diagram is the sky, the stars or space itself. Where "
+    "stars have to appear in a diagram they are drawn as DARK dots on that "
+    "pale ground, in the manner of a printed star chart, never as light dots "
+    "on a dark ground. The diagram must read as ink on paper. Ink on paper "
+    "does not mean bare outlines: every closed shape in the diagram carries "
+    "one flat solid fill, never an empty unfilled contour, so the drawing "
+    "keeps the same weight of colour as the rest of the series."
 )
 
 # ------------------------------------------------------------------- Nacht
@@ -279,6 +322,38 @@ KLEIN = (" The figure is a small distant element, the landscape dominates, the "
          "subordinate to the surroundings.")
 
 NEGATIV = (" no text, no letters, no numbers, no watermark, no logo.")
+
+
+# --- Versalien in der Bildbeschreibung ---------------------------------------
+#
+# Eingefuehrt am 16.08.2026 nach einem Fehlschlag im Stichprobenlauf zu
+# Video 2. Der SCENE-Text lautete dort "a WIDE double-headed arrow" und
+# "a VERY SMALL double-headed arrow" — Versalien zur Betonung. Das Modell hat
+# beide als Beschriftung gelesen und die Woerter gross ins Bild gesetzt,
+# obwohl das Textverbot zweimal im Prompt stand.
+#
+# Betonung durch Grossschreibung funktioniert im ANWEISUNGSTEIL (dort steht
+# sie in MACHART und FARBEN_SCHEMA und richtet keinen Schaden an), aber nicht
+# in der Bildbeschreibung: was dort grossgeschrieben neben einem zeichenbaren
+# Ding steht, landet als Schriftzug daneben.
+#
+# Deshalb eine Pruefung statt einer Merkregel. Eine Regel, die nur im
+# Kommentar steht, wird beim naechsten Video wieder gebrochen.
+ERLAUBTE_VERSALIEN = {"I"}
+
+
+def pruefe_szene(mid: str, szene: str) -> None:
+    """Bricht ab, wenn die Bildbeschreibung ein Wort in Versalien enthaelt."""
+    schlimm = [w.strip(".,;:-—()") for w in szene.split()]
+    schlimm = [w for w in schlimm
+               if len(w) > 1 and w.isupper() and w.isalpha()
+               and w not in ERLAUBTE_VERSALIEN]
+    if schlimm:
+        raise SystemExit(
+            f"{mid}: Versalien in der Bildbeschreibung: {schlimm}. "
+            "Grossschreibung gehoert in den Anweisungsteil, nie in die "
+            "Szene — das Modell setzt sie als Schriftzug ins Bild "
+            "(Stichprobe Video 2, M15).")
 
 MODELL = "nano_banana_2"
 SEITE = "16:9"

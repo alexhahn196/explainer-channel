@@ -246,7 +246,7 @@ m("M34", "Ein Mann in hochgeschlossenem Rock des frühen 19. Jahrhunderts "
          "sitzt am Okular eines großen Refraktors und dreht mit der rechten "
          "Hand eine Mikrometerschraube",
   "sichtbar: eine abgeschirmte Öllampe neben dem Instrument",
-  "Königsberg in Ostpreußen, 1838", "ganz", person=True,
+  "Königsberg in Ostpreußen, 1838", "ganz", sitzend=True, person=True,
   flora="Innenraum einer Kuppel, Holzdielen, keine Vegetation", ebenen=True)
 m("M35", "Ein Kreissektor, aus dem ein einzelner haarfeiner Ausschnitt "
          "herausgehoben und daneben stark vergrößert gezeigt wird", "Schema",
@@ -367,7 +367,7 @@ m("M55", "Eine Frau in dunkler Bluse sitzt allein am Leuchttisch, den Blick "
          "auf die Platte gesenkt, eine Lupe in der Hand; um sie herum Stapel "
          "weiterer Platten",
   "sichtbar: der Leuchttisch von unten",
-  "Harvard College Observatory, Massachusetts, um 1910", "ganz", person=True,
+  "Harvard College Observatory, Massachusetts, um 1910", "ganz", sitzend=True, person=True,
   flora="Innenraum, Holzvertäfelung und Sprossenfenster, keine Vegetation",
   ebenen=True)
 m("M56", "Eine unregelmäßige Sternwolke, deutlich abgesetzt vom umgebenden "
@@ -451,7 +451,7 @@ m("M68", "Dieselbe Leiter, zwei Sprossen sind durchgebrochen und hängen "
 m("M69", "Ein Mann in Tweedjacke sitzt am Okular "
          "eines sehr großen Spiegelteleskops in einer Kuppel",
   "sichtbar: der Nachthimmel durch den offenen Kuppelspalt",
-  "Mount-Wilson-Observatorium, Kalifornien, 1929", "ganz", person=True,
+  "Mount-Wilson-Observatorium, Kalifornien, 1929", "ganz", sitzend=True, person=True,
   flora="Innenraum einer Kuppel, Stahlfachwerk, keine Vegetation", ebenen=True)
 m("M70", "Ein Feld kleiner Spiralgalaxien, von einem gemeinsamen Mittelpunkt "
          "nach außen strebend; die äußeren tragen längere Bewegungsspuren als "
@@ -824,6 +824,8 @@ def schreibe_md(zeilen: list[dict], rein: str, kum: float) -> None:
     eb = [k for k, v in M.items() if v.get("ebenen")]
     schutz = [k for k, v in M.items() if v.get("schutz")]
     pers = [k for k, v in M.items() if v.get("person")]
+    sitz = [k for k, v in M.items() if v.get("sitzend")]
+    print(f"Sitzende Figuren (eigener Rahmen): {' '.join(sitz)}")
     paare = sorted({tuple(sorted((k, v["paar"])))
                     for k, v in M.items() if v.get("paar")})
     d = [z["dauer"] for z in zeilen]

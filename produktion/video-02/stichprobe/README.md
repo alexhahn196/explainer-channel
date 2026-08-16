@@ -140,3 +140,92 @@ bleiben — Video 1 hatte solche auch.
    sichtbar werden, sonst ist die Quelle nur Dekoration.
 
 Erst danach die verbleibenden 88 Motive.
+
+
+---
+
+# Zweiter und dritter Lauf — 16.08.2026
+
+> Weitere **12 Credits** (6 + 4 + 2). Verbrauch der Stichprobe insgesamt
+> **22 Credits** statt der angesagten 16 — die Mehrkosten sind dreimal M15,
+> siehe unten. Ein technischer Fehlschlag (M15, zweiter Lauf), unter der
+> Abbruchschwelle von drei.
+
+## Die Grundregel wirkt, und zwar vollständig
+
+| | erster Lauf | nach der Regel |
+|---|---:|---:|
+| M06 | 72 (3,1 % dunkel) | **240** (0,1 %) |
+| M15 | 215 (0,2 %) | **233** (1,2 %) |
+| M52 | 32 (90,0 %) | **232** (0,1 %) |
+| M87 | 239 (0,4 %) | 239 (0,4 %) |
+
+Vorher streuten die Schemata von 32 bis 239, also über fast die ganze Skala.
+Jetzt liegen alle vier zwischen 232 und 240, mit höchstens 1,2 % dunkler
+Fläche. Das ist ein geschlossener Satz — enger als das Band von Video 1
+(90–172), und das ist richtig so, denn dort sind Weltbilder mitgezählt.
+
+## Je Bild
+
+**M06 — bestanden.** Der Winkel erscheint jetzt als das, was er ist: ein
+gefüllter Kreissektor an der Spitze zwischen den beiden gestrichelten Linien,
+das übliche Zeichen einer Geometriezeichnung. Kein Lichtstrahl mehr, kein
+Leuchten. Sterne als dunkle Punkte auf Papiergrund, der nahe Stern deutlich
+größer als das Feld. Ein Restfehler: die beiden Erdkugeln sitzen vorn und
+hinten auf der Bahnellipse, während die Sichtlinien an deren seitlichen Enden
+beginnen — die zwei Standpunkte sind also nicht dieselben Punkte wie die zwei
+Erden. Die Aussage trägt trotzdem; im Hauptlauf mit einem Satz zu beheben.
+
+**M52 — bestanden, im dritten Anlauf.** Der zweite Anlauf brachte den hellen
+Grund und die Flachheit, aber die Sprossen blieben gleich lang und die Leiter
+stand *neben* der Dreiecksspitze. Gelöst, indem die Leiter selbst zum Keil
+wurde: die Holme laufen unten in einem Punkt zusammen und stehen Spitze auf
+Spitze auf dem Dreieck. Damit ist beides zwangsläufig richtig — jede Sprosse
+ist länger als die darunter, und der Fuß sitzt auf dem Dreieck aus M06.
+
+**M15 — Bildidee sitzt, Ausführung nicht.** Der Textfehler ist weg. Die
+Konstruktion mit Sichtlinien war das Problem: sie erzeugte ein Dreieck mit
+drei Pfeilen, bei dem nicht zu sehen war, welcher Pfeil zu welchem Stern
+gehört. Ersetzt durch die einfachere Fassung — jeder Stern zweimal an seinen
+beiden scheinbaren Orten, Doppelpfeil dazwischen, links weit, rechts eng.
+Diese Fassung ist ohne ein Zeichen lesbar.
+
+**Aber das Modell zeichnet reproduzierbar ein Geisterbild dazu:** über der
+sauberen Reihe steht eine zweite, verwaschene, halbtransparente Reihe
+derselben Sterne. Zwei Versuche mit zwei verschieden formulierten Prompts,
+zweimal derselbe Artefakt — auch mit ausdrücklichem `no ghosted or duplicated
+copies` und `every shape is drawn exactly once`. Das ist kein Zufallsfehler.
+Vermutlich löst die Anweisung, dasselbe Ding an zwei Orten zu zeigen, im
+Modell eine Doppelbelichtung aus.
+
+## Was daraus in die Regeln gewandert ist
+
+Alles in `produktion/video-01/bildplan.py`, damit es für alle künftigen Videos
+gilt und nicht nur für dieses:
+
+- **`FARBEN_SCHEMA`** trägt jetzt die Grundregel: ein einziger heller
+  neutraler Grund, nie schwarz, nie Nachthimmel, nie Weltraum — auch dann
+  nicht, wenn das Diagramm vom Himmel handelt; Sterne als dunkle Punkte nach
+  Art gedruckter Sternkarten.
+- **`FARBEN_SCHEMA`** trägt ausserdem die Füllregel. Der dritte M52-Lauf kam
+  als reine Strichzeichnung ohne Fläche zurück und fiel damit in die andere
+  Richtung aus dem Satz. „Ink on paper" heißt nicht „nur Kontur".
+- **`pruefe_szene()`** bricht ab, wenn ein Wort in der Bildbeschreibung in
+  Versalien steht. Alle 84 Szenen aus Video 1 laufen sauber durch; der
+  bekannte Fehlerfall `a WIDE arrow` wird gefangen.
+- **`FRAMING_SITZEND`** für sitzende Einzelfiguren. In `szenenplan.py` sind
+  M34, M55 und M69 als `sitzend=True` markiert.
+
+## Offen
+
+**M15.** Die Bildidee ist geprüft und trägt; das Geisterbild ist ein
+Modellverhalten, das sich zweimal nicht wegformulieren ließ. Drei Wege, keiner
+davon entschieden:
+
+1. Im Hauptlauf mitlaufen lassen und beim Prüfdurchgang neu ziehen — der
+   Artefakt könnte bei anderem Seed ausbleiben.
+2. Die Bildidee ändern, sodass kein Ding zweimal vorkommt: statt zweier
+   Positionen je Stern eine Strecke mit zwei Endmarken.
+3. Das Motiv streichen und M06 die Aussage mittragen lassen.
+
+**M06.** Erdkugeln an die Enden der Sichtlinien.

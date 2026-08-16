@@ -41,7 +41,13 @@ SCHEMA_HART = (
     "silhouettes - arranged on one plain even field. There is no room, no "
     "ground plane, no table, no wall, no horizon and no floor for anything to "
     "stand on; nothing casts a shadow and nothing recedes into depth. Every "
-    "element sits flat on the same background."
+    "element sits flat on the same background. Anything that exists as a real "
+    "object in the world - a ladder, a lamp, a coin, a telescope - is drawn "
+    "here as a flat symbol of that object seen straight from the side, not as "
+    "a picture of the thing itself: one flat fill per part, plain straight "
+    "bars, no wood grain, no metal sheen, no rounded or cylindrical parts, no "
+    "vanishing point and no foreshortening. It reads as a printed symbol, not "
+    "as an illustration of an object."
 )
 
 # Das Negativ aus Video 1 verbietet Text schon. Bei Diagrammen ist die
@@ -54,43 +60,39 @@ SCHEMA_TEXTFREI = (
     "size and position alone."
 )
 
-# Video 1 kannte nur stehende Einzelfiguren; FRAMING_EINZEL verlangt darum
-# beide Fuesse im Bild. Video 2 hat drei sitzende Figuren (M34 am Okular,
-# M55 am Leuchttisch, M69 am Okular) — dort kaempft die Fussforderung gegen
-# den Tisch, an dem die Figur sitzt. Eigener Fall statt Kompromiss.
-FRAMING_SITZEND = (
-    "FRAMING: a single person, alone in the frame, seated at their work and "
-    "shown from the knees or the waist up; no second figure, no mirrored "
-    "duplicate. The feet need not be visible - the figure is seated and the "
-    "table or instrument covers the lower body. Head, both shoulders, both "
-    "arms and both hands are inside the picture and are drawn. Sober, "
-    "restrained, documentary - never cute."
-)
-
 MOTIVE = {
  "M06": dict(
    schema=True,
-   szene="the parallax triangle. The Sun sits at the centre; around it the "
-         "Earth's orbit is drawn as one flat ellipse seen at a slight angle. "
-         "The Earth appears twice, at two opposite points of that ellipse. "
-         "From each of the two Earths one long dashed sight line runs up to "
-         "the SAME single near star, and the two lines meet at that star, "
-         "enclosing a narrow wedge which is drawn as a filled sliver at the "
-         "meeting point. Behind and around the near star lies a field of "
-         "distant stars. The near star is drawn clearly larger and brighter "
-         "than every star of that background field, so that the wedge "
-         "unmistakably belongs to it and not to the field"),
+   szene="the parallax triangle, drawn as ink on pale paper. The Sun sits at "
+         "the centre as a plain circle; around it the Earth's orbit is one "
+         "flat ellipse. The Earth appears twice, at two opposite points of "
+         "that ellipse. From each of the two Earths one long dashed sight "
+         "line runs up to one single near star above, and the two lines meet "
+         "there. Exactly at that meeting point sits an angle marker: a small "
+         "filled circular sector, a little pie slice with its point at the "
+         "star, spanning the narrow gap between the two lines - the same mark "
+         "a geometry drawing uses to label an angle. Both sight lines are "
+         "thin dashed lines of the same weight; neither is a beam or a ray of "
+         "light, and no glow or shine is drawn anywhere. Around and behind "
+         "the near star lie the distant stars, drawn as small dark dots on "
+         "the pale ground like a printed star chart. The near star itself is "
+         "a clearly larger dark shape, several times the size of any dot of "
+         "that field, so the angle marker plainly belongs to it"),
  "M15": dict(
    schema=True,
-   szene="two stars shown side by side above one common horizontal base line. "
-         "At each end of the base line sits a small marker for a viewpoint, "
-         "and from both markers a thin sight line runs up to each star. The "
-         "left star sits low and near, and carries a WIDE double-headed "
-         "horizontal arrow showing a large sideways shift. The right star "
-         "sits high and far, and carries a VERY SMALL double-headed "
-         "horizontal arrow showing a tiny shift. The two arrows differ "
-         "grossly in length; that difference is the whole point of the "
-         "picture"),
+   szene="two separate cases side by side on pale paper, each showing how "
+         "far one star appears to jump. In the left half: the same star drawn "
+         "twice, once well to the left and once well to the right, with a "
+         "long double-headed horizontal arrow running between the two "
+         "positions and touching both. In the right half: another star, also "
+         "drawn twice, but its two positions sit almost on top of one "
+         "another, with a very short double-headed horizontal arrow between "
+         "them, only a small fraction of the length of the first arrow. All "
+         "four stars are dark shapes of exactly the same size and sit at the "
+         "same height, so the only difference between the left case and the "
+         "right case is how far apart the two positions lie. There are no "
+         "sight lines, no base line, no viewpoints, no triangle and no other "
+         "element of any kind in the picture"),
  "M87": dict(
    schema=True,
    szene="seven horizontal error bars stacked one above the other, each bar a "
@@ -107,10 +109,22 @@ MOTIVE = {
          "group above, leaving a visible gap between the two groups"),
  "M52": dict(
    schema=True,
-   szene="a ladder leaning steeply upwards into a field of stars. Its lowest "
-         "rung rests on a small triangle which stands alone at the foot of "
-         "the ladder. The rungs grow longer towards the top, and the top of "
-         "the ladder fades away among the stars. Nothing else in the picture"),
+   szene="a ladder drawn as a flat symbol on pale paper, standing upright "
+         "and seen straight from the side. The ladder is shaped like a long "
+         "narrow wedge that opens towards the top: its two rails are straight "
+         "bars that start together at a single point at the very bottom and "
+         "spread steadily apart as they rise, so the ladder is at its "
+         "narrowest at the foot and at its widest at the top. Because of "
+         "that, each rung is longer than the rung below it - the lowest rung "
+         "is a short stub and the topmost rung is several times as long. "
+         "Directly below the ladder stands one large triangle resting on its "
+         "own horizontal base with its point aimed straight up, and the "
+         "single bottom point of the ladder sits exactly on that point of the "
+         "triangle, the two touching tip to tip. The triangle is wide and "
+         "flat, plainly the same triangle as in the parallax drawing, and it "
+         "is large enough to read as its own shape. Small dark dots for stars "
+         "lie scattered around the upper, wider end of the ladder in the "
+         "manner of a printed star chart. Nothing else in the picture"),
  "M55": dict(
    schema=False,
    framing="sitzend",
@@ -129,11 +143,14 @@ MOTIVE = {
 
 def prompt(mid: str) -> str:
     m = MOTIVE[mid]
+    # Versalien in der Bildbeschreibung landen als Schriftzug im Bild —
+    # das war der Fehlschlag von M15 im ersten Lauf.
+    bp.pruefe_szene(mid, m["szene"])
     if m["schema"]:
         p = (bp.MACHART + bp.FRAMING_OHNE + bp.DIAGRAMM + SCHEMA_HART
              + bp.FARBEN_SCHEMA + SCHEMA_TEXTFREI)
     else:
-        rahmen = (FRAMING_SITZEND if m.get("framing") == "sitzend"
+        rahmen = (bp.FRAMING_SITZEND if m.get("framing") == "sitzend"
                   else bp.FRAMING_EINZEL)
         p = bp.MACHART + rahmen
         if m.get("framing") != "sitzend":

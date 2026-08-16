@@ -1765,6 +1765,7 @@
    "ort": "Königsberg in Ostpreußen, 1838",
    "framing": "ganz",
    "flora": "Innenraum einer Kuppel, Holzdielen, keine Vegetation",
+   "sitzend": true,
    "person": true,
    "ebenen": true
   },
@@ -1946,6 +1947,7 @@
    "ort": "Harvard College Observatory, Massachusetts, um 1910",
    "framing": "ganz",
    "flora": "Innenraum, Holzvertäfelung und Sprossenfenster, keine Vegetation",
+   "sitzend": true,
    "person": true,
    "ebenen": true
   },
@@ -2070,6 +2072,7 @@
    "ort": "Mount-Wilson-Observatorium, Kalifornien, 1929",
    "framing": "ganz",
    "flora": "Innenraum einer Kuppel, Stahlfachwerk, keine Vegetation",
+   "sitzend": true,
    "person": true,
    "ebenen": true
   },
