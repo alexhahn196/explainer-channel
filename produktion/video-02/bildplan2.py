@@ -478,6 +478,20 @@ DREITEILIG = (
 NACHT_MOTIVE = {"M01", "M02", "M13", "M28", "M35", "M39", "M61"}
 
 
+# Der MACHART-Block aus Video 1 fuehrt ADULT PROPORTIONS und FACE BUILD mit,
+# beides ueber 1.100 Zeichen. In 43 der 66 Motive kommt keine Figur vor —
+# dort ist das nicht nur Ballast, sondern verlockt das Modell, doch eine
+# hineinzusetzen. Im zweiten Stichprobenlauf liefen M51 und M28 bereits mit
+# der gekuerzten Fassung und kamen stilgleich zurueck.
+def _machart(mit_figur: bool) -> str:
+    if mit_figur:
+        return bp.MACHART
+    t = bp.MACHART
+    i = t.index("ADULT PROPORTIONS")
+    j = t.index("Minimal symbolic background")
+    return t[:i] + t[j:]
+
+
 def prompt(mid: str) -> str:
     d = sp.M[mid]
     szene = SZENE[mid]
@@ -499,7 +513,11 @@ def prompt(mid: str) -> str:
     else:
         rahmen = bp.FRAMING_OHNE
 
-    p = bp.MACHART + rahmen
+    def ohne_treppen(x: str) -> str:
+        i = x.find(" The cast shadow is drawn even where it falls across")
+        return x if i < 0 else x[:i] + x[x.index("no surface is exempt.") + 21:]
+
+    p = _machart(not ist_schema and fr in ('ganz', 'teil')) + rahmen
     if ist_schema:
         p += bp.DIAGRAMM + SCHEMA_HART + bp.FARBEN_SCHEMA + SCHEMA_TEXTFREI
     else:
@@ -526,7 +544,7 @@ def prompt(mid: str) -> str:
             p += " " + bp.FIGUR
         elif fr == "teil":
             p += " " + bp.FIGUR_TEIL
-    return p + " SCENE: " + szene.rstrip(".") + "." + bp.NEGATIV
+    return ohne_treppen(p) + " SCENE: " + szene.rstrip(".") + "." + bp.NEGATIV
 
 
 def main() -> None:
