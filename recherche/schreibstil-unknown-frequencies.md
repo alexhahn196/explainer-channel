@@ -17,21 +17,17 @@
 
 ## Vorbemerkung: wo die Bezugsdateien liegen
 
-Vier im Auftrag genannte Dateien liegen **nicht auf `main`**, sondern auf
-nicht zusammengeführten Branches. Sie wurden von dort gelesen; dieser Bericht
-liegt auf einem Branch von `main`, wo `regeln/` nicht existiert — die
-folgenden Verweise gehen also ins Leere, solange die Branches offen sind:
+**Erledigt am 16.08.2026.** Bei der Erhebung lagen vier der genannten Dateien
+nur auf nicht zusammengeführten Branches, und die Verweise unten liefen ins
+Leere. Seit dem Merge aller offenen Branches
+(`regeln/ink-vs-axen.md`, `regeln/daten/skriptanatomie_inkaxen.py`,
+`produktion/video-01/skript.md`, `recherche/stil-unknown-frequencies.md`)
+liegen sie hier, und alle Verweise in diesem Bericht greifen.
 
-| Datei | liegt auf |
-|---|---|
-| `regeln/ink-vs-axen.md` | `claude/kanal-2-datengrundlage-bldjee` |
-| `regeln/daten/skriptanatomie_inkaxen.py` | `claude/kanal-2-datengrundlage-bldjee` |
-| `produktion/video-01/skript.md` | `claude/kanal-2-datengrundlage-bldjee` |
-| `recherche/stil-unknown-frequencies.md` | `claude/kanal-2-datengrundlage-bldjee` und `claude/established-channels-analysis-rsbu8a` |
-
-Die Bildwelt-Messung ist damit bestätigt vorhanden — und sie hält
-ausdrücklich fest: *„Kein Ton, keine Sprache, kein Skript"*. Der Text war
-tatsächlich nie vermessen.
+Die Bildwelt-Messung hält ausdrücklich fest: *„Kein Ton, keine Sprache, kein
+Skript"*. Der Text war tatsächlich nie vermessen. Die Sprechweise ist es
+inzwischen — soweit möglich — ebenfalls:
+[`recherche/sprechweise-unknown-frequencies.md`](sprechweise-unknown-frequencies.md).
 
 ## Methodenprüfung: sind die Werte mit Ink/Axen vergleichbar?
 

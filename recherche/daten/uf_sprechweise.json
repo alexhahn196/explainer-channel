@@ -1,0 +1,114 @@
+{
+ "erhoben": "2026-08-16",
+ "hinweis": "UF: nur Tempo. Tonspuren nicht ladbar (HTTP 403 von googlevideo).",
+ "tempo": {
+  "eric": {
+   "brutto_wpm": 208.3,
+   "rate_median": 207.6,
+   "rate_p10": 151.0,
+   "rate_p90": 267.9,
+   "vk": 0.236,
+   "anteil_unter_120_pct": 3.5,
+   "woerter": 1869,
+   "dauer_s": 538.3
+  },
+  "re_Av02zWcc": {
+   "brutto_wpm": 159.3,
+   "rate_median": 162.6,
+   "rate_p10": 117.0,
+   "rate_p90": 224.9,
+   "vk": 0.274,
+   "anteil_unter_120_pct": 11.9,
+   "woerter": 1436,
+   "dauer_s": 541
+  },
+  "COSuWgQjBhQ": {
+   "brutto_wpm": 165.0,
+   "rate_median": 166.7,
+   "rate_p10": 122.0,
+   "rate_p90": 225.1,
+   "vk": 0.24,
+   "anteil_unter_120_pct": 8.6,
+   "woerter": 1983,
+   "dauer_s": 721
+  },
+  "EhT6IhuZQp4": {
+   "brutto_wpm": 168.0,
+   "rate_median": 175.0,
+   "rate_p10": 122.1,
+   "rate_p90": 228.3,
+   "vk": 0.26,
+   "anteil_unter_120_pct": 8.0,
+   "woerter": 1504,
+   "dauer_s": 537
+  }
+ },
+ "eigene_akustik": {
+  "datei": "produktion/video-01/ton/tonspur.mp3",
+  "dauer_s": 538.3,
+  "woerter": 1916,
+  "brutto_wpm": 213.6,
+  "artikulationsrate_wpm": 272.8,
+  "sprechanteil_pct": 78.3,
+  "pausen_ab_012s": 259,
+  "pausenzeit_s": 116.9,
+  "pause_median_s": 0.39,
+  "pause_p25_s": 0.235,
+  "pause_p75_s": 0.62,
+  "pause_p90_s": 0.782,
+  "pause_max_s": 1.45,
+  "lage_ab_030s": {
+   "satzende_pct": 58.5,
+   "klausel_pct": 24.0,
+   "gedankenstrich_pct": 15.2,
+   "innerhalb_pct": 2.3,
+   "an_interpunktion_pct": 97.7
+  },
+  "zeichen_pause": {
+   "punkt_frage_ausruf": {
+    "n": 133,
+    "trefferquote_pct": 92,
+    "median_s": 0.57
+   },
+   "komma": {
+    "n": 137,
+    "trefferquote_pct": 44,
+    "median_s": 0.285
+   },
+   "semikolon_doppelpunkt": {
+    "n": 24,
+    "trefferquote_pct": 83,
+    "median_s": 0.39
+   },
+   "gedankenstrich": {
+    "n": 46,
+    "trefferquote_pct": 80,
+    "median_s": 0.35
+   },
+   "absatzfuge_montage": {
+    "n": 16,
+    "median_s": 0.42
+   }
+  },
+  "satzlaenge_folgepause_r": 0.057,
+  "f0_grundlinie_hz": 143.2,
+  "f0_hub_median_ht": 10.73,
+  "betonungsspitze_median": 0.326,
+  "endfall_median_ht": -2.68,
+  "anteil_fallend_pct": 83
+ },
+ "eric_kennlinie_speed_wpm": {
+  "1.0000": 177.2,
+  "1.0940": 186.8,
+  "1.1214": 194.2,
+  "1.1685": 209.1,
+  "1.1861": 213.2,
+  "1.1955": 214.3,
+  "1.2000": 226.8
+ },
+ "speed_fuer_168wpm_extrapoliert": 0.91,
+ "reglerbereich": [
+  0.7,
+  1.2
+ ]
+}
