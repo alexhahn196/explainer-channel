@@ -672,6 +672,55 @@ Muster anders: Die **Zahlen** halten meist, die **Zuschreibungen** und die
 
 ---
 
+## Nachtrag nach Prüfrunde 1 des Skripts — 15.08.2026
+
+Die Faktendeckungs-Prüfung des Skripts (A1, `produktion/video-02/
+pruefprotokoll-runde-1.md`) fand zwei Skript-Behauptungen, die richtig, aber
+in diesem Bericht nicht belegt waren. Beide sind nachrecherchiert — **jede
+selbst an der Quelle gelesen**, nicht nur aus Agentenlieferungen übernommen.
+Regel dahinter: Was im Skript steht, muss hier belegt sein, sonst läuft
+`faktencheck.py` später ins Leere.
+
+### Sandage 1958 — was genau Hubbles Fehler war
+
+Wörtlich aus [Cosmic age problem](https://en.wikipedia.org/wiki/Cosmic_age_problem)
+(15.08.2026 selbst abgerufen):
+
+> „Many of Hubble's 'brightest stars' were actually **HII regions or clusters
+> containing many stars**, which caused another underestimation of distances
+> for these more distant galaxies."
+> „Thus, in 1958 Sandage published the first reasonably accurate measurement
+> of the Hubble constant, at 75 (km/s)/Mpc, which is close to modern estimates
+> of 68–74 (km/s)/Mpc."
+
+**Für das Skript heißt das:** „mistaken glowing gas clouds for bright stars"
+ist gedeckt — HII-Regionen **sind** leuchtende Gaswolken. Die Quelle nennt
+daneben eine zweite Kategorie (**Sternhaufen**), die das Skript weglässt;
+das ist eine Vereinfachung, keine Abweichung. **[gesichert]**
+
+### Gaia — Missionsdaten und Sternzahl
+
+Wörtlich aus [Gaia (spacecraft)](https://en.wikipedia.org/wiki/Gaia_(spacecraft))
+(15.08.2026 selbst abgerufen):
+
+> Start: „19 December 2013, 09:12:14 UTC" ·
+> „The science observation officially ended on 15 January 2025."
+> (Abschaltung/Passivierung erst 27. März 2025 — nicht verwechseln.)
+> DR2: „positions, parallaxes and proper motions for **about 1.3 billion
+> stars**".
+
+**Für das Skript heißt das:** „scanned the sky from 2013 to 2025 and measured
+more than a billion stars" ist gedeckt. **[gesichert]**
+
+### Noch offen aus derselben Prüfung
+
+Vier weitere Skript-Angaben sind quellenfähig, aber hier noch nicht
+eingetragen (Gruppe D des Prüfprotokolls, Sammel-Nachtrag empfohlen, noch
+nicht beauftragt): Bessels Messjahre 1837/38 · Tychos Genauigkeitsvorsprung
+vor den Zeitgenossen · Cepheiden-Reichweite (29 Mpc, *Cosmic distance
+ladder*) · Lichtjahr ≈ 9,46 Billionen km (Konstante, als [abgeleitet]
+führbar).
+
 ## Rohdaten
 
 ### Begutachtete Literatur, DOI-geprüft

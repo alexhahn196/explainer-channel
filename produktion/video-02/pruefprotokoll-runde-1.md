@@ -201,3 +201,33 @@ comfortably older" (−2) · „The **reference** books give all three answers" 
    dramaturgische Fund. Rest Geschmacksfragen des Auftraggebers.
 4. **Vertonungsfassung** (nicht `skript.md`): SH0ES → „Shoes", Dezimalzahlen
    ausschreiben — steht in `aussprache.md`.
+
+
+---
+
+## Umsetzung — 15.08.2026, nach Freigabe
+
+**Freigegeben und eingebaut:** alle 10 Gruppe-A-Fixe mit den
+Kompensationskürzungen, dazu aus Gruppe C nur die Nobel-Verschiebung (C1).
+Die übrigen sieben C-Punkte bleiben unangefasst, wie verfügt.
+
+**Eine ausgewiesene Abweichung vom Protokollwortlaut:** Fix A7 ist ohne das
+eingeschobene „she wrote," umgesetzt („so the beat apparently tracks …") —
+der Satz beginnt bereits mit „And she wrote down, herself, what it meant:",
+die doppelte Attribution wäre redundant gewesen und hätte die Wortkappe
+gerissen. Substanz des Fixes (Leavitts eigener Hedge „apparently" statt
+„must") ist unverändert drin.
+
+**Meine Wortarithmetik im Protokoll war doppelt falsch** — Fixe +8 statt +6,
+Kompensationen −6 statt −7 („In one → In a" ist ein Tausch, keine Kürzung).
+Mit der A7-Verschlankung geht die Rechnung auf: **exakt 2.050 Wörter.**
+
+**Nachgemessen:** 2.050 · 86,2 % kurze Wörter · 41,5 Marker/1.000 im ersten
+Fünftel · Antwort bei Wort 101 = 27,7 s. Alle Ziele halten. Die Zündschnur
+liegt jetzt frei: „… inherits its errors." → „And the errors came."
+
+**Recherche-Nachträge B1/B2 erledigt:** Sandage-HII-Satz selbst an der Quelle
+gelesen und wörtlich in den Bericht übernommen (die Quelle nennt neben
+Gaswolken auch Sternhaufen — Vereinfachung im Skript, keine Abweichung);
+Gaia-Missionsdaten ebenso. Skript dort unverändert. Die restlichen fünf
+B-Entscheidungen liegen beim Auftraggeber.
