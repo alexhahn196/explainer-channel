@@ -675,8 +675,9 @@ Muster anders: Die **Zahlen** halten meist, die **Zuschreibungen** und die
 ## Nachtrag nach Prüfrunde 1 des Skripts — 15.08.2026
 
 Die Faktendeckungs-Prüfung des Skripts (A1, `produktion/video-02/
-pruefprotokoll-runde-1.md`) fand zwei Skript-Behauptungen, die richtig, aber
-in diesem Bericht nicht belegt waren. Beide sind nachrecherchiert — **jede
+pruefprotokoll-runde-1.md`) fand Skript-Behauptungen, die richtig, aber
+in diesem Bericht nicht belegt waren. Drei sind nachrecherchiert (die dritte
+— Hertzsprung — kam mit der B4-Entscheidung dazu) — **jede
 selbst an der Quelle gelesen**, nicht nur aus Agentenlieferungen übernommen.
 Regel dahinter: Was im Skript steht, muss hier belegt sein, sonst läuft
 `faktencheck.py` später ins Leere.
@@ -711,6 +712,43 @@ Wörtlich aus [Gaia (spacecraft)](https://en.wikipedia.org/wiki/Gaia_(spacecraft
 
 **Für das Skript heißt das:** „scanned the sky from 2013 to 2025 and measured
 more than a billion stars" ist gedeckt. **[gesichert]**
+
+### Hertzsprung 1913 — wie die Eichung wirklich lief (B4-Nachtrag)
+
+Der skeptische Prüfagent hatte die Naht gerochen: Nach 60 erzählten Jahren
+Parallaxen-Qual eicht ein Einzelner „ein Jahr später" die Skala? **Sein
+Misstrauen war voll berechtigt — es ging tatsächlich nicht mit dem Dreieck.**
+
+Aus einem Übungs-Handout der University of Sheffield (PHY306, **PDF selbst
+ausgelesen**, [Quelle](https://www.hep.shef.ac.uk/cartwright/phy306/pdf/Leavitt1912_Answers.pdf)),
+das die Originalarbeit als Fußnote zitiert:
+
+> „the number of Cepheids with measurable parallaxes (by 1912 standards) is
+> precisely zero" — die nächsten Cepheiden liegen bei 2,8–7,5 **Milli**bogensekunden,
+> alle unter der damaligen Messschwelle.
+> „Hertzsprung (1913) used the method of **secular parallax**: measure the
+> proper motions of a sample of stars and assume that on average what you are
+> seeing is the effect of the (known) peculiar motion of the Sun."
+> „Hertzsprung had only **13 Cepheids**, and determined an average parallax of
+> **35 ± 8 mas**, which … is about **a factor of 10 too large**."
+
+Dazu [Ejnar Hertzsprung](https://en.wikipedia.org/wiki/Ejnar_Hertzsprung)
+(en.wikipedia, selbst gegengelesen): *„In 1913 Hertzsprung determined the
+distances to several Cepheid variable stars by parallax"*; *„In this
+determination he made a mistake, **possibly a slip of the pen**, putting the
+stars 10 times too close."*
+
+**Primärquelle:** E. Hertzsprung, Astronomische Nachrichten **196** (1913),
+üblich zitiert S. 201 — **kein Crossref-DOI auffindbar** (zwei
+Suchstrategien, je drei Treffer daneben); die Methode ist über die zwei
+unabhängigen Sekundärquellen oben gedeckt.
+
+**Für das Skript heißt das:** „found a rough scale — not by one clean
+triangle, but by pooling the slow drift of thirteen nearby Cepheids" ist
+gedeckt: Verfahren **[gesichert]** (zwei unabhängige Quellen), die
+Zahlen 13 / 35 ± 8 mas / Faktor 10 **[Einzelbefund]** (Handout, mit
+Fußnote auf die Originalarbeit). Das „rough" trägt den Faktor-10-Fehler,
+ohne ihn auszuerzählen — Material für die Szenenliste.
 
 ### Noch offen aus derselben Prüfung
 

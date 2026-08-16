@@ -231,3 +231,24 @@ gelesen und wörtlich in den Bericht übernommen (die Quelle nennt neben
 Gaswolken auch Sternhaufen — Vereinfachung im Skript, keine Abweichung);
 Gaia-Missionsdaten ebenso. Skript dort unverändert. Die restlichen fünf
 B-Entscheidungen liegen beim Auftraggeber.
+
+
+## Umsetzung Gruppe B — 15.08.2026, nach Einzelentscheidung
+
+Alle fünf offenen B-Punkte entschieden und eingebaut:
+
+| Punkt | Entscheidung | Umsetzung |
+|---|---|---|
+| B3 | JA | „No bigger telescope changes the base of the triangle — and past a point, the jump is smaller than the blur." — „The geometry is used up" entfällt |
+| B4 | **Option A** | Erst nachrecherchiert (Sheffield-Handout als PDF selbst ausgelesen + Wikipedia): **Säkularparallaxe** — Eigenbewegungen von **13 Cepheiden** gegen die bekannte Sonnenbewegung gemittelt, Ergebnis 35 ± 8 mas, **rund Faktor 10 daneben**; 1912 hatte **kein einziger** Cepheid eine messbare Dreiecksparallaxe. Neuer Wortlaut: „found a **rough** scale — not by one clean triangle, but by pooling the slow drift of thirteen nearby Cepheids". Das „rough" trägt den Faktor-10-Fehler. Nachtrag im Recherchebericht, neue Quelle [L8] |
+| B5 | JA | „Comfortable with Planck." gestrichen — der Team-Schluss trägt allein |
+| B6 | JA | „with the new James Webb telescope **in the mix**" |
+| B7 | JA | „One in four of **the people asked**" |
+
+Wortbilanz: B3 −7 · B4 +6 · B5 −3 · B6 +3 · B7 +2 · Kompensationen −3
+(„in 1792 —", „The hunt ran on", „Still:") = **±0. Endstand exakt 2.050.**
+
+Nachgemessen: 2.050 · 86,2 % · 41,5 Marker/1.000 · Antwort Wort 101 = 27,7 s.
+Alle Ziele halten. **Damit sind alle Befunde der Runde 1 abgearbeitet** —
+Gruppe A komplett, B komplett, C nur die Nobel-Verschiebung (wie verfügt),
+D ohne Aktion. Das Skript ist aus Sicht dieser Prüfrunde fertig.
