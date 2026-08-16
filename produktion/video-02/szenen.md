@@ -982,10 +982,10 @@ Preise per `get_cost` gemessen am 2026-08-16, unverändert gegenüber Video 1:
 Monat, 99 € im Monat bei Jahreszahlung — also **0,033 € je Credit**.
 Ein Nachkauf kostet 0,049 € je Credit (1.000 Credits für 49 €).
 
-> **Achtung, Abweichung zu Video 1.** `produktion/video-01/szenen.md`
-> rechnet mit 0,00275 € je Credit und liest die 99 € als Jahrespreis.
-> Das ist um den Faktor zwölf zu niedrig. Video 1 bleibt auf Wunsch
-> unverändert; die Zahl hier ist die richtige.
+> Bis zum 16.08.2026 rechneten `produktion/video-01/szenen.md` und
+> `recherche/kostenvergleich-formate.md` mit 0,00275 € je Credit, weil
+> die 99 € als Jahrespreis gelesen worden waren — Faktor zwölf zu
+> niedrig. Beide sind korrigiert und tragen einen datierten Vermerk.
 
 **Variante C liegt bei 296 Credits** — unter der vereinbarten
 Abbruchschwelle von 500 und bei 10 % des Monatskontingents.
