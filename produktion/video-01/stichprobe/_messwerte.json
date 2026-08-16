@@ -1,0 +1,93 @@
+{
+ "01-M84-nahaufnahme-kopf.png": {
+  "balken_zu_kopf_breite": 1.154705587964053,
+  "balken_dicke_zu_kopf": 0.16378246367969063,
+  "balken_lage_im_kopf": 0.5254137115839244,
+  "kopf_zu_bildhoehe": 0.55078125,
+  "winkel": -90.0,
+  "kopf_px": "812x846"
+ },
+ "02-M55-rueckenansicht.png": {
+  "balken_zu_kopf_breite": 1.155988752740257,
+  "balken_dicke_zu_kopf": 0.14825771344116906,
+  "balken_lage_im_kopf": 0.5180755359537547,
+  "kopf_zu_bildhoehe": 0.13411458333333334,
+  "winkel": -89.98691732243128,
+  "kopf_px": "201x206"
+ },
+ "03-M49-seitenansicht-kopftuch.png": {
+  "balken_zu_kopf_breite": 0.9195853318524465,
+  "balken_dicke_zu_kopf": 0.16402035626970596,
+  "balken_lage_im_kopf": 0.5709968000229595,
+  "kopf_zu_bildhoehe": 0.20182291666666666,
+  "winkel": 80.99375478486928,
+  "kopf_px": "253x310"
+ },
+ "04-M62-figur-klein.png": {
+  "balken_zu_kopf_breite": 0.8994667096513633,
+  "balken_dicke_zu_kopf": 0.2116897629064808,
+  "balken_lage_im_kopf": 0.515454672831722,
+  "kopf_zu_bildhoehe": 0.076171875,
+  "winkel": 89.69750627175199,
+  "kopf_px": "129x117"
+ },
+ "05-M78-zwei-figuren.png": {
+  "balken_zu_kopf_breite": 0.723850594582114,
+  "balken_dicke_zu_kopf": 0.14857463806044358,
+  "balken_lage_im_kopf": 0.5262105344216849,
+  "kopf_zu_bildhoehe": 0.2604166666666667,
+  "winkel": -89.9781508698182,
+  "kopf_px": "399x400"
+ },
+ "06-M75-bronzehelm.png": {
+  "balken_zu_kopf_breite": 1.1531724115814561,
+  "balken_dicke_zu_kopf": 0.22374177067288117,
+  "balken_lage_im_kopf": 0.2189060144195438,
+  "kopf_zu_bildhoehe": 0.15690104166666666,
+  "winkel": 89.69777090401618,
+  "kopf_px": "253x241"
+ },
+ "07-M07-kniend.png": {
+  "balken_zu_kopf_breite": 0.7566668662403514,
+  "balken_dicke_zu_kopf": 0.15353225609201956,
+  "balken_lage_im_kopf": 0.5731532129894771,
+  "kopf_zu_bildhoehe": 0.2819010416666667,
+  "winkel": -71.2318458521055,
+  "kopf_px": "460x433"
+ },
+ "08-M27-gebueckt-kapuze.png": {
+  "balken_zu_kopf_breite": 0.9046834750476749,
+  "balken_dicke_zu_kopf": 0.1719591946206166,
+  "balken_lage_im_kopf": 0.6445390538018848,
+  "kopf_zu_bildhoehe": 0.2734375,
+  "winkel": -65.77681994000909,
+  "kopf_px": "432x420"
+ },
+ "09-M14-axt-fellkapuze.png": {
+  "balken_zu_kopf_breite": 0.9724834722717022,
+  "balken_dicke_zu_kopf": 0.16899745651364972,
+  "balken_lage_im_kopf": 0.4904752435871943,
+  "kopf_zu_bildhoehe": 0.15299479166666666,
+  "winkel": -78.01249616464153,
+  "kopf_px": "247x235"
+ },
+ "10-M30-schema.png": null,
+ "11-M45-landschaft.png": null,
+ "12-M52-reliefwand.png": null,
+ "13-M14-text-jahreszahl.png": {
+  "balken_zu_kopf_breite": 0.9599876190310674,
+  "balken_dicke_zu_kopf": 0.19094191942597297,
+  "balken_lage_im_kopf": 0.5239551956117123,
+  "kopf_zu_bildhoehe": 0.15755208333333334,
+  "winkel": -82.47532617796233,
+  "kopf_px": "270x242"
+ },
+ "14-M62-text-ortsname.png": {
+  "balken_zu_kopf_breite": 0.9390494111825339,
+  "balken_dicke_zu_kopf": 0.164646394339619,
+  "balken_lage_im_kopf": 0.6712174050883728,
+  "kopf_zu_bildhoehe": 0.072265625,
+  "winkel": 89.98176763520115,
+  "kopf_px": "105x111"
+ }
+}
