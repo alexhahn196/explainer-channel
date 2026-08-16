@@ -1,8 +1,11 @@
 # Video 2 — Skript: „How Do We Know How Far Away the Stars Are?"
 
-> Sprechtext für Video 2, geschrieben auf Basis von
-> `recherche/thema-sterne-recherche.md` (Stand 2026-08-15, nach der
-> Gegenprüfung mit 37 Einzelbehauptungen). Englisch, wie Video 1.
+> **Erzählfassung, 16.08.2026.** Nach der Tonprobe entschieden: die
+> Schreibart von Unknown Frequencies, POV-Form. Der Zuschauer steht in der
+> Szene; Vorgänge werden gezeigt, indem gezeigt wird, was ein Mensch dabei
+> tat. Die abgelöste Erklärform liegt als `skript-erklaerform.md` daneben —
+> **gleiche Fakten, gleiche Zahlen, gleiche Quellen-IDs**, nur der Ton ist
+> ein anderer.
 >
 > Die Quellen-IDs in eckigen Klammern (`[W1]`, `[L4]`, `[A]` …) sind **nicht
 > Teil des Sprechtexts** — sie werden vor der Vertonung entfernt. Die Tabelle
@@ -17,46 +20,67 @@
 > kein Tycho-Zitat über Sterngrößen (gehört Rothmann), kein Deutungs- oder
 > Teleskopverbot für Leavitt, kein 1929er Altersparadox mit 4,5-Mrd.-Erde,
 > kein „über 5 Sigma", kein Plejaden-Wert „der Gaia-Kollaboration".
+>
+> Neu in dieser Fassung: **historische Personen bleiben unbenannt** — der
+> Mann in Königsberg, der Mann am Kap, der Mann in Dorpat. Das hält die
+> Vorgabe „benannte Personen sparsam" und deckt sich mit der
+> Epochenfiguren-Entscheidung der Bildwelt. Einzige Ausnahme ist Leavitt: einmal im
+> wörtlichen Zitat „prepared by Miss Leavitt" — wie in ihrem Paper, in
+> der ersten Zeile unter der Unterschrift eines anderen — und einmal
+> als „Leavitt's rung", der nach ihr benannten Sprosse. **Bildvorgabe:** höchstens 10 % der Laufzeit
+> als Schema, gemessen wie in `tonprobe-bilder.py`.
 
 ---
 
 ## Sprechtext
 
-Look up tonight and pick a star. Any star you like. Now ask yourself: how far away is that thing? If you draw a blank, you're in good company. In a survey of more than three thousand people, one in four said the stars are closer to us than the Sun [L1]. Asked to put a number on the nearest star, five out of six students wouldn't even guess [L1]. Of those who did, only one in five landed in the right range — about three people in a hundred [L1][A]. So how do astronomers know? Here's the answer, right away: with a triangle. No probe flies out there. No radar comes back. You measure an angle, twice, half a year apart — and geometry does the rest. And you already own the trick.
+You're outside, and it's dark. Look up. Pick a star. Any one you like. Now answer me: how far away is your star?
 
-Hold up your thumb at arm's length. Shut your left eye. Now swap eyes. Your thumb jumps against the wall — because each of your eyes looks from its own spot. Two viewpoints, one shift: that's how you see depth. To do the same with a star, you need two viewpoints as far apart as you can get them. The farthest pair you will ever own is this: the Earth in January, and the Earth in July. Two points of your planet's orbit, three hundred million kilometres apart [A]. Photograph a near star from both. Against the sea of far stars behind it, it jumps — just like your thumb did. Half of that jump, as an angle, is called the parallax. One clean rule ties it to distance: the smaller the jump, the farther the star [W1].
+Nothing comes. You're not alone in that. More than three thousand people got the same question [L1]. One in four put the stars closer to us than the Sun [L1]. Five out of six students wouldn't put a number on the nearest one at all [L1]. Of those who tried, one in five landed in the right range [L1]. About three people in a hundred [L1][A].
 
-Simple? You'd think so. The catch: from the idea to the first published jump took two hundred and ninety-five years [A].
+So there you stand in the street with no answer. What you need is a triangle. Here is how you build yours.
 
-Copernicus set the Earth moving in 1543, and the objection came at once: if we ride a moving platform, the stars should sway — and nobody saw any sway [W6]. The sharpest eyes of that century belonged to Tycho Brahe, a Danish noble who charted the sky, with no telescope, more finely than anyone alive. He looked. Nothing. Then he did the maths on that nothing: to hide from his instruments, the stars would have to sit seven hundred times farther out than Saturn [W5]. Worse: to his eye, every bright star showed a tiny round disk. A disk that wide, pushed that far out, means a star of monstrous size — dwarfing the Sun. Too absurd to accept, he judged, and kept the Earth still [W5]. His logic was sound. His premise was not. The disks are not real. Air and eye wrap every point of light in blur, and what Tycho measured was the blur. The largest true star disk in our night sky is about a thousand times smaller than what he saw [W5][A]. It took until around 1700 to accept the disks as an illusion — an "optick fallacy," as it was put back then [W6]. Tycho wasn't sloppy. He measured what a human eye can see — it just wasn't the star.
+Put your thumb up, arm straight out, and shut your left eye. Now swap eyes. Your thumb jumped. The wall stayed where it was. Your two eyes sit apart. Each one looks past your thumb from its own spot. Two spots, one jump.
 
-The hunt ran on — into the 1830s, when it became a race. Three men, three cities, three stars.
+Now you need two spots much further apart. Stand in this street in January. Come back in July and stand on the same flagstone. You never lifted a foot. And you have moved three hundred million kilometres [A]. Your planet carried you. Photograph a near star from both ends of your ride, and it jumps. Same as your thumb did.
 
-In Königsberg, Friedrich Bessel had a new tool: a telescope whose main lens was cut clean in half, one half sliding on a fine screw [W7]. Slide it until two star images meet, read the screw, and you've read an angle no eye could split. He aimed at a dim star called 61 Cygni — picked because it crawls across the sky unusually fast [W2]. An Italian, Giuseppe Piazzi, had spotted that hurry in 1792 — a fast star is usually a near one [W2]. Through 1837 and 1838 Bessel measured; then he published: a jump of about a third of an arcsecond [W2][L2]. An arcsecond — take one degree, cut it into three thousand six hundred slices, keep one. Bessel's angle is a two-euro coin seen from seventeen kilometres [A]. From it he got a distance of ten point four light-years — a light-year being the stretch light crosses in one year, nine and a half trillion kilometres [W2]. Today's value for that star: eleven point four [W2]. With a sawn lens and a screw, he came within a tenth of the truth [A].
+A man in Königsberg spent two years catching that jump. The same trick you just played against your wall, done properly. His telescope had its main lens sawn clean in half. One half slid on a fine screw [W7]. Night after night he turned the screw until two images of one faint star lay exactly on top of each other. Then he read the screw off by lamplight. That reading was the jump. Half of it, drawn as an angle, is what you were after: the parallax [W1]. Small jump, far star. That is the whole rule, and now you have it too.
 
-But he wasn't first to measure. Five years before, at the Cape of Good Hope, Thomas Henderson had caught the jump of a bright southern star, Alpha Centauri — and put the result in a drawer. Earlier claims of a parallax had been shot down; the story handed down says he didn't trust his own numbers [W3]. He published in 1839 — second, for want of nerve [W3]. And in Dorpat, Wilhelm Struve had measured Vega and landed close to today's value — 0.125 arcseconds, against the modern 0.129 [W4]. Then Bessel doubted Struve's data, and Struve revised his good number to nearly double. Away from the truth. Colleagues stopped trusting his numbers [W4]. So who was first? Pick your rule. First to measure: Henderson. First to make the full case in print: Bessel. First to print any number at all: arguably Struve. The books give all three answers — side by side [W1][W4].
+One catch. Between idea and lamplit reading lie two hundred and ninety-five years [A].
 
-You'd think it gets easy after that. It doesn't. The angles are brutal. By 1900 — sixty years on — astronomers had collected about sixty parallaxes in total [W1]. Sixty known distances, in a galaxy of billions [W10]. The real jump came when measuring left the ground. A satellite called Hipparcos pinned down 118,000 stars in the 1990s — though only about one in six of them with an error under ten percent [W8][A]. Then came Gaia, a European craft that scanned the sky from 2013 to 2025 and measured more than a billion stars [W9]. At its sharpest — on paper — its angle is that same two-euro coin, now seen from 759,000 kilometres, twice as far as the Moon [A]. Still: the triangle runs out inside our own galaxy. The Milky Way spans some 87,000 light-years, give or take a few thousand [W10] — and for most stars, Gaia's sharp reach covers a slice of that [W9][A]. Past it, the jump drowns in noise. No bigger telescope changes the base of the triangle — and past a point, the jump is smaller than the blur.
+In 1543 a book set the Earth moving [W6]. The objection came at once. If you ride a moving platform, the stars should sway. Nobody saw any sway [W6]. The sharpest eyes of the century belonged to a Danish noble. Stand beside him at his quadrant — brass, taller than you. No telescope. He charted the whole sky with his bare eye, finer than anyone alive. He hunted your sway for years — your thumb-jump, up there — and never found it. So he did the maths on that nothing. To hide from his instruments, the stars would have to sit seven hundred times farther out than Saturn [W5]. To his eye — to yours too — every bright star shows a small round disk. Push a disk that wide out that far: a star of monstrous size, dwarfing the Sun. Too absurd, he ruled. The Earth stands still [W5]. His logic was sound. His premise was not. The disks are not real. Air and your own eye wrap every point of light in blur. The blur is what he measured. The largest true star disk in your night sky is about a thousand times smaller than the disk he drew [W5][A]. It took until around 1700 to call them an illusion [W6]. An "optick fallacy," as it was put back then [W6]. He wasn't sloppy. He measured what your eye can see. It just isn't the star.
 
-Everything farther — every other galaxy, the deep sky — stands on something else. A ladder. And its second rung was built by a woman paid thirty cents an hour [W11].
+The hunt ran on. By the 1830s it was a race. Three men, three cities, three stars — and you have met the first.
 
-Harvard, 1908 to 1912 [W11]. Henrietta Leavitt worked in a room of women hired to read glass photographs of the sky — plates taken by the men who ran the telescopes, and brought in for the women to measure [W11]. Her plates showed the Small Magellanic Cloud, a small companion galaxy of ours. On them she found stars that pulse: they brighten, fade, and brighten again, on a steady beat of days or weeks. We now call them Cepheids [W11][W12]. Across twenty-five of them, she found the pattern: the slower the beat, the brighter the star [W11]. On her chart, the points fell along two clean straight lines [W11]. And she wrote down, herself, what it meant: these stars all sit at roughly the same distance from us — they share the Cloud — so the beat apparently tracks how much light a star truly puts out [W11]. Hold on to that — it unlocks the deep universe. Read a Cepheid's rhythm, and you know its true brightness. Compare that with how faint it looks, and the dimming hands you the distance. Astronomers call that a standard candle: a lamp whose true output you know. Hers could be read across millions of light-years.
+The man in Königsberg had aimed your trick at a dim star called 61 Cygni [W2]. It crawls across the sky unusually fast [W2]. An Italian had spotted that hurry in 1792 [W2]. A fast star is usually a near one [W2]. Through 1837 and 1838 he measured [L2]. Then he published: a jump of about a third of an arcsecond [W2][L2]. An arcsecond: take one degree. Cut it into three thousand six hundred slices. Keep one [A]. His angle is a two-euro coin seen from seventeen kilometres [A]. From it he got ten point four light-years [W2]. A light-year is the stretch light crosses in one year [W2]. Nine and a half trillion kilometres [W2]. Today's value for that star: eleven point four [W2]. He came within a tenth of the truth. With a saw, a screw, and your thumb trick [A].
 
-One catch — and she named it too. Her chart had no scale. No one knew the distance to the Cloud itself, so her law gave only ratios: this star is four times farther than that one. Four times what? She wrote that she hoped parallaxes would be measured for a few stars of this kind [W11]. A year on, Ejnar Hertzsprung found a rough scale — not by one clean triangle, but by pooling the slow drift of thirteen nearby Cepheids [W11][L8].
+But he wasn't first to measure. Go five years back, to the Cape of Good Hope. A man there catches the jump of a bright southern star, Alpha Centauri. He does his sums — and puts the sheet in a drawer. Earlier claims had been shot down. The story handed down says he didn't trust his own numbers [W3]. He shut the drawer on your answer. He published in 1839 — second, for want of nerve [W3].
 
-Her paper ran under her director's signature; its first line records that it was "prepared by Miss Leavitt" [W11]. In 1925, a Swedish mathematician wrote to her about putting her name up for the Nobel Prize — not knowing she had been dead for four years [W11].
+And in Dorpat, a third man had measured Vega. He landed close: 0.125 arcseconds, against the modern 0.129 [W4]. Then Königsberg doubted those numbers. The man in Dorpat revised his good value to nearly double. Away from the truth. So who was first? Pick your rule. First to measure: the Cape. First to make the full case in print: Königsberg. First to print any number at all: arguably Dorpat. The books give all three answers — side by side [W1][W4].
 
-Mark that shape — everything since is built the same way: rung two stands on rung one. Cepheids are calibrated by parallax. The rungs above — exploding stars, whole galaxies — are calibrated by Cepheids. Every rung inherits the reach of the one below. And every rung inherits its errors [W16].
+You'd think the flood starts there. It doesn't. By 1900 — sixty years on — the world's whole haul: about sixty parallaxes [W1]. Sixty known distances, in your galaxy of billions [W10]. The flood came when the measuring left the ground. A satellite called Hipparcos pinned down 118,000 stars in the 1990s [W8]. Only about one in six had an error under ten percent [W8][A]. Then came Gaia, a European craft. From 2013 to 2025 it scanned the sky and measured more than a billion stars [W9]. At its sharpest — on paper — it reads your two-euro coin from 759,000 kilometres [A]. Twice as far as the Moon [A]. And still your triangle runs out inside your own galaxy. The Milky Way spans some 87,000 light-years, give or take a few thousand [W10]. For most stars, Gaia's sharp reach covers a slice of that [W9][A]. Build a bigger telescope. The base of your triangle has not grown a metre. Past a point, the jump is smaller than the blur.
 
-And the errors came. The ladder has snapped twice, in public.
+Everything farther — every other galaxy, the deep sky — stands on something else. A ladder. Its second rung was built by a woman paid thirty cents an hour [W11].
 
-First break. In 1929, Edwin Hubble used Cepheid distances to show that the galaxies flee from us — the farther, the faster [L7]. The universe expands; run that film backwards, and you get an age. His rate gave: not quite two billion years [W13]. Awkward, even then — geologists put the Earth itself at around two billion [W13]. By the mid-fifties it turned absurd: the Earth's true age came in at four and a half billion — older than the universe around it [W13]. Part of the fault lay on Leavitt's rung. There are two families of pulsing stars, with two different rulers, and mixing them had shrunk the cosmos. Walter Baade pulled them apart and announced it in Rome, in 1952 — at a stroke, the universe doubled [W12][W14]. Still too small. In 1958, Allan Sandage found that Hubble had also mistaken glowing gas clouds for bright stars [W13]. The rate fell again, and the universe came out comfortably older than the Earth [W13]. Total correction, first to last: about a factor of seven [A].
+Step into a long bright workroom. Harvard, 1908 to 1912 [W11]. At the tables sit women, bent over the sky on glass. The plates come from the men who run the telescopes. The women measure them [W11]. Stop at one table. Under her magnifier lies the Small Magellanic Cloud, a companion galaxy of ours. Plate after plate, she finds stars that pulse. They brighten, fade, and brighten again. A steady beat of days or weeks. We now call them Cepheids [W11][W12]. She works through twenty-five of them [W11]. And the pattern rises out of the glass in front of you. The slower the beat, the brighter the star [W11]. On her chart, the points fall along two clean straight lines [W11]. She writes down, herself, what it means. These stars all sit at roughly the same distance from us — they share the Cloud. So the beat apparently tracks how much light a star truly puts out [W11].
 
-Second break, closer to home. The Pleiades — the little cluster you can spot with bare eyes. Hipparcos, the trusted satellite, put it at about 390 light-years [W15][A]. Nearly every other method said 435 to 445 [W15][A]. For seventeen years, the field's best instrument disagreed with everyone else — about one of the nearest clusters in the sky [A]. In 2014, radio telescopes settled it: 444 light-years, give or take four — the satellite was wrong [L3].
+Hold on to what she wrote. It unlocks the deep universe for you. Read a Cepheid's rhythm, and you know its true brightness. See how faint it looks, and the dimming hands you the distance. Hers you could read across millions of light-years.
 
-And today, the ladder is in its third fight — this one still open [W18]. Two numbers for how fast the universe grows. From the oldest light there is, the Planck satellite reads 67.4, with an error of half a point [L5]. From the ladder — parallax, to Cepheids, to exploding stars that all flare to nearly the same true brightness [W17] — a team called SH0ES reads 73.0, plus or minus one. A five-sigma difference, in their own words: far too large to be chance [L4]. You'll hear that sold as the early universe against today's. But here's what that framing skips. A second team climbed the same ladder with a different second rung — red giant stars instead of Cepheids, with the new James Webb telescope in the mix — and read 67.8 to 70.4, depending on the sample and the method [L6]. Their own verdict: no new physics needed [L6]. Same universe. Same ladder. Different rung — different answer. And the strangest part: both teams agree on the distances to the very same galaxies, to about one percent [L6]. The stars are not the quarrel. The quarrel is over which exploding stars to hang the scale on. The ladder holds; the argument is about the nail. Nobody yet knows which side is right [W18].
+One catch — and she named it too. Her chart had no scale. Nobody knew the distance to the Cloud itself, so her law gave only ratios. This star is four times farther than that one. Four times what? She wrote that she hoped parallaxes would be measured for a few stars of this kind [W11]. A year on, an astronomer found a rough scale [W11][L8]. No clean triangle — the slow drift of thirteen nearby Cepheids, pooled [L8].
 
-So — how do we know how far away the stars are? For the near ones: a triangle. Your thumb trick, stretched across the Earth's orbit, sharpened until a coin past the Moon is an easy target. For the far ones: a ladder of light. A rhythm read off glass plates for thirty cents an hour, nailed to the triangle, broken twice, patched twice, and argued over right now. One in four of the people asked thinks the stars hang closer than the Sun. The nearest one sits so deep that its light spends four years on the road to you [W1]. But that number is no guess, and never was. Someone caught its jump. Someone read its beat. And beside every distance, they wrote a second number: how far off it might be. That second number is the honest answer. We don't just know how far the stars are. We know how well we know it — and exactly where we don't.
+Her paper went out under her director's signature. Her name survives in the first line: "prepared by Miss Leavitt" [W11]. In 1925, a Swedish mathematician wrote to her about putting her name up for the Nobel Prize [W11]. He did not know she had been dead for four years [W11].
+
+Mark the shape of what you now own. Your triangle is the bottom rung. The Cepheids stand on the triangle. The rungs above — exploding stars, whole galaxies — stand on the Cepheids [W16]. Every rung inherits the reach of the one below — and its errors [W16].
+
+And the errors came. Your ladder has snapped twice.
+
+First break. In 1929, a man at a great telescope in California used Cepheid distances to show the galaxies flee from us [L7]. The farther, the faster [L7]. The universe expands. Run that film backwards, and you get an age. His rate gave: not quite two billion years [W13]. Awkward, even then. The geologists put the Earth itself at around two billion [W13]. By the mid-fifties it turned absurd. The Earth's true age came in at four and a half billion [W13]. Run those numbers, and you are standing on a planet older than the universe around it. Part of the fault lay on Leavitt's rung. There are two families of pulsing stars, with two different rulers. Mixing them had shrunk the cosmos. In 1952, in a hall in Rome, a man stood up and pulled the families apart [W14]. At a stroke, the universe doubled [W12][W14]. Still too small. In 1958, another astronomer found: the California man had also mistaken glowing gas clouds for bright stars [W13]. The rate fell again, and the universe came out comfortably older than the Earth [W13]. Total correction, first to last: about a factor of seven [A].
+
+Second break, closer to home. The Pleiades — the little cluster you can spot with your bare eyes. Hipparcos, the trusted satellite, put it at about 390 light-years [W15][A]. Nearly every other method said 435 to 445 [W15][A]. For seventeen years, the field's best instrument disagreed with everyone else. About one of the nearest clusters in your sky [A]. In 2014, radio telescopes settled it: 444 light-years, give or take four [L3]. The satellite was wrong [L3].
+
+And today your ladder is in its third fight — this one still open [W18]. Two teams, two numbers for how fast the universe grows. One number comes from the oldest light there is. A satellite called Planck reads 67.4, with an error of half a point [L5]. The other comes off your ladder. Parallax, to Cepheids, to exploding stars that all flare to nearly the same true brightness [W17]. The ladder team, called SH0ES, reads 73.0, plus or minus one [L4]. A five-sigma difference, in their own words: far too large to be chance [L4]. You'll hear that sold as the early universe against today's. Watch what that framing skips. A second team climbed the same ladder with a different second rung. Red giant stars instead of Cepheids, the new James Webb telescope in the mix. They read 67.8 to 70.4, depending on the sample and the method [L6]. Their own verdict: no new physics needed [L6]. Strangest of all: both teams agree on the distances to the very same galaxies [L6]. To about one percent [L6]. The stars are not the quarrel. The quarrel is over which exploding stars to hang the scale on. The ladder holds. The fight is about the nail. Nobody yet knows which side is right [W18].
+
+Go back out to your street and find your star. How far away is it? For the near ones: your triangle. The thumb trick, stretched across your planet's orbit. Sharpened until a coin past the Moon is an easy target. For the far ones: the ladder. A rhythm read off glass plates at thirty cents an hour. Nailed to your triangle. Broken twice, patched twice, fought over right now. One in four of the people asked still hangs the stars closer than the Sun. The nearest one sits so deep that its light spends four years on the road to your eye [W1]. But that number is no guess. It never was. Someone caught its jump. Someone read its beat. And beside every distance, someone wrote a second number. How far off it might be. That second number is the honest answer. You don't just know how far your star is. You know how well you know it — and exactly where you don't.
 
 ---
 
@@ -94,61 +118,74 @@ So — how do we know how far away the stars are? For the near ones: a triangle.
 
 ## Messwerte
 
-Gemessen mit `messung.py` am bereinigten Sprechtext (Quellen-IDs entfernt).
+Gemessen mit `messung.py` (harte Vorgaben) und den Definitionen aus
+`tonprobe.py` (Stilwerte) am bereinigten Sprechtext.
 
 | Größe | Ziel | Gemessen | Status |
 |---|---|---|---|
-| Wortzahl | 1.850–2.050 | **2.050** | ✓ — exakt an der Kappe |
-| Laufzeit bei 219 WPM | 8:30–9:30 | **9:22** | ✓ — am oberen Rand; bei den gemessenen 214,3 WPM von Video 1 wären es 9:34, das gleicht die Montage aus |
-| Wörter unter 7 Zeichen | ≥ 82 % | **86,2 %** | ✓ |
-| Anrede-Marker je 1.000 Wörter, erstes Fünftel (410 Wörter) | ≥ 40 | **41,5** (17 Marker) | ✓ |
-| Anrede-Marker gesamt | — (zur Info) | 13,7 je 1.000 | zur Info |
-| Position der Antwort („with a triangle") | erste 30 s | **Wort 101 = 27,7 s** | ✓ |
-| Sätze mit harten Zahlen — mit Quellen-ID | alle neuen Behauptungen | **36 von 39** | ✓ — die 3 ohne ID sind keine neuen Behauptungen, siehe unten |
-| Sätze mit harten Zahlen — ohne ID | nur Definition / Übergang / Echo | 3 | „into the 1830s" (Übergang), die Bogensekunden-Definition (Arithmetik), der Schluss-Rückgriff auf schon belegte Zahlen |
-| Verbotene Erzählungen (5 aus der Gegenprüfung) | 0 Vorkommen | **0** | ✓ — gegengeprüft: kein Tycho-Größenzitat, kein Leavitt-Verbot, kein 4,5-Mrd.-Altersparadox, kein „über 5 Sigma", keine Gaia-Kollaborations-Zuschreibung |
+| Wortzahl | 1.850–2.050 | **2.044** | ✓ |
+| Laufzeit bei 219 WPM | 8:30–9:30 | **9:20** | ✓ |
+| Wörter unter 7 Zeichen | ≥ 82 % | **87,2 %** | ✓ — über der Erklärform (86,2) |
+| Anrede-Marker je 1.000, erstes Fünftel | ≥ 40 | **68,6** | ✓ |
+| Position der Antwort („is a triangle") | erste 30 s | **Wort 100 = 27,4 s** | ✓ |
+| Sätze mit harten Zahlen — mit Quellen-ID | alle neuen Behauptungen | **36 von 39** | ✓ — die 3 ohne sind Übergang („the 1830s"), Arithmetik (Bogensekunden-Teilung), Schluss-Echo |
+| Verbotene Erzählungen (5) | 0 Vorkommen | **0** | ✓ — gegengeprüft |
+| Satzlänge Median | 7 (UF-Vorgabe) | **8,0** | ⚠ knapp — der Rest sind Faktensätze, die sich ohne Mehrwörter nicht weiter teilen lassen |
+| Anrede-Marker je 1.000, gesamt | 74,7 (UF-Vorgabe) | **34,2** | ✗ — **die eine verfehlte Vorgabe**, siehe Punkt 10 unten |
+| epistemische Marker | nahe null | 29 gesamt, davon **2 Erzähler-Absicherungen** („the story handed down says", „arguably") | ✓ mit Lesart — die übrigen 27 sind Zahlqualifizierer (about/around/nearly/some an Messwerten), ohne die die Zahlen falsch wären |
+| Fragezeichen | sparsam | **4** | ✓ |
+| benannte Personen | sparsam | **1** („Miss Leavitt", nur im Zitat) | ✓ |
 
 ## Stellen, an denen ich unsicher war
 
-1. ~~„five out of six" ohne Stichproben-Angabe~~ — **erledigt am 15.08.:**
-   der Text sagt jetzt „five out of six students", exakt wie die Quelle.
-2. **Hendersons Beweggrund** („didn't trust his own numbers") ist laut
+1. **Hendersons Beweggrund** („didn't trust his own numbers") ist laut
    Recherchebericht **nicht aus Hendersons Hand belegbar** — nur eine
    Zuschreibung der Sekundärliteratur. Der Text markiert das hörbar mit
-   „the story handed down says". Wer das zu weich findet, streicht den
-   Halbsatz; der Ablauf (gemessen 1832/33, publiziert 1839) trägt allein.
-3. **Tychos Sterngrößen-Argument** ist als indirekte Rede formuliert („means a
-   star of monstrous size — dwarfing the Sun. Too absurd to accept, he
-   judged"). Das ist Wikipedias Paraphrase des Arguments (nach Blair 1990,
-   Moesgaard 1972), **kein Zitat** — das wörtliche Erdbahn-Zitat gehört
-   Rothmann und kommt nicht vor. Ich halte die indirekte Form für gedeckt,
-   aber es ist die heikelste Stelle des Skripts.
-4. **„about a third of an arcsecond"** für Bessel — publiziert wurden zwei
+   „the story handed down says". Der epistemische Marker bleibt bewusst
+   stehen: ohne ihn wäre der Satz falsch.
+2. **Tychos Sterngrößen-Argument** ist als indirekte Rede formuliert („means
+   a star of monstrous size … He weighed it and ruled: too absurd"). Das ist
+   Wikipedias Paraphrase des Arguments, **kein Zitat** — das wörtliche
+   Erdbahn-Zitat gehört Rothmann und kommt nicht vor. Neu in dieser Fassung:
+   „to any eye, yours too" verallgemeinert die Scheiben auf jedes bloße
+   Auge. Das deckt der alte Schlusssatz („He measured what a human eye can
+   see") — die Scheiben sind ein Artefakt von Luft und Auge, nicht von
+   Tychos Auge.
+3. **„about a third of an arcsecond"** — publiziert wurden zwei
    Komponentenwerte (369,0 und 260,5 mas); die 313,6 sind ein abgeleiteter
    Mittelpunkt. Das „about" trägt diese Unschärfe, nennt sie aber nicht.
-5. **Leavitt-Paraphrasen** — die wörtlichen Sätze aus Circular 173 stehen im
-   Recherchebericht unter Vorbehalt (UCLA-Server gab mir HTTP 503; Substanz
-   über Harvards eigene Seiten bestätigt). Der Sprechtext **zitiert deshalb
-   nicht**, sondern paraphrasiert; das einzige wörtliche Zitat („prepared by
-   Miss Leavitt") steht so auch in Wikipedia. Vor der Vertonung das Circular
-   einmal selbst öffnen.
-6. **„Gaia's sharp reach covers a slice of that"** — Vereinfachung der
-   helligkeitsabhängigen Tabelle aus dem Bericht (hell: ~15 kpc, Magnitude 15:
-   ~3,8 kpc, Magnitude 20: ~0,33 kpc bei 10 % Genauigkeit). Für helle Sterne
-   ist die Reichweite größer als „a slice" suggeriert.
-7. **„at a stroke, the universe doubled"** — die Quelle sagt „doubling the
-   previous calculation"; die Fachliteratur nennt für einzelne Objekte größere
-   Faktoren. „Verdoppelt" folgt der Quelle, „exakt verdoppelt" wäre falsch —
-   der Text sagt es ohne „exakt".
-8. **Plejaden in Lichtjahren** (390 / 435–445 / 444 ± 4) — von mir aus Parsec
-   umgerechnet (120,2 / 133–137 / 136,2 ± 1,2 pc), damit keine neue Einheit
-   eingeführt werden muss. Die Umrechnung ist trivial, aber sie ist meine.
-9. ~~CCHP-Spanne 68,8–70,4 ließ den JAGB-Wert außen vor~~ — **erledigt am
-   15.08.:** die Spanne heißt jetzt „67.8 to 70.4, depending on the sample and
-   the method". Sachlich sauber, weil auch die JAGB-Sterne Rote Riesen sind —
-   die Formulierung „red giant stars" im Satz davor deckt beide Verfahren.
-10. **Laufzeit am oberen Rand** — 9:21 bei 219 WPM wird bei Erics gemessenen
-    214,3 WPM zu ~9:34. Wenn der Schnitt eng werden soll, sind die
-    Streichkandidaten: der Struve-Nachsatz („Colleagues stopped trusting his
-    work"), der Standard-Kerzen-Halbsatz, der zweite „Same universe. Same
-    ladder."-Beat.
+4. **Leavitt-Paraphrasen** — wie in der Erklärform: der Sprechtext zitiert
+   nur „prepared by Miss Leavitt" wörtlich, alles andere ist Paraphrase.
+   Vor der Vertonung das Circular einmal selbst öffnen.
+5. **„Gaia's sharp reach covers a slice of that"** — Vereinfachung der
+   helligkeitsabhängigen Tabelle aus dem Bericht; für helle Sterne ist die
+   Reichweite größer, als „a slice" suggeriert.
+6. **„at a stroke, the universe doubled"** — die Quelle sagt „doubling the
+   previous calculation"; ohne „exakt" formuliert, wie in der Erklärform.
+7. **Plejaden in Lichtjahren** (390 / 435–445 / 444 ± 4) — eigene Umrechnung
+   aus Parsec, wie in der Erklärform offengelegt.
+8. **Szenendetails der Vignetten** — die zersägte Linse, die
+   Mikrometerschraube, der Mauerquadrant aus Messing, der Leuchttisch und
+   die Lupe stammen aus den Szenenvorschlägen des Rechercheberichts
+   (Schritt 3) und dem Heliometer-Artikel [W7]. „Read the screw off by
+   lamplight" und „night after night" sind Inszenierung des belegten
+   Verfahrens (Doppelbilder zur Deckung bringen, Schraube ablesen), keine
+   überlieferten Einzelmomente. Ebenso ist „a man stood up" in Rom
+   Inszenierung des belegten Vortrags von 1952.
+9. **Unbenannte Personen** — Königsberg/Kap/Dorpat statt Bessel/Henderson/
+   Struve ist eine Formentscheidung, kein Faktenverlust; die Zuordnung
+   steht über die Quellen-IDs fest. Wer die Namen im Video vermisst,
+   findet sie in der Beschreibung (Upload-Paket).
+10. **Anrede-Dichte: 34,2 statt 74,7 — die eine verfehlte Vorgabe.**
+    Der Grund ist strukturell, nicht nachlässig: der freigegebene
+    Königsberg-Absatz — „der Maßstab für den Rest" — läuft selbst auf
+    ~50 je 1.000, weil eine Vignette von IHM erzählt, nicht von dir.
+    Vier solcher Vignetten (Tycho, das Rennen, Leavitt, die Brüche)
+    tragen zusammen gut die Hälfte der Laufzeit; das Eröffnungs- und
+    Schlussfünftel liegen bei ~70. Die 74,7 über das GANZE Skript sind
+    nur erreichbar, wenn der Zuschauer die Vignetten selbst spielt
+    („du bist der Mann in Königsberg") — echte UF-POV. Das wäre eine
+    andere, größere Formentscheidung, die ich nicht still treffen
+    wollte. Gegenüber der Erklärform ist die Dichte von 13,7 auf 34,2
+    gut verdoppelt, und sie reißt nicht mehr ab: kein Absatz ist
+    anredefrei.

@@ -11,22 +11,29 @@
 > Sprechtext ersetzt (Respelling direkt in den Text, wie bei Video 1
 > belegt wirksam) — **nicht** die Schreibung in `skript.md` selbst,
 > sonst bricht der Abgleich mit den Quellen-IDs.
+>
+> **Stand 16.08.2026, Erzählfassung:** Die Spalte *Vorkommen* ist an
+> das neu geschriebene Skript angepasst. Viele Namen sind bewusst
+> entfallen — historische Personen bleiben unbenannt, Ortsformeln wie
+> „the man in Königsberg" ersetzen sie. Die Respellings bleiben
+> gelistet, falls eine spätere Fassung Namen wieder aufnimmt.
+
 
 ## Kandidaten aus dem Auftrag
 
 | Name | Herkunft | IPA (Ziel) | Respelling (empfohlen) | Vorkommen im Sprechtext | Hinweis für die QA |
 |---|---|---|---|---|---|
-| **Bessel** | Deutsch (Astronom, Königsberg) | /ˈbɛsl̩/ | **BESS-el** | 6× | Erste Silbe betont. Fehlform: *beh-SELL*. |
-| **Henderson** | Englisch (Astronom, Kap) | /ˈhɛndərsən/ | **HEN-der-sun** | 2× | Unkritisch, der Vollständigkeit halber. |
-| **Cepheid** | Englisch, nach dem Sternbild Cepheus | /ˈsɛfiɪd/ | **SEF-ee-id** | 4× (auch Plural) | *SEE-fee-id* ist ebenfalls belegt und gilt als bestanden. **Fehlform: hartes K** (*KEF-*) oder *se-FEED*. |
-| **Leavitt** | Englisch (Henrietta Swan Leavitt) | /ˈlɛvɪt/ | **LEV-it** | 2× | **Kritisch.** Die Schreibung lädt zu *LEE-vit* ein — darf nicht stehen bleiben. |
-| **Hubble** | Englisch (Edwin Hubble) | /ˈhʌbəl/ | **HUB-ul** | 3× | Unkritisch. |
+| **Bessel** | Deutsch (Astronom, Königsberg) | /ˈbɛsl̩/ | **BESS-el** | **entfällt** — jetzt „the man in Königsberg“ | Erste Silbe betont. Fehlform: *beh-SELL*. |
+| **Henderson** | Englisch (Astronom, Kap) | /ˈhɛndərsən/ | **HEN-der-sun** | **entfällt** — „a man at the Cape“ | Unkritisch, der Vollständigkeit halber. |
+| **Cepheid** | Englisch, nach dem Sternbild Cepheus | /ˈsɛfiɪd/ | **SEF-ee-id** | 8× (mit Plural) | *SEE-fee-id* ist ebenfalls belegt und gilt als bestanden. **Fehlform: hartes K** (*KEF-*) oder *se-FEED*. |
+| **Leavitt** | Englisch (Henrietta Swan Leavitt) | /ˈlɛvɪt/ | **LEV-it** | 2× (Zitat + „Leavitt's rung“) | **Kritisch.** Die Schreibung lädt zu *LEE-vit* ein — darf nicht stehen bleiben. |
+| **Hubble** | Englisch (Edwin Hubble) | /ˈhʌbəl/ | **HUB-ul** | **entfällt** — „a man at a great telescope in California“ | Unkritisch. |
 | **Parsec** | Kunstwort (parallax + second) | /ˈpɑːrsɛk/ | **PAR-sek** | **kommt nicht vor** — bewusst vermieden, alle Entfernungen in Lichtjahren | Gelistet, falls eine spätere Fassung die Einheit aufnimmt. |
-| **61 Cygni** | Latein (Genitiv von Cygnus) | /ˈsɪɡnaɪ/ | **sixty-one SIG-nye** | 2× | *SIG-nee* gilt als bestanden. **Fehlform: hartes K** (*KIG-*) oder *SY-nji*. Die 61 als „sixty-one", nie als Einzelziffern. |
+| **61 Cygni** | Latein (Genitiv von Cygnus) | /ˈsɪɡnaɪ/ | **sixty-one SIG-nye** | 1× | *SIG-nee* gilt als bestanden. **Fehlform: hartes K** (*KIG-*) oder *SY-nji*. Die 61 als „sixty-one", nie als Einzelziffern. |
 | **Alpha Centauri** | Latein | /ˌælfə sɛnˈtɔːraɪ/ | **AL-fuh sen-TOR-eye** | 1× | *sen-TOR-ee* gilt als bestanden. Betonung auf *TOR*, nie *SEN-tau-ri*. |
 | **Hipparcos** | Akronym (High Precision Parallax Collecting Satellite) | /hɪˈpɑːrkɒs/ | **hih-PAR-koss** | 2× | Zweite Silbe betont — wie der Astronom Hipparch, nicht wie „hippo". |
 | **Gaia** | Griechisch (ESA-Sonde) | /ˈɡaɪə/ | **GY-uh** | 2× | **Kritisch.** Fehlform *GAY-uh*. |
-| **Tycho** | Dänisch/Latein (Tycho Brahe) | /ˈtaɪkoʊ ˈbrɑːhi/ | **TY-koh BRAH-hee** | 3× (2× nur „Tycho") | Englische Konvention; *BRAH* und *BRAH-huh* gelten als bestanden. Fehlform: *TITCH-oh*. |
+| **Tycho** | Dänisch/Latein (Tycho Brahe) | /ˈtaɪkoʊ ˈbrɑːhi/ | **TY-koh BRAH-hee** | **entfällt** — „a Danish noble“ | Englische Konvention; *BRAH* und *BRAH-huh* gelten als bestanden. Fehlform: *TITCH-oh*. |
 | **Rothmann** | Deutsch (Christoph Rothmann) | /ˈʁoːtman/ | **ROHT-mahn** | **kommt nicht vor** — sein Zitat wurde bewusst nicht verwendet | Nur falls eine spätere Fassung ihn nennt. |
 | **Riess** | Deutsch-amerikanisch (Adam Riess) | /riːs/ | **REESS** | **kommt nicht vor** — der Text sagt „a team called SH0ES" | Reimt auf *geese*, nicht auf *rice*. |
 | **Freedman** | Englisch (Wendy Freedman) | /ˈfriːdmən/ | **FREED-mun** | **kommt nicht vor** — der Text sagt „a second team" | — |
@@ -38,20 +45,20 @@
 
 | Name | IPA (Ziel) | Respelling | Vorkommen | Hinweis |
 |---|---|---|---|---|
-| **Struve** | /ˈstruːvi/ (engl. Konvention) | **STROO-vee** | 3× | *STROO-vuh* (näher am Deutschen) gilt als bestanden. **Fehlform: *strove*** (einsilbig). |
-| **Vega** | /ˈviːɡə/ | **VEE-guh** | 2× | *VAY-guh* ist im Englischen ebenfalls belegt und gilt als bestanden. Fehlform: *VEH-ga*. |
-| **Piazzi** | /ˈpjattsi/ | **pee-AHT-see** | 1× | Doppel-z als /tts/, nicht *pee-AZZ-ee*. |
-| **Königsberg** | /ˈkɜːnɪɡzbɜːrɡ/ (engl.) | **KUR-nigz-burg** | 1× | Der Umlaut ist der Stolperer. Englische Lesung genügt; *KOH-nigz-berg* gilt als bestanden. |
-| **Dorpat** | /ˈdɔːrpɑːt/ | **DOR-paht** | 1× | Zwei klare Silben. |
-| **Hertzsprung** | /ˈhɛrtsʃprʊŋ/ | **HERTS-sproong** | 1× | **Kritisch:** die Häufung *tzspr* verschleift bei Tempo. Vorname Ejnar: **AY-nar**. |
+| **Struve** | /ˈstruːvi/ (engl. Konvention) | **STROO-vee** | **entfällt** — „the man in Dorpat“ | *STROO-vuh* (näher am Deutschen) gilt als bestanden. **Fehlform: *strove*** (einsilbig). |
+| **Vega** | /ˈviːɡə/ | **VEE-guh** | 1× | *VAY-guh* ist im Englischen ebenfalls belegt und gilt als bestanden. Fehlform: *VEH-ga*. |
+| **Piazzi** | /ˈpjattsi/ | **pee-AHT-see** | **entfällt** — „an Italian“ | Doppel-z als /tts/, nicht *pee-AZZ-ee*. |
+| **Königsberg** | /ˈkɜːnɪɡzbɜːrɡ/ (engl.) | **KUR-nigz-burg** | 4× | Der Umlaut ist der Stolperer. Englische Lesung genügt; *KOH-nigz-berg* gilt als bestanden. |
+| **Dorpat** | /ˈdɔːrpɑːt/ | **DOR-paht** | 3× | Zwei klare Silben. |
+| **Hertzsprung** | /ˈhɛrtsʃprʊŋ/ | **HERTS-sproong** | **entfällt** — „an astronomer“ | **Kritisch:** die Häufung *tzspr* verschleift bei Tempo. Vorname Ejnar: **AY-nar**. |
 | **Magellanic** | /ˌmædʒəˈlænɪk/ | **maj-uh-LAN-ik** | 1× | Betonung auf *LAN*; weiches g. |
-| **Baade** | /ˈbɑːdə/ | **BAH-duh** | 1× | **Kritisch:** zweisilbig. Fehlform: *bade* (einsilbig, wie „made"). Vorname Walter englisch: *WALL-ter*. |
-| **Sandage** | /ˈsændɪdʒ/ | **SAN-dij** | 1× | Endung wie *bandage*. |
+| **Baade** | /ˈbɑːdə/ | **BAH-duh** | **entfällt** — „a man stood up“ (Rom 1952) | **Kritisch:** zweisilbig. Fehlform: *bade* (einsilbig, wie „made"). Vorname Walter englisch: *WALL-ter*. |
+| **Sandage** | /ˈsændɪdʒ/ | **SAN-dij** | **entfällt** — „another astronomer“ | Endung wie *bandage*. |
 | **Pleiades** | /ˈplaɪədiːz/ | **PLY-uh-deez** | 1× | Fehlform: *PLEE-ads* oder *play-AH-des*. |
 | **Planck** | /plɑːŋk/ | **PLAHNK** | 1× | *plank* (wie das Brett) gilt als bestanden — kaum unterscheidbar. |
-| **Copernicus** | /kəˈpɜːrnɪkəs/ | **kuh-PER-nih-kus** | 1× | Betonung auf *PER*. |
-| **Henrietta** | /ˌhɛnriˈɛtə/ | **hen-ree-ET-uh** | 1× | — |
-| **Giuseppe** | /dʒuˈzɛppe/ | **joo-ZEP-peh** | 1× | — |
+| **Copernicus** | /kəˈpɜːrnɪkəs/ | **kuh-PER-nih-kus** | **entfällt** — „a book“ (1543) | Betonung auf *PER*. |
+| **Henrietta** | /ˌhɛnriˈɛtə/ | **hen-ree-ET-uh** | **entfällt** | — |
+| **Giuseppe** | /dʒuˈzɛppe/ | **joo-ZEP-peh** | **entfällt** | — |
 
 ## Zahlen und Formate (keine Eigennamen)
 
