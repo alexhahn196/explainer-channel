@@ -673,12 +673,20 @@ WIEDERKEHRER[("M16", "M41")] = (
 
 # Der Mond. In M13, M35 und M39 hat er je einen weichen Leuchthof — der
 # einzige Verlauf, der in dieser Reihe dreimal durchgekommen ist.
+# Nach dem M24-Muster gebaut: der weiche Rand wird zur harten Stufe. Dort
+# hat genau das den Leuchthof geloest — Scheibe plus breiterer Ring in
+# hellerem Ton, saubere Kante, je eine Fuellung. Ein Verbot ("no glow")
+# haette hier nichts geholfen; der Hof ist dreimal durchgekommen.
 WIEDERKEHRER[("M13", "M35", "M39")] = (
-    " THE MOON IS DRAWN THE SAME WAY IN EVERY PICTURE OF THIS SERIES: one "
-    "plain pale circle filled with a single off-white, and inside it three "
-    "or four flat round patches of one slightly darker grey with clean "
-    "edges. Around the circle there is nothing at all - no ring of light, no "
-    "soft fading and no glow; the dark ground meets its outline directly.")
+    " THE MOON IS DRAWN THE SAME WAY IN EVERY PICTURE OF THIS SERIES, AND IT "
+    "IS BUILT FROM TWO FLAT STEPS: first one plain circle filled with a "
+    "single off-white, and inside it three or four flat round patches of one "
+    "slightly darker grey with clean edges; second, around that circle, one "
+    "broader ring filled with a single tone lighter than the night ground "
+    "and darker than the disc, its outer edge as clean and as sharp as the "
+    "disc's own. Both the disc and the ring carry one even fill each, and "
+    "the ring's outer edge meets the night ground directly with no third "
+    "step between them.")
 
 # Die Lupe, der Bleistift, die Kerze, der Schreibtisch in Kapstadt: kleine
 # Gegenstaende, die zweimal oder dreimal vorkommen. Je ein Satz.
