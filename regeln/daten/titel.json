@@ -1,0 +1,1224 @@
+{
+ "Axen": {
+  "gruppe": "G1",
+  "alle": {
+   "n": 13,
+   "frage_pct": 77,
+   "fragezeichen_pct": 77,
+   "zahl_pct": 0,
+   "superlativ_pct": 15,
+   "extremmarker_pct": 23,
+   "woerter_median": 7,
+   "zeichen_median": 46
+  },
+  "flops": {
+   "n": 4,
+   "frage_pct": 50,
+   "fragezeichen_pct": 50,
+   "zahl_pct": 0,
+   "superlativ_pct": 25,
+   "extremmarker_pct": 50,
+   "woerter_median": 6.0,
+   "zeichen_median": 36.0
+  },
+  "treffer": {
+   "n": 4,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 0,
+   "superlativ_pct": 25,
+   "extremmarker_pct": 25,
+   "woerter_median": 8.0,
+   "zeichen_median": 50.5
+  }
+ },
+ "Banana Explains": {
+  "gruppe": "G1",
+  "alle": {
+   "n": 36,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 3,
+   "superlativ_pct": 3,
+   "extremmarker_pct": 11,
+   "woerter_median": 7.0,
+   "zeichen_median": 41.5
+  },
+  "flops": {
+   "n": 12,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 0,
+   "superlativ_pct": 8,
+   "extremmarker_pct": 17,
+   "woerter_median": 7.0,
+   "zeichen_median": 42.0
+  },
+  "treffer": {
+   "n": 12,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 0,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 0,
+   "woerter_median": 6.0,
+   "zeichen_median": 40.5
+  }
+ },
+ "Before Civilization": {
+  "gruppe": "G1",
+  "alle": {
+   "n": 69,
+   "frage_pct": 70,
+   "fragezeichen_pct": 48,
+   "zahl_pct": 10,
+   "superlativ_pct": 12,
+   "extremmarker_pct": 20,
+   "woerter_median": 9,
+   "zeichen_median": 54
+  },
+  "flops": {
+   "n": 23,
+   "frage_pct": 70,
+   "fragezeichen_pct": 48,
+   "zahl_pct": 4,
+   "superlativ_pct": 9,
+   "extremmarker_pct": 13,
+   "woerter_median": 9,
+   "zeichen_median": 50
+  },
+  "treffer": {
+   "n": 23,
+   "frage_pct": 65,
+   "fragezeichen_pct": 48,
+   "zahl_pct": 17,
+   "superlativ_pct": 17,
+   "extremmarker_pct": 30,
+   "woerter_median": 10,
+   "zeichen_median": 56
+  }
+ },
+ "Ink Explainer": {
+  "gruppe": "G1",
+  "alle": {
+   "n": 13,
+   "frage_pct": 85,
+   "fragezeichen_pct": 54,
+   "zahl_pct": 0,
+   "superlativ_pct": 8,
+   "extremmarker_pct": 15,
+   "woerter_median": 7,
+   "zeichen_median": 46
+  },
+  "flops": {
+   "n": 4,
+   "frage_pct": 100,
+   "fragezeichen_pct": 25,
+   "zahl_pct": 0,
+   "superlativ_pct": 25,
+   "extremmarker_pct": 0,
+   "woerter_median": 7.5,
+   "zeichen_median": 42.0
+  },
+  "treffer": {
+   "n": 4,
+   "frage_pct": 100,
+   "fragezeichen_pct": 75,
+   "zahl_pct": 0,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 50,
+   "woerter_median": 8.5,
+   "zeichen_median": 49.0
+  }
+ },
+ "Mogo": {
+  "gruppe": "G1",
+  "alle": {
+   "n": 33,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 9,
+   "superlativ_pct": 3,
+   "extremmarker_pct": 6,
+   "woerter_median": 7,
+   "zeichen_median": 37
+  },
+  "flops": {
+   "n": 11,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 18,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 0,
+   "woerter_median": 7,
+   "zeichen_median": 37
+  },
+  "treffer": {
+   "n": 11,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 9,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 9,
+   "woerter_median": 7,
+   "zeichen_median": 36
+  }
+ },
+ "Noxenn": {
+  "gruppe": "G1",
+  "alle": {
+   "n": 46,
+   "frage_pct": 100,
+   "fragezeichen_pct": 98,
+   "zahl_pct": 11,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 26,
+   "woerter_median": 7.0,
+   "zeichen_median": 40.0
+  },
+  "flops": {
+   "n": 15,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 7,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 27,
+   "woerter_median": 8,
+   "zeichen_median": 39
+  },
+  "treffer": {
+   "n": 15,
+   "frage_pct": 100,
+   "fragezeichen_pct": 93,
+   "zahl_pct": 13,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 40,
+   "woerter_median": 7,
+   "zeichen_median": 40
+  }
+ },
+ "Prehistoria Hub": {
+  "gruppe": "G1",
+  "alle": {
+   "n": 18,
+   "frage_pct": 17,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 28,
+   "superlativ_pct": 22,
+   "extremmarker_pct": 39,
+   "woerter_median": 10.5,
+   "zeichen_median": 61.0
+  },
+  "flops": {
+   "n": 6,
+   "frage_pct": 17,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 17,
+   "superlativ_pct": 33,
+   "extremmarker_pct": 33,
+   "woerter_median": 9.5,
+   "zeichen_median": 56.0
+  },
+  "treffer": {
+   "n": 6,
+   "frage_pct": 17,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 50,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 83,
+   "woerter_median": 11.5,
+   "zeichen_median": 59.5
+  }
+ },
+ "Prehistoric Archive": {
+  "gruppe": "G1",
+  "alle": {
+   "n": 65,
+   "frage_pct": 57,
+   "fragezeichen_pct": 37,
+   "zahl_pct": 14,
+   "superlativ_pct": 11,
+   "extremmarker_pct": 22,
+   "woerter_median": 11,
+   "zeichen_median": 67
+  },
+  "flops": {
+   "n": 21,
+   "frage_pct": 48,
+   "fragezeichen_pct": 38,
+   "zahl_pct": 5,
+   "superlativ_pct": 10,
+   "extremmarker_pct": 33,
+   "woerter_median": 11,
+   "zeichen_median": 62
+  },
+  "treffer": {
+   "n": 21,
+   "frage_pct": 57,
+   "fragezeichen_pct": 29,
+   "zahl_pct": 24,
+   "superlativ_pct": 19,
+   "extremmarker_pct": 14,
+   "woerter_median": 12,
+   "zeichen_median": 70
+  }
+ },
+ "First Humans": {
+  "gruppe": "G2",
+  "alle": {
+   "n": 50,
+   "frage_pct": 2,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 24,
+   "superlativ_pct": 2,
+   "extremmarker_pct": 26,
+   "woerter_median": 9.5,
+   "zeichen_median": 60.0
+  },
+  "flops": {
+   "n": 16,
+   "frage_pct": 0,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 19,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 19,
+   "woerter_median": 9.0,
+   "zeichen_median": 56.5
+  },
+  "treffer": {
+   "n": 16,
+   "frage_pct": 6,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 25,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 31,
+   "woerter_median": 10.0,
+   "zeichen_median": 61.0
+  }
+ },
+ "Folks of Yore": {
+  "gruppe": "G2",
+  "alle": {
+   "n": 21,
+   "frage_pct": 38,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 10,
+   "superlativ_pct": 5,
+   "extremmarker_pct": 33,
+   "woerter_median": 9,
+   "zeichen_median": 54
+  },
+  "flops": {
+   "n": 7,
+   "frage_pct": 29,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 0,
+   "superlativ_pct": 14,
+   "extremmarker_pct": 43,
+   "woerter_median": 10,
+   "zeichen_median": 54
+  },
+  "treffer": {
+   "n": 7,
+   "frage_pct": 43,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 14,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 0,
+   "woerter_median": 8,
+   "zeichen_median": 55
+  }
+ },
+ "Historically": {
+  "gruppe": "G2",
+  "alle": {
+   "n": 21,
+   "frage_pct": 10,
+   "fragezeichen_pct": 5,
+   "zahl_pct": 14,
+   "superlativ_pct": 24,
+   "extremmarker_pct": 29,
+   "woerter_median": 5,
+   "zeichen_median": 29
+  },
+  "flops": {
+   "n": 7,
+   "frage_pct": 14,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 14,
+   "superlativ_pct": 29,
+   "extremmarker_pct": 29,
+   "woerter_median": 5,
+   "zeichen_median": 28
+  },
+  "treffer": {
+   "n": 7,
+   "frage_pct": 14,
+   "fragezeichen_pct": 14,
+   "zahl_pct": 29,
+   "superlativ_pct": 29,
+   "extremmarker_pct": 29,
+   "woerter_median": 4,
+   "zeichen_median": 26
+  }
+ },
+ "History Mapped Out": {
+  "gruppe": "G2",
+  "alle": {
+   "n": 134,
+   "frage_pct": 6,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 7,
+   "superlativ_pct": 5,
+   "extremmarker_pct": 4,
+   "woerter_median": 9.0,
+   "zeichen_median": 51.5
+  },
+  "flops": {
+   "n": 44,
+   "frage_pct": 5,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 16,
+   "superlativ_pct": 7,
+   "extremmarker_pct": 5,
+   "woerter_median": 9.0,
+   "zeichen_median": 52.5
+  },
+  "treffer": {
+   "n": 44,
+   "frage_pct": 2,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 5,
+   "superlativ_pct": 5,
+   "extremmarker_pct": 5,
+   "woerter_median": 8.5,
+   "zeichen_median": 50.0
+  }
+ },
+ "Professor Historian": {
+  "gruppe": "G2",
+  "alle": {
+   "n": 24,
+   "frage_pct": 0,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 12,
+   "superlativ_pct": 50,
+   "extremmarker_pct": 25,
+   "woerter_median": 6.5,
+   "zeichen_median": 42.0
+  },
+  "flops": {
+   "n": 8,
+   "frage_pct": 0,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 12,
+   "superlativ_pct": 25,
+   "extremmarker_pct": 38,
+   "woerter_median": 7.0,
+   "zeichen_median": 47.5
+  },
+  "treffer": {
+   "n": 8,
+   "frage_pct": 0,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 25,
+   "superlativ_pct": 62,
+   "extremmarker_pct": 12,
+   "woerter_median": 6.0,
+   "zeichen_median": 41.5
+  }
+ },
+ "quack doc": {
+  "gruppe": "G2",
+  "alle": {
+   "n": 126,
+   "frage_pct": 6,
+   "fragezeichen_pct": 1,
+   "zahl_pct": 13,
+   "superlativ_pct": 25,
+   "extremmarker_pct": 18,
+   "woerter_median": 6.0,
+   "zeichen_median": 43.0
+  },
+  "flops": {
+   "n": 42,
+   "frage_pct": 10,
+   "fragezeichen_pct": 2,
+   "zahl_pct": 14,
+   "superlativ_pct": 31,
+   "extremmarker_pct": 29,
+   "woerter_median": 7.0,
+   "zeichen_median": 40.5
+  },
+  "treffer": {
+   "n": 42,
+   "frage_pct": 2,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 17,
+   "superlativ_pct": 31,
+   "extremmarker_pct": 12,
+   "woerter_median": 6.0,
+   "zeichen_median": 44.0
+  }
+ },
+ "Endless Origins": {
+  "gruppe": "G3",
+  "alle": {
+   "n": 38,
+   "frage_pct": 5,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 92,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 18,
+   "woerter_median": 12.0,
+   "zeichen_median": 61.5
+  },
+  "flops": {
+   "n": 12,
+   "frage_pct": 17,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 75,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 25,
+   "woerter_median": 11.0,
+   "zeichen_median": 56.0
+  },
+  "treffer": {
+   "n": 12,
+   "frage_pct": 0,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 100,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 17,
+   "woerter_median": 12.0,
+   "zeichen_median": 61.5
+  }
+ },
+ "ExplainMatics": {
+  "gruppe": "G3",
+  "alle": {
+   "n": 10,
+   "frage_pct": 50,
+   "fragezeichen_pct": 30,
+   "zahl_pct": 40,
+   "superlativ_pct": 20,
+   "extremmarker_pct": 40,
+   "woerter_median": 8.0,
+   "zeichen_median": 46.5
+  },
+  "flops": {
+   "n": 3,
+   "frage_pct": 33,
+   "fragezeichen_pct": 33,
+   "zahl_pct": 67,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 33,
+   "woerter_median": 8,
+   "zeichen_median": 44
+  },
+  "treffer": {
+   "n": 3,
+   "frage_pct": 100,
+   "fragezeichen_pct": 33,
+   "zahl_pct": 33,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 67,
+   "woerter_median": 8,
+   "zeichen_median": 51
+  }
+ },
+ "Histor": {
+  "gruppe": "G3",
+  "alle": {
+   "n": 26,
+   "frage_pct": 8,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 0,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 0,
+   "woerter_median": 14.0,
+   "zeichen_median": 81.0
+  },
+  "flops": {
+   "n": 8,
+   "frage_pct": 0,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 0,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 0,
+   "woerter_median": 14.0,
+   "zeichen_median": 81.0
+  },
+  "treffer": {
+   "n": 8,
+   "frage_pct": 12,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 0,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 0,
+   "woerter_median": 14.0,
+   "zeichen_median": 81.0
+  }
+ },
+ "HUMAN-ISH": {
+  "gruppe": "G3",
+  "alle": {
+   "n": 34,
+   "frage_pct": 79,
+   "fragezeichen_pct": 71,
+   "zahl_pct": 3,
+   "superlativ_pct": 3,
+   "extremmarker_pct": 9,
+   "woerter_median": 8.0,
+   "zeichen_median": 49.5
+  },
+  "flops": {
+   "n": 11,
+   "frage_pct": 82,
+   "fragezeichen_pct": 82,
+   "zahl_pct": 9,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 18,
+   "woerter_median": 8,
+   "zeichen_median": 49
+  },
+  "treffer": {
+   "n": 11,
+   "frage_pct": 82,
+   "fragezeichen_pct": 82,
+   "zahl_pct": 0,
+   "superlativ_pct": 9,
+   "extremmarker_pct": 9,
+   "woerter_median": 8,
+   "zeichen_median": 47
+  }
+ },
+ "Million-Year Prehistory": {
+  "gruppe": "G3",
+  "alle": {
+   "n": 11,
+   "frage_pct": 0,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 18,
+   "superlativ_pct": 9,
+   "extremmarker_pct": 0,
+   "woerter_median": 14,
+   "zeichen_median": 74
+  },
+  "flops": {
+   "n": 3,
+   "frage_pct": 0,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 67,
+   "superlativ_pct": 33,
+   "extremmarker_pct": 0,
+   "woerter_median": 15,
+   "zeichen_median": 85
+  },
+  "treffer": {
+   "n": 3,
+   "frage_pct": 0,
+   "fragezeichen_pct": 0,
+   "zahl_pct": 0,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 0,
+   "woerter_median": 13,
+   "zeichen_median": 74
+  }
+ },
+ "Sten Explains": {
+  "gruppe": "G3",
+  "alle": {
+   "n": 18,
+   "frage_pct": 100,
+   "fragezeichen_pct": 83,
+   "zahl_pct": 0,
+   "superlativ_pct": 6,
+   "extremmarker_pct": 11,
+   "woerter_median": 8.0,
+   "zeichen_median": 44.5
+  },
+  "flops": {
+   "n": 6,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 0,
+   "superlativ_pct": 0,
+   "extremmarker_pct": 0,
+   "woerter_median": 7.5,
+   "zeichen_median": 48.5
+  },
+  "treffer": {
+   "n": 6,
+   "frage_pct": 100,
+   "fragezeichen_pct": 50,
+   "zahl_pct": 0,
+   "superlativ_pct": 17,
+   "extremmarker_pct": 17,
+   "woerter_median": 7.5,
+   "zeichen_median": 45.5
+  }
+ },
+ "ThenFolk": {
+  "gruppe": "G3",
+  "alle": {
+   "n": 54,
+   "frage_pct": 98,
+   "fragezeichen_pct": 96,
+   "zahl_pct": 0,
+   "superlativ_pct": 15,
+   "extremmarker_pct": 22,
+   "woerter_median": 8.0,
+   "zeichen_median": 53.5
+  },
+  "flops": {
+   "n": 18,
+   "frage_pct": 100,
+   "fragezeichen_pct": 100,
+   "zahl_pct": 0,
+   "superlativ_pct": 22,
+   "extremmarker_pct": 17,
+   "woerter_median": 8.0,
+   "zeichen_median": 44.5
+  },
+  "treffer": {
+   "n": 18,
+   "frage_pct": 94,
+   "fragezeichen_pct": 89,
+   "zahl_pct": 0,
+   "superlativ_pct": 11,
+   "extremmarker_pct": 33,
+   "woerter_median": 9.0,
+   "zeichen_median": 54.5
+  }
+ },
+ "_gruppen": {
+  "G1": {
+   "n": 293,
+   "frage_pct": 76,
+   "fragezeichen_pct": 64,
+   "zahl_pct": 10,
+   "superlativ_pct": 8,
+   "extremmarker_pct": 20,
+   "woerter_median": 8,
+   "zeichen_median": 49
+  },
+  "G2": {
+   "n": 376,
+   "frage_pct": 7,
+   "fragezeichen_pct": 1,
+   "zahl_pct": 12,
+   "superlativ_pct": 15,
+   "extremmarker_pct": 16,
+   "woerter_median": 7.0,
+   "zeichen_median": 48.0
+  },
+  "G3": {
+   "n": 191,
+   "frage_pct": 56,
+   "fragezeichen_pct": 49,
+   "zahl_pct": 22,
+   "superlativ_pct": 7,
+   "extremmarker_pct": 15,
+   "woerter_median": 9,
+   "zeichen_median": 55
+  }
+ },
+ "_wortfrequenz": {
+  "G1": {
+   "n_je_drittel": 97,
+   "woerter": [
+    {
+     "wort": "age",
+     "treffer_n": 12,
+     "flop_n": 27,
+     "treffer_pct": 12.4,
+     "flop_pct": 27.8,
+     "differenz_pp": -15.5
+    },
+    {
+     "wort": "ice",
+     "treffer_n": 14,
+     "flop_n": 26,
+     "treffer_pct": 14.4,
+     "flop_pct": 26.8,
+     "differenz_pp": -12.4
+    },
+    {
+     "wort": "ancient",
+     "treffer_n": 54,
+     "flop_n": 43,
+     "treffer_pct": 55.7,
+     "flop_pct": 44.3,
+     "differenz_pp": 11.3
+    },
+    {
+     "wort": "humans",
+     "treffer_n": 61,
+     "flop_n": 52,
+     "treffer_pct": 62.9,
+     "flop_pct": 53.6,
+     "differenz_pp": 9.3
+    },
+    {
+     "wort": "during",
+     "treffer_n": 10,
+     "flop_n": 16,
+     "treffer_pct": 10.3,
+     "flop_pct": 16.5,
+     "differenz_pp": -6.2
+    },
+    {
+     "wort": "about",
+     "treffer_n": 0,
+     "flop_n": 5,
+     "treffer_pct": 0.0,
+     "flop_pct": 5.2,
+     "differenz_pp": -5.2
+    },
+    {
+     "wort": "truth",
+     "treffer_n": 0,
+     "flop_n": 4,
+     "treffer_pct": 0.0,
+     "flop_pct": 4.1,
+     "differenz_pp": -4.1
+    },
+    {
+     "wort": "actually",
+     "treffer_n": 5,
+     "flop_n": 1,
+     "treffer_pct": 5.2,
+     "flop_pct": 1.0,
+     "differenz_pp": 4.1
+    },
+    {
+     "wort": "dangerous",
+     "treffer_n": 0,
+     "flop_n": 4,
+     "treffer_pct": 0.0,
+     "flop_pct": 4.1,
+     "differenz_pp": -4.1
+    },
+    {
+     "wort": "animals",
+     "treffer_n": 7,
+     "flop_n": 3,
+     "treffer_pct": 7.2,
+     "flop_pct": 3.1,
+     "differenz_pp": 4.1
+    },
+    {
+     "wort": "human",
+     "treffer_n": 8,
+     "flop_n": 4,
+     "treffer_pct": 8.2,
+     "flop_pct": 4.1,
+     "differenz_pp": 4.1
+    },
+    {
+     "wort": "rain",
+     "treffer_n": 4,
+     "flop_n": 0,
+     "treffer_pct": 4.1,
+     "flop_pct": 0.0,
+     "differenz_pp": 4.1
+    },
+    {
+     "wort": "mammoths",
+     "treffer_n": 0,
+     "flop_n": 4,
+     "treffer_pct": 0.0,
+     "flop_pct": 4.1,
+     "differenz_pp": -4.1
+    },
+    {
+     "wort": "their",
+     "treffer_n": 7,
+     "flop_n": 4,
+     "treffer_pct": 7.2,
+     "flop_pct": 4.1,
+     "differenz_pp": 3.1
+    },
+    {
+     "wort": "wild",
+     "treffer_n": 3,
+     "flop_n": 0,
+     "treffer_pct": 3.1,
+     "flop_pct": 0.0,
+     "differenz_pp": 3.1
+    },
+    {
+     "wort": "started",
+     "treffer_n": 3,
+     "flop_n": 0,
+     "treffer_pct": 3.1,
+     "flop_pct": 0.0,
+     "differenz_pp": 3.1
+    },
+    {
+     "wort": "terrifying",
+     "treffer_n": 3,
+     "flop_n": 0,
+     "treffer_pct": 3.1,
+     "flop_pct": 0.0,
+     "differenz_pp": 3.1
+    },
+    {
+     "wort": "first",
+     "treffer_n": 1,
+     "flop_n": 4,
+     "treffer_pct": 1.0,
+     "flop_pct": 4.1,
+     "differenz_pp": -3.1
+    },
+    {
+     "wort": "hidden",
+     "treffer_n": 0,
+     "flop_n": 3,
+     "treffer_pct": 0.0,
+     "flop_pct": 3.1,
+     "differenz_pp": -3.1
+    },
+    {
+     "wort": "men",
+     "treffer_n": 0,
+     "flop_n": 3,
+     "treffer_pct": 0.0,
+     "flop_pct": 3.1,
+     "differenz_pp": -3.1
+    }
+   ]
+  },
+  "G2": {
+   "n_je_drittel": 125,
+   "woerter": [
+    {
+     "wort": "iceberg",
+     "treffer_n": 34,
+     "flop_n": 18,
+     "treffer_pct": 27.2,
+     "flop_pct": 14.4,
+     "differenz_pp": 12.8
+    },
+    {
+     "wort": "explained",
+     "treffer_n": 33,
+     "flop_n": 17,
+     "treffer_pct": 26.4,
+     "flop_pct": 13.6,
+     "differenz_pp": 12.8
+    },
+    {
+     "wort": "europe",
+     "treffer_n": 11,
+     "flop_n": 0,
+     "treffer_pct": 8.8,
+     "flop_pct": 0.0,
+     "differenz_pp": 8.8
+    },
+    {
+     "wort": "reveals",
+     "treffer_n": 4,
+     "flop_n": 12,
+     "treffer_pct": 3.2,
+     "flop_pct": 9.6,
+     "differenz_pp": -6.4
+    },
+    {
+     "wort": "ancient",
+     "treffer_n": 11,
+     "flop_n": 19,
+     "treffer_pct": 8.8,
+     "flop_pct": 15.2,
+     "differenz_pp": -6.4
+    },
+    {
+     "wort": "human",
+     "treffer_n": 1,
+     "flop_n": 8,
+     "treffer_pct": 0.8,
+     "flop_pct": 6.4,
+     "differenz_pp": -5.6
+    },
+    {
+     "wort": "rise",
+     "treffer_n": 7,
+     "flop_n": 0,
+     "treffer_pct": 5.6,
+     "flop_pct": 0.0,
+     "differenz_pp": 5.6
+    },
+    {
+     "wort": "war",
+     "treffer_n": 18,
+     "flop_n": 11,
+     "treffer_pct": 14.4,
+     "flop_pct": 8.8,
+     "differenz_pp": 5.6
+    },
+    {
+     "wort": "dna",
+     "treffer_n": 4,
+     "flop_n": 10,
+     "treffer_pct": 3.2,
+     "flop_pct": 8.0,
+     "differenz_pp": -4.8
+    },
+    {
+     "wort": "empire",
+     "treffer_n": 7,
+     "flop_n": 1,
+     "treffer_pct": 5.6,
+     "flop_pct": 0.8,
+     "differenz_pp": 4.8
+    },
+    {
+     "wort": "time",
+     "treffer_n": 1,
+     "flop_n": 7,
+     "treffer_pct": 0.8,
+     "flop_pct": 5.6,
+     "differenz_pp": -4.8
+    },
+    {
+     "wort": "disturbing",
+     "treffer_n": 23,
+     "flop_n": 17,
+     "treffer_pct": 18.4,
+     "flop_pct": 13.6,
+     "differenz_pp": 4.8
+    },
+    {
+     "wort": "scientists",
+     "treffer_n": 1,
+     "flop_n": 7,
+     "treffer_pct": 0.8,
+     "flop_pct": 5.6,
+     "differenz_pp": -4.8
+    },
+    {
+     "wort": "hidden",
+     "treffer_n": 1,
+     "flop_n": 7,
+     "treffer_pct": 0.8,
+     "flop_pct": 5.6,
+     "differenz_pp": -4.8
+    },
+    {
+     "wort": "about",
+     "treffer_n": 0,
+     "flop_n": 5,
+     "treffer_pct": 0.0,
+     "flop_pct": 4.0,
+     "differenz_pp": -4.0
+    },
+    {
+     "wort": "evil",
+     "treffer_n": 1,
+     "flop_n": 6,
+     "treffer_pct": 0.8,
+     "flop_pct": 4.8,
+     "differenz_pp": -4.0
+    },
+    {
+     "wort": "england",
+     "treffer_n": 5,
+     "flop_n": 0,
+     "treffer_pct": 4.0,
+     "flop_pct": 0.0,
+     "differenz_pp": 4.0
+    },
+    {
+     "wort": "holy",
+     "treffer_n": 5,
+     "flop_n": 0,
+     "treffer_pct": 4.0,
+     "flop_pct": 0.0,
+     "differenz_pp": 4.0
+    },
+    {
+     "wort": "every",
+     "treffer_n": 3,
+     "flop_n": 7,
+     "treffer_pct": 2.4,
+     "flop_pct": 5.6,
+     "differenz_pp": -3.2
+    },
+    {
+     "wort": "france",
+     "treffer_n": 4,
+     "flop_n": 0,
+     "treffer_pct": 3.2,
+     "flop_pct": 0.0,
+     "differenz_pp": 3.2
+    }
+   ]
+  },
+  "G3": {
+   "n_je_drittel": 63,
+   "woerter": [
+    {
+     "wort": "age",
+     "treffer_n": 12,
+     "flop_n": 0,
+     "treffer_pct": 19.0,
+     "flop_pct": 0.0,
+     "differenz_pp": 19.0
+    },
+    {
+     "wort": "life",
+     "treffer_n": 17,
+     "flop_n": 6,
+     "treffer_pct": 27.0,
+     "flop_pct": 9.5,
+     "differenz_pp": 17.5
+    },
+    {
+     "wort": "ancient",
+     "treffer_n": 26,
+     "flop_n": 36,
+     "treffer_pct": 41.3,
+     "flop_pct": 57.1,
+     "differenz_pp": -15.9
+    },
+    {
+     "wort": "years",
+     "treffer_n": 18,
+     "flop_n": 9,
+     "treffer_pct": 28.6,
+     "flop_pct": 14.3,
+     "differenz_pp": 14.3
+    },
+    {
+     "wort": "ancestors",
+     "treffer_n": 12,
+     "flop_n": 4,
+     "treffer_pct": 19.0,
+     "flop_pct": 6.3,
+     "differenz_pp": 12.7
+    },
+    {
+     "wort": "photos",
+     "treffer_n": 12,
+     "flop_n": 4,
+     "treffer_pct": 19.0,
+     "flop_pct": 6.3,
+     "differenz_pp": 12.7
+    },
+    {
+     "wort": "ago",
+     "treffer_n": 17,
+     "flop_n": 9,
+     "treffer_pct": 27.0,
+     "flop_pct": 14.3,
+     "differenz_pp": 12.7
+    },
+    {
+     "wort": "raw",
+     "treffer_n": 12,
+     "flop_n": 4,
+     "treffer_pct": 19.0,
+     "flop_pct": 6.3,
+     "differenz_pp": 12.7
+    },
+    {
+     "wort": "expose",
+     "treffer_n": 12,
+     "flop_n": 4,
+     "treffer_pct": 19.0,
+     "flop_pct": 6.3,
+     "differenz_pp": 12.7
+    },
+    {
+     "wort": "these",
+     "treffer_n": 12,
+     "flop_n": 4,
+     "treffer_pct": 19.0,
+     "flop_pct": 6.3,
+     "differenz_pp": 12.7
+    },
+    {
+     "wort": "reality",
+     "treffer_n": 12,
+     "flop_n": 4,
+     "treffer_pct": 19.0,
+     "flop_pct": 6.3,
+     "differenz_pp": 12.7
+    },
+    {
+     "wort": "humans",
+     "treffer_n": 36,
+     "flop_n": 43,
+     "treffer_pct": 57.1,
+     "flop_pct": 68.3,
+     "differenz_pp": -11.1
+    },
+    {
+     "wort": "even",
+     "treffer_n": 11,
+     "flop_n": 4,
+     "treffer_pct": 17.5,
+     "flop_pct": 6.3,
+     "differenz_pp": 11.1
+    },
+    {
+     "wort": "our",
+     "treffer_n": 12,
+     "flop_n": 5,
+     "treffer_pct": 19.0,
+     "flop_pct": 7.9,
+     "differenz_pp": 11.1
+    },
+    {
+     "wort": "survive",
+     "treffer_n": 15,
+     "flop_n": 9,
+     "treffer_pct": 23.8,
+     "flop_pct": 14.3,
+     "differenz_pp": 9.5
+    },
+    {
+     "wort": "they",
+     "treffer_n": 12,
+     "flop_n": 6,
+     "treffer_pct": 19.0,
+     "flop_pct": 9.5,
+     "differenz_pp": 9.5
+    },
+    {
+     "wort": "ice",
+     "treffer_n": 6,
+     "flop_n": 0,
+     "treffer_pct": 9.5,
+     "flop_pct": 0.0,
+     "differenz_pp": 9.5
+    },
+    {
+     "wort": "millions",
+     "treffer_n": 4,
+     "flop_n": 0,
+     "treffer_pct": 6.3,
+     "flop_pct": 0.0,
+     "differenz_pp": 6.3
+    },
+    {
+     "wort": "babies",
+     "treffer_n": 0,
+     "flop_n": 4,
+     "treffer_pct": 0.0,
+     "flop_pct": 6.3,
+     "differenz_pp": -6.3
+    },
+    {
+     "wort": "habilis",
+     "treffer_n": 4,
+     "flop_n": 0,
+     "treffer_pct": 6.3,
+     "flop_pct": 0.0,
+     "differenz_pp": 6.3
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1302 @@
+{
+ "UuES_JDWBIo": {
+  "videoId": "UuES_JDWBIo",
+  "woerter": 1294,
+  "dauer_s": 403,
+  "wpm": 193,
+  "kernfrage_pct": 4.8,
+  "antwort_pct": 2.8,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 36.3,
+   "wir": 27.8,
+   "man": 14.7,
+   "sie": 9.3
+  },
+  "fuenftel": [
+   {
+    "woerter": 263,
+    "fragezeichen": 0,
+    "zahlen": 3,
+    "zweite_person": 11
+   },
+   {
+    "woerter": 260,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 260,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 7
+   },
+   {
+    "woerter": 248,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 7
+   },
+   {
+    "woerter": 263,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 22
+   }
+  ],
+  "satzlaenge_median": 6.0,
+  "saetze": 206,
+  "kurzwort_anteil_pct": 76.6
+ },
+ "6TzPQ0046lw": {
+  "videoId": "6TzPQ0046lw",
+  "woerter": 1422,
+  "dauer_s": 483,
+  "wpm": 177,
+  "kernfrage_pct": 10.5,
+  "antwort_pct": 39.4,
+  "antwort_drittel": "zweites",
+  "pronomen_pro_1000w": {
+   "du": 18.3,
+   "wir": 8.4,
+   "man": 23.9,
+   "sie": 24.6
+  },
+  "fuenftel": [
+   {
+    "woerter": 290,
+    "fragezeichen": 1,
+    "zahlen": 1,
+    "zweite_person": 19
+   },
+   {
+    "woerter": 283,
+    "fragezeichen": 0,
+    "zahlen": 4,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 272,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 298,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 279,
+    "fragezeichen": 1,
+    "zahlen": 1,
+    "zweite_person": 4
+   }
+  ],
+  "satzlaenge_median": 6.0,
+  "saetze": 238,
+  "kurzwort_anteil_pct": 72.8
+ },
+ "rpoVSR-9qNI": {
+  "videoId": "rpoVSR-9qNI",
+  "woerter": 1702,
+  "dauer_s": 543,
+  "wpm": 188,
+  "kernfrage_pct": 46.8,
+  "antwort_pct": 24.8,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 67.0,
+   "wir": 1.2,
+   "man": 6.5,
+   "sie": 8.2
+  },
+  "fuenftel": [
+   {
+    "woerter": 345,
+    "fragezeichen": 1,
+    "zahlen": 10,
+    "zweite_person": 27
+   },
+   {
+    "woerter": 323,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 21
+   },
+   {
+    "woerter": 316,
+    "fragezeichen": 0,
+    "zahlen": 4,
+    "zweite_person": 12
+   },
+   {
+    "woerter": 350,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 21
+   },
+   {
+    "woerter": 368,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 33
+   }
+  ],
+  "satzlaenge_median": 7.0,
+  "saetze": 262,
+  "kurzwort_anteil_pct": 81.6
+ },
+ "9AFO6MHy8y4": {
+  "videoId": "9AFO6MHy8y4",
+  "woerter": 1222,
+  "dauer_s": 363,
+  "wpm": 202,
+  "kernfrage_pct": 10.4,
+  "antwort_pct": 4.1,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 10.6,
+   "wir": 4.9,
+   "man": 16.4,
+   "sie": 22.9
+  },
+  "fuenftel": [
+   {
+    "woerter": 261,
+    "fragezeichen": 1,
+    "zahlen": 3,
+    "zweite_person": 4
+   },
+   {
+    "woerter": 228,
+    "fragezeichen": 0,
+    "zahlen": 3,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 245,
+    "fragezeichen": 2,
+    "zahlen": 2,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 229,
+    "fragezeichen": 1,
+    "zahlen": 3,
+    "zweite_person": 3
+   },
+   {
+    "woerter": 259,
+    "fragezeichen": 0,
+    "zahlen": 6,
+    "zweite_person": 5
+   }
+  ],
+  "satzlaenge_median": 7,
+  "saetze": 185,
+  "kurzwort_anteil_pct": 79.1
+ },
+ "LIwUH_R6oJY": {
+  "videoId": "LIwUH_R6oJY",
+  "woerter": 1745,
+  "dauer_s": 487,
+  "wpm": 215,
+  "kernfrage_pct": 6.9,
+  "antwort_pct": 46.8,
+  "antwort_drittel": "zweites",
+  "pronomen_pro_1000w": {
+   "du": 1.7,
+   "wir": 3.4,
+   "man": 4.0,
+   "sie": 18.3
+  },
+  "fuenftel": [
+   {
+    "woerter": 373,
+    "fragezeichen": 2,
+    "zahlen": 2,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 339,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 313,
+    "fragezeichen": 2,
+    "zahlen": 1,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 369,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 351,
+    "fragezeichen": 1,
+    "zahlen": 1,
+    "zweite_person": 2
+   }
+  ],
+  "satzlaenge_median": 7,
+  "saetze": 259,
+  "kurzwort_anteil_pct": 81.1
+ },
+ "vQ6M4MIOI0U": {
+  "videoId": "vQ6M4MIOI0U",
+  "woerter": 1703,
+  "dauer_s": 504,
+  "wpm": 203,
+  "kernfrage_pct": 32.3,
+  "antwort_pct": 39.4,
+  "antwort_drittel": "zweites",
+  "pronomen_pro_1000w": {
+   "du": 4.7,
+   "wir": 0.0,
+   "man": 14.7,
+   "sie": 22.3
+  },
+  "fuenftel": [
+   {
+    "woerter": 356,
+    "fragezeichen": 0,
+    "zahlen": 6,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 319,
+    "fragezeichen": 2,
+    "zahlen": 8,
+    "zweite_person": 2
+   },
+   {
+    "woerter": 358,
+    "fragezeichen": 0,
+    "zahlen": 3,
+    "zweite_person": 3
+   },
+   {
+    "woerter": 329,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 341,
+    "fragezeichen": 0,
+    "zahlen": 7,
+    "zweite_person": 3
+   }
+  ],
+  "satzlaenge_median": 7.0,
+  "saetze": 260,
+  "kurzwort_anteil_pct": 79.2
+ },
+ "OCr6NteWSQ8": {
+  "videoId": "OCr6NteWSQ8",
+  "woerter": 1546,
+  "dauer_s": 485,
+  "wpm": 191,
+  "kernfrage_pct": 33.1,
+  "antwort_pct": 6.1,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 2.6,
+   "wir": 18.1,
+   "man": 10.3,
+   "sie": 34.3
+  },
+  "fuenftel": [
+   {
+    "woerter": 346,
+    "fragezeichen": 1,
+    "zahlen": 3,
+    "zweite_person": 3
+   },
+   {
+    "woerter": 319,
+    "fragezeichen": 0,
+    "zahlen": 4,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 286,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 299,
+    "fragezeichen": 0,
+    "zahlen": 5,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 296,
+    "fragezeichen": 1,
+    "zahlen": 1,
+    "zweite_person": 0
+   }
+  ],
+  "satzlaenge_median": 6.0,
+  "saetze": 246,
+  "kurzwort_anteil_pct": 76.4
+ },
+ "QP1maS6hYn4": {
+  "videoId": "QP1maS6hYn4",
+  "woerter": 2079,
+  "dauer_s": 562,
+  "wpm": 222,
+  "kernfrage_pct": 55.5,
+  "antwort_pct": 27.0,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 30.8,
+   "wir": 8.2,
+   "man": 18.8,
+   "sie": 23.6
+  },
+  "fuenftel": [
+   {
+    "woerter": 421,
+    "fragezeichen": 0,
+    "zahlen": 11,
+    "zweite_person": 25
+   },
+   {
+    "woerter": 392,
+    "fragezeichen": 0,
+    "zahlen": 6,
+    "zweite_person": 6
+   },
+   {
+    "woerter": 431,
+    "fragezeichen": 0,
+    "zahlen": 9,
+    "zweite_person": 11
+   },
+   {
+    "woerter": 402,
+    "fragezeichen": 0,
+    "zahlen": 11,
+    "zweite_person": 7
+   },
+   {
+    "woerter": 433,
+    "fragezeichen": 1,
+    "zahlen": 9,
+    "zweite_person": 15
+   }
+  ],
+  "satzlaenge_median": 7.0,
+  "saetze": 310,
+  "kurzwort_anteil_pct": 82.3
+ },
+ "dp3jYZXKOos": {
+  "videoId": "dp3jYZXKOos",
+  "woerter": 2556,
+  "dauer_s": 690,
+  "wpm": 222,
+  "kernfrage_pct": null,
+  "antwort_pct": 8.3,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 33.3,
+   "wir": 6.3,
+   "man": 13.7,
+   "sie": 16.8
+  },
+  "fuenftel": [
+   {
+    "woerter": 503,
+    "fragezeichen": 2,
+    "zahlen": 1,
+    "zweite_person": 23
+   },
+   {
+    "woerter": 513,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 27
+   },
+   {
+    "woerter": 483,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 7
+   },
+   {
+    "woerter": 530,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 16
+   },
+   {
+    "woerter": 527,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 12
+   }
+  ],
+  "satzlaenge_median": 7,
+  "saetze": 371,
+  "kurzwort_anteil_pct": 85.4
+ },
+ "0WtFuiHn2-g": {
+  "videoId": "0WtFuiHn2-g",
+  "woerter": 2747,
+  "dauer_s": 767,
+  "wpm": 215,
+  "kernfrage_pct": 90.7,
+  "antwort_pct": 1.8,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 21.8,
+   "wir": 1.8,
+   "man": 9.8,
+   "sie": 9.5
+  },
+  "fuenftel": [
+   {
+    "woerter": 561,
+    "fragezeichen": 3,
+    "zahlen": 6,
+    "zweite_person": 22
+   },
+   {
+    "woerter": 555,
+    "fragezeichen": 0,
+    "zahlen": 3,
+    "zweite_person": 7
+   },
+   {
+    "woerter": 539,
+    "fragezeichen": 0,
+    "zahlen": 9,
+    "zweite_person": 11
+   },
+   {
+    "woerter": 559,
+    "fragezeichen": 0,
+    "zahlen": 6,
+    "zweite_person": 9
+   },
+   {
+    "woerter": 533,
+    "fragezeichen": 0,
+    "zahlen": 8,
+    "zweite_person": 11
+   }
+  ],
+  "satzlaenge_median": 7,
+  "saetze": 407,
+  "kurzwort_anteil_pct": 82.0
+ },
+ "SD7XyG2wd1k": {
+  "videoId": "SD7XyG2wd1k",
+  "woerter": 2439,
+  "dauer_s": 696,
+  "wpm": 210,
+  "kernfrage_pct": 6.9,
+  "antwort_pct": 3.5,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 25.0,
+   "wir": 2.1,
+   "man": 16.8,
+   "sie": 15.2
+  },
+  "fuenftel": [
+   {
+    "woerter": 501,
+    "fragezeichen": 0,
+    "zahlen": 4,
+    "zweite_person": 26
+   },
+   {
+    "woerter": 503,
+    "fragezeichen": 1,
+    "zahlen": 5,
+    "zweite_person": 9
+   },
+   {
+    "woerter": 450,
+    "fragezeichen": 0,
+    "zahlen": 6,
+    "zweite_person": 6
+   },
+   {
+    "woerter": 474,
+    "fragezeichen": 1,
+    "zahlen": 8,
+    "zweite_person": 9
+   },
+   {
+    "woerter": 511,
+    "fragezeichen": 1,
+    "zahlen": 0,
+    "zweite_person": 11
+   }
+  ],
+  "satzlaenge_median": 6,
+  "saetze": 381,
+  "kurzwort_anteil_pct": 80.8
+ },
+ "xmQk_oLVau0": {
+  "videoId": "xmQk_oLVau0",
+  "woerter": 2238,
+  "dauer_s": 547,
+  "wpm": 245,
+  "kernfrage_pct": 3.2,
+  "antwort_pct": 4.7,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 20.1,
+   "wir": 11.6,
+   "man": 16.1,
+   "sie": 18.8
+  },
+  "fuenftel": [
+   {
+    "woerter": 450,
+    "fragezeichen": 0,
+    "zahlen": 4,
+    "zweite_person": 7
+   },
+   {
+    "woerter": 438,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 3
+   },
+   {
+    "woerter": 478,
+    "fragezeichen": 1,
+    "zahlen": 4,
+    "zweite_person": 13
+   },
+   {
+    "woerter": 436,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 9
+   },
+   {
+    "woerter": 436,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 13
+   }
+  ],
+  "satzlaenge_median": 7,
+  "saetze": 313,
+  "kurzwort_anteil_pct": 87.1
+ },
+ "ulWFk_L2Ips": {
+  "videoId": "ulWFk_L2Ips",
+  "woerter": 766,
+  "dauer_s": 249,
+  "wpm": 185,
+  "kernfrage_pct": 20.5,
+  "antwort_pct": 18.2,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 67.9,
+   "wir": 2.6,
+   "man": 14.4,
+   "sie": 18.3
+  },
+  "fuenftel": [
+   {
+    "woerter": 161,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 10
+   },
+   {
+    "woerter": 144,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 8
+   },
+   {
+    "woerter": 167,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 13
+   },
+   {
+    "woerter": 151,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 11
+   },
+   {
+    "woerter": 143,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 10
+   }
+  ],
+  "satzlaenge_median": 7.0,
+  "saetze": 120,
+  "kurzwort_anteil_pct": 81.1
+ },
+ "TQd2k1pEXp4": {
+  "videoId": "TQd2k1pEXp4",
+  "woerter": 1588,
+  "dauer_s": 512,
+  "wpm": 186,
+  "kernfrage_pct": 15.6,
+  "antwort_pct": 2.9,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 26.4,
+   "wir": 11.3,
+   "man": 19.5,
+   "sie": 21.4
+  },
+  "fuenftel": [
+   {
+    "woerter": 330,
+    "fragezeichen": 3,
+    "zahlen": 10,
+    "zweite_person": 9
+   },
+   {
+    "woerter": 297,
+    "fragezeichen": 0,
+    "zahlen": 8,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 345,
+    "fragezeichen": 0,
+    "zahlen": 3,
+    "zweite_person": 9
+   },
+   {
+    "woerter": 300,
+    "fragezeichen": 2,
+    "zahlen": 11,
+    "zweite_person": 10
+   },
+   {
+    "woerter": 316,
+    "fragezeichen": 0,
+    "zahlen": 4,
+    "zweite_person": 13
+   }
+  ],
+  "satzlaenge_median": 6.0,
+  "saetze": 256,
+  "kurzwort_anteil_pct": 75.8
+ },
+ "2RJggsjlj4A": {
+  "videoId": "2RJggsjlj4A",
+  "woerter": 1464,
+  "dauer_s": 452,
+  "wpm": 194,
+  "kernfrage_pct": 5.0,
+  "antwort_pct": 90.2,
+  "antwort_drittel": "drittes",
+  "pronomen_pro_1000w": {
+   "du": 19.1,
+   "wir": 45.1,
+   "man": 10.9,
+   "sie": 13.7
+  },
+  "fuenftel": [
+   {
+    "woerter": 296,
+    "fragezeichen": 2,
+    "zahlen": 9,
+    "zweite_person": 14
+   },
+   {
+    "woerter": 285,
+    "fragezeichen": 1,
+    "zahlen": 9,
+    "zweite_person": 3
+   },
+   {
+    "woerter": 310,
+    "fragezeichen": 0,
+    "zahlen": 8,
+    "zweite_person": 6
+   },
+   {
+    "woerter": 299,
+    "fragezeichen": 0,
+    "zahlen": 5,
+    "zweite_person": 5
+   },
+   {
+    "woerter": 274,
+    "fragezeichen": 0,
+    "zahlen": 6,
+    "zweite_person": 0
+   }
+  ],
+  "satzlaenge_median": 7.0,
+  "saetze": 222,
+  "kurzwort_anteil_pct": 82.0
+ },
+ "wt_7Hp7d7I8": {
+  "videoId": "wt_7Hp7d7I8",
+  "woerter": 2241,
+  "dauer_s": 624,
+  "wpm": 215,
+  "kernfrage_pct": 77.3,
+  "antwort_pct": 7.1,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 12.5,
+   "wir": 13.8,
+   "man": 19.6,
+   "sie": 26.8
+  },
+  "fuenftel": [
+   {
+    "woerter": 485,
+    "fragezeichen": 2,
+    "zahlen": 2,
+    "zweite_person": 13
+   },
+   {
+    "woerter": 451,
+    "fragezeichen": 0,
+    "zahlen": 6,
+    "zweite_person": 5
+   },
+   {
+    "woerter": 454,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 4
+   },
+   {
+    "woerter": 432,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 419,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 5
+   }
+  ],
+  "satzlaenge_median": 7.0,
+  "saetze": 316,
+  "kurzwort_anteil_pct": 88.2
+ },
+ "lJVPvTGUftQ": {
+  "videoId": "lJVPvTGUftQ",
+  "woerter": 963,
+  "dauer_s": 314,
+  "wpm": 184,
+  "kernfrage_pct": 6.1,
+  "antwort_pct": 6.9,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 40.5,
+   "wir": 14.5,
+   "man": 31.2,
+   "sie": 23.9
+  },
+  "fuenftel": [
+   {
+    "woerter": 188,
+    "fragezeichen": 2,
+    "zahlen": 6,
+    "zweite_person": 16
+   },
+   {
+    "woerter": 207,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 7
+   },
+   {
+    "woerter": 190,
+    "fragezeichen": 1,
+    "zahlen": 1,
+    "zweite_person": 9
+   },
+   {
+    "woerter": 198,
+    "fragezeichen": 1,
+    "zahlen": 1,
+    "zweite_person": 2
+   },
+   {
+    "woerter": 180,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 5
+   }
+  ],
+  "satzlaenge_median": 6,
+  "saetze": 157,
+  "kurzwort_anteil_pct": 78.3
+ },
+ "9SmcjthU5Yk": {
+  "videoId": "9SmcjthU5Yk",
+  "woerter": 1587,
+  "dauer_s": 591,
+  "wpm": 161,
+  "kernfrage_pct": null,
+  "antwort_pct": 86.7,
+  "antwort_drittel": "drittes",
+  "pronomen_pro_1000w": {
+   "du": 10.1,
+   "wir": 4.4,
+   "man": 7.6,
+   "sie": 11.3
+  },
+  "fuenftel": [
+   {
+    "woerter": 333,
+    "fragezeichen": 0,
+    "zahlen": 9,
+    "zweite_person": 4
+   },
+   {
+    "woerter": 317,
+    "fragezeichen": 0,
+    "zahlen": 8,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 312,
+    "fragezeichen": 0,
+    "zahlen": 7,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 351,
+    "fragezeichen": 0,
+    "zahlen": 7,
+    "zweite_person": 9
+   },
+   {
+    "woerter": 274,
+    "fragezeichen": 0,
+    "zahlen": 8,
+    "zweite_person": 3
+   }
+  ],
+  "satzlaenge_median": 6,
+  "saetze": 257,
+  "kurzwort_anteil_pct": 75.9
+ },
+ "ebFhKmweSHo": {
+  "videoId": "ebFhKmweSHo",
+  "woerter": 958,
+  "dauer_s": 321,
+  "wpm": 179,
+  "kernfrage_pct": 98.3,
+  "antwort_pct": 6.0,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 92.9,
+   "wir": 2.1,
+   "man": 11.5,
+   "sie": 16.7
+  },
+  "fuenftel": [
+   {
+    "woerter": 203,
+    "fragezeichen": 2,
+    "zahlen": 1,
+    "zweite_person": 24
+   },
+   {
+    "woerter": 194,
+    "fragezeichen": 2,
+    "zahlen": 1,
+    "zweite_person": 20
+   },
+   {
+    "woerter": 190,
+    "fragezeichen": 0,
+    "zahlen": 7,
+    "zweite_person": 21
+   },
+   {
+    "woerter": 198,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 10
+   },
+   {
+    "woerter": 173,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 14
+   }
+  ],
+  "satzlaenge_median": 6,
+  "saetze": 159,
+  "kurzwort_anteil_pct": 75.2
+ },
+ "dpGpFq9RZfg": {
+  "videoId": "dpGpFq9RZfg",
+  "woerter": 1569,
+  "dauer_s": 616,
+  "wpm": 153,
+  "kernfrage_pct": 13.4,
+  "antwort_pct": 12.6,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 3.8,
+   "wir": 7.6,
+   "man": 18.5,
+   "sie": 13.4
+  },
+  "fuenftel": [
+   {
+    "woerter": 351,
+    "fragezeichen": 3,
+    "zahlen": 5,
+    "zweite_person": 3
+   },
+   {
+    "woerter": 305,
+    "fragezeichen": 0,
+    "zahlen": 5,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 305,
+    "fragezeichen": 0,
+    "zahlen": 7,
+    "zweite_person": 2
+   },
+   {
+    "woerter": 272,
+    "fragezeichen": 0,
+    "zahlen": 10,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 336,
+    "fragezeichen": 0,
+    "zahlen": 7,
+    "zweite_person": 1
+   }
+  ],
+  "satzlaenge_median": 6.0,
+  "saetze": 282,
+  "kurzwort_anteil_pct": 73.0
+ },
+ "H6pReZzpmfE": {
+  "videoId": "H6pReZzpmfE",
+  "woerter": 1265,
+  "dauer_s": 423,
+  "wpm": 179,
+  "kernfrage_pct": 7.6,
+  "antwort_pct": 9.9,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 11.1,
+   "wir": 6.3,
+   "man": 12.6,
+   "sie": 16.6
+  },
+  "fuenftel": [
+   {
+    "woerter": 284,
+    "fragezeichen": 1,
+    "zahlen": 3,
+    "zweite_person": 6
+   },
+   {
+    "woerter": 254,
+    "fragezeichen": 0,
+    "zahlen": 6,
+    "zweite_person": 2
+   },
+   {
+    "woerter": 246,
+    "fragezeichen": 1,
+    "zahlen": 3,
+    "zweite_person": 3
+   },
+   {
+    "woerter": 233,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 248,
+    "fragezeichen": 1,
+    "zahlen": 0,
+    "zweite_person": 3
+   }
+  ],
+  "satzlaenge_median": 6,
+  "saetze": 197,
+  "kurzwort_anteil_pct": 79.8
+ },
+ "kEc6rFGrdh4": {
+  "videoId": "kEc6rFGrdh4",
+  "woerter": 1788,
+  "dauer_s": 563,
+  "wpm": 191,
+  "kernfrage_pct": 19.3,
+  "antwort_pct": 3.3,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 22.4,
+   "wir": 11.2,
+   "man": 10.1,
+   "sie": 18.5
+  },
+  "fuenftel": [
+   {
+    "woerter": 388,
+    "fragezeichen": 1,
+    "zahlen": 4,
+    "zweite_person": 15
+   },
+   {
+    "woerter": 372,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 14
+   },
+   {
+    "woerter": 369,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 7
+   },
+   {
+    "woerter": 313,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 346,
+    "fragezeichen": 2,
+    "zahlen": 1,
+    "zweite_person": 3
+   }
+  ],
+  "satzlaenge_median": 6.0,
+  "saetze": 286,
+  "kurzwort_anteil_pct": 76.7
+ },
+ "q_Rqvd1ayUE": {
+  "videoId": "q_Rqvd1ayUE",
+  "woerter": 1358,
+  "dauer_s": 419,
+  "wpm": 194,
+  "kernfrage_pct": 7.8,
+  "antwort_pct": 24.5,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 42.7,
+   "wir": 8.1,
+   "man": 12.5,
+   "sie": 12.5
+  },
+  "fuenftel": [
+   {
+    "woerter": 267,
+    "fragezeichen": 1,
+    "zahlen": 8,
+    "zweite_person": 10
+   },
+   {
+    "woerter": 261,
+    "fragezeichen": 1,
+    "zahlen": 3,
+    "zweite_person": 10
+   },
+   {
+    "woerter": 269,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 9
+   },
+   {
+    "woerter": 280,
+    "fragezeichen": 2,
+    "zahlen": 0,
+    "zweite_person": 11
+   },
+   {
+    "woerter": 281,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 18
+   }
+  ],
+  "satzlaenge_median": 7.0,
+  "saetze": 204,
+  "kurzwort_anteil_pct": 81.8
+ },
+ "UFAPaRxXEAo": {
+  "videoId": "UFAPaRxXEAo",
+  "woerter": 1082,
+  "dauer_s": 342,
+  "wpm": 190,
+  "kernfrage_pct": 34.5,
+  "antwort_pct": 25.2,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 8.3,
+   "wir": 0.9,
+   "man": 11.1,
+   "sie": 11.1
+  },
+  "fuenftel": [
+   {
+    "woerter": 216,
+    "fragezeichen": 1,
+    "zahlen": 1,
+    "zweite_person": 2
+   },
+   {
+    "woerter": 212,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 2
+   },
+   {
+    "woerter": 218,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 4
+   },
+   {
+    "woerter": 225,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 211,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 0
+   }
+  ],
+  "satzlaenge_median": 6.0,
+  "saetze": 170,
+  "kurzwort_anteil_pct": 74.7
+ },
+ "1bKfsHbYBvo": {
+  "videoId": "1bKfsHbYBvo",
+  "woerter": 2369,
+  "dauer_s": 761,
+  "wpm": 187,
+  "kernfrage_pct": 25.7,
+  "antwort_pct": 3.3,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 19.4,
+   "wir": 3.4,
+   "man": 5.5,
+   "sie": 20.7
+  },
+  "fuenftel": [
+   {
+    "woerter": 484,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 11
+   },
+   {
+    "woerter": 503,
+    "fragezeichen": 0,
+    "zahlen": 2,
+    "zweite_person": 11
+   },
+   {
+    "woerter": 472,
+    "fragezeichen": 0,
+    "zahlen": 6,
+    "zweite_person": 5
+   },
+   {
+    "woerter": 436,
+    "fragezeichen": 0,
+    "zahlen": 9,
+    "zweite_person": 4
+   },
+   {
+    "woerter": 474,
+    "fragezeichen": 0,
+    "zahlen": 1,
+    "zweite_person": 15
+   }
+  ],
+  "satzlaenge_median": 6,
+  "saetze": 375,
+  "kurzwort_anteil_pct": 76.4
+ },
+ "_87ANJzPI54": {
+  "videoId": "_87ANJzPI54",
+  "woerter": 1699,
+  "dauer_s": 547,
+  "wpm": 186,
+  "kernfrage_pct": 26.0,
+  "antwort_pct": 6.6,
+  "antwort_drittel": "erstes",
+  "pronomen_pro_1000w": {
+   "du": 6.5,
+   "wir": 0.6,
+   "man": 11.8,
+   "sie": 15.9
+  },
+  "fuenftel": [
+   {
+    "woerter": 318,
+    "fragezeichen": 0,
+    "zahlen": 7,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 331,
+    "fragezeichen": 0,
+    "zahlen": 3,
+    "zweite_person": 6
+   },
+   {
+    "woerter": 368,
+    "fragezeichen": 0,
+    "zahlen": 0,
+    "zweite_person": 0
+   },
+   {
+    "woerter": 337,
+    "fragezeichen": 0,
+    "zahlen": 4,
+    "zweite_person": 1
+   },
+   {
+    "woerter": 345,
+    "fragezeichen": 0,
+    "zahlen": 4,
+    "zweite_person": 3
+   }
+  ],
+  "satzlaenge_median": 6.0,
+  "saetze": 272,
+  "kurzwort_anteil_pct": 76.4
+ }
+}

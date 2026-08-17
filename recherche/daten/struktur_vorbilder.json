@@ -1,0 +1,66 @@
+{
+ "9AFO6MHy8y4": {
+  "videoId": "9AFO6MHy8y4",
+  "dauer_s": 363,
+  "woerter": 1222,
+  "kernfrage_s": 37.7,
+  "kernfrage_pct": 10.4,
+  "antwort_s": 14.8,
+  "antwort_pct": 4.1,
+  "erste_tatsache_s": 29.5,
+  "erste_tatsache_pct": 8.1,
+  "erste_tatsache_typ": "jahreszahl",
+  "einstieg_woerter": 107,
+  "fenster": 7,
+  "aehnlichkeit_median": 0.081,
+  "themenwechsel": 2,
+  "wechsel_positionen_pct": [
+   66.1,
+   99.2
+  ],
+  "abschnitt_laenge_pct_med": 33.1
+ },
+ "OCr6NteWSQ8": {
+  "videoId": "OCr6NteWSQ8",
+  "dauer_s": 485,
+  "woerter": 1546,
+  "kernfrage_s": 160.6,
+  "kernfrage_pct": 33.1,
+  "antwort_s": 29.6,
+  "antwort_pct": 6.1,
+  "erste_tatsache_s": 25.1,
+  "erste_tatsache_pct": 5.2,
+  "erste_tatsache_typ": "eigenname",
+  "einstieg_woerter": 89,
+  "fenster": 9,
+  "aehnlichkeit_median": 0.089,
+  "themenwechsel": 2,
+  "wechsel_positionen_pct": [
+   49.5,
+   99.0
+  ],
+  "abschnitt_laenge_pct_med": 49.5
+ },
+ "SD7XyG2wd1k": {
+  "videoId": "SD7XyG2wd1k",
+  "dauer_s": 696,
+  "woerter": 2439,
+  "kernfrage_s": 47.9,
+  "kernfrage_pct": 6.9,
+  "antwort_s": 24.2,
+  "antwort_pct": 3.5,
+  "erste_tatsache_s": 55.6,
+  "erste_tatsache_pct": 8.0,
+  "erste_tatsache_typ": "eigenname",
+  "einstieg_woerter": 191,
+  "fenster": 12,
+  "aehnlichkeit_median": 0.08,
+  "themenwechsel": 3,
+  "wechsel_positionen_pct": [
+   34.5,
+   69.0,
+   77.6
+  ],
+  "abschnitt_laenge_pct_med": 21.5
+ }
+}
