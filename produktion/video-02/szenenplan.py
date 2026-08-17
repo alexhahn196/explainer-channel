@@ -204,12 +204,14 @@ m("M23", "Derselbe Mann sitzt an einem Schreibpult, umgeben von "
          "Feder ruht, " + SCHRIFT, "sichtbar: eine Kerze auf dem Pult",
   "Uraniborg auf der Insel Ven, um 1580", "ganz", sitzend=True,
   person=True, flora="Innenraum, keine Vegetation")
-m("M24", "Extreme Nahaufnahme eines einzelnen Sterns, wie ihn ein bloßes "
-         "Auge sieht: eine kleine runde Scheibe mit weichem Rand",
+m("M24", "Ein einzelner Stern in großer Nähe, wie ihn ein bloßes Auge "
+         "sieht: eine runde weiße Scheibe, darum ein breiterer Ring in "
+         "einem helleren Ton — beide hart abgegrenzt und flächig gefüllt",
   "sichtbar: der Stern selbst", "zeitlos, Blick zum Nachthimmel", "ohne",
   paar="M25")
-m("M25", "Dieselbe Nahaufnahme desselben Sterns — die Scheibe ist "
-         "verschwunden, ein winziger harter Lichtpunkt bleibt",
+m("M25", "Dieselbe Nahaufnahme desselben Sterns — Scheibe und Ring sind "
+         "verschwunden, an ihrer Stelle bleibt ein kleiner harter "
+         "Lichtpunkt",
   "sichtbar: der Stern selbst", "zeitlos, Blick zum Nachthimmel", "ohne",
   paar="M24")
 m("M26", "Derselbe Mann wendet sich vom Quadranten ab; im Hintergrund eine "

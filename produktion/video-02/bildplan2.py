@@ -187,10 +187,16 @@ SZENE = {
  "M23": "the same man sits at a desk surrounded by measuring "
         "instruments; in front of him a sheet of paper with a quill resting "
         "on its edge, and across the sheet run " + STRICHE,
- "M24": "an extreme close view of one single star as a bare eye sees it: a "
-        "small round disc with a soft edge",
- "M25": "the same close view of the same star - the disc is gone, and a tiny "
-        "hard point of light remains",
+ # "a soft edge" hat das Modell als Leuchthof gezeichnet — ein weicher
+ # Verlauf, das einzige Bild der Reihe mit einem. Der weiche Rand ist
+ # inhaltlich richtig (er ist der Unterschied zu M25), muss aber flaechig
+ # gebaut werden: zwei harte Stufen statt eines Verlaufs.
+ "M24": "one single star seen very close as a bare eye sees it, on the dark "
+        "ground: a plain round white disc, and around it one broader ring in "
+        "a single paler tone; both the disc and the ring have clean sharp "
+        "edges and one even fill each",
+ "M25": "the same close view of the same star - the wide disc and its ring "
+        "are gone, and one small hard point of light remains in their place",
  "M26": "the same man turns away from his quadrant; behind him a globe of "
         "the Earth rests still on a plinth",
  "M27": "a telescope on a wooden tripod, and beside it several men in wigs "

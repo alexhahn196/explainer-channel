@@ -354,13 +354,13 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ganz
 
 **M24** · 3 Einstellungen · Zustandspaar mit M25
-- Bild: Extreme Nahaufnahme eines einzelnen Sterns, wie ihn ein bloßes Auge sieht: eine kleine runde Scheibe mit weichem Rand
+- Bild: Ein einzelner Stern in großer Nähe, wie ihn ein bloßes Auge sieht: eine runde weiße Scheibe, darum ein breiterer Ring in einem helleren Ton — beide hart abgegrenzt und flächig gefüllt
 - Licht: sichtbar: der Stern selbst
 - Ort: zeitlos, Blick zum Nachthimmel
 - Framing: ohne
 
 **M25** · 2 Einstellungen · Zustandspaar mit M24
-- Bild: Dieselbe Nahaufnahme desselben Sterns — die Scheibe ist verschwunden, ein winziger harter Lichtpunkt bleibt
+- Bild: Dieselbe Nahaufnahme desselben Sterns — Scheibe und Ring sind verschwunden, an ihrer Stelle bleibt ein kleiner harter Lichtpunkt
 - Licht: sichtbar: der Stern selbst
 - Ort: zeitlos, Blick zum Nachthimmel
 - Framing: ohne
@@ -643,7 +643,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 | M07 / M08 | Dieselbe Wohnstraße im Winter: Schnee auf den Dächern, kahle Bäume, eine markante … | Exakt derselbe Ausschnitt im Sommer: belaubte Bäume, dieselbe Steinplatte im Gehweg … |
 | M10 / M11 | Der Nachthimmel über das ganze Bild: ein Stern links, dreimal so breit gezeichnet … | Derselbe Himmel, dieselben Sterne an denselben Stellen — nur der große steht jetzt … |
 | M16 / M17 | Blick durch ein Okular: zwei getrennte Abbilder desselben Sterns nebeneinander im … | Dasselbe runde Gesichtsfeld — die beiden Abbilder liegen jetzt exakt übereinander, … |
-| M24 / M25 | Extreme Nahaufnahme eines einzelnen Sterns, wie ihn ein bloßes Auge sieht: eine … | Dieselbe Nahaufnahme desselben Sterns — die Scheibe ist verschwunden, ein winziger … |
+| M24 / M25 | Ein einzelner Stern in großer Nähe, wie ihn ein bloßes Auge sieht: eine runde weiße … | Dieselbe Nahaufnahme desselben Sterns — Scheibe und Ring sind verschwunden, an … |
 | M33 / M34 | Nahaufnahme: eine Hand legt ein beschriebenes Blatt in eine offene … | Dieselbe Schublade, derselbe Ausschnitt — geschlossen, die Hand ruht flach auf dem … |
 | M42 / M54 | Die Leiter als flaches Sinnbild auf hellem Papiergrund, in Seitenansicht: die Holme … | Dieselbe Leiter, derselbe Ausschnitt — zwei Sprossen sind durchgebrochen und hängen … |
 | M46 / M47 | Ein Sternfeld, in dem einer dreimal so breit gezeichnet ist wie alle anderen | Dasselbe Sternfeld, derselbe Ausschnitt — der große Stern ist jetzt so klein … |
