@@ -1,0 +1,889 @@
+{
+ "_stand": "2026-08-17",
+ "_quelle": "NexLev youtube_channel_videos (sort_by=newest bzw. oldest, zusammengefuehrt ueber videoId)",
+ "_hinweis_datum": "publishDate ist von NexLev aus dem relativen YouTube-Label ('3 months ago') zurueckgerechnet, nicht das exakte Upload-Datum. Alles ab dem Bucket '3 months ago' (2026-05-17) zaehlt hier als 'letzte 90 Tage'.",
+ "kanaele": {
+  "Ink Explainer": {
+   "id": "UCpgrEMx8diLrw7YNQ6r3uUw",
+   "abos": 50100,
+   "videos_laut_yt": 13,
+   "videos": [
+    [
+     "2026-08-08",
+     31000,
+     "9:07",
+     "Why Ancient Humans Were The Most TERRIFYING Animal Alive"
+    ],
+    [
+     "2026-07-27",
+     22000,
+     "12:48",
+     "How Did Human Accidentally Invented Guns?"
+    ],
+    [
+     "2026-07-17",
+     215000,
+     "11:31",
+     "The Disturbing Ways Ancient Humans Survived Winter"
+    ],
+    [
+     "2026-07-17",
+     1200000,
+     "11:37",
+     "What Did Ancient Humans Do When It Rained All Week?"
+    ],
+    [
+     "2026-07-17",
+     684000,
+     "9:23",
+     "How Did Ancient Humans Travel the World?"
+    ],
+    [
+     "2026-06-17",
+     933000,
+     "8:06",
+     "Why Are We the Only Human Species Left? What happened to others..."
+    ],
+    [
+     "2026-06-17",
+     251000,
+     "8:24",
+     "When Did Ancient Humans Started Smoking Weed?"
+    ],
+    [
+     "2026-06-17",
+     198000,
+     "8:08",
+     "Do Animals Know When Another Animal is a Baby?"
+    ],
+    [
+     "2026-05-17",
+     796000,
+     "6:04",
+     "When Did Ancient Humans Start Drinking Alcohol?"
+    ],
+    [
+     "2026-05-17",
+     138000,
+     "9:03",
+     "Why Life Speeds Up As You Get Older?"
+    ],
+    [
+     "2026-05-17",
+     26000,
+     "8:03",
+     "What did Early Humans do when they got Sick"
+    ],
+    [
+     "2026-05-17",
+     7600,
+     "4:09",
+     "what is The IKEA Effect."
+    ],
+    [
+     "2026-05-17",
+     324000,
+     "6:44",
+     "The Real Reason Humans Started Wearing Clothes"
+    ]
+   ]
+  },
+  "Axen": {
+   "id": "UC_7R-sfi7bi8dkzmSlBdUVw",
+   "abos": 56200,
+   "videos_laut_yt": 16,
+   "videos": [
+    [
+     "2026-08-16",
+     2900,
+     "8:05",
+     "The Weirdest Things Ancient Humans Actually Did"
+    ],
+    [
+     "2026-08-13",
+     3200,
+     "9:05",
+     "You Are the Rarest Thing in the Universe"
+    ],
+    [
+     "2026-08-11",
+     3900,
+     "8:33",
+     "The CRAZIEST Survival Methods Ancient Humans Used Against Predators"
+    ],
+    [
+     "2026-08-09",
+     9300,
+     "9:08",
+     "How Did Ancient Humans Discover the World's Most Popular Drug?"
+    ],
+    [
+     "2026-08-03",
+     7700,
+     "12:41",
+     "How Gross Was the Past, Really?"
+    ],
+    [
+     "2026-07-17",
+     22000,
+     "9:24",
+     "Do Animals Live More Freely Than Humans?"
+    ],
+    [
+     "2026-07-17",
+     26000,
+     "10:17",
+     "What Did Ancient Human Education Look Like?"
+    ],
+    [
+     "2026-06-17",
+     123000,
+     "9:52",
+     "Why Does the OCEAN Get Creepier the Deeper You Go?"
+    ],
+    [
+     "2026-06-17",
+     12000,
+     "7:00",
+     "Our WORLD is F*cked Up..."
+    ],
+    [
+     "2026-06-17",
+     24000,
+     "7:03",
+     "What Was the World Like in Ancient Human Times?"
+    ],
+    [
+     "2026-06-17",
+     773000,
+     "10:24",
+     "How Did Ancient Humans Survive Deadly Winters?"
+    ],
+    [
+     "2026-06-17",
+     10000,
+     "5:42",
+     "Napoleon Did Some Truly Bizarre Things..."
+    ],
+    [
+     "2026-05-17",
+     263000,
+     "5:15",
+     "How Did Ancient Humans Have Privacy?"
+    ],
+    [
+     "2026-05-17",
+     3200000,
+     "8:33",
+     "What Did Ancient Humans Do all Day Before Jobs Existed?"
+    ],
+    [
+     "2026-05-17",
+     27000,
+     "5:21",
+     "Weird Feelings You Get That Your Brain Can't Explain..."
+    ],
+    [
+     "2026-05-17",
+     1100000,
+     "7:33",
+     "How Did Ancient Humans Survive the World's Deadliest Predators?"
+    ]
+   ]
+  },
+  "Banana Explains": {
+   "id": "UCQtHKs49tnIWTG6pgA0TcPQ",
+   "abos": 4330,
+   "videos_laut_yt": 31,
+   "videos": [
+    [
+     "2026-08-12",
+     2000,
+     "23:43",
+     "How Did Ancient Humans Go to the Bathroom?"
+    ],
+    [
+     "2026-08-11",
+     5700,
+     "23:49",
+     "What Is Your Weak Hand Actually Good For?"
+    ],
+    [
+     "2026-08-10",
+     710,
+     "27:48",
+     "Which Poison Made Humans Smart?"
+    ],
+    [
+     "2026-08-08",
+     730,
+     "25:28",
+     "What Was the Most Dangerous Job in the Stone Age?"
+    ],
+    [
+     "2026-08-06",
+     2100,
+     "27:03",
+     "Why Do Men Usually Die Younger Than Women?"
+    ],
+    [
+     "2026-08-04",
+     4800,
+     "26:44",
+     "What Did Ancient Humans Sleep On Before Beds?"
+    ],
+    [
+     "2026-08-03",
+     121,
+     "28:19",
+     "Can Animals Be Homosexual Too?"
+    ],
+    [
+     "2026-08-03",
+     648,
+     "26:55",
+     "What Did Ancient Humans Do for Entertainment?"
+    ],
+    [
+     "2026-08-03",
+     1300,
+     "25:59",
+     "How Young Did Ancient Humans Actually Marry?"
+    ],
+    [
+     "2026-08-03",
+     2400,
+     "24:23",
+     "How Did Ancient Humans Build Without Modern Tools?"
+    ],
+    [
+     "2026-07-27",
+     2000,
+     "23:01",
+     "How Did Ancient Tribes Prevent Inbreeding?"
+    ],
+    [
+     "2026-07-27",
+     2900,
+     "24:32",
+     "How Did Humans First Discover Electricity?"
+    ],
+    [
+     "2026-07-27",
+     8000,
+     "25:49",
+     "What Accidental Discovery Built Every Civilization?"
+    ],
+    [
+     "2026-07-20",
+     638,
+     "21:41",
+     "How Did Ancient Humans Find Safe Water?"
+    ],
+    [
+     "2026-07-20",
+     1100,
+     "23:53",
+     "What Did Ancient Humans Know About Hunger?"
+    ],
+    [
+     "2026-07-20",
+     1900,
+     "24:44",
+     "How Dangerous Were Ancient Nights?"
+    ],
+    [
+     "2026-07-20",
+     12000,
+     "24:22",
+     "How Did Ancient Humans Survive Extreme Heat?"
+    ],
+    [
+     "2026-07-17",
+     1100,
+     "?",
+     "Do Cats Really Love Us?"
+    ],
+    [
+     "2026-07-17",
+     1200,
+     "17:03",
+     "What Was an Average Day Like For Ancient Humans?"
+    ],
+    [
+     "2026-07-17",
+     2600,
+     "22:29",
+     "How Ancient Humans Kept Babies Alive?"
+    ],
+    [
+     "2026-07-17",
+     2800,
+     "20:15",
+     "Why Do We Eat 3 Times a Day?"
+    ],
+    [
+     "2026-07-17",
+     4000,
+     "24:51",
+     "Why Didn't Roman Elites Want Children?"
+    ],
+    [
+     "2026-07-17",
+     4000,
+     "?",
+     "How Did Our Ancestors Avoid Freezing to Death?"
+    ],
+    [
+     "2026-07-17",
+     4300,
+     "23:22",
+     "Why Did Ancient Humans Stop Living in Caves?"
+    ],
+    [
+     "2026-07-17",
+     6000,
+     "22:18",
+     "When Did Humans Start Smoking?"
+    ],
+    [
+     "2026-07-17",
+     6800,
+     "17:02",
+     "How Did Ancient Humans Deal With Boredom?"
+    ],
+    [
+     "2026-07-17",
+     11000,
+     "23:48",
+     "Why Did Ancient Humans Eat So Much Meat?"
+    ],
+    [
+     "2026-07-17",
+     11000,
+     "23:59",
+     "When Did Ancient Humans Start Wearing Shoes?"
+    ],
+    [
+     "2026-07-17",
+     11000,
+     "?",
+     "How Did Ancient Human Traps Work?"
+    ],
+    [
+     "2026-07-17",
+     11000,
+     "?",
+     "Why Were Animals Afraid of Ancient Humans?"
+    ],
+    [
+     "2026-07-17",
+     13000,
+     "?",
+     "How Did Ancient Humans Survive Predators?"
+    ],
+    [
+     "2026-07-17",
+     15000,
+     "21:22",
+     "When Did Ancient Humans Discover Salt?"
+    ],
+    [
+     "2026-07-17",
+     32000,
+     "22:57",
+     "What Happens During Lucid Dreaming?"
+    ],
+    [
+     "2026-07-17",
+     49000,
+     "?",
+     "Why Do Spiders Terrify Us?"
+    ],
+    [
+     "2026-07-17",
+     109000,
+     "?",
+     "How Did Ancient Humans Survive Mosquitoes?"
+    ],
+    [
+     "2026-07-17",
+     282000,
+     "24:17",
+     "Why Do Wild Animals Ask Humans for Help?"
+    ],
+    [
+     "2026-07-17",
+     463000,
+     "22:45",
+     "Where Do You Go Under Anesthesia?"
+    ],
+    [
+     "2026-06-17",
+     1000,
+     "?",
+     "Why Did Ancient Humans Start Making Music?"
+    ]
+   ]
+  },
+  "Folks of Yore": {
+   "id": "UC10wjSicTht1rum3NF0H9WA",
+   "abos": 21200,
+   "videos_laut_yt": 22,
+   "videos": [
+    [
+     "2026-08-13",
+     5100,
+     "17:41",
+     "The Loss of Wisdom in the Information Age"
+    ],
+    [
+     "2026-07-27",
+     7600,
+     "22:23",
+     "Why Life in Ancient Rome Puts Ours to Shame"
+    ],
+    [
+     "2026-07-17",
+     3800,
+     "13:24",
+     "Why Modern Work Feels Meaningless: The Hidden History of Work and Burnout"
+    ],
+    [
+     "2026-07-17",
+     4500,
+     "20:56",
+     "The Death of Honor: The Warrior Code We Left Behind"
+    ],
+    [
+     "2026-06-17",
+     268000,
+     "20:33",
+     "Why Friendship Today Looks Nothing Like It Did for the Ancients"
+    ],
+    [
+     "2026-05-17",
+     8600,
+     "22:40",
+     "Looksmaxxing, Clavicular, and the Death of Meaning"
+    ],
+    [
+     "2026-05-17",
+     6600,
+     "18:06",
+     "You Were Never Supposed To Know This Much About The World"
+    ],
+    [
+     "2026-04-17",
+     8500,
+     "23:17",
+     "Your Doomscrolling Was Diagnosed 1,700 Years Ago"
+    ],
+    [
+     "2026-04-17",
+     12000,
+     "23:03",
+     "What Ancient Romans Understood About FAILURE That We've Forgotten"
+    ],
+    [
+     "2026-03-17",
+     74000,
+     "30:14",
+     "The Ancient Greeks Wouldn't Recognize What We Call Love"
+    ],
+    [
+     "2026-03-17",
+     8400,
+     "28:11",
+     "Why You Wake Up at 3 AM Every Night | History of The Watch"
+    ],
+    [
+     "2026-02-17",
+     101000,
+     "24:28",
+     "Why Ancients Treasured Sadness and Modernity Forbids It"
+    ],
+    [
+     "2026-02-17",
+     658000,
+     "13:28",
+     "Your \"Busy\" Life Would Disgust an Ancient Roman"
+    ],
+    [
+     "2025-11-17",
+     2300,
+     "26:16",
+     "Göbekli Tepe Proves Everything Wrong About the Agricultural Revolution"
+    ],
+    [
+     "2025-09-17",
+     7400,
+     "15:05",
+     "The Psychology of a Medieval Peasant"
+    ],
+    [
+     "2025-08-17",
+     2300,
+     "10:04",
+     "The Hidden History of Folk Magic in the Middle Ages"
+    ],
+    [
+     "2025-08-17",
+     1800,
+     "15:16",
+     "What It Was Actually Like to Live in a Medieval Castle"
+    ],
+    [
+     "2025-08-17",
+     3600,
+     "11:30",
+     "The Brutal Life of Medieval Squires"
+    ],
+    [
+     "2025-08-17",
+     4100,
+     "23:45",
+     "The Secret Daily Life of a Medieval Alchemist"
+    ],
+    [
+     "2025-08-17",
+     1300,
+     "19:56",
+     "The SHOCKING Truth About Crime and Punishment in  Renaissance Florence"
+    ],
+    [
+     "2025-08-17",
+     1600,
+     "28:03",
+     "The Strangest Inventions of the Renaissance Era"
+    ],
+    [
+     "2025-08-17",
+     1200,
+     "19:04",
+     "What It Was Actually Like to Be a Renaissance Barber-Surgeon"
+    ]
+   ]
+  },
+  "Unknown Frequencies": {
+   "id": "UCm1yxl_4qMbStLHpHQu6xWg",
+   "abos": 57000,
+   "videos_laut_yt": 16,
+   "videos": [
+    [
+     "2026-08-12",
+     47000,
+     "11:05",
+     "Evolution of The Greek Soldier"
+    ],
+    [
+     "2026-08-05",
+     198000,
+     "13:15",
+     "The Entire Story of The Trojan War & Iliad Explained (Before The Odyssey)"
+    ],
+    [
+     "2026-07-27",
+     1100000,
+     "13:09",
+     "The ENTIRE Story of The Odyssey Explained"
+    ],
+    [
+     "2026-07-17",
+     305000,
+     "13:43",
+     "The ENTIRE History of WW2 Explained"
+    ],
+    [
+     "2026-07-17",
+     48000,
+     "12:02",
+     "The Reason Germany Failed at the Battle of the Bulge"
+    ],
+    [
+     "2026-07-17",
+     144000,
+     "14:15",
+     "The Entire History of WW2's Deadliest Battle"
+    ],
+    [
+     "2026-06-17",
+     20000,
+     "9:00",
+     "POV: You're a Soldier in the Vietnam War"
+    ],
+    [
+     "2026-06-17",
+     47000,
+     "9:54",
+     "POV: You Are a Japanese Sailor in WW2"
+    ],
+    [
+     "2026-06-17",
+     552000,
+     "12:33",
+     "The ENTIRE History of WW1 Explained"
+    ],
+    [
+     "2026-05-17",
+     145000,
+     "10:44",
+     "What 24 Hours Trapped in a WW1 Trench Would Be Like"
+    ],
+    [
+     "2026-04-17",
+     222000,
+     "12:13",
+     "Iwo Jima from the Japanese Soldier's Perspective"
+    ],
+    [
+     "2026-04-17",
+     98000,
+     "9:28",
+     "Your Life as Every Japanese Army Rank in WW2"
+    ],
+    [
+     "2026-04-17",
+     315000,
+     "10:04",
+     "What It Was Like to be Every British Army Rank in WW2"
+    ],
+    [
+     "2026-03-17",
+     774000,
+     "12:01",
+     "POV: You're a German Soldier in WW2"
+    ],
+    [
+     "2026-03-17",
+     993000,
+     "9:01",
+     "Your Life as Every German Army Rank in WW2"
+    ],
+    [
+     "2026-02-17",
+     396000,
+     "8:57",
+     "Why It Sucked to Be a U.S. Soldier (in WW2)"
+    ]
+   ]
+  },
+  "Mogo": {
+   "id": "UCjjuZ24mtxPHi9aQAuHfL8Q",
+   "abos": 2710,
+   "videos_laut_yt": 31,
+   "videos": [
+    [
+     "2026-08-12",
+     760,
+     "22:40",
+     "Did Ancient Humans Ever Get Bored?"
+    ],
+    [
+     "2026-08-11",
+     1100,
+     "22:36",
+     "How Did Ancient Humans Protect Fire From Rain?"
+    ],
+    [
+     "2026-08-10",
+     272,
+     "24:30",
+     "How Did Ancient Humans Tell Time?"
+    ],
+    [
+     "2026-08-08",
+     1100,
+     "26:02",
+     "How Did Plants Nearly Destroy Life on Earth?"
+    ],
+    [
+     "2026-08-06",
+     2500,
+     "26:10",
+     "How Did Ancient Humans Cross Oceans Without Ships?"
+    ],
+    [
+     "2026-08-04",
+     2400,
+     "21:57",
+     "What Dumb Skill Made Ancient Humans So Dangerous?"
+    ],
+    [
+     "2026-08-03",
+     2600,
+     "26:08",
+     "How Did Humans First Discover Alcohol?"
+    ],
+    [
+     "2026-08-03",
+     5700,
+     "27:31",
+     "Why Did Humans Stop Eating Animal Organs?"
+    ],
+    [
+     "2026-08-03",
+     7700,
+     "28:16",
+     "How Did Ancient Humans Use the Bathroom?"
+    ],
+    [
+     "2026-08-03",
+     23000,
+     "22:23",
+     "What Did Ancient Humans Do During the 100,000 Missing Years?"
+    ],
+    [
+     "2026-08-03",
+     45000,
+     "22:52",
+     "Do Wild Animals See Humans As Weak?"
+    ],
+    [
+     "2026-07-27",
+     347,
+     "25:05",
+     "Why Do Humans Forget Their Dreams?"
+    ],
+    [
+     "2026-07-27",
+     422,
+     "21:42",
+     "Why Do You Keep Waking Up at 3AM?"
+    ],
+    [
+     "2026-07-27",
+     13000,
+     "22:26",
+     "Why Can’t You Remember Being a Baby?"
+    ],
+    [
+     "2026-07-20",
+     3600,
+     "24:11",
+     "Why Did Ancient Humans Sleep On Rocks?"
+    ],
+    [
+     "2026-07-20",
+     4700,
+     "21:40",
+     "How Did Humans Survive Before Houses?"
+    ],
+    [
+     "2026-07-20",
+     9800,
+     "21:53",
+     "How Did Wild Cats Become Human Pets?"
+    ],
+    [
+     "2026-07-17",
+     574,
+     "20:51",
+     "Where Are You When You Dream?"
+    ],
+    [
+     "2026-07-17",
+     729,
+     "24:26",
+     "Why Did 95% Of Ancient Men Disappear?"
+    ],
+    [
+     "2026-07-17",
+     1300,
+     "21:05",
+     "How Did Ancient Humans Keep Their Kids Alive?"
+    ],
+    [
+     "2026-07-17",
+     2300,
+     "23:56",
+     "Why Didn’t Ancient Humans Exercise?"
+    ],
+    [
+     "2026-07-17",
+     2300,
+     "22:18",
+     "How Did Ancient Humans Treat Disease?"
+    ],
+    [
+     "2026-07-17",
+     2400,
+     "24:35",
+     "Why Did Ancient Humans Marry So Young?"
+    ],
+    [
+     "2026-07-17",
+     2700,
+     "24:24",
+     "How Did Ancient Humans Survive Winter?"
+    ],
+    [
+     "2026-07-17",
+     2900,
+     "23:04",
+     "Do Animal Feel Time Differently?"
+    ],
+    [
+     "2026-07-17",
+     3300,
+     "24:17",
+     "How Did Tribes Punish Their Worst Members?"
+    ],
+    [
+     "2026-07-17",
+     4300,
+     "22:01",
+     "Did Ancient Humans Smell Terrible?"
+    ],
+    [
+     "2026-07-17",
+     5200,
+     "24:37",
+     "Do Insects Know They Exist?"
+    ],
+    [
+     "2026-07-17",
+     5900,
+     "22:50",
+     "How Did Ancient Humans Handle Death?"
+    ],
+    [
+     "2026-07-17",
+     106000,
+     "27:08",
+     "Why Do Ancient Humans Have Different Blood Types?"
+    ],
+    [
+     "2026-07-17",
+     121000,
+     "22:20",
+     "Why Do Animals Save Humans?"
+    ],
+    [
+     "2026-07-17",
+     158000,
+     "24:13",
+     "How Did Ancient Humans Survive Endless Rain?"
+    ],
+    [
+     "2026-07-17",
+     398000,
+     "20:05",
+     "Why Don’t We Eat Other Animal Eggs?"
+    ],
+    [
+     "2026-06-17",
+     3100,
+     "24:04",
+     "How Did Ancient Women Manage Their Periods?"
+    ],
+    [
+     "2026-06-17",
+     32000,
+     "21:45",
+     "When Did Ancient Humans Actually Start Smoking?"
+    ]
+   ]
+  }
+ }
+}
