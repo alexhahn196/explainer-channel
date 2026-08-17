@@ -49,7 +49,7 @@ Konfigurationszeilen sind **16 für diesen Kanal gegenstandslos**, 17 unbestäti
 | Bereich | Stand |
 |---|---|
 | **Nische** | ✅ geprüft — History-Explainer, Belegkanäle und Einstiegsfenster dokumentiert in [`recherche/nischen-kanal-2.md`](recherche/nischen-kanal-2.md) |
-| **Themen** | ✅ **42 Fragen terminiert bis 08/2027** — Anlass-Kalender mit 22 belegten Ereignissen, Titelprüfung gegen 136 Konkurrenztitel, Belegbarkeit über Crossref und Wikipedia: [`recherche/themen-erklaerkanal.md`](recherche/themen-erklaerkanal.md) |
+| **Themen** | ✅ **47 Fragen** — 42 terminiert bis 08/2027, dazu **5 neue mit je 8/8 Punkten** und Anlässen bis 10/2028. Anlass-Kalender mit 29 belegten Ereignissen, Titelprüfung gegen 136 Konkurrenztitel, Belegbarkeit über Crossref und Wikipedia: [`recherche/themen-erklaerkanal.md`](recherche/themen-erklaerkanal.md). Die fünf neuen sind zusätzlich auf **Erzählbarkeit** geprüft — die Achse, die in der Bewertung der 42 fehlt |
 | **Bildstil** | ⬜ **OFFEN** — Stil des Vorbilds gemessen ([`recherche/stil-ink-explainer.md`](recherche/stil-ink-explainer.md)), drei eigene Varianten getestet und bewertet ([`recherche/stil-ink-varianten/README.md`](recherche/stil-ink-varianten/README.md)). Empfehlung dort: V1 (Dreifarbenpalette) als Basis plus das wiederkehrende Element aus V3. **Nicht entschieden.** |
 | **Pipeline** | ⬜ **nicht gebaut** — Skripte aus BibelTube liegen unter `produktion/pipeline/`, sind aber auf ein 3,5-Stunden-Schlafvideo eingestellt und für dieses Format weder angepasst noch gelaufen |
 | **Stimme** | ⬜ OFFEN — die BibelTube-Stimme ist bewusst einschläfernd, hier unbrauchbar. Neuer Blindtest nötig. |
