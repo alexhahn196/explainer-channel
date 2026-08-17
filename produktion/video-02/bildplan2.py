@@ -479,20 +479,39 @@ SCHEMA_HART = (
     "table, no wall, no horizon and no floor for anything to stand on; "
     "nothing casts a shadow and nothing recedes into depth. Anything that "
     "exists as a real object in the world is drawn flat, seen straight from "
-    "the side: one flat fill per part, plain straight bars, no wood grain, no "
-    "metal sheen, no rounded or cylindrical parts, no vanishing point and no "
-    "foreshortening.")
+    # "no wood grain, no metal sheen" nannte Holz und Metall, um sie zu
+    # verneinen. Drei der vier Schemata sind eine Leiter, die ausdruecklich
+    # keine Holzleiter sein soll — zusammen mit dem Farbsatz stand das Wort
+    # Holz zweimal im selben Prompt. Jetzt steht positiv da, wie die Flaeche
+    # aussieht.
+    "the side: one flat fill per part, plain straight bars, every surface "
+    "one even colour from edge to edge, no rounded or cylindrical parts, no "
+    "vanishing point and no foreshortening.")
 SCHEMA_TEXTFREI = (
     " ABSOLUTELY NO WRITING: no numbers, no digits, no tick marks with "
     "values, no axis labels, no legend, no caption, no letters of any "
     "alphabet anywhere in the picture. The picture must carry its meaning by "
     "shape, size and position alone.")
+# Der Block nannte dreimal "the sheet". Zwei der fuenf Durchlichtmotive
+# haben aber gar kein Blatt: M45 und M60 zeigen eine Glasplatte. Jetzt
+# benennt er nur, was in allen fuenf vorkommt — die leuchtende Glasflaeche
+# und das, was darauf liegt.
 DURCHLICHT = (
-    " ADDITION - ONE LIGHT SOURCE: the picture is lit from behind the sheet "
-    "by a light table whose glowing glass top is directly beneath it. The "
-    "glass itself is the brightest surface in the frame; the sheet and "
-    "anything above it are lit from below, and nothing casts a downward "
-    "shadow.")
+    " ADDITION - ONE LIGHT SOURCE: the picture is lit from below by a light "
+    "table whose glowing glass top lies directly under whatever is being "
+    "looked at. That glass is the brightest surface in the frame; everything "
+    "resting on it and everything above it is lit from below, and nothing "
+    "casts a downward shadow.")
+
+# Im Weltraum gibt es keine Flaeche, auf die ein Schatten faellt, und keine
+# beleuchtete Seite. Der allgemeine Lichtblock redet aber von beidem — vier
+# Saetze ueber Schlagschatten und Lichtseiten fuer sechzehn Motive, die
+# nichts als Sterne und Galaxien zeigen. Hier steht nur, was dort gilt.
+LICHT_WELTRAUM = (
+    " ADDITION - ONE LIGHT SOURCE: the only thing that gives light in this "
+    "picture is {quelle}, and it is drawn as a flat bright shape on the dark "
+    "ground. Nothing else in the frame is lit and nothing casts a shadow, "
+    "because there is no surface for a shadow to fall on.")
 DREITEILIG = (
     " COMPOSITION: the frame is divided into three equal upright panels side "
     "by side by two thin vertical rules. Each panel holds its own complete "
@@ -501,6 +520,13 @@ DREITEILIG = (
     "pictures, and not a scene seen through a window frame.")
 
 NACHT_MOTIVE = {"M01", "M02", "M13", "M28", "M35", "M39", "M61"}
+
+# M06 ist der einzige Koerperausschnitt, der ein Gesicht zeigt.
+KOPF_MOTIVE = {"M06"}
+
+# Nur wo die Szene selbst eine Kopfbedeckung verlangt. Alle uebrigen
+# Figurenmotive bekommen "the hair of that period" ohne Hut.
+KOPFBEDECKUNG = {"M27"}
 
 # Sechzehn Motive zeigen nichts als den Weltraum — kein Ort, kein Boden,
 # kein Horizont. Bis zum 16.08.2026 hatten sie ueberhaupt keinen Block, der
@@ -561,7 +587,7 @@ def prompt(mid: str) -> str:
     elif fr == "ganz":
         rahmen = bp.FRAMING_SITZEND if d.get("sitzend") else bp.FRAMING_EINZEL
     elif fr == "teil":
-        rahmen = bp.FRAMING_TEIL
+        rahmen = bp.FRAMING_KOPF if mid in KOPF_MOTIVE else bp.FRAMING_TEIL
     else:
         rahmen = bp.FRAMING_LEER
 
@@ -572,10 +598,13 @@ def prompt(mid: str) -> str:
     mit_figur = not ist_schema and fr in ('ganz', 'teil')
     p = _machart(mit_figur) + rahmen
     if ist_schema:
-        p += bp.DIAGRAMM + SCHEMA_HART + bp.FARBEN_SCHEMA + SCHEMA_TEXTFREI
+        p += (bp.DIAGRAMM + SCHEMA_HART + bp.FARBEN_SCHEMA_OHNE_STOFFE
+              + SCHEMA_TEXTFREI)
     else:
         if d["licht"].startswith("Durchlicht:"):
             p += DURCHLICHT
+        elif mid in WELTRAUM_MOTIVE:
+            p += LICHT_WELTRAUM.format(quelle=LICHT[mid])
         elif d["licht"].startswith("Schatten:"):
             p += bp.Z3_AUSSERHALB.format(quelle=LICHT[mid])
         else:
@@ -601,9 +630,9 @@ def prompt(mid: str) -> str:
         if mid in WELTRAUM_MOTIVE:
             p += WELTRAUM
         if fr == "ganz":
-            p += " " + bp.FIGUR
+            p += " " + bp.figur(mid in KOPFBEDECKUNG)
         elif fr == "teil":
-            p += " " + bp.FIGUR_TEIL
+            p += " " + (bp.FIGUR_KOPF if mid in KOPF_MOTIVE else bp.FIGUR_TEIL)
     return ohne_treppen(p) + " SCENE: " + szene.rstrip(".") + "." + bp.NEGATIV
 
 

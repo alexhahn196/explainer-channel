@@ -171,6 +171,12 @@ FARBEN = (
 # Nachtbilder der Welt duerfen dunkel sein; Schemata nie. Sterne werden im
 # Diagramm als dunkle Punkte auf hellem Grund gezeichnet — die Konvention
 # gedruckter Sternkarten, seit Jahrhunderten lesbar.
+# Fassung fuer Video 1. Die Materialreihe "stone ... earth ... timber ...
+# metal" stammt aus Video 1, wo die Schemata Querschnitte durch Bauwerke
+# und Gelaende waren. Fuer Video 2 gilt FARBEN_SCHEMA_OHNE_STOFFE weiter
+# unten: dort ist kein einziges Schema ein Bauwerk, drei von vier sind eine
+# Leiter — und "timber the colour of that wood" ist eine Einladung, sie als
+# Holzleiter zu zeichnen, was ausdruecklich nicht gewollt ist.
 FARBEN_SCHEMA = (
     " COLOUR: each material and each thing shown carries the colour it really "
     "has - stone the colour of that stone, earth the colour of that earth, "
@@ -451,6 +457,54 @@ EPOCHE_OHNE_FIGUR = ("Architecture and vegetation belong to that period and "
 # derselbe Fehler wie "Clothing" im menschenleeren Bild.
 EPOCHE_NEUTRAL = ("Everything shown in this picture belongs to that period "
                   "and place and to no other.")
+
+
+def figur(mit_kopfbedeckung: bool = True) -> str:
+    """FIGUR, mit oder ohne die Zusage einer Kopfbedeckung.
+
+    Der Block versprach "hair and headwear of that period" allen
+    Figurenmotiven. In Video 2 nennen 10 von 12 Figurenszenen ueberhaupt
+    keine Kopfbedeckung — und M44 verlangt ausdruecklich einen Haarknoten
+    im Nacken. Ein Wort, das in einem Teil der Motive nichts zu suchen hat,
+    steht hier fuer alle. Wer eine Kopfbedeckung braucht, sagt es in der
+    Szene (M27: "men in wigs").
+    """
+    if mit_kopfbedeckung:
+        return FIGUR
+    return _ersetze(FIGUR, "then hair and headwear of that period.",
+                    "then the hair of that period.")
+
+
+# Dritter Framing-Fall neben Ganzfigur und Koerperausschnitt: die
+# Kopfaufnahme. FRAMING_TEIL und FIGUR_TEIL verbieten woertlich "no head, no
+# face" — M06 ist aber genau das, ein Gesicht in Nahsicht mit einem
+# geschlossenen Auge. Der Anweisungsteil verbot damit, was die Szene
+# verlangte. Dass M06 trotzdem richtig zurueckkam, liegt daran, dass Verbote
+# in diesem Projekt ohnehin uebergangen werden — ein Grund mehr, den
+# Widerspruch aufzuloesen.
+FARBEN_SCHEMA_OHNE_STOFFE = _ersetze(
+    FARBEN_SCHEMA,
+    "each material and each thing shown carries the colour it really "
+    "has - stone the colour of that stone, earth the colour of that earth, "
+    "timber the colour of that wood, metal the colour of that metal.",
+    "each thing shown carries one flat colour of its own, and things that "
+    "are alike carry the same colour while things that differ carry "
+    "different ones.")
+
+
+FRAMING_KOPF = (
+    "FRAMING: this is a close view of one head only, filling much of the "
+    "frame - the head and the shoulders under it, and nothing else of the "
+    "body. No second figure, no standing figure anywhere in the picture. "
+    "Sober, restrained, documentary - never cute."
+)
+FIGUR_KOPF = (
+    "THE VISIBLE PART: only the head named in the scene is shown, with the "
+    "collar of the period and place named above; no torso, no arms below "
+    "the shoulder. FACE: one adult human face, small eyes with one dark "
+    "pupil each, above them two clearly drawn eyebrows, a minimal nose and "
+    "one short straight mouth line, then the hair of that period."
+)
 
 # FRAMING ohne Figur, positiv vorangestellt. Das blosse Verbot stand allein
 # und wurde in M01 uebergangen; Verbote sind in diesem Projekt mehrfach

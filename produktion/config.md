@@ -137,6 +137,48 @@ und berichtet, aber nicht gegen 74,7 geprüft.
 | **Bildstil** | — | **ENTSCHIEDEN 15.08.2026** — V2: finaler Machart-Block aus `recherche/stil-figuren/lauf2-erwachsen/README.md` plus Z3-Lichtquelle aus `recherche/stil-touch/`. |
 | **Farbe** | — | **ENTSCHIEDEN 15.08.2026** — natürliche Farben, so wie die Sache wirklich aussieht. **Keine** Themenpaletten und **keine** Signalfarbe; beide getestet und verworfen, Grund in `recherche/stil-archiv.md`. Schemabilder haben eine eigene Fassung ohne Himmel und Vegetation. |
 
+### Bildvorgaben: die Bedingungsregel
+
+**ENTSCHIEDEN 16.08.2026.** Gilt für alle künftigen Videos.
+
+> **Jeder Block im Anweisungsteil darf nur nennen, was in ALLEN Motiven
+> vorkommt, für die er gilt. Was nur manchmal vorkommt, gehört in einen
+> bedingten Block.**
+
+Das ist die gemeinsame Wurzel von vier Fehlschlägen in zwei Videos. Der
+Mechanismus ist immer derselbe: **ein Wort im Prompt, das etwas benennt,
+was in diesem Bild nicht sein soll, zeichnet es hin** — auch wenn es nur
+als Beispiel, als Stilangabe oder in einer Verneinung dasteht.
+
+| Block | nannte | fehlte in | Schaden |
+|---|---|---|---|
+| Epochensatz | `Clothing, tools` | 43 figurenlosen Motiven | M01 kam mit zwei Personen in Kleidung um 1900 und einer Schubkarre zurück, obwohl „no people in this picture at all" dastand |
+| Farbsatz | `foliage and grass are green`, `The sky is blue` | 49 Motiven ohne Vegetation | M24 verlangte die Nahaufnahme eines Sterns und kam als Tageslandschaft: 60 % blauer Himmel, 22 % grün |
+| Strichstärkenregel | `figures, clothing, props` | denselben 43 | zweiter Auslöser für dieselben Figuren |
+| Florazeile | `without leaves` | — | M13 verlangte kahle Bäume und bekam belaubte Kronen; die Verneinung nennt das Laub |
+
+Drei Folgeregeln, die daraus folgen:
+
+1. **Verneinen zählt als Nennen.** „no palms", „without leaves", „no wood
+   grain" schreiben Palme, Laub und Holz in den Prompt. Wo eine Verneinung
+   ersetzbar ist, wird sie durch die Beschreibung dessen ersetzt, was
+   dasteht — „each drawn as a bare branching silhouette of trunk and open
+   twigs" statt „without leaves".
+2. **Beispielreihen sind Inventarlisten.** „every surface — rock, stone
+   blocks, earth, water, sky and vegetation alike" war als Illustration
+   einer Regel gemeint und wurde als Bestandsangabe des Bildes gelesen. Eine
+   Regel, die ohne Beispiele auskommt, kommt ohne Beispiele aus.
+3. **Der Block darf der Szene nicht widersprechen.** M06 zeigt ein Gesicht
+   in Nahsicht, und derselbe Prompt verbot „no head, no face" — der
+   Anweisungsteil verbot, was die Szene verlangte.
+
+Umgesetzt in `produktion/video-01/bildplan.py` als bedingte Fassungen
+(`machart()`, `farben()`, `figur()`, `EPOCHE_*`, `FRAMING_*`) und in
+`produktion/video-02/bildplan2.py` als drei harte Prüfungen, die den Lauf
+abbrechen, bevor Credits fließen: `pruefe_szene` (Versalien),
+`pruefe_personenworte` (43 figurenlose Motive), `pruefe_pflanzenworte`
+(49 Motive ohne Vegetation).
+
 ## Laufzeit
 
 | Feld | BibelTube | Status |
