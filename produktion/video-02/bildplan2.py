@@ -117,8 +117,20 @@ SZENE = {
  "M01": "seen from below, a night sky full of stars, one of them drawn about "
         "twice as wide as the rest; along the bottom edge the dark "
         "roofline of a residential street",
- "M02": "one person seen from behind, small in the frame, head tipped back, "
-        "standing under the star-filled sky; empty street space all around",
+ # Blickwinkel als Bauanweisung. M02 traegt Anfang und Schluss und stand
+ # bis zum 16.08.2026 ohne jede Winkelangabe da — es unterschied sich von
+ # M01 nur durch die Figur. M01 blickt nach oben, M39 aus dem Fenster die
+ # Fahrbahn hinunter; M02 blickt darum diagonal ueber die Strasse. Drei
+ # Blickwinkel, eine Strasse. Der Mond kommt hier nicht vor und wird
+ # deshalb auch nicht genannt.
+ "M02": "seen diagonally across the street from the near pavement: the "
+        "far row of houses runs away towards the left, the near row cuts "
+        "into the frame on the right, and the roadway crosses the picture "
+        "from the lower left towards the upper right; above the rooflines "
+        "the star-filled sky fills the upper third of the frame and "
+        "nothing else is up there. Standing small in the middle of the "
+        "empty roadway, one person is seen from behind, both feet on the "
+        "asphalt and the head tipped right back to look straight up",
  "M03": "a town square in the evening with several passers-by; most of them "
         "shrug or shake their heads, one points up at the sky",
  "M04": "an outstretched arm with the thumb held up, and behind it a room "

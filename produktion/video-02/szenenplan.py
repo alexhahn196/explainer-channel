@@ -89,8 +89,13 @@ m("M01", "Aufsicht von unten in einen Nachthimmel voller Sterne, einer "
          "dunkle Dachkante einer Wohnstraße",
   "sichtbar: die Sterne selbst", "Gegenwart, eine Wohnstraße bei Nacht",
   "ohne", flora=FLORA_STRASSE, ebenen=True)
-m("M02", "Eine Person von hinten, klein im Bild, den Kopf in den Nacken "
-         "gelegt, vor dem Sternhimmel; um sie herum leerer Straßenraum",
+m("M02", "Diagonal über die Straße gesehen, vom nahen Gehweg aus: die "
+         "gegenüberliegende Häuserzeile läuft nach links weg, die nahe "
+         "schneidet rechts ins Bild, die Fahrbahn zieht von links unten "
+         "nach rechts oben durch; über den Dachkanten füllt der "
+         "Sternhimmel das obere Drittel. Klein mitten auf der leeren "
+         "Fahrbahn eine Person von hinten, den Kopf weit in den Nacken "
+         "gelegt",
   "sichtbar: die Sterne", "Gegenwart, dieselbe Straße", "ganz",
   flora=FLORA_STRASSE, schutz="Die Klammer — erstes und letztes Bild",
   ebenen=True)

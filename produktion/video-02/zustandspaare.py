@@ -154,6 +154,141 @@ def verschieben(quelle: pathlib.Path, ziel: pathlib.Path,
 #              behoben worden war. Drei Motive auf denselben Gegenstand,
 #              zwei davon verkettet: die Verkettung muss vollstaendig sein,
 #              sonst faellt der dritte heraus.
+def verschmelzen(quelle: pathlib.Path, ziel: pathlib.Path,
+                 a_mitte: tuple[int, int], b_mitte: tuple[int, int],
+                 grund: np.ndarray | None = None,
+                 toleranz: int = 10, hell_ab: int | None = None,
+                 rand: int = 2) -> dict:
+    """Zwei gleiche Gegenstaende werden zu einem in der Mitte zwischen ihnen.
+
+    M16 zeigt zwei getrennte Abbilder desselben Sterns, M17 dieselben
+    beiden genau uebereinander — also ein einziger Punkt. Statt einen
+    neuen Punkt zu zeichnen, wandert der eine auf die Mitte und der andere
+    verschwindet: dann ist der verbliebene Punkt dieselbe Zeichnung wie in
+    M16, nicht eine zweite.
+    """
+    a = np.asarray(Image.open(quelle).convert("RGB")).astype(np.uint8)
+    ai = a.astype(int)
+    if grund is None:
+        grund = np.median(ai.reshape(-1, 3), axis=0)
+    # In M16 liegen die beiden Sternabbilder INNERHALB der dunklen
+    # Okularscheibe. Gegen den Grund abgegrenzt haengen Scheibe und Sterne
+    # in einer Maske zusammen, und die Maske fasst 1,5 Mio. Pixel statt
+    # 700. Darum in solchen Faellen ueber die Helligkeit trennen: gesucht
+    # ist das Helle im Dunklen, nicht das Nichtgrundfarbene.
+    if hell_ab is not None:
+        traeger = np.asarray(Image.open(quelle).convert("L")) > hell_ab
+    else:
+        traeger = np.abs(ai - grund).max(axis=2) > toleranz
+    lab, _ = ndimage.label(traeger)
+
+    stuecke = []
+    for mitte in (a_mitte, b_mitte):
+        marke = lab[mitte]
+        if marke == 0:
+            raise SystemExit(f"{quelle.name}: unter {mitte} liegt nichts")
+        # Der Rand muss den Lichtsaum mitnehmen. In M16 ist der Stern
+        # bis r=10 hell, faellt bei r=20 auf 55 und erreicht den Ton
+        # der Scheibe erst bei r=55; mit zwei Pixeln Rand blieben zwei
+        # blaue Ringe an den alten Stellen stehen.
+        stuecke.append(ndimage.binary_dilation(lab == marke,
+                                               iterations=rand))
+    beide = stuecke[0] | stuecke[1]
+
+    # Der Untergrund der Sterne ist die Okularscheibe selbst, nicht der
+    # Bildgrund: Anker sind darum alle Pixel der Scheibe ausser den Sternen.
+    if hell_ab is not None:
+        frei = ~ndimage.binary_dilation(traeger, iterations=8)
+        frei &= ndimage.binary_dilation(beide, iterations=90)
+    else:
+        gezeichnet = np.abs(ai - grund).max(axis=2) > 40
+        frei = (~ndimage.binary_dilation(gezeichnet, iterations=4)
+                & ~ndimage.binary_dilation(beide, iterations=6))
+    hg = _fuellen(a, beide, frei, sigma=40.0)
+
+    ys, xs = np.where(stuecke[0])
+    dx = (a_mitte[1] + b_mitte[1]) // 2 - int(round(xs.mean()))
+    dy = (a_mitte[0] + b_mitte[0]) // 2 - int(round(ys.mean()))
+    neu = hg.copy()
+    passt = ((xs + dx >= 0) & (xs + dx < a.shape[1])
+             & (ys + dy >= 0) & (ys + dy < a.shape[0]))
+    neu[ys[passt] + dy, xs[passt] + dx] = a[ys[passt], xs[passt]]
+    Image.fromarray(neu).save(ziel)
+    gleich = (np.abs(ai - neu.astype(int)).max(axis=2) == 0)
+    return {"pixel": int(beide.sum()), "verschiebung": (int(dy), int(dx)),
+            "unveraendert": round(float(gleich.mean()) * 100, 1)}
+
+
+def ersetzen(quelle: pathlib.Path, ziel: pathlib.Path,
+             ziel_mitte: tuple[int, int], vorlage_mitte: tuple[int, int],
+             grund: np.ndarray | None = None, toleranz: int = 10) -> dict:
+    """Ein Gegenstand wird durch eine Kopie eines anderen aus DEMSELBEN Bild.
+
+    M47 verlangt, dass der grosse Stern so klein wird wie die uebrigen.
+    Ihn zu verkleinern hiesse, seine Kontur mitzuverkleinern — die
+    Strichstaerke waere duenner als ueberall sonst und die Machart
+    gebrochen. Stattdessen wird einer der vorhandenen kleinen Sterne an
+    seine Stelle kopiert: dieselbe Zeichnung, dieselbe Strichstaerke.
+    """
+    a = np.asarray(Image.open(quelle).convert("RGB")).astype(np.uint8)
+    ai = a.astype(int)
+    if grund is None:
+        grund = np.median(ai.reshape(-1, 3), axis=0)
+    nicht_grund = np.abs(ai - grund).max(axis=2) > toleranz
+    lab, _ = ndimage.label(nicht_grund)
+
+    weg = ndimage.binary_dilation(lab == lab[ziel_mitte], iterations=2)
+    vorlage = lab == lab[vorlage_mitte]
+    if lab[ziel_mitte] == 0 or lab[vorlage_mitte] == 0:
+        raise SystemExit(f"{quelle.name}: Saatpunkt liegt auf dem Grund")
+
+    gezeichnet = np.abs(ai - grund).max(axis=2) > 40
+    frei = (~ndimage.binary_dilation(gezeichnet, iterations=4)
+            & ~ndimage.binary_dilation(weg, iterations=6))
+    neu = _fuellen(a, weg, frei)
+
+    vy, vx = np.where(vorlage)
+    dy = ziel_mitte[0] - int(round(vy.mean()))
+    dx = ziel_mitte[1] - int(round(vx.mean()))
+    passt = ((vx + dx >= 0) & (vx + dx < a.shape[1])
+             & (vy + dy >= 0) & (vy + dy < a.shape[0]))
+    neu[vy[passt] + dy, vx[passt] + dx] = a[vy[passt], vx[passt]]
+    Image.fromarray(neu).save(ziel)
+    gleich = (np.abs(ai - neu.astype(int)).max(axis=2) == 0)
+    return {"entfernt": int(weg.sum()), "eingesetzt": int(vorlage.sum()),
+            "unveraendert": round(float(gleich.mean()) * 100, 1)}
+
+
+def umfaerben(quelle: pathlib.Path, ziel: pathlib.Path,
+              kasten: tuple[int, int, int, int], neu_farbe: tuple[int, int, int],
+              dicker: int = 6) -> dict:
+    """Ein Teil des Gegenstands bekommt eine andere Farbe und ein anderes Profil.
+
+    M64 verlangt dieselbe Leiter mit einer sichtbar anderen zweiten Sprosse
+    von unten. Frisch erzeugt kam dafuer eine perspektivische Holzleiter
+    zurueck. Hier bleibt es dieselbe Zeichnung: nur die Fuellung der einen
+    Sprosse wechselt und ihr Balken wird etwas hoeher.
+    """
+    a = np.asarray(Image.open(quelle).convert("RGB")).astype(np.uint8)
+    ai = a.astype(int)
+    y0, y1, x0, x1 = kasten
+    feld = ai[y0:y1, x0:x1]
+    # Alles, was in diesem Kasten nicht Papiergrund ist, ist die Sprosse.
+    grund = np.median(ai.reshape(-1, 3), axis=0)
+    sprosse = np.abs(feld - grund).max(axis=2) > 30
+    if dicker:
+        sprosse = ndimage.binary_dilation(sprosse, iterations=dicker)
+    innen = sprosse & (feld.max(axis=2) > 90)   # Fuellung, nicht die Kontur
+    neu = a.copy()
+    block = neu[y0:y1, x0:x1]
+    block[innen] = np.array(neu_farbe, np.uint8)
+    neu[y0:y1, x0:x1] = block
+    Image.fromarray(neu).save(ziel)
+    gleich = (np.abs(ai - neu.astype(int)).max(axis=2) == 0)
+    return {"umgefaerbt": int(innen.sum()),
+            "unveraendert": round(float(gleich.mean()) * 100, 1)}
+
+
 PAARE = [
     # erst, zweit, Saat im Gegenstand, neuer linker Rand, Schutzflaechen
     ("M04", "M05", (750, 900), 1500, ((100, 2600),)),
@@ -161,7 +296,30 @@ PAARE = [
 ]
 
 
+# Die drei Ableitungen, die keine Verschiebung sind, aber trotzdem ohne
+# Neuzeichnen auskommen.
+SONDERFAELLE = [
+    ("verschmelzen", "M16", "M17", dict(a_mitte=(767, 1272),
+                                        b_mitte=(767, 1479), hell_ab=170,
+                                        rand=45)),
+    ("ersetzen", "M46", "M47", dict(ziel_mitte=(778, 1375),
+                                    vorlage_mitte=(251, 367))),
+    ("umfaerben", "M42", "M64", dict(kasten=(655, 700, 1275, 1480),
+                                     neu_farbe=(96, 116, 128))),
+]
+
+
 def main() -> None:
+    for art, erst, zweit, kw in SONDERFAELLE:
+        quelle = BILDER / f"{erst}.png"
+        if not quelle.exists():
+            print(f"{erst}: noch nicht erzeugt, übersprungen")
+            continue
+        ziel = BILDER / f"{zweit}-montage.png"
+        m = globals()[art](quelle, ziel, **kw)
+        werte = " · ".join(f"{k} {v}" for k, v in m.items())
+        print(f"{erst} → {zweit} ({art}): {werte}")
+
     for erst, zweit, saat, links, schutz in PAARE:
         quelle = BILDER / f"{erst}.png"
         if not quelle.exists():

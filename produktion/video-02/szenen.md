@@ -218,7 +218,7 @@ V2-Machart, erwachsene Figuren, Z3-Licht; kein Türkis, natürliche Farben; Sche
 - Framing: ohne
 
 **M02** · 8 Einstellungen · getrennte Ebenen · **geschützter Moment**
-- Bild: Eine Person von hinten, klein im Bild, den Kopf in den Nacken gelegt, vor dem Sternhimmel; um sie herum leerer Straßenraum
+- Bild: Diagonal über die Straße gesehen, vom nahen Gehweg aus: die gegenüberliegende Häuserzeile läuft nach links weg, die nahe schneidet rechts ins Bild, die Fahrbahn zieht von links unten nach rechts oben durch; über den Dachkanten füllt der Sternhimmel das obere Drittel. Klein mitten auf der leeren Fahrbahn eine Person von hinten, den Kopf weit in den Nacken gelegt
 - Licht: sichtbar: die Sterne
 - Ort: Gegenwart, dieselbe Straße
 - Flora: mitteleuropäische Stadtbäume als dunkle Silhouetten — Linden, Ahorn; keine Palmen, keine Nadelwaldkulisse
