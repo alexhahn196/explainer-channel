@@ -312,14 +312,21 @@ SZENE = {
         "yellowish, the other smaller and bluish",
  "M59": "a hall with rows of seating, at the front one man at a lectern in "
         "front of a bright projection surface, the listeners leaning forward",
- "M60": "a close view of a photographic plate: one sharp bright point, and "
-        "directly beside it a soft glowing patch of about the same brightness",
+ "M60": "a close view of one glass plate: on it one small hard-edged dark dot, "
+        "and directly beside it a larger soft-looking dark patch of about "
+        "the same depth of tone, the two almost touching",
  "M61": "a small dense cluster of a few large white stars wrapped in a thin "
-        "pale veil of nebula, above tree silhouettes in the night sky",
+        "pale veil of nebula, high in the night sky; along the bottom edge "
+        "the crowns of trees stand as flat shapes filled with one single "
+        "near-black tone, their leaf edges readable only as the outline of "
+        "that shape",
  "M62": "several large parabolic dish antennas on open ground, all tilted the "
         "same way, long shadows across the ground",
- "M63": "a fine-grained speckle pattern across the whole frame, and small in "
-        "front of it a satellite in profile",
+ "M63": "a fine-grained speckle pattern of small irregular blotches covers the "
+        "whole frame from edge to edge, with nothing behind it and nothing "
+        "beyond it; in front of that pattern, small and near the middle, "
+        "stands one satellite seen from the side, and it is the only solid "
+        "object in the picture",
  "M65": "two spiral galaxies side by side against a dark ground, of about "
         "the same size",
  "M66": "a close view of two hands at the foot of a solid wooden ladder, one "
@@ -630,6 +637,34 @@ STERNFELD = (
     "or a shape of its own, that one star follows the scene, is drawn "
     "clearly larger than these specks, and the rest follow this rule.")
 
+# Dieselbe Luecke eine Objektklasse weiter: die Sternfarbe stand, die
+# Galaxienfarbe nicht. M56 kam mit weiss-blauen Spiralen zurueck, M65 mit
+# regenbogenfarbenen in Blau, Rosa, Orange und Violett.
+GALAXIEN = (
+    " THE GALAXIES: every spiral galaxy in this picture is drawn in the same "
+    "two tones as the stars around it - a white core and arms of one single "
+    "pale cool blue-white, each arm one flat fill from end to end. No galaxy "
+    "carries pink, orange, violet or green, and no two galaxies are coloured "
+    "differently from one another.")
+GALAXIEN_MOTIVE = {"M40", "M56", "M65", "M69"}
+
+# Und noch eine: wie eine hinterleuchtete Fotoplatte Sterne zeigt. M45 kam
+# mit weissen Punkten auf dunklem Glas zurueck, M60 mit einem dunklen Keil
+# auf hellem Grund — zwei Platten, zwei Konventionen, und die zweite
+# widersprach ihrer eigenen Szene ("ein scharfer heller Punkt"). Auf einer
+# Glasplatte gegen das Licht sind Sterne dunkel; das ist zugleich die
+# Konvention, die fuer die Schemata schon gilt (dunkle Punkte auf hellem
+# Grund wie auf gedruckten Sternkarten).
+PLATTE = (
+    " THE PLATE: this glass plate is a negative held against the light, so "
+    "its ground is the pale warm cream of the lit glass and every star on it "
+    "is a DARK speck on that pale ground - small dark round dots, in the "
+    "manner of a printed star chart, never light dots on a dark field. A "
+    "star that the scene calls sharp is one small hard-edged dark dot; a "
+    "star the scene calls soft or swollen is a larger dark patch with a "
+    "clean edge.")
+PLATTE_MOTIVE = {"M45", "M60"}
+
 LICHT_WELTRAUM = (
     " ADDITION - ONE LIGHT SOURCE: the only thing that gives light in this "
     "picture is {quelle}, and it is drawn as a flat bright shape on the dark "
@@ -697,8 +732,13 @@ def hat_pflanzen(flora: str) -> bool:
     weil derselbe Prompt zwei Zeilen weiter "foliage and grass are green"
     versprach.
     """
+    # "als Silhouette" ist der dritte Fall neben "—" und "ohne Laub": ein
+    # Baum, der als dunkle Silhouette gezeichnet werden soll, zeigt keine
+    # Blattfarbe. M61 verlangte Baumsilhouetten am Nachthimmel und bekam
+    # gruene, beleuchtete Kronen und eine leuchtende Wiese — dieselbe
+    # Ursache wie bei M13, dritter Fall.
     return (flora != "—" and "keine Vegetation" not in flora
-            and "ohne Laub" not in flora)
+            and "ohne Laub" not in flora and "ilhouette" not in flora)
 
 
 
@@ -772,6 +812,10 @@ def prompt(mid: str) -> str:
             p += WELTRAUM
         if mid in STERNFELD_MOTIVE:
             p += STERNFELD
+        if mid in GALAXIEN_MOTIVE:
+            p += GALAXIEN
+        if mid in PLATTE_MOTIVE:
+            p += PLATTE
         if mid in DUNKELGRUND_MOTIVE:
             p += DUNKELGRUND
         if mid in PAPIER_MOTIVE:
