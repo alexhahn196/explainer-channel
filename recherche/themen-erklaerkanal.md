@@ -265,6 +265,22 @@ nicht auf die ersten acht Slots.
 
 ## Vorschlag: die ersten 8 Videos mit Terminen
 
+> ⚠️ **Vorbehalt, nachgetragen 2026-08-17 (zweiter Nachtrag).** Diese Tabelle
+> bleibt unverändert stehen, aber zwei ihrer Voraussetzungen sind seither
+> geprüft und halten nicht:
+>
+> 1. **Die Anlasswirkung ist nicht belegt.** Der einzige Beleg der ganzen
+>    Liste — Shadow of the Gods — trägt sie nicht: die Anlassnennung im engen
+>    Sinn kommt dort in **2 von 38 Titeln** vor und ist damit nicht einmal
+>    kanalintern auswertbar. Siehe [`regeln/anlass-test.md`](../regeln/anlass-test.md).
+> 2. **V3 fällt aus.** F16 („Why Does Mars Have Two Tiny Moons?") ist nach dem
+>    Erzählbarkeits-Kriterium **nicht erzählbar** — der Kern ist ein
+>    Bahnvorgang ohne Zeugen. Siehe den zweiten Nachtrag unten.
+>
+> Dazu eine Randbedingung, die in keiner Datei stand: **das YouTube-Konto
+> existiert noch nicht** (Telefonnummer bei Google gesperrt). Jeder Termin
+> hier ist derzeit unverbindlich.
+
 **Taktannahme:** 0,5 Uploads/Woche = **ein Video alle 14 Tage**, Veröffentlichung
 montags. Aufteilung eines Zyklus [abgeleitet, gestützt auf die
 Aufwandsschätzung in `nischen-kanal-2.md`]:
@@ -622,3 +638,211 @@ für 25 %.
 | `recherche/daten/fragen_kanal2_neu.json` | die 5 neuen Fragen + 3 geprüfte, nicht gewählte (Nachtrag) |
 | `recherche/daten/fragen_bewertet_neu.json` | Prüfergebnis dazu, inkl. aller 8 Crossref-Titel je Frage |
 | `recherche/daten/pruefe_neu.py` | Prüfskript des Nachtrags, Pfad korrigiert + Dopplungsprüfung |
+
+---
+
+# Nachtrag 2026-08-17 (zweiter) — Erzählbarkeit der Herbstfragen
+
+> Reine Analyse, **0 Higgsfield-Credits**, kein Render. Prüft die 13 Fragen der
+> Anlässe 09/2026–12/2026 gegen das K.-o.-Kriterium aus dem ersten Nachtrag.
+> Keine neuen Fragen, keine Neuberechnung der Punkteskala.
+>
+> **Der Auftrag nennt 12 Fragen, die Anlasstabelle listet 13** (A3 2, A4 3,
+> A5 1, A6 2, A7 2, A8 1, Dune 2). Geprüft sind alle 13. F11 und F04 sind wie
+> vorgegeben ausgenommen — F04 ist das fertige Video 2, F11 wird nicht
+> veröffentlicht.
+
+## Der Maßstab, unverändert übernommen
+
+Aus dem ersten Nachtrag: *erzählbar = über Menschen und Handlungen zeigbar;
+verlangt die Frage Diagramme, taugt sie nicht.* Der Prüfsatz ist die
+Begründung zu F43 — **„weil der Kern ein Beruf ist, kein Vorgang".** Also:
+Trägt den Kern ein **Mensch bei einer Handlung** oder ein **Vorgang**?
+
+Die Achse bleibt **[abgeleitet]**. Sie ist kein Messwert und wird hier auch
+nicht als einer geführt.
+
+**Zum fehlenden Königsberg-Befund.** Der erste Nachtrag legt offen, dass die
+Regel nirgends im Repository steht. Das gilt weiterhin für die *Regel*. Ihr
+**ausgearbeitetes Beispiel** liegt aber sehr wohl hier, und zwar zweifach:
+`produktion/video-02/skript.md` gegen `skript-erklaerform.md` — derselbe Stoff,
+einmal als Vorgang, einmal über Menschen. Und die Königsberg-Szene selbst steht
+im Sprechtext: *„A man in Königsberg spent two years catching that jump"* —
+Bessel am Okular statt eines Parallaxendreiecks. Wer den Maßstab braucht, kann
+ihn dort ablesen, statt sich auf einen Auftragstext zu berufen.
+
+## Die 13 Fragen
+
+> ⚠️ **Zum Status der Kernszenen.** Die Szenenspalte ist **[abgeleitet] und in
+> diesem Lauf nicht quellengeprüft** — dieser Lauf hat keine Websuche und keine
+> Faktenprüfung durchgeführt. Sie zeigt, **dass** eine Szene mit Menschen
+> existiert, nicht dass die genannten Personen, Orte und Vorgänge in dieser
+> Form belegt sind. Namen und Schauplätze stehen hier als *Kandidaten*; Zahlen
+> und Datumsangaben sind bewusst herausgehalten, weil sie ohne Prüfung nichts
+> wert wären. Der erste Nachtrag konnte seine fünf Szenen belegen — dieser kann
+> es nicht, und sagt es.
+>
+> Das Verdikt selbst hängt nicht daran: es beantwortet nur, ob der Kern der
+> Frage ein **Mensch bei einer Handlung** ist oder ein **Vorgang**.
+
+| ID | Titel | Verdikt | Kernszene in einem Satz [abgeleitet, unbelegt] |
+|---|---|---|---|
+| **F05** | How Do You Test a Planet for Life? | **ERZÄHLBAR** | Ein Forscher steht vor dem Zählwerk seines Versuchs auf dem Mars und liest einen Ausschlag als Leben, während das Massenspektrometer nebenan nichts findet — der Streit darüber dauert Jahrzehnte |
+| **F06** | What Did People Believe About Mars Before We Went There? | **ERZÄHLBAR** | Ein Astronom sitzt nach Mitternacht in seiner Kuppel, Auge am Okular, und zeichnet Linien auf einen Marsglobus, die auf dem Planeten nicht sind |
+| **F07** | How Were Epics Remembered Before Writing? | **ERZÄHLBAR** | Ein Forscher stellt in einem Kaffeehaus auf dem Balkan seine Aufnahmemaschine auf, und ein Sänger singt tagelang, ohne eine Zeile zweimal gleich zu sagen |
+| **F08** | How Did People Live in the Cities of Ancient India? | **GRENZFALL** | Eine Frau lässt in einer Stadt am Indus den Eimer in einen gemauerten Brunnen, das Abwasser läuft unter der Straße ab — *aber* die eigentliche These „geplante Stadt" will einen Grundriss |
+| **F09** | Who Actually Wrote the Ramayana? | **GRENZFALL** | Ein Herausgeber legt Handschriften nebeneinander auf einen Tisch und markiert, wo sie auseinandergehen — *aber* die Antwort ist eine Schichtung über Jahrhunderte, und Schichtung will einen Zeitstrahl |
+| **F10** | How Did People Travel Long Distances Before Roads? | **ERZÄHLBAR** | Zwei Menschen legen Eichenbohlen über ein Moor, damit ein Weg entsteht, wo keiner ist — die Jahresringe der Bohlen datieren die Arbeit später aufs Jahr genau |
+| **F12** | How Did Ancient People Track the Planets? | **GRENZFALL** | Ein Schreiber drückt den Keil in feuchten Ton und hält fest, wo Jupiter heute Nacht stand — *aber* die Antwort auf „wie" ist ein Rechenverfahren, und das ist eine Zeichnung |
+| **F13** | Why Did Every Ancient Culture Watch the Sky? | **GRENZFALL** | Zur Wintersonnenwende läuft das Licht den Gang eines Ganggrabs hinunter bis auf den Kammerboden — *aber* „jede Kultur" verlangt eine Übersicht, und Ausrichtungen im Überblick sind Schaubilder |
+| **F14** | Has a Rock From Space Ever Destroyed a City? | **ERZÄHLBAR** | Über einer Stadt geht ein Lichtblitz nieder, und kurz darauf kommen überall die Fensterscheiben herein — verletzt werden die Leute vom eigenen Glas, nicht vom Stein |
+| **F15** | How Do We Know What Killed the Dinosaurs? | **ERZÄHLBAR** | Ein Geologe hält ein Stück Kalkstein mit einem schmalen Tonband in der Hand, und sein Vater fragt, was so viel von einem seltenen Metall in diese eine Lage gebracht hat |
+| **F16** | Why Does Mars Have Two Tiny Moons? | **NICHT ERZÄHLBAR** | *Keine.* Der Kern ist ein Bahnvorgang ohne Zeugen — Einfang oder Einschlag, entschieden wird das in Simulationen. Die verfügbare Szene (die Entdeckung der beiden Monde) beantwortet „wer hat sie gefunden", nicht „warum hat Mars sie" |
+| **F18** | How Did Desert Peoples Find Water? | **ERZÄHLBAR** | Ein Brunnenbauer arbeitet am Grund eines Schachts mit einer Kerze neben sich; neigt sich die Flamme, weiß er, woher die Luft kommt, und geht sie aus, steigt er |
+| **F19** | Why Was Spice Worth More Than Gold? | **GRENZFALL** | Ein Händler wiegt Pfeffer auf einer Waage gegen Münzen auf — *aber* ob das Video trägt, hängt daran, ob es den Preis zeigt (Waage, Haushalt) oder die Route erklärt (Karte) |
+
+**Eine Szenenangabe, die das Repo bereits korrigiert hat:** Für F10 lag der
+Entwurf „im Winter 3807 v. Chr." nahe. `recherche/thema-F11-recherche.md`
+hält dazu fest: **„3807 oder 3806 v. Chr."**, und der Sweet Track ist dort nur
+die **zweitälteste** Bohlenbahn der Britischen Inseln, seit 2009 übertroffen
+von einem Weg in Plumstead (4100 v. Chr.); auch „nur ein Mensch hintereinander"
+ist dort als *erschlossen, nicht belegt* markiert. Die Szene oben ist deshalb
+ohne Jahreszahl formuliert. Das ist zugleich die Probe darauf, was in dieser
+Spalte sonst noch steckt: **ungeprüfte Einzelheiten, die bei der Faktenprüfung
+kippen können.**
+
+**Bilanz: 7 erzählbar · 5 Grenzfälle · 1 nicht erzählbar.**
+
+### Wo genau die Grenzfälle kippen
+
+Die fünf Grenzfälle haben alle dieselbe Bauart: **eine gute Einzelszene ist da,
+aber die Frage, so wie sie im Titel steht, verspricht mehr als diese Szene
+einlöst.** Bei jedem ist benennbar, was die Entscheidung trägt:
+
+- **F08** — trägt das Video eine Person am Brunnen oder den Stadtplan? Nur
+  das erste ist erzählbar. Dann muss der Titel aufhören, „die Städte" zu
+  versprechen.
+- **F09** — ein benannter Herausgeber bei der Arbeit ist erzählbar, die
+  Rezensionsgeschichte nicht. Video 2 hat genau diesen Schnitt schon einmal
+  gemacht: Bessel am Okular statt Parallaxendreieck.
+- **F12** — der Schreiber trägt, die Trapezregel nicht. Wer das Rechenverfahren
+  zeigen will, baut ein Diagrammvideo.
+- **F13** — ein Ort zu einem Datum trägt, „jede Kultur" nicht. Die Frage müsste
+  auf **einen** Ort zusammengezogen werden.
+- **F19** — Pfeffer gegen Gold auf einer Waage trägt, die Handelsroute nicht.
+
+Diese fünf sind **nicht verworfen**. Sie brauchen vor der Produktion eine
+Entscheidung darüber, welche Hälfte der Frage das Video wird — und
+gegebenenfalls einen engeren Titel. Das ist Skriptarbeit, nicht Themenwahl.
+
+### Warum F16 fällt
+
+F16 ist der Zwilling von **X3** aus dem ersten Nachtrag („How Did People Send a
+Picture Down a Wire?", verworfen mit *„der Kern ist der Abtastvorgang"*). Hier
+ist der Kern die Herkunft zweier Monde. Beide Antworten — Einfang aus dem
+Asteroidengürtel oder Wiederzusammenballung nach einem Einschlag — sind
+Bahnrechnungen. Es gibt keinen Menschen, der dabei etwas tut; es gibt nur
+Simulationsergebnisse, und die sind Schaubilder.
+
+Das ist kein Urteil über die Belegbarkeit: F16 steht bei 8/8 Crossref-Treffern
+und 20,0 % Titelabstand. **Genau dafür ist das K.-o.-Kriterium da** — es fällt
+vor der Punktevergabe, nicht nach ihr.
+
+## Was das an der Rangliste ändert
+
+Die Rangliste der besten 15 verliert **drei** Einträge, aus drei verschiedenen
+Gründen:
+
+| Rang | ID | Grund des Ausfalls |
+|---:|---|---|
+| 5 | F11 | Video 1 wird nicht veröffentlicht (Vorgabe dieses Laufs) |
+| 12 | F04 | ist das fertige Video 2 — verbraucht |
+| **14** | **F16** | **nicht erzählbar** (dieser Lauf) |
+
+Übrig bleiben 12 der 15. **Die Reihenfolge der verbleibenden ändert sich
+nicht** — Erzählbarkeit ist K.-o.-Kriterium, keine fünfte Achse, und wird
+deshalb nicht verrechnet.
+
+Von den zwölf Verbliebenen sind nach diesem Lauf geprüft: F18 (erzählbar),
+F19 (Grenzfall), F14 (erzählbar), F09 (Grenzfall). Die übrigen acht der
+Rangliste — F39, F30, F31, F35, F37, F02, F20, F34 — liegen außerhalb des
+09–12/2026-Fensters und sind **weiterhin ungeprüft**.
+
+**Der Slot V3 ist offen.** F16 war für den 28.09.2026 gesetzt. Ein Ersatz aus
+demselben Anlassfenster wäre F15 („How Do We Know What Killed the Dinosaurs?",
+erzählbar, 5/8, Rang außerhalb der 15) oder das Vorziehen von F14. Diese Wahl
+wird hier **nicht** getroffen — sie hängt an der Entscheidung aus Teil C.
+
+## Der Schema-Anteil: was messbar war und was nicht
+
+Der Auftrag fragt, ob sich am Paar `skript.md` / `skript-erklaerform.md` der
+Schema-Anteil beider Bauarten nachmessen lässt.
+
+**Nein, nicht für beide.** [gemessen]
+
+- `skript-erklaerform.md` trägt **0 Bildannotationen**; `skript.md` vier
+  Erwähnungen, keine davon als Bildplan.
+- Zur Erklärform existiert **kein Bildplan** — sie wurde am 16.08.2026
+  abgelöst, bevor einer gebaut wurde.
+- `tonprobe-bilder.py` misst nicht die Skripte, sondern zwei **87-Sekunden-
+  Tonproben** (`tonprobe-alt.txt`, `tonprobe-neu.txt`), und seine Zuordnung ist
+  laut eigenem Docstring „ein Urteil, keine Messung".
+
+Ein Vergleich beider Formen ist damit nicht herstellbar, ohne beide Skripte von
+Hand durchzuklassifizieren — das wäre mein Urteil über 6.900 Wörter und keine
+Messung. **Es wird deshalb nicht geschätzt.**
+
+**Was stattdessen ging:** Der Schema-Anteil der *produzierten* Fassung ist über
+die Motivprompts bestimmbar, laufzeitgewichtet über alle 159 Einstellungen —
+neues Skript `produktion/video-02/schema_anteil.py`.
+
+| | Umfang | Schema-Anteil |
+|---|---|---|
+| Erklärform, Tonprobe | 87 s | 73 % |
+| Erzählfassung, Tonprobe | 87 s | 10 % |
+| **Erzählfassung, fertiges Video** | **614,8 s, 159 Einstellungen** | **10,1 %** |
+
+Vier Motive tragen den ganzen Anteil: **M12** (Parallaxendreieck), **M42/M54/M64**
+(die Entfernungsleiter). Die 87-Sekunden-Probe hat den Wert für das ganze Video
+also gut getroffen — der Anteil liegt aber **knapp über** der selbstgesetzten
+Grenze von 10 %, nicht darunter. [abgeleitet, regelbasiert — die Wortliste ist
+ein Urteil, siehe Kopf des Skripts]
+
+Zwei Fehler dieser Auswertung sind im Skript dokumentiert, weil sie das
+Ergebnis um vier Prozentpunkte verschoben hatten: `arrow` ohne Wortgrenze
+trifft *n-arrow gaps* (vier Handschriftszenen falsch als Schaubild), und
+`ladder` traf M66, eine echte Holzleiter mit zwei Händen und einem Nagel.
+
+## Teil C — die drei möglichen Haltungen zur Anlasskopplung
+
+Keine Empfehlung. Die Entscheidung fällt außerhalb dieses Laufs; hier steht
+nur, was jede Haltung kostet. Voraussetzung für alle drei: **B1 ist negativ
+ausgefallen und B2 ist nicht entscheidbar** (siehe
+[`regeln/anlass-test.md`](../regeln/anlass-test.md)).
+
+**1 — Taktgeber (Status quo).** Der Anlass bestimmt Reihenfolge und Termin.
+Nächstes Video wäre nach dem bestehenden Plan V3 am 28.09.2026 — der Slot ist
+durch den Ausfall von F16 aber leer und müsste mit F15 oder einem vorgezogenen
+F14 gefüllt werden. Termindruck: hoch und sofort, denn V1 hätte am 17.08.2026
+in Produktion gehen müssen, also heute. Was verloren geht: die Reihenfolge
+richtet sich nach einer Wirkungsannahme, die an ihrem einzigen Beleg gescheitert
+ist — und bei einem Kanal ohne Konto sind die Termine ohnehin nicht bindend.
+
+**2 — Sortierkriterium.** Bei sonst gleichwertigen Fragen entscheidet der
+Anlass, aber kein Termin hängt davon ab. Nächstes Video wäre die
+bestbelegte erzählbare Frage mit Anlass im Fenster — nach der Rangliste **F18**
+(Rang 9, 8 Punkte, erzählbar, Dune-Anlass im Dezember). Termindruck: keiner,
+der Anlass ist ein Tiebreak. Was verloren geht: die Möglichkeit, einen wirklich
+großen Anlass punktgenau zu treffen — falls er doch wirkt, wovon nach B1 nichts
+bekannt ist.
+
+**3 — Fallengelassen.** Reihenfolge nach Belegbarkeit, Erzählbarkeit und
+Produktionsaufwand; veröffentlicht wird, wenn fertig. Nächstes Video wäre
+**F39** („How Do You Send a Message That Lasts a Million Years?", Rang 1,
+8 Punkte, 8/8 Crossref) — Erzählbarkeit allerdings ungeprüft, sie liegt
+außerhalb des hier geprüften Fensters. Termindruck: keiner. Was verloren geht:
+der Kalender als Planungsgerüst; ohne ihn braucht die Reihenfolge ein anderes
+Ordnungsprinzip, und die 22 recherchierten Anlässe werden zu totem Material.
+
+**Was in allen drei Fällen gleich bleibt:** die 47 Fragen, ihre Belegbarkeit,
+die Titelprüfung — und dass ohne YouTube-Konto kein Termin verbindlich ist.
