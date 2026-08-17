@@ -1,0 +1,194 @@
+[
+ {
+  "name": "Leavitt",
+  "sollform": "LEV-it",
+  "small": "abweichend",
+  "gehoert_small": "Levayet.",
+  "medium": "abweichend",
+  "gehoert_medium": "Leviad."
+ },
+ {
+  "name": "Cepheid",
+  "sollform": "SEF-ee-id",
+  "small": "abweichend",
+  "gehoert_small": "SFEID",
+  "medium": "abweichend",
+  "gehoert_medium": "SfEid"
+ },
+ {
+  "name": "Cepheids",
+  "sollform": "SEF-ee-ids",
+  "small": "sitzt",
+  "gehoert_small": "Cepheids.",
+  "medium": "sitzt",
+  "gehoert_medium": "cepheids."
+ },
+ {
+  "name": "Koenigsberg",
+  "sollform": "Koenigsberg",
+  "small": "sitzt",
+  "gehoert_small": "Konigsberg",
+  "medium": "sitzt",
+  "gehoert_medium": "Konigsberg"
+ },
+ {
+  "name": "Hipparcos",
+  "sollform": "hip-AR-koss",
+  "small": "sitzt",
+  "gehoert_small": "HIP",
+  "medium": "sitzt",
+  "gehoert_medium": "HIP"
+ },
+ {
+  "name": "Gaia",
+  "sollform": "GUY-uh",
+  "small": "sitzt",
+  "gehoert_small": "Guy U,",
+  "medium": "sitzt",
+  "gehoert_medium": "Gaia,"
+ },
+ {
+  "name": "Dorpat",
+  "sollform": "DOR-pat",
+  "small": "sitzt",
+  "gehoert_small": "Pat,",
+  "medium": "sitzt",
+  "gehoert_medium": "Pat,"
+ },
+ {
+  "name": "Vega",
+  "sollform": "VEE-guh",
+  "small": "sitzt",
+  "gehoert_small": "Vega.",
+  "medium": "sitzt",
+  "gehoert_medium": "vega."
+ },
+ {
+  "name": "Pleiades",
+  "sollform": "PLY-uh-deez",
+  "small": "ueberhoert",
+  "gehoert_small": "",
+  "medium": "ueberhoert",
+  "gehoert_medium": ""
+ },
+ {
+  "name": "SH0ES",
+  "sollform": "shoes",
+  "small": "sitzt",
+  "gehoert_small": "Shoes,",
+  "medium": "sitzt",
+  "gehoert_medium": "Shoes,"
+ },
+ {
+  "name": "Alpha Centauri",
+  "sollform": "AL-fuh sen-TOR-ee",
+  "small": "abweichend",
+  "gehoert_small": "Alfus Centauri.",
+  "medium": "abweichend",
+  "gehoert_medium": "Alphus Centauri."
+ },
+ {
+  "name": "Magellanic",
+  "sollform": "maj-uh-LAN-ik",
+  "small": "abweichend",
+  "gehoert_small": "-olanic",
+  "medium": "abweichend",
+  "gehoert_medium": "-Atlantic"
+ },
+ {
+  "name": "Planck",
+  "sollform": "plahnk",
+  "small": "sitzt",
+  "gehoert_small": "Plank",
+  "medium": "sitzt",
+  "gehoert_medium": "Planck"
+ },
+ {
+  "name": "61 Cygni",
+  "sollform": "sixty-one SIG-nye",
+  "small": "abweichend",
+  "gehoert_small": "61 Signei.",
+  "medium": "sitzt",
+  "gehoert_medium": "61 Cygnii."
+ },
+ {
+  "name": "1543",
+  "sollform": "fifteen forty-three",
+  "small": "sitzt",
+  "gehoert_small": "1543",
+  "medium": "sitzt",
+  "gehoert_medium": "1543"
+ },
+ {
+  "name": "1700",
+  "sollform": "seventeen hundred",
+  "small": "sitzt",
+  "gehoert_small": "1700",
+  "medium": "sitzt",
+  "gehoert_medium": "1700"
+ },
+ {
+  "name": "0.125",
+  "sollform": "zero point one two five",
+  "small": "sitzt",
+  "gehoert_small": "0 .125 arc",
+  "medium": "sitzt",
+  "gehoert_medium": "0 .125"
+ },
+ {
+  "name": "0.129",
+  "sollform": "zero point one two nine",
+  "small": "sitzt",
+  "gehoert_small": "0 .129.",
+  "medium": "sitzt",
+  "gehoert_medium": "0 .129."
+ },
+ {
+  "name": "67.4",
+  "sollform": "sixty-seven point four",
+  "small": "sitzt",
+  "gehoert_small": "67 .4",
+  "medium": "sitzt",
+  "gehoert_medium": "67 .4,"
+ },
+ {
+  "name": "73.0",
+  "sollform": "seventy-three point oh",
+  "small": "sitzt",
+  "gehoert_small": "73 .0,",
+  "medium": "sitzt",
+  "gehoert_medium": "73 .0,"
+ },
+ {
+  "name": "67.8",
+  "sollform": "sixty-seven point eight",
+  "small": "sitzt",
+  "gehoert_small": "67 .8",
+  "medium": "sitzt",
+  "gehoert_medium": "67 .8"
+ },
+ {
+  "name": "118.000",
+  "sollform": "a hundred and eighteen thousand",
+  "small": "sitzt",
+  "gehoert_small": "pinned down 118 ,000 stars",
+  "medium": "sitzt",
+  "gehoert_medium": "COS pinned down 118 ,000"
+ },
+ {
+  "name": "759.000",
+  "sollform": "seven hundred and fifty-nine thousand",
+  "small": "sitzt",
+  "gehoert_small": "-old coin from 759 ,000",
+  "medium": "sitzt",
+  "gehoert_medium": "759 ,000"
+ },
+ {
+  "name": "87.000",
+  "sollform": "eighty-seven thousand",
+  "small": "sitzt",
+  "gehoert_small": "87 ,000",
+  "medium": "sitzt",
+  "gehoert_medium": "87 ,000"
+ }
+]
