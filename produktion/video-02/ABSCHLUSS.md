@@ -20,10 +20,15 @@
 | **Credits** | **222 von 500** |
 | Schema-Anteil | **10,1 %** der Laufzeit (Schranke jetzt 12 %) |
 
-Die Videodatei liegt nicht im Repository (144 MB). Der Container ist flüchtig —
-Datei gesichert unter **https://gofile.io/d/L5O1u46m**. GoFile meldet denselben
-MD5 wie die lokale Datei; die Übertragung ist damit verifiziert, nicht nur
-angenommen.
+Die Videodatei liegt **im Repository**, in vier Teilen unter
+[`produktion/auslieferung/`](../auslieferung/) — zusammensetzen mit
+`sh zusammensetzen.sh`, das Skript prüft die Prüfsumme.
+
+Der erste Weg war ein Dateihoster, und er hat nicht getragen: der Link
+`gofile.io/d/L5O1u46m` war **nach wenigen Stunden tot** („this content does not
+exist"), obwohl GoFile beim Hochladen denselben MD5 zurückgemeldet hatte. Die
+Übertragung war korrekt, die Aufbewahrung nicht. Ein Link, der verfällt, ist
+keine Sicherung.
 
 ## Was geprüft wurde, und wie
 
