@@ -1,0 +1,1592 @@
+[
+ {
+  "nr": 1,
+  "text": "You're outside, and it's dark. Look up. Pick a star. Any one you like.",
+  "motiv": "M01",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.836,
+  "start_s": 0.0,
+  "ende_s": 3.901,
+  "dauer_s": 3.901
+ },
+ {
+  "nr": 2,
+  "text": "Now answer me: how far away is your star?",
+  "motiv": "M02",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 2.466,
+  "start_s": 3.901,
+  "ende_s": 6.132,
+  "dauer_s": 2.231
+ },
+ {
+  "nr": 3,
+  "text": "Nothing comes. You're not alone in that.",
+  "motiv": "M02",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.918,
+  "start_s": 6.132,
+  "ende_s": 8.303,
+  "dauer_s": 2.171
+ },
+ {
+  "nr": 4,
+  "text": "More than three thousand people got the same question.",
+  "motiv": "M03",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 2.466,
+  "start_s": 8.303,
+  "ende_s": 10.544,
+  "dauer_s": 2.241
+ },
+ {
+  "nr": 5,
+  "text": "One in four put the stars closer to us than the Sun.",
+  "motiv": "M03",
+  "fahrt": "Schwenk rechts",
+  "dauer_soll_s": 3.288,
+  "start_s": 10.544,
+  "ende_s": 13.737,
+  "dauer_s": 3.193
+ },
+ {
+  "nr": 6,
+  "text": "Five out of six students wouldn't put a number on the nearest one at all.",
+  "motiv": "M03",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.11,
+  "start_s": 13.737,
+  "ende_s": 16.86,
+  "dauer_s": 3.123
+ },
+ {
+  "nr": 7,
+  "text": "Of those who tried, one in five landed in the right range. About three people in a hundred.",
+  "motiv": "M03",
+  "fahrt": "Schwenk links",
+  "dauer_soll_s": 4.932,
+  "start_s": 16.86,
+  "ende_s": 21.366,
+  "dauer_s": 4.506
+ },
+ {
+  "nr": 8,
+  "text": "So there you stand in the street with no answer.",
+  "motiv": "M02",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 2.74,
+  "start_s": 21.366,
+  "ende_s": 23.885,
+  "dauer_s": 2.519
+ },
+ {
+  "nr": 9,
+  "text": "What you need is a triangle. Here is how you build yours.",
+  "motiv": "M12",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.288,
+  "start_s": 23.885,
+  "ende_s": 27.684,
+  "dauer_s": 3.799
+ },
+ {
+  "nr": 10,
+  "text": "Put your thumb up, arm straight out, and shut your left eye.",
+  "motiv": "M04",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.288,
+  "start_s": 27.684,
+  "ende_s": 30.668,
+  "dauer_s": 2.984
+ },
+ {
+  "nr": 11,
+  "text": "Now swap eyes. Your thumb jumped. The wall stayed where it was.",
+  "motiv": "M05",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.288,
+  "start_s": 30.668,
+  "ende_s": 35.405,
+  "dauer_s": 4.737
+ },
+ {
+  "nr": 12,
+  "text": "Your two eyes sit apart. Each one looks past your thumb from its own spot. Two spots, one jump.",
+  "motiv": "M06",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 5.205,
+  "start_s": 35.405,
+  "ende_s": 41.247,
+  "dauer_s": 5.842
+ },
+ {
+  "nr": 13,
+  "text": "Now you need two spots much further apart. Stand in this street in January.",
+  "motiv": "M07",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 3.836,
+  "start_s": 41.247,
+  "ende_s": 44.672,
+  "dauer_s": 3.425
+ },
+ {
+  "nr": 14,
+  "text": "Come back in July and stand on the same flagstone.",
+  "motiv": "M08",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.74,
+  "start_s": 44.672,
+  "ende_s": 47.098,
+  "dauer_s": 2.426
+ },
+ {
+  "nr": 15,
+  "text": "You never lifted a foot. And you have moved three hundred million kilometres.",
+  "motiv": "M09",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 47.098,
+  "ende_s": 51.197,
+  "dauer_s": 4.099
+ },
+ {
+  "nr": 16,
+  "text": "Your planet carried you.",
+  "motiv": "M09",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.096,
+  "start_s": 51.197,
+  "ende_s": 52.694,
+  "dauer_s": 1.497
+ },
+ {
+  "nr": 17,
+  "text": "Photograph a near star from both ends of your ride, and it jumps.",
+  "motiv": "M10",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.562,
+  "start_s": 52.694,
+  "ende_s": 55.504,
+  "dauer_s": 2.81
+ },
+ {
+  "nr": 18,
+  "text": "Same as your thumb did.",
+  "motiv": "M11",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.37,
+  "start_s": 55.504,
+  "ende_s": 57.41,
+  "dauer_s": 1.906
+ },
+ {
+  "nr": 19,
+  "text": "A man in Königsberg spent two years catching that jump.",
+  "motiv": "M13",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 2.74,
+  "start_s": 57.41,
+  "ende_s": 60.51,
+  "dauer_s": 3.1
+ },
+ {
+  "nr": 20,
+  "text": "The same trick you just played against your wall, done properly.",
+  "motiv": "M15",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.014,
+  "start_s": 60.51,
+  "ende_s": 63.819,
+  "dauer_s": 3.309
+ },
+ {
+  "nr": 21,
+  "text": "His telescope had its main lens sawn clean in half. One half slid on a fine screw.",
+  "motiv": "M14",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.658,
+  "start_s": 63.819,
+  "ende_s": 68.939,
+  "dauer_s": 5.12
+ },
+ {
+  "nr": 22,
+  "text": "Night after night he turned the screw until two images of one faint star",
+  "motiv": "M16",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.836,
+  "start_s": 68.939,
+  "ende_s": 71.899,
+  "dauer_s": 2.96
+ },
+ {
+  "nr": 23,
+  "text": "lay exactly on top of each other.",
+  "motiv": "M17",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.918,
+  "start_s": 71.899,
+  "ende_s": 74.36,
+  "dauer_s": 2.461
+ },
+ {
+  "nr": 24,
+  "text": "Then he read the screw off by lamplight. That reading was the jump.",
+  "motiv": "M18",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 74.36,
+  "ende_s": 78.366,
+  "dauer_s": 4.006
+ },
+ {
+  "nr": 25,
+  "text": "Half of it, drawn as an angle, is what you were after: the parallax.",
+  "motiv": "M12",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.836,
+  "start_s": 78.366,
+  "ende_s": 82.012,
+  "dauer_s": 3.646
+ },
+ {
+  "nr": 26,
+  "text": "Small jump, far star. That is the whole rule, and now you have it too.",
+  "motiv": "M12",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.11,
+  "start_s": 82.012,
+  "ende_s": 85.647,
+  "dauer_s": 3.635
+ },
+ {
+  "nr": 27,
+  "text": "One catch. Between idea and lamplit reading lie two hundred and ninety-five years.",
+  "motiv": "M18",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.562,
+  "start_s": 85.647,
+  "ende_s": 90.015,
+  "dauer_s": 4.368
+ },
+ {
+  "nr": 28,
+  "text": "In 1543 a book set the Earth moving. The objection came at once.",
+  "motiv": "M19",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 90.015,
+  "ende_s": 94.938,
+  "dauer_s": 4.923
+ },
+ {
+  "nr": 29,
+  "text": "If you ride a moving platform, the stars should sway.",
+  "motiv": "M11",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 2.74,
+  "start_s": 94.938,
+  "ende_s": 98.061,
+  "dauer_s": 3.123
+ },
+ {
+  "nr": 30,
+  "text": "Nobody saw any sway.",
+  "motiv": "M10",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.096,
+  "start_s": 98.061,
+  "ende_s": 99.384,
+  "dauer_s": 1.323
+ },
+ {
+  "nr": 31,
+  "text": "The sharpest eyes of the century belonged to a Danish noble.",
+  "motiv": "M20",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.014,
+  "start_s": 99.384,
+  "ende_s": 102.287,
+  "dauer_s": 2.903
+ },
+ {
+  "nr": 32,
+  "text": "Stand beside him at his quadrant — brass, taller than you.",
+  "motiv": "M22",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.014,
+  "start_s": 102.287,
+  "ende_s": 104.841,
+  "dauer_s": 2.554
+ },
+ {
+  "nr": 33,
+  "text": "No telescope. He charted the whole sky with his bare eye, finer than anyone alive.",
+  "motiv": "M20",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.11,
+  "start_s": 104.841,
+  "ende_s": 110.112,
+  "dauer_s": 5.271
+ },
+ {
+  "nr": 34,
+  "text": "He hunted your sway for years — your thumb-jump, up there — and never found it.",
+  "motiv": "M10",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.384,
+  "start_s": 110.112,
+  "ende_s": 114.001,
+  "dauer_s": 3.889
+ },
+ {
+  "nr": 35,
+  "text": "So he did the maths on that nothing. To hide from his instruments,",
+  "motiv": "M23",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 114.001,
+  "ende_s": 117.217,
+  "dauer_s": 3.216
+ },
+ {
+  "nr": 36,
+  "text": "the stars would have to sit seven hundred times farther out than Saturn.",
+  "motiv": "M23",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.562,
+  "start_s": 117.217,
+  "ende_s": 120.63,
+  "dauer_s": 3.413
+ },
+ {
+  "nr": 37,
+  "text": "To his eye — to yours too — every bright star shows a small round disk.",
+  "motiv": "M24",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.384,
+  "start_s": 120.63,
+  "ende_s": 124.995,
+  "dauer_s": 4.365
+ },
+ {
+  "nr": 38,
+  "text": "Push a disk that wide out that far: a star of monstrous size, dwarfing the Sun.",
+  "motiv": "M24",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.384,
+  "start_s": 124.995,
+  "ende_s": 129.129,
+  "dauer_s": 4.134
+ },
+ {
+  "nr": 39,
+  "text": "Too absurd, he ruled. The Earth stands still. His logic was sound. His premise was not.",
+  "motiv": "M26",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.384,
+  "start_s": 129.129,
+  "ende_s": 135.061,
+  "dauer_s": 5.932
+ },
+ {
+  "nr": 40,
+  "text": "The disks are not real. Air and your own eye wrap every point of light in blur.",
+  "motiv": "M25",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.658,
+  "start_s": 135.061,
+  "ende_s": 139.554,
+  "dauer_s": 4.493
+ },
+ {
+  "nr": 41,
+  "text": "The blur is what he measured.",
+  "motiv": "M25",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.644,
+  "start_s": 139.554,
+  "ende_s": 140.796,
+  "dauer_s": 1.242
+ },
+ {
+  "nr": 42,
+  "text": "The largest true star disk in your night sky is about a thousand times smaller than the disk he drew.",
+  "motiv": "M24",
+  "fahrt": "statisch",
+  "dauer_soll_s": 5.479,
+  "start_s": 140.796,
+  "ende_s": 146.102,
+  "dauer_s": 5.306
+ },
+ {
+  "nr": 43,
+  "text": "It took until around 1700 to call them an illusion.",
+  "motiv": "M27",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 2.74,
+  "start_s": 146.102,
+  "ende_s": 149.736,
+  "dauer_s": 3.634
+ },
+ {
+  "nr": 44,
+  "text": "An \"optick fallacy,\" as it was put back then.",
+  "motiv": "M27",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.466,
+  "start_s": 149.736,
+  "ende_s": 152.232,
+  "dauer_s": 2.496
+ },
+ {
+  "nr": 45,
+  "text": "He wasn't sloppy. He measured what your eye can see. It just isn't the star.",
+  "motiv": "M06",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.11,
+  "start_s": 152.232,
+  "ende_s": 156.519,
+  "dauer_s": 4.287
+ },
+ {
+  "nr": 46,
+  "text": "The hunt ran on. By the 1830s it was a race.",
+  "motiv": "M28",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 3.014,
+  "start_s": 156.519,
+  "ende_s": 159.236,
+  "dauer_s": 2.717
+ },
+ {
+  "nr": 47,
+  "text": "Three men, three cities, three stars — and you have met the first.",
+  "motiv": "M28",
+  "fahrt": "Schwenk rechts",
+  "dauer_soll_s": 3.562,
+  "start_s": 159.236,
+  "ende_s": 163.348,
+  "dauer_s": 4.112
+ },
+ {
+  "nr": 48,
+  "text": "The man in Königsberg had aimed your trick at a dim star called 61 Cygni.",
+  "motiv": "M29",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.11,
+  "start_s": 163.348,
+  "ende_s": 167.841,
+  "dauer_s": 4.493
+ },
+ {
+  "nr": 49,
+  "text": "It crawls across the sky unusually fast.",
+  "motiv": "M29",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.918,
+  "start_s": 167.841,
+  "ende_s": 170.256,
+  "dauer_s": 2.415
+ },
+ {
+  "nr": 50,
+  "text": "An Italian had spotted that hurry in 1792. A fast star is usually a near one.",
+  "motiv": "M29",
+  "fahrt": "Schwenk rechts",
+  "dauer_soll_s": 4.384,
+  "start_s": 170.256,
+  "ende_s": 175.086,
+  "dauer_s": 4.83
+ },
+ {
+  "nr": 51,
+  "text": "Through 1837 and 1838 he measured. Then he published: a jump of about a third of an arcsecond.",
+  "motiv": "M15",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.932,
+  "start_s": 175.086,
+  "ende_s": 180.461,
+  "dauer_s": 5.375
+ },
+ {
+  "nr": 52,
+  "text": "An arcsecond: take one degree. Cut it into three thousand six hundred slices. Keep one.",
+  "motiv": "M18",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.11,
+  "start_s": 180.461,
+  "ende_s": 185.883,
+  "dauer_s": 5.422
+ },
+ {
+  "nr": 53,
+  "text": "His angle is a two-euro coin seen from seventeen kilometres.",
+  "motiv": "M30",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 2.74,
+  "start_s": 185.883,
+  "ende_s": 188.797,
+  "dauer_s": 2.914
+ },
+ {
+  "nr": 54,
+  "text": "From it he got ten point four light-years. A light-year is the stretch light crosses in one year.",
+  "motiv": "M10",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.932,
+  "start_s": 188.797,
+  "ende_s": 193.337,
+  "dauer_s": 4.54
+ },
+ {
+  "nr": 55,
+  "text": "Nine and a half trillion kilometres.",
+  "motiv": "M10",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.644,
+  "start_s": 193.337,
+  "ende_s": 195.415,
+  "dauer_s": 2.078
+ },
+ {
+  "nr": 56,
+  "text": "Today's value for that star: eleven point four. He came within a tenth of the truth.",
+  "motiv": "M15",
+  "fahrt": "statisch",
+  "dauer_soll_s": 4.384,
+  "start_s": 195.415,
+  "ende_s": 199.838,
+  "dauer_s": 4.423
+ },
+ {
+  "nr": 57,
+  "text": "With a saw, a screw, and your thumb trick.",
+  "motiv": "M14",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.466,
+  "start_s": 199.838,
+  "ende_s": 202.916,
+  "dauer_s": 3.078
+ },
+ {
+  "nr": 58,
+  "text": "But he wasn't first to measure. Go five years back, to the Cape of Good Hope.",
+  "motiv": "M31",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.384,
+  "start_s": 202.916,
+  "ende_s": 207.096,
+  "dauer_s": 4.18
+ },
+ {
+  "nr": 59,
+  "text": "A man there catches the jump of a bright southern star, Alpha Centauri.",
+  "motiv": "M32",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 207.096,
+  "ende_s": 211.275,
+  "dauer_s": 4.179
+ },
+ {
+  "nr": 60,
+  "text": "He does his sums — and puts the sheet in a drawer.",
+  "motiv": "M33",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.288,
+  "start_s": 211.275,
+  "ende_s": 213.992,
+  "dauer_s": 2.717
+ },
+ {
+  "nr": 61,
+  "text": "Earlier claims had been shot down. The story handed down says he didn't trust his own numbers.",
+  "motiv": "M32",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.658,
+  "start_s": 213.992,
+  "ende_s": 218.404,
+  "dauer_s": 4.412
+ },
+ {
+  "nr": 62,
+  "text": "He shut the drawer on your answer. He published in 1839 — second, for want of nerve.",
+  "motiv": "M34",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.658,
+  "start_s": 218.404,
+  "ende_s": 223.723,
+  "dauer_s": 5.319
+ },
+ {
+  "nr": 63,
+  "text": "And in Dorpat, a third man had measured Vega. He landed close: 0.125 arcseconds, against the modern 0.129.",
+  "motiv": "M35",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.932,
+  "start_s": 223.723,
+  "ende_s": 232.674,
+  "dauer_s": 8.951
+ },
+ {
+  "nr": 64,
+  "text": "Then Königsberg doubted those numbers. The man in Dorpat revised his good value to nearly double. Away from the truth.",
+  "motiv": "M35",
+  "fahrt": "statisch",
+  "dauer_soll_s": 5.479,
+  "start_s": 232.674,
+  "ende_s": 238.955,
+  "dauer_s": 6.281
+ },
+ {
+  "nr": 65,
+  "text": "So who was first? Pick your rule. First to measure: the Cape.",
+  "motiv": "M28",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.288,
+  "start_s": 238.955,
+  "ende_s": 242.368,
+  "dauer_s": 3.413
+ },
+ {
+  "nr": 66,
+  "text": "First to make the full case in print: Königsberg.",
+  "motiv": "M28",
+  "fahrt": "Schwenk links",
+  "dauer_soll_s": 2.466,
+  "start_s": 242.368,
+  "ende_s": 245.515,
+  "dauer_s": 3.147
+ },
+ {
+  "nr": 67,
+  "text": "First to print any number at all: arguably Dorpat.",
+  "motiv": "M28",
+  "fahrt": "Schwenk rechts",
+  "dauer_soll_s": 2.466,
+  "start_s": 245.515,
+  "ende_s": 248.65,
+  "dauer_s": 3.135
+ },
+ {
+  "nr": 68,
+  "text": "The books give all three answers — side by side.",
+  "motiv": "M28",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 2.74,
+  "start_s": 248.65,
+  "ende_s": 252.565,
+  "dauer_s": 3.915
+ },
+ {
+  "nr": 69,
+  "text": "You'd think the flood starts there. It doesn't.",
+  "motiv": "M28",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.192,
+  "start_s": 252.565,
+  "ende_s": 254.446,
+  "dauer_s": 1.881
+ },
+ {
+  "nr": 70,
+  "text": "By 1900 — sixty years on — the world's whole haul: about sixty parallaxes.",
+  "motiv": "M36",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 3.836,
+  "start_s": 254.446,
+  "ende_s": 259.937,
+  "dauer_s": 5.491
+ },
+ {
+  "nr": 71,
+  "text": "Sixty known distances, in your galaxy of billions.",
+  "motiv": "M36",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.192,
+  "start_s": 259.937,
+  "ende_s": 262.968,
+  "dauer_s": 3.031
+ },
+ {
+  "nr": 72,
+  "text": "The flood came when the measuring left the ground.",
+  "motiv": "M37",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 2.466,
+  "start_s": 262.968,
+  "ende_s": 265.115,
+  "dauer_s": 2.147
+ },
+ {
+  "nr": 73,
+  "text": "A satellite called Hipparcos pinned down 118,000 stars in the 1990s.",
+  "motiv": "M37",
+  "fahrt": "Schwenk rechts",
+  "dauer_soll_s": 3.014,
+  "start_s": 265.115,
+  "ende_s": 270.339,
+  "dauer_s": 5.224
+ },
+ {
+  "nr": 74,
+  "text": "Only about one in six had an error under ten percent.",
+  "motiv": "M37",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.014,
+  "start_s": 270.339,
+  "ende_s": 273.799,
+  "dauer_s": 3.46
+ },
+ {
+  "nr": 75,
+  "text": "Then came Gaia, a European craft. From 2013 to 2025 it scanned the sky and measured more than a billion stars.",
+  "motiv": "M38",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 5.753,
+  "start_s": 273.799,
+  "ende_s": 280.301,
+  "dauer_s": 6.502
+ },
+ {
+  "nr": 76,
+  "text": "At its sharpest — on paper — it reads your two-euro coin from 759,000 kilometres. Twice as far as the Moon.",
+  "motiv": "M39",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 5.753,
+  "start_s": 280.301,
+  "ende_s": 287.894,
+  "dauer_s": 7.593
+ },
+ {
+  "nr": 77,
+  "text": "And still your triangle runs out inside your own galaxy.",
+  "motiv": "M40",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 2.74,
+  "start_s": 287.894,
+  "ende_s": 290.622,
+  "dauer_s": 2.728
+ },
+ {
+  "nr": 78,
+  "text": "The Milky Way spans some 87,000 light-years, give or take a few thousand.",
+  "motiv": "M40",
+  "fahrt": "Schwenk rechts",
+  "dauer_soll_s": 3.562,
+  "start_s": 290.622,
+  "ende_s": 294.604,
+  "dauer_s": 3.982
+ },
+ {
+  "nr": 79,
+  "text": "For most stars, Gaia's sharp reach covers a slice of that.",
+  "motiv": "M40",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.014,
+  "start_s": 294.604,
+  "ende_s": 297.866,
+  "dauer_s": 3.262
+ },
+ {
+  "nr": 80,
+  "text": "Build a bigger telescope. The base of your triangle has not grown a metre.",
+  "motiv": "M38",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 3.836,
+  "start_s": 297.866,
+  "ende_s": 300.908,
+  "dauer_s": 3.042
+ },
+ {
+  "nr": 81,
+  "text": "Past a point, the jump is smaller than the blur.",
+  "motiv": "M41",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 2.74,
+  "start_s": 300.908,
+  "ende_s": 303.418,
+  "dauer_s": 2.51
+ },
+ {
+  "nr": 82,
+  "text": "Everything farther — every other galaxy, the deep sky — stands on something else. A ladder.",
+  "motiv": "M42",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.384,
+  "start_s": 303.418,
+  "ende_s": 309.571,
+  "dauer_s": 6.153
+ },
+ {
+  "nr": 83,
+  "text": "Its second rung was built by a woman paid thirty cents an hour.",
+  "motiv": "M42",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 309.571,
+  "ende_s": 313.359,
+  "dauer_s": 3.788
+ },
+ {
+  "nr": 84,
+  "text": "Step into a long bright workroom. Harvard, 1908 to 1912.",
+  "motiv": "M43",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 2.74,
+  "start_s": 313.359,
+  "ende_s": 317.84,
+  "dauer_s": 4.481
+ },
+ {
+  "nr": 85,
+  "text": "At the tables sit women, bent over the sky on glass.",
+  "motiv": "M43",
+  "fahrt": "Schwenk rechts",
+  "dauer_soll_s": 3.014,
+  "start_s": 317.84,
+  "ende_s": 320.929,
+  "dauer_s": 3.089
+ },
+ {
+  "nr": 86,
+  "text": "The plates come from the men who run the telescopes. The women measure them.",
+  "motiv": "M43",
+  "fahrt": "Schwenk links",
+  "dauer_soll_s": 3.836,
+  "start_s": 320.929,
+  "ende_s": 325.062,
+  "dauer_s": 4.133
+ },
+ {
+  "nr": 87,
+  "text": "Stop at one table. Under her magnifier lies the Small Magellanic Cloud, a companion galaxy of ours.",
+  "motiv": "M45",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.658,
+  "start_s": 325.062,
+  "ende_s": 330.983,
+  "dauer_s": 5.921
+ },
+ {
+  "nr": 88,
+  "text": "Plate after plate, she finds stars that pulse. They brighten, fade, and brighten again.",
+  "motiv": "M46",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.836,
+  "start_s": 330.983,
+  "ende_s": 335.685,
+  "dauer_s": 4.702
+ },
+ {
+  "nr": 89,
+  "text": "A steady beat of days or weeks.",
+  "motiv": "M47",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.918,
+  "start_s": 335.685,
+  "ende_s": 337.194,
+  "dauer_s": 1.509
+ },
+ {
+  "nr": 90,
+  "text": "We now call them Cepheids.",
+  "motiv": "M46",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.37,
+  "start_s": 337.194,
+  "ende_s": 339.087,
+  "dauer_s": 1.893
+ },
+ {
+  "nr": 91,
+  "text": "She works through twenty-five of them. And the pattern rises out of the glass in front of you.",
+  "motiv": "M44",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.932,
+  "start_s": 339.087,
+  "ende_s": 343.046,
+  "dauer_s": 3.959
+ },
+ {
+  "nr": 92,
+  "text": "The slower the beat, the brighter the star.",
+  "motiv": "M44",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.192,
+  "start_s": 343.046,
+  "ende_s": 345.681,
+  "dauer_s": 2.635
+ },
+ {
+  "nr": 93,
+  "text": "On her chart, the points fall along two clean straight lines.",
+  "motiv": "M48",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.014,
+  "start_s": 345.681,
+  "ende_s": 348.665,
+  "dauer_s": 2.984
+ },
+ {
+  "nr": 94,
+  "text": "She writes down, herself, what it means.",
+  "motiv": "M48",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.918,
+  "start_s": 348.665,
+  "ende_s": 350.523,
+  "dauer_s": 1.858
+ },
+ {
+  "nr": 95,
+  "text": "These stars all sit at roughly the same distance from us — they share the Cloud.",
+  "motiv": "M45",
+  "fahrt": "statisch",
+  "dauer_soll_s": 4.384,
+  "start_s": 350.523,
+  "ende_s": 354.691,
+  "dauer_s": 4.168
+ },
+ {
+  "nr": 96,
+  "text": "So the beat apparently tracks how much light a star truly puts out.",
+  "motiv": "M44",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 354.691,
+  "ende_s": 358.547,
+  "dauer_s": 3.856
+ },
+ {
+  "nr": 97,
+  "text": "Hold on to what she wrote. It unlocks the deep universe for you.",
+  "motiv": "M48",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 358.547,
+  "ende_s": 362.053,
+  "dauer_s": 3.506
+ },
+ {
+  "nr": 98,
+  "text": "Read a Cepheid's rhythm, and you know its true brightness.",
+  "motiv": "M46",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.74,
+  "start_s": 362.053,
+  "ende_s": 366.117,
+  "dauer_s": 4.064
+ },
+ {
+  "nr": 99,
+  "text": "See how faint it looks, and the dimming hands you the distance. Hers you could read across millions of light-years.",
+  "motiv": "M47",
+  "fahrt": "statisch",
+  "dauer_soll_s": 5.479,
+  "start_s": 366.117,
+  "ende_s": 372.202,
+  "dauer_s": 6.085
+ },
+ {
+  "nr": 100,
+  "text": "One catch — and she named it too. Her chart had no scale.",
+  "motiv": "M49",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 372.202,
+  "ende_s": 376.091,
+  "dauer_s": 3.889
+ },
+ {
+  "nr": 101,
+  "text": "Nobody knew the distance to the Cloud itself, so her law gave only ratios.",
+  "motiv": "M45",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 3.836,
+  "start_s": 376.091,
+  "ende_s": 380.224,
+  "dauer_s": 4.133
+ },
+ {
+  "nr": 102,
+  "text": "This star is four times farther than that one. Four times what?",
+  "motiv": "M10",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.288,
+  "start_s": 380.224,
+  "ende_s": 384.299,
+  "dauer_s": 4.075
+ },
+ {
+  "nr": 103,
+  "text": "She wrote that she hoped parallaxes would be measured for a few stars of this kind.",
+  "motiv": "M44",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.384,
+  "start_s": 384.299,
+  "ende_s": 387.933,
+  "dauer_s": 3.634
+ },
+ {
+  "nr": 104,
+  "text": "A year on, an astronomer found a rough scale. No clean triangle — the slow drift of thirteen nearby Cepheids, pooled.",
+  "motiv": "M50",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 5.753,
+  "start_s": 387.933,
+  "ende_s": 395.749,
+  "dauer_s": 7.816
+ },
+ {
+  "nr": 105,
+  "text": "Her paper went out under her director's signature. Her name survives in the first line: \"prepared by Miss Leavitt\".",
+  "motiv": "M51",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 5.205,
+  "start_s": 395.749,
+  "ende_s": 401.751,
+  "dauer_s": 6.002
+ },
+ {
+  "nr": 106,
+  "text": "In 1925, a Swedish mathematician wrote to her about putting her name up for the Nobel Prize.",
+  "motiv": "M52",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.658,
+  "start_s": 401.751,
+  "ende_s": 406.43,
+  "dauer_s": 4.679
+ },
+ {
+  "nr": 107,
+  "text": "He did not know she had been dead for four years.",
+  "motiv": "M52",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.014,
+  "start_s": 406.43,
+  "ende_s": 408.987,
+  "dauer_s": 2.557
+ },
+ {
+  "nr": 108,
+  "text": "Mark the shape of what you now own. Your triangle is the bottom rung.",
+  "motiv": "M42",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.836,
+  "start_s": 408.987,
+  "ende_s": 412.656,
+  "dauer_s": 3.669
+ },
+ {
+  "nr": 109,
+  "text": "The Cepheids stand on the triangle.",
+  "motiv": "M42",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.644,
+  "start_s": 412.656,
+  "ende_s": 414.885,
+  "dauer_s": 2.229
+ },
+ {
+  "nr": 110,
+  "text": "The rungs above — exploding stars, whole galaxies — stand on the Cepheids.",
+  "motiv": "M42",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 414.885,
+  "ende_s": 419.878,
+  "dauer_s": 4.993
+ },
+ {
+  "nr": 111,
+  "text": "Every rung inherits the reach of the one below — and its errors.",
+  "motiv": "M42",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 3.562,
+  "start_s": 419.878,
+  "ende_s": 423.385,
+  "dauer_s": 3.507
+ },
+ {
+  "nr": 112,
+  "text": "And the errors came. Your ladder has snapped twice.",
+  "motiv": "M54",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.466,
+  "start_s": 423.385,
+  "ende_s": 426.684,
+  "dauer_s": 3.299
+ },
+ {
+  "nr": 113,
+  "text": "First break.",
+  "motiv": "M54",
+  "fahrt": "statisch",
+  "dauer_soll_s": 0.548,
+  "start_s": 426.684,
+  "ende_s": 427.694,
+  "dauer_s": 1.01
+ },
+ {
+  "nr": 114,
+  "text": "In 1929, a man at a great telescope in California used Cepheid distances to show the galaxies flee from us.",
+  "motiv": "M55",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 5.479,
+  "start_s": 427.694,
+  "ende_s": 434.904,
+  "dauer_s": 7.21
+ },
+ {
+  "nr": 115,
+  "text": "The farther, the faster. The universe expands. Run that film backwards, and you get an age.",
+  "motiv": "M56",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.384,
+  "start_s": 434.904,
+  "ende_s": 440.628,
+  "dauer_s": 5.724
+ },
+ {
+  "nr": 116,
+  "text": "His rate gave: not quite two billion years. Awkward, even then.",
+  "motiv": "M55",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.014,
+  "start_s": 440.628,
+  "ende_s": 443.971,
+  "dauer_s": 3.343
+ },
+ {
+  "nr": 117,
+  "text": "The geologists put the Earth itself at around two billion.",
+  "motiv": "M09",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.74,
+  "start_s": 443.971,
+  "ende_s": 446.932,
+  "dauer_s": 2.961
+ },
+ {
+  "nr": 118,
+  "text": "By the mid-fifties it turned absurd. The Earth's true age came in at four and a half billion.",
+  "motiv": "M02",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.932,
+  "start_s": 446.932,
+  "ende_s": 451.437,
+  "dauer_s": 4.505
+ },
+ {
+  "nr": 119,
+  "text": "Run those numbers, and you are standing on a planet older than the universe around it.",
+  "motiv": "M02",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.384,
+  "start_s": 451.437,
+  "ende_s": 455.907,
+  "dauer_s": 4.47
+ },
+ {
+  "nr": 120,
+  "text": "Part of the fault lay on Leavitt's rung. There are two families of pulsing stars, with two different rulers.",
+  "motiv": "M58",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 5.205,
+  "start_s": 455.907,
+  "ende_s": 462.118,
+  "dauer_s": 6.211
+ },
+ {
+  "nr": 121,
+  "text": "Mixing them had shrunk the cosmos.",
+  "motiv": "M58",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.644,
+  "start_s": 462.118,
+  "ende_s": 464.15,
+  "dauer_s": 2.032
+ },
+ {
+  "nr": 122,
+  "text": "In 1952, in a hall in Rome, a man stood up and pulled the families apart.",
+  "motiv": "M59",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.384,
+  "start_s": 464.15,
+  "ende_s": 468.178,
+  "dauer_s": 4.028
+ },
+ {
+  "nr": 123,
+  "text": "At a stroke, the universe doubled. Still too small.",
+  "motiv": "M59",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 2.466,
+  "start_s": 468.178,
+  "ende_s": 471.232,
+  "dauer_s": 3.054
+ },
+ {
+  "nr": 124,
+  "text": "In 1958, another astronomer found: the California man had also mistaken glowing gas clouds for bright stars.",
+  "motiv": "M60",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.658,
+  "start_s": 471.232,
+  "ende_s": 477.188,
+  "dauer_s": 5.956
+ },
+ {
+  "nr": 125,
+  "text": "The rate fell again, and the universe came out comfortably older than the Earth.",
+  "motiv": "M56",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 3.836,
+  "start_s": 477.188,
+  "ende_s": 480.66,
+  "dauer_s": 3.472
+ },
+ {
+  "nr": 126,
+  "text": "Total correction, first to last: about a factor of seven.",
+  "motiv": "M60",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.74,
+  "start_s": 480.66,
+  "ende_s": 484.179,
+  "dauer_s": 3.519
+ },
+ {
+  "nr": 127,
+  "text": "Second break, closer to home. The Pleiades — the little cluster you can spot with your bare eyes.",
+  "motiv": "M61",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.932,
+  "start_s": 484.179,
+  "ende_s": 489.078,
+  "dauer_s": 4.899
+ },
+ {
+  "nr": 128,
+  "text": "Hipparcos, the trusted satellite, put it at about 390 light-years.",
+  "motiv": "M37",
+  "fahrt": "statisch",
+  "dauer_soll_s": 2.74,
+  "start_s": 489.078,
+  "ende_s": 493.467,
+  "dauer_s": 4.389
+ },
+ {
+  "nr": 129,
+  "text": "Nearly every other method said 435 to 445. For seventeen years, the field's best instrument disagreed with everyone else.",
+  "motiv": "M61",
+  "fahrt": "statisch",
+  "dauer_soll_s": 5.205,
+  "start_s": 493.467,
+  "ende_s": 499.899,
+  "dauer_s": 6.432
+ },
+ {
+  "nr": 130,
+  "text": "About one of the nearest clusters in your sky.",
+  "motiv": "M61",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 2.466,
+  "start_s": 499.899,
+  "ende_s": 502.105,
+  "dauer_s": 2.206
+ },
+ {
+  "nr": 131,
+  "text": "In 2014, radio telescopes settled it: 444 light-years, give or take four. The satellite was wrong.",
+  "motiv": "M62",
+  "fahrt": "Schwenk rechts",
+  "dauer_soll_s": 4.384,
+  "start_s": 502.105,
+  "ende_s": 508.283,
+  "dauer_s": 6.178
+ },
+ {
+  "nr": 132,
+  "text": "And today your ladder is in its third fight — this one still open.",
+  "motiv": "M42",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.836,
+  "start_s": 508.283,
+  "ende_s": 511.441,
+  "dauer_s": 3.158
+ },
+ {
+  "nr": 133,
+  "text": "Two teams, two numbers for how fast the universe grows.",
+  "motiv": "M65",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 2.74,
+  "start_s": 511.441,
+  "ende_s": 514.529,
+  "dauer_s": 3.088
+ },
+ {
+  "nr": 134,
+  "text": "One number comes from the oldest light there is.",
+  "motiv": "M63",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 2.466,
+  "start_s": 514.529,
+  "ende_s": 516.665,
+  "dauer_s": 2.136
+ },
+ {
+  "nr": 135,
+  "text": "A satellite called Planck reads 67.4, with an error of half a point.",
+  "motiv": "M63",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.562,
+  "start_s": 516.665,
+  "ende_s": 521.135,
+  "dauer_s": 4.47
+ },
+ {
+  "nr": 136,
+  "text": "The other comes off your ladder. Parallax, to Cepheids, to exploding stars that all flare to nearly the same true brightness.",
+  "motiv": "M69",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 5.753,
+  "start_s": 521.135,
+  "ende_s": 527.834,
+  "dauer_s": 6.699
+ },
+ {
+  "nr": 137,
+  "text": "The ladder team, called SH0ES, reads 73.0, plus or minus one.",
+  "motiv": "M69",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.014,
+  "start_s": 527.834,
+  "ende_s": 531.642,
+  "dauer_s": 3.808
+ },
+ {
+  "nr": 138,
+  "text": "A five-sigma difference, in their own words: far too large to be chance.",
+  "motiv": "M63",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 3.562,
+  "start_s": 531.642,
+  "ende_s": 535.195,
+  "dauer_s": 3.553
+ },
+ {
+  "nr": 139,
+  "text": "You'll hear that sold as the early universe against today's. Watch what that framing skips.",
+  "motiv": "M56",
+  "fahrt": "statisch",
+  "dauer_soll_s": 4.11,
+  "start_s": 535.195,
+  "ende_s": 539.85,
+  "dauer_s": 4.655
+ },
+ {
+  "nr": 140,
+  "text": "A second team climbed the same ladder with a different second rung.",
+  "motiv": "M64",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.288,
+  "start_s": 539.85,
+  "ende_s": 542.787,
+  "dauer_s": 2.937
+ },
+ {
+  "nr": 141,
+  "text": "Red giant stars instead of Cepheids, the new James Webb telescope in the mix.",
+  "motiv": "M67",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.836,
+  "start_s": 542.787,
+  "ende_s": 547.327,
+  "dauer_s": 4.54
+ },
+ {
+  "nr": 142,
+  "text": "They read 67.8 to 70.4, depending on the sample and the method.",
+  "motiv": "M64",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.288,
+  "start_s": 547.327,
+  "ende_s": 551.738,
+  "dauer_s": 4.411
+ },
+ {
+  "nr": 143,
+  "text": "Their own verdict: no new physics needed.",
+  "motiv": "M64",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.918,
+  "start_s": 551.738,
+  "ende_s": 553.55,
+  "dauer_s": 1.812
+ },
+ {
+  "nr": 144,
+  "text": "Strangest of all: both teams agree on the distances to the very same galaxies. To about one percent.",
+  "motiv": "M65",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.932,
+  "start_s": 553.55,
+  "ende_s": 558.948,
+  "dauer_s": 5.398
+ },
+ {
+  "nr": 145,
+  "text": "The stars are not the quarrel. The quarrel is over which exploding stars to hang the scale on.",
+  "motiv": "M65",
+  "fahrt": "statisch",
+  "dauer_soll_s": 4.932,
+  "start_s": 558.948,
+  "ende_s": 564.068,
+  "dauer_s": 5.12
+ },
+ {
+  "nr": 146,
+  "text": "The ladder holds. The fight is about the nail.",
+  "motiv": "M66",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 2.466,
+  "start_s": 564.068,
+  "ende_s": 566.46,
+  "dauer_s": 2.392
+ },
+ {
+  "nr": 147,
+  "text": "Nobody yet knows which side is right.",
+  "motiv": "M66",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.918,
+  "start_s": 566.46,
+  "ende_s": 568.611,
+  "dauer_s": 2.151
+ },
+ {
+  "nr": 148,
+  "text": "Go back out to your street and find your star. How far away is it?",
+  "motiv": "M02",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.11,
+  "start_s": 568.611,
+  "ende_s": 572.175,
+  "dauer_s": 3.564
+ },
+ {
+  "nr": 149,
+  "text": "For the near ones: your triangle. The thumb trick, stretched across your planet's orbit.",
+  "motiv": "M12",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 3.836,
+  "start_s": 572.175,
+  "ende_s": 577.504,
+  "dauer_s": 5.329
+ },
+ {
+  "nr": 150,
+  "text": "Sharpened until a coin past the Moon is an easy target.",
+  "motiv": "M39",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.014,
+  "start_s": 577.504,
+  "ende_s": 580.605,
+  "dauer_s": 3.101
+ },
+ {
+  "nr": 151,
+  "text": "For the far ones: the ladder. A rhythm read off glass plates at thirty cents an hour.",
+  "motiv": "M48",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.658,
+  "start_s": 580.605,
+  "ende_s": 584.947,
+  "dauer_s": 4.342
+ },
+ {
+  "nr": 152,
+  "text": "Nailed to your triangle. Broken twice, patched twice, fought over right now.",
+  "motiv": "M54",
+  "fahrt": "statisch",
+  "dauer_soll_s": 3.288,
+  "start_s": 584.947,
+  "ende_s": 589.626,
+  "dauer_s": 4.679
+ },
+ {
+  "nr": 153,
+  "text": "One in four of the people asked still hangs the stars closer than the Sun.",
+  "motiv": "M03",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 4.11,
+  "start_s": 589.626,
+  "ende_s": 592.806,
+  "dauer_s": 3.18
+ },
+ {
+  "nr": 154,
+  "text": "The nearest one sits so deep that its light spends four years on the road to your eye.",
+  "motiv": "M01",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.932,
+  "start_s": 592.806,
+  "ende_s": 596.719,
+  "dauer_s": 3.913
+ },
+ {
+  "nr": 155,
+  "text": "But that number is no guess. It never was. Someone caught its jump. Someone read its beat.",
+  "motiv": "M68",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 4.658,
+  "start_s": 596.719,
+  "ende_s": 603.279,
+  "dauer_s": 6.56
+ },
+ {
+  "nr": 156,
+  "text": "And beside every distance, someone wrote a second number. How far off it might be.",
+  "motiv": "M68",
+  "fahrt": "statisch",
+  "dauer_soll_s": 4.11,
+  "start_s": 603.279,
+  "ende_s": 607.935,
+  "dauer_s": 4.656
+ },
+ {
+  "nr": 157,
+  "text": "That second number is the honest answer.",
+  "motiv": "M68",
+  "fahrt": "statisch",
+  "dauer_soll_s": 1.918,
+  "start_s": 607.935,
+  "ende_s": 609.885,
+  "dauer_s": 1.95
+ },
+ {
+  "nr": 158,
+  "text": "You don't just know how far your star is.",
+  "motiv": "M02",
+  "fahrt": "Zoom raus",
+  "dauer_soll_s": 2.466,
+  "start_s": 609.885,
+  "ende_s": 612.335,
+  "dauer_s": 2.45
+ },
+ {
+  "nr": 159,
+  "text": "You know how well you know it — and exactly where you don't.",
+  "motiv": "M02",
+  "fahrt": "Zoom rein",
+  "dauer_soll_s": 3.562,
+  "start_s": 612.335,
+  "ende_s": 614.808,
+  "dauer_s": 2.473
+ }
+]

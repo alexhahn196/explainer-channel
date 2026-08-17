@@ -75,6 +75,21 @@ FRAMING_TEIL = (
     "do not draw a head or a face, do not place a standing figure anywhere in the "
     "picture. Sober, restrained, documentary - never cute."
 )
+
+# Sitzende Einzelfigur — ergaenzt am 16.08.2026.
+#
+# Video 1 kannte nur stehende Einzelfiguren, darum verlangt FRAMING_EINZEL
+# beide Fuesse im Bild. Video 2 hat drei sitzende Figuren (zwei am Okular,
+# eine am Leuchttisch); dort kaempft die Fussforderung gegen den Tisch, an dem
+# die Figur sitzt. Eigener Fall statt Kompromiss.
+FRAMING_SITZEND = (
+    "FRAMING: a single person, alone in the frame, seated at their work and "
+    "shown from the waist or the knees up; no second figure, no mirrored "
+    "duplicate. The feet need not be visible - the figure is seated and the "
+    "table or instrument covers the lower body. Head, both shoulders, both "
+    "arms and both hands are inside the picture and are drawn. Sober, "
+    "restrained, documentary - never cute."
+)
 # Motive, deren Szene nur ein Koerperteil zeigt.
 KOERPERTEIL = {"M09", "M19", "M33", "M48", "M83"}
 
@@ -138,6 +153,30 @@ FARBEN = (
 # blauen Himmel und Grasbueschel und war damit kein Diagramm mehr, sondern
 # eine Ortsansicht. Die Materialien behalten ihre echte Farbe, der Rahmen
 # drumherum bleibt Diagramm.
+#
+# HELLER GRUND — ergaenzt am 16.08.2026, gilt fuer alle kuenftigen Videos.
+#
+# Der Stichprobenlauf zu Video 2 hat drei Diagramme auf drei verschiedenen
+# Gruenden geliefert: dunkelblau, fast weiss, fast schwarz. Gemessen streute
+# die Helligkeit von 32 bis 239, waehrend die abgenommenen Bilder von Video 1
+# in einem Band von 90 bis 172 liegen. Nebeneinander sah das nach drei
+# Sendungen aus statt nach einer.
+#
+# Ursache ist die Bildkonvention des Themas, nicht ein Fehler im Prompt:
+# Astronomie zieht jedes Diagramm auf schwarzen Weltraumgrund. Video 1 hatte
+# das Problem nicht, weil ein Strassenquerschnitt keinen Nachthimmel nahelegt
+# — bei einem Thema mit hohem Schema-Anteil faellt die Serie daran auseinander.
+#
+# Die Regel: Dunkelheit gehoert zum ORT bei Nacht, nicht zum Diagramm.
+# Nachtbilder der Welt duerfen dunkel sein; Schemata nie. Sterne werden im
+# Diagramm als dunkle Punkte auf hellem Grund gezeichnet — die Konvention
+# gedruckter Sternkarten, seit Jahrhunderten lesbar.
+# Fassung fuer Video 1. Die Materialreihe "stone ... earth ... timber ...
+# metal" stammt aus Video 1, wo die Schemata Querschnitte durch Bauwerke
+# und Gelaende waren. Fuer Video 2 gilt FARBEN_SCHEMA_OHNE_STOFFE weiter
+# unten: dort ist kein einziges Schema ein Bauwerk, drei von vier sind eine
+# Leiter — und "timber the colour of that wood" ist eine Einladung, sie als
+# Holzleiter zu zeichnen, was ausdruecklich nicht gewollt ist.
 FARBEN_SCHEMA = (
     " COLOUR: each material and each thing shown carries the colour it really "
     "has - stone the colour of that stone, earth the colour of that earth, "
@@ -145,8 +184,18 @@ FARBEN_SCHEMA = (
     "mute, grey down, sepia-tint or harmonise them, and do not limit the "
     "picture to a small set of tones. But this remains a diagram on an even "
     "ground: there is NO sky, no horizon, no landscape, no grass and no "
-    "vegetation around it unless the diagram itself is about them. The "
-    "background stays one plain even field."
+    "vegetation around it unless the diagram itself is about them. "
+    "BACKGROUND, WITHOUT EXCEPTION: the ground behind the diagram is ONE "
+    "single pale neutral field - a very light warm off-white, near the "
+    "brightness of paper. It is never black, never dark blue, never a night "
+    "sky, never outer space, and never a dark field of any kind, even when "
+    "the subject of the diagram is the sky, the stars or space itself. Where "
+    "stars have to appear in a diagram they are drawn as DARK dots on that "
+    "pale ground, in the manner of a printed star chart, never as light dots "
+    "on a dark ground. The diagram must read as ink on paper. Ink on paper "
+    "does not mean bare outlines: every closed shape in the diagram carries "
+    "one flat solid fill, never an empty unfilled contour, so the drawing "
+    "keeps the same weight of colour as the rest of the series."
 )
 
 # ------------------------------------------------------------------- Nacht
@@ -279,6 +328,235 @@ KLEIN = (" The figure is a small distant element, the landscape dominates, the "
          "subordinate to the surroundings.")
 
 NEGATIV = (" no text, no letters, no numbers, no watermark, no logo.")
+
+
+# --- Fassung 2: Anweisungsteil fuer Bilder ohne Figur ------------------------
+#
+# Eingefuehrt am 16.08.2026 nach Stapel 1 von Video 2. Befund: der
+# Anweisungsteil unterliegt derselben Regel wie die Szenenbeschreibung —
+# jedes Wort, das etwas benennt, was nicht im Bild sein soll, kann es
+# herbeirufen. In Video 1 trug fast jedes Bild eine Figur, deshalb fiel es
+# nicht auf. In Video 2 sind 43 von 66 Bildern figurenlos, und der aus
+# Video 1 uebernommene Anweisungsteil nannte dort dreimal Kleidung, dazu
+# Figuren, Requisiten und Werkzeug. M01 verlangte ausdruecklich "no people
+# in this picture at all" und kam mit zwei Personen in Kleidung um 1900
+# zurueck.
+#
+# Die Konstanten oben bleiben unveraendert — sie sind der Wortlaut, mit dem
+# Video 1 hergestellt wurde. Fuer Bilder ohne Figur gelten die Fassungen
+# hier; kuenftige Videos benutzen sie.
+
+
+def _ersetze(text: str, alt: str, neu: str) -> str:
+    """Ersetzt genau einen vollstaendigen Wortlaut. Bricht sonst ab.
+
+    Zweimal ist in diesem Projekt ein Anker danebengegangen, weil ein
+    einzelnes Wort an mehreren Stellen passte. Darum immer der ganze Satz,
+    und ein Fehlschlag ist ein Abbruch, keine stille Auslassung.
+    """
+    if text.count(alt) != 1:
+        raise SystemExit(
+            f"Anker nicht genau einmal gefunden ({text.count(alt)}x): {alt!r}")
+    return text.replace(alt, neu)
+
+
+def machart(mit_figur: bool) -> str:
+    """MACHART in der Fassung mit oder ohne Figur.
+
+    Ohne Figur entfallen ADULT PROPORTIONS und FACE BUILD (ueber 1.100
+    Zeichen ueber Koerperbau und Gesicht), die Aufzaehlung zur Strichstaerke
+    verliert Figuren, Kleidung und Requisiten, und die Zielgruppenangabe
+    "made for adults" faellt weg — sie ist das letzte Personenwort im Block,
+    und den Ernst der Machart tragen "serious documentary" und "sober,
+    restrained, documentary - never cute" ohnehin.
+    """
+    if mit_figur:
+        return MACHART
+    t = MACHART
+    i = t.index("ADULT PROPORTIONS")
+    j = t.index("Minimal symbolic background")
+    t = t[:i] + t[j:]
+    t = _ersetze(t, "explainer video made for adults.", "explainer video.")
+    # Gegenstandsfrei, nicht mit einer anderen Gegenstandsliste. Der erste
+    # Umbau schrieb hier "objects, architecture, vegetation" — und traf damit
+    # denselben Mechanismus noch einmal: von den 43 figurenlosen Motiven
+    # zeigen die meisten weder Architektur noch Pflanzen, sondern ein
+    # Sternfeld, ein Blatt Papier, ein Instrument. Die Strichstaerkenregel
+    # braucht ueberhaupt kein Beispiel.
+    t = _ersetze(
+        t,
+        "the same line weight on figures, clothing, props and background alike",
+        "every outline in the picture has exactly the same weight, foreground "
+        "and background alike")
+    return t
+
+
+_FARBEN_KOPF = " COLOUR: everything is coloured the way it really looks in the world. "
+_FARBEN_WELT = ("The sky is blue, foliage and grass are green, water takes its "
+                "own real colour, stone and earth keep the colour that stone "
+                "and earth actually have")
+_FARBEN_OHNE = ("Every material in the picture keeps the colour that material "
+                "really has")
+_FARBEN_KLEID = (", and clothing is dyed with the dyes the named period and "
+                 "place really had.")
+_FARBEN_BAU = (", and painted surfaces, brick, glass and metal keep the "
+               "colours those materials really have in the place shown.")
+_FARBEN_SCHWANZ = (
+    " Do NOT mute, grey down, dull, wash out, sepia-tint or harmonise these "
+    "colours towards one another, and do not limit the picture to a small set "
+    "of tones - use as many distinct colours as the subject truly has. This "
+    "concerns the hue only: the fills stay perfectly flat, the outlines stay "
+    "clean and uniform, and the shadows stay hard and areal.")
+
+
+def farben(mit_figur: bool, mit_pflanzen: bool = True) -> str:
+    """FARBEN, zugeschnitten auf das, was im Bild wirklich vorkommt.
+
+    Zwei Befunde stecken darin, beide gemessen.
+
+    Ohne Figur faellt der Farbanker an der Kleidung weg (Stapel 1, M01):
+    er setzt einen Traeger voraus und haengt die Epoche an Faerbemittel,
+    worauf das Modell eine historische Epoche waehlte.
+
+    Ohne Pflanzen faellt die ganze Gegenstandsliste weg (Stapel 2). Der Satz
+    "The sky is blue, foliage and grass are green" lief bis dahin in allen
+    62 Nicht-Schema-Motiven mit, obwohl 49 davon ueberhaupt keine
+    Vegetation zeigen. M24 verlangte die extreme Nahaufnahme eines Sterns
+    und kam als Tageslandschaft zurueck: 60 % blauer Himmel, 22 % Gruen.
+    M13 verlangte kahle Baeume bei Nacht und bekam belaubte Kronen und eine
+    leuchtend gruene Wiese. Der Nachtblock allein haelt das nicht auf — er
+    steht hinter FARBEN und redet nur ueber Helligkeit, nicht ueber Laub.
+
+    farben(True, True) ist wortgleich mit FARBEN, damit Video 1
+    nachvollziehbar bleibt.
+    """
+    if mit_pflanzen:
+        # Ein Ort mit Pflanzen ist ein Ort: dort tragen die konkreten Anker.
+        kern = _FARBEN_WELT + (_FARBEN_KLEID if mit_figur else _FARBEN_BAU)
+    elif mit_figur:
+        # Innenraum mit Figur: Kleidung ist da, alles andere nicht benennen.
+        kern = _FARBEN_OHNE + _FARBEN_KLEID
+    else:
+        # Nahaufnahme, Weltraum, leerer Innenraum: kein Gegenstand wird
+        # benannt. "brick" in einem Sternbild ist derselbe Fehler wie
+        # "foliage" in einer Nahaufnahme.
+        kern = _FARBEN_OHNE + "."
+    return _FARBEN_KOPF + kern + _FARBEN_SCHWANZ
+
+
+# Epochensatz. Mit Figur wie in Video 1; ohne Figur ohne Kleidung und ohne
+# Werkzeug — beides Woerter fuer Dinge, die eine Person voraussetzen. In M01
+# stand die Schubkarre neben den beiden herbeigerufenen Personen.
+EPOCHE_MIT_FIGUR = ("Clothing, tools, architecture and vegetation all belong "
+                    "to that period and place and to no other.")
+EPOCHE_OHNE_FIGUR = ("Architecture and vegetation belong to that period and "
+                     "place and to no other.")
+# Und wo weder Figur noch Pflanze im Bild ist — eine Nahaufnahme einer
+# Linse, ein Innenraum, ein Sternfeld —, nennt der Satz gar nichts mehr.
+# "Architecture and vegetation" in der Nahaufnahme einer Objektivlinse ist
+# derselbe Fehler wie "Clothing" im menschenleeren Bild.
+EPOCHE_NEUTRAL = ("Everything shown in this picture belongs to that period "
+                  "and place and to no other.")
+
+
+def figur(mit_kopfbedeckung: bool = True) -> str:
+    """FIGUR, mit oder ohne die Zusage einer Kopfbedeckung.
+
+    Der Block versprach "hair and headwear of that period" allen
+    Figurenmotiven. In Video 2 nennen 10 von 12 Figurenszenen ueberhaupt
+    keine Kopfbedeckung — und M44 verlangt ausdruecklich einen Haarknoten
+    im Nacken. Ein Wort, das in einem Teil der Motive nichts zu suchen hat,
+    steht hier fuer alle. Wer eine Kopfbedeckung braucht, sagt es in der
+    Szene (M27: "men in wigs").
+    """
+    if mit_kopfbedeckung:
+        return FIGUR
+    return _ersetze(FIGUR, "then hair and headwear of that period.",
+                    "then the hair of that period.")
+
+
+# Dritter Framing-Fall neben Ganzfigur und Koerperausschnitt: die
+# Kopfaufnahme. FRAMING_TEIL und FIGUR_TEIL verbieten woertlich "no head, no
+# face" — M06 ist aber genau das, ein Gesicht in Nahsicht mit einem
+# geschlossenen Auge. Der Anweisungsteil verbot damit, was die Szene
+# verlangte. Dass M06 trotzdem richtig zurueckkam, liegt daran, dass Verbote
+# in diesem Projekt ohnehin uebergangen werden — ein Grund mehr, den
+# Widerspruch aufzuloesen.
+FARBEN_SCHEMA_OHNE_STOFFE = _ersetze(
+    FARBEN_SCHEMA,
+    "each material and each thing shown carries the colour it really "
+    "has - stone the colour of that stone, earth the colour of that earth, "
+    "timber the colour of that wood, metal the colour of that metal.",
+    "each thing shown carries one flat colour of its own, and things that "
+    "are alike carry the same colour while things that differ carry "
+    "different ones.")
+
+
+FRAMING_KOPF = (
+    "FRAMING: this is a close view of one head only, filling much of the "
+    "frame - the head and the shoulders under it, and nothing else of the "
+    "body. No second figure, no standing figure anywhere in the picture. "
+    "Sober, restrained, documentary - never cute."
+)
+FIGUR_KOPF = (
+    "THE VISIBLE PART: only the head named in the scene is shown, with the "
+    "collar of the period and place named above; no torso, no arms below "
+    "the shoulder. FACE: one adult human face, small eyes with one dark "
+    "pupil each, above them two clearly drawn eyebrows, a minimal nose and "
+    "one short straight mouth line, then the hair of that period."
+)
+
+# FRAMING ohne Figur, positiv vorangestellt. Das blosse Verbot stand allein
+# und wurde in M01 uebergangen; Verbote sind in diesem Projekt mehrfach
+# ignoriert worden, Beschreibungen nicht.
+FRAMING_LEER = (
+    "FRAMING: this is a picture of a place and of the things in it, seen "
+    "empty and still - no people in this picture at all. "
+    "Sober, restrained, documentary - never cute."
+)
+
+# Flaechenfuellung ohne Materialliste. "rock, stone blocks, earth, water"
+# war als Beispielreihe gemeint, benennt aber vier Dinge, die in einer
+# heutigen Wohnstrasse oder einem Arbeitszimmer nichts zu suchen haben.
+FLAECHE_HART_OHNE_LISTE = (
+    " FLAT FILL, NO EXCEPTIONS: every surface in this picture, whatever it "
+    "shows, is filled with ONE solid colour and nothing else. No gradient, "
+    "no soft shading, no airbrush, no texture, no highlight and no darkening "
+    "towards an edge. Where a surface changes tone it does so as a separate "
+    "hard-edged shape with a clean border, never as a fade. The outlines keep "
+    "one constant weight throughout.")
+
+
+# --- Versalien in der Bildbeschreibung ---------------------------------------
+#
+# Eingefuehrt am 16.08.2026 nach einem Fehlschlag im Stichprobenlauf zu
+# Video 2. Der SCENE-Text lautete dort "a WIDE double-headed arrow" und
+# "a VERY SMALL double-headed arrow" — Versalien zur Betonung. Das Modell hat
+# beide als Beschriftung gelesen und die Woerter gross ins Bild gesetzt,
+# obwohl das Textverbot zweimal im Prompt stand.
+#
+# Betonung durch Grossschreibung funktioniert im ANWEISUNGSTEIL (dort steht
+# sie in MACHART und FARBEN_SCHEMA und richtet keinen Schaden an), aber nicht
+# in der Bildbeschreibung: was dort grossgeschrieben neben einem zeichenbaren
+# Ding steht, landet als Schriftzug daneben.
+#
+# Deshalb eine Pruefung statt einer Merkregel. Eine Regel, die nur im
+# Kommentar steht, wird beim naechsten Video wieder gebrochen.
+ERLAUBTE_VERSALIEN = {"I"}
+
+
+def pruefe_szene(mid: str, szene: str) -> None:
+    """Bricht ab, wenn die Bildbeschreibung ein Wort in Versalien enthaelt."""
+    schlimm = [w.strip(".,;:-—()") for w in szene.split()]
+    schlimm = [w for w in schlimm
+               if len(w) > 1 and w.isupper() and w.isalpha()
+               and w not in ERLAUBTE_VERSALIEN]
+    if schlimm:
+        raise SystemExit(
+            f"{mid}: Versalien in der Bildbeschreibung: {schlimm}. "
+            "Grossschreibung gehoert in den Anweisungsteil, nie in die "
+            "Szene — das Modell setzt sie als Schriftzug ins Bild "
+            "(Stichprobe Video 2, M15).")
 
 MODELL = "nano_banana_2"
 SEITE = "16:9"

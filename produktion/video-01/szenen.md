@@ -286,22 +286,30 @@ Preise **per `get_cost` gemessen am 2026-08-14**:
 | Zweite Ebene für 38 Parallax-Motive | +38 | +76 |
 | Die 6 geschützten Momente zusätzlich als Clip | +6 | +120 |
 
+> **Korrigiert am 16.08.2026.** Die Euro-Spalte für das Ultra-Kontingent
+> stand ursprünglich auf **0,00275 € je Credit**, weil die 99 € als
+> Jahrespreis gelesen worden waren. Sie sind der **Monatspreis** bei
+> Jahreszahlung. Der richtige Wert ist **0,033 € je Credit** — die alten
+> Zahlen waren um den Faktor zwölf zu niedrig. Die Nachkauf-Spalte war
+> nicht betroffen und ist unverändert. Credits, Varianten und Empfehlung
+> sind ebenfalls unverändert; korrigiert wurde ausschließlich die
+> Umrechnung in Euro.
+
 | Variante | Credits | € (Ultra-Kontingent) | € (Nachkauf) |
 |---|---:|---:|---:|
-| **A — alle Motive als Standbild, ffmpeg bewegt** | **168** | 0.46 | 8.23 |
-| **B — A plus getrennte Ebenen** | **244** | 0.67 | 11.96 |
-| **C — B plus 6 echte Clips für die geschützten Momente** | **364** | 1.00 | 17.84 |
-| zum Vergleich: erste Fassung, alle 56 Einstellungen als Clip | 1.788 | 4,92 | 87,61 |
+| **A — alle Motive als Standbild, ffmpeg bewegt** | **168** | 5,54 | 8,23 |
+| **B — A plus getrennte Ebenen** | **244** | 8,05 | 11,96 |
+| **C — B plus 6 echte Clips für die geschützten Momente** | **364** | 12,01 | 17,84 |
+| zum Vergleich: erste Fassung, alle 56 Einstellungen als Clip | 1.788 | 59,00 | 87,61 |
 
 **Euro-Grundlage:** Das Konto läuft auf **Ultra** — 3.000 Credits im Monat für
-99 € im Jahr, also **0,00275 € je Credit**. Ein Nachkauf kostet dagegen
-0,049 € je Credit (1.000 Credits für 49 €). Beide Spalten stehen da, weil die
-erste Zahl nur gilt, solange das Monatskontingent reicht: **Variante C
-verbraucht 364 von 3.000 Monats-Credits — rund 12 %.** Ein ganzes
-Video kostet damit im Kontingent unter einem Euro.
+99 € im Monat bei Jahreszahlung, also **0,033 € je Credit**. Ein Nachkauf
+kostet 0,049 € je Credit (1.000 Credits für 49 €). Beide Spalten stehen da,
+weil die erste Zahl nur gilt, solange das Monatskontingent reicht:
+**Variante C verbraucht 364 von 3.000 Monats-Credits — rund 12 %.**
 
 **Empfehlung: Variante C.** Der Aufschlag von B auf C sind 120 Credits
-(0,32 €) für die sechs Momente, an denen das Video hängt — dort
+(3,96 €) für die sechs Momente, an denen das Video hängt — dort
 lohnt echte Bewegung. Die anderen 78 Motive tragen ein Standbild mit
 ffmpeg-Fahrt; das ist die Machart des Vorbilds, nicht ein Sparzwang.
 

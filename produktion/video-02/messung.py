@@ -41,10 +41,11 @@ def marker_zahl(ws):
 m1 = marker_zahl(fuenftel)
 m_ges = marker_zahl(woerter)
 
-# Antwortposition: "with a triangle"
+# Antwortposition: die Erzaehlfassung sagt "What you need is a triangle."
+# Gezaehlt wird bis zum Wort "triangle" des ersten Vorkommens.
 antwort = None
 for i in range(n - 2):
-    if (woerter[i].lower().strip(".,:;") == "with"
+    if (woerter[i].lower() == "is"
             and woerter[i+1].lower() == "a"
             and woerter[i+2].lower().strip(".,:;") == "triangle"):
         antwort = i + 3
@@ -78,3 +79,15 @@ if antwort:
 print(f"Saetze mit harten Zahlen: {hart} · mit Quellen-ID {beleg} · ohne {ohne}")
 for s in ohne_liste:
     print(f"   OHNE: {s}")
+
+# Stilwerte der Erzaehlfassung — Definitionen aus tonprobe.py, damit die
+# Zahlen mit der Tonprobe vergleichbar bleiben.
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location("tonprobe", HIER / "tonprobe.py")
+_tp = _ilu.module_from_spec(_spec)
+_spec.loader.exec_module(_tp)
+st = _tp.messe(text)
+print(f"Stil — Anrede je 1.000 gesamt: {st['anrede_1000']:.1f} · "
+      f"Satz-Median {st['median']:.1f} · epistemisch {st['epi']} "
+      f"({st['epi_1000']:.1f}/1.000) · Fragen {st['fragen']} · "
+      f"Personen {st['personen']}")

@@ -19,8 +19,15 @@
 | Bilder | **84 von 84**, `nano_banana_2` → substituiert zu `nano_banana_flash`, 16:9, 2k |
 | **Credits** | **228 von 500** |
 
-Die Videodatei liegt nicht im Repository (142 MB). Der Container ist flüchtig —
-Datei gesichert unter **https://gofile.io/d/3D8jBNJc**.
+Die Videodatei liegt **im Repository**, in vier Teilen unter
+[`produktion/auslieferung/`](../auslieferung/) — zusammensetzen mit
+`sh zusammensetzen.sh`, das Skript prüft die Prüfsumme.
+
+**Nachtrag 17.08.2026:** Der ursprüngliche Weg war ein Dateihoster, und der Link
+`gofile.io/d/3D8jBNJc` ist **verfallen**. Damit war dieses Video zwei Tage lang
+nirgends abholbar, obwohl der Bericht es als gesichert auswies. Die Datei lag im
+Container noch vollständig vor, mit unveränderter Prüfsumme; sie ist jetzt im
+Repository.
 
 ## Was geprüft wurde, und wie
 

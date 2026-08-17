@@ -1,79 +1,67 @@
 # Ausspracheliste — Video 2, „How Do We Know How Far Away the Stars Are?"
 
-> Für die TTS-QA vor dem Rendern. Grundlage: der Sprechtext in
-> `skript.md` und die Kandidatenliste aus dem Auftrag vom 15.08.2026.
+> Für die TTS-QA vor dem Rendern. Grundlage ist der Abschnitt
+> `## Sprechtext` in [`skript.md`](skript.md), 2.044 Wörter.
 >
-> Erzählsprache ist **Englisch**. Die Spalte **Respelling** ist das, was
-> in der QA tatsächlich gehört und abgehakt wird — Großbuchstaben
-> markieren die betonte Silbe. Prüfweg wie bei Video 1: **lokale
-> Spracherkennung** (zwei Erkenner, volle Ausrichtung gegen den
-> Solltext), nicht Gehör. Bei Abweichung wird die Schreibweise im
-> Sprechtext ersetzt (Respelling direkt in den Text, wie bei Video 1
-> belegt wirksam) — **nicht** die Schreibung in `skript.md` selbst,
-> sonst bricht der Abgleich mit den Quellen-IDs.
+> Erzählsprache ist **Englisch**. Die Spalte **Respelling** ist das, was in
+> der QA gehört und abgehakt wird — Großbuchstaben markieren die betonte
+> Silbe. Die IPA-Spalte gibt die Herkunftsform, die Respelling-Spalte die im
+> englischen Erzählfluss empfohlene Realisierung.
+>
+> Prüfweg wie bei Video 1: jeden Eintrag im erzeugten Audio einzeln anhören.
+> Bei Abweichung entweder einen Lexikoneintrag im TTS setzen oder die Stelle
+> im **Sprechtext** umschreiben — **nicht** die Schreibung in `skript.md`
+> phonetisch verfälschen, sonst bricht der Abgleich mit den Quellen.
+>
+> Was hier steht, ist **ungeprüft**. Video 1 hatte einen gemessenen
+> Hörbericht mit zwei Spracherkennern; für Video 2 gibt es den noch nicht.
+> Die Schreibweisen folgen dem Respelling-Muster der gemessenen Fälle aus
+> Video 1, sind aber selbst nicht nachgemessen.
 
-## Kandidaten aus dem Auftrag
+## Eigennamen
 
-| Name | Herkunft | IPA (Ziel) | Respelling (empfohlen) | Vorkommen im Sprechtext | Hinweis für die QA |
+| Name | Herkunft | IPA (Herkunft) | Respelling | Vorkommen | Hinweis für die QA |
 |---|---|---|---|---|---|
-| **Bessel** | Deutsch (Astronom, Königsberg) | /ˈbɛsl̩/ | **BESS-el** | 6× | Erste Silbe betont. Fehlform: *beh-SELL*. |
-| **Henderson** | Englisch (Astronom, Kap) | /ˈhɛndərsən/ | **HEN-der-sun** | 2× | Unkritisch, der Vollständigkeit halber. |
-| **Cepheid** | Englisch, nach dem Sternbild Cepheus | /ˈsɛfiɪd/ | **SEF-ee-id** | 4× (auch Plural) | *SEE-fee-id* ist ebenfalls belegt und gilt als bestanden. **Fehlform: hartes K** (*KEF-*) oder *se-FEED*. |
-| **Leavitt** | Englisch (Henrietta Swan Leavitt) | /ˈlɛvɪt/ | **LEV-it** | 2× | **Kritisch.** Die Schreibung lädt zu *LEE-vit* ein — darf nicht stehen bleiben. |
-| **Hubble** | Englisch (Edwin Hubble) | /ˈhʌbəl/ | **HUB-ul** | 3× | Unkritisch. |
-| **Parsec** | Kunstwort (parallax + second) | /ˈpɑːrsɛk/ | **PAR-sek** | **kommt nicht vor** — bewusst vermieden, alle Entfernungen in Lichtjahren | Gelistet, falls eine spätere Fassung die Einheit aufnimmt. |
-| **61 Cygni** | Latein (Genitiv von Cygnus) | /ˈsɪɡnaɪ/ | **sixty-one SIG-nye** | 2× | *SIG-nee* gilt als bestanden. **Fehlform: hartes K** (*KIG-*) oder *SY-nji*. Die 61 als „sixty-one", nie als Einzelziffern. |
-| **Alpha Centauri** | Latein | /ˌælfə sɛnˈtɔːraɪ/ | **AL-fuh sen-TOR-eye** | 1× | *sen-TOR-ee* gilt als bestanden. Betonung auf *TOR*, nie *SEN-tau-ri*. |
-| **Hipparcos** | Akronym (High Precision Parallax Collecting Satellite) | /hɪˈpɑːrkɒs/ | **hih-PAR-koss** | 2× | Zweite Silbe betont — wie der Astronom Hipparch, nicht wie „hippo". |
-| **Gaia** | Griechisch (ESA-Sonde) | /ˈɡaɪə/ | **GY-uh** | 2× | **Kritisch.** Fehlform *GAY-uh*. |
-| **Tycho** | Dänisch/Latein (Tycho Brahe) | /ˈtaɪkoʊ ˈbrɑːhi/ | **TY-koh BRAH-hee** | 3× (2× nur „Tycho") | Englische Konvention; *BRAH* und *BRAH-huh* gelten als bestanden. Fehlform: *TITCH-oh*. |
-| **Rothmann** | Deutsch (Christoph Rothmann) | /ˈʁoːtman/ | **ROHT-mahn** | **kommt nicht vor** — sein Zitat wurde bewusst nicht verwendet | Nur falls eine spätere Fassung ihn nennt. |
-| **Riess** | Deutsch-amerikanisch (Adam Riess) | /riːs/ | **REESS** | **kommt nicht vor** — der Text sagt „a team called SH0ES" | Reimt auf *geese*, nicht auf *rice*. |
-| **Freedman** | Englisch (Wendy Freedman) | /ˈfriːdmən/ | **FREED-mun** | **kommt nicht vor** — der Text sagt „a second team" | — |
-| **JAGB** | Akronym (J-region Asymptotic Giant Branch) | — | **JAY-AY-GEE-BEE** | **kommt nicht vor** — der Text sagt „red giant stars" | Buchstaben einzeln, falls je gebraucht. |
-| **TRGB** | Akronym (Tip of the Red Giant Branch) | — | **TEE-AR-GEE-BEE** | **kommt nicht vor** — der Text sagt „red giant stars" | Buchstaben einzeln, falls je gebraucht. |
-| **SH0ES** | Akronym (Supernova H0 for the Equation of State), **mit Ziffer Null** | /ʃuːz/ | **SHOES** — wie das Wort für Schuhe | 1× | **Kritischste Stelle der Liste.** Im Wort steht eine **Null**, kein O. Eine TTS-Stimme liest „S-H-zero-E-S" oder „sh-zero-es". Vor der Vertonung im Sprechtext als **„Shoes"** schreiben; die Fachwelt spricht das Akronym als Wort. |
+| **Leavitt** | Englisch (Henrietta Swan Leavitt) | /ˈlɛvɪt/ | **LEV-it** | **14×** | **Der kritischste Eintrag, weil der häufigste.** Der naheliegende englische Fehlgriff ist *LEE-vit* — die Familie sprach es kurz, wie *level*. Steht auch als „Miss Leavitt" und „Leavitt's rung". |
+| **Königsberg** | Deutsch (Stadt, heute Kaliningrad) | /ˈkøːnɪçsbɛʁk/ | **KOE-nigs-berg** | 8× | Der Umlaut ist die Falle: ein englisches TTS macht daraus je nach Modell *kai-nigs-berg* oder verschluckt das ö. Im Sprechtext steht darum `Koenigsberg` ohne Umlaut — das liest sich als *KOH-nigs-berg* und ist die gängige englische Anglisierung. |
+| **Cepheid** / **Cepheids** | Griechisch über Latein (Sternbild Cepheus) | /ˈsɛfiːɪd/ | **SEF-ee-id** | 10× | **Kritisch, weil es der Fachbegriff des halben Videos ist.** Britisch auch /ˈsiːfiːɪd/ *SEEF-ee-id*; beides ist üblich, aber es muss **durchgängig dasselbe** sein. Nie *ke-FAY-id* und nie *SEP-heed*. |
+| **Hipparcos** | Akronym der ESA (nach Hipparch) | /hɪˈpɑːrkɒs/ | **hip-AR-koss** | 6× | Betonung auf der zweiten Silbe. Nicht *HIP-ar-kohs* und nicht wie *Hipparchus* mit -kus. |
+| **Gaia** | Griechisch (Erdgöttin), ESA-Mission | /ˈɡaɪ.ə/ | **GUY-uh** | 6× | Die ESA selbst sagt *GUY-uh*. Nicht *GAY-uh* und nicht dreisilbig *ga-EE-a*. |
+| **Dorpat** | Deutsch/Estnisch (Tartu) | /ˈdɔrpat/ | **DOR-pat** | 5× | Zwei Silben, erste betont, kurzes a. Nicht *dor-PAT*. |
+| **Vega** | Arabisch über Latein (Stern) | /ˈviːɡə/ | **VEE-guh** | 3× | Nicht *VAY-guh* — das ist die spanische Lesung. |
+| **Pleiades** | Griechisch (Sternhaufen) | /ˈplaɪ.ədiːz/ | **PLY-uh-deez** | 3× | Drei Silben, erste betont. Nicht *PLEE-ah-des* und nicht *play-AH-deez*. |
+| **SH0ES** | Akronym mit **Ziffer Null** statt O | /ʃuːz/ | **shoes** | 2× | **Kritisch und leicht zu übersehen.** Das Team schreibt sich mit einer Null: *Supernovae, H0, for the Equation of State*. Ein TTS liest das als *S-H-null-E-S*. Im Sprechtext steht darum `shoes`. |
+| **Alpha Centauri** | Latein | /ˈælfə sɛnˈtɔːri/ | **AL-fuh sen-TOR-ee** | 1× | Betonung im zweiten Wort auf *tau*. |
+| **Small Magellanic Cloud** | nach Magellan | /mædʒəˈlænɪk/ | **maj-uh-LAN-ik** | 1× | Betonung auf der dritten Silbe. Nicht *ma-GEL-a-nik*. |
+| **Planck** | Deutsch (Max Planck), ESA-Mission | /plaŋk/ | **plahnk** | 1× | Das a ist dunkel wie in *palm*, nicht wie in *plank*. Englische Sprecher sagen meist *plank*; das ist hörbar falsch, aber verständlich — im Zweifel akzeptabel. |
+| **Cygni** | Latein (Genitiv von *Cygnus*) | /ˈsɪɡnaɪ/ | **SIG-nye** | 1× | Steht als „61 Cygni": **sixty-one SIG-nye**, nicht *six-one* und nicht *SIG-nee*. |
 
-## Weitere Namen im Sprechtext (nicht im Auftrag, aber stolperfähig)
+Ohne Eintrag, weil im englischen Fluss unproblematisch: Earth, Sun, Moon,
+Saturn, Milky Way, Rome, California, Cape of Good Hope, James Webb, Nobel
+Prize, Danish, Italian, Swedish, European, January, July.
 
-| Name | IPA (Ziel) | Respelling | Vorkommen | Hinweis |
-|---|---|---|---|---|
-| **Struve** | /ˈstruːvi/ (engl. Konvention) | **STROO-vee** | 3× | *STROO-vuh* (näher am Deutschen) gilt als bestanden. **Fehlform: *strove*** (einsilbig). |
-| **Vega** | /ˈviːɡə/ | **VEE-guh** | 2× | *VAY-guh* ist im Englischen ebenfalls belegt und gilt als bestanden. Fehlform: *VEH-ga*. |
-| **Piazzi** | /ˈpjattsi/ | **pee-AHT-see** | 1× | Doppel-z als /tts/, nicht *pee-AZZ-ee*. |
-| **Königsberg** | /ˈkɜːnɪɡzbɜːrɡ/ (engl.) | **KUR-nigz-burg** | 1× | Der Umlaut ist der Stolperer. Englische Lesung genügt; *KOH-nigz-berg* gilt als bestanden. |
-| **Dorpat** | /ˈdɔːrpɑːt/ | **DOR-paht** | 1× | Zwei klare Silben. |
-| **Hertzsprung** | /ˈhɛrtsʃprʊŋ/ | **HERTS-sproong** | 1× | **Kritisch:** die Häufung *tzspr* verschleift bei Tempo. Vorname Ejnar: **AY-nar**. |
-| **Magellanic** | /ˌmædʒəˈlænɪk/ | **maj-uh-LAN-ik** | 1× | Betonung auf *LAN*; weiches g. |
-| **Baade** | /ˈbɑːdə/ | **BAH-duh** | 1× | **Kritisch:** zweisilbig. Fehlform: *bade* (einsilbig, wie „made"). Vorname Walter englisch: *WALL-ter*. |
-| **Sandage** | /ˈsændɪdʒ/ | **SAN-dij** | 1× | Endung wie *bandage*. |
-| **Pleiades** | /ˈplaɪədiːz/ | **PLY-uh-deez** | 1× | Fehlform: *PLEE-ads* oder *play-AH-des*. |
-| **Planck** | /plɑːŋk/ | **PLAHNK** | 1× | *plank* (wie das Brett) gilt als bestanden — kaum unterscheidbar. |
-| **Copernicus** | /kəˈpɜːrnɪkəs/ | **kuh-PER-nih-kus** | 1× | Betonung auf *PER*. |
-| **Henrietta** | /ˌhɛnriˈɛtə/ | **hen-ree-ET-uh** | 1× | — |
-| **Giuseppe** | /dʒuˈzɛppe/ | **joo-ZEP-peh** | 1× | — |
+## Zahlen
 
-## Zahlen und Formate (keine Eigennamen)
-
-| Stelle | Problem | Vorgabe für die QA |
+| Stelle | Problem | Vorgabe |
 |---|---|---|
-| **„0.125 arcseconds, against the modern 0.129"** | Dezimalzahlen mit drei Nachkommastellen | **„point one two five"** und **„point one two nine"** — Ziffern einzeln nach dem Punkt, nie *point one-hundred-twenty-five*. |
-| **„67.4"**, **„73.0"**, **„67.8 to 70.4"** | Dezimalzahlen und Spanne | „sixty-seven point four", „seventy-three point oh" (auch *point zero* bestanden), „sixty-seven point eight to seventy point four". Die Spanne braucht hörbares „to". |
-| **„759,000 kilometres"** | große Zahl | „seven hundred fifty-nine thousand". |
-| **„87,000 light-years"**, **„118,000 stars"** | große Zahlen | „eighty-seven thousand", „one hundred eighteen thousand". |
-| **Jahreszahlen** 1543, 1792, 1837/1838, 1839, 1900, 1908–1912, 1925, 1929, 1952, 1958, 2014 | übliche Lesung | Paarweise englisch („fifteen forty-three", „nineteen twenty-nine"); „1908 to 1912" als „nineteen-oh-eight to nineteen-twelve". |
-| **„the 1830s"**, **„the 1990s"**, **„the mid-fifties"** | Dekaden | „the eighteen-thirties", „the nineteen-nineties"; *mid-fifties* ist ausgeschrieben, unkritisch. |
-| **„2013 to 2025"** | Jahresspanne | „twenty-thirteen to twenty-twenty-five". |
-| **„a five-sigma difference"** | Fachwort sigma | Bleibt stehen — der Halbsatz danach („far too large to be chance") erklärt es. Prüfen, dass *sigma* nicht als *SIG-mah* mit Endbetonung kommt. |
-| **„a third of an arcsecond"** | Bruch | „a third", nie *one-third of one arcsecond* — der Rhythmus trägt die Stelle. |
-| **„two-euro coin"** | Währung | „two-euro", nicht *two euros*. |
+| **„In 1543"** | Jahreszahl am Satzanfang | **„fifteen forty-three"** — als Ziffernpaare, nicht *one thousand five hundred and forty-three*. |
+| **„around 1700"** | Runde Jahreszahl | **„around seventeen hundred"**. |
+| **„0.125 arcseconds", „the modern 0.129"** | Dezimalzahl mit führender Null | **„zero point one two five"** und **„zero point one two nine"** — Ziffern einzeln nach dem Punkt, nicht *point one hundred twenty-five*. |
+| **„67.4", „73.0", „67.8 to 70.4"** | Die Hubble-Zahlen, der Kern des Streits | **„sixty-seven point four"**, **„seventy-three point oh"**, **„sixty-seven point eight to seventy point four"**. Bei 73.0 muss die Null hörbar bleiben — sie trägt die Genauigkeit, um die der Streit geht. |
+| **„118,000 stars"** | Tausendergruppe | **„a hundred and eighteen thousand"**. |
+| **„759,000 kilometres"** | Tausendergruppe | **„seven hundred and fifty-nine thousand"**. |
+| **„87,000 light-years"** | Tausendergruppe | **„eighty-seven thousand"**. |
+| **„61 Cygni"** | Sternkatalognummer | **„sixty-one"**, nicht *six-one*. |
+| **„a five-sigma difference"** | Fachausdruck | **„five-SIG-muh"** — als Wort, nicht als griechischer Buchstabe. |
+| Jahreszahlen 1792, 1837, 1838, 1839, 1900, 1908, 1912, 1925, 1929, 1952, 1958, 2013, 2014, 2025 und „the 1990s" | vierstellig, aber eindeutig | **Nicht umgeschrieben.** Ein brauchbares TTS liest sie als Ziffernpaare. **In der QA einzeln gegenhören** — wenn eine als *one thousand …* kommt, kommt sie in die Ersetzungsliste in `sprechtext.py`. |
+| **„435 to 445", „390", „444"** | Lichtjahre | **Nicht umgeschrieben.** In der QA gegenhören. |
 
-## Abnahme
+## Was in der QA sonst zu hören ist
 
-- [ ] Jeder Eintrag der oberen beiden Tabellen einzeln im Audio geprüft (lokale Spracherkennung, zwei Erkenner)
-- [ ] **SH0ES** klingt wie *shoes* — nie wie eine Buchstabier- oder Ziffernfolge
-- [ ] **Leavitt** klingt **nicht** wie *LEE-vit*
-- [ ] **Gaia** klingt **nicht** wie *GAY-uh*
-- [ ] **Baade** ist zweisilbig
-- [ ] 0.125 / 0.129 als Einzelziffern nach dem Punkt
-- [ ] Keine Änderung an der Schreibung im Sprechtext von `skript.md` — Respellings kommen erst in die Vertonungsfassung
+| Stelle | Warum |
+|---|---|
+| **„thirty cents an hour"** | Kommt zweimal vor und trägt beide Male denselben Punkt. Muss beide Male gleich klingen. |
+| **„an arcsecond"**, **„arcseconds"** | Fachbegriff, sechsmal. Betonung auf *arc*. |
+| **„a light-year"**, **„light-years"** | Achtmal. Als ein Wort mit Betonung auf *light*, nicht *light YEAR*. |
+| **„one in four", „one in six"** | Anteile im Fließtext — als Wörter, nicht als Brüche gelesen. |
+| **„H0"** | Kommt im Sprechtext **nicht** vor; hier nur notiert, falls eine späte Fassung es aufnimmt. Wäre **„H-nought"** oder **„H-zero"**, nie *ho*. |

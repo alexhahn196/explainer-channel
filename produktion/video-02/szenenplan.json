@@ -1,0 +1,1960 @@
+{
+ "einstellungen": [
+  {
+   "nr": 1,
+   "text": "You're outside, and it's dark. Look up. Pick a star. Any one you like.",
+   "motiv": "M01",
+   "fahrt": "Zoom rein",
+   "woerter": 14,
+   "start": 0.0,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 2,
+   "text": "Now answer me: how far away is your star?",
+   "motiv": "M02",
+   "fahrt": "Zoom raus",
+   "woerter": 9,
+   "start": 3.835616438356164,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 3,
+   "text": "Nothing comes. You're not alone in that.",
+   "motiv": "M02",
+   "fahrt": "statisch",
+   "woerter": 7,
+   "start": 6.301369863013699,
+   "dauer": 1.917808219178082
+  },
+  {
+   "nr": 4,
+   "text": "More than three thousand people got the same question.",
+   "motiv": "M03",
+   "fahrt": "Zoom raus",
+   "woerter": 9,
+   "start": 8.219178082191782,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 5,
+   "text": "One in four put the stars closer to us than the Sun.",
+   "motiv": "M03",
+   "fahrt": "Schwenk rechts",
+   "woerter": 12,
+   "start": 10.684931506849317,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 6,
+   "text": "Five out of six students wouldn't put a number on the nearest one at all.",
+   "motiv": "M03",
+   "fahrt": "Zoom rein",
+   "woerter": 15,
+   "start": 13.972602739726028,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 7,
+   "text": "Of those who tried, one in five landed in the right range. About three people in a hundred.",
+   "motiv": "M03",
+   "fahrt": "Schwenk links",
+   "woerter": 18,
+   "start": 18.08219178082192,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 8,
+   "text": "So there you stand in the street with no answer.",
+   "motiv": "M02",
+   "fahrt": "Zoom rein",
+   "woerter": 10,
+   "start": 23.013698630136986,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 9,
+   "text": "What you need is a triangle. Here is how you build yours.",
+   "motiv": "M12",
+   "fahrt": "Zoom rein",
+   "woerter": 12,
+   "start": 25.753424657534246,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 10,
+   "text": "Put your thumb up, arm straight out, and shut your left eye.",
+   "motiv": "M04",
+   "fahrt": "statisch",
+   "woerter": 12,
+   "start": 29.041095890410958,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 11,
+   "text": "Now swap eyes. Your thumb jumped. The wall stayed where it was.",
+   "motiv": "M05",
+   "fahrt": "statisch",
+   "woerter": 12,
+   "start": 32.32876712328767,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 12,
+   "text": "Your two eyes sit apart. Each one looks past your thumb from its own spot. Two spots, one jump.",
+   "motiv": "M06",
+   "fahrt": "Zoom rein",
+   "woerter": 19,
+   "start": 35.61643835616438,
+   "dauer": 5.205479452054794
+  },
+  {
+   "nr": 13,
+   "text": "Now you need two spots much further apart. Stand in this street in January.",
+   "motiv": "M07",
+   "fahrt": "Zoom raus",
+   "woerter": 14,
+   "start": 40.821917808219176,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 14,
+   "text": "Come back in July and stand on the same flagstone.",
+   "motiv": "M08",
+   "fahrt": "statisch",
+   "woerter": 10,
+   "start": 44.65753424657534,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 15,
+   "text": "You never lifted a foot. And you have moved three hundred million kilometres.",
+   "motiv": "M09",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 47.3972602739726,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 16,
+   "text": "Your planet carried you.",
+   "motiv": "M09",
+   "fahrt": "statisch",
+   "woerter": 4,
+   "start": 50.958904109589035,
+   "dauer": 1.095890410958904
+  },
+  {
+   "nr": 17,
+   "text": "Photograph a near star from both ends of your ride, and it jumps.",
+   "motiv": "M10",
+   "fahrt": "statisch",
+   "woerter": 13,
+   "start": 52.05479452054794,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 18,
+   "text": "Same as your thumb did.",
+   "motiv": "M11",
+   "fahrt": "statisch",
+   "woerter": 5,
+   "start": 55.61643835616437,
+   "dauer": 1.36986301369863
+  },
+  {
+   "nr": 19,
+   "text": "A man in Königsberg spent two years catching that jump.",
+   "motiv": "M13",
+   "fahrt": "Zoom rein",
+   "woerter": 10,
+   "start": 56.986301369863,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 20,
+   "text": "The same trick you just played against your wall, done properly.",
+   "motiv": "M15",
+   "fahrt": "Zoom rein",
+   "woerter": 11,
+   "start": 59.72602739726026,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 21,
+   "text": "His telescope had its main lens sawn clean in half. One half slid on a fine screw.",
+   "motiv": "M14",
+   "fahrt": "Zoom rein",
+   "woerter": 17,
+   "start": 62.739726027397246,
+   "dauer": 4.657534246575342
+  },
+  {
+   "nr": 22,
+   "text": "Night after night he turned the screw until two images of one faint star",
+   "motiv": "M16",
+   "fahrt": "statisch",
+   "woerter": 14,
+   "start": 67.39726027397259,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 23,
+   "text": "lay exactly on top of each other.",
+   "motiv": "M17",
+   "fahrt": "statisch",
+   "woerter": 7,
+   "start": 71.23287671232876,
+   "dauer": 1.917808219178082
+  },
+  {
+   "nr": 24,
+   "text": "Then he read the screw off by lamplight. That reading was the jump.",
+   "motiv": "M18",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 73.15068493150685,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 25,
+   "text": "Half of it, drawn as an angle, is what you were after: the parallax.",
+   "motiv": "M12",
+   "fahrt": "Zoom rein",
+   "woerter": 14,
+   "start": 76.71232876712328,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 26,
+   "text": "Small jump, far star. That is the whole rule, and now you have it too.",
+   "motiv": "M12",
+   "fahrt": "Zoom raus",
+   "woerter": 15,
+   "start": 80.54794520547945,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 27,
+   "text": "One catch. Between idea and lamplit reading lie two hundred and ninety-five years.",
+   "motiv": "M18",
+   "fahrt": "statisch",
+   "woerter": 13,
+   "start": 84.65753424657534,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 28,
+   "text": "In 1543 a book set the Earth moving. The objection came at once.",
+   "motiv": "M19",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 88.21917808219177,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 29,
+   "text": "If you ride a moving platform, the stars should sway.",
+   "motiv": "M11",
+   "fahrt": "Zoom rein",
+   "woerter": 10,
+   "start": 91.78082191780821,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 30,
+   "text": "Nobody saw any sway.",
+   "motiv": "M10",
+   "fahrt": "statisch",
+   "woerter": 4,
+   "start": 94.52054794520546,
+   "dauer": 1.095890410958904
+  },
+  {
+   "nr": 31,
+   "text": "The sharpest eyes of the century belonged to a Danish noble.",
+   "motiv": "M20",
+   "fahrt": "Zoom rein",
+   "woerter": 11,
+   "start": 95.61643835616437,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 32,
+   "text": "Stand beside him at his quadrant — brass, taller than you.",
+   "motiv": "M22",
+   "fahrt": "Zoom rein",
+   "woerter": 11,
+   "start": 98.63013698630135,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 33,
+   "text": "No telescope. He charted the whole sky with his bare eye, finer than anyone alive.",
+   "motiv": "M20",
+   "fahrt": "Zoom raus",
+   "woerter": 15,
+   "start": 101.64383561643834,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 34,
+   "text": "He hunted your sway for years — your thumb-jump, up there — and never found it.",
+   "motiv": "M10",
+   "fahrt": "Zoom raus",
+   "woerter": 16,
+   "start": 105.75342465753423,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 35,
+   "text": "So he did the maths on that nothing. To hide from his instruments,",
+   "motiv": "M23",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 110.13698630136984,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 36,
+   "text": "the stars would have to sit seven hundred times farther out than Saturn.",
+   "motiv": "M23",
+   "fahrt": "statisch",
+   "woerter": 13,
+   "start": 113.69863013698628,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 37,
+   "text": "To his eye — to yours too — every bright star shows a small round disk.",
+   "motiv": "M24",
+   "fahrt": "Zoom rein",
+   "woerter": 16,
+   "start": 117.26027397260272,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 38,
+   "text": "Push a disk that wide out that far: a star of monstrous size, dwarfing the Sun.",
+   "motiv": "M24",
+   "fahrt": "Zoom rein",
+   "woerter": 16,
+   "start": 121.64383561643834,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 39,
+   "text": "Too absurd, he ruled. The Earth stands still. His logic was sound. His premise was not.",
+   "motiv": "M26",
+   "fahrt": "Zoom raus",
+   "woerter": 16,
+   "start": 126.02739726027396,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 40,
+   "text": "The disks are not real. Air and your own eye wrap every point of light in blur.",
+   "motiv": "M25",
+   "fahrt": "Zoom rein",
+   "woerter": 17,
+   "start": 130.41095890410958,
+   "dauer": 4.657534246575342
+  },
+  {
+   "nr": 41,
+   "text": "The blur is what he measured.",
+   "motiv": "M25",
+   "fahrt": "statisch",
+   "woerter": 6,
+   "start": 135.06849315068493,
+   "dauer": 1.643835616438356
+  },
+  {
+   "nr": 42,
+   "text": "The largest true star disk in your night sky is about a thousand times smaller than the disk he drew.",
+   "motiv": "M24",
+   "fahrt": "statisch",
+   "woerter": 20,
+   "start": 136.7123287671233,
+   "dauer": 5.47945205479452
+  },
+  {
+   "nr": 43,
+   "text": "It took until around 1700 to call them an illusion.",
+   "motiv": "M27",
+   "fahrt": "Zoom rein",
+   "woerter": 10,
+   "start": 142.1917808219178,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 44,
+   "text": "An \"optick fallacy,\" as it was put back then.",
+   "motiv": "M27",
+   "fahrt": "statisch",
+   "woerter": 9,
+   "start": 144.93150684931507,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 45,
+   "text": "He wasn't sloppy. He measured what your eye can see. It just isn't the star.",
+   "motiv": "M06",
+   "fahrt": "Zoom rein",
+   "woerter": 15,
+   "start": 147.3972602739726,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 46,
+   "text": "The hunt ran on. By the 1830s it was a race.",
+   "motiv": "M28",
+   "fahrt": "Zoom raus",
+   "woerter": 11,
+   "start": 151.50684931506848,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 47,
+   "text": "Three men, three cities, three stars — and you have met the first.",
+   "motiv": "M28",
+   "fahrt": "Schwenk rechts",
+   "woerter": 13,
+   "start": 154.52054794520546,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 48,
+   "text": "The man in Königsberg had aimed your trick at a dim star called 61 Cygni.",
+   "motiv": "M29",
+   "fahrt": "Zoom rein",
+   "woerter": 15,
+   "start": 158.08219178082192,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 49,
+   "text": "It crawls across the sky unusually fast.",
+   "motiv": "M29",
+   "fahrt": "statisch",
+   "woerter": 7,
+   "start": 162.1917808219178,
+   "dauer": 1.917808219178082
+  },
+  {
+   "nr": 50,
+   "text": "An Italian had spotted that hurry in 1792. A fast star is usually a near one.",
+   "motiv": "M29",
+   "fahrt": "Schwenk rechts",
+   "woerter": 16,
+   "start": 164.1095890410959,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 51,
+   "text": "Through 1837 and 1838 he measured. Then he published: a jump of about a third of an arcsecond.",
+   "motiv": "M15",
+   "fahrt": "Zoom raus",
+   "woerter": 18,
+   "start": 168.4931506849315,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 52,
+   "text": "An arcsecond: take one degree. Cut it into three thousand six hundred slices. Keep one.",
+   "motiv": "M18",
+   "fahrt": "Zoom rein",
+   "woerter": 15,
+   "start": 173.42465753424656,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 53,
+   "text": "His angle is a two-euro coin seen from seventeen kilometres.",
+   "motiv": "M30",
+   "fahrt": "Zoom raus",
+   "woerter": 10,
+   "start": 177.53424657534245,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 54,
+   "text": "From it he got ten point four light-years. A light-year is the stretch light crosses in one year.",
+   "motiv": "M10",
+   "fahrt": "Zoom raus",
+   "woerter": 18,
+   "start": 180.27397260273972,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 55,
+   "text": "Nine and a half trillion kilometres.",
+   "motiv": "M10",
+   "fahrt": "statisch",
+   "woerter": 6,
+   "start": 185.2054794520548,
+   "dauer": 1.643835616438356
+  },
+  {
+   "nr": 56,
+   "text": "Today's value for that star: eleven point four. He came within a tenth of the truth.",
+   "motiv": "M15",
+   "fahrt": "statisch",
+   "woerter": 16,
+   "start": 186.84931506849315,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 57,
+   "text": "With a saw, a screw, and your thumb trick.",
+   "motiv": "M14",
+   "fahrt": "statisch",
+   "woerter": 9,
+   "start": 191.23287671232876,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 58,
+   "text": "But he wasn't first to measure. Go five years back, to the Cape of Good Hope.",
+   "motiv": "M31",
+   "fahrt": "Zoom rein",
+   "woerter": 16,
+   "start": 193.69863013698628,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 59,
+   "text": "A man there catches the jump of a bright southern star, Alpha Centauri.",
+   "motiv": "M32",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 198.0821917808219,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 60,
+   "text": "He does his sums — and puts the sheet in a drawer.",
+   "motiv": "M33",
+   "fahrt": "Zoom rein",
+   "woerter": 12,
+   "start": 201.64383561643834,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 61,
+   "text": "Earlier claims had been shot down. The story handed down says he didn't trust his own numbers.",
+   "motiv": "M32",
+   "fahrt": "Zoom rein",
+   "woerter": 17,
+   "start": 204.93150684931504,
+   "dauer": 4.657534246575342
+  },
+  {
+   "nr": 62,
+   "text": "He shut the drawer on your answer. He published in 1839 — second, for want of nerve.",
+   "motiv": "M34",
+   "fahrt": "Zoom rein",
+   "woerter": 17,
+   "start": 209.5890410958904,
+   "dauer": 4.657534246575342
+  },
+  {
+   "nr": 63,
+   "text": "And in Dorpat, a third man had measured Vega. He landed close: 0.125 arcseconds, against the modern 0.129.",
+   "motiv": "M35",
+   "fahrt": "Zoom rein",
+   "woerter": 18,
+   "start": 214.24657534246575,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 64,
+   "text": "Then Königsberg doubted those numbers. The man in Dorpat revised his good value to nearly double. Away from the truth.",
+   "motiv": "M35",
+   "fahrt": "statisch",
+   "woerter": 20,
+   "start": 219.17808219178082,
+   "dauer": 5.47945205479452
+  },
+  {
+   "nr": 65,
+   "text": "So who was first? Pick your rule. First to measure: the Cape.",
+   "motiv": "M28",
+   "fahrt": "Zoom rein",
+   "woerter": 12,
+   "start": 224.65753424657532,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 66,
+   "text": "First to make the full case in print: Königsberg.",
+   "motiv": "M28",
+   "fahrt": "Schwenk links",
+   "woerter": 9,
+   "start": 227.94520547945203,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 67,
+   "text": "First to print any number at all: arguably Dorpat.",
+   "motiv": "M28",
+   "fahrt": "Schwenk rechts",
+   "woerter": 9,
+   "start": 230.41095890410955,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 68,
+   "text": "The books give all three answers — side by side.",
+   "motiv": "M28",
+   "fahrt": "Zoom raus",
+   "woerter": 10,
+   "start": 232.87671232876707,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 69,
+   "text": "You'd think the flood starts there. It doesn't.",
+   "motiv": "M28",
+   "fahrt": "statisch",
+   "woerter": 8,
+   "start": 235.61643835616434,
+   "dauer": 2.191780821917808
+  },
+  {
+   "nr": 70,
+   "text": "By 1900 — sixty years on — the world's whole haul: about sixty parallaxes.",
+   "motiv": "M36",
+   "fahrt": "Zoom raus",
+   "woerter": 14,
+   "start": 237.80821917808214,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 71,
+   "text": "Sixty known distances, in your galaxy of billions.",
+   "motiv": "M36",
+   "fahrt": "statisch",
+   "woerter": 8,
+   "start": 241.6438356164383,
+   "dauer": 2.191780821917808
+  },
+  {
+   "nr": 72,
+   "text": "The flood came when the measuring left the ground.",
+   "motiv": "M37",
+   "fahrt": "Zoom rein",
+   "woerter": 9,
+   "start": 243.8356164383561,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 73,
+   "text": "A satellite called Hipparcos pinned down 118,000 stars in the 1990s.",
+   "motiv": "M37",
+   "fahrt": "Schwenk rechts",
+   "woerter": 11,
+   "start": 246.30136986301363,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 74,
+   "text": "Only about one in six had an error under ten percent.",
+   "motiv": "M37",
+   "fahrt": "statisch",
+   "woerter": 11,
+   "start": 249.31506849315062,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 75,
+   "text": "Then came Gaia, a European craft. From 2013 to 2025 it scanned the sky and measured more than a billion stars.",
+   "motiv": "M38",
+   "fahrt": "Zoom rein",
+   "woerter": 21,
+   "start": 252.3287671232876,
+   "dauer": 5.7534246575342465
+  },
+  {
+   "nr": 76,
+   "text": "At its sharpest — on paper — it reads your two-euro coin from 759,000 kilometres. Twice as far as the Moon.",
+   "motiv": "M39",
+   "fahrt": "Zoom raus",
+   "woerter": 21,
+   "start": 258.08219178082186,
+   "dauer": 5.7534246575342465
+  },
+  {
+   "nr": 77,
+   "text": "And still your triangle runs out inside your own galaxy.",
+   "motiv": "M40",
+   "fahrt": "Zoom raus",
+   "woerter": 10,
+   "start": 263.8356164383561,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 78,
+   "text": "The Milky Way spans some 87,000 light-years, give or take a few thousand.",
+   "motiv": "M40",
+   "fahrt": "Schwenk rechts",
+   "woerter": 13,
+   "start": 266.57534246575335,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 79,
+   "text": "For most stars, Gaia's sharp reach covers a slice of that.",
+   "motiv": "M40",
+   "fahrt": "Zoom rein",
+   "woerter": 11,
+   "start": 270.1369863013698,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 80,
+   "text": "Build a bigger telescope. The base of your triangle has not grown a metre.",
+   "motiv": "M38",
+   "fahrt": "Zoom raus",
+   "woerter": 14,
+   "start": 273.1506849315068,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 81,
+   "text": "Past a point, the jump is smaller than the blur.",
+   "motiv": "M41",
+   "fahrt": "Zoom rein",
+   "woerter": 10,
+   "start": 276.986301369863,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 82,
+   "text": "Everything farther — every other galaxy, the deep sky — stands on something else. A ladder.",
+   "motiv": "M42",
+   "fahrt": "Zoom raus",
+   "woerter": 16,
+   "start": 279.7260273972602,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 83,
+   "text": "Its second rung was built by a woman paid thirty cents an hour.",
+   "motiv": "M42",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 284.10958904109583,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 84,
+   "text": "Step into a long bright workroom. Harvard, 1908 to 1912.",
+   "motiv": "M43",
+   "fahrt": "Zoom rein",
+   "woerter": 10,
+   "start": 287.6712328767123,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 85,
+   "text": "At the tables sit women, bent over the sky on glass.",
+   "motiv": "M43",
+   "fahrt": "Schwenk rechts",
+   "woerter": 11,
+   "start": 290.4109589041095,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 86,
+   "text": "The plates come from the men who run the telescopes. The women measure them.",
+   "motiv": "M43",
+   "fahrt": "Schwenk links",
+   "woerter": 14,
+   "start": 293.42465753424653,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 87,
+   "text": "Stop at one table. Under her magnifier lies the Small Magellanic Cloud, a companion galaxy of ours.",
+   "motiv": "M45",
+   "fahrt": "Zoom rein",
+   "woerter": 17,
+   "start": 297.2602739726027,
+   "dauer": 4.657534246575342
+  },
+  {
+   "nr": 88,
+   "text": "Plate after plate, she finds stars that pulse. They brighten, fade, and brighten again.",
+   "motiv": "M46",
+   "fahrt": "statisch",
+   "woerter": 14,
+   "start": 301.917808219178,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 89,
+   "text": "A steady beat of days or weeks.",
+   "motiv": "M47",
+   "fahrt": "statisch",
+   "woerter": 7,
+   "start": 305.7534246575342,
+   "dauer": 1.917808219178082
+  },
+  {
+   "nr": 90,
+   "text": "We now call them Cepheids.",
+   "motiv": "M46",
+   "fahrt": "statisch",
+   "woerter": 5,
+   "start": 307.6712328767123,
+   "dauer": 1.36986301369863
+  },
+  {
+   "nr": 91,
+   "text": "She works through twenty-five of them. And the pattern rises out of the glass in front of you.",
+   "motiv": "M44",
+   "fahrt": "Zoom rein",
+   "woerter": 18,
+   "start": 309.04109589041093,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 92,
+   "text": "The slower the beat, the brighter the star.",
+   "motiv": "M44",
+   "fahrt": "statisch",
+   "woerter": 8,
+   "start": 313.97260273972597,
+   "dauer": 2.191780821917808
+  },
+  {
+   "nr": 93,
+   "text": "On her chart, the points fall along two clean straight lines.",
+   "motiv": "M48",
+   "fahrt": "Zoom rein",
+   "woerter": 11,
+   "start": 316.1643835616438,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 94,
+   "text": "She writes down, herself, what it means.",
+   "motiv": "M48",
+   "fahrt": "statisch",
+   "woerter": 7,
+   "start": 319.17808219178073,
+   "dauer": 1.917808219178082
+  },
+  {
+   "nr": 95,
+   "text": "These stars all sit at roughly the same distance from us — they share the Cloud.",
+   "motiv": "M45",
+   "fahrt": "statisch",
+   "woerter": 16,
+   "start": 321.0958904109588,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 96,
+   "text": "So the beat apparently tracks how much light a star truly puts out.",
+   "motiv": "M44",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 325.4794520547944,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 97,
+   "text": "Hold on to what she wrote. It unlocks the deep universe for you.",
+   "motiv": "M48",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 329.0410958904109,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 98,
+   "text": "Read a Cepheid's rhythm, and you know its true brightness.",
+   "motiv": "M46",
+   "fahrt": "statisch",
+   "woerter": 10,
+   "start": 332.6027397260273,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 99,
+   "text": "See how faint it looks, and the dimming hands you the distance. Hers you could read across millions of light-years.",
+   "motiv": "M47",
+   "fahrt": "statisch",
+   "woerter": 20,
+   "start": 335.34246575342456,
+   "dauer": 5.47945205479452
+  },
+  {
+   "nr": 100,
+   "text": "One catch — and she named it too. Her chart had no scale.",
+   "motiv": "M49",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 340.8219178082191,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 101,
+   "text": "Nobody knew the distance to the Cloud itself, so her law gave only ratios.",
+   "motiv": "M45",
+   "fahrt": "Zoom raus",
+   "woerter": 14,
+   "start": 344.38356164383555,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 102,
+   "text": "This star is four times farther than that one. Four times what?",
+   "motiv": "M10",
+   "fahrt": "statisch",
+   "woerter": 12,
+   "start": 348.2191780821917,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 103,
+   "text": "She wrote that she hoped parallaxes would be measured for a few stars of this kind.",
+   "motiv": "M44",
+   "fahrt": "Zoom raus",
+   "woerter": 16,
+   "start": 351.50684931506845,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 104,
+   "text": "A year on, an astronomer found a rough scale. No clean triangle — the slow drift of thirteen nearby Cepheids, pooled.",
+   "motiv": "M50",
+   "fahrt": "Zoom raus",
+   "woerter": 21,
+   "start": 355.89041095890406,
+   "dauer": 5.7534246575342465
+  },
+  {
+   "nr": 105,
+   "text": "Her paper went out under her director's signature. Her name survives in the first line: \"prepared by Miss Leavitt\".",
+   "motiv": "M51",
+   "fahrt": "Zoom rein",
+   "woerter": 19,
+   "start": 361.6438356164383,
+   "dauer": 5.205479452054794
+  },
+  {
+   "nr": 106,
+   "text": "In 1925, a Swedish mathematician wrote to her about putting her name up for the Nobel Prize.",
+   "motiv": "M52",
+   "fahrt": "Zoom rein",
+   "woerter": 17,
+   "start": 366.8493150684931,
+   "dauer": 4.657534246575342
+  },
+  {
+   "nr": 107,
+   "text": "He did not know she had been dead for four years.",
+   "motiv": "M52",
+   "fahrt": "statisch",
+   "woerter": 11,
+   "start": 371.50684931506845,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 108,
+   "text": "Mark the shape of what you now own. Your triangle is the bottom rung.",
+   "motiv": "M42",
+   "fahrt": "Zoom rein",
+   "woerter": 14,
+   "start": 374.5205479452054,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 109,
+   "text": "The Cepheids stand on the triangle.",
+   "motiv": "M42",
+   "fahrt": "statisch",
+   "woerter": 6,
+   "start": 378.3561643835616,
+   "dauer": 1.643835616438356
+  },
+  {
+   "nr": 110,
+   "text": "The rungs above — exploding stars, whole galaxies — stand on the Cepheids.",
+   "motiv": "M42",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 379.99999999999994,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 111,
+   "text": "Every rung inherits the reach of the one below — and its errors.",
+   "motiv": "M42",
+   "fahrt": "Zoom raus",
+   "woerter": 13,
+   "start": 383.5616438356164,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 112,
+   "text": "And the errors came. Your ladder has snapped twice.",
+   "motiv": "M54",
+   "fahrt": "statisch",
+   "woerter": 9,
+   "start": 387.12328767123284,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 113,
+   "text": "First break.",
+   "motiv": "M54",
+   "fahrt": "statisch",
+   "woerter": 2,
+   "start": 389.58904109589037,
+   "dauer": 0.547945205479452
+  },
+  {
+   "nr": 114,
+   "text": "In 1929, a man at a great telescope in California used Cepheid distances to show the galaxies flee from us.",
+   "motiv": "M55",
+   "fahrt": "Zoom rein",
+   "woerter": 20,
+   "start": 390.1369863013698,
+   "dauer": 5.47945205479452
+  },
+  {
+   "nr": 115,
+   "text": "The farther, the faster. The universe expands. Run that film backwards, and you get an age.",
+   "motiv": "M56",
+   "fahrt": "Zoom raus",
+   "woerter": 16,
+   "start": 395.61643835616434,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 116,
+   "text": "His rate gave: not quite two billion years. Awkward, even then.",
+   "motiv": "M55",
+   "fahrt": "statisch",
+   "woerter": 11,
+   "start": 399.99999999999994,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 117,
+   "text": "The geologists put the Earth itself at around two billion.",
+   "motiv": "M09",
+   "fahrt": "statisch",
+   "woerter": 10,
+   "start": 403.0136986301369,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 118,
+   "text": "By the mid-fifties it turned absurd. The Earth's true age came in at four and a half billion.",
+   "motiv": "M02",
+   "fahrt": "Zoom raus",
+   "woerter": 18,
+   "start": 405.75342465753414,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 119,
+   "text": "Run those numbers, and you are standing on a planet older than the universe around it.",
+   "motiv": "M02",
+   "fahrt": "Zoom rein",
+   "woerter": 16,
+   "start": 410.6849315068492,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 120,
+   "text": "Part of the fault lay on Leavitt's rung. There are two families of pulsing stars, with two different rulers.",
+   "motiv": "M58",
+   "fahrt": "Zoom rein",
+   "woerter": 19,
+   "start": 415.0684931506848,
+   "dauer": 5.205479452054794
+  },
+  {
+   "nr": 121,
+   "text": "Mixing them had shrunk the cosmos.",
+   "motiv": "M58",
+   "fahrt": "statisch",
+   "woerter": 6,
+   "start": 420.2739726027396,
+   "dauer": 1.643835616438356
+  },
+  {
+   "nr": 122,
+   "text": "In 1952, in a hall in Rome, a man stood up and pulled the families apart.",
+   "motiv": "M59",
+   "fahrt": "Zoom rein",
+   "woerter": 16,
+   "start": 421.91780821917797,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 123,
+   "text": "At a stroke, the universe doubled. Still too small.",
+   "motiv": "M59",
+   "fahrt": "Zoom raus",
+   "woerter": 9,
+   "start": 426.3013698630136,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 124,
+   "text": "In 1958, another astronomer found: the California man had also mistaken glowing gas clouds for bright stars.",
+   "motiv": "M60",
+   "fahrt": "Zoom rein",
+   "woerter": 17,
+   "start": 428.7671232876711,
+   "dauer": 4.657534246575342
+  },
+  {
+   "nr": 125,
+   "text": "The rate fell again, and the universe came out comfortably older than the Earth.",
+   "motiv": "M56",
+   "fahrt": "Zoom raus",
+   "woerter": 14,
+   "start": 433.4246575342464,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 126,
+   "text": "Total correction, first to last: about a factor of seven.",
+   "motiv": "M60",
+   "fahrt": "statisch",
+   "woerter": 10,
+   "start": 437.2602739726026,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 127,
+   "text": "Second break, closer to home. The Pleiades — the little cluster you can spot with your bare eyes.",
+   "motiv": "M61",
+   "fahrt": "Zoom rein",
+   "woerter": 18,
+   "start": 439.99999999999983,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 128,
+   "text": "Hipparcos, the trusted satellite, put it at about 390 light-years.",
+   "motiv": "M37",
+   "fahrt": "statisch",
+   "woerter": 10,
+   "start": 444.93150684931487,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 129,
+   "text": "Nearly every other method said 435 to 445. For seventeen years, the field's best instrument disagreed with everyone else.",
+   "motiv": "M61",
+   "fahrt": "statisch",
+   "woerter": 19,
+   "start": 447.6712328767121,
+   "dauer": 5.205479452054794
+  },
+  {
+   "nr": 130,
+   "text": "About one of the nearest clusters in your sky.",
+   "motiv": "M61",
+   "fahrt": "Zoom raus",
+   "woerter": 9,
+   "start": 452.8767123287669,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 131,
+   "text": "In 2014, radio telescopes settled it: 444 light-years, give or take four. The satellite was wrong.",
+   "motiv": "M62",
+   "fahrt": "Schwenk rechts",
+   "woerter": 16,
+   "start": 455.34246575342445,
+   "dauer": 4.383561643835616
+  },
+  {
+   "nr": 132,
+   "text": "And today your ladder is in its third fight — this one still open.",
+   "motiv": "M42",
+   "fahrt": "statisch",
+   "woerter": 14,
+   "start": 459.72602739726005,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 133,
+   "text": "Two teams, two numbers for how fast the universe grows.",
+   "motiv": "M65",
+   "fahrt": "Zoom raus",
+   "woerter": 10,
+   "start": 463.5616438356162,
+   "dauer": 2.73972602739726
+  },
+  {
+   "nr": 134,
+   "text": "One number comes from the oldest light there is.",
+   "motiv": "M63",
+   "fahrt": "Zoom rein",
+   "woerter": 9,
+   "start": 466.30136986301346,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 135,
+   "text": "A satellite called Planck reads 67.4, with an error of half a point.",
+   "motiv": "M63",
+   "fahrt": "statisch",
+   "woerter": 13,
+   "start": 468.767123287671,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 136,
+   "text": "The other comes off your ladder. Parallax, to Cepheids, to exploding stars that all flare to nearly the same true brightness.",
+   "motiv": "M69",
+   "fahrt": "Zoom rein",
+   "woerter": 21,
+   "start": 472.32876712328743,
+   "dauer": 5.7534246575342465
+  },
+  {
+   "nr": 137,
+   "text": "The ladder team, called SH0ES, reads 73.0, plus or minus one.",
+   "motiv": "M69",
+   "fahrt": "statisch",
+   "woerter": 11,
+   "start": 478.0821917808217,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 138,
+   "text": "A five-sigma difference, in their own words: far too large to be chance.",
+   "motiv": "M63",
+   "fahrt": "Zoom raus",
+   "woerter": 13,
+   "start": 481.09589041095865,
+   "dauer": 3.5616438356164384
+  },
+  {
+   "nr": 139,
+   "text": "You'll hear that sold as the early universe against today's. Watch what that framing skips.",
+   "motiv": "M56",
+   "fahrt": "statisch",
+   "woerter": 15,
+   "start": 484.6575342465751,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 140,
+   "text": "A second team climbed the same ladder with a different second rung.",
+   "motiv": "M64",
+   "fahrt": "Zoom rein",
+   "woerter": 12,
+   "start": 488.767123287671,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 141,
+   "text": "Red giant stars instead of Cepheids, the new James Webb telescope in the mix.",
+   "motiv": "M67",
+   "fahrt": "Zoom rein",
+   "woerter": 14,
+   "start": 492.0547945205477,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 142,
+   "text": "They read 67.8 to 70.4, depending on the sample and the method.",
+   "motiv": "M64",
+   "fahrt": "statisch",
+   "woerter": 12,
+   "start": 495.8904109589039,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 143,
+   "text": "Their own verdict: no new physics needed.",
+   "motiv": "M64",
+   "fahrt": "statisch",
+   "woerter": 7,
+   "start": 499.1780821917806,
+   "dauer": 1.917808219178082
+  },
+  {
+   "nr": 144,
+   "text": "Strangest of all: both teams agree on the distances to the very same galaxies. To about one percent.",
+   "motiv": "M65",
+   "fahrt": "Zoom rein",
+   "woerter": 18,
+   "start": 501.0958904109587,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 145,
+   "text": "The stars are not the quarrel. The quarrel is over which exploding stars to hang the scale on.",
+   "motiv": "M65",
+   "fahrt": "statisch",
+   "woerter": 18,
+   "start": 506.02739726027374,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 146,
+   "text": "The ladder holds. The fight is about the nail.",
+   "motiv": "M66",
+   "fahrt": "Zoom rein",
+   "woerter": 9,
+   "start": 510.9589041095888,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 147,
+   "text": "Nobody yet knows which side is right.",
+   "motiv": "M66",
+   "fahrt": "statisch",
+   "woerter": 7,
+   "start": 513.4246575342463,
+   "dauer": 1.917808219178082
+  },
+  {
+   "nr": 148,
+   "text": "Go back out to your street and find your star. How far away is it?",
+   "motiv": "M02",
+   "fahrt": "Zoom raus",
+   "woerter": 15,
+   "start": 515.3424657534243,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 149,
+   "text": "For the near ones: your triangle. The thumb trick, stretched across your planet's orbit.",
+   "motiv": "M12",
+   "fahrt": "Zoom raus",
+   "woerter": 14,
+   "start": 519.4520547945202,
+   "dauer": 3.835616438356164
+  },
+  {
+   "nr": 150,
+   "text": "Sharpened until a coin past the Moon is an easy target.",
+   "motiv": "M39",
+   "fahrt": "statisch",
+   "woerter": 11,
+   "start": 523.2876712328764,
+   "dauer": 3.013698630136986
+  },
+  {
+   "nr": 151,
+   "text": "For the far ones: the ladder. A rhythm read off glass plates at thirty cents an hour.",
+   "motiv": "M48",
+   "fahrt": "Zoom raus",
+   "woerter": 17,
+   "start": 526.3013698630134,
+   "dauer": 4.657534246575342
+  },
+  {
+   "nr": 152,
+   "text": "Nailed to your triangle. Broken twice, patched twice, fought over right now.",
+   "motiv": "M54",
+   "fahrt": "statisch",
+   "woerter": 12,
+   "start": 530.9589041095887,
+   "dauer": 3.287671232876712
+  },
+  {
+   "nr": 153,
+   "text": "One in four of the people asked still hangs the stars closer than the Sun.",
+   "motiv": "M03",
+   "fahrt": "Zoom raus",
+   "woerter": 15,
+   "start": 534.2465753424655,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 154,
+   "text": "The nearest one sits so deep that its light spends four years on the road to your eye.",
+   "motiv": "M01",
+   "fahrt": "Zoom rein",
+   "woerter": 18,
+   "start": 538.3561643835613,
+   "dauer": 4.931506849315069
+  },
+  {
+   "nr": 155,
+   "text": "But that number is no guess. It never was. Someone caught its jump. Someone read its beat.",
+   "motiv": "M68",
+   "fahrt": "Zoom rein",
+   "woerter": 17,
+   "start": 543.2876712328764,
+   "dauer": 4.657534246575342
+  },
+  {
+   "nr": 156,
+   "text": "And beside every distance, someone wrote a second number. How far off it might be.",
+   "motiv": "M68",
+   "fahrt": "statisch",
+   "woerter": 15,
+   "start": 547.9452054794517,
+   "dauer": 4.10958904109589
+  },
+  {
+   "nr": 157,
+   "text": "That second number is the honest answer.",
+   "motiv": "M68",
+   "fahrt": "statisch",
+   "woerter": 7,
+   "start": 552.0547945205476,
+   "dauer": 1.917808219178082
+  },
+  {
+   "nr": 158,
+   "text": "You don't just know how far your star is.",
+   "motiv": "M02",
+   "fahrt": "Zoom raus",
+   "woerter": 9,
+   "start": 553.9726027397256,
+   "dauer": 2.4657534246575343
+  },
+  {
+   "nr": 159,
+   "text": "You know how well you know it — and exactly where you don't.",
+   "motiv": "M02",
+   "fahrt": "Zoom rein",
+   "woerter": 13,
+   "start": 556.4383561643832,
+   "dauer": 3.5616438356164384
+  }
+ ],
+ "motive": {
+  "M01": {
+   "szene": "Aufsicht von unten in einen Nachthimmel voller Sterne, einer davon doppelt so breit gezeichnet wie die übrigen; unten die dunkle Dachkante einer Wohnstraße",
+   "licht": "sichtbar: die Sterne selbst",
+   "ort": "Gegenwart, eine Wohnstraße bei Nacht",
+   "framing": "ohne",
+   "flora": "mitteleuropäische Stadtbäume als dunkle Silhouetten — Linden, Ahorn; keine Palmen, keine Nadelwaldkulisse",
+   "ebenen": true
+  },
+  "M02": {
+   "szene": "Diagonal über die Straße gesehen, vom nahen Gehweg aus: die gegenüberliegende Häuserzeile läuft nach links weg, die nahe schneidet rechts ins Bild, die Fahrbahn zieht von links unten nach rechts oben durch; über den Dachkanten füllt der Sternhimmel das obere Drittel. Klein mitten auf der leeren Fahrbahn eine Person von hinten, den Kopf weit in den Nacken gelegt",
+   "licht": "sichtbar: die Sterne",
+   "ort": "Gegenwart, dieselbe Straße",
+   "framing": "ganz",
+   "flora": "mitteleuropäische Stadtbäume als dunkle Silhouetten — Linden, Ahorn; keine Palmen, keine Nadelwaldkulisse",
+   "schutz": "Die Klammer — erstes und letztes Bild",
+   "ebenen": true
+  },
+  "M03": {
+   "szene": "Ein abendlicher Stadtplatz, mehrere Passanten; die meisten heben die Schultern oder schütteln den Kopf, einer zeigt nach oben in den Himmel",
+   "licht": "sichtbar: eine Straßenlaterne mitten im Bild",
+   "ort": "Gegenwart, ein Stadtplatz am Abend",
+   "framing": "ganz",
+   "flora": "einzelne beschnittene Platanen am Platzrand",
+   "ebenen": true
+  },
+  "M04": {
+   "szene": "Nahaufnahme: ein ausgestreckter Arm, der Daumen hochgereckt, dahinter eine Zimmerwand mit einem Bildhaken; der Daumen sitzt links vom Haken",
+   "licht": "Schatten: hart von links",
+   "ort": "Gegenwart, ein Wohnzimmer",
+   "framing": "teil",
+   "flora": "—",
+   "paar": "M05"
+  },
+  "M05": {
+   "szene": "Exakt dieselbe Aufnahme, aber der Daumen sitzt rechts vom Bildhaken — Ausschnitt und Kameraposition unverändert",
+   "licht": "Schatten: hart von links",
+   "ort": "Gegenwart, dasselbe Zimmer",
+   "framing": "teil",
+   "flora": "—",
+   "paar": "M04"
+  },
+  "M06": {
+   "szene": "Ein Gesicht von der Seite in Nahaufnahme, ein Auge geschlossen, das offene blickt am hochgereckten Daumen vorbei",
+   "licht": "Schatten: hart von links",
+   "ort": "Gegenwart, dasselbe Zimmer",
+   "framing": "teil",
+   "flora": "—"
+  },
+  "M07": {
+   "szene": "Dieselbe Wohnstraße im Winter: Schnee auf den Dächern, kahle Bäume, eine markante Steinplatte im Gehweg vorn im Bild",
+   "licht": "sichtbar: eine Straßenlaterne",
+   "ort": "Gegenwart, dieselbe Straße im Januar",
+   "framing": "ohne",
+   "flora": "kahle Linden und Ahorne, Schneedecke",
+   "paar": "M08"
+  },
+  "M08": {
+   "szene": "Exakt derselbe Ausschnitt im Sommer: belaubte Bäume, dieselbe Steinplatte im Gehweg — Kameraposition unverändert",
+   "licht": "sichtbar: dieselbe Straßenlaterne",
+   "ort": "Gegenwart, dieselbe Straße im Juli",
+   "framing": "ohne",
+   "flora": "dieselben Bäume in vollem Laub",
+   "paar": "M07"
+  },
+  "M09": {
+   "szene": "Blick senkrecht nach unten auf zwei Schuhe auf einer Steinplatte des Gehwegs",
+   "licht": "Schatten: hart von links",
+   "ort": "Gegenwart, dieselbe Straße",
+   "framing": "teil",
+   "flora": "—"
+  },
+  "M10": {
+   "szene": "Der Nachthimmel über das ganze Bild: ein Stern links, dreimal so breit gezeichnet wie die kleinen, rechts davon zwei mittelgroße",
+   "licht": "sichtbar: die Sterne",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—",
+   "paar": "M11"
+  },
+  "M11": {
+   "szene": "Derselbe Himmel, dieselben Sterne an denselben Stellen — nur der große steht jetzt rechts von den beiden mittelgroßen",
+   "licht": "sichtbar: die Sterne",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—",
+   "paar": "M10"
+  },
+  "M12": {
+   "szene": "Das Parallaxendreieck als Tuschzeichnung auf hellem Papiergrund: die Sonne als Kreis, die Erdbahn als flache Ellipse, die Erde an zwei gegenüberliegenden Punkten, von beiden je eine gestrichelte Sichtlinie zu einem nahen Stern; an der Spitze ein kleiner gefüllter Kreissektor als Winkelmaß; ferne Sterne als dunkle Punkte auf dem hellen Grund",
+   "licht": "Schema",
+   "ort": "zeitlos, reine Zeichnung",
+   "framing": "ohne",
+   "flora": "—",
+   "schema": true,
+   "schutz": "Die Antwort: das Dreieck",
+   "diagramm": "D1, im Stichprobenlauf freigegeben (M06-v2): zwei Standpunkte, zwei Linien, ein Winkelmaß — ohne Beschriftung lesbar. Bedingung aus dem Lauf: die Erdkugeln sitzen an den Enden der Sichtlinien, der nahe Stern deutlich größer als das Feld."
+  },
+  "M13": {
+   "szene": "Ein klassizistisches Sternwartengebäude mit Kuppel bei Nacht, davor kahle Bäume und eine gepflasterte Zufahrt",
+   "licht": "sichtbar: der Mond über der Kuppel",
+   "ort": "Königsberg in Ostpreußen, 1838",
+   "framing": "ohne",
+   "flora": "norddeutsche Stadtbäume ohne Laub — Linden, Kastanien; keine Palmen, keine Nadelbäume",
+   "ebenen": true
+  },
+  "M14": {
+   "szene": "Nahaufnahme einer runden Objektivlinse, exakt durch die Mitte durchgesägt; die eine Hälfte ist seitlich verschoben, an ihr eine feine Messingschraube",
+   "licht": "Schatten: hart von rechts",
+   "ort": "Königsberg in Ostpreußen, 1838",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M15": {
+   "szene": "Ein Mann in hochgeschlossenem Rock des frühen 19. Jahrhunderts sitzt auf einem niedrigen Hocker, den Oberkörper vorgebeugt, den Kopf gesenkt, das rechte Auge am Okular am unteren Ende eines einzigen langen Fernrohrs, das von ihm weg nach rechts oben steigt; die rechte Hand umfasst eine kleine geriffelte Messingtrommel seitlich am Rohr dicht unter dem Okular, die linke Hand liegt flach auf dem Knie",
+   "licht": "sichtbar: eine abgeschirmte Öllampe neben dem Instrument",
+   "ort": "Königsberg in Ostpreußen, 1838",
+   "framing": "ganz",
+   "flora": "Innenraum einer Kuppel, Holzdielen, keine Vegetation",
+   "sitzend": true,
+   "person": true,
+   "schutz": "Die Schraube — die Titelszene der Antwort"
+  },
+  "M16": {
+   "szene": "Blick durch ein Okular: zwei getrennte Abbilder desselben Sterns nebeneinander im runden Gesichtsfeld",
+   "licht": "sichtbar: die Sternabbilder im Gesichtsfeld",
+   "ort": "Königsberg in Ostpreußen, 1838",
+   "framing": "ohne",
+   "flora": "—",
+   "paar": "M17"
+  },
+  "M17": {
+   "szene": "Dasselbe runde Gesichtsfeld — die beiden Abbilder liegen jetzt exakt übereinander, ein einziger Punkt",
+   "licht": "sichtbar: das Sternabbild im Gesichtsfeld",
+   "ort": "Königsberg in Ostpreußen, 1838",
+   "framing": "ohne",
+   "flora": "—",
+   "paar": "M16"
+  },
+  "M18": {
+   "szene": "Nahaufnahme der Skala der Mikrometerschraube mit feiner Teilung und Zeiger, daneben die Öllampe",
+   "licht": "sichtbar: die Öllampe",
+   "ort": "Königsberg in Ostpreußen, 1838",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M19": {
+   "szene": "Ein aufgeschlagenes gedrucktes Buch des 16. Jahrhunderts auf einem Lesepult, daneben eine Kerze; die eine Seite trägt eine kreisförmige Bahnfigur mit konzentrischen Kreisen, die andere einen gleichmäßigen grauen Satzspiegel aus feinen waagerechten Strichen — Zeilen aus der Distanz, in denen keine Type ausgeformt ist",
+   "licht": "sichtbar: die Kerze",
+   "ort": "Frauenburg im Ermland, 1543",
+   "framing": "ohne",
+   "flora": "Innenraum, keine Vegetation"
+  },
+  "M20": {
+   "szene": "Ein bärtiger Mann in Wams und Halskrause steht an einem großen Mauerquadranten aus Messing, das Auge an der Visiereinrichtung; kein Fernrohr im Bild",
+   "licht": "sichtbar: der Nachthimmel durch eine offene Dachluke",
+   "ort": "Uraniborg auf der Insel Ven, um 1580",
+   "framing": "ganz",
+   "flora": "Innenraum einer Sternwarte, Backsteinnischen, keine Vegetation",
+   "person": true
+  },
+  "M22": {
+   "szene": "Die Visiereinrichtung des Quadranten in Nahaufnahme, daneben die fein geteilte Messingskala mit Zeiger",
+   "licht": "Schatten: hart von oben rechts",
+   "ort": "Uraniborg auf der Insel Ven, um 1580",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M23": {
+   "szene": "Derselbe Mann sitzt an einem Schreibpult, umgeben von Messinstrumenten; vor ihm ein beschriebenes Blatt, auf dem die Feder ruht, auf dem Blatt stehen dichte waagerechte Reihen kurzer, gleichmäßig geneigter Striche von immer derselben Höhe, in kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken dazwischen; alle Striche sind gleich lang, keiner ist geschwungen, keiner trägt Ober- oder Unterlänge, und keine Gruppe wiederholt eine andere",
+   "licht": "sichtbar: eine Kerze auf dem Pult",
+   "ort": "Uraniborg auf der Insel Ven, um 1580",
+   "framing": "ganz",
+   "flora": "Innenraum, keine Vegetation",
+   "sitzend": true,
+   "person": true
+  },
+  "M24": {
+   "szene": "Ein einzelner Stern in großer Nähe, wie ihn ein bloßes Auge sieht: eine runde weiße Scheibe, darum ein breiterer Ring in einem helleren Ton — beide hart abgegrenzt und flächig gefüllt",
+   "licht": "sichtbar: der Stern selbst",
+   "ort": "zeitlos, Blick zum Nachthimmel",
+   "framing": "ohne",
+   "flora": "—",
+   "paar": "M25"
+  },
+  "M25": {
+   "szene": "Dieselbe Nahaufnahme desselben Sterns — Scheibe und Ring sind verschwunden, an ihrer Stelle bleibt ein kleiner harter Lichtpunkt",
+   "licht": "sichtbar: der Stern selbst",
+   "ort": "zeitlos, Blick zum Nachthimmel",
+   "framing": "ohne",
+   "flora": "—",
+   "paar": "M24"
+  },
+  "M26": {
+   "szene": "Derselbe Mann wendet sich vom Quadranten ab; im Hintergrund eine ruhende Erdkugel auf einem Sockel",
+   "licht": "sichtbar: der Nachthimmel durch die Dachluke",
+   "ort": "Uraniborg auf der Insel Ven, um 1580",
+   "framing": "ganz",
+   "flora": "Innenraum, keine Vegetation",
+   "person": true
+  },
+  "M27": {
+   "szene": "Ein Fernrohr auf einem Holzstativ, daneben mehrere Männer in Perücken und Rockschößen, die sich über eine Zeichnung beugen",
+   "licht": "sichtbar: ein Fenster mit Tageslicht",
+   "ort": "eine europäische Sternwarte, um 1700",
+   "framing": "ganz",
+   "flora": "Innenraum, Stuckdecke, keine Vegetation"
+  },
+  "M28": {
+   "szene": "Drei kleine Nachtvignetten nebeneinander in einem Bild: eine Kuppelsternwarte zwischen kahlen Bäumen, ein weißes flaches Observatorium vor einem Tafelberg, ein verschneites hölzernes Observatorium — drei Orte, eine Reihe",
+   "licht": "sichtbar: über jeder Vignette derselbe Sternhimmel",
+   "ort": "1830er Jahre: Königsberg, Kap der Guten Hoffnung, Dorpat",
+   "framing": "ohne",
+   "flora": "je Vignette die Vegetation ihres Ortes: kahle Linden — Fynbos-Buschwerk — verschneite Birken"
+  },
+  "M29": {
+   "szene": "Ein Sternfeld, darin ein unscheinbarer Doppelstern, dessen schnelle Eigenbewegung als kurze feine Spur markiert ist",
+   "licht": "sichtbar: die Sterne",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M30": {
+   "szene": "Eine schnurgerade Landstraße bis zum Horizont, vorn im Bild eine Zwei-Euro-Münze aufgestellt auf dem Asphalt, am fernen Ende der Straße ein kaum sichtbarer Punkt",
+   "licht": "sichtbar: die tief stehende Sonne am Ende der Straße",
+   "ort": "Gegenwart, eine Landstraße",
+   "framing": "ohne",
+   "flora": "Alleebäume beidseits — Pappeln oder Linden"
+  },
+  "M31": {
+   "szene": "Ein weißes Sternwartengebäude mit flachem Dach auf einem Hügelrücken, dahinter ein Tafelberg und das Meer",
+   "licht": "sichtbar: die tief stehende Sonne über dem Meer",
+   "ort": "Royal Observatory am Kap der Guten Hoffnung, 1833",
+   "framing": "ohne",
+   "flora": "Fynbos des Kaps — silbriges Buschwerk, Proteen, niedrige Hartlaubsträucher; ausdrücklich keine Palmen, keine Akazien",
+   "ebenen": true
+  },
+  "M32": {
+   "szene": "Ein Mann in dunklem Rock der 1830er sitzt an einem Pult, ein beschriebenes Blatt in der Hand, den Blick darauf gesenkt; auf dem Blatt stehen dichte waagerechte Reihen kurzer, gleichmäßig geneigter Striche von immer derselben Höhe, in kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken dazwischen; alle Striche sind gleich lang, keiner ist geschwungen, keiner trägt Ober- oder Unterlänge, und keine Gruppe wiederholt eine andere",
+   "licht": "sichtbar: eine Öllampe auf dem Pult",
+   "ort": "Kapstadt, 1833",
+   "framing": "ganz",
+   "flora": "Innenraum, keine Vegetation",
+   "sitzend": true,
+   "person": true
+  },
+  "M33": {
+   "szene": "Nahaufnahme: eine Hand legt ein beschriebenes Blatt in eine offene Schreibtischschublade; das Blatt füllt einen guten Teil des Bildes, auf dem Blatt stehen dichte waagerechte Reihen kurzer, gleichmäßig geneigter Striche von immer derselben Höhe, in kleinen Gruppen von drei bis acht Strichen mit schmalen Lücken dazwischen; alle Striche sind gleich lang, keiner ist geschwungen, keiner trägt Ober- oder Unterlänge, und keine Gruppe wiederholt eine andere",
+   "licht": "Schatten: hart von links",
+   "ort": "Kapstadt, 1833",
+   "framing": "teil",
+   "flora": "—",
+   "paar": "M34"
+  },
+  "M34": {
+   "szene": "Dieselbe Schublade, derselbe Ausschnitt — geschlossen, die Hand ruht flach auf dem Holz",
+   "licht": "Schatten: hart von links",
+   "ort": "Kapstadt, 1833",
+   "framing": "teil",
+   "flora": "—",
+   "paar": "M33"
+  },
+  "M35": {
+   "szene": "Ein niedriges verputztes Observatorium mit Holzverschalung in winterlicher Landschaft, Schneedecke, kahle Bäume",
+   "licht": "sichtbar: der Mond hinter dünnen Wolken",
+   "ort": "Dorpat im Baltikum, 1837",
+   "framing": "ohne",
+   "flora": "baltische Winterlandschaft — Birken und Kiefern, Schneedecke",
+   "ebenen": true
+  },
+  "M36": {
+   "szene": "Ein weites, dichtes Sternfeld über die ganze Bildfläche, ohne Vordergrund",
+   "licht": "sichtbar: die Sterne",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M37": {
+   "szene": "Ein Satellit mit aufgeklapptem Sonnensegel über der gekrümmten Erdkante, dahinter Sterne",
+   "licht": "Schatten: hart von rechts, scharfe Licht-Schatten-Kante am Rumpf; die Sonne selbst bleibt außerhalb des Bildes",
+   "ort": "Erdumlaufbahn, um 1990",
+   "framing": "ohne",
+   "flora": "—",
+   "ebenen": true
+  },
+  "M38": {
+   "szene": "Ein kompakter Satellit mit zylindrischem Sonnenschild, weit von der Erde entfernt vor dem schwarzen All",
+   "licht": "Schatten: hart von links, scharfe Kante am Sonnenschild; die Sonne selbst bleibt außerhalb des Bildes",
+   "ort": "Lagrangepunkt hinter der Erde, 2015",
+   "framing": "ohne",
+   "flora": "—",
+   "ebenen": true
+  },
+  "M39": {
+   "szene": "Der Vollmond über der Wohnstraße, im Vordergrund auf einer Fensterbank eine Zwei-Euro-Münze, scharf",
+   "licht": "sichtbar: der Mond",
+   "ort": "Gegenwart, dieselbe Straße",
+   "framing": "ohne",
+   "flora": "mitteleuropäische Stadtbäume als dunkle Silhouetten — Linden, Ahorn; keine Palmen, keine Nadelwaldkulisse",
+   "ebenen": true
+  },
+  "M40": {
+   "szene": "Eine Spiralgalaxie von schräg oben, die die Bildfläche füllt — Arme, Staubbänder, dichter Kern",
+   "licht": "sichtbar: die Galaxie selbst",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M41": {
+   "szene": "Blick durch ein Okular: auf der einen Seite ein scharfer Lichtpunkt, auf der anderen ein verwaschener, ausgefranster Fleck",
+   "licht": "sichtbar: die Sterne im Gesichtsfeld",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M42": {
+   "szene": "Die Leiter als flaches Sinnbild auf hellem Papiergrund, in Seitenansicht: die Holme laufen unten in einem Punkt zusammen und öffnen sich nach oben, jede Sprosse länger als die darunter; der unterste Punkt steht exakt auf der Spitze eines breiten flachen Dreiecks; um das obere Ende kleine dunkle Punkte als Sterne",
+   "licht": "Schema",
+   "ort": "zeitlos, reine Zeichnung",
+   "framing": "ohne",
+   "flora": "—",
+   "schema": true,
+   "paar": "M54",
+   "schutz": "Die Leiter auf dem Dreieck",
+   "diagramm": "D2, im Stichprobenlauf freigegeben (M52-v3): der Keil öffnet sich nach oben, der Fuß steht Spitze auf Spitze auf dem Dreieck aus M12 — Sprossenlänge und Rückbindung sind baulich erzwungen, ohne ein Zeichen Text."
+  },
+  "M54": {
+   "szene": "Dieselbe Leiter, derselbe Ausschnitt — zwei Sprossen sind durchgebrochen und hängen schief herab",
+   "licht": "Schema",
+   "ort": "zeitlos, reine Zeichnung",
+   "framing": "ohne",
+   "flora": "—",
+   "schema": true,
+   "paar": "M42",
+   "diagramm": "D2b: Zustand B. Die Wiedererkennung derselben Leiter trägt den Bruch; ohne Text eindeutig."
+  },
+  "M64": {
+   "szene": "Dieselbe Leiter, intakt — aber die zweite Sprosse von unten ist sichtbar eine andere: dunkler gefärbt, anders profiliert, neu eingesetzt",
+   "licht": "Schema",
+   "ort": "zeitlos, reine Zeichnung",
+   "framing": "ohne",
+   "flora": "—",
+   "schema": true,
+   "diagramm": "D2c: der Austausch einer einzigen Sprosse ist als Farb- und Formabweichung lesbar, ohne Symbolik und ohne Text — die Kalibrator-Streitfrage als Bild."
+  },
+  "M43": {
+   "szene": "Ein langer heller Arbeitsraum; an mehreren Tischen sitzen Frauen in hochgeschlossenen Blusen über Glasplatten gebeugt; an der Tür reicht ein Mann im Anzug einen Plattenkasten herein",
+   "licht": "sichtbar: hohe Sprossenfenster auf der linken Seite",
+   "ort": "Harvard College Observatory, Massachusetts, 1908 bis 1912",
+   "framing": "ganz",
+   "flora": "Innenraum, Holzvertäfelung und Sprossenfenster, keine Vegetation",
+   "ebenen": true
+  },
+  "M44": {
+   "szene": "Eine Frau mit im Nacken hochgestecktem Haarknoten, in dunkler hochgeschlossener Bluse, sitzt allein am Leuchttisch. Ihr Kopf ist nach vorn und unten geneigt, die Augen blicken senkrecht auf die Platte hinab — das Gesicht ist von schräg oben zu sehen, nicht dem Betrachter zugewandt. Die rechte Hand hält eine runde Lupe am Griff dicht über der Platte, die linke liegt am Plattenrand; Stapel weiterer Platten um sie herum",
+   "licht": "sichtbar: der Leuchttisch von unten — das Licht liegt auf Kinn und Wangen, nicht auf der Stirn",
+   "ort": "Harvard College Observatory, Massachusetts, um 1910",
+   "framing": "ganz",
+   "flora": "Innenraum, Holzvertäfelung, keine Vegetation",
+   "sitzend": true,
+   "person": true,
+   "schutz": "Leavitt am Leuchttisch"
+  },
+  "M45": {
+   "szene": "Nahaufnahme: eine Hand hält eine Lupe über eine Glasplatte auf dem Leuchttisch; unter dem Glas eine unregelmäßige Sternwolke mit dichtem Kern und ausgefransten Rändern",
+   "licht": "Durchlicht: die Platte wird von unten durchleuchtet",
+   "ort": "Harvard College Observatory, Massachusetts, um 1910",
+   "framing": "teil",
+   "flora": "—"
+  },
+  "M46": {
+   "szene": "Ein Sternfeld, in dem einer dreimal so breit gezeichnet ist wie alle anderen",
+   "licht": "sichtbar: der Stern selbst",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—",
+   "paar": "M47"
+  },
+  "M47": {
+   "szene": "Dasselbe Sternfeld, derselbe Ausschnitt — der große Stern ist jetzt so klein gezeichnet wie die übrigen",
+   "licht": "sichtbar: der Stern selbst",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—",
+   "paar": "M46"
+  },
+  "M48": {
+   "szene": "Nahaufnahme: auf dem Leuchttisch liegt ein handgezeichnetes Diagrammblatt — Punkte, die sich entlang zweier paralleler aufsteigender Geraden ordnen, keine Beschriftung; daneben die Hand mit dem Bleistift",
+   "licht": "Durchlicht: der Leuchttisch von unten",
+   "ort": "Harvard College Observatory, Massachusetts, um 1910",
+   "framing": "teil",
+   "flora": "—",
+   "paar": "M49",
+   "schutz": "Die Karte — zwei Geraden auf Glas"
+  },
+  "M49": {
+   "szene": "Derselbe Ausschnitt, dieselbe Hand mit dem Bleistift — auf dem Blatt ist die senkrechte Achse jetzt ein blanker Strich ohne einen einzigen Teilstrich",
+   "licht": "Durchlicht: der Leuchttisch von unten",
+   "ort": "Harvard College Observatory, Massachusetts, um 1910",
+   "framing": "teil",
+   "flora": "—",
+   "paar": "M48"
+  },
+  "M50": {
+   "szene": "Ein Feld kleiner Sterne, in dem dreizehn doppelt so breit gezeichnet sind wie der Rest, weit über die Fläche verstreut",
+   "licht": "sichtbar: die Sterne",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M51": {
+   "szene": "Nahaufnahme eines Schriftstücks: unten rechts eine große geschwungene Unterschrift als eine einzige durchgehende Tintenschleife mit kräftigem Aufstrich und langem Auslauf, ohne abgesetzte Zeichen; darüber die angeschnittene erste Zeile des Blatts als eine Reihe kurzer gleichmäßiger Striche in kleinen Gruppen, alle von derselben Höhe",
+   "licht": "Schatten: hart von links oben",
+   "ort": "Harvard College Observatory, 1912",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M52": {
+   "szene": "Ein leerer Schreibtisch am Fenster, darauf ein ungeöffneter Briefumschlag; der Stuhl leicht zurückgeschoben",
+   "licht": "sichtbar: das Fenster mit fahlem Tageslicht",
+   "ort": "Harvard, Massachusetts, 1925",
+   "framing": "ohne",
+   "flora": "Innenraum; durch das Fenster kahle Laubbäume Neuenglands",
+   "ebenen": true
+  },
+  "M55": {
+   "szene": "Ein Mann in Tweedjacke sitzt am Okular eines sehr großen Spiegelteleskops in einer Kuppel, Stahlfachwerk über ihm",
+   "licht": "sichtbar: der Nachthimmel durch den offenen Kuppelspalt",
+   "ort": "Mount-Wilson-Observatorium, Kalifornien, 1929",
+   "framing": "ganz",
+   "flora": "Innenraum einer Kuppel, keine Vegetation",
+   "sitzend": true,
+   "person": true,
+   "ebenen": true
+  },
+  "M56": {
+   "szene": "Ein Feld kleiner Spiralgalaxien, verstreut über die ganze Bildfläche, verschieden groß",
+   "licht": "sichtbar: die Galaxien selbst",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M58": {
+   "szene": "Zwei pulsierende Sterne nebeneinander in einem Sternfeld, der eine groß und gelblich, der andere kleiner und bläulich",
+   "licht": "sichtbar: die Sterne selbst",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M59": {
+   "szene": "Ein Saal mit Reihenbestuhlung, vorn ein Mann am Rednerpult vor einer hellen Projektionsfläche, die Zuhörer beugen sich vor",
+   "licht": "sichtbar: der Projektionsstrahl von hinten",
+   "ort": "Rom, Tagung der Internationalen Astronomischen Union, 1952",
+   "framing": "ganz",
+   "flora": "Innenraum, Marmorpilaster, keine Vegetation",
+   "person": true,
+   "ebenen": true
+  },
+  "M60": {
+   "szene": "Nahaufnahme einer Fotoplatte: ein scharfer heller Punkt, direkt daneben ein weicher leuchtender Fleck etwa gleicher Helligkeit",
+   "licht": "Durchlicht: die Platte wird von hinten durchleuchtet",
+   "ort": "Kalifornien, 1958",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M61": {
+   "szene": "Ein kleiner dichter Sternhaufen aus wenigen großen weißen Sternen, von einem dünnen blassen Nebelschleier umgeben, über Baumsilhouetten am Nachthimmel",
+   "licht": "sichtbar: die Sterne des Haufens",
+   "ort": "Gegenwart, Blick vom Boden",
+   "framing": "ohne",
+   "flora": "mitteleuropäische Laubbäume als Silhouette",
+   "ebenen": true
+  },
+  "M62": {
+   "szene": "Mehrere große Parabolantennen auf freiem Feld, alle in dieselbe Richtung geneigt, lange Schatten über den Boden",
+   "licht": "Schatten: hart von rechts",
+   "ort": "Gegenwart, ein Antennenfeld im Hochland des amerikanischen Südwestens",
+   "framing": "ohne",
+   "flora": "trockenes Steppengras, niedrige Beifußbüsche, ferne kahle Bergrücken; keine Bäume, keine Kakteen",
+   "ebenen": true
+  },
+  "M63": {
+   "szene": "Ein feinkörniges Fleckenmuster über die ganze Bildfläche, davor klein ein Satellit im Profil",
+   "licht": "sichtbar: das Muster leuchtet selbst",
+   "ort": "Lagrangepunkt, 2013",
+   "framing": "ohne",
+   "flora": "—",
+   "ebenen": true
+  },
+  "M65": {
+   "szene": "Zwei Spiralgalaxien nebeneinander vor dunklem Grund, etwa gleich groß",
+   "licht": "sichtbar: die Galaxien selbst",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M66": {
+   "szene": "Nahaufnahme: zwei Hände am Fuß einer soliden Holzleiter, die eine hält einen einzelnen Nagel, die andere greift danach",
+   "licht": "Schatten: hart von links",
+   "ort": "zeitlos, sinnbildlich",
+   "framing": "teil",
+   "flora": "—"
+  },
+  "M67": {
+   "szene": "Ein Sternfeld, in dem mehrere deutlich rötliche, aufgeblähte Sterne zwischen weißen Punkten stehen",
+   "licht": "sichtbar: die Sterne selbst",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M69": {
+   "szene": "Ein Galaxienfeld; am Rand einer der Galaxien sitzt ein einzelner weißer Punkt, größer und weißer gezeichnet als ihr Zentrum",
+   "licht": "sichtbar: der aufleuchtende Stern selbst",
+   "ort": "zeitlos, Blick ins All",
+   "framing": "ohne",
+   "flora": "—"
+  },
+  "M68": {
+   "szene": "Nahaufnahme: eine Hand notiert mit Bleistift auf einem Blatt neben einer Messreihe eine zweite, kürzere Spalte; beide Spalten bestehen aus kurzen gleichmäßigen Bleistiftstrichen untereinander, in sauberen Zeilen ausgerichtet, jede Eintragung eine kleine Gruppe von Strichen ohne ausgeformte Ziffer",
+   "licht": "Durchlicht: der Leuchttisch von unten",
+   "ort": "Harvard College Observatory, um 1910",
+   "framing": "teil",
+   "flora": "—"
+  }
+ }
+}
