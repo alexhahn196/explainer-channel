@@ -1,0 +1,10 @@
+[
+ {"id":"F43","anlass":"A22","anlass_text":"100 J. Tonfilm, 06.10.2027","titel":"Who Played the Music in Silent Movie Theaters?","cr":"silent film music accompaniment cinema pianist organist","wiki":"Silent_film","status":"gewaehlt"},
+ {"id":"F44","anlass":"A23","anlass_text":"Rugby-WM Australien, 01.10.-13.11.2027","titel":"How Did a Whole Village Play a Single Game?","cr":"folk football Shrovetide medieval England village game custom","wiki":"Medieval_football","status":"gewaehlt"},
+ {"id":"F45","anlass":"A24","anlass_text":"400 J. Vasa, 10.08.2028","titel":"Who Decided Whether a New Warship Was Safe to Sail?","cr":"ship stability righting arm hull form naval architecture history","wiki":"Ship_stability","status":"gewaehlt"},
+ {"id":"F46","anlass":"A25","anlass_text":"100 J. Penicillin, 09/2028","titel":"Why Was a Scratch Once Enough to Kill Someone?","cr":"wound infection treatment history surgery antiseptic","wiki":"Antiseptic","status":"gewaehlt"},
+ {"id":"F47","anlass":"A26","anlass_text":"300. Geburtstag James Cook, 27.10.2028","titel":"Why Did Sailors Lose Their Teeth at Sea?","cr":"scurvy vitamin deficiency sailors naval medicine","wiki":"Scurvy","status":"gewaehlt"},
+ {"id":"X1","anlass":"A27","anlass_text":"Olympische Sommerspiele Los Angeles, 14.-30.07.2028","titel":"What Did Athletes Eat to Get Stronger?","cr":"ancient Greek athletes training diet athletics gymnasium sport","wiki":"Ancient_Olympic_Games","status":"reserve - erreicht 8, thematisch neben F35"},
+ {"id":"X2","anlass":"A28","anlass_text":"500. Todestag Albrecht Duerer, 06.04.2028","titel":"How Did Artists Draw Animals They Had Never Seen?","cr":"exotic animals Renaissance Europe representation travel accounts","wiki":"Dürer's_Rhinoceros","status":"verfehlt - cr 7/8 statt 8/8"},
+ {"id":"X3","anlass":"A29","anlass_text":"100 J. erste elektronische Fernsehuebertragung, 07.09.2027","titel":"How Did People Send a Picture Down a Wire?","cr":"picture telegraphy facsimile transmission image wire","wiki":"Fax","status":"verworfen - nicht erzaehlbar"}
+]

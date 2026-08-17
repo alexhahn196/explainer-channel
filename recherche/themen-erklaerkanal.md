@@ -362,6 +362,255 @@ Homer, Really?"** und F23, terminiert auf die Oscar-Nominierungen am
   arbeiten. Auffällig ist nur Shadow of the Gods; die anderen fünf fahren
   ausschließlich zeitlose Alltagsfragen ohne Anlassbezug.
 
+---
+
+# Nachtrag 2026-08-17 — fünf neue Fragen unter verschärfter Prüfung
+
+> Reine Analyse, **0 Higgsfield-Credits**. Alle Messwerte neu erhoben am
+> 2026-08-17, Skript `recherche/daten/pruefe_neu.py`, Rohdaten in
+> `recherche/daten/fragen_bewertet_neu.json`.
+
+## Die Bedingung, die in der Bewertung oben fehlt: ERZÄHLBAR
+
+Die Skala der 42 misst Belegbarkeit, Titelabstand, Universalität und
+Anlassstärke. Sie misst **nicht**, ob sich eine Frage über Menschen und
+Handlungen zeigen lässt. Nach dem Königsberg-Befund ist genau das die wichtigste
+Achse: **eine Frage, deren Kern ein Diagramm verlangt, taugt für diesen Kanal
+nicht** — egal, wie gut sie belegt ist.
+
+**Offenlegung:** Der Königsberg-Befund liegt nicht in diesem Repository. Alle
+Dateien wurden danach durchsucht, kein Treffer [gemessen]. Er ist hier so
+angewandt, wie er im Auftrag formuliert ist — *erzählbar = über Menschen und
+Handlungen zeigbar; verlangt die Frage Diagramme, taugt sie nicht.*
+
+Die Achse bleibt **[abgeleitet]** und wird es bleiben; sie ist nicht messbar wie
+die Titelähnlichkeit. Sie ist deshalb **nicht** als fünfte Punktachse geführt,
+sondern als **K.-o.-Kriterium vor der Punktevergabe**: eine nicht erzählbare
+Frage fällt raus, auch mit 8 Punkten. Ein Beispiel dafür steht weiter unten
+(X3) — 8/8 belegt, 20 % Titelabstand, volle 8 Punkte, trotzdem verworfen.
+
+## Verschärfte Schwellen gegenüber den 42
+
+| Achse | Regel für die 42 | Regel für diese fünf |
+|---|---|---|
+| Belegbarkeit | ≥ 4/8 Crossref = „gut belegt" | **8/8, nicht weniger** |
+| Titelfreiheit | ≤ 50 % K.-o., ≤ 25 % volle Punkte | **< 25 %** |
+| Universalität | 0–2 Punkte | **2 — kein Vorwissen** |
+| Anlass | Fenster 08/2026–08/2027 | **Termin nach 12/2026** |
+| Erzählbarkeit | *gar nicht geprüft* | **K.-o.-Kriterium** |
+| Dopplung | — | **keine der bestehenden 42** |
+
+## Schritt 1 — die Anlässe für diese fünf
+
+Zwei Quellen, wie im Auftrag angelegt: **Lücken im bestehenden Kalender** (er
+listet Ereignisse, denen nie eine Frage zugeordnet wurde) und **Termine nach
+dem Kalenderende im Oktober 2027**. [alle gemessen — Websuche 2026-08-17]
+
+| Datum | Ereignis | Herkunft | Warum Aufmerksamkeit | Quelle |
+|---|---|---|---|---|
+| **2027-10-01 – 11-13** | Rugby-WM in Australien | **Kalenderlücke** — stand als Ereignis drin, ohne Frage | 24 Mannschaften, 52 Spiele, sieben Gastgeberstädte; Eröffnung Perth, Finale Stadium Australia, Sydney | [Rugby World Cup](https://www.rugbyworldcup.com/2027/en), [Wikipedia](https://en.wikipedia.org/wiki/2027_Men%27s_Rugby_World_Cup) |
+| **2027-10-06** | 100 Jahre „The Jazz Singer" — Beginn des Tonfilms | **Kalenderlücke** — dito | AFI: New Yorker Premiere 06.10.1927; **nicht** der erste Tonfilm, aber der kommerzielle Umschlagpunkt der Branche | [AFI Catalog](https://catalog.afi.com/Catalog/moviedetails/1535), [EBSCO](https://www.ebsco.com/research-starters/history/jazz-singer-premieres-first-talkie) |
+| **2028-04-06** | 500. Todestag Albrecht Dürer | **neu, nach Kalenderende** | Todesdatum belegt; Nürnberg als Wirkungsort mit Dürer-Haus und Museen. **Kein offizielles Jubiläumsprogramm gefunden** — nur Sekundärberichte, dass Nürnberg für 2028 plant. Anlass daher schwächer belegt als die übrigen sechs | [Wikipedia](https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer), [Museen Nürnberg](https://museums.nuernberg.de/albrecht-duerer-house) |
+| **2028-07-14 – 07-30** | Olympische Sommerspiele Los Angeles | **neu** | Eröffnung 14.07.2028 in zwei Stadien (Coliseum + SoFi); Paralympics 15.–27.08.2028 | [LA28](https://la28.org/en/newsroom/LA28_Announces_Games_Dates.html), [Olympics.com](https://www.olympics.com/en/news/la28-unveils-detailed-olympic-competition-schedule-including-medal-eve) |
+| **2028-08-10** | 400 Jahre Untergang der *Vasa* | **neu** | Das Vasa-Museum terminiert seinen Umbau ausdrücklich darauf: „expected to be completed in 2028 – just in time for the ship's 400th anniversary" | [Vasamuseet](https://www.vasamuseet.se/en/about-the-vasa-museum/help-us-preserve-vasa/construction-start-for-vasas-new-support), [Wikipedia](https://en.wikipedia.org/wiki/Vasa_(ship)) |
+| **2028-09** | 100 Jahre Entdeckung des Penicillins | **neu** | „2028 will mark the centenary of the observation of the inhibitory effects of the mould *Penicillium notatum*" | [JAC-Antimicrobial Resistance](https://academic.oup.com/jacamr/article/7/5/dlaf167/8300877), [Wikipedia](https://en.wikipedia.org/wiki/History_of_penicillin) |
+| **2028-10-27** | 300. Geburtstag James Cook | **neu** | Sonderausstellung im Cook-Museum Whitby, Kampagne, die *Endeavour*-Replik aus Sydney zurückzuholen; Jahresprogramm in Whitby und Marton | [The Scarborough News](https://www.thescarboroughnews.co.uk/news/people/rare-captain-cook-medal-to-become-part-of-tricentenary-exhibition-at-whitbys-cook-museum-8542194), [Wikipedia](https://en.wikipedia.org/wiki/James_Cook) |
+
+**Zwei Termine sind nicht so scharf, wie sie aussehen** [gemessen]:
+
+- **Cook:** Wikipedia führt ihn unter dem **7. November 1728** (neuer Stil); die
+  Museen und die Jubiläumsberichte rechnen mit dem **27. Oktober 1728** (alter
+  Stil). Beides liegt in 2028, aber der Tag hängt vom Kalender ab. Für die
+  Planung: Oktober/November 2028, nicht ein Datum.
+- **Penicillin:** Wikipedia datiert Flemings Rückkehr ins Labor auf den
+  **3. September 1928**, ein Teil der Literatur nennt den **28. September**.
+  Der Anlass ist monatsscharf, nicht tagesscharf.
+
+## Schritt 2 — die fünf Fragen
+
+Gleiche Spalten wie oben: Ä = Titelähnlichkeit gegen die **136 Konkurrenztitel**
+· cr = einschlägige Crossref-Treffer von 8 · wiki = Bytes des
+Wikipedia-Artikels · U = Universalität · P = Punkte nach dem Schema oben.
+
+| Anlass | ID | Titel (zeitlos, ohne Anlassnennung) | Ä | cr | wiki | Belegbarkeit | U | P |
+|---|---|---|---|---|---|---|---|---|
+| **A22** 100 J. Tonfilm, 06.10.2027 | F43 | Who Played the Music in Silent Movie Theaters? | 16,7 % | **8/8** | 84.130 | gut belegt | 2 | **8** |
+| **A23** Rugby-WM, 01.10.–13.11.2027 | F44 | How Did a Whole Village Play a Single Game? | 16,7 % | **8/8** | 49.293 | gut belegt | 2 | **8** |
+| **A24** 400 J. Vasa, 10.08.2028 | F45 | Who Decided Whether a New Warship Was Safe to Sail? | 14,3 % | **8/8** | 18.360 | gut belegt | 2 | **8** |
+| **A25** 100 J. Penicillin, 09/2028 | F46 | Why Was a Scratch Once Enough to Kill Someone? | 16,7 % | **8/8** | 18.334 | gut belegt | 2 | **8** |
+| **A26** 300. Geb. James Cook, 10/2028 | F47 | Why Did Sailors Lose Their Teeth at Sea? | 16,7 % | **8/8** | 79.738 | gut belegt | 2 | **8** |
+
+**Alle fünf erreichen 8 von 8 Punkten und erfüllen zusätzlich alle
+verschärften Bedingungen** [gemessen, bis auf U und Anlassstärke — die bleiben
+[abgeleitet]].
+
+### Warum jede erzählbar ist, und welche Szene den Kern trägt
+
+**F43 — Who Played the Music in Silent Movie Theaters?**
+*Erzählbar,* weil der Kern ein **Beruf** ist, kein Vorgang: Menschen, die im
+Dunkeln arbeiten, und dann Menschen, die ihre Arbeit verlieren. Kein einziges
+Schaubild nötig.
+*Szene:* Der Kinopianist sitzt unter der Leinwand und spielt die Verfolgungsjagd
+mit, die er zum ersten Mal sieht — dieselbe Rolle klingt in jedem Haus anders.
+Drei Jahre später ist der Orchestergraben leer: **rund 22.000 Musikerstellen in
+den Kinos verschwunden**, in New York und Cincinnati 50–75 % Arbeitslosigkeit
+unter Musikern; 1930 gründet die Musikergewerkschaft die *Music Defense League*
+und kauft für über 500.000 Dollar Zeitungsanzeigen gegen „canned music"
+([Local 802 AFM](https://www.local802afm.org/allegro/articles/music-history-musicians-vs-the-talkies/),
+[Smithsonian](https://www.smithsonianmag.com/history/musicians-wage-war-against-evil-robots-92702721/)).
+
+**F44 — How Did a Whole Village Play a Single Game?**
+*Erzählbar,* weil das Spiel selbst nur aus Menschen besteht: kein Feld, keine
+Linien, keine Aufstellung, die man zeichnen müsste — nur ein Ort und Hunderte
+Leute darin.
+*Szene:* Ashbourne, Derbyshire. Wer nördlich des Henmore Brook geboren ist,
+spielt bei den *Up'ards*, wer südlich davon geboren ist, bei den *Down'ards* —
+die Mannschaft steht mit dem Geburtsort fest. Die beiden Tore sind **drei Meilen
+voneinander entfernt**, dazwischen liegt die ganze Stadt samt Fluss. Diese
+Spielform ist in England seit mindestens dem 12. Jahrhundert bezeugt, das
+Ashbourne-Spiel selbst seit etwa 1667
+([Wikipedia](https://en.wikipedia.org/wiki/Royal_Shrovetide_Football),
+[University of Derby](https://www.derby.ac.uk/blog/shrovetide-football-history-behind-famous-game/)).
+
+**F45 — Who Decided Whether a New Warship Was Safe to Sail?**
+*Erzählbar,* weil die Antwort eine **Entscheidung von Menschen** ist, keine
+Rechnung: es gab keine Berechnung, es gab einen Meister, eine Faustregel und
+einen Vorgesetzten, der weitere Kanonen wollte.
+*Szene:* Der Stabilitätstest im Hafen. **Dreißig Männer rennen auf dem Oberdeck
+hin und her**, um das Schiff ins Rollen zu bringen. Nach **drei Läufen** bricht
+Vizeadmiral Fleming den Versuch ab — aus Sorge, das Schiff kentert noch am Kai.
+Gemeldet wird nichts. Beim Auslaufen sinkt es nach wenigen Minuten Fahrt,
+**30 Menschen sterben** ([Wikipedia](https://en.wikipedia.org/wiki/Vasa_(ship))).
+Das ist der ganze Film in einem Bild: Leute, die es wissen, und niemand, der es
+aufschreibt.
+
+**F46 — Why Was a Scratch Once Enough to Kill Someone?**
+*Erzählbar,* weil jeder Zuschauer den Ausgangspunkt am eigenen Körper kennt.
+Der Stoff ist eine Kette von Handlungen — Honig, Wein, glühendes Eisen, Maden —
+und am Ende ein Krankenzimmer.
+*Szene:* Oxford, **12. Februar 1941**: Albert Alexander, Polizist, bekommt als
+erster Mensch Penicillin injiziert. Er erholt sich sichtbar. **Am fünften Tag
+ist der Vorrat aufgebraucht** — man filtert den Wirkstoff aus seinem Urin
+zurück, es reicht nicht, er stirbt.
+*Faktenprüfung vorab:* Die berühmte Version „von einem Rosendorn gekratzt" ist
+**falsch**; die Verletzung stammt aus einem Luftangriff auf seine Polizeiwache am
+30.11.1940 ([The Conversation](https://theconversation.com/guns-not-roses-heres-the-true-story-of-penicillins-first-patient-178463),
+[Wikipedia](https://en.wikipedia.org/wiki/Albert_Alexander_(police_officer))).
+Weil Krieg auf der Ausschlussliste steht, wird die Herkunft der Wunde im Skript
+in einem Satz genannt und nicht bebildert — Thema bleibt die Wundbehandlung.
+
+**F47 — Why Did Sailors Lose Their Teeth at Sea?**
+*Erzählbar,* weil die Krankheit an Gesichtern sichtbar ist und die Lösung eine
+**Menschengeschichte über Sturheit** ist: die Antwort war 1747 bekannt und wurde
+fast fünfzig Jahre lang nicht angewandt.
+*Szene zwei Mal:* 1747 auf der *HMS Salisbury* legt James Lind **zwölf kranke
+Matrosen in denselben Raum, gibt ihnen dasselbe Essen und je zwei Männern etwas
+anderes dazu** — nach sechs Tagen ist einer der beiden Zitrusesser wieder
+diensttauglich, die übrigen fünf Paare nicht
+([James Lind Library](https://www.jameslindlibrary.org/articles/james-lind-and-scurvy-1747-to-1795/)).
+Zwanzig Jahre später lässt Cook das Sauerkraut **zuerst nur am Offizierstisch
+servieren**, damit die Mannschaft es haben will — die Rationen sind in den
+Bordbüchern der *Resolution* nachgewiesen
+([British Library, Untold Lives](https://blogs.bl.uk/untoldlives/2018/06/sauerkraut-sugar-and-salt-pork-the-diet-on-board-cooks-resolution.html)).
+
+## Auch geprüft, aber nicht unter den fünf
+
+Vollständig gemessen, mit denselben Werkzeugen — damit nachvollziehbar bleibt,
+was **nicht** gewählt wurde und warum.
+
+| ID | Titel | Anlass | Ä | cr | wiki | P | Warum nicht |
+|---|---|---|---|---|---|---|---|
+| X1 | What Did Athletes Eat to Get Stronger? | Olympia LA, 14.07.2028 | 20,0 % | 8/8 | 74.604 | **8** | Erfüllt **alles**. Nicht gewählt, weil sie thematisch direkt neben **F35** („Why Did the Greeks Compete Naked?") liegt — selbe Kultur, selber Personenkreis. **Als sechste Frage sofort einsetzbar**, falls eine der fünf ausfällt |
+| X2 | How Did Artists Draw Animals They Had Never Seen? | 500. Todestag Dürer, 06.04.2028 | 14,3 % | **7/8** | 27.695 | 8 | **Verfehlt die geforderte 8/8.** Auf der Skala oben stünde sie bei 8 Punkten (7/8 ≥ 4 = „gut belegt"), die Zusatzbedingung erfüllt sie nicht |
+| X3 | How Did People Send a Picture Down a Wire? | 100 J. Fernsehen, 07.09.2027 | 20,0 % | 8/8 | 55.193 | 8 | **Nicht erzählbar.** Alle Zahlen stimmen, aber der Kern ist der Abtastvorgang — Trommel, Lichtpunkt, Zeile für Zeile. Ohne Schaubild nicht erklärbar, mit Schaubild kein Video für diesen Kanal |
+| — | PLATO-Exoplanetenteleskop (Kalenderlücke, „2027 früh") | — | — | — | — | — | **Vor der Messung ausgeschieden.** Jede Frage dazu läuft auf die Transitmethode hinaus: Helligkeitskurve, also Diagramm. Gar nicht erst geprüft |
+
+**X2 ist der klare Verlust dieser Runde.** Von allen geprüften Fragen ist sie
+die erzählbarste — ein Seemannsbrief, der ein Tier beschreibt, und ein Mann in
+Nürnberg, der daraus Panzerplatten zeichnet. Sie scheitert an **einem** von acht
+Crossref-Treffern. Sechs Suchphrasen wurden probiert (beste: *exotic animals
+Renaissance Europe representation travel accounts*, 7/8, der Fehltreffer ist
+*Writing Travel, Making Genre*), danach wurde abgebrochen. Sie hier grün zu
+rechnen wäre der Fehler, den die Erstprüfung oben bereits einmal gemacht hat.
+
+## Wie diese Runde gemessen wurde
+
+- **Skript:** `recherche/daten/pruefe_neu.py`. Methode **wortgleich** aus
+  `pruefe_fragen.py` übernommen — Stopwortliste, Stemming, Crossref-Heuristik
+  und Wikipedia-Abfrage sind unverändert. Zwei Änderungen, beide offengelegt:
+  1. **`BASIS` korrigiert.** Das bestehende `pruefe_fragen.py` zeigt in Zeile 18
+     auf `/home/user/BibelTube/recherche/daten` — diesen Pfad gibt es in diesem
+     Repository nicht, das Skript läuft hier **nicht** [gemessen]. Der Nachbau
+     zeigt auf `recherche/daten`.
+  2. **Zusätzliche Dopplungsprüfung** gegen die Titel der bestehenden 42.
+- **Crossref und Wikipedia** waren aus dem Container erreichbar, beide HTTP 200
+  [gemessen, 2026-08-17].
+- **Phrasenversuche, gezählt und offengelegt:** F43 vier, F44 drei, F45 fünf,
+  F46 zwei, F47 zwei, X1 fünf, X2 sechs, X3 eine. Bei F46 trafen **beide**
+  Phrasen sofort 8/8 — dort wurde der **Titel** zweimal geändert, nicht die
+  Phrase (Erstfassung „What Did People Put on a Wound Before Antibiotics?",
+  33,3 % Ähnlichkeit, an *what* + *before* gescheitert).
+  Das ist dieselbe Art Eingriff wie das Nachschärfen oben und aus demselben
+  Grund heikel: **8/8 ist ebenso eine Eigenschaft der Suchphrase wie der
+  Literatur.** Wer die Fragen nachprüft, sollte die Phrase mitprüfen.
+
+### Der Nebenbefund dieser Runde: die Titelähnlichkeit misst hier nur das Fragewort
+
+Bei **allen fünf** gewählten Fragen ist das einzige geteilte Wort mit dem
+nächsten Konkurrenztitel das **Fragewort selbst** — *who*, *how* oder *why*
+[gemessen]:
+
+| ID | Ä | nächster Konkurrenztitel | geteilt |
+|---|---|---|---|
+| F43 | 16,7 % | Azazel: The Fallen Angel **Who** Taught Humanity to Kill | `who` |
+| F44 | 16,7 % | **How** Did Ancient Humans Travel the World? | `how` |
+| F45 | 14,3 % | Azazel: The Fallen Angel **Who** Taught Humanity to Kill | `who` |
+| F46 | 16,7 % | **Why** Are We the Only Human Species Left? | `why` |
+| F47 | 16,7 % | **Why** Are We the Only Human Species Left? | `why` |
+
+Die inhaltliche Überschneidung ist damit **null**; der gemessene Wert ist reines
+Grundrauschen des Verfahrens. Das bestätigt den Vorbehalt oben (F22) von der
+anderen Seite: Die Methode kann einen Titel zu schlecht bewerten — hier bewertet
+sie fünf Titel nur deshalb nicht mit 0 %, weil jede Frage mit einem Fragewort
+beginnen muss. **Praktische Konsequenz:** Werte unter etwa 20 % bedeuten bei
+sechs- bis siebenwortigen Titeln „gar keine Überschneidung", nicht „wenig".
+
+Zur Konstruktion, weil sie wiederholbar ist: die Wortstämme `human` (57×),
+`ancient` (53×), `how` (30×), `why` (27×), `you` (21×), `what` (20×) sind in den
+136 Konkurrenztiteln am dichtesten besetzt. Ein Titel mit **sechs bis sieben
+Inhaltswörtern**, der außer dem Fragewort keines davon benutzt, landet
+zwangsläufig bei 14–17 %. Bei vier Inhaltswörtern reicht ein einziger Treffer
+für 25 %.
+
+## Vorbehalte dieser Runde
+
+- **Die Dopplungsprüfung ist eine Wortprüfung, keine Themenprüfung.** F47 teilt
+  33,3 % mit F24 („How Did Sailors Cross the Sea Without Maps?") — beide über
+  Seeleute, aber Navigation gegen Krankheit. **F44 liegt inhaltlich näher an
+  F34 („Who Invented Ball Games?"), als die gemessenen 16,7 % zeigen**:
+  F34 fragt nach dem Ursprung, F44 nach der Form. Wenn beide produziert werden,
+  müssen sie im Skript gegeneinander abgegrenzt werden. Dasselbe gilt für F43
+  neben F29 („What Did Music Sound Like Before Recordings?").
+- **Anlassstärke ist [abgeleitet] und bei zwei der fünf großzügig.** Rugby-WM
+  und Olympia sind unstrittig weltweite Ereignisse mit Datum. Vasa 400 ist
+  primär ein **schwedisches** Museumsereignis, Cook 300 primär ein
+  **britisches** mit Resonanz in Australien und Neuseeland. Beide wurden mit 2
+  bewertet, weil die Liste oben Route 66 (rein US-amerikanisch) ebenso bewertet
+  — die Bewertung ist damit konsistent, aber nicht streng.
+- **Für den Tonfilm-Anlass wurde kein organisiertes Zentenarprogramm
+  gefunden** [gemessen]. Anders als Route 66 (Kongress-Kommission) oder
+  Lindbergh (Stiftung) trägt dieser Anlass nur das Datum und die zu erwartende
+  Presseberichterstattung.
+- **Suchvolumen ist weiterhin nicht geprüft** — derselbe Vorbehalt wie oben.
+- **Die Crossref-Heuristik produziert nachgewiesen Fehltreffer** (F38 oben). Der
+  Beleg zu F43 ist ein Beispiel dafür: der erste Treffer ist ein Lexikoneintrag
+  zu einer Organistin von 1799, thematisch neben der Sache. **8/8 heißt „acht
+  Titel tragen zwei der Suchbegriffe", nicht „acht brauchbare Quellen".** Die
+  eigentliche Belegarbeit steht noch aus.
+- **Termine 2028 sind zwei Jahre entfernt.** Kinostarts, Museumsprogramme und
+  Schiffsüberführungen verschieben sich. Die *Endeavour*-Replik nach Whitby ist
+  eine **Kampagne**, keine Zusage.
+
 ## Rohdaten
 
 | Datei | Inhalt |
@@ -369,4 +618,7 @@ Homer, Really?"** und F23, terminiert auf die Oscar-Nominierungen am
 | `recherche/daten/besetzung_erklaerkanal.json` | 136 Konkurrenztitel mit Kanal, Abos, Views [gemessen] |
 | `recherche/daten/fragen_kanal2.json` | 42 Fragen mit Anlass, Crossref-Phrase, Wikipedia-Artikel |
 | `recherche/daten/fragen_bewertet.json` | Prüfergebnis je Frage inkl. Belegbeispiel und Punkten |
-| `recherche/daten/pruefe_fragen.py` | Prüfskript (Titelähnlichkeit + Belegbarkeit), wiederholbar |
+| `recherche/daten/pruefe_fragen.py` | Prüfskript (Titelähnlichkeit + Belegbarkeit), wiederholbar — **läuft in diesem Repo nicht, `BASIS` zeigt auf den BibelTube-Pfad** |
+| `recherche/daten/fragen_kanal2_neu.json` | die 5 neuen Fragen + 3 geprüfte, nicht gewählte (Nachtrag) |
+| `recherche/daten/fragen_bewertet_neu.json` | Prüfergebnis dazu, inkl. aller 8 Crossref-Titel je Frage |
+| `recherche/daten/pruefe_neu.py` | Prüfskript des Nachtrags, Pfad korrigiert + Dopplungsprüfung |
