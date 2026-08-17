@@ -1,72 +1,59 @@
 #!/bin/bash
 # Baut die drei Probeclips aus EINEM vorhandenen Bild.
-# Identische Laufzeit, identische Bewegungsamplitude, identische Kodierung -
-# der einzige Unterschied ist der Weg, auf dem die Kamerafahrt entsteht.
+# Identische Laufzeit, identische Bewegung, identische Kodierung - der
+# einzige Unterschied ist der Weg, auf dem die Kamerafahrt entsteht.
+#
+# (a) baut den Filter so, wie er FRUEHER in schritt5_video.py stand.
+# (b) und (c) rufen produktion/pipeline/kamerafahrt.py auf, also genau das,
+#     was die Pipeline heute tut - die Clips sind kein Modell davon,
+#     sondern dasselbe Programm.
 set -euo pipefail
 
-REPO=/home/user/explainer-channel
+REPO=$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)
 QUELLE="$REPO/recherche/stile-erklaerkanal/stil-1-flatvector-szeneA.png"
-AUS=/tmp/claude-0/-home-user-explainer-channel/e8958594-fe41-504a-b4de-0632065fe225/scratchpad/jitter
+AUS="${1:-.}"
 FPS=24
 SEK=6
 N=$((FPS * SEK))          # 144 Frames
-ZOOM=0.08                 # 1,00 -> 1,08
-PAN=0.35                  # Anteil des freien Wegs, den der Schwenk nutzt
+ZOOM_BIS=1.08
+SCHWENK=0.7               # Anteil des freien Wegs, waagerecht
 
 # Alle drei Clips gleich kodieren. CRF 16 statt der 28 aus config.md:
 # sonst vergleicht man Kamerafahrt UND Codec gleichzeitig.
-ENC=(-c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p
-     -x264-params "keyint=48:min-keyint=48:scenecut=0" -an -movflags +faststart)
+CRF=16
+PRESET=slow
 
-# Kosinus-Rampe, in beiden Fahrten identisch. zoompan zaehlt `on` ab 1.
-RAMPE="(1-cos(PI*on/$N))/2"
-Z="1+$ZOOM*$RAMPE"
-XE="(iw-iw/zoom)*(0.5+$PAN*$RAMPE)"
-YE="(ih-ih/zoom)/2"
-
-echo "== Arbeitsvorlagen =="
-# (a) genau wie schritt4_bild.py::zuschneiden(): 16:9 beschneiden, LANCZOS
-#     auf 1920x1080 - die 2752 px der Quelle sind ab hier weg.
+echo "== (a) bisheriger Weg: Bild auf 1920 herunterrechnen, dann zoompan =="
+# schritt4_bild.py::zuschneiden() - ab hier sind die 2752 px der Quelle weg
 ffmpeg -y -loglevel error -i "$QUELLE" \
   -vf "scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080" \
   "$AUS/vorlage-1080.png"
-
-# (b) Ueberabtastung: die Quelle einmal auf 4x Ausgabebreite bringen und die
-#     Fahrt dort rechnen. Danach wird nur noch herunterskaliert.
-ffmpeg -y -loglevel error -i "$QUELLE" \
-  -vf "scale=7680:4320:force_original_aspect_ratio=increase:flags=lanczos,crop=7680:4320" \
-  "$AUS/vorlage-7680.png"
-
-for f in vorlage-1080 vorlage-7680; do
-  printf "   %-16s " "$f.png"
-  ffprobe -v error -select_streams v:0 -show_entries stream=width,height \
-          -of csv=p=0 "$AUS/$f.png"
-done
-
-echo
-echo "== (a) bisheriger Weg: zoompan auf 1920, Ausschnitt wird HOCHskaliert =="
+# ... und der Filter, wie er frueher in zyklus_bauen() gebaut wurde
+R="(1-cos(PI*on/$N))/2"
 time ffmpeg -y -loglevel error -loop 1 -framerate $FPS -t $SEK -i "$AUS/vorlage-1080.png" \
-  -vf "zoompan=z='$Z':x='$XE':y='$YE':d=1:s=1920x1080:fps=$FPS,format=yuv420p" \
-  "${ENC[@]}" "$AUS/probe-a-bisher.mp4"
+  -vf "zoompan=z='1+0.08*$R':x='(iw-iw/zoom)*(0.5+0.35*$R)':y='(ih-ih/zoom)/2':d=1:s=1920x1080:fps=$FPS,format=yuv420p" \
+  -c:v libx264 -preset $PRESET -crf $CRF -pix_fmt yuv420p -g 48 -an \
+  "$AUS/probe-a-bisher.mp4"
+rm -f "$AUS/vorlage-1080.png"
 
 echo
-echo "== (b) Korrektur: zoompan auf 7680, Ausgabe 3840, dann lanczos auf 1920 =="
-time ffmpeg -y -loglevel error -loop 1 -framerate $FPS -t $SEK -i "$AUS/vorlage-7680.png" \
-  -vf "zoompan=z='$Z':x='$XE':y='$YE':d=1:s=3840x2160:fps=$FPS,scale=1920:1080:flags=lanczos,format=yuv420p" \
-  "${ENC[@]}" "$AUS/probe-b-korrigiert.mp4"
+echo "== (b) Korrektur - kamerafahrt.py, art=fahrt =="
+time python3 "$REPO/produktion/pipeline/kamerafahrt.py" "$QUELLE" \
+  "$AUS/probe-b-korrigiert.mp4" --dauer $SEK --art fahrt \
+  --zoom-bis $ZOOM_BIS --schwenk $SCHWENK --crf $CRF --fps $FPS
 
 echo
-echo "== (c) statisch: kein zoompan, ein sauber herunterskaliertes Bild =="
-time ffmpeg -y -loglevel error -loop 1 -framerate $FPS -t $SEK -i "$QUELLE" \
-  -vf "scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,format=yuv420p" \
-  "${ENC[@]}" "$AUS/probe-c-statisch.mp4"
+echo "== (c) statisch - kamerafahrt.py, art=statisch =="
+time python3 "$REPO/produktion/pipeline/kamerafahrt.py" "$QUELLE" \
+  "$AUS/probe-c-statisch.mp4" --dauer $SEK --art statisch --crf $CRF --fps $FPS
 
 echo
 echo "== Ergebnis =="
 for f in probe-a-bisher probe-b-korrigiert probe-c-statisch; do
   printf "%-22s " "$f.mp4"
-  ffprobe -v error -select_streams v:0 \
-    -show_entries stream=width,height,r_frame_rate,nb_frames \
-    -show_entries format=duration,size -of default=nw=1:nk=1 "$AUS/$f.mp4" | tr '\n' ' '
+  ffprobe -v error -select_streams v:0 -count_frames \
+    -show_entries stream=width,height,nb_read_frames \
+    -show_entries format=duration,size -of default=nw=1:nk=1 "$AUS/$f.mp4" \
+    | tr '\n' ' '
   echo
 done

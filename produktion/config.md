@@ -84,13 +84,44 @@ absichtlich **nicht** mitkopiert worden.
 | `breite` / `hoehe` | `1920` / `1080` | **ÜBERNOMMEN — UNGEPRÜFT** — Standardformat, vermutlich gültig |
 | `fps` | `24` | **ÜBERNOMMEN — UNGEPRÜFT** |
 | `videoquelle` | `ki_clips` | **GILT NICHT** — 4 Clips à 12 s als 48-s-Zyklus über 3,5 h. Dieser Kanal braucht **120–300 verschiedene Einstellungen** je Video. Anderes Modell. |
-| `zoom` / `zoom_faktor` / `zoom_zyklus_s` | `ja` / `1.04` / `300` | **GILT NICHT** — der 300-Sekunden-Atemzyklus ist für ein 10-Minuten-Video sinnlos. ⚠️ **2026-08-17: Der Zoom-Weg in `schritt5_video.py` ist zusätzlich defekt** — `zoompan` rastet den Ausschnitt auf ganze Quellpixel, das Bild zittert um 1 px, bei flachen Grafiken mit harten Konturen sichtbar. Gemessen und belegt in [`recherche/kamerafahrt-proben/README.md`](../recherche/kamerafahrt-proben/README.md). **Nicht ungeprüft übernehmen; Entscheidung über den Ersatzweg steht aus.** |
+| `zoom` / `zoom_faktor` / `zoom_zyklus_s` | `ja` / `1.04` / `300` | **GILT NICHT** — der 300-Sekunden-Atemzyklus ist für ein 10-Minuten-Video sinnlos. Ersetzt durch `kamerafahrt` (Zeile darunter). |
+| `kamerafahrt` | **`fahrt` über `kamerafahrt.py`, Voreinstellung je Einstellung `statisch`** | **ENTSCHIEDEN 2026-08-17** — siehe den Vermerk unten. Geplant wird die Fahrt je Einstellung in [`szenenliste-vorgaben.md`](szenenliste-vorgaben.md), gerendert ausschließlich über [`pipeline/kamerafahrt.py`](pipeline/kamerafahrt.py). |
 | `ki_clip_ordner*` | — | **GILT NICHT** |
 | `kapitelmarken_videos` | `V1,V2,V6,V8` | **GILT NICHT** — videobezogene Kanal-1-Liste |
 | `video_crf` | `28` | **ÜBERNOMMEN — UNGEPRÜFT** — CRF 28 ist auf ein nahezu statisches Bild optimiert. Bei 2–5-Sekunden-Schnitten ist das vermutlich zu hoch (sichtbare Artefakte an Schnittkanten). **Erster Kandidat zum Nachmessen.** |
 | `video_preset` | `medium` | **ÜBERNOMMEN — UNGEPRÜFT** |
 | `audio_bitrate` | `192k` | **ÜBERNOMMEN — UNGEPRÜFT** |
 | **Bildstil** | — | **OFFEN** — drei Varianten getestet, siehe `recherche/stil-ink-varianten/README.md`. Empfehlung dort: V1 als Basis plus das Element aus V3. Nicht entschieden. |
+
+### ⚠️ Vermerk 2026-08-17 — Zittern der Kamerafahrten
+
+**Symptom.** Bei langsamen Zooms und Schwenks sprang das Bild pixelweise.
+Am stärksten bei **flachen Grafiken mit harten Konturen** — also bei genau
+unserer Bildwelt, weil dort eine Kante als Ganzes um eine Pixelspalte
+springt, statt im Detail unterzugehen.
+
+**Ursache.** `zoompan` rundet den Bildausschnitt auf **ganze Quellpixel** —
+Größe *und* Lage (`w`, `h`, `x` sind in `vf_zoompan.c` `int`). Die Fahrt
+steht still und springt dann um einen ganzen Pixel. Verschärft dadurch, dass
+`schritt4_bild.py` jede Quelle vorab von 2752 auf 1920 px herunterrechnete:
+danach war ein Quellpixel gleich einem Ausgabepixel. Gemessen **0,998 px**
+Ruckeln; beim 300‑s‑Zyklus waren **99,0 % aller Frames exakte Standbilder**.
+
+**Lösung.** Überabtasten, dann herunterskalieren — Quelle einmal auf das
+Vierfache der Ausgabebreite, `zoompan` auf das Doppelte, danach lanczos auf
+1920. Ergebnis **0,150 px**, und das Bild ist dabei an jedem Zeitpunkt
+schärfer als vorher, weil herunter- statt hochskaliert wird.
+
+**Festgeschrieben in** [`pipeline/kamerafahrt.py`](pipeline/kamerafahrt.py)
+(einziger erlaubter Weg, mit `--selbsttest`),
+[`szenenliste-vorgaben.md`](szenenliste-vorgaben.md) (Voreinstellung
+`statisch`, eine Fahrt wird begründet) und
+[`recherche/kamerafahrt-proben/README.md`](../recherche/kamerafahrt-proben/README.md)
+(Messwerte, Probeclips, verworfene Varianten).
+
+**Nicht wieder einbauen:** `zoompan` direkt auf ein Bild in Ausgabegröße ·
+die Quelle vor der Fahrt kleinrechnen · `zoompan` direkt auf die Endgröße
+rechnen. Alle drei sind gemessen und schlechter.
 
 ## Laufzeit
 

@@ -52,6 +52,7 @@ Konfigurationszeilen sind **16 für diesen Kanal gegenstandslos**, 17 unbestäti
 | **Themen** | ✅ **42 Fragen terminiert bis 08/2027** — Anlass-Kalender mit 22 belegten Ereignissen, Titelprüfung gegen 136 Konkurrenztitel, Belegbarkeit über Crossref und Wikipedia: [`recherche/themen-erklaerkanal.md`](recherche/themen-erklaerkanal.md) |
 | **Bildstil** | ⬜ **OFFEN** — Stil des Vorbilds gemessen ([`recherche/stil-ink-explainer.md`](recherche/stil-ink-explainer.md)), drei eigene Varianten getestet und bewertet ([`recherche/stil-ink-varianten/README.md`](recherche/stil-ink-varianten/README.md)). Empfehlung dort: V1 (Dreifarbenpalette) als Basis plus das wiederkehrende Element aus V3. **Nicht entschieden.** |
 | **Pipeline** | ⬜ **nicht gebaut** — Skripte aus BibelTube liegen unter `produktion/pipeline/`, sind aber auf ein 3,5-Stunden-Schlafvideo eingestellt und für dieses Format weder angepasst noch gelaufen |
+| **Kamerafahrten** | ✅ **entschieden 2026-08-17** — der übernommene `zoompan`-Weg zitterte sichtbar (gemessen 0,998 px, Ursache: Rundung des Ausschnitts auf ganze Quellpixel). Ersetzt durch Überabtastung in [`pipeline/kamerafahrt.py`](produktion/pipeline/kamerafahrt.py) → 0,150 px, dabei schärfer. Voreinstellung je Einstellung ist **statisch**; eine Fahrt wird begründet ([`szenenliste-vorgaben.md`](produktion/szenenliste-vorgaben.md)). Probeclips und Messwerte: [`recherche/kamerafahrt-proben/`](recherche/kamerafahrt-proben/README.md) |
 | **Stimme** | ⬜ OFFEN — die BibelTube-Stimme ist bewusst einschläfernd, hier unbrauchbar. Neuer Blindtest nötig. |
 | **Faktenprüfung** | ⬜ konzipiert, nicht gebaut — Skizze in `recherche/nischen-kanal-2.md`, ~25 prüfpflichtige Aussagen und 1–1,75 h je Video |
 
@@ -86,6 +87,11 @@ Alles unter `produktion/` stammt aus
 | `produktion/pipeline/README.md` | Beschreibung des Schrittmodells |
 | `produktion/motive/README.md` | Bildworkflow |
 | `produktion/config.md` | **neu geschrieben** — jeder übernommene Schwellenwert einzeln markiert |
+
+**Hier entstanden, nicht übernommen:** `produktion/pipeline/kamerafahrt.py`
+(das 18. Skript) und `produktion/szenenliste-vorgaben.md` — der übernommene
+Zoom-Weg zitterte und ist ersetzt, siehe die Zeile „Kamerafahrten" im Stand
+oben.
 
 **Bewusst nicht übernommen:** `regeln/`, `formel/`, `teardown/`,
 `produktion/videos-01-08.md`, `produktion/video-0*/`, `bibeltube-wissen.md`,

@@ -23,7 +23,8 @@ zerstört also stillschweigend ein bereits abgenommenes Motiv.
 | 2 | `schritt2_tts.py` | Chunks an Satzenden, parallel synthetisieren, sample-exakt fügen, vermessen |
 | 3 | `schritt3_bett.py` | Klangbett loopen und unterlegen, Pegel messen |
 | 4 | `schritt4_bild.py` | Standbild prüfen/erzeugen (PLATZHALTER) |
-| 5 | `schritt5_video.py` | Videospur mit Zoom, Montage zu MP4, Sync prüfen |
+| 5 | `schritt5_video.py` | Videospur, Montage zu MP4, Sync prüfen |
+| — | `kamerafahrt.py` | **Kamerafahrten — der einzige erlaubte Weg.** Von Schritt 5 aufgerufen. Selbsttest: `python3 …/kamerafahrt.py <bild> --selbsttest` |
 | 6 | `schritt6_srt.py` | Untertitel mit gemessenen Zeiten, Kapitelmarken |
 | — | `qa_namen.py` | Aussprache-QA der Eigennamen (läuft nach Schritt 6 automatisch mit) |
 | 7 | `schritt7_paket.py` | `upload.md` mit Titel, Beschreibung, Tags, Kapitelmarken, Messwerten |
@@ -49,6 +50,13 @@ Du hast „sehr langsamer Zoom **oder statisch**" freigestellt.
 
 Umgesetzt ist deshalb der Zoom. Er kostet fast nichts: das Bild bewegt sich so
 langsam, dass die Bildspur trotzdem bei rund 20 kbit/s landet.
+
+> **Gilt in diesem Repository nicht (2026-08-17).** `formel/` liegt hier
+> absichtlich nicht, es gibt für diesen Kanal also keine Bewegungspflicht —
+> **statisch ist frei wählbar und je Einstellung die Voreinstellung**
+> (`produktion/szenenliste-vorgaben.md`). Der oben beschriebene Zoom hat
+> außerdem sichtbar gezittert und ist durch `kamerafahrt.py` ersetzt; die
+> Ursache steht in `produktion/config.md` unter „Vermerk 2026-08-17".
 
 ### 2. Vorlauf: 4 Sekunden Bett allein wären ein Verstoß gewesen
 

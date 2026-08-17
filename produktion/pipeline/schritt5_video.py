@@ -6,6 +6,19 @@ Formel §5 fuehrt "Standmotiv mit **sanfter Bewegung**" als PFLICHT
 (11 von 11 Stichproben). Ein voellig statisches Bild waere ein Verstoss
 gegen das Dokument - deshalb ein sehr langsamer Zoom.
 
+ACHTUNG, GILT IN DIESEM REPOSITORY NICHT (2026-08-17)
+-----------------------------------------------------
+Der Absatz oben stammt aus BibelTube. `formel/` und `regeln/` liegen hier
+absichtlich nicht (siehe README.md und produktion/config.md), also gibt es
+fuer diesen Kanal auch keine Bewegungspflicht: **statisch ist frei
+waehlbar** und je Einstellung ausdruecklich erlaubt.
+
+Wie die Bewegung entsteht, steht ab jetzt nur noch in kamerafahrt.py -
+Standardweg ist die ueberabgetastete Fahrt, weil der frueher hier gebaute
+zoompan-Filter sichtbar gezittert hat. Naechster Schritt fuer diesen Kanal
+waere eine Montage aus 120-300 Einstellungen; dieses Skript kann bislang
+nur die eine durchlaufende Bildspur von Kanal 1.
+
 Der Zoom laeuft als **Atemzyklus**, nicht monoton: er beginnt und endet bei
 Faktor 1,0 und hat an beiden Enden die Steigung null. Dadurch ist ein
 einzelner Zyklus exakt schleifenfaehig, und die vollen 3,5 Stunden entstehen
@@ -29,29 +42,29 @@ import numpy as np
 import soundfile as sf
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import kamerafahrt                                                      # noqa: E402
 from gemeinsam import SR, arbeit, config, dauer_s, ffprobe, hms, ordner  # noqa: E402
 
 NAME_BILD = "PLATZHALTER_standbild.png"
 
 
 def zyklus_bauen(bild, ziel, cfg):
-    fps = int(cfg["fps"])
+    """Bildspur bauen - ueber kamerafahrt.py, nicht mehr von Hand.
+
+    Der Filter stand frueher hier und hat gezittert: `zoompan` rundet den
+    Ausschnitt auf ganze Quellpixel, das Bild sprang um einen ganzen Pixel
+    (gemessen 0,998 px; beim 300-s-Zyklus waren 99,0 % aller Frames exakte
+    Standbilder). Der ganze Grund fuer kamerafahrt.py steht in dessen Kopf.
+    **Hier keinen zoompan-Aufruf wieder einbauen.**
+    """
     T = int(cfg.get("zoom_zyklus_s", 300))
-    A = float(cfg["zoom_faktor"]) - 1.0
-    n = fps * T
-    if cfg.get("zoom", True) and A > 0:
-        # Kosinus: z(0)=1, z(n)=1, Steigung an beiden Enden 0 -> nahtlos
-        z = f"1+{A/2:.6f}*(1-cos(2*PI*on/{n}))"
-        vf = (f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-              f":d=1:s={cfg['breite']}x{cfg['hoehe']}:fps={fps},format=yuv420p")
-    else:
-        vf = f"scale={cfg['breite']}:{cfg['hoehe']},format=yuv420p"
-    cmd = ["ffmpeg", "-y", "-loglevel", "error",
-           "-loop", "1", "-framerate", str(fps), "-t", str(T), "-i", bild,
-           "-vf", vf, "-c:v", "libx264", "-preset", str(cfg.get("video_preset", "medium")),
-           "-crf", str(int(cfg["video_crf"])), "-g", str(fps * 10),
-           "-pix_fmt", "yuv420p", "-an", ziel]
-    subprocess.run(cmd, check=True)
+    A = float(cfg["zoom_faktor"])
+    bewegt = bool(cfg.get("zoom", True)) and A > 1.0
+    kamerafahrt.bauen(
+        bild, ziel, T, cfg,
+        art="atemzyklus" if bewegt else "statisch",
+        zoom_von=1.0, zoom_bis=A if bewegt else 1.0,
+        gop=int(cfg["fps"]) * 10)
     return T
 
 
