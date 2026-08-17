@@ -609,14 +609,24 @@ GEMISCHTE_FLORA = {"M28"}
 
 STERNFELD_MOTIVE = {"M01", "M02", "M10", "M11", "M28", "M29", "M36", "M37",
                     "M46", "M47", "M50", "M58", "M61", "M67"}
+# Die Farbe war nach einem Lauf geloest (M29 und M36 kamen mit 0,0 %
+# farbigen Sternpunkten zurueck, vorher 60,3 % und 81,2 %) — und prompt
+# stand die Groesse als naechste ungesagte Eigenschaft da: M29s Sterne
+# waren fuenfmal so gross wie M36s, und der "unscheinbare" Doppelstern der
+# Szene war zwischen Riesensternen nicht mehr unscheinbar. Die Groesse wird
+# darum wie in Video 1 an etwas im Bild gemessen, nicht als Bruchzahl —
+# Bruchzahlen wurden dort zweimal uebergangen.
 STERNFELD = (
     " THE STARS: the small stars of the background are plain five-pointed "
     "star shapes of one and the same white, all filled with that one white "
-    "and differing from one another only in size. They sit on the flat dark "
-    "ground with nothing around them - each star is its own clean shape and "
-    "carries no halo, no ray and no glow. Where the scene above gives one "
-    "single star a size, a colour or a shape of its own, that one star "
-    "follows the scene and the rest follow this rule.")
+    "and differing from one another only in size. They are specks: each of "
+    "the small ones is only a few times wider than the black outlines of "
+    "this series are thick, so that many dozens of them fit across the width "
+    "of the picture. They sit on the flat dark ground with nothing around "
+    "them - each star is its own clean shape and carries no halo, no ray and "
+    "no glow. Where the scene above gives one single star a size, a colour "
+    "or a shape of its own, that one star follows the scene, is drawn "
+    "clearly larger than these specks, and the rest follow this rule.")
 
 LICHT_WELTRAUM = (
     " ADDITION - ONE LIGHT SOURCE: the only thing that gives light in this "
