@@ -101,6 +101,37 @@ ZAHLEN = [
 ]
 
 
+def dauer_im_ton(sollform: str) -> tuple[float, int] | None:
+    """Wie lange die Stimme fuer diesen Wortlaut gebraucht hat.
+
+    Das zweite Kriterium neben dem Erkenner, und bei Respellings das
+    wichtigere. Grund: der Erkenner schrieb fuer "SEF-ee-id" die Formen
+    "SFEID" und "SfEid" und meldete damit eine Abweichung — was den Verdacht
+    naehrt, die Stimme buchstabiere die Versalien. Das ist eine Frage der
+    DAUER, nicht der Schreibung: drei gesprochene Silben brauchen etwa 0,6 s,
+    sieben einzeln benannte Buchstaben etwa 1,5 bis 2 s. Gemessen kam
+    "SEF-ee-id" auf 0,59 bis 0,88 s. Die Stimme spricht es als Wort, und die
+    Erkennerabweichung ist ein Transkriptionsartefakt.
+
+    Gibt (Dauer in Sekunden, Zeichenzahl) zurueck, oder None, wenn der
+    Wortlaut in keinem Absatz steht.
+    """
+    for pfad in sorted((HIER / "ton").glob("absatz-*.json")):
+        d = json.loads(pfad.read_text(encoding="utf-8"))
+        text, al = d["text"], d.get("alignment") or {}
+        anf = al.get("character_start_times_seconds")
+        end = al.get("character_end_times_seconds")
+        if not anf or not end:
+            continue
+        i = text.find(sollform)
+        if i < 0:
+            continue
+        j = i + len(sollform) - 1
+        if j < len(end):
+            return round(end[j] - anf[i], 2), len(sollform)
+    return None
+
+
 def blank(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
@@ -294,6 +325,16 @@ def main() -> None:
           f"abweichend {len(abw)} · ueberhoert {len(ueb)}")
     for z in fehl + abw + ueb:
         print(f"  {z['name']:16s} soll {z['sollform']!r}")
+        dm = dauer_im_ton(z["sollform"])
+        if dm:
+            dauer, zeichen = dm
+            ms = dauer / zeichen * 1000
+            # Ueber 200 ms je Zeichen spricht fuer buchstabierte Versalien,
+            # darunter fuer ein gesprochenes Wort.
+            urteil_dauer = ("BUCHSTABIERT?" if ms > 200
+                            else "als Wort gesprochen")
+            print(f"      Dauer   {dauer:5.2f} s fuer {zeichen} Zeichen "
+                  f"= {ms:3.0f} ms/Zeichen -> {urteil_dauer}")
         for m in ("small", "medium"):
             if f"gehoert_{m}" in z:
                 print(f"      {m:7s} {z[m]:11s} -> {z[f'gehoert_{m}']!r}")

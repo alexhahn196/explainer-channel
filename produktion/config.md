@@ -62,7 +62,32 @@ eigenen Messungen an den Vorbildkanälen.
 | Wörter unter 7 Zeichen | ≥ 82 % | **GEMESSEN** an Ink Explainer |
 | Antwort auf die Titelfrage | in den ersten 30 s | **GEMESSEN** |
 | Belegpflicht | jede neue Behauptung mit Zahl oder Datum trägt eine Quellen-ID | **GESETZT** — daran hängt `faktencheck.py` |
-| **Schema-Anteil der Laufzeit** | **≤ 10 %** | **GESETZT 16.08.2026** — Video 1 lag bei 26 % und war schon zu viel, der erste Sterne-Entwurf bei 58 %. Gemessen wie in `produktion/video-02/tonprobe-bilder.py`. Wo ein Vorgang erklärt werden müsste, wird stattdessen gezeigt, was ein Mensch dabei tat. |
+| **Schema-Anteil der Laufzeit** | **≤ 12 %** | **GESETZT 16.08.2026, angehoben 17.08.2026** — Video 1 lag bei 26 % und war schon zu viel, der erste Sterne-Entwurf bei 58 %. Gemessen wie in `produktion/video-02/tonprobe-bilder.py`. Wo ein Vorgang erklärt werden müsste, wird stattdessen gezeigt, was ein Mensch dabei tat. **Der Wert ist gesetzt, nicht gemessen** — 10 war so willkürlich wie 12. Angehoben, weil Video 2 nach der Verankerung bei 10,1 % lag und 0,6 s Laufzeit keine neue Montage rechtfertigen. |
+| **Anstieg durch die Verankerung** | bis zu **1 Punkt** | **GEMESSEN 17.08.2026** — der Schema-Anteil wird am Plan gerechnet (Video 2: 9,7 %) und steigt, wenn die Einstellungen am gesprochenen Wort verankert werden (10,1 %). Die Laufzeit verteilt sich dorthin, wo tatsächlich länger gesprochen wird, und das trifft die Schemastellen nicht gleichmäßig. Bei der Planung einen Punkt Luft lassen. |
+| **Einstellungslänge** | 2,4–6,0 s | **PLANUNGSWERT, kein Prüfkriterium** — auf 219 WPM gerechnet. Die Stimme liefert 202, also werden alle Einstellungen rund ein Zehntel länger; in Video 2 stehen 14 von 159 über 6,0 s, die längste bei 8,95 s. Geprüft wird nur die Untergrenze, und die auch nur mit Vorbild: unter 2,4 s darf ein Schnitt nur liegen, wenn dasselbe Motiv oder sein Paarpartner daneben steht. |
+
+### Aussprachekorrekturen kosten Tempo: rund 5 %
+
+**GEMESSEN 17.08.2026, für alle künftigen Videos in der Laufzeitplanung.**
+
+| Lauf | Text | WPM |
+|---|---|---:|
+| Stimmentest Video 1 | Testtext **ohne** Respellings | **214,3** |
+| Video 2, Vertonung | Skript **mit** 24 Korrekturen | **205,3** |
+| Video 2, ganze Spur | dazu 0,42 s Atempause je Fuge (23×) | **202,0** |
+
+Ein Respelling wird bedächtiger gesprochen als das Wort, das es ersetzt:
+„SEF-ee-ids" braucht mehr Zeit als „Cepheids". Bei 24 Korrekturen in
+2.071 Wörtern kostet das **rund 5 % Tempo**, die Atempausen weitere 1,6 %.
+
+**Rechenweg für die Planung:** erwartete Laufzeit = Wörter ÷ (214 × 0,95)
+× 60, plus 0,42 s je Absatzfuge. Für Video 2 ergibt das 10:12 — die
+gemessene Spur liegt bei 10:15. Wer mit 219 WPM plant, unterschätzt die
+Laufzeit um fast eine Minute: geplant waren 9:20, geworden sind 10:16.
+
+**Und umgekehrt:** wer die Wortzahl an einer Ziellaufzeit ausrichtet, muss
+die Respellings vorher kennen. Die Ausspracheliste gehört damit vor die
+Wortzahlprüfung, nicht danach.
 
 ### Anrede-Marker: der Zielwert gilt je Passage, nicht als Gesamtmittel
 

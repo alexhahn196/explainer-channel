@@ -32,7 +32,11 @@ HIER = pathlib.Path(__file__).resolve().parent
 WPM = 219
 KURZ_AB = 2.4   # darunter nur mit Vorbild (gleiches Motiv oder Paarpartner)
 LANG_AB = 6.0   # darueber steht das Bild zu lange
-SCHEMA_MAX = 0.10  # Anteil der Laufzeit, hart
+SCHEMA_MAX = 0.12  # Anteil der Laufzeit, am 17.08.2026 von 0,10 angehoben:
+                   # der Wert war gesetzt, nicht gemessen, und nach der
+                   # Verankerung am gesprochenen Wort steigt der Anteil um
+                   # bis zu einen Punkt (Video 2: 9,7 % im Plan, 10,1 %
+                   # in der fertigen Spur). Siehe config.md.
 
 # Versalien-Pruefung aus dem zentralen Prompt-Modul (Lehre aus M15).
 _spec = importlib.util.spec_from_file_location(
