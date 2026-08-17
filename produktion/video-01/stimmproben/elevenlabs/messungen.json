@@ -1,0 +1,480 @@
+{
+  "modell": "eleven_multilingual_v2",
+  "ausgabe": "mp3_44100_128",
+  "einstellungen": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "wpm_ziel": 219.0,
+  "wpm_langsam": 195.0,
+  "seed": 4242,
+  "tarif": null,
+  "proben": [
+    {
+      "dauer_sprache_s": 73.468,
+      "dauer_datei_s": 73.46,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 177.2,
+      "wpm_datei": 177.2,
+      "datei": "k-eric-speed100.mp3",
+      "stimme": "Eric",
+      "geschlecht": "maennlich",
+      "speed": 1.0,
+      "lauf": "K",
+      "korrektur": "keine"
+    },
+    {
+      "dauer_sprache_s": 57.399,
+      "dauer_datei_s": 57.39,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 226.8,
+      "wpm_datei": 226.9,
+      "datei": "k-eric-speed120.mp3",
+      "stimme": "Eric",
+      "geschlecht": "maennlich",
+      "speed": 1.2,
+      "lauf": "K",
+      "korrektur": "keine"
+    },
+    {
+      "dauer_sprache_s": 74.769,
+      "dauer_datei_s": 74.76,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 174.1,
+      "wpm_datei": 174.2,
+      "datei": "k-brian-speed100.mp3",
+      "stimme": "Brian",
+      "geschlecht": "maennlich",
+      "speed": 1.0,
+      "lauf": "K",
+      "korrektur": "keine"
+    },
+    {
+      "dauer_sprache_s": 57.957,
+      "dauer_datei_s": 57.95,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 224.6,
+      "wpm_datei": 224.7,
+      "datei": "k-brian-speed120.mp3",
+      "stimme": "Brian",
+      "geschlecht": "maennlich",
+      "speed": 1.2,
+      "lauf": "K",
+      "korrektur": "keine"
+    },
+    {
+      "dauer_sprache_s": 77.926,
+      "dauer_datei_s": 77.92,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 167.1,
+      "wpm_datei": 167.1,
+      "datei": "k-matilda-speed100.mp3",
+      "stimme": "Matilda",
+      "geschlecht": "weiblich",
+      "speed": 1.0,
+      "lauf": "K",
+      "korrektur": "keine"
+    },
+    {
+      "dauer_sprache_s": 59.304,
+      "dauer_datei_s": 59.3,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 219.5,
+      "wpm_datei": 219.6,
+      "datei": "k-matilda-speed120.mp3",
+      "stimme": "Matilda",
+      "geschlecht": "weiblich",
+      "speed": 1.2,
+      "lauf": "K",
+      "korrektur": "keine"
+    },
+    {
+      "dauer_sprache_s": 73.329,
+      "dauer_datei_s": 73.32,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 177.6,
+      "wpm_datei": 177.6,
+      "datei": "k-bella-speed100.mp3",
+      "stimme": "Bella",
+      "geschlecht": "weiblich",
+      "speed": 1.0,
+      "lauf": "K",
+      "korrektur": "keine"
+    },
+    {
+      "dauer_sprache_s": 56.425,
+      "dauer_datei_s": 56.42,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 230.7,
+      "wpm_datei": 230.8,
+      "datei": "k-bella-speed120.mp3",
+      "stimme": "Bella",
+      "geschlecht": "weiblich",
+      "speed": 1.2,
+      "lauf": "K",
+      "korrektur": "keine"
+    },
+    {
+      "dauer_sprache_s": 60.744,
+      "dauer_datei_s": 60.74,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 214.3,
+      "wpm_datei": 214.4,
+      "speed": 1.1955,
+      "datei": "a-eric-219wpm.mp3",
+      "stimme": "Eric",
+      "geschlecht": "maennlich",
+      "lauf": "A",
+      "ziel_wpm": 219.0,
+      "korrektur": "keine",
+      "anlaeufe": 4,
+      "verlauf": [
+        {
+          "speed": 1.1685,
+          "wpm": 209.1,
+          "abweichung": -9.9
+        },
+        {
+          "speed": 1.1861,
+          "wpm": 213.2,
+          "abweichung": -5.8
+        },
+        {
+          "speed": 1.192,
+          "wpm": 213.0,
+          "abweichung": -6.0
+        },
+        {
+          "speed": 1.1955,
+          "wpm": 214.3,
+          "abweichung": -4.7
+        }
+      ],
+      "ziel_erreicht": false,
+      "speed_am_anschlag": false
+    },
+    {
+      "dauer_sprache_s": 61.16,
+      "dauer_datei_s": 61.16,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 212.9,
+      "wpm_datei": 212.9,
+      "speed": 1.1966,
+      "datei": "a-brian-219wpm.mp3",
+      "stimme": "Brian",
+      "geschlecht": "maennlich",
+      "lauf": "A",
+      "ziel_wpm": 219.0,
+      "korrektur": "keine",
+      "anlaeufe": 4,
+      "verlauf": [
+        {
+          "speed": 1.1778,
+          "wpm": 209.7,
+          "abweichung": -9.3
+        },
+        {
+          "speed": 1.1917,
+          "wpm": 210.8,
+          "abweichung": -8.2
+        },
+        {
+          "speed": 1.1966,
+          "wpm": 212.9,
+          "abweichung": -6.1
+        },
+        {
+          "speed": 1.1986,
+          "wpm": 212.9,
+          "abweichung": -6.1
+        }
+      ],
+      "ziel_erreicht": false,
+      "speed_am_anschlag": false
+    },
+    {
+      "dauer_sprache_s": 59.304,
+      "dauer_datei_s": 59.3,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 219.5,
+      "wpm_datei": 219.6,
+      "speed": 1.2,
+      "datei": "a-matilda-219wpm.mp3",
+      "stimme": "Matilda",
+      "geschlecht": "weiblich",
+      "lauf": "A",
+      "ziel_wpm": 219.0,
+      "korrektur": "keine",
+      "anlaeufe": 3,
+      "verlauf": [
+        {
+          "speed": 1.1981,
+          "wpm": 205.2,
+          "abweichung": -13.8
+        },
+        {
+          "speed": 1.1999,
+          "wpm": 205.2,
+          "abweichung": -13.8
+        },
+        {
+          "speed": 1.2,
+          "wpm": 219.5,
+          "abweichung": 0.5
+        }
+      ],
+      "ziel_erreicht": true,
+      "speed_am_anschlag": false
+    },
+    {
+      "dauer_sprache_s": 60.511,
+      "dauer_datei_s": 60.51,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 215.2,
+      "wpm_datei": 215.2,
+      "speed": 1.1691,
+      "datei": "a-bella-219wpm.mp3",
+      "stimme": "Bella",
+      "geschlecht": "weiblich",
+      "lauf": "A",
+      "ziel_wpm": 219.0,
+      "korrektur": "keine",
+      "anlaeufe": 2,
+      "verlauf": [
+        {
+          "speed": 1.1559,
+          "wpm": 214.0,
+          "abweichung": -5.0
+        },
+        {
+          "speed": 1.1691,
+          "wpm": 215.2,
+          "abweichung": -3.8
+        }
+      ],
+      "ziel_erreicht": true,
+      "speed_am_anschlag": false
+    },
+    {
+      "dauer_sprache_s": 67.06,
+      "dauer_datei_s": 67.05,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 194.2,
+      "wpm_datei": 194.2,
+      "speed": 1.1214,
+      "datei": "b-eric-195wpm.mp3",
+      "stimme": "Eric",
+      "geschlecht": "maennlich",
+      "lauf": "B",
+      "ziel_wpm": 195.0,
+      "korrektur": "keine",
+      "anlaeufe": 2,
+      "verlauf": [
+        {
+          "speed": 1.094,
+          "wpm": 186.8,
+          "abweichung": -8.2
+        },
+        {
+          "speed": 1.1214,
+          "wpm": 194.2,
+          "abweichung": -0.8
+        }
+      ],
+      "ziel_erreicht": true,
+      "speed_am_anschlag": false
+    },
+    {
+      "dauer_sprache_s": 66.363,
+      "dauer_datei_s": 66.36,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 196.2,
+      "wpm_datei": 196.2,
+      "speed": 1.1319,
+      "datei": "b-brian-195wpm.mp3",
+      "stimme": "Brian",
+      "geschlecht": "maennlich",
+      "lauf": "B",
+      "ziel_wpm": 195.0,
+      "korrektur": "keine",
+      "anlaeufe": 2,
+      "verlauf": [
+        {
+          "speed": 1.1044,
+          "wpm": 186.2,
+          "abweichung": -8.8
+        },
+        {
+          "speed": 1.1319,
+          "wpm": 196.2,
+          "abweichung": 1.2
+        }
+      ],
+      "ziel_erreicht": true,
+      "speed_am_anschlag": false
+    },
+    {
+      "dauer_sprache_s": 68.824,
+      "dauer_datei_s": 68.82,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 189.2,
+      "wpm_datei": 189.2,
+      "speed": 1.139,
+      "datei": "b-matilda-195wpm.mp3",
+      "stimme": "Matilda",
+      "geschlecht": "weiblich",
+      "lauf": "B",
+      "ziel_wpm": 195.0,
+      "korrektur": "keine",
+      "anlaeufe": 4,
+      "verlauf": [
+        {
+          "speed": 1.1451,
+          "wpm": 201.0,
+          "abweichung": 6.0
+        },
+        {
+          "speed": 1.1194,
+          "wpm": 187.7,
+          "abweichung": -7.3
+        },
+        {
+          "speed": 1.1335,
+          "wpm": 189.0,
+          "abweichung": -6.0
+        },
+        {
+          "speed": 1.139,
+          "wpm": 189.2,
+          "abweichung": -5.8
+        }
+      ],
+      "ziel_erreicht": false,
+      "speed_am_anschlag": false
+    },
+    {
+      "dauer_sprache_s": 65.249,
+      "dauer_datei_s": 65.24,
+      "zeichen": 1159,
+      "woerter": 217,
+      "wpm_sprache": 199.5,
+      "wpm_datei": 199.6,
+      "speed": 1.116,
+      "datei": "b-bella-195wpm.mp3",
+      "stimme": "Bella",
+      "geschlecht": "weiblich",
+      "lauf": "B",
+      "ziel_wpm": 195.0,
+      "korrektur": "keine",
+      "anlaeufe": 4,
+      "verlauf": [
+        {
+          "speed": 1.0745,
+          "wpm": 182.5,
+          "abweichung": -12.5
+        },
+        {
+          "speed": 1.1068,
+          "wpm": 190.6,
+          "abweichung": -4.4
+        },
+        {
+          "speed": 1.116,
+          "wpm": 199.5,
+          "abweichung": 4.5
+        },
+        {
+          "speed": 1.1114,
+          "wpm": 199.5,
+          "abweichung": 4.5
+        }
+      ],
+      "ziel_erreicht": false,
+      "speed_am_anschlag": false
+    },
+    {
+      "dauer_sprache_s": 60.141,
+      "dauer_datei_s": 60.13,
+      "zeichen": 1178,
+      "woerter": 222,
+      "wpm_sprache": 221.5,
+      "wpm_datei": 221.5,
+      "datei": "c-eric-219wpm-korrigiert.mp3",
+      "stimme": "Eric",
+      "geschlecht": "maennlich",
+      "speed": 1.192,
+      "lauf": "C",
+      "korrektur": "Text (Respelling)"
+    },
+    {
+      "dauer_sprache_s": 63.204,
+      "dauer_datei_s": 63.2,
+      "zeichen": 1178,
+      "woerter": 222,
+      "wpm_sprache": 210.7,
+      "wpm_datei": 210.8,
+      "datei": "c-brian-219wpm-korrigiert.mp3",
+      "stimme": "Brian",
+      "geschlecht": "maennlich",
+      "speed": 1.1966,
+      "lauf": "C",
+      "korrektur": "Text (Respelling)"
+    },
+    {
+      "dauer_sprache_s": 60.651,
+      "dauer_datei_s": 60.65,
+      "zeichen": 1178,
+      "woerter": 222,
+      "wpm_sprache": 219.6,
+      "wpm_datei": 219.6,
+      "datei": "c-matilda-219wpm-korrigiert.mp3",
+      "stimme": "Matilda",
+      "geschlecht": "weiblich",
+      "speed": 1.2,
+      "lauf": "C",
+      "korrektur": "Text (Respelling)"
+    },
+    {
+      "dauer_sprache_s": 59.86,
+      "dauer_datei_s": 59.86,
+      "zeichen": 1178,
+      "woerter": 222,
+      "wpm_sprache": 222.5,
+      "wpm_datei": 222.5,
+      "datei": "c-bella-219wpm-korrigiert.mp3",
+      "stimme": "Bella",
+      "geschlecht": "weiblich",
+      "speed": 1.1691,
+      "lauf": "C",
+      "korrektur": "Text (Respelling)"
+    }
+  ],
+  "lexikon_fehler": {
+    "alias": "401 Client Error: Unauthorized for url: https://api.elevenlabs.io/v1/pronunciation-dictionaries/add-from-file",
+    "phoneme": "401 Client Error: Unauthorized for url: https://api.elevenlabs.io/v1/pronunciation-dictionaries/add-from-file"
+  },
+  "lexikon": {
+    "alias": null,
+    "phoneme": null
+  },
+  "zeichen_gesamt_gesendet": 44137,
+  "tarif_nachher": null,
+  "zeichen_laut_konto": null
+}

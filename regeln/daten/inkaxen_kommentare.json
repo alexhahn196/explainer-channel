@@ -1,0 +1,72 @@
+{
+ "_methodik": "Je Video die 20 Top-Kommentare (sort_by=top) von Hand in Kategorien gezaehlt. Mehrfachzuordnung moeglich, deshalb Summe teils >20. Keine Zitate im Bericht.",
+ "_kategorien": [
+  "lob_inhalt",
+  "ki_kritik",
+  "faktenkorrektur",
+  "eigene_erfahrung",
+  "weiterdenken",
+  "lob_produktion",
+  "witz",
+  "frage_an_kanal"
+ ],
+ "videos": {
+  "SD7XyG2wd1k": {
+   "kanal": "Ink",
+   "rolle": "Treffer 1",
+   "views": 1206485,
+   "kommentare_gesamt": "1.1K",
+   "lob_inhalt": 6,
+   "ki_kritik": 4,
+   "faktenkorrektur": 1,
+   "eigene_erfahrung": 3,
+   "weiterdenken": 3,
+   "lob_produktion": 1,
+   "witz": 1,
+   "frage_an_kanal": 0,
+   "top_like": 2000,
+   "ki_kritik_likes": [
+    506,
+    271,
+    112,
+    19
+   ]
+  },
+  "TQd2k1pEXp4": {
+   "kanal": "Axen",
+   "rolle": "Treffer 1",
+   "views": 3173355,
+   "kommentare_gesamt": "6.6K",
+   "lob_inhalt": 3,
+   "ki_kritik": 0,
+   "faktenkorrektur": 0,
+   "eigene_erfahrung": 2,
+   "weiterdenken": 9,
+   "lob_produktion": 0,
+   "witz": 3,
+   "frage_an_kanal": 0,
+   "kanal_eigenkommentar": 1,
+   "top_like": 22000,
+   "ki_kritik_likes": []
+  },
+  "dpGpFq9RZfg": {
+   "kanal": "Axen",
+   "rolle": "spaet, reif",
+   "views": 25880,
+   "kommentare_gesamt": "144",
+   "lob_inhalt": 6,
+   "ki_kritik": 0,
+   "faktenkorrektur": 0,
+   "eigene_erfahrung": 1,
+   "weiterdenken": 4,
+   "lob_produktion": 1,
+   "witz": 3,
+   "kanal_eigenkommentar": 1,
+   "top_like": 22,
+   "konten_mit_kanalnamensmuster": 16,
+   "plausibel_echte_zuschauer": 3,
+   "notiz": "Kanalbetreiber weist im Top-Kommentar selbst auf Copycat-Konten mit automatisierten Kommentaren hin"
+  }
+ },
+ "_einschraenkung": "Nur 3 der beauftragten 10 Videos erhoben (Ink-Treffer, Axen-Treffer, Axen spaet). Die uebrigen sieben stehen aus."
+}

@@ -1,0 +1,178 @@
+[
+ {
+  "name": "Dümmer",
+  "sollform": "Deemer",
+  "small": "sitzt",
+  "gehoert_small": "Deemer.",
+  "medium": "sitzt",
+  "gehoert_medium": "Diemer."
+ },
+ {
+  "name": "Campemoor",
+  "sollform": "Kahm-puh-mohr",
+  "small": "sitzt",
+  "gehoert_small": "Moor.",
+  "medium": "sitzt",
+  "gehoert_medium": "Kampumor."
+ },
+ {
+  "name": "Pr 31",
+  "sollform": "P-R thirty-one",
+  "small": "sitzt",
+  "gehoert_small": "PR -31,",
+  "medium": "sitzt",
+  "gehoert_medium": "PR 31,"
+ },
+ {
+  "name": "Pr 7",
+  "sollform": "P-R seven",
+  "small": "sitzt",
+  "gehoert_small": "PR7,",
+  "medium": "sitzt",
+  "gehoert_medium": "PR7,"
+ },
+ {
+  "name": "Widan el-Faras",
+  "sollform": "wih-Dahn el Fah-rass",
+  "small": "abweichend",
+  "gehoert_small": "Wiedan El Farras,",
+  "medium": "sitzt",
+  "gehoert_medium": "Huitan el Faras,"
+ },
+ {
+  "name": "Nebuchadnezzar",
+  "sollform": "neb-yoo-kad-Nezzer",
+  "small": "sitzt",
+  "gehoert_small": "Nebuchadnezzar",
+  "medium": "sitzt",
+  "gehoert_medium": "Nebuchadnezzar"
+ },
+ {
+  "name": "Ishtar",
+  "sollform": "Ish-tar",
+  "small": "sitzt",
+  "gehoert_small": "Ishtar",
+  "medium": "sitzt",
+  "gehoert_medium": "Ishtar"
+ },
+ {
+  "name": "Susa",
+  "sollform": "Soo-suh",
+  "small": "abweichend",
+  "gehoert_small": "Suso",
+  "medium": "abweichend",
+  "gehoert_medium": "Susu"
+ },
+ {
+  "name": "Sardis",
+  "sollform": "Sar-diss",
+  "small": "sitzt",
+  "gehoert_small": "Sardis,",
+  "medium": "sitzt",
+  "gehoert_medium": "Sardis,"
+ },
+ {
+  "name": "Chaco",
+  "sollform": "Chah-koh",
+  "small": "sitzt",
+  "gehoert_small": "Chaco",
+  "medium": "sitzt",
+  "gehoert_medium": "Chaco"
+ },
+ {
+  "name": "Pueblo",
+  "sollform": "Pweb-loh",
+  "small": "sitzt",
+  "gehoert_small": "Pueblo",
+  "medium": "sitzt",
+  "gehoert_medium": "Pueblo"
+ },
+ {
+  "name": "Wari",
+  "sollform": "Wah-ree",
+  "small": "sitzt",
+  "gehoert_small": "Wari",
+  "medium": "sitzt",
+  "gehoert_medium": "Wari"
+ },
+ {
+  "name": "Tiwanaku",
+  "sollform": "tee-wah-Nah-koo",
+  "small": "sitzt",
+  "gehoert_small": "Tiwanaku.",
+  "medium": "sitzt",
+  "gehoert_medium": "Tiwanaku."
+ },
+ {
+  "name": "Westhay",
+  "sollform": "West-hay",
+  "small": "sitzt",
+  "gehoert_small": "West Hay",
+  "medium": "sitzt",
+  "gehoert_medium": "West Hay"
+ },
+ {
+  "name": "Shapwick",
+  "sollform": "Shap-wick",
+  "small": "sitzt",
+  "gehoert_small": "Shapwick.",
+  "medium": "sitzt",
+  "gehoert_medium": "Shepwick."
+ },
+ {
+  "name": "3807 BC",
+  "sollform": "thirty-eight-oh-seven B C",
+  "small": "sitzt",
+  "gehoert_small": "3807",
+  "medium": "sitzt",
+  "gehoert_medium": "3807"
+ },
+ {
+  "name": "3806",
+  "sollform": "thirty-eight-oh-six",
+  "small": "sitzt",
+  "gehoert_small": "3806,",
+  "medium": "sitzt",
+  "gehoert_medium": "3806,"
+ },
+ {
+  "name": "3838 BC",
+  "sollform": "thirty-eight-thirty-eight B C",
+  "small": "sitzt",
+  "gehoert_small": "3838",
+  "medium": "sitzt",
+  "gehoert_medium": "38 -38"
+ },
+ {
+  "name": "569 BC",
+  "sollform": "five-sixty-nine B C",
+  "small": "sitzt",
+  "gehoert_small": "569 BC,",
+  "medium": "sitzt",
+  "gehoert_medium": "569 BC,"
+ },
+ {
+  "name": "312 BC",
+  "sollform": "three-twelve B C",
+  "small": "sitzt",
+  "gehoert_small": "312 BC",
+  "medium": "sitzt",
+  "gehoert_medium": "312 BC"
+ },
+ {
+  "name": "50.5 km",
+  "sollform": "fifty point five kilometres",
+  "small": "sitzt",
+  "gehoert_small": "50 .5 kilometers.",
+  "medium": "sitzt",
+  "gehoert_medium": "50 .5 kilometers."
+ },
+ {
+  "name": "25. Jh.",
+  "sollform": "twenty-fifth century B C",
+  "small": "sitzt",
+  "gehoert_small": "25th century",
+  "medium": "sitzt",
+  "gehoert_medium": "25th century"
+ }
+]

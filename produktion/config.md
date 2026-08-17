@@ -50,6 +50,75 @@ absichtlich **nicht** mitkopiert worden.
 | `versalien_normalisieren` | `ja` | **ÜBERNOMMEN — UNGEPRÜFT** — die Ursache (TTS buchstabiert Versalien) ist stimmenabhängig, nicht inhaltsabhängig. Mit der neuen Stimme nachprüfen. |
 | Faktenprüfung vor der TTS | — | **OFFEN** — für diesen Kanal **zusätzlich nötig**, siehe die Skizze in `recherche/nischen-kanal-2.md`. Rund 25 prüfpflichtige Aussagen je 1.500-Wort-Skript, ~1–1,75 h je Video. Für BibelTube gab es diesen Schritt nicht. |
 
+## Skriptvorgaben
+
+Kanalweit, aus der Arbeit an Video 1 und 2 abgeleitet. Anders als die
+Tabellen oben stammen diese Werte nicht aus BibelTube, sondern aus
+eigenen Messungen an den Vorbildkanälen.
+
+| Feld | Wert | Status |
+|---|---|---|
+| Wortzahl | 1.850–2.050 | **GEMESSEN** — ergibt 8:30–9:30 bei 219 WPM |
+| Wörter unter 7 Zeichen | ≥ 82 % | **GEMESSEN** an Ink Explainer |
+| Antwort auf die Titelfrage | in den ersten 30 s | **GEMESSEN** |
+| Belegpflicht | jede neue Behauptung mit Zahl oder Datum trägt eine Quellen-ID | **GESETZT** — daran hängt `faktencheck.py` |
+| **Schema-Anteil der Laufzeit** | **≤ 12 %** | **GESETZT 16.08.2026, angehoben 17.08.2026** — Video 1 lag bei 26 % und war schon zu viel, der erste Sterne-Entwurf bei 58 %. Gemessen wie in `produktion/video-02/tonprobe-bilder.py`. Wo ein Vorgang erklärt werden müsste, wird stattdessen gezeigt, was ein Mensch dabei tat. **Der Wert ist gesetzt, nicht gemessen** — 10 war so willkürlich wie 12. Angehoben, weil Video 2 nach der Verankerung bei 10,1 % lag und 0,6 s Laufzeit keine neue Montage rechtfertigen. |
+| **Anstieg durch die Verankerung** | bis zu **1 Punkt** | **GEMESSEN 17.08.2026** — der Schema-Anteil wird am Plan gerechnet (Video 2: 9,7 %) und steigt, wenn die Einstellungen am gesprochenen Wort verankert werden (10,1 %). Die Laufzeit verteilt sich dorthin, wo tatsächlich länger gesprochen wird, und das trifft die Schemastellen nicht gleichmäßig. Bei der Planung einen Punkt Luft lassen. |
+| **Einstellungslänge** | 2,4–6,0 s | **PLANUNGSWERT, kein Prüfkriterium** — auf 219 WPM gerechnet. Die Stimme liefert 202, also werden alle Einstellungen rund ein Zehntel länger; in Video 2 stehen 14 von 159 über 6,0 s, die längste bei 8,95 s. Geprüft wird nur die Untergrenze, und die auch nur mit Vorbild: unter 2,4 s darf ein Schnitt nur liegen, wenn dasselbe Motiv oder sein Paarpartner daneben steht. |
+
+### Aussprachekorrekturen kosten Tempo: rund 5 %
+
+**GEMESSEN 17.08.2026, für alle künftigen Videos in der Laufzeitplanung.**
+
+| Lauf | Text | WPM |
+|---|---|---:|
+| Stimmentest Video 1 | Testtext **ohne** Respellings | **214,3** |
+| Video 2, Vertonung | Skript **mit** 24 Korrekturen | **205,3** |
+| Video 2, ganze Spur | dazu 0,42 s Atempause je Fuge (23×) | **202,0** |
+
+Ein Respelling wird bedächtiger gesprochen als das Wort, das es ersetzt:
+„SEF-ee-ids" braucht mehr Zeit als „Cepheids". Bei 24 Korrekturen in
+2.071 Wörtern kostet das **rund 5 % Tempo**, die Atempausen weitere 1,6 %.
+
+**Rechenweg für die Planung:** erwartete Laufzeit = Wörter ÷ (214 × 0,95)
+× 60, plus 0,42 s je Absatzfuge. Für Video 2 ergibt das 10:12 — die
+gemessene Spur liegt bei 10:15. Wer mit 219 WPM plant, unterschätzt die
+Laufzeit um fast eine Minute: geplant waren 9:20, geworden sind 10:16.
+
+**Und umgekehrt:** wer die Wortzahl an einer Ziellaufzeit ausrichtet, muss
+die Respellings vorher kennen. Die Ausspracheliste gehört damit vor die
+Wortzahlprüfung, nicht danach.
+
+### Anrede-Marker: der Zielwert gilt je Passage, nicht als Gesamtmittel
+
+**Befund vom 16.08.2026, bindend für alle künftigen Videos.**
+
+Der gemessene Zielwert (74,7 Anrede-Marker je 1.000 Wörter, aus der
+Schreibart von Unknown Frequencies) gilt für **anredegetragene
+Passagen** — Eröffnung, direkte Anleitung, Schluss. Er gilt **nicht** als
+Mittelwert über ein ganzes Skript, das Vignetten enthält.
+
+Der Grund ist strukturell, nicht nachlässig. Eine Vignette erzählt von
+*jemandem*, nicht von *dir*: der Mann an der Mikrometerschraube, die Frau
+am Leuchttisch. Genau diese Vignetten sind der Grund, warum die
+Erzählform trägt und warum der Schema-Anteil auf 10 % fällt — ein
+Vorgang, den ein Mensch ausführt, braucht kein Diagramm. Die Marker-Dichte
+über das ganze Skript auf 74,7 zu zwingen hieße, die Vignetten in die
+zweite Person umzuschreiben („du bist der Mann in Königsberg"). Das ist
+eine andere Form, und eine schlechtere.
+
+Gemessen an Video 2, Erzählfassung:
+
+| Passage | Anrede je 1.000 |
+|---|---:|
+| erstes Fünftel (Eröffnung, Daumen, Erdbahn) | **68,6** |
+| Königsberg-Vignette (der freigegebene Maßstab) | ~50 |
+| gesamtes Skript | **34,2** |
+
+**Prüfregel:** Das erste Fünftel muss ≥ 40 erreichen (harte Vorgabe, wie
+bisher). Kein Absatz darf anredefrei sein. Der Gesamtwert wird gemessen
+und berichtet, aber nicht gegen 74,7 geprüft.
+
 ## Chunking
 
 | Feld | Wert | Status |
@@ -90,7 +159,116 @@ absichtlich **nicht** mitkopiert worden.
 | `video_crf` | `28` | **ÜBERNOMMEN — UNGEPRÜFT** — CRF 28 ist auf ein nahezu statisches Bild optimiert. Bei 2–5-Sekunden-Schnitten ist das vermutlich zu hoch (sichtbare Artefakte an Schnittkanten). **Erster Kandidat zum Nachmessen.** |
 | `video_preset` | `medium` | **ÜBERNOMMEN — UNGEPRÜFT** |
 | `audio_bitrate` | `192k` | **ÜBERNOMMEN — UNGEPRÜFT** |
-| **Bildstil** | — | **OFFEN** — drei Varianten getestet, siehe `recherche/stil-ink-varianten/README.md`. Empfehlung dort: V1 als Basis plus das Element aus V3. Nicht entschieden. |
+| **Bildstil** | — | **ENTSCHIEDEN 15.08.2026** — V2: finaler Machart-Block aus `recherche/stil-figuren/lauf2-erwachsen/README.md` plus Z3-Lichtquelle aus `recherche/stil-touch/`. |
+| **Farbe** | — | **ENTSCHIEDEN 15.08.2026** — natürliche Farben, so wie die Sache wirklich aussieht. **Keine** Themenpaletten und **keine** Signalfarbe; beide getestet und verworfen, Grund in `recherche/stil-archiv.md`. Schemabilder haben eine eigene Fassung ohne Himmel und Vegetation. |
+
+### Bildvorgaben: die Bedingungsregel
+
+**ENTSCHIEDEN 16.08.2026.** Gilt für alle künftigen Videos.
+
+> **Jeder Block im Anweisungsteil darf nur nennen, was in ALLEN Motiven
+> vorkommt, für die er gilt. Was nur manchmal vorkommt, gehört in einen
+> bedingten Block.**
+
+Das ist die gemeinsame Wurzel von vier Fehlschlägen in zwei Videos. Der
+Mechanismus ist immer derselbe: **ein Wort im Prompt, das etwas benennt,
+was in diesem Bild nicht sein soll, zeichnet es hin** — auch wenn es nur
+als Beispiel, als Stilangabe oder in einer Verneinung dasteht.
+
+| Block | nannte | fehlte in | Schaden |
+|---|---|---|---|
+| Epochensatz | `Clothing, tools` | 43 figurenlosen Motiven | M01 kam mit zwei Personen in Kleidung um 1900 und einer Schubkarre zurück, obwohl „no people in this picture at all" dastand |
+| Farbsatz | `foliage and grass are green`, `The sky is blue` | 49 Motiven ohne Vegetation | M24 verlangte die Nahaufnahme eines Sterns und kam als Tageslandschaft: 60 % blauer Himmel, 22 % grün |
+| Strichstärkenregel | `figures, clothing, props` | denselben 43 | zweiter Auslöser für dieselben Figuren |
+| Florazeile | `without leaves` | — | M13 verlangte kahle Bäume und bekam belaubte Kronen; die Verneinung nennt das Laub |
+
+Drei Folgeregeln, die daraus folgen:
+
+1. **Verneinen zählt als Nennen.** „no palms", „without leaves", „no wood
+   grain" schreiben Palme, Laub und Holz in den Prompt. Wo eine Verneinung
+   ersetzbar ist, wird sie durch die Beschreibung dessen ersetzt, was
+   dasteht — „each drawn as a bare branching silhouette of trunk and open
+   twigs" statt „without leaves".
+2. **Beispielreihen sind Inventarlisten.** „every surface — rock, stone
+   blocks, earth, water, sky and vegetation alike" war als Illustration
+   einer Regel gemeint und wurde als Bestandsangabe des Bildes gelesen. Eine
+   Regel, die ohne Beispiele auskommt, kommt ohne Beispiele aus.
+3. **Der Block darf der Szene nicht widersprechen.** M06 zeigt ein Gesicht
+   in Nahsicht, und derselbe Prompt verbot „no head, no face" — der
+   Anweisungsteil verbot, was die Szene verlangte.
+
+Umgesetzt in `produktion/video-01/bildplan.py` als bedingte Fassungen
+(`machart()`, `farben()`, `figur()`, `EPOCHE_*`, `FRAMING_*`) und in
+`produktion/video-02/bildplan2.py` als harte Prüfungen, die den Lauf
+abbrechen, bevor Credits fließen: `pruefe_szene` (Versalien),
+`pruefe_personenworte` (43 figurenlose Motive), `pruefe_pflanzenworte`
+(49 Motive ohne Vegetation), `pruefe_vokabular` (Schrift, Grafik-Gattung,
+Beschriftung, Aufschrift-Träger).
+
+**Granularität.** Die Bedingung wird je Motiv gestellt — ein Motiv, das
+mehrere Felder zeigt, kann sie in sich wechseln. M28 ist ein Triptychon aus
+drei Orten: die mittlere Vignette hat Vegetation, die beiden anderen nicht,
+und die Laubzusage landete prompt in der kahlen. **Bei jedem Mehrfeld-Motiv
+— Triptychon, Vorher-Nachher, geteilter Rahmen — gilt die vorsichtigere
+Fassung**, und was nur ein Feld betrifft, gehört in die Szene, nicht in den
+Anweisungsteil. In `bildplan2.py` steht das als `GEMISCHTE_FLORA`.
+
+### Die zweite Hälfte: ein fehlender Satz ist so teuer wie ein falscher
+
+**ENTSCHIEDEN 16.08.2026.**
+
+> **Was in ALLEN Motiven einer Gruppe gleich sein soll, muss ausdrücklich
+> genannt werden — sonst wählt das Modell je Bild neu, und die Serie
+> zerfällt.**
+
+Die erste Hälfte der Regel verhindert, dass ein Block etwas nennt, was nicht
+da ist. Sie sagt nichts darüber, was ungesagt bleibt. Der Sternbefund aus
+Stapel 3 ist der Beleg: kein Block sagte je, wie ein Stern dieser Reihe
+aussieht.
+
+| Motiv | helle Fläche | davon farbig |
+|---|---:|---:|
+| M10 — Szene sagt „white star shapes" | 2,63 % | **0,0 %** |
+| M29 — Szene sagt nichts | 0,24 % | **60,3 %** |
+| M36 — Szene sagt nichts | 1,94 % | **81,2 %** |
+
+Drei Sternfelder in einem Video, die aus drei Kanälen stammen könnten. Kein
+falscher Satz war schuld, sondern ein fehlender.
+
+**Die Prüffrage lautet deshalb doppelt:**
+
+1. Nennt der Block etwas, das in einem Teil der Motive nicht vorkommt?
+2. Gibt es eine Eigenschaft, die über alle Motive gleich sein soll, und
+   sagt sie niemand?
+
+Frage 2 fällt beim Lesen des Prompts nicht auf — dort steht ja nichts
+Falsches. Sie fällt erst auf, wenn man die fertigen Bilder **misst**.
+
+An den ersten 35 Bildern von Video 2 durchgemessen, jeweils die größte
+Farbfläche der betreffenden Art:
+
+| Eigenschaft | gemessene Spanne | Befund |
+|---|---|---|
+| Sternfarbe | 0,0 % / 60,3 % / 81,2 % farbige Sternpunkte | **festgelegt** — `STERNFELD`, 14 Motive |
+| Grundton dunkler Bilder | (0,0,0) reines Schwarz · (24,24,24) neutral · (12,24,36) tiefblau · M02 mit (48,48,60) doppelt so hell | **festgelegt** — `DUNKELGRUND`, 25 Motive |
+| Papierton | (228,228,228) neutral · (240,228,228) rosastichig · (240,240,216) gelblich | **festgelegt** — `PAPIERTON`, 13 Motive |
+| Metallton | (160,130,60) dunkler Ocker · (230,170,70) leuchtendes Gold · (250,220,160) blasser Sand | **festgelegt** — `MESSINGTON`, 5 Motive |
+| wiederkehrende Figur | derselbe Mann in M20/M23/M26 mit (230,170,150), (210,170,100), (200,170,120) | **festgelegt** — Steckbrief, 3 Motive |
+| Hauttonspanne allgemein | R 200–240, G 160–180, B 100–160 über zehn verschiedene Personen | **kein Befund** — verschiedene Menschen dürfen verschieden aussehen; nur wiederkehrende müssen gleich bleiben |
+| Wasserfarbe | nur ein Motiv (M31) zeigt Wasser | **kein Befund** — eine Gruppe von eins ist keine Gruppe |
+
+**Der teuerste Einzelfall war die wiederkehrende Figur.** Die Szene sagt
+„derselbe Mann", aber die drei Bilder entstehen unabhängig voneinander, und
+das Modell hat das erste nie gesehen — genau die Lage der Zustandspaare, nur
+über eine Person statt über einen Bildausschnitt. Wer mehr als einmal
+vorkommt, braucht einen Steckbrief im Anweisungsteil. Nach der Kanalvorgabe
+(Epochenfiguren, keine Portraitähnlichkeit) legt der Steckbrief eine Bauform
+fest, kein Gesicht: Alter, Bau, Haut, Bart- und Haarform, Kleidungsstück und
+Farbe.
+
+**Nicht rückwirkend nachgezogen:** die Blöcke gelten ab jetzt. Bereits
+erzeugte Bilder werden nicht blind neu gemacht, sondern am Ende gemessen;
+neu erzeugt wird, was dann noch aus der Reihe fällt.
 
 ## Laufzeit
 

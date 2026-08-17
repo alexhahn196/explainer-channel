@@ -163,17 +163,28 @@ Ein Wettbewerber ohne diese Vergünstigung zahlte das Doppelte.
 
 | Weg | Preis | € je Credit |
 |---|---|---|
-| Ultra-Jahresabo | 99 €/Jahr für 3.000 Cr./Monat = 36.000 Cr. | **0,00275 €** |
+| Ultra-Abo, jährlich gezahlt | 99 €/**Monat** für 3.000 Cr./Monat | **0,033 €** |
 | Top-up 4.000 Cr. | 190 € | **0,0475 €** |
 | Top-up 2.000 Cr. | 95 € | 0,0475 € |
 | Top-up 1.000 Cr. | 49 € | 0,0490 € |
 | Top-up 500 Cr. | 26 € | 0,0520 € |
 
-Der Abo-Preis ist **17-mal günstiger** — gilt aber nur für die ersten 3.000
-Credits im Monat. Alles darüber sind Top-up-Credits. Für A, B und C liegt der
-Monatsbedarf weit über 3.000, deshalb rechnet die Tabelle unten mit dem
-**Top-up-Preis 0,0475 €**. Für BibelTube gilt das Gegenteil: 437 Credits im
-Monat passen ins Abo.
+> **Korrigiert am 16.08.2026.** Diese Tabelle las die 99 € als Jahres-
+> statt Monatspreis und kam auf 0,00275 € je Credit — Faktor zwölf zu
+> niedrig. Die Top-up-Zeilen waren nicht betroffen, und da der Vergleich
+> in Abschnitt 5 ohnehin zum Top-up-Kurs rechnet, ändert sich an seinem
+> Ergebnis nichts. Zwei abgeleitete Angaben ändern sich sehr wohl: der
+> Abstand zwischen Abo und Top-up und die Zeile „€ je Video (Abo-Kurs)".
+
+Der Abo-Preis ist **rund 1,4-mal günstiger** — nicht, wie hier ursprünglich
+stand, 17-mal. Er gilt zudem nur für die ersten 3.000 Credits im Monat; alles
+darüber sind Top-up-Credits. Für A, B und C liegt der Monatsbedarf weit über
+3.000, deshalb rechnet die Tabelle unten mit dem **Top-up-Preis 0,0475 €**.
+Für BibelTube gilt das Gegenteil: 437 Credits im Monat passen ins Abo.
+
+**Das ist die eigentliche Folge der Korrektur:** Das Abo ist kein anderer
+Kostenkosmos, sondern ein moderater Rabatt. Wer über 3.000 Credits im Monat
+kommt, zahlt fast dasselbe wie ohne Abo.
 
 ---
 
@@ -189,13 +200,13 @@ Ist-Preis, Top-up-Kurs.
 | Clips je Video | **4 [gemessen]** | 209 **[hochger.]** | 176 **[hochger.]** | 393 **[hochger.]** |
 | Credits je Video | **72 [gemessen]** | 1.254 | 1.056 | 2.358 |
 | € je Video (Top-up) | **3,42 €** | **59,56 €** | **50,16 €** | **112,00 €** |
-| € je Video (Abo-Kurs) | **0,20 €** | 3,45 € | 2,90 € | 6,48 € |
+| € je Video (Abo-Kurs) | **2,38 €** | 41,38 € | 34,85 € | 77,81 € |
 | **€ je Minute Endprodukt** | **0,016 €** | **7,45 €** | **3,05 €** | **5,51 €** |
 | Uploads/Woche | 1,4 (Plan: 5 Tage Abstand) | 5,75 | 1,25 | 0,75 |
 | Videos/Monat | 6,1 | 24,9 | 5,4 | 3,2 |
 | **Credits/Monat** | **437** | **31.246** | **5.720** | **7.664** |
 | Umsatz/Monat | **[unbekannt]** — kein Video veröffentlicht | 17.107 $ | 45.159 $ | 51.450 $ |
-| Bildkosten/Monat | **21 €** (im Abo enthalten) | **1.484 €** | **272 €** | **364 €** |
+| Bildkosten/Monat | **14 €** (im Abo-Kontingent) | **1.484 €** | **272 €** | **364 €** |
 | Umsatz − Bildkosten | — | ~15.600 $ | ~44.900 $ | ~51.100 $ |
 
 > Umsatzangaben stammen aus der Aufgabenstellung, nicht aus eigener Messung.
