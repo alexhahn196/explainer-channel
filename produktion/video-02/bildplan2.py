@@ -521,9 +521,11 @@ SCHEMA_TEXTFREI = (
 DURCHLICHT = (
     " ADDITION - ONE LIGHT SOURCE: the picture is lit from below by a light "
     "table whose glowing glass top lies directly under whatever is being "
-    "looked at. That glass is the brightest surface in the frame; everything "
-    "resting on it and everything above it is lit from below, and nothing "
-    "casts a downward shadow.")
+    "looked at. That glass is the brightest surface in the frame and it "
+    "glows one flat pale warm cream - the same pale warm cream in every "
+    "picture of this series, a white with a faint yellow in it and no blue. "
+    "Everything resting on it and everything above it is lit from below, and "
+    "nothing casts a downward shadow.")
 
 # Im Weltraum gibt es keine Flaeche, auf die ein Schatten faellt, und keine
 # beleuchtete Seite. Der allgemeine Lichtblock redet aber von beidem — vier
@@ -645,6 +647,22 @@ NACHT_MOTIVE = {"M01", "M02", "M13", "M28", "M35", "M39", "M61"}
 # M06 ist der einzige Koerperausschnitt, der ein Gesicht zeigt.
 KOPF_MOTIVE = {"M06"}
 
+# Vier Motive zeigen mehrere Menschen — und bekamen bis zum 16.08.2026
+# FRAMING_EINZEL, das woertlich "no second figure" verlangt. Derselbe
+# Widerspruch wie bei M06, nur haeufiger: der Anweisungsteil verbot, was die
+# Szene verlangte. In M03 und M27 hat das Modell das Verbot uebergangen und
+# die Gruppe gezeichnet, in M43 hat das Verbot gewonnen — von mehreren
+# Frauen am Arbeitstisch und dem Mann an der Tuer kam eine einzige Frau
+# zurueck. Welche Seite gewinnt, ist Zufall; der Widerspruch gehoert weg.
+MEHRFIGUR = {"M03", "M27", "M43", "M59"}
+FRAMING_GRUPPE = (
+    "FRAMING: several people are in this picture and every one of them is "
+    "drawn whole - nobody is cut off by the edge of the frame, and nobody is "
+    "a mirrored copy of anyone else. They are shown at what they are doing; "
+    "where someone sits at a table or a desk, that furniture may cover the "
+    "lower body. Sober, restrained, documentary - never cute."
+)
+
 # Nur wo die Szene selbst eine Kopfbedeckung verlangt. Alle uebrigen
 # Figurenmotive bekommen "the hair of that period" ohne Hut.
 KOPFBEDECKUNG = {"M27"}
@@ -705,6 +723,8 @@ def prompt(mid: str) -> str:
     fr = d["framing"]
     if ist_schema:
         rahmen = bp.FRAMING_LEER
+    elif fr == "ganz" and mid in MEHRFIGUR:
+        rahmen = FRAMING_GRUPPE
     elif fr == "ganz":
         rahmen = bp.FRAMING_SITZEND if d.get("sitzend") else bp.FRAMING_EINZEL
     elif fr == "teil":

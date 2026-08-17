@@ -143,6 +143,17 @@ def verschieben(quelle: pathlib.Path, ziel: pathlib.Path,
 #
 #   AUS TEXT GELUNGEN, nichts zu tun:
 #     M07/M08  dieselbe Strasse im Winter und im Sommer
+#
+#   NACHTRAG 16.08.2026 — ein Zustand, der nie als Paar geführt war:
+#     M42/M64  Die Szenenliste kennt nur das Paar M42/M54. M64 zeigt aber
+#              DIESELBE Leiter ein drittes Mal ("dieselbe Leiter, intakt —
+#              aber die zweite Sprosse von unten ist eine andere"), ohne
+#              Paareintrag. Frisch erzeugt kam darum keine Leiter-als-
+#              Diagramm zurueck, sondern eine perspektivisch gezeichnete
+#              HOLZLEITER — genau der Fehler, der bei M42 ausdruecklich
+#              behoben worden war. Drei Motive auf denselben Gegenstand,
+#              zwei davon verkettet: die Verkettung muss vollstaendig sein,
+#              sonst faellt der dritte heraus.
 PAARE = [
     # erst, zweit, Saat im Gegenstand, neuer linker Rand, Schutzflaechen
     ("M04", "M05", (750, 900), 1500, ((100, 2600),)),
