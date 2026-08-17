@@ -58,6 +58,16 @@ RISIKO = {
                      "number", "numbers", "numeral", "figure", "scale",
                      "tick", "ticks", "graduation", "graduated", "dial",
                      "index", "note", "notes", "notation"],
+    # Gegenstaende, die in der Wirklichkeit eine Aufschrift TRAGEN. Lehre
+    # aus Stapel 3: "a two-euro coin" kam mit einer grossen 2 und dem Wort
+    # EURO zurueck, in beiden Motiven. Das Modell zeichnet den echten
+    # Gegenstand, und der echte Gegenstand ist beschriftet — das Verbot am
+    # Prompt-Ende hat es wie immer uebergangen. Wer so einen Gegenstand
+    # braucht, beschreibt ihn als Form, nicht als Ware.
+    "Aufschrift-Träger": ["euro", "euros", "dollar", "dollars", "cent",
+                          "cents", "pound", "banknote", "note", "stamp",
+                          "newspaper", "poster", "packet", "calendar",
+                          "keyboard", "licence", "license"],
 }
 
 # Freigaben: Treffer, die bleiben duerfen, jeweils mit Grund. Ohne Eintrag
@@ -211,9 +221,12 @@ SZENE = {
         "runs across all three panels above the buildings",
  "M29": "a field of stars holding one inconspicuous double star, with a "
         "short fine trail behind it showing how fast it travels",
- "M30": "a dead straight country road running to the horizon, a two-euro "
-        "coin standing upright on the asphalt at the front of the frame, and "
-        "at the far end of the road a barely visible dot",
+ "M30": "a dead straight country road running to the horizon; at the front of "
+        "the frame one single small round metal coin stands upright on its "
+        "edge on the asphalt, drawn flat like everything else - one solid "
+        "pale ring for its rim and one solid gold circle inside it, both "
+        "faces of the coin smooth and bare, and only the rim carries fine "
+        "even notches; at the far end of the road a barely visible dot",
  "M31": "a white flat-roofed observatory building on a ridge, with a "
         "flat-topped mountain and the sea behind it",
  "M32": "one man in the dark coat of the eighteen-thirties sits at a desk, a "
@@ -232,8 +245,11 @@ SZENE = {
         "the Earth, stars behind it",
  "M38": "a compact satellite with a cylindrical sun shield, far from the "
         "Earth against black space",
- "M39": "the full Moon above the residential street, and in the foreground a "
-        "two-euro coin standing sharp on a window sill",
+ "M39": "the full Moon above the residential street, and in the foreground on a "
+        "window sill one single small round metal coin standing upright on "
+        "its edge, drawn flat - one solid pale ring for its rim and one "
+        "solid gold circle inside it, both faces smooth and bare; this one "
+        "coin is the sharpest thing in the picture",
  "M40": "a spiral galaxy seen from an oblique angle, filling the frame - "
         "arms, dust lanes, a dense core",
  "M41": "looking through an eyepiece: on one side a sharp point of light, on "
@@ -513,6 +529,33 @@ DURCHLICHT = (
 # beleuchtete Seite. Der allgemeine Lichtblock redet aber von beidem — vier
 # Saetze ueber Schlagschatten und Lichtseiten fuer sechzehn Motive, die
 # nichts als Sterne und Galaxien zeigen. Hier steht nur, was dort gilt.
+# Vierzehn Motive zeigen ein Sternfeld, und bis zum 16.08.2026 sagte kein
+# Block, wie ein Stern in dieser Reihe aussieht. Das Ergebnis war messbar:
+# in M10 sind 0,0 % der hellen Punkte farbig, in M29 60,3 %, in M36 81,2 %
+# — drei Sternfelder in einem Video, die aus drei Kanaelen stammen koennten.
+# Die Regel nennt nur, was in allen vierzehn gilt: die kleinen Sterne des
+# Hintergrunds. Was die Szene eigens faerbt (M58 gelblich und blaeulich,
+# M67 roetlich), bleibt der Szene ueberlassen.
+# M28 ist das einzige Motiv, das drei Orte in einem Bild zeigt. Die
+# Bedingung "kommt Vegetation vor" ist dort fuer die mittlere Vignette
+# wahr und fuer die beiden anderen falsch — und das Modell hat die
+# Laubzusage prompt auf die kahle Vignette angewendet und einen
+# belaubten Baum zwischen die kahlen Linden gesetzt. Wo eine Bedingung
+# innerhalb eines Bildes wechselt, gilt die vorsichtigere Fassung; die
+# Vegetation der einzelnen Vignetten steht ohnehin in der Florazeile.
+GEMISCHTE_FLORA = {"M28"}
+
+STERNFELD_MOTIVE = {"M01", "M02", "M10", "M11", "M28", "M29", "M36", "M37",
+                    "M46", "M47", "M50", "M58", "M61", "M67"}
+STERNFELD = (
+    " THE STARS: the small stars of the background are plain five-pointed "
+    "star shapes of one and the same white, all filled with that one white "
+    "and differing from one another only in size. They sit on the flat dark "
+    "ground with nothing around them - each star is its own clean shape and "
+    "carries no halo, no ray and no glow. Where the scene above gives one "
+    "single star a size, a colour or a shape of its own, that one star "
+    "follows the scene and the rest follow this rule.")
+
 LICHT_WELTRAUM = (
     " ADDITION - ONE LIGHT SOURCE: the only thing that gives light in this "
     "picture is {quelle}, and it is drawn as a flat bright shape on the dark "
@@ -615,7 +658,7 @@ def prompt(mid: str) -> str:
             p += bp.Z3_AUSSERHALB.format(quelle=LICHT[mid])
         else:
             p += bp.Z3_SICHTBAR.format(quelle=LICHT[mid])
-        pflanzen = hat_pflanzen(d["flora"])
+        pflanzen = hat_pflanzen(d["flora"]) and mid not in GEMISCHTE_FLORA
         p += bp.farben(mit_figur, pflanzen)
         ort = ORT[d["ort"]]
         if ort:
@@ -635,6 +678,8 @@ def prompt(mid: str) -> str:
             p += bp.NACHT
         if mid in WELTRAUM_MOTIVE:
             p += WELTRAUM
+        if mid in STERNFELD_MOTIVE:
+            p += STERNFELD
         if fr == "ganz":
             p += " " + bp.figur(mid in KOPFBEDECKUNG)
         elif fr == "teil":
