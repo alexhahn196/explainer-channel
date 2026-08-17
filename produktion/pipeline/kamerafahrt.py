@@ -35,9 +35,13 @@ LOESUNG: UEBERABTASTEN, DANN HERUNTERSKALIEREN
       -> zoompan s=<2x>                       rechnet auf doppelter Groesse
       -> scale=<1x>:flags=lanczos             mittelt den Restsprung weg
 
-Ergebnis derselben Einstellung: **0,148 px Ruckeln**, und die Kontur ist am
-Ende der Fahrt 7,5 % haerter als vorher, weil herunter- statt hochskaliert
-wird.
+Ergebnis derselben Einstellung: **0,150 px Ruckeln**, und die Kontur ist an
+jedem Zeitpunkt haerter als vorher, weil herunter- statt hochskaliert wird.
+
+An der fertigen Montage von Video 2 gemessen, auf den drei laengsten
+Einstellungen mit echter Fahrt: **0,49-0,53 px vorher, 0,026-0,033 px
+nachher** - 16- bis 19-mal ruhiger. Die alte Fassung dort tastete bereits
+zweifach ueber (3840), und genau die vorausgesagten 0,5 px kamen heraus.
 
 WAS DABEI WOVON ABHAENGT - der Punkt, an dem man sich leicht irrt
 =================================================================
@@ -47,6 +51,9 @@ Ueberabtastung stellt das her, und zwar unabhaengig von der Quelle:
 
     Quelle 2752 px, ueberabgetastet auf 7680 -> 0,148 px Ruckeln
     Quelle 1920 px, ueberabgetastet auf 7680 -> 0,146 px Ruckeln  (gemessen)
+
+(Beide Werte aus demselben Lauf vor der Rampenkorrektur weiter unten,
+darum 0,148 statt 0,150 - als Paar bleiben sie vergleichbar.)
 
 Beide gleich ruhig. Die kleinere Quelle ist nur **weicher** (Kantenschaerfe
 0,885 gegen 0,917 am Ende der Fahrt), nicht unruhiger.
@@ -126,33 +133,49 @@ def _rampe(n, art):
 
 
 def filterkette(dauer_s, fps, breite, hoehe, art="fahrt",
-                zoom_von=1.0, zoom_bis=1.06, schwenk_x=0.0, schwenk_y=0.0,
+                zoom_von=1.0, zoom_bis=1.06,
+                schwenk_von=0.0, schwenk_bis=0.0,
+                schwenk_hoch_von=0.0, schwenk_hoch_bis=0.0,
                 ueberabtastung=UEBERABTASTUNG):
     """Die vollstaendige -vf Kette von der Quelldatei bis zum Ausgabeformat.
 
-    schwenk_x/-y laufen von -1 bis +1 und bedeuten: wie weit der Ausschnitt
-    bis zum Ende des Bildes an den Rand des VERFUEGBAREN Wegs wandert. 0
-    bleibt mittig. Der verfuegbare Weg entsteht erst durch den Zoom - ein
-    reiner Schwenk braucht deshalb einen konstanten Zoom ueber 1,0.
+    Die Schwenkwerte laufen von -1 bis +1 und geben die Lage des Ausschnitts
+    im VERFUEGBAREN Weg an: -1 linker Rand, 0 mittig, +1 rechter Rand. Ein
+    Schwenk ueber die ganze Breite ist also von -1 nach +1, ein halber von 0
+    nach +1. Der verfuegbare Weg entsteht erst durch den Zoom - ein reiner
+    Schwenk braucht deshalb einen konstanten Zoom ueber 1,0.
+
+    `statisch` haelt den Ausschnitt bei `zoom_von` fest. Das ist nicht
+    dasselbe wie Zoom 1,0: steht eine unbewegte Einstellung zwischen
+    Fahrten, die zwischen 1,00 und 1,12 laufen, wirkt sie bei 1,0 weiter
+    als ihre Nachbarn. Ein fester Wert in der Mitte haelt den Bildausschnitt
+    ueber den Schnitt hinweg gleich.
     """
     if art not in ARTEN:
         raise ValueError(f"art muss eine von {ARTEN} sein, nicht {art!r}")
     n = max(1, int(round(dauer_s * fps)))
 
-    # Schritt 1: auf 16:9 in Ausgabegroesse bringen - ohne zu verzerren.
-    zuschnitt = (f"scale={breite}:{hoehe}"
-                 f":force_original_aspect_ratio=increase:flags=lanczos,"
-                 f"crop={breite}:{hoehe}")
     if art == "statisch":
         # Kein zoompan, kein Zwischenformat: ein einziger Abtastschritt.
         # Das ist das schaerfste Bild, das aus der Quelle zu holen ist.
-        # `loop` muss trotzdem sein - ohne es liefert ein Standbild genau
-        # einen Frame, und -frames:v kann keine erfinden.
-        return (f"{zuschnitt},loop=loop={n - 1}:size=1:start=0,"
-                f"fps={fps},format=yuv420p")
+        # `loop` muss sein - ohne ihn liefert ein Standbild genau einen
+        # Frame, und -frames:v kann keine erfinden.
+        z = max(1.0, float(zoom_von))
+        # Erst auf zoom-fache Zielgroesse bringen, dann mittig auf die
+        # Zielgroesse beschneiden: ergibt genau den Ausschnitt, den eine
+        # Fahrt bei diesem Zoom zeigen wuerde.
+        gross_b, gross_h = round(breite * z), round(hoehe * z)
+        gross_b += gross_b % 2
+        gross_h += gross_h % 2
+        return (f"scale={gross_b}:{gross_h}"
+                f":force_original_aspect_ratio=increase:flags=lanczos,"
+                f"crop={gross_b}:{gross_h},crop={breite}:{hoehe},"
+                f"loop=loop={n - 1}:size=1:start=0,fps={fps},format=yuv420p")
 
-    if abs(zoom_von - 1.0) < 1e-9 and abs(zoom_bis - 1.0) < 1e-9 and (
-            schwenk_x or schwenk_y):
+    bewegt_seitlich = (schwenk_von or schwenk_bis
+                       or schwenk_hoch_von or schwenk_hoch_bis)
+    if abs(zoom_von - 1.0) < 1e-9 and abs(zoom_bis - 1.0) < 1e-9 and \
+            bewegt_seitlich:
         raise ValueError(
             "Schwenk ohne Zoom ist nicht moeglich: der Ausschnitt fuellt bei "
             "Zoom 1,0 das ganze Bild, es gibt keinen Weg zu schwenken. "
@@ -163,8 +186,15 @@ def filterkette(dauer_s, fps, breite, hoehe, art="fahrt",
     r = _rampe(n, art)
     z = (f"{zoom_von:.6f}" if abs(zoom_bis - zoom_von) < 1e-9
          else f"{zoom_von:.6f}+{zoom_bis - zoom_von:.6f}*{r}")
-    x = f"(iw-iw/zoom)*(0.5+{schwenk_x / 2:+.6f}*{r})"
-    y = f"(ih-ih/zoom)*(0.5+{schwenk_y / 2:+.6f}*{r})"
+
+    def _lage(von, bis):
+        mitte = 0.5 + von / 2
+        if abs(bis - von) < 1e-9:
+            return f"{mitte:.6f}"
+        return f"({mitte:.6f}{(bis - von) / 2:+.6f}*{r})"
+
+    x = f"(iw-iw/zoom)*{_lage(schwenk_von, schwenk_bis)}"
+    y = f"(ih-ih/zoom)*{_lage(schwenk_hoch_von, schwenk_hoch_bis)}"
 
     return (
         # einmal ueberabtasten - die teure Skalierung laeuft genau hier,
@@ -208,7 +238,8 @@ def quelle_pruefen(bild, breite, zoom_bis=1.06, streng=False):
 
 
 def bauen(bild, ziel, dauer_s, cfg, art="fahrt", zoom_von=1.0, zoom_bis=1.06,
-          schwenk_x=0.0, schwenk_y=0.0, crf=None, preset=None, gop=None):
+          schwenk_von=0.0, schwenk_bis=0.0, schwenk_hoch_von=0.0,
+          schwenk_hoch_bis=0.0, crf=None, preset=None, gop=None):
     """Eine Einstellung rendern. Gibt die Zahl der Frames zurueck."""
     fps = int(cfg["fps"])
     breite, hoehe = int(cfg["breite"]), int(cfg["hoehe"])
@@ -216,8 +247,10 @@ def bauen(bild, ziel, dauer_s, cfg, art="fahrt", zoom_von=1.0, zoom_bis=1.06,
     if art != "statisch":
         quelle_pruefen(bild, breite, zoom_bis=max(zoom_von, zoom_bis))
     vf = filterkette(dauer_s, fps, breite, hoehe, art=art, zoom_von=zoom_von,
-                     zoom_bis=zoom_bis, schwenk_x=schwenk_x,
-                     schwenk_y=schwenk_y)
+                     zoom_bis=zoom_bis, schwenk_von=schwenk_von,
+                     schwenk_bis=schwenk_bis,
+                     schwenk_hoch_von=schwenk_hoch_von,
+                     schwenk_hoch_bis=schwenk_hoch_bis)
     cmd = ["ffmpeg", "-y", "-loglevel", "error",
            "-framerate", str(fps), "-i", bild,
            "-vf", vf, "-frames:v", str(n), "-r", str(fps),
@@ -243,14 +276,16 @@ def selbsttest(bild, cfg, dauer_s=2.0):
     import tempfile
     fps = int(cfg["fps"])
     soll = int(round(dauer_s * fps))
-    faelle = [("statisch", 1.0, 1.0, 0.0), ("fahrt", 1.0, 1.06, 0.0),
-              ("fahrt", 1.08, 1.08, 1.0), ("atemzyklus", 1.0, 1.04, 0.0)]
+    faelle = [("statisch", 1.06, 1.06, 0.0, 0.0), ("fahrt", 1.0, 1.12, 0.0, 0.0),
+              ("fahrt", 1.12, 1.0, 0.0, 0.0), ("fahrt", 1.06, 1.06, -1.0, 1.0),
+              ("atemzyklus", 1.0, 1.04, 0.0, 0.0)]
     fehler = 0
     with tempfile.TemporaryDirectory() as tmp:
-        for art, zv, zb, sx in faelle:
-            ziel = os.path.join(tmp, f"{art}-{zv}-{zb}-{sx}.mp4")
+        for art, zv, zb, sv, sb in faelle:
+            ziel = os.path.join(tmp, f"{art}-{zv}-{zb}-{sv}-{sb}.mp4")
             bauen(bild, ziel, dauer_s, cfg, art=art, zoom_von=zv,
-                  zoom_bis=zb, schwenk_x=sx, crf=28, preset="ultrafast")
+                  zoom_bis=zb, schwenk_von=sv, schwenk_bis=sb,
+                  crf=28, preset="ultrafast")
             aus = subprocess.run(
                 ["ffprobe", "-v", "error", "-select_streams", "v:0",
                  "-count_frames", "-show_entries",
@@ -264,7 +299,7 @@ def selbsttest(bild, cfg, dauer_s=2.0):
                   and (b, h) == (int(cfg["breite"]), int(cfg["hoehe"])))
             fehler += not ok
             print(f"  {'ok  ' if ok else 'FEHL'} art={art:11s} "
-                  f"zoom {zv:.2f}->{zb:.2f} schwenk {sx:+.1f}   "
+                  f"zoom {zv:.2f}->{zb:.2f} schwenk {sv:+.1f}->{sb:+.1f}   "
                   f"{b}x{h}  {frames}/{soll} Frames  {dauer:.3f}/{dauer_s:.3f} s")
     print(f"\n  {len(faelle) - fehler} von {len(faelle)} bestanden")
     return fehler
@@ -280,10 +315,10 @@ def main():
     ap.add_argument("--art", choices=ARTEN, default="fahrt")
     ap.add_argument("--zoom-von", type=float, default=1.0, dest="zoom_von")
     ap.add_argument("--zoom-bis", type=float, default=1.06, dest="zoom_bis")
-    ap.add_argument("--schwenk", type=float, default=0.0, dest="schwenk_x",
-                    help="-1 bis +1, waagerecht")
-    ap.add_argument("--schwenk-hoch", type=float, default=0.0,
-                    dest="schwenk_y", help="-1 bis +1, senkrecht")
+    ap.add_argument("--schwenk-von", type=float, default=0.0,
+                    dest="schwenk_von", help="-1 bis +1, waagerecht, Start")
+    ap.add_argument("--schwenk", type=float, default=0.0, dest="schwenk_bis",
+                    help="-1 bis +1, waagerecht, Ende")
     ap.add_argument("--fps", type=int, default=24)
     ap.add_argument("--breite", type=int, default=1920)
     ap.add_argument("--hoehe", type=int, default=1080)
@@ -296,8 +331,8 @@ def main():
     if not a.ziel:
         ap.error("ziel fehlt (oder --selbsttest verwenden)")
     n = bauen(a.bild, a.ziel, a.dauer, cfg, art=a.art, zoom_von=a.zoom_von,
-              zoom_bis=a.zoom_bis, schwenk_x=a.schwenk_x,
-              schwenk_y=a.schwenk_y)
+              zoom_bis=a.zoom_bis, schwenk_von=a.schwenk_von,
+              schwenk_bis=a.schwenk_bis)
     print(f"  {a.ziel}  {n} Frames, {a.dauer:.3f} s, art={a.art}, "
           f"{os.path.getsize(a.ziel)/1e6:.2f} MB")
     return 0

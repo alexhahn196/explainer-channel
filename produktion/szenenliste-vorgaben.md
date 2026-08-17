@@ -24,7 +24,28 @@ Es gibt hier **keine Bewegungspflicht.** Die Formel-§5-Vorgabe „Standmotiv
 mit sanfter Bewegung" stammt aus BibelTube und gilt für diesen Kanal
 ausdrücklich nicht (`README.md`, `config.md`).
 
-## Wann eine Fahrt gerechtfertigt ist
+## Harte Regel: statisch, sobald eine Figur im Bild ist
+
+**Zeigt ein Motiv einen Menschen — ganz, als Kopf oder als Hand bei der
+Arbeit —, läuft die Einstellung ohne Bewegung.** Keine Ausnahme, keine
+Begründung nötig.
+
+Eine Fahrt über eine gezeichnete Figur mit harten Konturen ist die Stelle,
+an der jede Restunruhe am ehesten auffällt, und die Figur gewinnt nichts
+dadurch: sie steht ohnehin still, die Bewegung erzählt nichts über sie.
+
+Umgesetzt in `produktion/video-02/montage.py::figurmotive()`. Die Zuordnung
+wird **nicht von Hand gepflegt**, sondern aus dem `FRAMING`-Absatz der
+Bildprompts gelesen — derselben Quelle, aus der die Bilder erzeugt wurden.
+Es zählen vier Formulierungen: `a single person`, `several people`,
+`one head only`, `one part of a body only`. Die letzte deckt die Hand- und
+Fuß-Nahaufnahmen ab; ein formatfüllender Daumen mit Unterarm ist für diese
+Frage eine Figur.
+
+In Video 2 betrifft das 23 der 66 Motive und stellt 43 Einstellungen von
+Fahrt auf statisch um.
+
+## Wann eine Fahrt sonst gerechtfertigt ist
 
 Wenn die Bewegung **etwas zeigt, das ein Standbild nicht zeigt**:
 
@@ -45,14 +66,22 @@ leer wirkt, ist sie zu lang oder das Bild ist falsch.
 |---|---|---|
 | `fahrt` | `statisch` \| `fahrt` | **`statisch`** |
 | `zoom_von` / `zoom_bis` | 1,00–1,15 | `1.00` / `1.06` |
-| `schwenk_x` / `schwenk_y` | −1,0 … +1,0 | `0.0` |
+| `schwenk_von` / `schwenk_bis` | −1,0 … +1,0 | `0.0` / `0.0` |
 | `grund` | Freitext | **Pflicht, sobald `fahrt`** |
 
-`schwenk_x`/`schwenk_y` geben an, wie weit der Ausschnitt bis zum Ende an den
-Rand des **verfügbaren** Wegs wandert; `0` bleibt mittig, `±1` geht bis an
-den Rand. Der verfügbare Weg entsteht erst durch den Zoom — **ein reiner
-Schwenk braucht deshalb `zoom_von = zoom_bis > 1.0`** (z. B. beide `1.08`).
+`schwenk_von`/`schwenk_bis` geben die Lage des Ausschnitts im **verfügbaren**
+Weg an: `−1` linker Rand, `0` mittig, `+1` rechter Rand. Ein Schwenk über die
+ganze Breite ist also `−1 → +1`, ein halber `0 → +1`. Für die Senkrechte
+heißen die Felder `schwenk_hoch_von` / `schwenk_hoch_bis`.
+
+Der verfügbare Weg entsteht erst durch den Zoom — **ein reiner Schwenk
+braucht deshalb `zoom_von = zoom_bis > 1.0`** (z. B. beide `1.06`).
 `kamerafahrt.py` lehnt einen Schwenk ohne Zoom mit einer Fehlermeldung ab.
+
+`statisch` hält den Ausschnitt bei `zoom_von` fest — nicht zwingend bei 1,0.
+Steht eine unbewegte Einstellung zwischen Fahrten, die zwischen 1,00 und 1,12
+laufen, wirkt sie bei 1,0 weiter als ihre Nachbarn; Video 2 hält sie deshalb
+bei 1,06, der Mitte des Hubs.
 
 ### Grenzen
 
@@ -72,7 +101,8 @@ Ausschließlich über
 
 ```python
 kamerafahrt.bauen(bild, ziel, dauer_s, cfg,
-                  art="fahrt", zoom_von=1.0, zoom_bis=1.06, schwenk_x=0.0)
+                  art="fahrt", zoom_von=1.0, zoom_bis=1.06,
+                  schwenk_von=0.0, schwenk_bis=0.0)
 ```
 
 **Keinen `zoompan`-Aufruf von Hand schreiben.** Der Grund steht im Kopf von

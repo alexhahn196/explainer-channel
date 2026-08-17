@@ -40,7 +40,7 @@ echo
 echo "== (b) Korrektur - kamerafahrt.py, art=fahrt =="
 time python3 "$REPO/produktion/pipeline/kamerafahrt.py" "$QUELLE" \
   "$AUS/probe-b-korrigiert.mp4" --dauer $SEK --art fahrt \
-  --zoom-bis $ZOOM_BIS --schwenk $SCHWENK --crf $CRF --fps $FPS
+  --zoom-bis $ZOOM_BIS --schwenk-von 0 --schwenk $SCHWENK --crf $CRF --fps $FPS
 
 echo
 echo "== (c) statisch - kamerafahrt.py, art=statisch =="
