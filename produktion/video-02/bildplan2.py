@@ -529,6 +529,68 @@ DURCHLICHT = (
 # beleuchtete Seite. Der allgemeine Lichtblock redet aber von beidem — vier
 # Saetze ueber Schlagschatten und Lichtseiten fuer sechzehn Motive, die
 # nichts als Sterne und Galaxien zeigen. Hier steht nur, was dort gilt.
+# ------------------------------------------------- gemessene Serientoene --
+# Zweite Haelfte der Bedingungsregel: was ueber alle Motive einer Gruppe
+# gleich sein soll, muss ausdruecklich dastehen. Diese vier Bloecke sind aus
+# der Messung der ersten 35 Bilder entstanden — jeder schliesst eine Spanne,
+# die niemand angesagt hatte.
+
+# Nachthimmel und Weltraumgrund: gemessen von (0,0,0) reinem Schwarz ueber
+# (24,24,24) neutralem Grau bis (12,24,36) Tiefblau, und M02 lag mit
+# (48,48,60) doppelt so hell wie der Rest.
+DUNKELGRUND = (
+    " THE DARK GROUND: the dark part of this picture is one flat near-black "
+    "blue - the same near-black blue in every dark picture of this series. "
+    "It is dark enough to read as night at a glance, and it is a blue: its "
+    "blue is clearly stronger than its green, and its green clearly stronger "
+    "than its red. It carries one even fill from edge to edge.")
+DUNKELGRUND_MOTIVE = {"M01", "M02", "M10", "M11", "M13", "M24", "M25", "M28",
+                      "M29", "M35", "M36", "M37", "M38", "M39", "M40", "M41",
+                      "M46", "M47", "M50", "M56", "M58", "M61", "M65", "M67",
+                      "M69"}
+
+# Papier: gemessen von (228,228,228) neutralem Grauweiss ueber (240,228,228)
+# rosastichig bis (240,240,216) gelblich. Der Ton ist derselbe, den der
+# Schema-Farbsatz fuer seinen Grund verlangt — Blatt und Diagrammgrund
+# gehoeren im selben Video zusammen.
+PAPIERTON = (
+    " THE PAPER: every sheet, page, card and plate of paper in this picture "
+    "is one flat pale warm off-white with a faint cream cast - the same pale "
+    "warm off-white in every picture of this series, at the brightness of "
+    "fresh paper, one even fill with no shading across it.")
+PAPIER_MOTIVE = {"M19", "M23", "M27", "M32", "M33", "M43", "M44", "M45",
+                 "M48", "M49", "M51", "M60", "M68"}
+
+# Messing: gemessen von (160,130,60) dunklem Ocker ueber (230,170,70)
+# leuchtendem Gold bis (250,220,160) blassem Sand. Drei Messinggeraete, drei
+# Goldtoene.
+MESSINGTON = (
+    " THE BRASS: every brass part in this picture carries one and the same "
+    "flat medium gold - a warm yellow-brown gold of middling brightness, the "
+    "same gold in every picture of this series, one even fill per part with "
+    "no sheen, no highlight and no darkening towards an edge.")
+MESSING_MOTIVE = {"M14", "M15", "M18", "M20", "M22"}
+
+# Der einzige Mensch, der mehr als einmal vorkommt. Die Szenen sagen "the
+# same man" — aber die drei Bilder entstehen unabhaengig voneinander, und
+# das Modell hat kein Bild des ersten gesehen. Gemessen kam er mit drei
+# Hauttoenen zurueck: (230,170,150), (210,170,100), (200,170,120). Nach der
+# Kanalvorgabe ist er eine Epochenfigur, keine Portraitaehnlichkeit — der
+# Steckbrief legt darum eine Bauform fest, kein Gesicht einer bestimmten
+# Person.
+WIEDERKEHRER = {
+    ("M20", "M23", "M26"): (
+        " THIS PERSON APPEARS IN MORE THAN ONE PICTURE OF THIS SERIES AND IS "
+        "BUILT THE SAME WAY IN EACH: a man of about forty, of middling "
+        "build, with fair skin; a short full beard and moustache of dark "
+        "reddish brown, trimmed close to the jaw; short hair of that same "
+        "dark reddish brown, combed back from the forehead, the head bare; "
+        "a dark plum-red doublet buttoned to the throat, and above it one "
+        "narrow white pleated collar standing out from the neck."),
+}
+STECKBRIEF = {mid: t for gruppe, t in WIEDERKEHRER.items() for mid in gruppe}
+
+
 # Vierzehn Motive zeigen ein Sternfeld, und bis zum 16.08.2026 sagte kein
 # Block, wie ein Stern in dieser Reihe aussieht. Das Ergebnis war messbar:
 # in M10 sind 0,0 % der hellen Punkte farbig, in M29 60,3 %, in M36 81,2 %
@@ -680,6 +742,14 @@ def prompt(mid: str) -> str:
             p += WELTRAUM
         if mid in STERNFELD_MOTIVE:
             p += STERNFELD
+        if mid in DUNKELGRUND_MOTIVE:
+            p += DUNKELGRUND
+        if mid in PAPIER_MOTIVE:
+            p += PAPIERTON
+        if mid in MESSING_MOTIVE:
+            p += MESSINGTON
+        if mid in STECKBRIEF:
+            p += STECKBRIEF[mid]
         if fr == "ganz":
             p += " " + bp.figur(mid in KOPFBEDECKUNG)
         elif fr == "teil":

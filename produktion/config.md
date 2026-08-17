@@ -174,10 +174,76 @@ Drei Folgeregeln, die daraus folgen:
 
 Umgesetzt in `produktion/video-01/bildplan.py` als bedingte Fassungen
 (`machart()`, `farben()`, `figur()`, `EPOCHE_*`, `FRAMING_*`) und in
-`produktion/video-02/bildplan2.py` als drei harte Prüfungen, die den Lauf
+`produktion/video-02/bildplan2.py` als harte Prüfungen, die den Lauf
 abbrechen, bevor Credits fließen: `pruefe_szene` (Versalien),
 `pruefe_personenworte` (43 figurenlose Motive), `pruefe_pflanzenworte`
-(49 Motive ohne Vegetation).
+(49 Motive ohne Vegetation), `pruefe_vokabular` (Schrift, Grafik-Gattung,
+Beschriftung, Aufschrift-Träger).
+
+**Granularität.** Die Bedingung wird je Motiv gestellt — ein Motiv, das
+mehrere Felder zeigt, kann sie in sich wechseln. M28 ist ein Triptychon aus
+drei Orten: die mittlere Vignette hat Vegetation, die beiden anderen nicht,
+und die Laubzusage landete prompt in der kahlen. **Bei jedem Mehrfeld-Motiv
+— Triptychon, Vorher-Nachher, geteilter Rahmen — gilt die vorsichtigere
+Fassung**, und was nur ein Feld betrifft, gehört in die Szene, nicht in den
+Anweisungsteil. In `bildplan2.py` steht das als `GEMISCHTE_FLORA`.
+
+### Die zweite Hälfte: ein fehlender Satz ist so teuer wie ein falscher
+
+**ENTSCHIEDEN 16.08.2026.**
+
+> **Was in ALLEN Motiven einer Gruppe gleich sein soll, muss ausdrücklich
+> genannt werden — sonst wählt das Modell je Bild neu, und die Serie
+> zerfällt.**
+
+Die erste Hälfte der Regel verhindert, dass ein Block etwas nennt, was nicht
+da ist. Sie sagt nichts darüber, was ungesagt bleibt. Der Sternbefund aus
+Stapel 3 ist der Beleg: kein Block sagte je, wie ein Stern dieser Reihe
+aussieht.
+
+| Motiv | helle Fläche | davon farbig |
+|---|---:|---:|
+| M10 — Szene sagt „white star shapes" | 2,63 % | **0,0 %** |
+| M29 — Szene sagt nichts | 0,24 % | **60,3 %** |
+| M36 — Szene sagt nichts | 1,94 % | **81,2 %** |
+
+Drei Sternfelder in einem Video, die aus drei Kanälen stammen könnten. Kein
+falscher Satz war schuld, sondern ein fehlender.
+
+**Die Prüffrage lautet deshalb doppelt:**
+
+1. Nennt der Block etwas, das in einem Teil der Motive nicht vorkommt?
+2. Gibt es eine Eigenschaft, die über alle Motive gleich sein soll, und
+   sagt sie niemand?
+
+Frage 2 fällt beim Lesen des Prompts nicht auf — dort steht ja nichts
+Falsches. Sie fällt erst auf, wenn man die fertigen Bilder **misst**.
+
+An den ersten 35 Bildern von Video 2 durchgemessen, jeweils die größte
+Farbfläche der betreffenden Art:
+
+| Eigenschaft | gemessene Spanne | Befund |
+|---|---|---|
+| Sternfarbe | 0,0 % / 60,3 % / 81,2 % farbige Sternpunkte | **festgelegt** — `STERNFELD`, 14 Motive |
+| Grundton dunkler Bilder | (0,0,0) reines Schwarz · (24,24,24) neutral · (12,24,36) tiefblau · M02 mit (48,48,60) doppelt so hell | **festgelegt** — `DUNKELGRUND`, 25 Motive |
+| Papierton | (228,228,228) neutral · (240,228,228) rosastichig · (240,240,216) gelblich | **festgelegt** — `PAPIERTON`, 13 Motive |
+| Metallton | (160,130,60) dunkler Ocker · (230,170,70) leuchtendes Gold · (250,220,160) blasser Sand | **festgelegt** — `MESSINGTON`, 5 Motive |
+| wiederkehrende Figur | derselbe Mann in M20/M23/M26 mit (230,170,150), (210,170,100), (200,170,120) | **festgelegt** — Steckbrief, 3 Motive |
+| Hauttonspanne allgemein | R 200–240, G 160–180, B 100–160 über zehn verschiedene Personen | **kein Befund** — verschiedene Menschen dürfen verschieden aussehen; nur wiederkehrende müssen gleich bleiben |
+| Wasserfarbe | nur ein Motiv (M31) zeigt Wasser | **kein Befund** — eine Gruppe von eins ist keine Gruppe |
+
+**Der teuerste Einzelfall war die wiederkehrende Figur.** Die Szene sagt
+„derselbe Mann", aber die drei Bilder entstehen unabhängig voneinander, und
+das Modell hat das erste nie gesehen — genau die Lage der Zustandspaare, nur
+über eine Person statt über einen Bildausschnitt. Wer mehr als einmal
+vorkommt, braucht einen Steckbrief im Anweisungsteil. Nach der Kanalvorgabe
+(Epochenfiguren, keine Portraitähnlichkeit) legt der Steckbrief eine Bauform
+fest, kein Gesicht: Alter, Bau, Haut, Bart- und Haarform, Kleidungsstück und
+Farbe.
+
+**Nicht rückwirkend nachgezogen:** die Blöcke gelten ab jetzt. Bereits
+erzeugte Bilder werden nicht blind neu gemacht, sondern am Ende gemessen;
+neu erzeugt wird, was dann noch aus der Reihe fällt.
 
 ## Laufzeit
 
