@@ -6,8 +6,9 @@ den Grund in einem Satz.
 
 **Verbindlich für Kanal 2 ist der V2-Stil** — erwachsene Figuren nach dem
 finalen Machart-Block in `stil-figuren/lauf2-erwachsen/README.md`, dazu der
-Z3-Lichtquellen-Zusatz aus `stil-touch/`, Signalfarbe Türkis `#1BBFB0`, drei
-Themenpaletten. Alles andere unten ist entweder verworfen oder Reserve.
+Z3-Lichtquellen-Zusatz aus `stil-touch/` und **natürliche Farben**. Signalfarbe
+und Themenpaletten sind seit dem 15.08.2026 **verworfen** (siehe unten). Alles
+andere unten ist entweder verworfen oder Reserve.
 
 ---
 
@@ -43,6 +44,25 @@ angeschnittene Figuren); für Kanal 2 nicht gewählt, aufbewahrt.
 ---
 
 ## Verworfen — nicht noch einmal testen
+
+### Signalfarbe Türkis `#1BBFB0` — 15.08.2026 — **VERWORFEN**
+Genau ein türkiser Gegenstand je Bild als wiederkehrendes Erkennungszeichen.
+**Grund:** Sie musste in jedem Prompt einzeln gebändigt werden — erst gegen
+flächigen Gebrauch, dann gegen mehrere Träger je Bild, zuletzt gegen den
+gegenteiligen Fehler, dass sie ganz ausblieb; über 84 Motive kostete das drei
+Regelfassungen und vier Nachläufe, und in einem Bild ohne passenden Träger
+wirkte sie stets willkürlich hineingesetzt.
+**Nicht wieder einführen.**
+
+### Drei gedämpfte Themenpaletten (Moor, Antike, Nord) — 15.08.2026 — **VERWORFEN**
+Je fünf bis sechs feste Hexwerte pro Themenraum, alles darauf beschränkt.
+**Grund:** Sie dämpften jedes Motiv auf denselben erdigen Grundton und nahmen
+den Bildern die Auskunft, die Farbe eigentlich gibt — an Video 1 gemessen stieg
+die Sättigung der Anden-Szene ohne Palette von 0,198 auf 0,449 und die Zahl der
+Farbtöne der Moorszene von 8 auf 32, ohne dass die Serie zerfiel.
+**Ersetzt durch:** natürliche Farben, Wortlaut in
+`stil-figuren/lauf2-erwachsen/README.md`.
+**Beleg:** `farbtest-natuerlich/` — sechs Motive in beiden Fassungen, 14 Credits.
 
 ### `stile-erklaerkanal/` — Runde 1 — 07.08.2026 — **verworfen**
 Fünf Stile: Flat-Vector, Papercut, technische Blaupause, Retro-Siebdruck,

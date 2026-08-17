@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lexicon version="1.0" xmlns="http://www.w3.org/2005/01/pronunciation-lexicon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2005/01/pronunciation-lexicon http://www.w3.org/TR/2007/CR-pronunciation-lexicon-20071212/pls.xsd" alphabet="ipa" xml:lang="en-US">
+  <lexeme>
+    <grapheme>Dümmer</grapheme>
+    <phoneme>ˈdʏmɐ</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Campemoor</grapheme>
+    <phoneme>ˈkampəmoːɐ̯</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Widan el-Faras</grapheme>
+    <phoneme>wiˈdaːn el ˈfaras</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Nebuchadnezzar</grapheme>
+    <phoneme>ˌnɛbjʊkədˈnɛzər</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Ishtar</grapheme>
+    <phoneme>ˈɪʃtɑːr</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Susa</grapheme>
+    <phoneme>ˈsuːsə</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Sardis</grapheme>
+    <phoneme>ˈsɑːrdɪs</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Chaco</grapheme>
+    <phoneme>ˈtʃɑːkoʊ</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Pueblo</grapheme>
+    <phoneme>ˈpwɛbloʊ</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Wari</grapheme>
+    <phoneme>ˈwɑːri</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Tiwanaku</grapheme>
+    <phoneme>ˌtiwɑːˈnɑːku</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Westhay</grapheme>
+    <phoneme>ˈwɛstheɪ</phoneme>
+  </lexeme>
+  <lexeme>
+    <grapheme>Shapwick</grapheme>
+    <phoneme>ˈʃæpwɪk</phoneme>
+  </lexeme>
+</lexicon>

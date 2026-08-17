@@ -1,3 +1,19 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Rohtranskripte gehoeren nicht ins Repository — die Berichte enthalten
+# ausschliesslich Kennzahlen, kein Transkripttext.
+uf_transkripte.json
+recherche/daten/captions/
+
+# Stimmproben-Rohaudio wird bewusst versioniert (kleine Ausschnitte),
+# aber niemals der API-Schluessel:
+.env
+*.key
+
+# Zwischendaten der Stimmproben-Analyse (mehrere MB, aus akustik.py regenerierbar)
+produktion/video-01/stimmproben/akustik_verlauf.json
+
+# Fremd-Tonspuren: nur zur Messung geladen, nicht Teil des Repos
+recherche/daten/uf-audio/

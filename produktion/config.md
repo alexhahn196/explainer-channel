@@ -90,7 +90,8 @@ absichtlich **nicht** mitkopiert worden.
 | `video_crf` | `28` | **ÜBERNOMMEN — UNGEPRÜFT** — CRF 28 ist auf ein nahezu statisches Bild optimiert. Bei 2–5-Sekunden-Schnitten ist das vermutlich zu hoch (sichtbare Artefakte an Schnittkanten). **Erster Kandidat zum Nachmessen.** |
 | `video_preset` | `medium` | **ÜBERNOMMEN — UNGEPRÜFT** |
 | `audio_bitrate` | `192k` | **ÜBERNOMMEN — UNGEPRÜFT** |
-| **Bildstil** | — | **OFFEN** — drei Varianten getestet, siehe `recherche/stil-ink-varianten/README.md`. Empfehlung dort: V1 als Basis plus das Element aus V3. Nicht entschieden. |
+| **Bildstil** | — | **ENTSCHIEDEN 15.08.2026** — V2: finaler Machart-Block aus `recherche/stil-figuren/lauf2-erwachsen/README.md` plus Z3-Lichtquelle aus `recherche/stil-touch/`. |
+| **Farbe** | — | **ENTSCHIEDEN 15.08.2026** — natürliche Farben, so wie die Sache wirklich aussieht. **Keine** Themenpaletten und **keine** Signalfarbe; beide getestet und verworfen, Grund in `recherche/stil-archiv.md`. Schemabilder haben eine eigene Fassung ohne Himmel und Vegetation. |
 
 ## Laufzeit
 
