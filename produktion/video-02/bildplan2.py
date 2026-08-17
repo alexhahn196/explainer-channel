@@ -580,13 +580,24 @@ MESSINGTON = (
     "no sheen, no highlight and no darkening towards an edge.")
 MESSING_MOTIVE = {"M14", "M15", "M18", "M20", "M22"}
 
-# Der einzige Mensch, der mehr als einmal vorkommt. Die Szenen sagen "the
-# same man" — aber die drei Bilder entstehen unabhaengig voneinander, und
-# das Modell hat kein Bild des ersten gesehen. Gemessen kam er mit drei
-# Hauttoenen zurueck: (230,170,150), (210,170,100), (200,170,120). Nach der
-# Kanalvorgabe ist er eine Epochenfigur, keine Portraitaehnlichkeit — der
-# Steckbrief legt darum eine Bauform fest, kein Gesicht einer bestimmten
-# Person.
+# ---------------------------------------------------- Steckbriefe --------
+# Alles, was in mehr als einem Motiv vorkommt, braucht eine Beschreibung —
+# nicht weil sie im einzelnen Bild fehlte, sondern weil die Bilder
+# unabhaengig voneinander entstehen und das Modell das erste nie gesehen
+# hat. Dieselbe Lage wie bei den Zustandspaaren, nur ueber einen
+# Gegenstand, ein Gebaeude, einen Ort oder eine Person.
+#
+# Die 66 Szenentexte samt Licht- und Ortsangabe ergeben 47 Gegenstands-
+# klassen in mehr als einem Motiv. Davon sind zwoelf ueber die Serientoene
+# und die Farbbloecke schon festgelegt (Sterne, Galaxien, Papier, Messing,
+# Leuchttisch, Platte, Dunkelgrund, Himmel, Baeume je Motiv, Leiter als
+# Schema, Muenze, Sprosse). Die uebrigen stehen hier — jeweils fuer die
+# Motive, in denen sie wirklich vorkommen, und nur mit dem, was in allen
+# diesen Motiven gilt.
+#
+# Nach der Kanalvorgabe sind Figuren Epochenfiguren ohne
+# Portraitaehnlichkeit: der Steckbrief legt darum eine Bauform fest, kein
+# Gesicht einer bestimmten Person.
 WIEDERKEHRER = {
     ("M20", "M23", "M26"): (
         " THIS PERSON APPEARS IN MORE THAN ONE PICTURE OF THIS SERIES AND IS "
@@ -597,7 +608,103 @@ WIEDERKEHRER = {
         "a dark plum-red doublet buttoned to the throat, and above it one "
         "narrow white pleated collar standing out from the neck."),
 }
-STECKBRIEF = {mid: t for gruppe, t in WIEDERKEHRER.items() for mid in gruppe}
+
+# Die Wohnstrasse der Gegenwart. Sechs Motive, gemessen an M07/M08/M39/M01
+# beschrieben — dort stimmen sie schon ueberein. M02 fiel heraus: keine
+# Haeuserzeile, eine weite leere Fahrbahn, ein flaches modernes Gebaeude.
+# M02 ist die Klammer des Videos, erstes und letztes Bild, 26,6 s Laufzeit.
+WIEDERKEHRER[("M01", "M02", "M07", "M08", "M39")] = (
+    " THIS STREET APPEARS IN MORE THAN ONE PICTURE OF THIS SERIES AND IS THE "
+    "SAME STREET IN EACH: two facing rows of two-storey terraced houses, "
+    "their walls dark red brick with a few in pale cream render, each house "
+    "with one square bay window on the ground floor and a plain pitched roof "
+    "of dark grey slate; a low brick garden wall about knee height runs along "
+    "the front of both rows; between the walls lies a grey asphalt roadway "
+    "with a kerbed pavement of pale grey slabs on either side; one cast-iron "
+    "street lamp with a single curved arm stands on the near pavement; "
+    "broad-leaved street trees of middling height stand at even spacing "
+    "along both kerbs.")
+
+# Drei Sternwarten, jede in zwei Motiven — und zwei der drei liefen
+# auseinander: die Koenigsberger war in M13 ein grosser roter Backsteinbau
+# mit Portikus, in M28 ein kleines cremefarbenes Haus; die Dorpater war in
+# M35 ein verputzter Bau mit Portikus und Kuppel, in M28 eine Blockhuette
+# ohne Kuppel. Die Kapstaedter stimmte schon ueberein.
+WIEDERKEHRER[("M13", "M28")] = (
+    " THE OBSERVATORY AT KOENIGSBERG APPEARS IN MORE THAN ONE PICTURE OF "
+    "THIS SERIES AND IS THE SAME BUILDING IN EACH: a two-storey block of "
+    "dark red brick, wider than it is tall, with a shallow classical porch "
+    "of four plain columns over the central entrance and one hemispherical "
+    "dome of dull green copper set on the middle of its roof.")
+WIEDERKEHRER[("M28b", "M31")] = (
+    " THE OBSERVATORY AT THE CAPE APPEARS IN MORE THAN ONE PICTURE OF THIS "
+    "SERIES AND IS THE SAME BUILDING IN EACH: a long single-storey block "
+    "with white rendered walls and a flat roof, its windows tall and narrow "
+    "with dark frames, and one small pale dome at its right-hand end.")
+WIEDERKEHRER[("M28c", "M35")] = (
+    " THE OBSERVATORY AT DORPAT APPEARS IN MORE THAN ONE PICTURE OF THIS "
+    "SERIES AND IS THE SAME BUILDING IN EACH: a low single-storey house of "
+    "pale rendered walls with horizontal timber boarding along the lower "
+    "half, a shallow porch of two columns at its centre, and one small dark "
+    "dome at the right-hand end of its roof.")
+
+# Der Mauerquadrant des Daenen. M20 zeigte ihn als Handgeraet, M26 als
+# kleines Tischgeraet, M22 als grossen Bogen in Nahsicht — drei Formen
+# desselben Instruments.
+WIEDERKEHRER[("M20", "M22", "M26")] = (
+    " THIS INSTRUMENT APPEARS IN MORE THAN ONE PICTURE OF THIS SERIES AND IS "
+    "THE SAME ONE IN EACH: one brass quarter-circle as tall as a doorway, "
+    "set upright in a plain dark timber frame that rests on the "
+    "floor; its curved outer edge is cut with fine even notches all along "
+    "it; a slim brass bar pivots from the corner of the quarter-circle and "
+    "carries a narrow slotted sight near its far end. It is far too large "
+    "to be carried.")
+
+# Das Blickfeld im Okular. M16 kam als flache dunkelblaue Scheibe mit
+# blassen Streifen dahinter, M41 als dunkles Rundfeld mit konzentrischen
+# Ringen.
+WIEDERKEHRER[("M16", "M41")] = (
+    " THE VIEW THROUGH AN EYEPIECE IS DRAWN THE SAME WAY IN EVERY PICTURE OF "
+    "THIS SERIES: one true circle centred in the frame and reaching almost "
+    "to the top and bottom edges; inside it one flat near-black blue and "
+    "nothing else but what the scene names; its edge one clean black ring of "
+    "the same weight as every other outline; outside the circle the frame is "
+    "one flat dark neutral grey, empty from corner to corner.")
+
+# Der Mond. In M13, M35 und M39 hat er je einen weichen Leuchthof — der
+# einzige Verlauf, der in dieser Reihe dreimal durchgekommen ist.
+WIEDERKEHRER[("M13", "M35", "M39")] = (
+    " THE MOON IS DRAWN THE SAME WAY IN EVERY PICTURE OF THIS SERIES: one "
+    "plain pale circle filled with a single off-white, and inside it three "
+    "or four flat round patches of one slightly darker grey with clean "
+    "edges. Around the circle there is nothing at all - no ring of light, no "
+    "soft fading and no glow; the dark ground meets its outline directly.")
+
+# Die Lupe, der Bleistift, die Kerze, der Schreibtisch in Kapstadt: kleine
+# Gegenstaende, die zweimal oder dreimal vorkommen. Je ein Satz.
+WIEDERKEHRER[("M44", "M45")] = (
+    " THE MAGNIFYING LENS IS THE SAME ONE IN EACH PICTURE: a plain round "
+    "glass in a thin brass rim with one short straight brass handle.")
+WIEDERKEHRER[("M48", "M49", "M68")] = (
+    " THE PENCIL IS THE SAME ONE IN EACH PICTURE: a plain six-sided wooden "
+    "shaft of one flat mid-yellow, sharpened to a short dark tip.")
+WIEDERKEHRER[("M19", "M23")] = (
+    " THE CANDLE IS THE SAME ONE IN EACH PICTURE: one plain upright white "
+    "candle standing in a small shallow metal dish with a ring handle.")
+WIEDERKEHRER[("M32", "M33", "M34")] = (
+    " THIS DESK APPEARS IN MORE THAN ONE PICTURE OF THIS SERIES AND IS THE "
+    "SAME DESK IN EACH: a plain writing desk of mid-brown timber with a "
+    "single wide drawer set in its front below the top.")
+
+# Mehrere Steckbriefe koennen dasselbe Motiv treffen: M28 zeigt alle drei
+# Sternwarten in einem Bild, M13 zeigt eine davon und den Mond. Die
+# Schluessel M28b und M28c sind darum nur Platzhalter — sie landen alle auf
+# M28 und werden aneinandergehaengt.
+STECKBRIEF: dict[str, str] = {}
+for _gruppe, _text in WIEDERKEHRER.items():
+    for _mid in _gruppe:
+        _echt = "M28" if _mid.startswith("M28") else _mid
+        STECKBRIEF[_echt] = STECKBRIEF.get(_echt, "") + _text
 
 
 # Vierzehn Motive zeigen ein Sternfeld, und bis zum 16.08.2026 sagte kein
@@ -861,6 +968,11 @@ def pruefe_pflanzenworte(prompts: dict[str, str]) -> None:
         kopf = p.split(" SCENE:")[0]
         if d["flora"] != "—":
             kopf = kopf.replace(FLORA[d["flora"]], "")
+        # Der Steckbrief des Motivs ist aus demselben Grund ausgenommen wie
+        # der Florasatz: was dort steht, ist ausdruecklich gewollt. Die
+        # Wohnstrasse besteht wirklich aus Backstein und Putz.
+        if mid in STECKBRIEF:
+            kopf = kopf.replace(STECKBRIEF[mid], "")
         treffer = sorted(set(m.group(0).lower()
                              for m in PFLANZENWORT.finditer(kopf)))
         if treffer:
