@@ -84,7 +84,7 @@ absichtlich **nicht** mitkopiert worden.
 | `breite` / `hoehe` | `1920` / `1080` | **ÜBERNOMMEN — UNGEPRÜFT** — Standardformat, vermutlich gültig |
 | `fps` | `24` | **ÜBERNOMMEN — UNGEPRÜFT** |
 | `videoquelle` | `ki_clips` | **GILT NICHT** — 4 Clips à 12 s als 48-s-Zyklus über 3,5 h. Dieser Kanal braucht **120–300 verschiedene Einstellungen** je Video. Anderes Modell. |
-| `zoom` / `zoom_faktor` / `zoom_zyklus_s` | `ja` / `1.04` / `300` | **GILT NICHT** — der 300-Sekunden-Atemzyklus ist für ein 10-Minuten-Video sinnlos |
+| `zoom` / `zoom_faktor` / `zoom_zyklus_s` | `ja` / `1.04` / `300` | **GILT NICHT** — der 300-Sekunden-Atemzyklus ist für ein 10-Minuten-Video sinnlos. ⚠️ **2026-08-17: Der Zoom-Weg in `schritt5_video.py` ist zusätzlich defekt** — `zoompan` rastet den Ausschnitt auf ganze Quellpixel, das Bild zittert um 1 px, bei flachen Grafiken mit harten Konturen sichtbar. Gemessen und belegt in [`recherche/kamerafahrt-proben/README.md`](../recherche/kamerafahrt-proben/README.md). **Nicht ungeprüft übernehmen; Entscheidung über den Ersatzweg steht aus.** |
 | `ki_clip_ordner*` | — | **GILT NICHT** |
 | `kapitelmarken_videos` | `V1,V2,V6,V8` | **GILT NICHT** — videobezogene Kanal-1-Liste |
 | `video_crf` | `28` | **ÜBERNOMMEN — UNGEPRÜFT** — CRF 28 ist auf ein nahezu statisches Bild optimiert. Bei 2–5-Sekunden-Schnitten ist das vermutlich zu hoch (sichtbare Artefakte an Schnittkanten). **Erster Kandidat zum Nachmessen.** |
